@@ -1,0 +1,3 @@
+[submodule "ddraig-libs"]
+	path = ddraig-libs
+	url = https://github.com/SteveMoody73/ddraig-libs.git
