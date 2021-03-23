@@ -1,9 +1,9 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A3 16535 11693
+$Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -44,5 +44,11 @@ F18 "~RESET" O L 4500 3150 50
 F19 "~RD~WR" O R 5600 2400 50 
 F20 "~CS_SRAM" I L 4500 2950 50 
 F21 "~CS_ROM" I L 4500 2800 50 
+$EndSheet
+$Sheet
+S 6600 1450 1250 2700
+U 60E7F270
+F0 "Decode and Logic" 50
+F1 "decode.sch" 50
 $EndSheet
 $EndSCHEMATC
