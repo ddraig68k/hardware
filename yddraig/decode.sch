@@ -1118,8 +1118,6 @@ Wire Wire Line
 Wire Wire Line
 	7800 6200 7550 6200
 Wire Wire Line
-	9950 1650 10100 1650
-Wire Wire Line
 	9900 1300 10000 1300
 Wire Wire Line
 	10000 1300 10000 1450
@@ -1393,6 +1391,26 @@ Wire Wire Line
 Connection ~ 3400 5500
 Wire Wire Line
 	3400 5500 2900 5500
+Text Label 7150 4900 0    50   ~ 0
+~CS_EXTDATA1
+Text Label 7150 5000 0    50   ~ 0
+~CS_EXTDATA2
+Text Label 7150 5100 0    50   ~ 0
+~CS_EXTDATA3
+Text Label 7150 5200 0    50   ~ 0
+~CS_EXTDATA4
+Text Label 7100 5300 0    50   ~ 0
+~CS_EXTREG1
+Text Label 7100 5500 0    50   ~ 0
+~CS_EXTREG2
+Text Label 7100 5600 0    50   ~ 0
+~CS_EXTREG3
+Text Label 7100 5700 0    50   ~ 0
+~CS_EXTREG4
+NoConn ~ 4900 2450
+NoConn ~ 4900 2550
+Wire Wire Line
+	10100 1650 9950 1650
 Wire Bus Line
 	6650 3600 6650 3900
 Wire Bus Line

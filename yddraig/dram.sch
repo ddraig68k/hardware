@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 8 9
+Sheet 7 9
 Title ""
 Date ""
 Rev ""
@@ -1162,6 +1162,12 @@ F 3 "~" H 6400 7700 50  0001 C CNN
 	1    6400 7700
 	0    1    1    0   
 $EndComp
+NoConn ~ 11100 7550
+NoConn ~ 11100 7650
+NoConn ~ 11100 7750
+NoConn ~ 11100 3950
+NoConn ~ 11100 4050
+NoConn ~ 11100 4150
 Wire Bus Line
 	11650 2400 11650 6800
 Wire Bus Line

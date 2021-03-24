@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:ATX-24 J201
+L Ddraig:ATX-24 J201
 U 1 1 6059A146
 P 2250 2400
 F 0 "J201" H 2250 3067 50  0000 C CNN

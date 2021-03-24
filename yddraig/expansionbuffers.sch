@@ -1234,8 +1234,6 @@ Wire Wire Line
 Wire Wire Line
 	5800 5550 5600 5550
 Wire Wire Line
-	5800 5650 5600 5650
-Wire Wire Line
 	5800 5750 5600 5750
 Wire Wire Line
 	5800 5850 5600 5850
@@ -1293,6 +1291,8 @@ Wire Bus Line
 	4200 7450 4950 7450
 Text Label 4250 7450 0    50   ~ 0
 ~BCS_EXTDATA[1..4]
+Wire Wire Line
+	5800 5650 5600 5650
 Wire Bus Line
 	9700 1000 9700 4000
 Wire Bus Line

@@ -5,4 +5,10 @@ D Power symbol creates a global label with name "+5V"
 K power-flag
 $ENDCMP
 #
+$CMP ATX-24
+D ATX Power supply 24pins
+K ATX PSU
+F https://www.intel.com/content/dam/www/public/us/en/documents/guides/power-supply-design-guide-june.pdf#page=33
+$ENDCMP
+#
 #End Doc Library

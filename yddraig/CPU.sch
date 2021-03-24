@@ -18,9 +18,9 @@ L CPU_NXP_68000:68000D U304
 U 1 1 6058C93A
 P 4800 4050
 F 0 "U304" H 5200 6400 50  0000 C CNN
-F 1 "74LS32" H 4450 6400 50  0000 C CNN
+F 1 "68000D" H 4450 6400 50  0000 C CNN
 F 2 "" H 4800 4050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 4800 4050 50  0001 C CNN
+F 3 "https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf" H 4800 4050 50  0001 C CNN
 	1    4800 4050
 	1    0    0    -1  
 $EndComp
@@ -404,9 +404,9 @@ L Memory_Flash:SST39SF040 U307
 U 1 1 60604C64
 P 10950 2900
 F 0 "U307" H 11150 4200 50  0000 C CNN
-F 1 "74LS32" H 11300 1700 50  0000 C CNN
+F 1 "SST39SF040" H 11300 1700 50  0000 C CNN
 F 2 "" H 10950 3200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 10950 3200 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25022B.pdf" H 10950 3200 50  0001 C CNN
 	1    10950 2900
 	1    0    0    -1  
 $EndComp
@@ -415,9 +415,9 @@ L Memory_RAM:AS6C4008-55PCN U309
 U 1 1 606084B2
 P 14100 2650
 F 0 "U309" H 14250 3750 50  0000 C CNN
-F 1 "74LS32" H 14500 1600 50  0000 C CNN
-F 2 "" H 14100 2750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 14100 2750 50  0001 C CNN
+F 1 "AS6C4008-55PCN" H 14500 1600 50  0000 C CNN
+F 2 "Package_DIP:DIP-32_W15.24mm" H 14100 2750 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 14100 2750 50  0001 C CNN
 	1    14100 2650
 	1    0    0    -1  
 $EndComp
@@ -748,9 +748,9 @@ L Memory_Flash:SST39SF040 U308
 U 1 1 6082A368
 P 10950 6350
 F 0 "U308" H 11150 7650 50  0000 C CNN
-F 1 "74LS32" H 11300 5150 50  0000 C CNN
+F 1 "SST39SF040" H 11300 5150 50  0000 C CNN
 F 2 "" H 10950 6650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 10950 6650 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25022B.pdf" H 10950 6650 50  0001 C CNN
 	1    10950 6350
 	1    0    0    -1  
 $EndComp
@@ -759,9 +759,9 @@ L Memory_RAM:AS6C4008-55PCN U310
 U 1 1 6082A36E
 P 14100 6100
 F 0 "U310" H 14250 7200 50  0000 C CNN
-F 1 "74LS32" H 14500 5050 50  0000 C CNN
-F 2 "" H 14100 6200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 14100 6200 50  0001 C CNN
+F 1 "AS6C4008-55PCN" H 14500 5050 50  0000 C CNN
+F 2 "Package_DIP:DIP-32_W15.24mm" H 14100 6200 50  0001 C CNN
+F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 14100 6200 50  0001 C CNN
 	1    14100 6100
 	1    0    0    -1  
 $EndComp
@@ -1156,9 +1156,9 @@ L Timer:NE555P U303
 U 1 1 609F2A6D
 P 4300 8900
 F 0 "U303" H 4100 9300 50  0000 C CNN
-F 1 "74LS32" H 4500 9300 50  0000 C CNN
-F 2 "" H 4950 8500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5150 8500 50  0001 C CNN
+F 1 "NE555P" H 4500 9300 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 4950 8500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 5150 8500 50  0001 C CNN
 	1    4300 8900
 	1    0    0    -1  
 $EndComp
@@ -1426,7 +1426,7 @@ L 74xx:74LS06 U302
 U 2 1 60CD0F91
 P 2450 6500
 F 0 "U302" H 2450 6817 50  0000 C CNN
-F 1 "74LS32" H 2450 6726 50  0000 C CNN
+F 1 "74LS06" H 2450 6726 50  0000 C CNN
 F 2 "" H 2450 6500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 2450 6500 50  0001 C CNN
 	2    2450 6500
@@ -1437,7 +1437,7 @@ L 74xx:74LS06 U302
 U 3 1 60CD2917
 P 2450 7050
 F 0 "U302" H 2450 7367 50  0000 C CNN
-F 1 "74LS32" H 2450 7276 50  0000 C CNN
+F 1 "74LS06" H 2450 7276 50  0000 C CNN
 F 2 "" H 2450 7050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 2450 7050 50  0001 C CNN
 	3    2450 7050
@@ -1710,7 +1710,7 @@ L 74xx:74LS06 U302
 U 7 1 60673C86
 P 6200 10250
 F 0 "U302" H 6000 10600 50  0000 C CNN
-F 1 "74LS32" H 6000 9900 50  0000 C CNN
+F 1 "74LS06" H 6000 9900 50  0000 C CNN
 F 2 "" H 6200 10250 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 6200 10250 50  0001 C CNN
 	7    6200 10250
@@ -2156,6 +2156,83 @@ Wire Wire Line
 Wire Wire Line
 	15000 9400 14550 9400
 Connection ~ 14550 9400
+Text Label 13350 1750 0    50   ~ 0
+A1
+Text Label 13350 1850 0    50   ~ 0
+A2
+Text Label 13350 1950 0    50   ~ 0
+A3
+Text Label 13350 2050 0    50   ~ 0
+A4
+Text Label 13350 2150 0    50   ~ 0
+A5
+Text Label 13350 2250 0    50   ~ 0
+A6
+Text Label 13350 2350 0    50   ~ 0
+A7
+Text Label 13350 2450 0    50   ~ 0
+A8
+Text Label 13350 2550 0    50   ~ 0
+A9
+Text Label 13350 2650 0    50   ~ 0
+A10
+Text Label 13350 2750 0    50   ~ 0
+A11
+Text Label 13350 2850 0    50   ~ 0
+A12
+Text Label 13350 2950 0    50   ~ 0
+A13
+Text Label 13350 3050 0    50   ~ 0
+A14
+Text Label 13350 3150 0    50   ~ 0
+A15
+Text Label 13350 3250 0    50   ~ 0
+A16
+Text Label 13350 3350 0    50   ~ 0
+A17
+Text Label 13350 3450 0    50   ~ 0
+A18
+Text Label 13350 3550 0    50   ~ 0
+A19
+Text Label 13350 5200 0    50   ~ 0
+A1
+Text Label 13350 5300 0    50   ~ 0
+A2
+Text Label 13350 5400 0    50   ~ 0
+A3
+Text Label 13350 5500 0    50   ~ 0
+A4
+Text Label 13350 5600 0    50   ~ 0
+A5
+Text Label 13350 5700 0    50   ~ 0
+A6
+Text Label 13350 5800 0    50   ~ 0
+A7
+Text Label 13350 5900 0    50   ~ 0
+A8
+Text Label 13350 6000 0    50   ~ 0
+A9
+Text Label 13350 6100 0    50   ~ 0
+A10
+Text Label 13350 6200 0    50   ~ 0
+A11
+Text Label 13350 6300 0    50   ~ 0
+A12
+Text Label 13350 6400 0    50   ~ 0
+A13
+Text Label 13350 6500 0    50   ~ 0
+A14
+Text Label 13350 6600 0    50   ~ 0
+A15
+Text Label 13350 6700 0    50   ~ 0
+A16
+Text Label 13350 6800 0    50   ~ 0
+A17
+Text Label 13350 6900 0    50   ~ 0
+A18
+Text Label 13350 7000 0    50   ~ 0
+A19
+NoConn ~ 3800 2650
 Wire Bus Line
 	3400 2000 3400 2250
 Wire Bus Line
