@@ -11,4 +11,16 @@ K ATX PSU
 F https://www.intel.com/content/dam/www/public/us/en/documents/guides/power-supply-design-guide-june.pdf#page=33
 $ENDCMP
 #
+$CMP D68K_64PIN_BOARD
+D DIN41612 C 64 Pin Male header for expansion boards
+$ENDCMP
+#
+$CMP D68K_64PIN_PCB
+D DIN41612 C 64 Pin Female header for motherboard
+$ENDCMP
+#
+$CMP D68K_96PIN_PCB
+D DIN41612 C 96 Pin Female header for motherboard
+$ENDCMP
+#
 #End Doc Library
