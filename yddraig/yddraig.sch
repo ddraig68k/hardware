@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 6
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -308,20 +308,6 @@ Wire Wire Line
 Connection ~ 6800 3350
 Wire Wire Line
 	6800 3350 5400 3350
-$Sheet
-S 3650 6150 1050 1250
-U 605A6307
-F0 "DRAM Interface" 50
-F1 "dram.sch" 50
-F2 "D[0..15]" B R 4700 6400 50 
-F3 "A[1..23]" I R 4700 6300 50 
-F4 "~CAS0" I R 4700 6600 50 
-F5 "~CAS1" I R 4700 6700 50 
-F6 "~RAS0" I R 4700 6800 50 
-F7 "~RAS1" I R 4700 6900 50 
-F8 "~DRAM_WE" I R 4700 7000 50 
-F9 "DRAM_MUX" I R 4700 7100 50 
-$EndSheet
 Wire Wire Line
 	5550 5800 5550 4950
 Wire Wire Line
@@ -337,21 +323,21 @@ Wire Wire Line
 Wire Bus Line
 	5000 3350 5000 6400
 Wire Bus Line
-	5000 6400 4700 6400
+	5000 6400 4650 6400
 Connection ~ 5000 3350
 Wire Bus Line
 	5100 3250 5100 6300
 Wire Bus Line
-	5100 6300 4700 6300
+	5100 6300 4650 6300
 Connection ~ 5100 3250
 Wire Wire Line
 	7250 4350 6200 4350
 Wire Wire Line
 	6200 4350 6200 6600
 Wire Wire Line
-	6200 6600 4700 6600
+	6200 6600 4650 6600
 Wire Wire Line
-	4700 6700 6300 6700
+	4650 6700 6300 6700
 Wire Wire Line
 	6300 6700 6300 4450
 Wire Wire Line
@@ -361,9 +347,9 @@ Wire Wire Line
 Wire Wire Line
 	6400 4550 6400 6800
 Wire Wire Line
-	6400 6800 4700 6800
+	6400 6800 4650 6800
 Wire Wire Line
-	4700 6900 6500 6900
+	4650 6900 6500 6900
 Wire Wire Line
 	6500 6900 6500 4650
 Wire Wire Line
@@ -373,15 +359,41 @@ Wire Wire Line
 Wire Wire Line
 	6600 4750 7250 4750
 Wire Wire Line
-	4700 7000 6600 7000
+	4650 7000 6600 7000
 Wire Wire Line
 	6700 7100 6700 4850
 Wire Wire Line
 	6700 4850 7250 4850
 Wire Wire Line
-	4700 7100 6700 7100
+	4650 7100 6700 7100
 Wire Wire Line
 	4650 5350 7250 5350
 Wire Wire Line
 	4650 5250 7250 5250
+$Sheet
+S 10000 6000 950  1000
+U 6090D430
+F0 "IDE Interface" 50
+F1 "ide.sch" 50
+$EndSheet
+$Sheet
+S 7250 6000 1350 1000
+U 6090D49E
+F0 "Real Time Clock" 50
+F1 "rtc.sch" 50
+$EndSheet
+$Sheet
+S 3550 6150 1100 1150
+U 605A6307
+F0 "DRAM Interface" 50
+F1 "dram.sch" 50
+F2 "D[0..15]" B R 4650 6400 50 
+F3 "A[1..23]" I R 4650 6300 50 
+F4 "~CAS0" I R 4650 6600 50 
+F5 "~CAS1" I R 4650 6700 50 
+F6 "~RAS0" I R 4650 6800 50 
+F7 "~RAS1" I R 4650 6900 50 
+F8 "~DRAM_WE" I R 4650 7000 50 
+F9 "DRAM_MUX" I R 4650 7100 50 
+$EndSheet
 $EndSCHEMATC

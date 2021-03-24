@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 6 6
+Sheet 8 8
 Title ""
 Date ""
 Rev ""
@@ -343,21 +343,10 @@ L Device:R_Pack08 RN?
 U 1 1 605E58A3
 P 6450 4100
 F 0 "RN?" V 5833 4100 50  0000 C CNN
-F 1 "R_Pack08" V 5924 4100 50  0000 C CNN
+F 1 "22R" V 5924 4100 50  0000 C CNN
 F 2 "" V 6925 4100 50  0001 C CNN
 F 3 "~" H 6450 4100 50  0001 C CNN
 	1    6450 4100
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Pack08 RN?
-U 1 1 605E9896
-P 6400 7700
-F 0 "RN?" V 5783 7700 50  0000 C CNN
-F 1 "R_Pack08" V 5874 7700 50  0000 C CNN
-F 2 "" V 6875 7700 50  0001 C CNN
-F 3 "~" H 6400 7700 50  0001 C CNN
-	1    6400 7700
 	0    1    1    0   
 $EndComp
 Entry Wire Line
@@ -1166,4 +1155,15 @@ Wire Wire Line
 	14800 6400 14350 6400
 Text HLabel 2950 3400 0    50   Input ~ 0
 DRAM_MUX
+$Comp
+L Device:R_Pack08 RN?
+U 1 1 605E9896
+P 6400 7700
+F 0 "RN?" V 5783 7700 50  0000 C CNN
+F 1 "22R" V 5874 7700 50  0000 C CNN
+F 2 "" V 6875 7700 50  0001 C CNN
+F 3 "~" H 6400 7700 50  0001 C CNN
+	1    6400 7700
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
