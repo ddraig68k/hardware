@@ -23,4 +23,10 @@ $CMP D68K_96PIN_PCB
 D DIN41612 C 96 Pin Female header for motherboard
 $ENDCMP
 #
+$CMP Mini-DIN-6
+D 6-pin Mini-DIN connector
+K Mini-DIN
+F http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf
+$ENDCMP
+#
 #End Doc Library
