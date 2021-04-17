@@ -283,7 +283,7 @@ BD15
 Wire Bus Line
 	4300 2800 4650 2800
 Text Label 1750 2800 0    50   ~ 0
-BA[1..19]
+BA[0..19]
 Wire Bus Line
 	1750 2800 2100 2800
 Text Label 4300 2800 0    50   ~ 0
@@ -363,32 +363,32 @@ U 608F2704
 F0 "Expansion Buffers" 50
 F1 "expansionbuffers.sch" 50
 F2 "A[1..23]" I L 11250 7800 50 
-F3 "~AS" I L 11250 8400 50 
-F4 "~EXT_UDS" I L 11250 9400 50 
-F5 "~EXT_LDS" I L 11250 9500 50 
-F6 "~RD~WR" I L 11250 8900 50 
-F7 "BA[1..19]" O R 12900 7800 50 
-F8 "BD[0..15]" B R 12900 7900 50 
-F9 "D[0..15]" B L 11250 7900 50 
-F10 "~RESET" I L 11250 8300 50 
-F11 "~LDS" I L 11250 8500 50 
-F12 "~UDS" I L 11250 8600 50 
-F13 "RD~WR" I L 11250 8800 50 
-F14 "~VMA" I L 11250 8700 50 
-F15 "E" I L 11250 8200 50 
-F16 "CLK10" I L 11250 8100 50 
-F17 "~BRESET" O R 12900 8300 50 
-F18 "~BLDS" O R 12900 8500 50 
-F19 "~BUDS" O R 12900 8600 50 
-F20 "BRD~WR" O R 12900 8800 50 
-F21 "~BAS" O R 12900 8400 50 
-F22 "~BVMA" O R 12900 8700 50 
-F23 "BE" O R 12900 8200 50 
-F24 "BCLK10" O R 12900 8100 50 
-F25 "CS_EXTREG[1..4]" I L 11250 9100 50 
-F26 "CS_EXTDATA[1..4]" I L 11250 9200 50 
-F27 "~BCS_EXTREG[1..4]" O R 12900 9100 50 
-F28 "~BCS_EXTDATA[1..4]" O R 12900 9200 50 
+F3 "~EXT_UDS" I L 11250 9400 50 
+F4 "~EXT_LDS" I L 11250 9500 50 
+F5 "~RD~WR" I L 11250 8900 50 
+F6 "BA[0..19]" O R 12900 7800 50 
+F7 "BD[0..15]" B R 12900 7900 50 
+F8 "D[0..15]" B L 11250 7900 50 
+F9 "~RESET" I L 11250 8250 50 
+F10 "~LDS" I L 11250 8600 50 
+F11 "~UDS" I L 11250 8700 50 
+F12 "RD~WR" I L 11250 8800 50 
+F13 "CLK10" I L 11250 8150 50 
+F14 "~BRESET" O R 12900 8250 50 
+F15 "~BLDS" O R 12900 8500 50 
+F16 "~BUDS" O R 12900 8600 50 
+F17 "BRD~WR" O R 12900 8800 50 
+F18 "BCLK10" O R 12900 8150 50 
+F19 "CS_EXTREG[1..4]" I L 11250 9100 50 
+F20 "CS_EXTDATA[1..4]" I L 11250 9200 50 
+F21 "~BCS_EXTREG[1..4]" O R 12900 9100 50 
+F22 "~BCS_EXTDATA[1..4]" O R 12900 9200 50 
+F23 "A0" I L 11250 8000 50 
+F24 "~AS" I L 11250 8500 50 
+F25 "~IACK" I L 11250 8400 50 
+F26 "~BIACK" O R 12900 8400 50 
+F27 "BW1" O R 12900 9450 50 
+F28 "BW0" O R 12900 9350 50 
 $EndSheet
 Text HLabel 11000 7900 0    50   BiDi ~ 0
 D[0..15]
@@ -397,29 +397,21 @@ A[0..23]
 Text Label 13250 7900 0    50   ~ 0
 BD[0..15]
 Text Label 13250 7800 0    50   ~ 0
-BA[1..19]
+BA[0..19]
 Wire Bus Line
 	11000 7800 11250 7800
 Wire Bus Line
 	11250 7900 11000 7900
-Text HLabel 11000 8100 0    50   Output ~ 0
+Text HLabel 11000 8150 0    50   Output ~ 0
 CLK10
-Wire Wire Line
-	11250 8100 11000 8100
-Text Label 13250 8100 0    50   ~ 0
+Text Label 13250 8150 0    50   ~ 0
 BCLK10
-Text Label 13250 8200 0    50   ~ 0
-BE
-Text Label 13250 8300 0    50   ~ 0
+Text Label 13250 8250 0    50   ~ 0
 ~BRESET
-Text Label 13250 8400 0    50   ~ 0
-~BAS
 Text Label 13250 8500 0    50   ~ 0
 ~BLDS
 Text Label 13250 8600 0    50   ~ 0
 ~BUDS
-Text Label 13250 8700 0    50   ~ 0
-~BVMA
 Text Label 13250 8800 0    50   ~ 0
 BRD~WR
 Text Label 13250 9100 0    50   ~ 0
@@ -428,16 +420,6 @@ Text Label 13250 9200 0    50   ~ 0
 ~BCS_EXTDATA[1..4]
 Wire Wire Line
 	12900 8800 13250 8800
-Wire Wire Line
-	13250 8700 12900 8700
-Wire Wire Line
-	13250 8400 12900 8400
-Wire Wire Line
-	12900 8300 13250 8300
-Wire Wire Line
-	13250 8200 12900 8200
-Wire Wire Line
-	12900 8100 13250 8100
 Wire Bus Line
 	12900 9100 13250 9100
 Wire Bus Line
@@ -446,18 +428,12 @@ Wire Bus Line
 	13250 7800 12900 7800
 Wire Bus Line
 	12900 7900 13250 7900
-Text HLabel 11000 8200 0    50   Input ~ 0
-E
-Text HLabel 11000 8300 0    50   Input ~ 0
+Text HLabel 11000 8250 0    50   Input ~ 0
 ~RESET
-Text HLabel 11000 8400 0    50   Input ~ 0
-~AS
-Text HLabel 11000 8500 0    50   Input ~ 0
-~LDS
 Text HLabel 11000 8600 0    50   Input ~ 0
-~UDS
+~LDS
 Text HLabel 11000 8700 0    50   Input ~ 0
-~VMA
+~UDS
 Text HLabel 11000 8800 0    50   Input ~ 0
 RD~WR
 Text HLabel 11000 8900 0    50   Input ~ 0
@@ -483,17 +459,7 @@ Wire Wire Line
 Wire Wire Line
 	11250 8800 11000 8800
 Wire Wire Line
-	11000 8700 11250 8700
-Wire Wire Line
 	11250 8600 11000 8600
-Wire Wire Line
-	11000 8500 11250 8500
-Wire Wire Line
-	11250 8400 11000 8400
-Wire Wire Line
-	11000 8300 11250 8300
-Wire Wire Line
-	11250 8200 11000 8200
 $Comp
 L Ddraig:D68K_64PIN_PCB EXP?
 U 1 1 60864007
@@ -513,18 +479,12 @@ Text HLabel 1700 7450 0    50   Output ~ 0
 ~EXT_INT[1..3]
 Text HLabel 5350 8450 2    50   Output ~ 0
 ~EXT_BERR
-Text HLabel 1950 8900 0    50   Output ~ 0
-~EXT_VPA
 Text Label 4050 4900 0    50   ~ 0
 ~EXT_BERR1
 Wire Wire Line
 	3750 5000 4050 5000
 Text Label 2300 5150 2    50   ~ 0
 ~DTACK_EXT1
-Text Label 2200 8900 0    50   ~ 0
-~EXT_VPA
-Wire Wire Line
-	1950 8900 2200 8900
 Entry Wire Line
 	7250 8200 7350 8300
 Entry Wire Line
@@ -752,10 +712,10 @@ Wire Wire Line
 Wire Wire Line
 	3150 7550 3150 7600
 $Comp
-L power:+5V #PWR0809
+L power:+5V #PWR0811
 U 1 1 60C29C4E
 P 7950 7550
-F 0 "#PWR0809" H 7950 7400 50  0001 C CNN
+F 0 "#PWR0811" H 7950 7400 50  0001 C CNN
 F 1 "+5V" H 7965 7723 50  0000 C CNN
 F 2 "" H 7950 7550 50  0001 C CNN
 F 3 "" H 7950 7550 50  0001 C CNN
@@ -785,10 +745,10 @@ NoConn ~ 8450 8000
 NoConn ~ 8550 8000
 NoConn ~ 8650 8000
 $Comp
-L power:+5V #PWR0810
+L power:+5V #PWR0812
 U 1 1 60E0CFEA
 P 9100 9500
-F 0 "#PWR0810" H 9100 9350 50  0001 C CNN
+F 0 "#PWR0812" H 9100 9350 50  0001 C CNN
 F 1 "+5V" H 9115 9673 50  0000 C CNN
 F 2 "" H 9100 9500 50  0001 C CNN
 F 3 "" H 9100 9500 50  0001 C CNN
@@ -796,10 +756,10 @@ F 3 "" H 9100 9500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0811
+L power:GND #PWR0813
 U 1 1 60E0D546
 P 9100 10600
-F 0 "#PWR0811" H 9100 10350 50  0001 C CNN
+F 0 "#PWR0813" H 9100 10350 50  0001 C CNN
 F 1 "GND" H 9105 10427 50  0000 C CNN
 F 2 "" H 9100 10600 50  0001 C CNN
 F 3 "" H 9100 10600 50  0001 C CNN
@@ -834,8 +794,8 @@ L power:GND #PWR?
 U 1 1 60F85423
 P 6400 10350
 AR Path="/6058AC66/60F85423" Ref="#PWR?"  Part="1" 
-AR Path="/60863516/60F85423" Ref="#PWR0815"  Part="1" 
-F 0 "#PWR0815" H 6400 10100 50  0001 C CNN
+AR Path="/60863516/60F85423" Ref="#PWR0809"  Part="1" 
+F 0 "#PWR0809" H 6400 10100 50  0001 C CNN
 F 1 "GND" H 6405 10177 50  0000 C CNN
 F 2 "" H 6400 10350 50  0001 C CNN
 F 3 "" H 6400 10350 50  0001 C CNN
@@ -868,8 +828,8 @@ L power:+5V #PWR?
 U 1 1 60F85433
 P 6400 9650
 AR Path="/6058AC66/60F85433" Ref="#PWR?"  Part="1" 
-AR Path="/60863516/60F85433" Ref="#PWR0814"  Part="1" 
-F 0 "#PWR0814" H 6400 9500 50  0001 C CNN
+AR Path="/60863516/60F85433" Ref="#PWR0808"  Part="1" 
+F 0 "#PWR0808" H 6400 9500 50  0001 C CNN
 F 1 "+5V" H 6415 9823 50  0000 C CNN
 F 2 "" H 6400 9650 50  0001 C CNN
 F 3 "" H 6400 9650 50  0001 C CNN
@@ -916,18 +876,7 @@ Wire Wire Line
 Wire Wire Line
 	3750 4900 4050 4900
 Text Label 4050 5000 0    50   ~ 0
-~EXT_IACK1
-$Comp
-L power:+5V #PWR?
-U 1 1 6088870C
-P 2150 10050
-F 0 "#PWR?" H 2150 9900 50  0001 C CNN
-F 1 "+5V" H 2165 10223 50  0000 C CNN
-F 2 "" H 2150 10050 50  0001 C CNN
-F 3 "" H 2150 10050 50  0001 C CNN
-	1    2150 10050
-	1    0    0    -1  
-$EndComp
+~BIACK
 Wire Wire Line
 	5800 2700 6000 2700
 Wire Wire Line
@@ -978,29 +927,1133 @@ Wire Wire Line
 Connection ~ 7250 1600
 Wire Wire Line
 	7250 1600 7250 2350
-Text Label 1950 10150 2    50   ~ 0
-BW1
-Text Label 1950 10250 2    50   ~ 0
+Wire Wire Line
+	2800 1400 4050 1400
+Wire Wire Line
+	2500 1500 3950 1500
+Wire Wire Line
+	2200 1600 3850 1600
+Wire Wire Line
+	1900 1700 2500 1700
+Wire Wire Line
+	1600 1800 2400 1800
+Wire Wire Line
+	11000 8700 11250 8700
+Wire Wire Line
+	11250 8150 11000 8150
+Wire Wire Line
+	11000 8250 11250 8250
+Text HLabel 11000 8500 0    50   Input ~ 0
+~AS
+Text HLabel 11000 8400 0    50   Input ~ 0
+~IACK
+Wire Wire Line
+	11000 8500 11250 8500
+Wire Wire Line
+	11250 8400 11000 8400
+Wire Wire Line
+	13250 8250 12900 8250
+Wire Wire Line
+	12900 8150 13250 8150
+Text Label 13250 8400 0    50   ~ 0
+~BIACK
+Wire Wire Line
+	12900 8400 13250 8400
+Text Label 13250 9350 0    50   ~ 0
 BW0
+Text Label 13250 9450 0    50   ~ 0
+BW1
+Wire Wire Line
+	12900 9350 13250 9350
+Wire Wire Line
+	13250 9450 12900 9450
+Text Label 2300 5750 2    50   ~ 0
+BW1
+Text Label 2300 5650 2    50   ~ 0
+BW0
+Wire Wire Line
+	2600 5750 2300 5750
+Wire Wire Line
+	2300 5650 2600 5650
+Entry Wire Line
+	2100 2800 2200 2900
+Wire Wire Line
+	2600 2900 2200 2900
+Text Label 2300 2900 0    50   ~ 0
+BA0
+Entry Wire Line
+	7600 4500 7700 4400
+Entry Wire Line
+	7600 4500 7700 4400
+Entry Wire Line
+	7600 4400 7700 4300
+Entry Wire Line
+	7600 4300 7700 4200
+Entry Wire Line
+	7600 4200 7700 4100
+Entry Wire Line
+	7600 4100 7700 4000
+Entry Wire Line
+	7600 4000 7700 3900
+Entry Wire Line
+	7600 3900 7700 3800
+Entry Wire Line
+	7600 3800 7700 3700
+Entry Wire Line
+	7600 3700 7700 3600
+Entry Wire Line
+	7600 3600 7700 3500
+Entry Wire Line
+	7600 3500 7700 3400
+Entry Wire Line
+	7600 3400 7700 3300
+Entry Wire Line
+	7600 3300 7700 3200
+Entry Wire Line
+	7600 3200 7700 3100
+Entry Wire Line
+	7600 3100 7700 3000
+Entry Wire Line
+	7600 3000 7700 2900
+Entry Wire Line
+	5500 2900 5600 3000
+Entry Wire Line
+	5500 3000 5600 3100
+Entry Wire Line
+	5500 3100 5600 3200
+Entry Wire Line
+	5500 3200 5600 3300
+Entry Wire Line
+	5500 3300 5600 3400
+Entry Wire Line
+	5500 3400 5600 3500
+Entry Wire Line
+	5500 3500 5600 3600
+Entry Wire Line
+	5500 3600 5600 3700
+Entry Wire Line
+	5500 3700 5600 3800
+Entry Wire Line
+	5500 3800 5600 3900
+Entry Wire Line
+	5500 3900 5600 4000
+Entry Wire Line
+	5500 4000 5600 4100
+Entry Wire Line
+	5500 4100 5600 4200
+Entry Wire Line
+	5500 4200 5600 4300
+Entry Wire Line
+	5500 4300 5600 4400
+Entry Wire Line
+	5500 4400 5600 4500
+Entry Wire Line
+	5500 4500 5600 4600
+Entry Wire Line
+	5500 4600 5600 4700
+Entry Wire Line
+	5500 4700 5600 4800
+Wire Wire Line
+	5600 3000 6000 3000
+Wire Wire Line
+	5600 3100 6000 3100
+Wire Wire Line
+	5600 3200 6000 3200
+Wire Wire Line
+	5600 3300 6000 3300
+Wire Wire Line
+	5600 3400 6000 3400
+Wire Wire Line
+	5600 3500 6000 3500
+Wire Wire Line
+	5600 3600 6000 3600
+Wire Wire Line
+	5600 3700 6000 3700
+Wire Wire Line
+	5600 3800 6000 3800
+Wire Wire Line
+	5600 3900 6000 3900
+Wire Wire Line
+	5600 4000 6000 4000
+Wire Wire Line
+	5600 4100 6000 4100
+Wire Wire Line
+	5600 4200 6000 4200
+Wire Wire Line
+	5600 4300 6000 4300
+Wire Wire Line
+	5600 4400 6000 4400
+Wire Wire Line
+	5600 4500 6000 4500
+Wire Wire Line
+	5600 4600 6000 4600
+Wire Wire Line
+	5600 4700 6000 4700
+Wire Wire Line
+	5600 4800 6000 4800
+Wire Wire Line
+	7150 3000 7600 3000
+Wire Wire Line
+	7150 3100 7600 3100
+Wire Wire Line
+	7150 3200 7600 3200
+Wire Wire Line
+	7150 3300 7600 3300
+Wire Wire Line
+	7150 3400 7600 3400
+Wire Wire Line
+	7150 3500 7600 3500
+Wire Wire Line
+	7150 3600 7600 3600
+Wire Wire Line
+	7150 3700 7600 3700
+Wire Wire Line
+	7150 3800 7600 3800
+Wire Wire Line
+	7150 3900 7600 3900
+Wire Wire Line
+	7150 4000 7600 4000
+Wire Wire Line
+	7150 4100 7600 4100
+Wire Wire Line
+	7150 4200 7600 4200
+Wire Wire Line
+	7150 4300 7600 4300
+Wire Wire Line
+	7150 4400 7600 4400
+Wire Wire Line
+	7150 4500 7600 4500
+Text Label 5700 3000 0    50   ~ 0
+BA1
+Text Label 5700 3100 0    50   ~ 0
+BA2
+Text Label 5700 3200 0    50   ~ 0
+BA3
+Text Label 5700 3300 0    50   ~ 0
+BA4
+Text Label 5700 3400 0    50   ~ 0
+BA5
+Text Label 5700 3500 0    50   ~ 0
+BA6
+Text Label 5700 3600 0    50   ~ 0
+BA7
+Text Label 5700 3700 0    50   ~ 0
+BA8
+Text Label 5700 3800 0    50   ~ 0
+BA9
+Text Label 5700 3900 0    50   ~ 0
+BA10
+Text Label 5700 4000 0    50   ~ 0
+BA11
+Text Label 5700 4100 0    50   ~ 0
+BA12
+Text Label 5700 4200 0    50   ~ 0
+BA13
+Text Label 5700 4300 0    50   ~ 0
+BA14
+Text Label 5700 4400 0    50   ~ 0
+BA15
+Text Label 5700 4500 0    50   ~ 0
+BA16
+Text Label 5700 4600 0    50   ~ 0
+BA17
+Text Label 5700 4700 0    50   ~ 0
+BA18
+Text Label 5700 4800 0    50   ~ 0
+BA19
+Text Label 7300 3000 0    50   ~ 0
+BD0
+Text Label 7300 3100 0    50   ~ 0
+BD1
+Text Label 7300 3200 0    50   ~ 0
+BD2
+Text Label 7300 3300 0    50   ~ 0
+BD3
+Text Label 7300 3400 0    50   ~ 0
+BD4
+Text Label 7300 3500 0    50   ~ 0
+BD5
+Text Label 7300 3600 0    50   ~ 0
+BD6
+Text Label 7300 3700 0    50   ~ 0
+BD7
+Text Label 7300 3800 0    50   ~ 0
+BD8
+Text Label 7300 3900 0    50   ~ 0
+BD9
+Text Label 7300 4000 0    50   ~ 0
+BD10
+Text Label 7300 4100 0    50   ~ 0
+BD11
+Text Label 7300 4200 0    50   ~ 0
+BD12
+Text Label 7300 4300 0    50   ~ 0
+BD13
+Text Label 7300 4400 0    50   ~ 0
+BD14
+Text Label 7300 4500 0    50   ~ 0
+BD15
+Wire Bus Line
+	7700 2800 8050 2800
+Text Label 5150 2800 0    50   ~ 0
+BA[0..19]
+Wire Bus Line
+	5150 2800 5500 2800
+Text Label 7700 2800 0    50   ~ 0
+BD[0..15]
+Text Label 5700 5950 2    50   ~ 0
+BCLK10
+Text Label 7450 5950 0    50   ~ 0
+~EXT_PD2
+Text Label 7450 5700 0    50   ~ 0
+~BCS_EXTDATA2
+Text Label 7450 5600 0    50   ~ 0
+~BCS_EXTREG2
+Text Label 7450 5400 0    50   ~ 0
+~BRESET
+Text Label 7450 5100 0    50   ~ 0
+~EXT_INT2
+Text Label 5700 5450 2    50   ~ 0
+BRD~WR
+Text Label 5700 5350 2    50   ~ 0
+~BUDS
+Text Label 5700 5250 2    50   ~ 0
+~BLDS
+Wire Wire Line
+	5700 5150 6000 5150
+Wire Wire Line
+	5700 5350 6000 5350
+Wire Wire Line
+	6000 5450 5700 5450
+Wire Wire Line
+	6000 5950 5700 5950
+Wire Wire Line
+	7150 5950 7450 5950
+Wire Wire Line
+	7450 5700 7150 5700
+Wire Wire Line
+	7150 5600 7450 5600
+Wire Wire Line
+	7450 5400 7150 5400
+Wire Wire Line
+	7450 5100 7150 5100
+Wire Wire Line
+	6850 6400 6850 6500
+Wire Wire Line
+	6850 6500 6750 6500
+Wire Wire Line
+	6600 6500 6600 6550
+Wire Wire Line
+	6600 6500 6550 6500
+Wire Wire Line
+	6350 6500 6350 6400
+Connection ~ 6600 6500
+Wire Wire Line
+	6450 6400 6450 6500
+Connection ~ 6450 6500
+Wire Wire Line
+	6450 6500 6350 6500
+Wire Wire Line
+	6550 6400 6550 6500
+Connection ~ 6550 6500
+Wire Wire Line
+	6550 6500 6450 6500
+Wire Wire Line
+	6650 6400 6650 6500
+Connection ~ 6650 6500
+Wire Wire Line
+	6650 6500 6600 6500
+Wire Wire Line
+	6750 6400 6750 6500
+Connection ~ 6750 6500
+Wire Wire Line
+	6750 6500 6650 6500
 $Comp
-L power:GND #PWR0807
-U 1 1 608CFF83
-P 2150 10350
-F 0 "#PWR0807" H 2150 10100 50  0001 C CNN
-F 1 "GND" H 2155 10177 50  0000 C CNN
-F 2 "" H 2150 10350 50  0001 C CNN
-F 3 "" H 2150 10350 50  0001 C CNN
-	1    2150 10350
+L Ddraig:D68K_64PIN_PCB EXP?
+U 1 1 60943723
+P 6600 4100
+AR Path="/60943723" Ref="EXP?"  Part="1" 
+AR Path="/60863516/60943723" Ref="EXP802"  Part="1" 
+F 0 "EXP802" H 6575 6165 50  0000 C CNN
+F 1 "D68K_64PIN_PCB" H 6575 6074 50  0000 C CNN
+F 2 "Ddraig:DIN41612_C_2x32_Female_Vertical_THT" H 6450 2850 50  0001 C CNN
+F 3 "" H 6450 2850 50  0001 C CNN
+	1    6600 4100
 	1    0    0    -1  
 $EndComp
+Text Label 7450 4900 0    50   ~ 0
+~EXT_BERR2
 Wire Wire Line
-	1950 10150 2150 10150
+	7150 5000 7450 5000
+Text Label 5700 5150 2    50   ~ 0
+~DTACK_EXT2
 Wire Wire Line
-	2150 10150 2150 10050
+	5700 5250 6000 5250
 Wire Wire Line
-	1950 10250 2150 10250
+	7150 4900 7450 4900
+Text Label 7450 5000 0    50   ~ 0
+~BIACK
+Text Label 5700 5750 2    50   ~ 0
+BW1
+Text Label 5700 5650 2    50   ~ 0
+BW0
 Wire Wire Line
-	2150 10250 2150 10350
+	6000 5750 5700 5750
+Wire Wire Line
+	5700 5650 6000 5650
+Entry Wire Line
+	5500 2800 5600 2900
+Wire Wire Line
+	6000 2900 5600 2900
+Text Label 5700 2900 0    50   ~ 0
+BA0
+Entry Wire Line
+	11100 4500 11200 4400
+Entry Wire Line
+	11100 4500 11200 4400
+Entry Wire Line
+	11100 4400 11200 4300
+Entry Wire Line
+	11100 4300 11200 4200
+Entry Wire Line
+	11100 4200 11200 4100
+Entry Wire Line
+	11100 4100 11200 4000
+Entry Wire Line
+	11100 4000 11200 3900
+Entry Wire Line
+	11100 3900 11200 3800
+Entry Wire Line
+	11100 3800 11200 3700
+Entry Wire Line
+	11100 3700 11200 3600
+Entry Wire Line
+	11100 3600 11200 3500
+Entry Wire Line
+	11100 3500 11200 3400
+Entry Wire Line
+	11100 3400 11200 3300
+Entry Wire Line
+	11100 3300 11200 3200
+Entry Wire Line
+	11100 3200 11200 3100
+Entry Wire Line
+	11100 3100 11200 3000
+Entry Wire Line
+	11100 3000 11200 2900
+Entry Wire Line
+	9000 2900 9100 3000
+Entry Wire Line
+	9000 3000 9100 3100
+Entry Wire Line
+	9000 3100 9100 3200
+Entry Wire Line
+	9000 3200 9100 3300
+Entry Wire Line
+	9000 3300 9100 3400
+Entry Wire Line
+	9000 3400 9100 3500
+Entry Wire Line
+	9000 3500 9100 3600
+Entry Wire Line
+	9000 3600 9100 3700
+Entry Wire Line
+	9000 3700 9100 3800
+Entry Wire Line
+	9000 3800 9100 3900
+Entry Wire Line
+	9000 3900 9100 4000
+Entry Wire Line
+	9000 4000 9100 4100
+Entry Wire Line
+	9000 4100 9100 4200
+Entry Wire Line
+	9000 4200 9100 4300
+Entry Wire Line
+	9000 4300 9100 4400
+Entry Wire Line
+	9000 4400 9100 4500
+Entry Wire Line
+	9000 4500 9100 4600
+Entry Wire Line
+	9000 4600 9100 4700
+Entry Wire Line
+	9000 4700 9100 4800
+Wire Wire Line
+	9100 3000 9500 3000
+Wire Wire Line
+	9100 3100 9500 3100
+Wire Wire Line
+	9100 3200 9500 3200
+Wire Wire Line
+	9100 3300 9500 3300
+Wire Wire Line
+	9100 3400 9500 3400
+Wire Wire Line
+	9100 3500 9500 3500
+Wire Wire Line
+	9100 3600 9500 3600
+Wire Wire Line
+	9100 3700 9500 3700
+Wire Wire Line
+	9100 3800 9500 3800
+Wire Wire Line
+	9100 3900 9500 3900
+Wire Wire Line
+	9100 4000 9500 4000
+Wire Wire Line
+	9100 4100 9500 4100
+Wire Wire Line
+	9100 4200 9500 4200
+Wire Wire Line
+	9100 4300 9500 4300
+Wire Wire Line
+	9100 4400 9500 4400
+Wire Wire Line
+	9100 4500 9500 4500
+Wire Wire Line
+	9100 4600 9500 4600
+Wire Wire Line
+	9100 4700 9500 4700
+Wire Wire Line
+	9100 4800 9500 4800
+Wire Wire Line
+	10650 3000 11100 3000
+Wire Wire Line
+	10650 3100 11100 3100
+Wire Wire Line
+	10650 3200 11100 3200
+Wire Wire Line
+	10650 3300 11100 3300
+Wire Wire Line
+	10650 3400 11100 3400
+Wire Wire Line
+	10650 3500 11100 3500
+Wire Wire Line
+	10650 3600 11100 3600
+Wire Wire Line
+	10650 3700 11100 3700
+Wire Wire Line
+	10650 3800 11100 3800
+Wire Wire Line
+	10650 3900 11100 3900
+Wire Wire Line
+	10650 4000 11100 4000
+Wire Wire Line
+	10650 4100 11100 4100
+Wire Wire Line
+	10650 4200 11100 4200
+Wire Wire Line
+	10650 4300 11100 4300
+Wire Wire Line
+	10650 4400 11100 4400
+Wire Wire Line
+	10650 4500 11100 4500
+Text Label 9200 3000 0    50   ~ 0
+BA1
+Text Label 9200 3100 0    50   ~ 0
+BA2
+Text Label 9200 3200 0    50   ~ 0
+BA3
+Text Label 9200 3300 0    50   ~ 0
+BA4
+Text Label 9200 3400 0    50   ~ 0
+BA5
+Text Label 9200 3500 0    50   ~ 0
+BA6
+Text Label 9200 3600 0    50   ~ 0
+BA7
+Text Label 9200 3700 0    50   ~ 0
+BA8
+Text Label 9200 3800 0    50   ~ 0
+BA9
+Text Label 9200 3900 0    50   ~ 0
+BA10
+Text Label 9200 4000 0    50   ~ 0
+BA11
+Text Label 9200 4100 0    50   ~ 0
+BA12
+Text Label 9200 4200 0    50   ~ 0
+BA13
+Text Label 9200 4300 0    50   ~ 0
+BA14
+Text Label 9200 4400 0    50   ~ 0
+BA15
+Text Label 9200 4500 0    50   ~ 0
+BA16
+Text Label 9200 4600 0    50   ~ 0
+BA17
+Text Label 9200 4700 0    50   ~ 0
+BA18
+Text Label 9200 4800 0    50   ~ 0
+BA19
+Text Label 10800 3000 0    50   ~ 0
+BD0
+Text Label 10800 3100 0    50   ~ 0
+BD1
+Text Label 10800 3200 0    50   ~ 0
+BD2
+Text Label 10800 3300 0    50   ~ 0
+BD3
+Text Label 10800 3400 0    50   ~ 0
+BD4
+Text Label 10800 3500 0    50   ~ 0
+BD5
+Text Label 10800 3600 0    50   ~ 0
+BD6
+Text Label 10800 3700 0    50   ~ 0
+BD7
+Text Label 10800 3800 0    50   ~ 0
+BD8
+Text Label 10800 3900 0    50   ~ 0
+BD9
+Text Label 10800 4000 0    50   ~ 0
+BD10
+Text Label 10800 4100 0    50   ~ 0
+BD11
+Text Label 10800 4200 0    50   ~ 0
+BD12
+Text Label 10800 4300 0    50   ~ 0
+BD13
+Text Label 10800 4400 0    50   ~ 0
+BD14
+Text Label 10800 4500 0    50   ~ 0
+BD15
+Wire Bus Line
+	11200 2800 11550 2800
+Text Label 8650 2800 0    50   ~ 0
+BA[0..19]
+Wire Bus Line
+	8650 2800 9000 2800
+Text Label 11200 2800 0    50   ~ 0
+BD[0..15]
+Text Label 9200 5950 2    50   ~ 0
+BCLK10
+Text Label 10950 5950 0    50   ~ 0
+~EXT_PD3
+Text Label 10950 5700 0    50   ~ 0
+~BCS_EXTDATA3
+Text Label 10950 5600 0    50   ~ 0
+~BCS_EXTREG3
+Text Label 10950 5400 0    50   ~ 0
+~BRESET
+Text Label 10950 5100 0    50   ~ 0
+~EXT_INT3
+Text Label 9200 5450 2    50   ~ 0
+BRD~WR
+Text Label 9200 5350 2    50   ~ 0
+~BUDS
+Text Label 9200 5250 2    50   ~ 0
+~BLDS
+Wire Wire Line
+	9200 5150 9500 5150
+Wire Wire Line
+	9200 5350 9500 5350
+Wire Wire Line
+	9500 5450 9200 5450
+Wire Wire Line
+	9500 5950 9200 5950
+Wire Wire Line
+	10650 5950 10950 5950
+Wire Wire Line
+	10950 5700 10650 5700
+Wire Wire Line
+	10650 5600 10950 5600
+Wire Wire Line
+	10950 5400 10650 5400
+Wire Wire Line
+	10950 5100 10650 5100
+Wire Wire Line
+	10350 6400 10350 6500
+Wire Wire Line
+	10350 6500 10250 6500
+Wire Wire Line
+	10100 6500 10100 6550
+Wire Wire Line
+	10100 6500 10050 6500
+Wire Wire Line
+	9850 6500 9850 6400
+Connection ~ 10100 6500
+Wire Wire Line
+	9950 6400 9950 6500
+Connection ~ 9950 6500
+Wire Wire Line
+	9950 6500 9850 6500
+Wire Wire Line
+	10050 6400 10050 6500
+Connection ~ 10050 6500
+Wire Wire Line
+	10050 6500 9950 6500
+Wire Wire Line
+	10150 6400 10150 6500
+Connection ~ 10150 6500
+Wire Wire Line
+	10150 6500 10100 6500
+Wire Wire Line
+	10250 6400 10250 6500
+Connection ~ 10250 6500
+Wire Wire Line
+	10250 6500 10150 6500
+$Comp
+L Ddraig:D68K_64PIN_PCB EXP?
+U 1 1 6095ABBF
+P 10100 4100
+AR Path="/6095ABBF" Ref="EXP?"  Part="1" 
+AR Path="/60863516/6095ABBF" Ref="EXP803"  Part="1" 
+F 0 "EXP803" H 10075 6165 50  0000 C CNN
+F 1 "D68K_64PIN_PCB" H 10075 6074 50  0000 C CNN
+F 2 "Ddraig:DIN41612_C_2x32_Female_Vertical_THT" H 9950 2850 50  0001 C CNN
+F 3 "" H 9950 2850 50  0001 C CNN
+	1    10100 4100
+	1    0    0    -1  
+$EndComp
+Text Label 10950 4900 0    50   ~ 0
+~EXT_BERR3
+Wire Wire Line
+	10650 5000 10950 5000
+Text Label 9200 5150 2    50   ~ 0
+~DTACK_EXT3
+Wire Wire Line
+	9200 5250 9500 5250
+Wire Wire Line
+	10650 4900 10950 4900
+Text Label 10950 5000 0    50   ~ 0
+~BIACK
+Text Label 9200 5750 2    50   ~ 0
+BW1
+Text Label 9200 5650 2    50   ~ 0
+BW0
+Wire Wire Line
+	9500 5750 9200 5750
+Wire Wire Line
+	9200 5650 9500 5650
+Entry Wire Line
+	9000 2800 9100 2900
+Wire Wire Line
+	9500 2900 9100 2900
+Text Label 9200 2900 0    50   ~ 0
+BA0
+Entry Wire Line
+	14500 4500 14600 4400
+Entry Wire Line
+	14500 4500 14600 4400
+Entry Wire Line
+	14500 4400 14600 4300
+Entry Wire Line
+	14500 4300 14600 4200
+Entry Wire Line
+	14500 4200 14600 4100
+Entry Wire Line
+	14500 4100 14600 4000
+Entry Wire Line
+	14500 4000 14600 3900
+Entry Wire Line
+	14500 3900 14600 3800
+Entry Wire Line
+	14500 3800 14600 3700
+Entry Wire Line
+	14500 3700 14600 3600
+Entry Wire Line
+	14500 3600 14600 3500
+Entry Wire Line
+	14500 3500 14600 3400
+Entry Wire Line
+	14500 3400 14600 3300
+Entry Wire Line
+	14500 3300 14600 3200
+Entry Wire Line
+	14500 3200 14600 3100
+Entry Wire Line
+	14500 3100 14600 3000
+Entry Wire Line
+	14500 3000 14600 2900
+Entry Wire Line
+	12400 2900 12500 3000
+Entry Wire Line
+	12400 3000 12500 3100
+Entry Wire Line
+	12400 3100 12500 3200
+Entry Wire Line
+	12400 3200 12500 3300
+Entry Wire Line
+	12400 3300 12500 3400
+Entry Wire Line
+	12400 3400 12500 3500
+Entry Wire Line
+	12400 3500 12500 3600
+Entry Wire Line
+	12400 3600 12500 3700
+Entry Wire Line
+	12400 3700 12500 3800
+Entry Wire Line
+	12400 3800 12500 3900
+Entry Wire Line
+	12400 3900 12500 4000
+Entry Wire Line
+	12400 4000 12500 4100
+Entry Wire Line
+	12400 4100 12500 4200
+Entry Wire Line
+	12400 4200 12500 4300
+Entry Wire Line
+	12400 4300 12500 4400
+Entry Wire Line
+	12400 4400 12500 4500
+Entry Wire Line
+	12400 4500 12500 4600
+Entry Wire Line
+	12400 4600 12500 4700
+Entry Wire Line
+	12400 4700 12500 4800
+Wire Wire Line
+	12500 3000 12900 3000
+Wire Wire Line
+	12500 3100 12900 3100
+Wire Wire Line
+	12500 3200 12900 3200
+Wire Wire Line
+	12500 3300 12900 3300
+Wire Wire Line
+	12500 3400 12900 3400
+Wire Wire Line
+	12500 3500 12900 3500
+Wire Wire Line
+	12500 3600 12900 3600
+Wire Wire Line
+	12500 3700 12900 3700
+Wire Wire Line
+	12500 3800 12900 3800
+Wire Wire Line
+	12500 3900 12900 3900
+Wire Wire Line
+	12500 4000 12900 4000
+Wire Wire Line
+	12500 4100 12900 4100
+Wire Wire Line
+	12500 4200 12900 4200
+Wire Wire Line
+	12500 4300 12900 4300
+Wire Wire Line
+	12500 4400 12900 4400
+Wire Wire Line
+	12500 4500 12900 4500
+Wire Wire Line
+	12500 4600 12900 4600
+Wire Wire Line
+	12500 4700 12900 4700
+Wire Wire Line
+	12500 4800 12900 4800
+Wire Wire Line
+	14050 3000 14500 3000
+Wire Wire Line
+	14050 3100 14500 3100
+Wire Wire Line
+	14050 3200 14500 3200
+Wire Wire Line
+	14050 3300 14500 3300
+Wire Wire Line
+	14050 3400 14500 3400
+Wire Wire Line
+	14050 3500 14500 3500
+Wire Wire Line
+	14050 3600 14500 3600
+Wire Wire Line
+	14050 3700 14500 3700
+Wire Wire Line
+	14050 3800 14500 3800
+Wire Wire Line
+	14050 3900 14500 3900
+Wire Wire Line
+	14050 4000 14500 4000
+Wire Wire Line
+	14050 4100 14500 4100
+Wire Wire Line
+	14050 4200 14500 4200
+Wire Wire Line
+	14050 4300 14500 4300
+Wire Wire Line
+	14050 4400 14500 4400
+Wire Wire Line
+	14050 4500 14500 4500
+Text Label 12600 3000 0    50   ~ 0
+BA1
+Text Label 12600 3100 0    50   ~ 0
+BA2
+Text Label 12600 3200 0    50   ~ 0
+BA3
+Text Label 12600 3300 0    50   ~ 0
+BA4
+Text Label 12600 3400 0    50   ~ 0
+BA5
+Text Label 12600 3500 0    50   ~ 0
+BA6
+Text Label 12600 3600 0    50   ~ 0
+BA7
+Text Label 12600 3700 0    50   ~ 0
+BA8
+Text Label 12600 3800 0    50   ~ 0
+BA9
+Text Label 12600 3900 0    50   ~ 0
+BA10
+Text Label 12600 4000 0    50   ~ 0
+BA11
+Text Label 12600 4100 0    50   ~ 0
+BA12
+Text Label 12600 4200 0    50   ~ 0
+BA13
+Text Label 12600 4300 0    50   ~ 0
+BA14
+Text Label 12600 4400 0    50   ~ 0
+BA15
+Text Label 12600 4500 0    50   ~ 0
+BA16
+Text Label 12600 4600 0    50   ~ 0
+BA17
+Text Label 12600 4700 0    50   ~ 0
+BA18
+Text Label 12600 4800 0    50   ~ 0
+BA19
+Text Label 14200 3000 0    50   ~ 0
+BD0
+Text Label 14200 3100 0    50   ~ 0
+BD1
+Text Label 14200 3200 0    50   ~ 0
+BD2
+Text Label 14200 3300 0    50   ~ 0
+BD3
+Text Label 14200 3400 0    50   ~ 0
+BD4
+Text Label 14200 3500 0    50   ~ 0
+BD5
+Text Label 14200 3600 0    50   ~ 0
+BD6
+Text Label 14200 3700 0    50   ~ 0
+BD7
+Text Label 14200 3800 0    50   ~ 0
+BD8
+Text Label 14200 3900 0    50   ~ 0
+BD9
+Text Label 14200 4000 0    50   ~ 0
+BD10
+Text Label 14200 4100 0    50   ~ 0
+BD11
+Text Label 14200 4200 0    50   ~ 0
+BD12
+Text Label 14200 4300 0    50   ~ 0
+BD13
+Text Label 14200 4400 0    50   ~ 0
+BD14
+Text Label 14200 4500 0    50   ~ 0
+BD15
+Wire Bus Line
+	14600 2800 14950 2800
+Text Label 12050 2800 0    50   ~ 0
+BA[0..19]
+Wire Bus Line
+	12050 2800 12400 2800
+Text Label 14600 2800 0    50   ~ 0
+BD[0..15]
+Text Label 12600 5950 2    50   ~ 0
+BCLK10
+Text Label 14350 5950 0    50   ~ 0
+~EXT_PD4
+Text Label 14350 5700 0    50   ~ 0
+~BCS_EXTDATA4
+Text Label 14350 5600 0    50   ~ 0
+~BCS_EXTREG4
+Text Label 14350 5400 0    50   ~ 0
+~BRESET
+Text Label 12600 5450 2    50   ~ 0
+BRD~WR
+Text Label 12600 5350 2    50   ~ 0
+~BUDS
+Text Label 12600 5250 2    50   ~ 0
+~BLDS
+Wire Wire Line
+	12600 5150 12900 5150
+Wire Wire Line
+	12600 5350 12900 5350
+Wire Wire Line
+	12900 5450 12600 5450
+Wire Wire Line
+	12900 5950 12600 5950
+Wire Wire Line
+	14050 5950 14350 5950
+Wire Wire Line
+	14350 5700 14050 5700
+Wire Wire Line
+	14050 5600 14350 5600
+Wire Wire Line
+	14350 5400 14050 5400
+Wire Wire Line
+	13750 6400 13750 6500
+Wire Wire Line
+	13750 6500 13650 6500
+Wire Wire Line
+	13500 6500 13500 6550
+Wire Wire Line
+	13500 6500 13450 6500
+Wire Wire Line
+	13250 6500 13250 6400
+Connection ~ 13500 6500
+Wire Wire Line
+	13350 6400 13350 6500
+Connection ~ 13350 6500
+Wire Wire Line
+	13350 6500 13250 6500
+Wire Wire Line
+	13450 6400 13450 6500
+Connection ~ 13450 6500
+Wire Wire Line
+	13450 6500 13350 6500
+Wire Wire Line
+	13550 6400 13550 6500
+Connection ~ 13550 6500
+Wire Wire Line
+	13550 6500 13500 6500
+Wire Wire Line
+	13650 6400 13650 6500
+Connection ~ 13650 6500
+Wire Wire Line
+	13650 6500 13550 6500
+$Comp
+L Ddraig:D68K_64PIN_PCB EXP?
+U 1 1 6097F16D
+P 13500 4100
+AR Path="/6097F16D" Ref="EXP?"  Part="1" 
+AR Path="/60863516/6097F16D" Ref="EXP804"  Part="1" 
+F 0 "EXP804" H 13475 6165 50  0000 C CNN
+F 1 "D68K_64PIN_PCB" H 13475 6074 50  0000 C CNN
+F 2 "Ddraig:DIN41612_C_2x32_Female_Vertical_THT" H 13350 2850 50  0001 C CNN
+F 3 "" H 13350 2850 50  0001 C CNN
+	1    13500 4100
+	1    0    0    -1  
+$EndComp
+Text Label 14350 4900 0    50   ~ 0
+~EXT_BERR4
+Wire Wire Line
+	14050 5000 14350 5000
+Text Label 12600 5150 2    50   ~ 0
+~DTACK_EXT4
+Wire Wire Line
+	12600 5250 12900 5250
+Wire Wire Line
+	14050 4900 14350 4900
+Text Label 14350 5000 0    50   ~ 0
+~BIACK
+Text Label 12600 5750 2    50   ~ 0
+BW1
+Text Label 12600 5650 2    50   ~ 0
+BW0
+Wire Wire Line
+	12900 5750 12600 5750
+Wire Wire Line
+	12600 5650 12900 5650
+Entry Wire Line
+	12400 2800 12500 2900
+Wire Wire Line
+	12900 2900 12500 2900
+Text Label 12600 2900 0    50   ~ 0
+BA0
+Wire Wire Line
+	2600 2550 2500 2550
+Wire Wire Line
+	2500 2550 2500 2450
+Connection ~ 2500 1700
+Wire Wire Line
+	2500 1700 5900 1700
+Wire Wire Line
+	2600 2450 2500 2450
+Connection ~ 2500 2450
+Wire Wire Line
+	2500 2450 2500 2350
+Wire Wire Line
+	2600 2350 2500 2350
+Connection ~ 2500 2350
+Wire Wire Line
+	2500 2350 2500 1700
+Wire Wire Line
+	2600 2700 2400 2700
+Wire Wire Line
+	2400 2700 2400 1800
+Connection ~ 2400 1800
+Wire Wire Line
+	2400 1800 5800 1800
+Wire Wire Line
+	3750 2350 3850 2350
+Wire Wire Line
+	3850 2350 3850 1600
+Connection ~ 3850 1600
+Wire Wire Line
+	3850 1600 7250 1600
+Wire Wire Line
+	3750 2550 3950 2550
+Wire Wire Line
+	3950 2550 3950 1500
+Connection ~ 3950 1500
+Wire Wire Line
+	3950 1500 7350 1500
+Wire Wire Line
+	3750 2650 3950 2650
+Wire Wire Line
+	3950 2650 3950 2550
+Connection ~ 3950 2550
+Wire Wire Line
+	3750 2800 4050 2800
+Wire Wire Line
+	4050 2800 4050 1400
+Connection ~ 4050 1400
+Wire Wire Line
+	4050 1400 7450 1400
+$Comp
+L power:GND #PWR0807
+U 1 1 60C8E8C0
+P 3200 6550
+F 0 "#PWR0807" H 3200 6300 50  0001 C CNN
+F 1 "GND" H 3205 6377 50  0000 C CNN
+F 2 "" H 3200 6550 50  0001 C CNN
+F 3 "" H 3200 6550 50  0001 C CNN
+	1    3200 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0810
+U 1 1 60C8F153
+P 6600 6550
+F 0 "#PWR0810" H 6600 6300 50  0001 C CNN
+F 1 "GND" H 6605 6377 50  0000 C CNN
+F 2 "" H 6600 6550 50  0001 C CNN
+F 3 "" H 6600 6550 50  0001 C CNN
+	1    6600 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0814
+U 1 1 60C8F8F3
+P 10100 6550
+F 0 "#PWR0814" H 10100 6300 50  0001 C CNN
+F 1 "GND" H 10105 6377 50  0000 C CNN
+F 2 "" H 10100 6550 50  0001 C CNN
+F 3 "" H 10100 6550 50  0001 C CNN
+	1    10100 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0815
+U 1 1 60C8FED7
+P 13500 6550
+F 0 "#PWR0815" H 13500 6300 50  0001 C CNN
+F 1 "GND" H 13505 6377 50  0000 C CNN
+F 2 "" H 13500 6550 50  0001 C CNN
+F 3 "" H 13500 6550 50  0001 C CNN
+	1    13500 6550
+	1    0    0    -1  
+$EndComp
+Text HLabel 11000 8000 0    50   Input ~ 0
+A0
+Wire Wire Line
+	11000 8000 11250 8000
+NoConn ~ 14050 5100
 Wire Bus Line
 	1950 7450 1950 7750
 Wire Bus Line
@@ -1009,14 +2062,16 @@ Wire Bus Line
 	2100 2800 2100 4700
 Wire Bus Line
 	4300 2800 4300 4400
-Wire Wire Line
-	2800 1400 7450 1400
-Wire Wire Line
-	2500 1500 7350 1500
-Wire Wire Line
-	2200 1600 7250 1600
-Wire Wire Line
-	1900 1700 5900 1700
-Wire Wire Line
-	1600 1800 5800 1800
+Wire Bus Line
+	5500 2800 5500 4700
+Wire Bus Line
+	7700 2800 7700 4400
+Wire Bus Line
+	9000 2800 9000 4700
+Wire Bus Line
+	11200 2800 11200 4400
+Wire Bus Line
+	12400 2800 12400 4700
+Wire Bus Line
+	14600 2800 14600 4400
 $EndSCHEMATC
