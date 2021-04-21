@@ -1,4 +1,4 @@
-update=21/04/2021 12:17:27
+update=21/04/2021 14:41:01
 version=1
 last_client=kicad
 [general]
@@ -258,6 +258,17 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
+Name=POWERHIGH
+Clearance=0.2
+TrackWidth=0.8
+ViaDiameter=0.8
+ViaDrill=0.4
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/3]
 Name=SIGNAL
 Clearance=0.125
 TrackWidth=0.2032
