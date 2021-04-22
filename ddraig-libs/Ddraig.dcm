@@ -5,6 +5,11 @@ D Power symbol creates a global label with name "+5V"
 K power-flag
 $ENDCMP
 #
+$CMP 68230_PLCC
+D PIT Interface parallele et Timer
+K MPRO
+$ENDCMP
+#
 $CMP ATX-24
 D ATX Power supply 24pins
 K ATX PSU
@@ -27,6 +32,11 @@ $CMP Mini-DIN-6
 D 6-pin Mini-DIN connector
 K Mini-DIN
 F http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf
+$ENDCMP
+#
+$CMP SCC68681
+D 2 Channel serial port
+K MPRO
 $ENDCMP
 #
 #End Doc Library
