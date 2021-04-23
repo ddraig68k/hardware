@@ -1191,56 +1191,32 @@ Wire Wire Line
 	9650 6050 9850 6050
 Wire Wire Line
 	9650 6150 9850 6150
-Text HLabel 7000 5450 2    50   Input ~ 0
+Text HLabel 7000 6050 2    50   Input ~ 0
 ~RESET
-Text HLabel 7000 5550 2    50   Input ~ 0
-~LDS
-Text HLabel 7000 5650 2    50   Input ~ 0
-~UDS
-Text HLabel 7000 5750 2    50   Input ~ 0
-RD~WR
 Text HLabel 7000 5850 2    50   Input ~ 0
-~IACK
+~LDS
+Text HLabel 7000 5950 2    50   Input ~ 0
+~UDS
 Text HLabel 7000 6150 2    50   Input ~ 0
+RD~WR
+Text HLabel 7000 5450 2    50   Input ~ 0
+~IACK
+Text HLabel 7000 5750 2    50   Input ~ 0
 CLK10
-Text HLabel 5600 5450 0    50   Output ~ 0
+Text HLabel 5600 6050 0    50   Output ~ 0
 ~BRESET
-Text HLabel 5600 5550 0    50   Output ~ 0
-~BLDS
-Text HLabel 5600 5650 0    50   Output ~ 0
-~BUDS
-Text HLabel 5600 5750 0    50   Output ~ 0
-BRD~WR
 Text HLabel 5600 5850 0    50   Output ~ 0
-~BIACK
+~BLDS
 Text HLabel 5600 5950 0    50   Output ~ 0
-BW1
+~BUDS
 Text HLabel 5600 6150 0    50   Output ~ 0
+BRD~WR
+Text HLabel 5600 5450 0    50   Output ~ 0
+~BIACK
+Text HLabel 5600 5650 0    50   Output ~ 0
+BW1
+Text HLabel 5600 5750 0    50   Output ~ 0
 BCLK10
-Wire Wire Line
-	5800 5450 5600 5450
-Wire Wire Line
-	5800 5550 5600 5550
-Wire Wire Line
-	5800 5750 5600 5750
-Wire Wire Line
-	5800 5850 5600 5850
-Wire Wire Line
-	5800 5950 5600 5950
-Wire Wire Line
-	5800 6150 5600 6150
-Wire Wire Line
-	6800 5450 7000 5450
-Wire Wire Line
-	6800 5550 7000 5550
-Wire Wire Line
-	6800 5650 7000 5650
-Wire Wire Line
-	6800 5750 7000 5750
-Wire Wire Line
-	6800 5850 7000 5850
-Wire Wire Line
-	6800 6150 7000 6150
 Text HLabel 5000 7150 2    50   Input ~ 0
 CS_EXTREG[1..4]
 Text HLabel 5000 7350 2    50   Input ~ 0
@@ -1273,8 +1249,6 @@ Wire Bus Line
 	4200 7450 4950 7450
 Text Label 4250 7450 0    50   ~ 0
 ~BCS_EXTDATA[1..4]
-Wire Wire Line
-	5800 5650 5600 5650
 $Comp
 L Device:C C?
 U 1 1 60FCE4B4
@@ -1522,44 +1496,70 @@ Text HLabel 2350 5900 0    50   Input ~ 0
 A0
 Wire Wire Line
 	2500 5900 2350 5900
-Text HLabel 5600 6050 0    50   Output ~ 0
+Text HLabel 5600 5550 0    50   Output ~ 0
 BW0
 $Comp
 L power:+5V #PWR?
 U 1 1 60840794
-P 7500 5850
+P 7500 5450
 AR Path="/60863516/60840794" Ref="#PWR?"  Part="1" 
 AR Path="/60863516/608F2704/60840794" Ref="#PWR0919"  Part="1" 
-F 0 "#PWR0919" H 7500 5700 50  0001 C CNN
-F 1 "+5V" H 7515 6023 50  0000 C CNN
-F 2 "" H 7500 5850 50  0001 C CNN
-F 3 "" H 7500 5850 50  0001 C CNN
-	1    7500 5850
+F 0 "#PWR0919" H 7500 5300 50  0001 C CNN
+F 1 "+5V" H 7515 5623 50  0000 C CNN
+F 2 "" H 7500 5450 50  0001 C CNN
+F 3 "" H 7500 5450 50  0001 C CNN
+	1    7500 5450
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 6084079C
-P 7500 6150
+P 7500 5750
 AR Path="/60863516/6084079C" Ref="#PWR?"  Part="1" 
 AR Path="/60863516/608F2704/6084079C" Ref="#PWR0920"  Part="1" 
-F 0 "#PWR0920" H 7500 5900 50  0001 C CNN
-F 1 "GND" H 7505 5977 50  0000 C CNN
-F 2 "" H 7500 6150 50  0001 C CNN
-F 3 "" H 7500 6150 50  0001 C CNN
-	1    7500 6150
+F 0 "#PWR0920" H 7500 5500 50  0001 C CNN
+F 1 "GND" H 7505 5577 50  0000 C CNN
+F 2 "" H 7500 5750 50  0001 C CNN
+F 3 "" H 7500 5750 50  0001 C CNN
+	1    7500 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
+	7500 5550 7500 5450
+Wire Wire Line
+	7500 5650 7500 5750
+Wire Wire Line
+	6800 5550 7500 5550
+Wire Wire Line
+	7500 5650 6800 5650
+Wire Wire Line
+	6800 5450 7000 5450
+Wire Wire Line
+	7000 5750 6800 5750
+Wire Wire Line
+	6800 5850 7000 5850
+Wire Wire Line
+	7000 5950 6800 5950
+Wire Wire Line
+	6800 6050 7000 6050
+Wire Wire Line
+	7000 6150 6800 6150
+Wire Wire Line
+	5800 6150 5600 6150
+Wire Wire Line
 	5600 6050 5800 6050
 Wire Wire Line
-	7500 5950 7500 5850
+	5800 5950 5600 5950
 Wire Wire Line
-	6800 5950 7500 5950
+	5600 5850 5800 5850
 Wire Wire Line
-	6800 6050 7500 6050
+	5800 5750 5600 5750
 Wire Wire Line
-	7500 6050 7500 6150
+	5600 5650 5800 5650
+Wire Wire Line
+	5800 5550 5600 5550
+Wire Wire Line
+	5600 5450 5800 5450
 Wire Bus Line
 	9700 1000 9700 4000
 Wire Bus Line

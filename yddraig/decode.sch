@@ -573,14 +573,6 @@ Text Label 2950 2550 2    43   ~ 0
 Text Label 2950 2050 2    43   ~ 0
 ~EXTINT1
 Wire Wire Line
-	3900 2650 3800 2650
-Wire Wire Line
-	2950 2550 3700 2550
-Wire Wire Line
-	3900 2450 3600 2450
-Wire Wire Line
-	2950 2350 3500 2350
-Wire Wire Line
 	3900 2250 3400 2250
 Wire Wire Line
 	2950 2150 3300 2150
@@ -601,26 +593,6 @@ Wire Wire Line
 Connection ~ 3400 2250
 Wire Wire Line
 	3400 2250 2950 2250
-Wire Wire Line
-	3500 1800 3500 2350
-Connection ~ 3500 2350
-Wire Wire Line
-	3500 2350 3900 2350
-Wire Wire Line
-	3600 1800 3600 2450
-Connection ~ 3600 2450
-Wire Wire Line
-	3600 2450 2950 2450
-Wire Wire Line
-	3700 1800 3700 2550
-Connection ~ 3700 2550
-Wire Wire Line
-	3700 2550 3900 2550
-Wire Wire Line
-	3800 1800 3800 2650
-Connection ~ 3800 2650
-Wire Wire Line
-	3800 2650 2950 2650
 $Comp
 L power:GND #PWR0404
 U 1 1 612146A5
@@ -1354,7 +1326,7 @@ U 2 1 60D5AFC1
 P 10400 1550
 F 0 "U402" H 10400 1875 50  0000 C CNN
 F 1 "74LS08" H 10400 1784 50  0000 C CNN
-F 2 "" H 10400 1550 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 10400 1550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 10400 1550 50  0001 C CNN
 	2    10400 1550
 	1    0    0    -1  
@@ -1365,7 +1337,7 @@ U 3 1 60D5D0D9
 P 4350 3850
 F 0 "U402" H 4350 4175 50  0000 C CNN
 F 1 "74LS08" H 4350 4084 50  0000 C CNN
-F 2 "" H 4350 3850 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4350 3850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 4350 3850 50  0001 C CNN
 	3    4350 3850
 	1    0    0    -1  
@@ -1376,7 +1348,7 @@ U 4 1 60D5F537
 P 4350 4400
 F 0 "U402" H 4350 4725 50  0000 C CNN
 F 1 "74LS08" H 4350 4634 50  0000 C CNN
-F 2 "" H 4350 4400 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4350 4400 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 4350 4400 50  0001 C CNN
 	4    4350 4400
 	1    0    0    -1  
@@ -1387,7 +1359,7 @@ U 5 1 60D6052B
 P 5100 4100
 F 0 "U402" H 5330 4146 50  0000 L CNN
 F 1 "74LS08" H 5330 4055 50  0000 L CNN
-F 2 "" H 5100 4100 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5100 4100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 5100 4100 50  0001 C CNN
 	5    5100 4100
 	1    0    0    -1  
@@ -1461,6 +1433,34 @@ Wire Wire Line
 Wire Wire Line
 	4000 3750 4050 3750
 Connection ~ 4000 3950
+Wire Wire Line
+	2950 2650 3500 2650
+Wire Wire Line
+	2950 2550 3600 2550
+Wire Wire Line
+	2950 2450 3700 2450
+Wire Wire Line
+	2950 2350 3800 2350
+Wire Wire Line
+	3500 1800 3500 2650
+Connection ~ 3500 2650
+Wire Wire Line
+	3500 2650 3900 2650
+Wire Wire Line
+	3600 1800 3600 2550
+Connection ~ 3600 2550
+Wire Wire Line
+	3600 2550 3900 2550
+Wire Wire Line
+	3700 1800 3700 2450
+Connection ~ 3700 2450
+Wire Wire Line
+	3700 2450 3900 2450
+Wire Wire Line
+	3800 1800 3800 2350
+Connection ~ 3800 2350
+Wire Wire Line
+	3800 2350 3900 2350
 Wire Bus Line
 	6650 3600 6650 3900
 Wire Bus Line

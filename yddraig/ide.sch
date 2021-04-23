@@ -365,7 +365,7 @@ U 1 1 6095F48B
 P 4050 2950
 F 0 "Q603" H 4255 2996 50  0000 L CNN
 F 1 "2N7000" H 4255 2905 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4250 2875 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92" H 4250 2875 50  0001 L CIN
 F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 4050 2950 50  0001 L CNN
 	1    4050 2950
 	-1   0    0    -1  
@@ -965,14 +965,6 @@ Wire Wire Line
 	2300 1450 2800 1450
 Connection ~ 2300 1450
 Connection ~ 2800 1450
-Wire Bus Line
-	5950 1000 5950 1300
-Wire Bus Line
-	4300 5750 4300 6150
-Wire Bus Line
-	6050 5750 6050 6150
-Wire Bus Line
-	9950 1050 9950 2650
 $Comp
 L power:+5V #PWR0101
 U 1 1 6083A0B4
@@ -995,4 +987,12 @@ F 3 "" H 9500 5800 50  0001 C CNN
 	1    9500 5800
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	5950 1000 5950 1300
+Wire Bus Line
+	4300 5750 4300 6150
+Wire Bus Line
+	6050 5750 6050 6150
+Wire Bus Line
+	9950 1050 9950 2650
 $EndSCHEMATC
