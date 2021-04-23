@@ -1460,6 +1460,7 @@ Wire Wire Line
 	4000 3950 4000 3750
 Wire Wire Line
 	4000 3750 4050 3750
+Connection ~ 4000 3950
 Wire Bus Line
 	6650 3600 6650 3900
 Wire Bus Line
@@ -1472,5 +1473,4 @@ Wire Bus Line
 	7000 4650 7000 5100
 Wire Bus Line
 	10500 2400 10500 5000
-Connection ~ 4000 3950
 $EndSCHEMATC
