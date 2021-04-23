@@ -801,21 +801,21 @@ Text Label 7250 1800 0    50   ~ 0
 D6
 Text Label 7250 1900 0    50   ~ 0
 D7
-Text Label 7250 3400 0    50   ~ 0
-D8
-Text Label 7250 3500 0    50   ~ 0
-D9
-Text Label 7250 3600 0    50   ~ 0
-D10
-Text Label 7250 3700 0    50   ~ 0
-D11
-Text Label 7250 3800 0    50   ~ 0
-D12
-Text Label 7250 3900 0    50   ~ 0
-D13
-Text Label 7250 4000 0    50   ~ 0
-D14
 Text Label 7250 4100 0    50   ~ 0
+D8
+Text Label 7250 4000 0    50   ~ 0
+D9
+Text Label 7250 3900 0    50   ~ 0
+D10
+Text Label 7250 3800 0    50   ~ 0
+D11
+Text Label 7250 3700 0    50   ~ 0
+D12
+Text Label 7250 3600 0    50   ~ 0
+D13
+Text Label 7250 3500 0    50   ~ 0
+D14
+Text Label 7250 3400 0    50   ~ 0
 D15
 Text Label 9300 1200 0    50   ~ 0
 BD0
@@ -833,21 +833,21 @@ Text Label 9300 1800 0    50   ~ 0
 BD6
 Text Label 9300 1900 0    50   ~ 0
 BD7
-Text Label 9300 3400 0    50   ~ 0
-BD8
-Text Label 9300 3500 0    50   ~ 0
-BD9
-Text Label 9300 3600 0    50   ~ 0
-BD10
-Text Label 9300 3700 0    50   ~ 0
-BD11
-Text Label 9300 3800 0    50   ~ 0
-BD12
-Text Label 9300 3900 0    50   ~ 0
-BD13
-Text Label 9300 4000 0    50   ~ 0
-BD14
 Text Label 9300 4100 0    50   ~ 0
+BD8
+Text Label 9300 4000 0    50   ~ 0
+BD9
+Text Label 9300 3900 0    50   ~ 0
+BD10
+Text Label 9300 3800 0    50   ~ 0
+BD11
+Text Label 9300 3700 0    50   ~ 0
+BD12
+Text Label 9300 3600 0    50   ~ 0
+BD13
+Text Label 9300 3500 0    50   ~ 0
+BD14
+Text Label 9300 3400 0    50   ~ 0
 BD15
 $Comp
 L Device:R_Pack08 RN905
