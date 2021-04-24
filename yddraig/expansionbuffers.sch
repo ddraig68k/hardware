@@ -960,21 +960,21 @@ Wire Wire Line
 	10550 3400 10650 3400
 Wire Wire Line
 	10650 3400 10650 3500
-Text Label 9900 1200 0    50   ~ 0
-BD0
 Text Label 9900 1300 0    50   ~ 0
+BD0
+Text Label 9900 1200 0    50   ~ 0
 BD1
-Text Label 9900 1400 0    50   ~ 0
-BD2
 Text Label 9900 1500 0    50   ~ 0
+BD2
+Text Label 9900 1400 0    50   ~ 0
 BD3
-Text Label 9900 1600 0    50   ~ 0
-BD4
 Text Label 9900 1700 0    50   ~ 0
+BD4
+Text Label 9900 1600 0    50   ~ 0
 BD5
-Text Label 9900 1800 0    50   ~ 0
-BD6
 Text Label 9900 1900 0    50   ~ 0
+BD6
+Text Label 9900 1800 0    50   ~ 0
 BD7
 Entry Wire Line
 	9700 3300 9800 3400
