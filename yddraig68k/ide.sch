@@ -125,26 +125,26 @@ Wire Bus Line
 Text HLabel 10300 1050 2    50   BiDi ~ 0
 D[0..15]
 Entry Wire Line
-	5950 1100 6050 1200
+	5450 950  5550 1050
 Entry Wire Line
-	5950 1200 6050 1300
+	5450 1050 5550 1150
 Entry Wire Line
-	5950 1300 6050 1400
+	5450 1150 5550 1250
 Wire Wire Line
-	6050 1400 6400 1400
+	5550 1250 5900 1250
 Wire Wire Line
-	6400 1300 6050 1300
+	5900 1150 5550 1150
 Wire Wire Line
-	6050 1200 6400 1200
-Text Label 6200 1200 0    50   ~ 0
+	5550 1050 5900 1050
+Text Label 5700 1050 0    50   ~ 0
 A1
-Text Label 6200 1300 0    50   ~ 0
+Text Label 5700 1150 0    50   ~ 0
 A2
-Text Label 6200 1400 0    50   ~ 0
+Text Label 5700 1250 0    50   ~ 0
 A3
 Wire Bus Line
-	5950 1000 5700 1000
-Text HLabel 5700 1000 0    50   Input ~ 0
+	5450 850  5200 850 
+Text HLabel 5200 850  0    50   Input ~ 0
 A[1..23]
 $Comp
 L power:GND #PWR0616
@@ -190,17 +190,6 @@ Wire Wire Line
 	8600 4050 8700 4050
 Wire Wire Line
 	8800 4150 8800 4050
-$Comp
-L Device:R_Pack08 RN601
-U 1 1 6092B256
-P 6600 1600
-F 0 "RN601" V 5983 1600 50  0000 C CNN
-F 1 "22R" V 6074 1600 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" V 7075 1600 50  0001 C CNN
-F 3 "~" H 6600 1600 50  0001 C CNN
-	1    6600 1600
-	0    1    1    0   
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J602
 U 1 1 6092D42D
@@ -258,34 +247,26 @@ F 3 "http://www.ti.com/lit/ds/symlink/sn74ls139a.pdf" H 8350 6000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6800 1200 8150 1200
-Wire Wire Line
-	6800 1400 8150 1400
-Wire Wire Line
-	6800 1300 8150 1300
-Text HLabel 5950 1500 0    50   Input ~ 0
+Text HLabel 5450 1950 0    50   Input ~ 0
 ~IDE_WR
-Text HLabel 5950 1600 0    50   Input ~ 0
+Text HLabel 5450 2050 0    50   Input ~ 0
 ~IDE_RD
-Text HLabel 5950 1700 0    50   Input ~ 0
+Text HLabel 5450 2150 0    50   Input ~ 0
 ~RESET
 Text HLabel 5850 3150 0    50   Input ~ 0
 ~CS_IDE
 Text HLabel 3700 2650 0    50   Output ~ 0
 ~INT_IDE
 Wire Wire Line
-	6400 1500 5950 1500
+	5900 1950 5450 1950
 Wire Wire Line
-	6400 1600 5950 1600
+	5900 2050 5450 2050
 Wire Wire Line
-	5950 1700 6400 1700
-Wire Wire Line
-	6800 1500 7950 1500
+	5450 2150 5900 2150
 Wire Wire Line
 	7950 1500 7950 1600
 Wire Wire Line
 	7950 1600 8150 1600
-Wire Wire Line
-	6800 1600 7850 1600
 Wire Wire Line
 	7850 1600 7850 1700
 Wire Wire Line
@@ -498,9 +479,7 @@ Wire Wire Line
 Wire Wire Line
 	2700 2150 2700 2250
 Connection ~ 2700 2250
-NoConn ~ 8150 1900
 NoConn ~ 8150 2000
-NoConn ~ 8150 2100
 NoConn ~ 8150 3100
 NoConn ~ 8150 3300
 NoConn ~ 7100 3050
@@ -831,10 +810,6 @@ $EndComp
 Wire Wire Line
 	5200 7050 5200 6950
 NoConn ~ 5700 6450
-NoConn ~ 6800 1800
-NoConn ~ 6800 1900
-NoConn ~ 6400 1900
-NoConn ~ 6400 1800
 $Comp
 L power:PWR_FLAG #FLG0601
 U 1 1 61612EC1
@@ -965,14 +940,6 @@ Wire Wire Line
 	2300 1450 2800 1450
 Connection ~ 2300 1450
 Connection ~ 2800 1450
-Wire Bus Line
-	5950 1000 5950 1300
-Wire Bus Line
-	4300 5750 4300 6150
-Wire Bus Line
-	6050 5750 6050 6150
-Wire Bus Line
-	9950 1050 9950 2650
 $Comp
 L power:+5V #PWR0101
 U 1 1 6083A0B4
@@ -994,5 +961,127 @@ F 2 "" H 9500 5800 50  0001 C CNN
 F 3 "" H 9500 5800 50  0001 C CNN
 	1    9500 5800
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1050 6800 1050
+Wire Wire Line
+	6800 1050 6800 1200
+Wire Wire Line
+	6300 1150 6700 1150
+Wire Wire Line
+	6700 1150 6700 1300
+Wire Wire Line
+	6700 1300 8150 1300
+Wire Wire Line
+	6300 1250 6600 1250
+Wire Wire Line
+	6600 1250 6600 1400
+Wire Wire Line
+	6600 1400 8150 1400
+Wire Wire Line
+	6800 1700 6800 2150
+Wire Wire Line
+	6800 2150 6300 2150
+Wire Wire Line
+	6300 2050 6700 2050
+Wire Wire Line
+	6700 2050 6700 1600
+Wire Wire Line
+	6700 1600 7850 1600
+Wire Wire Line
+	6600 1950 6600 1500
+Wire Wire Line
+	6600 1500 7950 1500
+Wire Wire Line
+	6300 1950 6600 1950
+NoConn ~ 5900 1350
+NoConn ~ 6300 1350
+NoConn ~ 6300 2250
+NoConn ~ 5900 2250
+$Comp
+L Device:R R607
+U 1 1 61DDEFD1
+P 7200 2150
+F 0 "R607" H 7270 2196 50  0000 L CNN
+F 1 "10K" H 7270 2105 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7130 2150 50  0001 C CNN
+F 3 "~" H 7200 2150 50  0001 C CNN
+	1    7200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R608
+U 1 1 61DE9934
+P 7900 950
+F 0 "R608" H 7970 996 50  0000 L CNN
+F 1 "10K" H 7970 905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 7830 950 50  0001 C CNN
+F 3 "~" H 7900 950 50  0001 C CNN
+	1    7900 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR0617
+U 1 1 61DF2B1E
+P 7900 750
+F 0 "#PWR0617" H 7900 600 50  0001 C CNN
+F 1 "+5V" H 7915 923 50  0000 C CNN
+F 2 "" H 7900 750 50  0001 C CNN
+F 3 "" H 7900 750 50  0001 C CNN
+	1    7900 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 2100 7900 2100
+Wire Wire Line
+	7900 2100 7900 1100
+Wire Wire Line
+	7900 750  7900 800 
+$Comp
+L power:GND #PWR0614
+U 1 1 61E04F4E
+P 7200 2350
+F 0 "#PWR0614" H 7200 2100 50  0001 C CNN
+F 1 "GND" H 7205 2177 50  0000 C CNN
+F 2 "" H 7200 2350 50  0001 C CNN
+F 3 "" H 7200 2350 50  0001 C CNN
+	1    7200 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2350 7200 2300
+Wire Wire Line
+	8150 1900 7200 1900
+Wire Wire Line
+	7200 1900 7200 2000
+Wire Bus Line
+	5450 850  5450 1150
+Wire Bus Line
+	4300 5750 4300 6150
+Wire Bus Line
+	6050 5750 6050 6150
+Wire Bus Line
+	9950 1050 9950 2650
+$Comp
+L Ddraig:RPack04_Alt RN601
+U 1 1 62222890
+P 6100 1250
+F 0 "RN601" V 5683 1250 50  0000 C CNN
+F 1 "22R" V 5774 1250 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP8" V 6375 1250 50  0001 C CNN
+F 3 "~" H 6100 1250 50  0001 C CNN
+	1    6100 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Ddraig:RPack04_Alt RN602
+U 1 1 622241C4
+P 6100 2150
+F 0 "RN602" V 5683 2150 50  0000 C CNN
+F 1 "22R" V 5774 2150 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP8" V 6375 2150 50  0001 C CNN
+F 3 "~" H 6100 2150 50  0001 C CNN
+	1    6100 2150
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC

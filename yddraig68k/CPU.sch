@@ -356,7 +356,7 @@ F 3 "" H 2000 850 50  0001 C CNN
 	1    2000 850 
 	1    0    0    -1  
 $EndComp
-Text Label 1550 1550 2    50   ~ 0
+Text Label 1500 1550 2    50   ~ 0
 ~AS
 Text HLabel 3250 2000 0    50   Input ~ 0
 ~IPL[0..2]
@@ -1608,14 +1608,10 @@ Wire Wire Line
 	2600 2550 2600 1350
 Wire Wire Line
 	2300 2750 2300 1350
-Text Label 1550 1700 2    50   ~ 0
+Text Label 1500 1700 2    50   ~ 0
 ~VPA
 Wire Wire Line
-	1550 1550 1700 1550
-Wire Wire Line
 	1700 1550 1700 1350
-Wire Wire Line
-	1550 1700 2000 1700
 Wire Wire Line
 	2000 1700 2000 1350
 $Comp
@@ -2188,8 +2184,18 @@ F 3 "https://www.nxp.com/docs/en/reference-manual/MC68000UM.pdf" H 4800 4050 50 
 	1    4800 4050
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3800 3550
-NoConn ~ 3800 3650
+Text HLabel 3400 3550 0    50   Output ~ 0
+~VMA
+Text HLabel 3400 3650 0    50   Output ~ 0
+E
+Wire Wire Line
+	3800 3650 3400 3650
+Wire Wire Line
+	3400 3550 3800 3550
+Wire Wire Line
+	1700 1550 1500 1550
+Wire Wire Line
+	1500 1700 2000 1700
 Wire Bus Line
 	3400 2000 3400 2250
 Wire Bus Line

@@ -34,6 +34,12 @@ K Mini-DIN
 F http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf
 $ENDCMP
 #
+$CMP RPack04_Alt
+D 4 resistor network, parallel topology
+K R network parallel topology isolated
+F ~
+$ENDCMP
+#
 $CMP SCC68681
 D 2 Channel serial port
 K MPRO

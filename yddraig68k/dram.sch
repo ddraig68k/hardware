@@ -338,17 +338,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 4400 2800 50  0001 C CNN
 	1    4400 2800
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Pack08 RN702
-U 1 1 605E58A3
-P 6450 4100
-F 0 "RN702" V 5833 4100 50  0000 C CNN
-F 1 "22R" V 5924 4100 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" V 6925 4100 50  0001 C CNN
-F 3 "~" H 6450 4100 50  0001 C CNN
-	1    6450 4100
-	0    1    1    0   
-$EndComp
 Entry Wire Line
 	3350 2100 3450 2200
 Entry Wire Line
@@ -542,28 +531,6 @@ Wire Wire Line
 Wire Wire Line
 	3800 3500 3800 3600
 Wire Wire Line
-	6250 4000 5100 4000
-Wire Wire Line
-	5100 4000 5100 3100
-Wire Wire Line
-	5100 3100 4900 3100
-Wire Wire Line
-	6250 3900 5200 3900
-Wire Wire Line
-	5200 3900 5200 2800
-Wire Wire Line
-	5200 2800 4900 2800
-Wire Wire Line
-	6250 3800 5300 3800
-Wire Wire Line
-	5300 3800 5300 2500
-Wire Wire Line
-	5300 2500 4900 2500
-Wire Wire Line
-	6250 3700 5400 3700
-Wire Wire Line
-	5400 3700 5400 2200
-Wire Wire Line
 	5400 2200 4900 2200
 Wire Wire Line
 	6250 4100 5100 4100
@@ -609,70 +576,22 @@ Wire Wire Line
 	5200 7600 5200 8200
 Wire Wire Line
 	5200 8200 4900 8200
-Text HLabel 5900 7700 0    50   Input ~ 0
+Text HLabel 5950 6000 0    50   Input ~ 0
 ~CAS0
-Text HLabel 5900 7800 0    50   Input ~ 0
+Text HLabel 5950 6100 0    50   Input ~ 0
 ~CAS1
-Text HLabel 5900 7900 0    50   Input ~ 0
+Text HLabel 5950 6200 0    50   Input ~ 0
 ~RAS0
-Text HLabel 5900 8000 0    50   Input ~ 0
+Text HLabel 5950 6300 0    50   Input ~ 0
 ~RAS1
 Wire Wire Line
-	5900 7700 6200 7700
+	5950 6000 6250 6000
 Wire Wire Line
-	6200 7800 5900 7800
+	6250 6100 5950 6100
 Wire Wire Line
-	6200 7900 5900 7900
+	6250 6200 5950 6200
 Wire Wire Line
-	5900 8000 6200 8000
-Wire Wire Line
-	6650 3700 6850 3700
-Wire Wire Line
-	6850 3700 6850 2600
-Wire Wire Line
-	6850 2600 8800 2600
-Wire Wire Line
-	6950 3800 6950 2700
-Wire Wire Line
-	6950 2700 8700 2700
-Wire Wire Line
-	6650 3800 6950 3800
-Wire Wire Line
-	6650 3900 7050 3900
-Wire Wire Line
-	7050 3900 7050 2800
-Wire Wire Line
-	7050 2800 8600 2800
-Wire Wire Line
-	6650 4000 7150 4000
-Wire Wire Line
-	7150 4000 7150 2900
-Wire Wire Line
-	7150 2900 8500 2900
-Wire Wire Line
-	6650 4100 7250 4100
-Wire Wire Line
-	7250 4100 7250 3000
-Wire Wire Line
-	7250 3000 8400 3000
-Wire Wire Line
-	6650 4200 7350 4200
-Wire Wire Line
-	7350 4200 7350 3100
-Wire Wire Line
-	7350 3100 8300 3100
-Wire Wire Line
-	7450 4300 7450 3200
-Wire Wire Line
-	7450 3200 8200 3200
-Wire Wire Line
-	6650 4300 7450 4300
-Wire Wire Line
-	6650 4400 7550 4400
-Wire Wire Line
-	7550 4400 7550 3300
-Wire Wire Line
-	7550 3300 8100 3300
+	5950 6300 6250 6300
 Wire Wire Line
 	10100 3400 7700 3400
 Wire Wire Line
@@ -721,82 +640,50 @@ Wire Wire Line
 	10100 6900 8100 6900
 Wire Wire Line
 	8100 6900 8100 3300
-Connection ~ 8100 3300
 Wire Wire Line
 	8100 3300 10100 3300
 Wire Wire Line
 	10100 6800 8200 6800
 Wire Wire Line
 	8200 6800 8200 3200
-Connection ~ 8200 3200
 Wire Wire Line
 	8200 3200 10100 3200
 Wire Wire Line
 	8300 3100 8300 6700
 Wire Wire Line
 	8300 6700 10100 6700
-Connection ~ 8300 3100
 Wire Wire Line
 	8300 3100 10100 3100
 Wire Wire Line
 	8400 6600 8400 3000
 Wire Wire Line
 	8400 6600 10100 6600
-Connection ~ 8400 3000
 Wire Wire Line
 	8400 3000 10100 3000
 Wire Wire Line
 	10100 6500 8500 6500
 Wire Wire Line
 	8500 6500 8500 2900
-Connection ~ 8500 2900
 Wire Wire Line
 	8500 2900 10100 2900
 Wire Wire Line
 	10100 6400 8600 6400
 Wire Wire Line
 	8600 6400 8600 2800
-Connection ~ 8600 2800
 Wire Wire Line
 	8600 2800 10100 2800
 Wire Wire Line
 	8700 2700 8700 6300
 Wire Wire Line
 	8700 6300 10100 6300
-Connection ~ 8700 2700
 Wire Wire Line
 	8700 2700 10100 2700
-Wire Wire Line
-	10100 6200 8800 6200
-Wire Wire Line
-	8800 6200 8800 2600
-Connection ~ 8800 2600
-Wire Wire Line
-	8800 2600 10100 2600
 Wire Wire Line
 	10100 7650 9600 7650
 Wire Wire Line
 	10100 7750 9700 7750
 Wire Wire Line
 	9700 7900 9700 7750
-Wire Wire Line
-	6600 7900 9700 7900
-Wire Wire Line
-	9600 7700 9600 7650
-Wire Wire Line
-	6600 7700 9600 7700
-Wire Wire Line
-	6600 7800 8950 7800
-Wire Wire Line
-	8950 7800 8950 4050
-Wire Wire Line
-	8950 4050 10100 4050
-Wire Wire Line
-	6600 8000 9050 8000
-Wire Wire Line
-	9050 8000 9050 4150
-Wire Wire Line
-	9050 4150 10100 4150
 $Comp
 L Device:R R701
 U 1 1 60735C0F
@@ -1151,25 +1038,168 @@ Wire Wire Line
 	14800 6400 14350 6400
 Text HLabel 2950 3400 0    50   Input ~ 0
 DRAM_MUX
-$Comp
-L Device:R_Pack08 RN701
-U 1 1 605E9896
-P 6400 7700
-F 0 "RN701" V 5783 7700 50  0000 C CNN
-F 1 "22R" V 5874 7700 50  0000 C CNN
-F 2 "Package_DIP:DIP-16_W7.62mm" V 6875 7700 50  0001 C CNN
-F 3 "~" H 6400 7700 50  0001 C CNN
-	1    6400 7700
-	0    1    1    0   
-$EndComp
 NoConn ~ 11100 7550
 NoConn ~ 11100 7650
 NoConn ~ 11100 7750
 NoConn ~ 11100 3950
 NoConn ~ 11100 4050
 NoConn ~ 11100 4150
+Wire Wire Line
+	6650 6300 7400 6300
+Wire Wire Line
+	6650 6100 7500 6100
+Wire Wire Line
+	7500 6100 7500 7800
+Wire Wire Line
+	7500 7800 9600 7800
+Wire Wire Line
+	9600 7650 9600 7800
+Wire Wire Line
+	7400 6300 7400 7900
+Wire Wire Line
+	7400 7900 9700 7900
+Wire Wire Line
+	6650 2300 5400 2300
+Wire Wire Line
+	5400 2300 5400 2200
+Wire Wire Line
+	6650 2400 5400 2400
+Wire Wire Line
+	5400 2400 5400 2500
+Wire Wire Line
+	4900 2500 5400 2500
+Wire Wire Line
+	6650 2500 5500 2500
+Wire Wire Line
+	5500 2500 5500 2800
+Wire Wire Line
+	4900 2800 5500 2800
+Wire Wire Line
+	6650 2600 5600 2600
+Wire Wire Line
+	5600 2600 5600 3100
+Wire Wire Line
+	4900 3100 5600 3100
+Wire Wire Line
+	7050 2300 7600 2300
+Wire Wire Line
+	7600 2300 7600 2600
+Wire Wire Line
+	7600 2600 8800 2600
+Wire Wire Line
+	7500 2400 7500 2700
+Wire Wire Line
+	7500 2700 8700 2700
+Wire Wire Line
+	7050 2400 7500 2400
+Connection ~ 8700 2700
+Wire Wire Line
+	8600 2800 7400 2800
+Connection ~ 8600 2800
+Wire Wire Line
+	7400 2500 7400 2800
+Wire Wire Line
+	7050 2500 7400 2500
+Wire Wire Line
+	7050 2600 7300 2600
+Wire Wire Line
+	7300 2600 7300 2900
+Wire Wire Line
+	7300 2900 8500 2900
+Connection ~ 8500 2900
+Wire Wire Line
+	8400 3000 6850 3000
+Wire Wire Line
+	6850 3000 6850 4100
+Wire Wire Line
+	6850 4100 6650 4100
+Connection ~ 8400 3000
+Wire Wire Line
+	6650 4200 6950 4200
+Wire Wire Line
+	6950 4200 6950 3100
+Wire Wire Line
+	6950 3100 8300 3100
+Connection ~ 8300 3100
+Wire Wire Line
+	8200 3200 7050 3200
+Wire Wire Line
+	7050 3200 7050 4300
+Wire Wire Line
+	7050 4300 6650 4300
+Connection ~ 8200 3200
+Wire Wire Line
+	6650 4400 7150 4400
+Wire Wire Line
+	7150 4400 7150 3300
+Wire Wire Line
+	7150 3300 8100 3300
+Connection ~ 8100 3300
+Wire Wire Line
+	10100 6200 8800 6200
+Wire Wire Line
+	8800 6200 8800 2600
+Connection ~ 8800 2600
+Wire Wire Line
+	8800 2600 10100 2600
+Wire Wire Line
+	6650 6000 7500 6000
+Wire Wire Line
+	7500 6000 7500 4050
+Wire Wire Line
+	7500 4050 10100 4050
+Wire Wire Line
+	6650 6200 7400 6200
+Wire Wire Line
+	7400 6200 7400 4150
+Wire Wire Line
+	7400 4150 10100 4150
 Wire Bus Line
 	11650 2400 11650 6800
 Wire Bus Line
 	3350 1950 3350 8100
+$Comp
+L Ddraig:RPack04_Alt RN703
+U 1 1 6221DE2A
+P 6450 6200
+F 0 "RN703" V 6033 6200 50  0000 C CNN
+F 1 "22R" V 6124 6200 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP8" V 6725 6200 50  0001 C CNN
+F 3 "~" H 6450 6200 50  0001 C CNN
+	1    6450 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Ddraig:RPack04_Alt RN704
+U 1 1 6221EFF8
+P 6850 2500
+F 0 "RN704" V 6433 2500 50  0000 C CNN
+F 1 "22R" V 6524 2500 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP8" V 7125 2500 50  0001 C CNN
+F 3 "~" H 6850 2500 50  0001 C CNN
+	1    6850 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Ddraig:RPack04_Alt RN702
+U 1 1 6221FD3D
+P 6450 4300
+F 0 "RN702" V 6033 4300 50  0000 C CNN
+F 1 "22R" V 6124 4300 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP8" V 6725 4300 50  0001 C CNN
+F 3 "~" H 6450 4300 50  0001 C CNN
+	1    6450 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L Ddraig:RPack04_Alt RN701
+U 1 1 62220689
+P 6400 7500
+F 0 "RN701" V 5983 7500 50  0000 C CNN
+F 1 "22R" V 6074 7500 50  0000 C CNN
+F 2 "Resistor_THT:R_Array_SIP8" V 6675 7500 50  0001 C CNN
+F 3 "~" H 6400 7500 50  0001 C CNN
+	1    6400 7500
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

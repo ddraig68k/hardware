@@ -780,7 +780,7 @@ Wire Bus Line
 Wire Bus Line
 	7000 1000 6550 1000
 Text HLabel 5200 950  2    50   Output ~ 0
-BA[0..19]
+BA[1..19]
 Text HLabel 10100 1000 2    50   BiDi ~ 0
 BD[0..15]
 Text HLabel 6550 1000 0    50   BiDi ~ 0
@@ -1200,7 +1200,7 @@ Text HLabel 7000 5650 2    50   Input ~ 0
 Text HLabel 7000 5750 2    50   Input ~ 0
 RD~WR
 Text HLabel 7000 5850 2    50   Input ~ 0
-~IACK
+~AS
 Text HLabel 7000 6150 2    50   Input ~ 0
 CLK10
 Text HLabel 5600 5450 0    50   Output ~ 0
@@ -1212,9 +1212,9 @@ Text HLabel 5600 5650 0    50   Output ~ 0
 Text HLabel 5600 5750 0    50   Output ~ 0
 BRD~WR
 Text HLabel 5600 5850 0    50   Output ~ 0
-~BIACK
+~BAS
 Text HLabel 5600 5950 0    50   Output ~ 0
-BW1
+~BVMA
 Text HLabel 5600 6150 0    50   Output ~ 0
 BCLK10
 Wire Wire Line
@@ -1512,54 +1512,24 @@ Wire Wire Line
 Wire Wire Line
 	6250 3450 5750 3450
 Connection ~ 5750 3450
-Entry Wire Line
-	4600 5900 4700 5800
-Wire Wire Line
-	4200 5900 4600 5900
-Text Label 4300 5900 0    50   ~ 0
-BA0
-Text HLabel 2350 5900 0    50   Input ~ 0
-A0
-Wire Wire Line
-	2500 5900 2350 5900
 Text HLabel 5600 6050 0    50   Output ~ 0
-BW0
-$Comp
-L power:+5V #PWR?
-U 1 1 60840794
-P 7500 5850
-AR Path="/60863516/60840794" Ref="#PWR?"  Part="1" 
-AR Path="/60863516/608F2704/60840794" Ref="#PWR0919"  Part="1" 
-F 0 "#PWR0919" H 7500 5700 50  0001 C CNN
-F 1 "+5V" H 7515 6023 50  0000 C CNN
-F 2 "" H 7500 5850 50  0001 C CNN
-F 3 "" H 7500 5850 50  0001 C CNN
-	1    7500 5850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6084079C
-P 7500 6150
-AR Path="/60863516/6084079C" Ref="#PWR?"  Part="1" 
-AR Path="/60863516/608F2704/6084079C" Ref="#PWR0920"  Part="1" 
-F 0 "#PWR0920" H 7500 5900 50  0001 C CNN
-F 1 "GND" H 7505 5977 50  0000 C CNN
-F 2 "" H 7500 6150 50  0001 C CNN
-F 3 "" H 7500 6150 50  0001 C CNN
-	1    7500 6150
-	1    0    0    -1  
-$EndComp
+BE
 Wire Wire Line
 	5600 6050 5800 6050
 Wire Wire Line
-	7500 5950 7500 5850
+	2500 5900 2400 5900
 Wire Wire Line
-	6800 5950 7500 5950
+	2400 5900 2400 6000
+Connection ~ 2400 6000
+Text HLabel 7000 5950 2    50   Input ~ 0
+~VMA
+Text HLabel 7000 6050 2    50   Input ~ 0
+~E
 Wire Wire Line
-	6800 6050 7500 6050
+	7000 6050 6800 6050
 Wire Wire Line
-	7500 6050 7500 6150
+	6800 5950 7000 5950
+NoConn ~ 4200 5900
 Wire Bus Line
 	9700 1000 9700 4000
 Wire Bus Line
@@ -1567,5 +1537,5 @@ Wire Bus Line
 Wire Bus Line
 	2000 950  2000 5700
 Wire Bus Line
-	4700 950  4700 5800
+	4700 950  4700 5700
 $EndSCHEMATC
