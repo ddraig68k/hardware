@@ -1948,7 +1948,7 @@ L Ddraig:Mini-DIN-6 J502
 U 1 1 6062C339
 P 7200 2800
 F 0 "J502" H 7200 3167 50  0000 C CNN
-F 1 "Keyboard" H 7200 3076 50  0000 C CNN
+F 1 "Mouse" H 7200 3076 50  0000 C CNN
 F 2 "Ddraig:MINI-DIN-6-FULL-SHIELD" H 7200 2800 50  0001 C CNN
 F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 7200 2800 50  0001 C CNN
 	1    7200 2800
