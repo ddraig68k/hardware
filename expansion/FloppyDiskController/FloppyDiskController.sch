@@ -1,4 +1,150 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Ddraig:D68K_64PIN_BOARD J?
+U 1 1 60A6B3FD
+P 1950 3000
+F 0 "J?" H 1925 5065 50  0000 C CNN
+F 1 "D68K_64PIN_BOARD" H 1925 4974 50  0000 C CNN
+F 2 "Ddraig:DIN41612_C_2x32_Male_Horizontal_THT" H 1800 1750 50  0001 C CNN
+F 3 "" H 1800 1750 50  0001 C CNN
+	1    1950 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ddraig:WD37C65C U?
+U 1 1 60A6CD4B
+P 6300 2350
+F 0 "U?" H 6300 3781 50  0000 C CNN
+F 1 "WD37C65C" H 6300 3690 50  0000 C CNN
+F 2 "" H 6950 3750 50  0001 C CNN
+F 3 "" H 6950 3750 50  0001 C CNN
+	1    6300 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CPLD_Xilinx:XC9536PC44 U?
+U 1 1 60A6DFEC
+P 4850 5850
+F 0 "U?" H 4850 7431 50  0000 C CNN
+F 1 "XC9536PC44" H 4850 7340 50  0000 C CNN
+F 2 "" H 4850 5850 50  0001 C CNN
+F 3 "xilinx/xc9536.pdf" H 4850 5850 50  0001 C CNN
+	1    4850 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ddraig:FloppyHeader J?
+U 1 1 60A79E6B
+P 9900 3200
+F 0 "J?" H 9550 5100 50  0000 C CNN
+F 1 "FloppyHeader" H 9950 3200 50  0000 C CNN
+F 2 "" H 9900 3200 50  0001 C CNN
+F 3 "" H 9900 3200 50  0001 C CNN
+	1    9900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A7D290
+P 10550 3100
+F 0 "#PWR?" H 10550 2850 50  0001 C CNN
+F 1 "GND" H 10555 2927 50  0000 C CNN
+F 2 "" H 10550 3100 50  0001 C CNN
+F 3 "" H 10550 3100 50  0001 C CNN
+	1    10550 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 1500 10550 1500
+Wire Wire Line
+	10550 1500 10550 1600
+Wire Wire Line
+	10450 3000 10550 3000
+Connection ~ 10550 3000
+Wire Wire Line
+	10550 3000 10550 3100
+Wire Wire Line
+	10450 2900 10550 2900
+Connection ~ 10550 2900
+Wire Wire Line
+	10550 2900 10550 3000
+Wire Wire Line
+	10450 2800 10550 2800
+Connection ~ 10550 2800
+Wire Wire Line
+	10550 2800 10550 2900
+Wire Wire Line
+	10450 2700 10550 2700
+Connection ~ 10550 2700
+Wire Wire Line
+	10550 2700 10550 2800
+Wire Wire Line
+	10450 2600 10550 2600
+Connection ~ 10550 2600
+Wire Wire Line
+	10550 2600 10550 2700
+Wire Wire Line
+	10450 2500 10550 2500
+Connection ~ 10550 2500
+Wire Wire Line
+	10550 2500 10550 2600
+Wire Wire Line
+	10450 2400 10550 2400
+Connection ~ 10550 2400
+Wire Wire Line
+	10550 2400 10550 2500
+Wire Wire Line
+	10450 2300 10550 2300
+Connection ~ 10550 2300
+Wire Wire Line
+	10550 2300 10550 2400
+Wire Wire Line
+	10450 2200 10550 2200
+Connection ~ 10550 2200
+Wire Wire Line
+	10550 2200 10550 2300
+Wire Wire Line
+	10450 2100 10550 2100
+Connection ~ 10550 2100
+Wire Wire Line
+	10550 2100 10550 2200
+Wire Wire Line
+	10450 2000 10550 2000
+Connection ~ 10550 2000
+Wire Wire Line
+	10550 2000 10550 2100
+Wire Wire Line
+	10450 1900 10550 1900
+Connection ~ 10550 1900
+Wire Wire Line
+	10550 1900 10550 2000
+Wire Wire Line
+	10450 1800 10550 1800
+Connection ~ 10550 1800
+Wire Wire Line
+	10550 1800 10550 1900
+Wire Wire Line
+	10450 1700 10550 1700
+Connection ~ 10550 1700
+Wire Wire Line
+	10550 1700 10550 1800
+Wire Wire Line
+	10450 1600 10550 1600
+Connection ~ 10550 1600
+Wire Wire Line
+	10550 1600 10550 1700
 $EndSCHEMATC
