@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Ddraig)(type Legacy)(uri ${DDRAIGLIB}/Ddraig.lib)(options "")(descr ""))
+  (lib (name FloppyDiskController-rescue)(type Legacy)(uri ${KIPRJMOD}/FloppyDiskController-rescue.lib)(options "")(descr ""))
 )

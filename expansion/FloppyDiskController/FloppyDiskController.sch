@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Ddraig:D68K_64PIN_BOARD J1
-U 1 1 60A6B3FD
-P 3200 4050
-F 0 "J1" H 3175 6115 50  0000 C CNN
-F 1 "D68K_64PIN_BOARD" H 3175 6024 50  0000 C CNN
-F 2 "Ddraig:DIN41612_C_2x32_Male_Horizontal_THT" H 3050 2800 50  0001 C CNN
-F 3 "" H 3050 2800 50  0001 C CNN
-	1    3200 4050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Ddraig:WD37C65C U3
 U 1 1 60A6CD4B
 P 10450 2700
@@ -866,16 +855,12 @@ Wire Wire Line
 	4000 5350 3750 5350
 Wire Wire Line
 	2350 5450 2600 5450
-Wire Wire Line
-	2350 5550 2600 5550
 Text GLabel 5600 7800 0    50   Input ~ 0
 RESET
 Text GLabel 5600 7900 0    50   Input ~ 0
 RW
 Text GLabel 5600 8000 0    50   Input ~ 0
 UDS
-Text GLabel 5600 8100 0    50   Input ~ 0
-RESET
 Text GLabel 5600 8200 0    50   Input ~ 0
 CS_REG
 Text GLabel 5600 8300 0    50   Input ~ 0
@@ -997,11 +982,11 @@ Text Label 5600 8600 0    50   ~ 0
 A2
 Text Label 5600 8700 0    50   ~ 0
 A3
-Text Label 5600 8800 0    50   ~ 0
-A5
 Text Label 5600 8900 0    50   ~ 0
-A6
+A5
 Text Label 5600 9000 0    50   ~ 0
+A6
+Text Label 5600 9100 0    50   ~ 0
 A7
 Text Label 5000 9300 0    50   ~ 0
 A[1..7]
@@ -1033,8 +1018,6 @@ Wire Wire Line
 	5850 7900 5600 7900
 Wire Wire Line
 	5600 8000 5850 8000
-Wire Wire Line
-	5850 8100 5600 8100
 Wire Wire Line
 	5600 8200 5850 8200
 Wire Wire Line
@@ -1472,11 +1455,8 @@ Wire Wire Line
 Connection ~ 15100 6450
 Wire Wire Line
 	15100 6450 14600 6450
-Text GLabel 5700 9100 0    50   Output ~ 0
+Text GLabel 5600 8100 0    50   Output ~ 0
 LED
-Wire Wire Line
-	5700 9100 5850 9100
-NoConn ~ 2600 3250
 $Comp
 L Device:R R1
 U 1 1 61804C04
@@ -1618,6 +1598,33 @@ Wire Wire Line
 	4950 1200 4950 1600
 Wire Wire Line
 	4950 1600 5250 1600
+Wire Wire Line
+	5850 8100 5600 8100
+Entry Wire Line
+	5400 9200 5500 9100
+Wire Wire Line
+	5500 9100 5850 9100
+Text Label 5600 8800 0    50   ~ 0
+A4
+Entry Wire Line
+	2150 3150 2250 3250
+Wire Wire Line
+	2250 3250 2600 3250
+Text Label 2350 3250 0    50   ~ 0
+A4
+Wire Wire Line
+	2350 5550 2600 5550
+$Comp
+L Ddraig:D68K_64PIN_BOARD J1
+U 1 1 60A6B3FD
+P 3200 4050
+F 0 "J1" H 3175 6115 50  0000 C CNN
+F 1 "D68K_64PIN_BOARD" H 3175 6024 50  0000 C CNN
+F 2 "Ddraig:DIN41612_C_2x32_Male_Horizontal_THT" H 3050 2800 50  0001 C CNN
+F 3 "" H 3050 2800 50  0001 C CNN
+	1    3200 4050
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	2150 2750 2150 3450
 Wire Bus Line
