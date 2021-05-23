@@ -50,4 +50,8 @@ D Xilinx CPLD, Obsolete
 F xilinx/xc9536.pdf
 $ENDCMP
 #
+$CMP XilinxJTAG
+D Xilinx Platform Cable JTAG Header
+$ENDCMP
+#
 #End Doc Library
