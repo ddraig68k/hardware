@@ -34,6 +34,11 @@ K Mini-DIN
 F http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf
 $ENDCMP
 #
+$CMP PC16552D
+D PC16550D, Universal Asynchronous Receiver/Transmitter with FIFOs, PDIP-40
+K 1ch UART FIFO
+$ENDCMP
+#
 $CMP RPack04_Alt
 D 4 resistor network, parallel topology
 K R network parallel topology isolated
