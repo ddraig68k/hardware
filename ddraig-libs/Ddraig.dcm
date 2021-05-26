@@ -5,6 +5,10 @@ D Power symbol creates a global label with name "+5V"
 K power-flag
 $ENDCMP
 #
+$CMP 41464
+D 64K x 4 DRAM
+$ENDCMP
+#
 $CMP 68230_PLCC
 D PIT Interface parallele et Timer
 K MPRO
