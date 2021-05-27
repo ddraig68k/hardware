@@ -63,4 +63,12 @@ $CMP XilinxJTAG
 D Xilinx Platform Cable JTAG Header
 $ENDCMP
 #
+$CMP YM2151
+D Yamaha YM2151 OPM (FM Operator Type-M) Sound Generator
+$ENDCMP
+#
+$CMP YM3012
+D Yamaha YM 3012 DAC
+$ENDCMP
+#
 #End Doc Library

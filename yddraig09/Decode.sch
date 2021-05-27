@@ -1,7 +1,7 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A3 16535 11693
 encoding utf-8
 Sheet 3 6
 Title ""
@@ -13,4 +13,216 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Ddraig:EPF10K20 U?
+U 1 1 60AFC8B8
+P 4650 5650
+F 0 "U?" H 3700 2450 60  0000 C CNN
+F 1 "EPF10K20" H 5650 2450 60  0000 C CNN
+F 2 "" H 4250 7600 60  0000 C CNN
+F 3 "" H 4250 7600 60  0000 C CNN
+	1    4650 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J?
+U 1 1 60B024C3
+P 8450 1850
+F 0 "J?" H 8500 2267 50  0000 C CNN
+F 1 "JTAG" H 8500 2176 50  0000 C CNN
+F 2 "" H 8450 1850 50  0001 C CNN
+F 3 "~" H 8450 1850 50  0001 C CNN
+	1    8450 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60B04366
+P 4200 1750
+F 0 "#PWR?" H 4200 1600 50  0001 C CNN
+F 1 "+5V" H 4215 1923 50  0000 C CNN
+F 2 "" H 4200 1750 50  0001 C CNN
+F 3 "" H 4200 1750 50  0001 C CNN
+	1    4200 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60B055FA
+P 5000 1750
+F 0 "#PWR?" H 5000 1600 50  0001 C CNN
+F 1 "+5V" H 5015 1923 50  0000 C CNN
+F 2 "" H 5000 1750 50  0001 C CNN
+F 3 "" H 5000 1750 50  0001 C CNN
+	1    5000 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1950 5350 1850
+Wire Wire Line
+	5350 1850 5250 1850
+Wire Wire Line
+	4650 1850 4650 1950
+Wire Wire Line
+	4750 1950 4750 1850
+Connection ~ 4750 1850
+Wire Wire Line
+	4750 1850 4650 1850
+Wire Wire Line
+	4850 1950 4850 1850
+Connection ~ 4850 1850
+Wire Wire Line
+	4850 1850 4750 1850
+Wire Wire Line
+	4950 1950 4950 1850
+Connection ~ 4950 1850
+Wire Wire Line
+	4950 1850 4850 1850
+Wire Wire Line
+	5050 1950 5050 1850
+Connection ~ 5050 1850
+Wire Wire Line
+	5050 1850 5000 1850
+Wire Wire Line
+	5150 1950 5150 1850
+Connection ~ 5150 1850
+Wire Wire Line
+	5150 1850 5050 1850
+Wire Wire Line
+	5250 1950 5250 1850
+Connection ~ 5250 1850
+Wire Wire Line
+	5250 1850 5150 1850
+Wire Wire Line
+	4500 1850 4400 1850
+Wire Wire Line
+	3900 1850 3900 1950
+Wire Wire Line
+	4000 1950 4000 1850
+Connection ~ 4000 1850
+Wire Wire Line
+	4000 1850 3900 1850
+Wire Wire Line
+	4100 1950 4100 1850
+Connection ~ 4100 1850
+Wire Wire Line
+	4100 1850 4000 1850
+Wire Wire Line
+	4200 1950 4200 1850
+Connection ~ 4200 1850
+Wire Wire Line
+	4200 1850 4100 1850
+Wire Wire Line
+	4300 1950 4300 1850
+Connection ~ 4300 1850
+Wire Wire Line
+	4300 1850 4200 1850
+Wire Wire Line
+	4400 1950 4400 1850
+Connection ~ 4400 1850
+Wire Wire Line
+	4400 1850 4300 1850
+Wire Wire Line
+	4500 1850 4500 1950
+Wire Wire Line
+	4200 1750 4200 1850
+Wire Wire Line
+	5000 1750 5000 1850
+Connection ~ 5000 1850
+Wire Wire Line
+	5000 1850 4950 1850
+$Comp
+L power:GND #PWR?
+U 1 1 60B0B38F
+P 4200 9150
+F 0 "#PWR?" H 4200 8900 50  0001 C CNN
+F 1 "GND" H 4205 8977 50  0000 C CNN
+F 2 "" H 4200 9150 50  0001 C CNN
+F 3 "" H 4200 9150 50  0001 C CNN
+	1    4200 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60B0BB53
+P 5000 9150
+F 0 "#PWR?" H 5000 8900 50  0001 C CNN
+F 1 "GND" H 5005 8977 50  0000 C CNN
+F 2 "" H 5000 9150 50  0001 C CNN
+F 3 "" H 5000 9150 50  0001 C CNN
+	1    5000 9150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 8950 3950 9050
+Wire Wire Line
+	3950 9050 4050 9050
+Wire Wire Line
+	4450 9050 4450 8950
+Wire Wire Line
+	4050 8950 4050 9050
+Connection ~ 4050 9050
+Wire Wire Line
+	4050 9050 4150 9050
+Wire Wire Line
+	4150 8950 4150 9050
+Connection ~ 4150 9050
+Wire Wire Line
+	4150 9050 4200 9050
+Wire Wire Line
+	4250 8950 4250 9050
+Connection ~ 4250 9050
+Wire Wire Line
+	4250 9050 4350 9050
+Wire Wire Line
+	4350 8950 4350 9050
+Connection ~ 4350 9050
+Wire Wire Line
+	4350 9050 4450 9050
+Wire Wire Line
+	4200 9150 4200 9050
+Connection ~ 4200 9050
+Wire Wire Line
+	4200 9050 4250 9050
+Wire Wire Line
+	4650 8950 4650 9050
+Wire Wire Line
+	4650 9050 4750 9050
+Wire Wire Line
+	5350 9050 5350 8950
+Wire Wire Line
+	5250 8950 5250 9050
+Connection ~ 5250 9050
+Wire Wire Line
+	5250 9050 5350 9050
+Wire Wire Line
+	5150 8950 5150 9050
+Connection ~ 5150 9050
+Wire Wire Line
+	5150 9050 5250 9050
+Wire Wire Line
+	5050 8950 5050 9050
+Connection ~ 5050 9050
+Wire Wire Line
+	5050 9050 5150 9050
+Wire Wire Line
+	4950 8950 4950 9050
+Connection ~ 4950 9050
+Wire Wire Line
+	4950 9050 5000 9050
+Wire Wire Line
+	4850 8950 4850 9050
+Connection ~ 4850 9050
+Wire Wire Line
+	4850 9050 4950 9050
+Wire Wire Line
+	4750 8950 4750 9050
+Connection ~ 4750 9050
+Wire Wire Line
+	4750 9050 4850 9050
+Wire Wire Line
+	5000 9150 5000 9050
+Connection ~ 5000 9050
+Wire Wire Line
+	5000 9050 5050 9050
 $EndSCHEMATC
