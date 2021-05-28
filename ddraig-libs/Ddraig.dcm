@@ -54,6 +54,10 @@ D 2 Channel serial port
 K MPRO
 $ENDCMP
 #
+$CMP TPA3122D2
+D 15W Stereo Single Chip Class D DIP Power Amplifier
+$ENDCMP
+#
 $CMP XC9536PC44
 D Xilinx CPLD, Obsolete
 F xilinx/xc9536.pdf
