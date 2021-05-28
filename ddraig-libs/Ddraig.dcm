@@ -32,6 +32,10 @@ $CMP D68K_96PIN_PCB
 D DIN41612 C 96 Pin Female header for motherboard
 $ENDCMP
 #
+$CMP LTC690x
+D LTC6903/LTC6904 1kHz to 68MHz Serial Programmable Oscillator
+$ENDCMP
+#
 $CMP Mini-DIN-6
 D 6-pin Mini-DIN connector
 K Mini-DIN
