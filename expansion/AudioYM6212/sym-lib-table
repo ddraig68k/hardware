@@ -1,5 +1,3 @@
 (sym_lib_table
   (lib (name Ddraig)(type Legacy)(uri ${DDRAIGLIB}/Ddraig.lib)(options "")(descr ""))
-  (lib (name sn76489)(type Legacy)(uri D:/Dev/KiCAD/MegaBlaster2/schematic/libs/sn76489.lib)(options "")(descr ""))
-  (lib (name ym2612)(type Legacy)(uri D:/Dev/KiCAD/MegaBlaster2/schematic/libs/ym2612.lib)(options "")(descr ""))
 )
