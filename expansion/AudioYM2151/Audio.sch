@@ -957,4 +957,197 @@ Connection ~ 2500 3050
 Wire Wire Line
 	2900 3150 2900 3050
 Connection ~ 2900 3050
+Entry Wire Line
+	1000 5750 1100 5850
+Entry Wire Line
+	1000 5850 1100 5950
+Entry Wire Line
+	1000 5950 1100 6050
+Entry Wire Line
+	1000 6050 1100 6150
+Entry Wire Line
+	1000 6150 1100 6250
+Entry Wire Line
+	1000 6250 1100 6350
+Entry Wire Line
+	1000 6350 1100 6450
+Entry Wire Line
+	1000 6450 1100 6550
+Text HLabel 1350 6750 0    50   Input ~ 0
+A1
+Text Label 1400 6550 0    50   ~ 0
+D7
+Text Label 1400 6450 0    50   ~ 0
+D6
+Text Label 1400 6350 0    50   ~ 0
+D5
+Text Label 1400 6250 0    50   ~ 0
+D4
+Text Label 1400 6150 0    50   ~ 0
+D3
+Text Label 1400 6050 0    50   ~ 0
+D2
+Text Label 1400 5950 0    50   ~ 0
+D1
+Text Label 1400 5850 0    50   ~ 0
+D0
+Wire Wire Line
+	1350 6750 1600 6750
+Text Label 950  5650 2    50   ~ 0
+D[0..7]
+$Comp
+L power:+5V #PWR?
+U 1 1 60C08870
+P 2050 5100
+F 0 "#PWR?" H 2050 4950 50  0001 C CNN
+F 1 "+5V" H 2065 5273 50  0000 C CNN
+F 2 "" H 2050 5100 50  0001 C CNN
+F 3 "" H 2050 5100 50  0001 C CNN
+	1    2050 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60C08E24
+P 2050 7150
+F 0 "#PWR?" H 2050 6900 50  0001 C CNN
+F 1 "GND" H 2055 6977 50  0000 C CNN
+F 2 "" H 2050 7150 50  0001 C CNN
+F 3 "" H 2050 7150 50  0001 C CNN
+	1    2050 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 60C09AEA
+P 4400 7000
+F 0 "#PWR?" H 4400 6750 50  0001 C CNN
+F 1 "GNDA" H 4405 6827 50  0000 C CNN
+F 2 "" H 4400 7000 50  0001 C CNN
+F 3 "" H 4400 7000 50  0001 C CNN
+	1    4400 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60C0A870
+P 4150 7000
+F 0 "#PWR?" H 4150 6750 50  0001 C CNN
+F 1 "GND" H 4155 6827 50  0000 C CNN
+F 2 "" H 4150 7000 50  0001 C CNN
+F 3 "" H 4150 7000 50  0001 C CNN
+	1    4150 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 6900 4150 7000
+Wire Wire Line
+	4350 6900 4350 6950
+Wire Wire Line
+	4350 6950 4400 6950
+Wire Wire Line
+	4400 6950 4400 7000
+Wire Wire Line
+	4450 6900 4450 6950
+Wire Wire Line
+	4450 6950 4400 6950
+Connection ~ 4400 6950
+Wire Wire Line
+	2050 5100 2050 5200
+Text HLabel 1500 5650 0    50   Input ~ 0
+~CS_YM
+Text HLabel 1500 5550 0    50   Input ~ 0
+~RD_YM
+Wire Wire Line
+	1100 5850 1600 5850
+Wire Wire Line
+	1100 5950 1600 5950
+Wire Wire Line
+	1100 6050 1600 6050
+Wire Wire Line
+	1100 6150 1600 6150
+Wire Wire Line
+	1100 6250 1600 6250
+Wire Wire Line
+	1100 6350 1600 6350
+Wire Wire Line
+	1100 6450 1600 6450
+Wire Wire Line
+	1100 6550 1600 6550
+Wire Bus Line
+	1000 5650 700  5650
+Text HLabel 1500 5450 0    50   Input ~ 0
+~WR_YM
+Wire Wire Line
+	1500 5450 1600 5450
+Wire Wire Line
+	1600 5550 1500 5550
+Wire Wire Line
+	1600 5650 1500 5650
+Wire Wire Line
+	2000 7050 2000 7100
+Wire Wire Line
+	2000 7100 2050 7100
+Wire Wire Line
+	2100 7100 2100 7050
+Wire Wire Line
+	2050 7150 2050 7100
+Connection ~ 2050 7100
+Wire Wire Line
+	2050 7100 2100 7100
+$Comp
+L power:+5V #PWR?
+U 1 1 60C9B598
+P 4250 5150
+F 0 "#PWR?" H 4250 5000 50  0001 C CNN
+F 1 "+5V" H 4265 5323 50  0000 C CNN
+F 2 "" H 4250 5150 50  0001 C CNN
+F 3 "" H 4250 5150 50  0001 C CNN
+	1    4250 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 5150 4250 5250
+Wire Wire Line
+	3750 6100 3300 6100
+Wire Wire Line
+	3300 6100 3300 6750
+Wire Wire Line
+	3300 6750 2500 6750
+Wire Wire Line
+	2500 6650 3200 6650
+Wire Wire Line
+	3200 6650 3200 6000
+Wire Wire Line
+	3200 6000 3750 6000
+Wire Wire Line
+	3750 5750 3100 5750
+Wire Wire Line
+	3100 5750 3100 6450
+Wire Wire Line
+	3100 6450 2500 6450
+NoConn ~ 2500 5850
+NoConn ~ 2500 5950
+Text HLabel 2650 6250 2    50   Input ~ 0
+~RESET
+Text HLabel 2650 6150 2    50   Input ~ 0
+~IRQ
+Wire Wire Line
+	2500 6250 2650 6250
+Wire Wire Line
+	2650 6150 2500 6150
+Text Label 3650 5850 2    50   ~ 0
+~RESET
+Wire Wire Line
+	3650 5850 3750 5850
+Text Label 4950 6050 0    50   ~ 0
+CH1
+Text Label 4950 6150 0    50   ~ 0
+CH2
+Wire Wire Line
+	4950 6150 4750 6150
+Wire Wire Line
+	4750 6050 4950 6050
+Wire Bus Line
+	1000 5650 1000 6450
 $EndSCHEMATC
