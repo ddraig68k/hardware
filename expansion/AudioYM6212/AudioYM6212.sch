@@ -796,58 +796,6 @@ F 3 "" H 7950 4600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:NE5532 U?
-U 1 1 60B2B5C7
-P 1900 7850
-F 0 "U?" H 1900 8217 50  0000 C CNN
-F 1 "NE5532" H 1900 8126 50  0000 C CNN
-F 2 "" H 1900 7850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 1900 7850 50  0001 C CNN
-	1    1900 7850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:NE5532 U?
-U 2 1 60B2DC80
-P 1900 8450
-F 0 "U?" H 1900 8817 50  0000 C CNN
-F 1 "NE5532" H 1900 8726 50  0000 C CNN
-F 2 "" H 1900 8450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 1900 8450 50  0001 C CNN
-	2    1900 8450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:NE5532 U?
-U 3 1 60B307EA
-P 1000 8050
-F 0 "U?" H 958 8096 50  0000 L CNN
-F 1 "NE5532" H 958 8005 50  0000 L CNN
-F 2 "" H 1000 8050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 1000 8050 50  0001 C CNN
-	3    1000 8050
-	1    0    0    -1  
-$EndComp
-Wire Bus Line
-	1500 1850 1500 2550
-Wire Bus Line
-	11800 4700 11800 5400
-Wire Bus Line
-	14700 1300 14700 3100
-Wire Bus Line
-	3550 1850 3550 3450
-$Comp
-L Device:R_Variable R?
-U 1 1 60B3AF7D
-P 2350 9250
-F 0 "R?" H 2478 9296 50  0000 L CNN
-F 1 "R_Variable" H 2478 9205 50  0000 L CNN
-F 2 "" V 2280 9250 50  0001 C CNN
-F 3 "~" H 2350 9250 50  0001 C CNN
-	1    2350 9250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:AudioJack3 J?
 U 1 1 60B3B723
 P 8350 9750
@@ -863,7 +811,7 @@ L Device:R_POT_Dual_Separate RV?
 U 1 1 60B3C304
 P 4250 8000
 F 0 "RV?" H 4180 8046 50  0000 R CNN
-F 1 "R_POT_Dual_Separate" H 4180 7955 50  0000 R CNN
+F 1 "10K" H 4180 7955 50  0000 R CNN
 F 2 "" H 4250 8000 50  0001 C CNN
 F 3 "~" H 4250 8000 50  0001 C CNN
 	1    4250 8000
@@ -874,10 +822,18 @@ L Device:R_POT_Dual_Separate RV?
 U 2 1 60B3D555
 P 4250 8450
 F 0 "RV?" H 4180 8496 50  0000 R CNN
-F 1 "R_POT_Dual_Separate" H 4180 8405 50  0000 R CNN
+F 1 "10K" H 4180 8405 50  0000 R CNN
 F 2 "" H 4250 8450 50  0001 C CNN
 F 3 "~" H 4250 8450 50  0001 C CNN
 	2    4250 8450
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	1500 1850 1500 2550
+Wire Bus Line
+	11800 4700 11800 5400
+Wire Bus Line
+	14700 1300 14700 3100
+Wire Bus Line
+	3550 1850 3550 3450
 $EndSCHEMATC
