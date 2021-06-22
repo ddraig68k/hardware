@@ -1060,7 +1060,7 @@ U 1 1 60D05F67
 P 9600 7150
 F 0 "J4" H 9600 7815 50  0000 C CNN
 F 1 "XilinxJTAG" H 9600 7724 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical" H 9600 7150 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x07_P2.54mm_Vertical" H 9600 7150 50  0001 C CNN
 F 3 "" H 9600 7150 50  0001 C CNN
 	1    9600 7150
 	1    0    0    -1  
@@ -1145,11 +1145,11 @@ Entry Wire Line
 	8650 4500 8550 4600
 Wire Wire Line
 	8100 4600 8550 4600
-Text Label 5850 2300 2    50   ~ 0
-SPI_CLK
 Text Label 5850 2400 2    50   ~ 0
-SPI_DO
+SPI_CLK
 Text Label 5850 2500 2    50   ~ 0
+SPI_DO
+Text Label 5850 2300 2    50   ~ 0
 CS_YMCLK
 Wire Wire Line
 	6100 2300 5850 2300

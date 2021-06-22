@@ -399,7 +399,7 @@ AR Path="/60B0BE0A/60CE03C0" Ref="RV?"  Part="1"
 AR Path="/60CBD7B5/60CE03C0" Ref="RV1"  Part="1" 
 F 0 "RV1" H 9181 3496 50  0000 R CNN
 F 1 "10K" H 9181 3405 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Alps_RK097_Dual_Horizontal" H 9250 3450 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK163_Dual_Horizontal" H 9250 3450 50  0001 C CNN
 F 3 "~" H 9250 3450 50  0001 C CNN
 	1    9250 3450
 	1    0    0    -1  
@@ -412,7 +412,7 @@ AR Path="/60B0BE0A/60CE03C6" Ref="RV?"  Part="2"
 AR Path="/60CBD7B5/60CE03C6" Ref="RV1"  Part="2" 
 F 0 "RV1" H 9180 4396 50  0000 R CNN
 F 1 "10K" H 9180 4305 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Alps_RK097_Dual_Horizontal" H 9250 4350 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Alps_RK163_Dual_Horizontal" H 9250 4350 50  0001 C CNN
 F 3 "~" H 9250 4350 50  0001 C CNN
 	2    9250 4350
 	1    0    0    -1  
