@@ -62,6 +62,10 @@ $CMP TPA3122D2
 D 15W Stereo Single Chip Class D DIP Power Amplifier
 $ENDCMP
 #
+$CMP V9990
+D Yamaha V9990 Video Display Processor
+$ENDCMP
+#
 $CMP XC9536PC44
 D Xilinx CPLD, Obsolete
 F xilinx/xc9536.pdf

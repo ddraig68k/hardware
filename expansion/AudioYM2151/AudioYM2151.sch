@@ -401,37 +401,37 @@ Wire Wire Line
 	8100 2000 8550 2000
 Wire Wire Line
 	8100 2100 8550 2100
-Text Label 8250 4600 0    50   ~ 0
-D0
 Text Label 8250 4500 0    50   ~ 0
+D0
+Text Label 8250 4600 0    50   ~ 0
 D1
-Text Label 8250 4400 0    50   ~ 0
-D2
 Text Label 8250 4300 0    50   ~ 0
+D2
+Text Label 8250 4400 0    50   ~ 0
 D3
-Text Label 8250 4200 0    50   ~ 0
-D4
 Text Label 8250 4100 0    50   ~ 0
+D4
+Text Label 8250 4200 0    50   ~ 0
 D5
-Text Label 8250 4000 0    50   ~ 0
-D6
 Text Label 8250 3900 0    50   ~ 0
+D6
+Text Label 8250 4000 0    50   ~ 0
 D7
 Text Label 8250 2400 0    50   ~ 0
 D8
 Text Label 8250 2500 0    50   ~ 0
 D9
-Text Label 8250 1600 0    50   ~ 0
+Text Label 8250 2000 0    50   ~ 0
 D10
-Text Label 8250 1700 0    50   ~ 0
+Text Label 8250 2100 0    50   ~ 0
 D11
 Text Label 8250 1800 0    50   ~ 0
 D12
 Text Label 8250 1900 0    50   ~ 0
 D13
-Text Label 8250 2000 0    50   ~ 0
+Text Label 8250 1600 0    50   ~ 0
 D14
-Text Label 8250 2100 0    50   ~ 0
+Text Label 8250 1700 0    50   ~ 0
 D15
 Text Label 8750 1400 0    50   ~ 0
 D[0..15]
