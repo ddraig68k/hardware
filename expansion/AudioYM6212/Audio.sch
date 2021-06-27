@@ -1,0 +1,152 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Ddraig:LTC690x U?
+U 1 1 60E218B5
+P 7400 4050
+F 0 "U?" H 7150 4650 50  0000 C CNN
+F 1 "LTC690x" H 7650 4650 50  0000 C CNN
+F 2 "" H 7400 4050 50  0001 C CNN
+F 3 "" H 7400 4050 50  0001 C CNN
+	1    7400 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E218BB
+P 7400 4500
+F 0 "#PWR?" H 7400 4250 50  0001 C CNN
+F 1 "GND" H 7405 4327 50  0000 C CNN
+F 2 "" H 7400 4500 50  0001 C CNN
+F 3 "" H 7400 4500 50  0001 C CNN
+	1    7400 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60E218C1
+P 7400 3300
+F 0 "#PWR?" H 7400 3150 50  0001 C CNN
+F 1 "+5V" H 7415 3473 50  0000 C CNN
+F 2 "" H 7400 3300 50  0001 C CNN
+F 3 "" H 7400 3300 50  0001 C CNN
+	1    7400 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3300 7400 3400
+Wire Wire Line
+	7400 4400 7400 4500
+Text Label 6750 3700 2    50   ~ 0
+SDI
+Text Label 6750 3800 2    50   ~ 0
+SCK
+Text Label 6750 4000 2    50   ~ 0
+CLK_SEL0
+Text Label 8100 3700 0    50   ~ 0
+YM_CLK
+Text Label 8100 4000 0    50   ~ 0
+YM_CLK_EN
+Wire Wire Line
+	7800 4000 8100 4000
+Wire Wire Line
+	7800 3700 8100 3700
+Wire Wire Line
+	6750 4000 7000 4000
+Wire Wire Line
+	7000 3800 6750 3800
+Wire Wire Line
+	6750 3700 7000 3700
+$Comp
+L Ddraig:LTC690x U?
+U 1 1 60E218D3
+P 5100 4050
+F 0 "U?" H 4850 4650 50  0000 C CNN
+F 1 "LTC690x" H 5350 4650 50  0000 C CNN
+F 2 "" H 5100 4050 50  0001 C CNN
+F 3 "" H 5100 4050 50  0001 C CNN
+	1    5100 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60E218D9
+P 5100 4500
+F 0 "#PWR?" H 5100 4250 50  0001 C CNN
+F 1 "GND" H 5105 4327 50  0000 C CNN
+F 2 "" H 5100 4500 50  0001 C CNN
+F 3 "" H 5100 4500 50  0001 C CNN
+	1    5100 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 60E218DF
+P 5100 3300
+F 0 "#PWR?" H 5100 3150 50  0001 C CNN
+F 1 "+5V" H 5115 3473 50  0000 C CNN
+F 2 "" H 5100 3300 50  0001 C CNN
+F 3 "" H 5100 3300 50  0001 C CNN
+	1    5100 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3300 5100 3400
+Wire Wire Line
+	5100 4400 5100 4500
+Text Label 4450 3700 2    50   ~ 0
+SDI
+Text Label 4450 3800 2    50   ~ 0
+SCK
+Text Label 4450 4000 2    50   ~ 0
+CLK_SEL1
+Text Label 5800 3700 0    50   ~ 0
+PSG_CLK
+Text Label 5800 4000 0    50   ~ 0
+PSG_CLK_EN
+Wire Wire Line
+	5500 4000 5800 4000
+Wire Wire Line
+	5500 3700 5800 3700
+Wire Wire Line
+	4450 4000 4700 4000
+Wire Wire Line
+	4700 3800 4450 3800
+Wire Wire Line
+	4450 3700 4700 3700
+$Comp
+L Ddraig:YM2612 U?
+U 1 1 60E218F1
+P 3150 2650
+F 0 "U?" H 3150 3653 60  0000 C CNN
+F 1 "YM2612" H 3150 3547 60  0000 C CNN
+F 2 "" H 3150 3450 60  0001 C CNN
+F 3 "" H 3150 3450 60  0001 C CNN
+	1    3150 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ddraig:SN76489 U?
+U 1 1 60E218F7
+P 3100 5200
+F 0 "U?" H 3100 6103 60  0000 C CNN
+F 1 "SN76489" H 3100 5997 60  0000 C CNN
+F 2 "" H 3000 4600 60  0001 C CNN
+F 3 "" H 3000 4600 60  0001 C CNN
+	1    3100 5200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
