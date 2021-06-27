@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Ddraig)(type Legacy)(uri D:/Dev/KiCAD/ddraig68k-kicad/ddraig-libs/Ddraig.lib)(options "")(descr ""))
+)
