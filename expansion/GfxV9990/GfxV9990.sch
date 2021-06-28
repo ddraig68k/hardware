@@ -499,17 +499,6 @@ Text Label 6200 4850 2    50   ~ 0
 ~VDPW
 Text Label 6200 4750 2    50   ~ 0
 ~VDPR
-$Comp
-L Ddraig:XilinxJTAG J2
-U 1 1 60ED190B
-P 10250 3650
-F 0 "J2" H 10250 4315 50  0000 C CNN
-F 1 "XilinxJTAG" H 10250 4224 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical" H 10250 3650 50  0001 C CNN
-F 3 "" H 10250 3650 50  0001 C CNN
-	1    10250 3650
-	1    0    0    -1  
-$EndComp
 NoConn ~ 7500 2950
 NoConn ~ 8900 1450
 NoConn ~ 8900 1350

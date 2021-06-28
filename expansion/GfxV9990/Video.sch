@@ -977,17 +977,6 @@ F 3 "~" H 6450 4750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Transistor_BJT:2N3904 Q1
-U 1 1 60EAD7FF
-P 7000 4750
-F 0 "Q1" H 7190 4796 50  0000 L CNN
-F 1 "2N3904" H 7190 4705 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7200 4675 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 7000 4750 50  0001 L CNN
-	1    7000 4750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R23
 U 1 1 60EAE1AC
 P 7100 5400
@@ -1146,4 +1135,15 @@ Wire Wire Line
 	3400 7100 3850 7100
 Wire Wire Line
 	3400 7150 3400 7100
+$Comp
+L Transistor_BJT:BC817 Q1
+U 1 1 60DD58F4
+P 7000 4750
+F 0 "Q1" H 7191 4796 50  0000 L CNN
+F 1 "BC817" H 7191 4705 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7200 4675 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC818-D.pdf" H 7000 4750 50  0001 L CNN
+	1    7000 4750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
