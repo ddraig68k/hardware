@@ -400,7 +400,7 @@ F 1 "2K2" V 2984 2550 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3030 2550 50  0001 C CNN
 F 3 "~" H 3100 2550 50  0001 C CNN
 	1    3100 2550
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:C C9
