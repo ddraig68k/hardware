@@ -526,45 +526,45 @@ $EndComp
 $Comp
 L 74xx:74HCT04 U3
 U 3 1 60F9E0F2
-P 5350 7100
-F 0 "U3" H 5350 7417 50  0000 C CNN
-F 1 "74HCT04" H 5350 7326 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5350 7100 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5350 7100 50  0001 C CNN
-	3    5350 7100
+P 4700 6900
+F 0 "U3" H 4700 7217 50  0000 C CNN
+F 1 "74HCT04" H 4700 7126 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4700 6900 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4700 6900 50  0001 C CNN
+	3    4700 6900
 	-1   0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HCT04 U3
 U 4 1 60F9E0F8
-P 5350 6600
-F 0 "U3" H 5350 6917 50  0000 C CNN
-F 1 "74HCT04" H 5350 6826 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5350 6600 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5350 6600 50  0001 C CNN
-	4    5350 6600
+P 4700 6400
+F 0 "U3" H 4700 6717 50  0000 C CNN
+F 1 "74HCT04" H 4700 6626 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 4700 6400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 4700 6400 50  0001 C CNN
+	4    4700 6400
 	-1   0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HCT04 U3
 U 5 1 60F9E0FE
-P 6150 6600
-F 0 "U3" H 6150 6917 50  0000 C CNN
-F 1 "74HCT04" H 6150 6826 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6150 6600 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6150 6600 50  0001 C CNN
-	5    6150 6600
+P 5500 6400
+F 0 "U3" H 5500 6717 50  0000 C CNN
+F 1 "74HCT04" H 5500 6626 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5500 6400 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5500 6400 50  0001 C CNN
+	5    5500 6400
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74HCT04 U3
 U 6 1 60F9E104
-P 6150 7100
-F 0 "U3" H 6150 7417 50  0000 C CNN
-F 1 "74HCT04" H 6150 7326 50  0000 C CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 6150 7100 50  0001 C CNN
-F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 6150 7100 50  0001 C CNN
-	6    6150 7100
+P 5500 6900
+F 0 "U3" H 5500 7217 50  0000 C CNN
+F 1 "74HCT04" H 5500 7126 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket" H 5500 6900 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf" H 5500 6900 50  0001 C CNN
+	6    5500 6900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -605,12 +605,12 @@ $EndComp
 $Comp
 L power:GND #PWR026
 U 1 1 60F9E11D
-P 5750 7250
-F 0 "#PWR026" H 5750 7000 50  0001 C CNN
-F 1 "GND" H 5755 7077 50  0000 C CNN
-F 2 "" H 5750 7250 50  0001 C CNN
-F 3 "" H 5750 7250 50  0001 C CNN
-	1    5750 7250
+P 5100 7050
+F 0 "#PWR026" H 5100 6800 50  0001 C CNN
+F 1 "GND" H 5105 6877 50  0000 C CNN
+F 2 "" H 5100 7050 50  0001 C CNN
+F 3 "" H 5100 7050 50  0001 C CNN
+	1    5100 7050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -687,19 +687,19 @@ Wire Wire Line
 Wire Wire Line
 	4550 5050 4550 5150
 Wire Wire Line
-	5750 7250 5750 7100
+	5100 7050 5100 6900
 Wire Wire Line
-	5750 6600 5850 6600
+	5100 6400 5200 6400
 Wire Wire Line
-	5750 6600 5650 6600
-Connection ~ 5750 6600
+	5100 6400 5000 6400
+Connection ~ 5100 6400
 Wire Wire Line
-	5650 7100 5750 7100
-Connection ~ 5750 7100
+	5000 6900 5100 6900
+Connection ~ 5100 6900
 Wire Wire Line
-	5750 7100 5750 6600
+	5100 6900 5100 6400
 Wire Wire Line
-	5750 7100 5850 7100
+	5100 6900 5200 6900
 Wire Wire Line
 	1700 7300 1700 7250
 Wire Wire Line
@@ -959,10 +959,10 @@ Wire Wire Line
 	10100 5200 10000 5200
 Wire Wire Line
 	10000 5200 10000 5300
-NoConn ~ 6450 6600
-NoConn ~ 6450 7100
-NoConn ~ 5050 7100
-NoConn ~ 5050 6600
+NoConn ~ 5800 6400
+NoConn ~ 5800 6900
+NoConn ~ 4400 6900
+NoConn ~ 4400 6400
 NoConn ~ 4950 2350
 NoConn ~ 3950 2350
 $Comp

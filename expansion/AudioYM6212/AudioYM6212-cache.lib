@@ -378,7 +378,7 @@ ENDDEF
 DEF Ddraig_XilinxJTAG J 0 40 Y Y 1 F N
 F0 "J" -250 550 50 H V C CNN
 F1 "Ddraig_XilinxJTAG" 0 -550 50 H V C CNN
-F2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical" 0 0 50 H I C CNN
+F2 "Connector_IDC:IDC-Header_2x07_P2.54mm_Vertical" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
 S -300 500 300 -500 0 1 0 f
