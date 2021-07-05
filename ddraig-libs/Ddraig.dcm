@@ -40,6 +40,10 @@ $CMP LTC690x
 D LTC6903/LTC6904 1kHz to 68MHz Serial Programmable Oscillator
 $ENDCMP
 #
+$CMP MC68881FN
+D MC68881/2 Math Co-Processor
+$ENDCMP
+#
 $CMP Mini-DIN-6
 D 6-pin Mini-DIN connector
 K Mini-DIN
