@@ -453,6 +453,10 @@ Wire Wire Line
 	5600 2200 6450 2200
 Wire Wire Line
 	6450 2200 6450 2400
+Text HLabel 6700 4600 0    50   Output ~ 0
+CLK8M
+Wire Wire Line
+	6900 4600 6700 4600
 Wire Bus Line
 	9500 1300 9500 1600
 Wire Bus Line

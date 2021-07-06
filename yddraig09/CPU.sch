@@ -68,17 +68,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS73" H 5700 6400 50  0001 C CNN
 	3    5700 6400
 	1    0    0    -1  
 $EndComp
-$Comp
-L Oscillator:CXO_DIP8 X?
-U 1 1 60AD0352
-P 1400 6500
-F 0 "X?" H 1500 6750 50  0000 L CNN
-F 1 "8Mhz" H 1450 6250 50  0000 L CNN
-F 2 "Oscillator:Oscillator_DIP-8" H 1850 6150 50  0001 C CNN
-F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 1300 6500 50  0001 C CNN
-	1    1400 6500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3250 6450 2850 6450
 Wire Wire Line
@@ -726,41 +715,6 @@ Wire Wire Line
 	5700 6800 5700 6850
 $Comp
 L power:GND #PWR?
-U 1 1 60B5C0A0
-P 1400 7050
-F 0 "#PWR?" H 1400 6800 50  0001 C CNN
-F 1 "GND" H 1405 6877 50  0000 C CNN
-F 2 "" H 1400 7050 50  0001 C CNN
-F 3 "" H 1400 7050 50  0001 C CNN
-	1    1400 7050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 60B5C47C
-P 1400 6000
-F 0 "#PWR?" H 1400 5850 50  0001 C CNN
-F 1 "+5V" H 1415 6173 50  0000 C CNN
-F 2 "" H 1400 6000 50  0001 C CNN
-F 3 "" H 1400 6000 50  0001 C CNN
-	1    1400 6000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1400 6000 1400 6100
-Wire Wire Line
-	1400 6800 1400 7050
-Wire Wire Line
-	1100 6500 1000 6500
-Wire Wire Line
-	1000 6500 1000 6100
-Wire Wire Line
-	1000 6100 1400 6100
-Connection ~ 1400 6100
-Wire Wire Line
-	1400 6100 1400 6200
-$Comp
-L power:GND #PWR?
 U 1 1 60B7A061
 P 2750 4350
 F 0 "#PWR?" H 2750 4100 50  0001 C CNN
@@ -875,4 +829,6 @@ Wire Bus Line
 	5650 1500 5650 2900
 Wire Bus Line
 	3650 1500 3650 3100
+Text HLabel 1700 6500 0    50   Input ~ 0
+CLK8M
 $EndSCHEMATC
