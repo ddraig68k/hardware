@@ -823,8 +823,6 @@ F 3 "" H 5350 7150 50  0001 C CNN
 	1    5350 7150
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	1700 4350 1700 5150
 Wire Wire Line
 	5350 6450 5350 6550
 $Comp
@@ -866,4 +864,6 @@ F 3 "" H 9700 4950 50  0001 C CNN
 	1    9700 4950
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	1700 4350 1700 5150
 $EndSCHEMATC

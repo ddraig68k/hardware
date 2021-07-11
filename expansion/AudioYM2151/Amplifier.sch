@@ -176,22 +176,22 @@ AR Path="/60B0BE0A/60CE0301" Ref="L?"  Part="1"
 AR Path="/60CBD7B5/60CE0301" Ref="L4"  Part="1" 
 F 0 "L4" V 6369 2650 50  0000 C CNN
 F 1 "22uH" V 6460 2650 50  0000 C CNN
-F 2 "Ferrite_THT:LairdTech_28C0236-0JW-10" H 6550 2650 50  0001 C CNN
+F 2 "Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP" H 6550 2650 50  0001 C CNN
 F 3 "~" H 6550 2650 50  0001 C CNN
 	1    6550 2650
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:CP C?
 U 1 1 60CE0307
-P 7350 2650
+P 7600 2650
 AR Path="/60B0BE0A/60CE0307" Ref="C?"  Part="1" 
 AR Path="/60CBD7B5/60CE0307" Ref="C30"  Part="1" 
-F 0 "C30" V 7605 2650 50  0000 C CNN
-F 1 "470uF" V 7514 2650 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 7388 2500 50  0001 C CNN
-F 3 "~" H 7350 2650 50  0001 C CNN
-	1    7350 2650
+F 0 "C30" V 7855 2650 50  0000 C CNN
+F 1 "470uF" V 7764 2650 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 7638 2500 50  0001 C CNN
+F 3 "~" H 7600 2650 50  0001 C CNN
+	1    7600 2650
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -200,12 +200,12 @@ U 1 1 60CE030D
 P 7150 2900
 AR Path="/60B0BE0A/60CE030D" Ref="C?"  Part="1" 
 AR Path="/60CBD7B5/60CE030D" Ref="C28"  Part="1" 
-F 0 "C28" H 7265 2946 50  0000 L CNN
-F 1 "680nF" H 7265 2855 50  0000 L CNN
+F 0 "C28" H 6850 2850 50  0000 L CNN
+F 1 "680nF" H 6800 2950 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 7188 2750 50  0001 C CNN
 F 3 "~" H 7150 2900 50  0001 C CNN
 	1    7150 2900
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R?
@@ -260,10 +260,10 @@ AR Path="/60B0BE0A/60CE0329" Ref="L?"  Part="1"
 AR Path="/60CBD7B5/60CE0329" Ref="L3"  Part="1" 
 F 0 "L3" V 6319 3650 50  0000 C CNN
 F 1 "22uH" V 6410 3650 50  0000 C CNN
-F 2 "Ferrite_THT:LairdTech_28C0236-0JW-10" H 6500 3650 50  0001 C CNN
+F 2 "Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP" H 6500 3650 50  0001 C CNN
 F 3 "~" H 6500 3650 50  0001 C CNN
 	1    6500 3650
-	0    1    1    0   
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	6700 2650 6800 2650
@@ -276,19 +276,19 @@ Wire Wire Line
 	7150 2750 7150 2650
 Connection ~ 7150 2650
 Wire Wire Line
-	7150 2650 7200 2650
+	7150 2650 7450 2650
 $Comp
 L Device:C C?
 U 1 1 60CE0336
 P 7150 3900
 AR Path="/60B0BE0A/60CE0336" Ref="C?"  Part="1" 
 AR Path="/60CBD7B5/60CE0336" Ref="C29"  Part="1" 
-F 0 "C29" H 7265 3946 50  0000 L CNN
-F 1 "680nF" H 7265 3855 50  0000 L CNN
+F 0 "C29" H 6850 3900 50  0000 L CNN
+F 1 "680nF" H 6800 4000 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 7188 3750 50  0001 C CNN
 F 3 "~" H 7150 3900 50  0001 C CNN
 	1    7150 3900
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R?
@@ -315,14 +315,14 @@ Wire Wire Line
 $Comp
 L Device:CP C?
 U 1 1 60CE0347
-P 7350 3650
+P 7600 3650
 AR Path="/60B0BE0A/60CE0347" Ref="C?"  Part="1" 
 AR Path="/60CBD7B5/60CE0347" Ref="C31"  Part="1" 
-F 0 "C31" V 7605 3650 50  0000 C CNN
-F 1 "470uF" V 7514 3650 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 7388 3500 50  0001 C CNN
-F 3 "~" H 7350 3650 50  0001 C CNN
-	1    7350 3650
+F 0 "C31" V 7855 3650 50  0000 C CNN
+F 1 "470uF" V 7764 3650 50  0000 C CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 7638 3500 50  0001 C CNN
+F 3 "~" H 7600 3650 50  0001 C CNN
+	1    7600 3650
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -355,7 +355,7 @@ Wire Wire Line
 	7150 3750 7150 3650
 Connection ~ 7150 3650
 Wire Wire Line
-	7150 3650 7200 3650
+	7150 3650 7450 3650
 Wire Wire Line
 	6800 3650 6800 3750
 Connection ~ 6800 3650
@@ -405,13 +405,13 @@ F 7 "L" H 9100 3400 50  0001 L BNN "PARTREV"
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7500 3650 8150 3650
+	7750 3650 8150 3650
 Wire Wire Line
 	8150 3650 8150 3750
 Wire Wire Line
 	8150 4050 8150 4150
 Wire Wire Line
-	7500 2650 8150 2650
+	7750 2650 8150 2650
 Wire Wire Line
 	8150 2650 8150 2850
 Wire Wire Line

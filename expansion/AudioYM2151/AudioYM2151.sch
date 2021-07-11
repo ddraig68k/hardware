@@ -406,53 +406,39 @@ D15
 Text Label 4550 1100 0    50   ~ 0
 D[0..15]
 Entry Wire Line
-	1450 3800 1550 3900
+	1300 3800 1400 3900
 Entry Wire Line
-	1450 3800 1550 3900
+	1300 3800 1400 3900
 Entry Wire Line
-	1450 3900 1550 4000
+	1300 3900 1400 4000
 Entry Wire Line
-	1450 4000 1550 4100
+	1300 4000 1400 4100
 Entry Wire Line
-	1450 4100 1550 4200
+	1300 4100 1400 4200
 Entry Wire Line
-	1450 4200 1550 4300
+	1300 4200 1400 4300
 Entry Wire Line
-	1450 4300 1550 4400
+	1300 4300 1400 4400
 Entry Wire Line
-	1450 4400 1550 4500
-Wire Wire Line
-	1550 3900 1900 3900
-Wire Wire Line
-	1550 4000 1900 4000
-Wire Wire Line
-	1550 4100 1900 4100
-Wire Wire Line
-	1550 4200 1900 4200
-Wire Wire Line
-	1550 4300 1900 4300
-Wire Wire Line
-	1550 4400 1900 4400
-Wire Wire Line
-	1550 4500 1900 4500
-Text Label 1700 4500 0    50   ~ 0
+	1300 4400 1400 4500
+Text Label 1550 4500 0    50   ~ 0
 A1
-Text Label 1700 4400 0    50   ~ 0
+Text Label 1550 4400 0    50   ~ 0
 A2
-Text Label 1700 4300 0    50   ~ 0
+Text Label 1550 4300 0    50   ~ 0
 A3
-Text Label 1700 4200 0    50   ~ 0
+Text Label 1550 4200 0    50   ~ 0
 A4
-Text Label 1700 4100 0    50   ~ 0
+Text Label 1550 4100 0    50   ~ 0
 A5
-Text Label 1700 4000 0    50   ~ 0
+Text Label 1550 4000 0    50   ~ 0
 A6
-Text Label 1700 3900 0    50   ~ 0
+Text Label 1550 3900 0    50   ~ 0
 A7
-Text Label 1350 3700 2    50   ~ 0
+Text Label 1200 3700 2    50   ~ 0
 A[1..7]
 Wire Bus Line
-	1450 3700 1100 3700
+	1300 3700 950  3700
 Text Label 6000 6050 2    50   ~ 0
 SYS_CLK
 Wire Wire Line
@@ -714,19 +700,19 @@ Wire Wire Line
 	5650 7600 5650 7500
 Wire Wire Line
 	5350 7250 5250 7250
-Text Label 1650 1800 2    50   ~ 0
-~DTACK
-Text Label 1650 1900 2    50   ~ 0
-~RESET
-Text Label 1650 3300 2    50   ~ 0
-CS_REG
-Text Label 1650 3200 2    50   ~ 0
-CS_DATA
-Text Label 1650 1300 2    50   ~ 0
-~LDS
 Text Label 1650 1400 2    50   ~ 0
-~UDS
+~DTACK
 Text Label 1650 1500 2    50   ~ 0
+~RESET
+Text Label 1650 2200 2    50   ~ 0
+CS_REG
+Text Label 1650 2100 2    50   ~ 0
+CS_DATA
+Text Label 1800 3600 2    50   ~ 0
+~LDS
+Text Label 1800 3700 2    50   ~ 0
+~UDS
+Text Label 1800 3800 2    50   ~ 0
 R~W
 Text Label 8050 1350 2    50   ~ 0
 ~RESET
@@ -745,50 +731,16 @@ Connection ~ 4850 7600
 Wire Wire Line
 	4450 7150 4450 7250
 Connection ~ 4450 7250
-Text Label 1650 1600 2    50   ~ 0
-~IRQ
 Text Label 8050 1450 2    50   ~ 0
-~YM_IRQ
+~IRQ
 Wire Wire Line
 	8400 1450 8050 1450
-Text Label 1700 5200 2    50   ~ 0
-~YM_IRQ
 Text Label 8050 1700 2    50   ~ 0
 SPI_CLK
 Text Label 8050 1600 2    50   ~ 0
 SPI_DO
 Text Label 8050 1800 2    50   ~ 0
 CS_YMCLK
-$Comp
-L Device:R R1
-U 1 1 60FF10BA
-P 1700 5950
-F 0 "R1" H 1770 5996 50  0000 L CNN
-F 1 "10K" H 1770 5905 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 1630 5950 50  0001 C CNN
-F 3 "~" H 1700 5950 50  0001 C CNN
-	1    1700 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 60FF1314
-P 1700 6200
-F 0 "#PWR02" H 1700 5950 50  0001 C CNN
-F 1 "GND" H 1705 6027 50  0000 C CNN
-F 2 "" H 1700 6200 50  0001 C CNN
-F 3 "" H 1700 6200 50  0001 C CNN
-	1    1700 6200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 6200 1700 6100
-Wire Wire Line
-	1700 5800 1700 5600
-Wire Wire Line
-	1700 5600 1900 5600
-Text Label 1800 5600 2    50   ~ 0
-SPI_DI
 $Comp
 L Device:C C3
 U 1 1 610B08A2
@@ -898,30 +850,24 @@ Entry Wire Line
 	4450 4200 4350 4300
 Wire Wire Line
 	3900 4300 4350 4300
-Text Label 1650 2100 2    50   ~ 0
+Text Label 1650 1900 2    50   ~ 0
 SPI_CLK
-Text Label 1650 2200 2    50   ~ 0
-SPI_DO
 Text Label 1650 2000 2    50   ~ 0
+SPI_DO
+Text Label 1650 1800 2    50   ~ 0
 CS_YMCLK
 Wire Wire Line
-	1900 2000 1650 2000
+	1900 1900 1650 1900
+Wire Wire Line
+	1650 2000 1900 2000
 Wire Wire Line
 	1650 2100 1900 2100
 Wire Wire Line
-	1900 2200 1650 2200
-Wire Wire Line
-	1650 1300 1900 1300
+	1650 2200 1900 2200
 Wire Wire Line
 	1650 1400 1900 1400
 Wire Wire Line
 	1650 1500 1900 1500
-Wire Wire Line
-	1650 1600 1900 1600
-Wire Wire Line
-	1650 1800 1900 1800
-Wire Wire Line
-	1650 1900 1900 1900
 Wire Wire Line
 	8050 1600 8400 1600
 Wire Wire Line
@@ -929,9 +875,7 @@ Wire Wire Line
 Wire Wire Line
 	8050 1800 8400 1800
 Wire Wire Line
-	1900 3200 1650 3200
-Wire Wire Line
-	1650 3300 1900 3300
+	1650 1800 1900 1800
 NoConn ~ 5950 7250
 NoConn ~ 5150 7250
 NoConn ~ 3900 5600
@@ -947,22 +891,7 @@ NoConn ~ 3900 4400
 NoConn ~ 3900 4500
 NoConn ~ 1900 4800
 NoConn ~ 1900 4700
-NoConn ~ 1900 3800
-NoConn ~ 1900 3700
 NoConn ~ 1900 3400
-$Comp
-L CPLD_Xilinx:XC95144XL-TQ100 U1
-U 1 1 60CC8E00
-P 2900 3700
-F 0 "U1" H 2150 6250 50  0000 C CNN
-F 1 "XC95144XL-TQ100" H 3600 6250 50  0000 C CNN
-F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 2900 3700 50  0001 C CNN
-F 3 "https://www.xilinx.com/support/documentation/data_sheets/ds056.pdf" H 2900 3700 50  0001 C CNN
-	1    2900 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 5200 1900 5200
 NoConn ~ 3900 3400
 NoConn ~ 3900 3300
 NoConn ~ 3900 3200
@@ -1087,11 +1016,11 @@ Wire Wire Line
 	8400 1150 8050 1150
 Wire Wire Line
 	8050 1050 8400 1050
-Text Label 1700 4900 2    50   ~ 0
+Text Label 1700 5100 2    50   ~ 0
 ~CS_YM
 Text Label 1700 5000 2    50   ~ 0
 ~RD_YM
-Text Label 1700 5100 2    50   ~ 0
+Text Label 1700 4900 2    50   ~ 0
 ~WR_YM
 Wire Wire Line
 	1900 4900 1700 4900
@@ -1161,7 +1090,7 @@ AR Path="/60CBD7B5/60F221FC" Ref="L?"  Part="1"
 AR Path="/60F221FC" Ref="L1"  Part="1" 
 F 0 "L1" V 9469 3050 50  0000 C CNN
 F 1 "22uH" V 9560 3050 50  0000 C CNN
-F 2 "Ferrite_THT:LairdTech_28C0236-0JW-10" H 9650 3050 50  0001 C CNN
+F 2 "Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP" H 9650 3050 50  0001 C CNN
 F 3 "~" H 9650 3050 50  0001 C CNN
 	1    9650 3050
 	0    1    1    0   
@@ -1175,7 +1104,7 @@ AR Path="/60CBD7B5/60F22203" Ref="L?"  Part="1"
 AR Path="/60F22203" Ref="L2"  Part="1" 
 F 0 "L2" V 9469 3550 50  0000 C CNN
 F 1 "22uH" V 9560 3550 50  0000 C CNN
-F 2 "Ferrite_THT:LairdTech_28C0236-0JW-10" H 9650 3550 50  0001 C CNN
+F 2 "Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP" H 9650 3550 50  0001 C CNN
 F 3 "~" H 9650 3550 50  0001 C CNN
 	1    9650 3550
 	0    1    1    0   
@@ -1267,7 +1196,7 @@ U 1 1 60FAF0F3
 P 10650 3300
 F 0 "C7" H 10768 3346 50  0000 L CNN
 F 1 "10uF" H 10768 3255 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 10688 3150 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 10688 3150 50  0001 C CNN
 F 3 "~" H 10650 3300 50  0001 C CNN
 	1    10650 3300
 	1    0    0    -1  
@@ -1352,7 +1281,7 @@ U 1 1 6106A611
 P 8600 3300
 F 0 "C4" H 8718 3346 50  0000 L CNN
 F 1 "10uF" H 8718 3255 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 8638 3150 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 8638 3150 50  0001 C CNN
 F 3 "~" H 8600 3300 50  0001 C CNN
 	1    8600 3300
 	1    0    0    -1  
@@ -1387,8 +1316,6 @@ NoConn ~ 1900 2800
 NoConn ~ 1900 2700
 NoConn ~ 1900 2600
 NoConn ~ 1900 2500
-NoConn ~ 1900 1700
-NoConn ~ 1900 3600
 Wire Wire Line
 	7350 5200 8150 5200
 Wire Wire Line
@@ -1490,10 +1417,48 @@ Text Label 8050 750  2    50   ~ 0
 D[0..15]
 Wire Bus Line
 	8050 750  8400 750 
+NoConn ~ 1900 5200
+Wire Wire Line
+	1400 3900 1900 3900
+Wire Wire Line
+	1400 4000 1900 4000
+Wire Wire Line
+	1400 4100 1900 4100
+Wire Wire Line
+	1400 4200 1900 4200
+Wire Wire Line
+	1400 4300 1900 4300
+Wire Wire Line
+	1400 4400 1900 4400
+Wire Wire Line
+	1400 4500 1900 4500
+$Comp
+L CPLD_Xilinx:XC95144XL-TQ100 U1
+U 1 1 60CC8E00
+P 2900 3700
+F 0 "U1" H 2150 6250 50  0000 C CNN
+F 1 "XC95144XL-TQ100" H 3600 6250 50  0000 C CNN
+F 2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" H 2900 3700 50  0001 C CNN
+F 3 "https://www.xilinx.com/support/documentation/data_sheets/ds056.pdf" H 2900 3700 50  0001 C CNN
+	1    2900 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3800 1800 3800
+Wire Wire Line
+	1800 3700 1900 3700
+Wire Wire Line
+	1900 3600 1800 3600
+NoConn ~ 1900 3200
+NoConn ~ 1900 3300
+NoConn ~ 1900 1700
+NoConn ~ 1900 1600
+NoConn ~ 1900 1300
+NoConn ~ 1900 5600
 Wire Bus Line
 	5750 2900 5750 3600
 Wire Bus Line
-	1450 3700 1450 4400
+	1300 3700 1300 4400
 Wire Bus Line
 	4450 1100 4450 4200
 Wire Bus Line
