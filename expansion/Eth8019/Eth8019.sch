@@ -428,76 +428,48 @@ Wire Wire Line
 	5300 2050 5300 1950
 Wire Wire Line
 	5300 1650 5300 1550
-NoConn ~ 9100 1650
-NoConn ~ 9100 1550
-NoConn ~ 7700 1550
-Text Label 6950 2950 0    50   ~ 0
+Text Label 9450 2050 0    50   ~ 0
 D15
-Text Label 6950 2850 0    50   ~ 0
+Text Label 9450 1950 0    50   ~ 0
 D14
-Text Label 6950 2750 0    50   ~ 0
+Text Label 9450 1850 0    50   ~ 0
 D13
-Text Label 6950 2650 0    50   ~ 0
+Text Label 9450 1750 0    50   ~ 0
 D12
-Text Label 6950 2150 0    50   ~ 0
+Text Label 9450 1650 0    50   ~ 0
 D11
-Text Label 6950 2050 0    50   ~ 0
+Text Label 9450 1550 0    50   ~ 0
 D10
-Text Label 6950 1950 0    50   ~ 0
+Text Label 7500 1850 2    50   ~ 0
 D9
-Text Label 6950 1850 0    50   ~ 0
+Text Label 7500 1950 2    50   ~ 0
 D8
-Wire Bus Line
-	6700 1650 6450 1650
-Wire Bus Line
-	10000 1550 10250 1550
-Text Label 6450 1650 2    50   ~ 0
-D[0..15]
-Text Label 10250 1550 0    50   ~ 0
-A[1..7]
-Entry Wire Line
-	6700 1750 6800 1850
-Entry Wire Line
-	6700 1850 6800 1950
-Entry Wire Line
-	6700 1950 6800 2050
-Entry Wire Line
-	6700 2050 6800 2150
 Wire Wire Line
-	7700 1850 6800 1850
+	7700 1850 7500 1850
 Wire Wire Line
-	7700 1950 6800 1950
+	7700 1950 7500 1950
 Wire Wire Line
-	7700 2050 6800 2050
+	9100 1550 9450 1550
 Wire Wire Line
-	7700 2150 6800 2150
+	9100 1650 9450 1650
 Wire Wire Line
-	7700 2650 6800 2650
+	9100 1750 9450 1750
 Wire Wire Line
-	7700 2750 6800 2750
+	9100 1850 9450 1850
 Wire Wire Line
-	7700 2850 6800 2850
+	9100 1950 9450 1950
 Wire Wire Line
-	7700 2950 6800 2950
-Entry Wire Line
-	6700 2850 6800 2950
-Entry Wire Line
-	6700 2750 6800 2850
-Entry Wire Line
-	6700 2650 6800 2750
-Entry Wire Line
-	6700 2550 6800 2650
+	9100 2050 9450 2050
 Wire Wire Line
-	7500 2550 7700 2550
+	9450 3050 9100 3050
 Wire Wire Line
 	7700 2450 7500 2450
 Wire Wire Line
 	7500 2350 7700 2350
 Wire Wire Line
-	7700 2250 7500 2250
+	7700 1550 7500 1550
 Wire Wire Line
 	7700 1750 7500 1750
-NoConn ~ 9100 3050
 Wire Wire Line
 	9450 3150 9100 3150
 Wire Wire Line
@@ -510,13 +482,13 @@ Wire Wire Line
 	9100 2550 9450 2550
 Wire Wire Line
 	9450 2450 9100 2450
-Text Label 7500 2550 2    50   ~ 0
+Text Label 9450 3050 0    50   ~ 0
 ~DTACK
-Text Label 7500 2450 2    50   ~ 0
+Text Label 9450 2550 0    50   ~ 0
 ~CS_DATA
-Text Label 7500 2350 2    50   ~ 0
+Text Label 9450 2450 0    50   ~ 0
 ~CS_REG
-Text Label 7500 2250 2    50   ~ 0
+Text Label 9450 2950 0    50   ~ 0
 ~RESET
 Text Label 7500 1750 2    50   ~ 0
 CPU_CLK
@@ -528,52 +500,38 @@ Text Label 9450 2750 0    50   ~ 0
 R~W
 Text Label 9450 2650 0    50   ~ 0
 ~UDS
-Text Label 9450 2550 0    50   ~ 0
+Text Label 7500 2550 2    50   ~ 0
 ~WR
-Text Label 9450 2450 0    50   ~ 0
+Text Label 7500 2650 2    50   ~ 0
 ~RD
 Text Label 9450 2350 0    50   ~ 0
 A7
 Text Label 9450 2250 0    50   ~ 0
 A6
-Text Label 9450 2150 0    50   ~ 0
+Text Label 7500 2050 2    50   ~ 0
 A5
-Text Label 9450 2050 0    50   ~ 0
+Text Label 7500 2150 2    50   ~ 0
 A4
-Text Label 9450 1950 0    50   ~ 0
+Text Label 7500 2250 2    50   ~ 0
 A3
-Text Label 9450 1850 0    50   ~ 0
+Text Label 7500 2350 2    50   ~ 0
 A2
-Text Label 9450 1750 0    50   ~ 0
+Text Label 7500 2450 2    50   ~ 0
 A1
 Wire Wire Line
-	9100 2350 9900 2350
+	9100 2350 9450 2350
 Wire Wire Line
-	9100 2250 9900 2250
+	9100 2250 9450 2250
 Wire Wire Line
-	9100 2150 9900 2150
+	9100 2150 9450 2150
 Wire Wire Line
-	9100 2050 9900 2050
+	7700 2550 7500 2550
 Wire Wire Line
-	9100 1950 9900 1950
+	7700 2250 7500 2250
 Wire Wire Line
-	9100 1850 9900 1850
+	7700 2150 7500 2150
 Wire Wire Line
-	9100 1750 9900 1750
-Entry Wire Line
-	10000 2250 9900 2350
-Entry Wire Line
-	10000 2150 9900 2250
-Entry Wire Line
-	10000 2050 9900 2150
-Entry Wire Line
-	10000 1950 9900 2050
-Entry Wire Line
-	10000 1850 9900 1950
-Entry Wire Line
-	10000 1750 9900 1850
-Entry Wire Line
-	10000 1650 9900 1750
+	7700 2050 7500 2050
 Wire Wire Line
 	8300 1050 8300 1150
 Wire Wire Line
@@ -789,11 +747,11 @@ Text Label 3600 3700 0    50   ~ 0
 D15
 Wire Bus Line
 	4050 1900 4250 1900
-Text Label 7500 3050 2    50   ~ 0
+Text Label 7500 1650 2    50   ~ 0
 RESET
 Wire Wire Line
 	7500 3050 7700 3050
-Text Label 9450 2950 0    50   ~ 0
+Text Label 7500 1550 2    50   ~ 0
 ~CS
 Wire Wire Line
 	9100 2950 9450 2950
@@ -803,14 +761,14 @@ Text Label 9050 5250 2    50   ~ 0
 A[1..7]
 Text Label 9050 5150 2    50   ~ 0
 D[0..15]
-Text Label 7500 1650 2    50   ~ 0
+Text Label 7500 2950 2    50   ~ 0
 ~IRQ
 Wire Wire Line
 	7500 1650 7700 1650
-Text Label 7500 3150 2    50   ~ 0
+Text Label 7500 2850 2    50   ~ 0
 INT
 Wire Wire Line
-	7700 3150 7500 3150
+	7700 2850 7500 2850
 Text Label 9050 5450 2    50   ~ 0
 INT
 Text Label 9050 5750 2    50   ~ 0
@@ -953,12 +911,12 @@ Wire Wire Line
 	9600 3450 9600 3850
 Wire Wire Line
 	9600 3850 10000 3850
+Wire Wire Line
+	7500 2650 7700 2650
+Wire Wire Line
+	7700 2950 7500 2950
 Wire Bus Line
 	1750 2000 1750 2700
-Wire Bus Line
-	10000 1550 10000 2250
-Wire Bus Line
-	6700 1650 6700 2850
 Wire Bus Line
 	4050 1900 4050 3600
 $EndSCHEMATC
