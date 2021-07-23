@@ -2522,7 +2522,7 @@
       (net 73 "Net-(J3-Pad2)"))
     (pad 1 thru_hole rect (at 0 0) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 1 GND))
-    (model ${KI3DDOWNLOAD}/Connector_IDC.3dshapes/IDC-Header_2x17_P2.54mm_Vertical.step
+    (model ${KISYS3DMOD}/Connector_IDC.3dshapes/IDC-Header_2x17_P2.54mm_Vertical.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))

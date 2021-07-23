@@ -2769,7 +2769,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ${KI3DDOWNLOAD}/Package_DIP.3dshapes/DIP-20_W7.62mm.step
+    (model ${KISYS3DMOD}/Package_DIP.3dshapes/DIP-20_W7.62mm.step
       (offset (xyz 0 0 3))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2846,7 +2846,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ${KI3DDOWNLOAD}/Package_DIP.3dshapes/DIP-14_W7.62mm.step
+    (model ${KISYS3DMOD}/Package_DIP.3dshapes/DIP-14_W7.62mm.step
       (offset (xyz 0 0 3))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2927,7 +2927,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ${KI3DDOWNLOAD}/Package_DIP.3dshapes/DIP-16_W7.62mm.step
+    (model ${KISYS3DMOD}/Package_DIP.3dshapes/DIP-16_W7.62mm.step
       (offset (xyz 0 0 3))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3024,7 +3024,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ${KI3DDOWNLOAD}/Package_DIP.3dshapes/DIP-24_W15.24mm.step
+    (model ${KISYS3DMOD}/Package_DIP.3dshapes/DIP-24_W15.24mm.step
       (offset (xyz 0 0 3))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3152,7 +3152,7 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
-    (model ${KI3DDOWNLOAD}/Package_DIP.3dshapes/DIP-14_W7.62mm.step
+    (model ${KISYS3DMOD}/Package_DIP.3dshapes/DIP-14_W7.62mm.step
       (offset (xyz 0 0 3))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
