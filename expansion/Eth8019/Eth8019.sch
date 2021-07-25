@@ -523,8 +523,6 @@ Wire Wire Line
 Wire Wire Line
 	9100 2250 9450 2250
 Wire Wire Line
-	9100 2150 9450 2150
-Wire Wire Line
 	7700 2550 7500 2550
 Wire Wire Line
 	7700 2250 7500 2250
@@ -749,8 +747,6 @@ Wire Bus Line
 	4050 1900 4250 1900
 Text Label 7500 1650 2    50   ~ 0
 RESET
-Wire Wire Line
-	7500 3050 7700 3050
 Text Label 7500 1550 2    50   ~ 0
 ~CS
 Wire Wire Line
@@ -915,6 +911,10 @@ Wire Wire Line
 	7500 2650 7700 2650
 Wire Wire Line
 	7700 2950 7500 2950
+NoConn ~ 7700 2750
+NoConn ~ 7700 3050
+NoConn ~ 7700 3150
+NoConn ~ 9100 2150
 Wire Bus Line
 	1750 2000 1750 2700
 Wire Bus Line
