@@ -14,25 +14,902 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 74xx:74LS574 U?
-U 1 1 60FB2C36
-P 4500 2500
-F 0 "U?" H 4500 3481 50  0000 C CNN
-F 1 "74LS574" H 4500 3390 50  0000 C CNN
-F 2 "" H 4500 2500 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS574" H 4500 2500 50  0001 C CNN
-	1    4500 2500
+L Connector:DB9_Male_MountingHoles J3
+U 1 1 60FB40E8
+P 7900 2250
+F 0 "J3" H 8080 2252 50  0000 L CNN
+F 1 "Joystick 1" H 8080 2161 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 7900 2250 50  0001 C CNN
+F 3 " ~" H 7900 2250 50  0001 C CNN
+	1    7900 2250
+	1    0    0    -1  
+$EndComp
+Text Notes 9550 3900 0    50   ~ 10
+Joypad Pinouts\n
+Text Notes 9200 4900 0    50   ~ 0
+SELECT(Pin 7)    LOW      HIGH\nPin 1:                       Up\nPin 2:                      Down\nPin 3:             *        Left\nPin 4:             *        Right\nPin 5:            VCC\nPin 6:             A          B      \nPin 7:                Select     \nPin 8:            GND\nPin 9:           Start        C\n* Both low indicate controller connected\n
+Wire Notes Line style solid
+	10850 3750 10850 5000
+Wire Notes Line style solid
+	10850 5000 9100 5000
+Wire Notes Line style solid
+	9100 5000 9100 3750
+Wire Notes Line style solid
+	9100 3750 10850 3750
+$Comp
+L Device:R_Network08 RN1
+U 1 1 60FEA610
+P 5600 1400
+F 0 "RN1" H 5988 1446 50  0000 L CNN
+F 1 "10K" H 5988 1355 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 6075 1400 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5600 1400 50  0001 C CNN
+	1    5600 1400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:DB9_Male_MountingHoles J?
-U 1 1 60FB40E8
-P 7000 2400
-F 0 "J?" H 7180 2402 50  0000 L CNN
-F 1 "DB9_Male_MountingHoles" H 7180 2311 50  0000 L CNN
-F 2 "" H 7000 2400 50  0001 C CNN
-F 3 " ~" H 7000 2400 50  0001 C CNN
-	1    7000 2400
+L power:+5V #PWR024
+U 1 1 60FEB3E9
+P 5200 1150
+F 0 "#PWR024" H 5200 1000 50  0001 C CNN
+F 1 "+5V" H 5215 1323 50  0000 C CNN
+F 2 "" H 5200 1150 50  0001 C CNN
+F 3 "" H 5200 1150 50  0001 C CNN
+	1    5200 1150
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+5V #PWR018
+U 1 1 60FEB913
+P 2900 1500
+F 0 "#PWR018" H 2900 1350 50  0001 C CNN
+F 1 "+5V" H 2915 1673 50  0000 C CNN
+F 2 "" H 2900 1500 50  0001 C CNN
+F 3 "" H 2900 1500 50  0001 C CNN
+	1    2900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR019
+U 1 1 60FEBF2A
+P 2900 3200
+F 0 "#PWR019" H 2900 2950 50  0001 C CNN
+F 1 "GND" H 2905 3027 50  0000 C CNN
+F 2 "" H 2900 3200 50  0001 C CNN
+F 3 "" H 2900 3200 50  0001 C CNN
+	1    2900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 60FEC06A
+P 7900 2950
+F 0 "#PWR030" H 7900 2700 50  0001 C CNN
+F 1 "GND" H 7905 2777 50  0000 C CNN
+F 2 "" H 7900 2950 50  0001 C CNN
+F 3 "" H 7900 2950 50  0001 C CNN
+	1    7900 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR027
+U 1 1 60FEC49A
+P 7500 2750
+F 0 "#PWR027" H 7500 2500 50  0001 C CNN
+F 1 "GND" H 7505 2577 50  0000 C CNN
+F 2 "" H 7500 2750 50  0001 C CNN
+F 3 "" H 7500 2750 50  0001 C CNN
+	1    7500 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR026
+U 1 1 60FEC6E8
+P 7500 1750
+F 0 "#PWR026" H 7500 1600 50  0001 C CNN
+F 1 "+5V" H 7515 1923 50  0000 C CNN
+F 2 "" H 7500 1750 50  0001 C CNN
+F 3 "" H 7500 1750 50  0001 C CNN
+	1    7500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS574 U3
+U 1 1 60FB2C36
+P 2900 2350
+F 0 "U3" H 2650 3000 50  0000 C CNN
+F 1 "74LS574" H 3200 1650 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 2900 2350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS574" H 2900 2350 50  0001 C CNN
+	1    2900 2350
+	-1   0    0    -1  
+$EndComp
+Text HLabel 3650 2750 2    50   Input ~ 0
+DATA_CLK
+Text HLabel 3650 2850 2    50   Input ~ 0
+~JOY1OE
+Wire Wire Line
+	3650 2850 3400 2850
+Wire Wire Line
+	3400 2750 3650 2750
+Wire Wire Line
+	2900 3200 2900 3150
+Wire Wire Line
+	2900 1550 2900 1500
+Wire Wire Line
+	7900 2950 7900 2850
+Wire Wire Line
+	4700 2250 4700 2050
+Wire Wire Line
+	4700 2050 3400 2050
+Wire Wire Line
+	4900 2150 3400 2150
+Wire Wire Line
+	4500 2250 3400 2250
+Wire Wire Line
+	4300 1850 3400 1850
+Wire Wire Line
+	4400 1950 3400 1950
+Text HLabel 4050 3000 0    50   Input ~ 0
+JOY1SEL
+Wire Wire Line
+	4700 3000 4200 3000
+Wire Wire Line
+	4600 2350 3400 2350
+$Comp
+L power:GND #PWR022
+U 1 1 60FF9DC2
+P 3450 3200
+F 0 "#PWR022" H 3450 2950 50  0001 C CNN
+F 1 "GND" H 3455 3027 50  0000 C CNN
+F 2 "" H 3450 3200 50  0001 C CNN
+F 3 "" H 3450 3200 50  0001 C CNN
+	1    3450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2550 3450 2550
+Wire Wire Line
+	3450 2550 3450 3200
+Wire Wire Line
+	5200 1150 5200 1200
+NoConn ~ 5900 1600
+Wire Wire Line
+	3400 2450 4200 2450
+Wire Wire Line
+	4200 2450 4200 3000
+Connection ~ 4200 3000
+Wire Wire Line
+	4200 3000 4050 3000
+Text HLabel 1900 1650 0    50   BiDi ~ 0
+D[0..7]
+Entry Wire Line
+	2000 1750 2100 1850
+Entry Wire Line
+	2000 1850 2100 1950
+Entry Wire Line
+	2000 1950 2100 2050
+Entry Wire Line
+	2000 2050 2100 2150
+Entry Wire Line
+	2000 2150 2100 2250
+Entry Wire Line
+	2000 2250 2100 2350
+Entry Wire Line
+	2000 2350 2100 2450
+Entry Wire Line
+	2000 2450 2100 2550
+Wire Wire Line
+	2100 1850 2400 1850
+Wire Wire Line
+	2100 1950 2400 1950
+Wire Wire Line
+	2100 2050 2400 2050
+Wire Wire Line
+	2100 2150 2400 2150
+Wire Wire Line
+	2100 2250 2400 2250
+Wire Wire Line
+	2100 2350 2400 2350
+Wire Wire Line
+	2100 2450 2400 2450
+Wire Wire Line
+	2100 2550 2400 2550
+Text Label 2200 1850 0    50   ~ 0
+D0
+Text Label 2200 1950 0    50   ~ 0
+D1
+Text Label 2200 2050 0    50   ~ 0
+D2
+Text Label 2200 2150 0    50   ~ 0
+D3
+Text Label 2200 2250 0    50   ~ 0
+D4
+Text Label 2200 2350 0    50   ~ 0
+D5
+Text Label 2200 2450 0    50   ~ 0
+D6
+Text Label 2200 2550 0    50   ~ 0
+D7
+Wire Bus Line
+	2000 1650 1900 1650
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 6104F746
+P 6700 1950
+F 0 "L1" H 6800 2050 50  0000 C CNN
+F 1 "1uH" H 6550 2050 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2" H 6700 1950 50  0001 C CNN
+F 3 "~" H 6700 1950 50  0001 C CNN
+	1    6700 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L2
+U 1 1 6105076D
+P 6700 2100
+F 0 "L2" H 6800 2200 50  0000 C CNN
+F 1 "1uH" H 6550 2200 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2" H 6700 2100 50  0001 C CNN
+F 3 "~" H 6700 2100 50  0001 C CNN
+	1    6700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L3
+U 1 1 61052C02
+P 6700 2250
+F 0 "L3" H 6800 2350 50  0000 C CNN
+F 1 "1uH" H 6550 2350 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2" H 6700 2250 50  0001 C CNN
+F 3 "~" H 6700 2250 50  0001 C CNN
+	1    6700 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L4
+U 1 1 61053C6E
+P 6700 2400
+F 0 "L4" H 6800 2500 50  0000 C CNN
+F 1 "1uH" H 6550 2500 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2" H 6700 2400 50  0001 C CNN
+F 3 "~" H 6700 2400 50  0001 C CNN
+	1    6700 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L5
+U 1 1 61054D50
+P 6700 2550
+F 0 "L5" H 6800 2650 50  0000 C CNN
+F 1 "1uH" H 6550 2650 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2" H 6700 2550 50  0001 C CNN
+F 3 "~" H 6700 2550 50  0001 C CNN
+	1    6700 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L6
+U 1 1 61055DFE
+P 6700 2700
+F 0 "L6" H 6800 2800 50  0000 C CNN
+F 1 "1uH" H 6550 2800 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2" H 6700 2700 50  0001 C CNN
+F 3 "~" H 6700 2700 50  0001 C CNN
+	1    6700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L7
+U 1 1 61056EFB
+P 6700 2850
+F 0 "L7" H 6800 2950 50  0000 C CNN
+F 1 "1uH" H 6550 2950 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2" H 6700 2850 50  0001 C CNN
+F 3 "~" H 6700 2850 50  0001 C CNN
+	1    6700 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 2250 6950 2250
+Wire Wire Line
+	7600 2350 7000 2350
+Wire Wire Line
+	7000 2350 7000 2400
+Wire Wire Line
+	7000 2400 6950 2400
+Wire Wire Line
+	7600 2450 7050 2450
+Wire Wire Line
+	7050 2450 7050 2550
+Wire Wire Line
+	7050 2550 6950 2550
+Wire Wire Line
+	7600 2550 7100 2550
+Wire Wire Line
+	7100 2550 7100 2700
+Wire Wire Line
+	7100 2700 6950 2700
+Wire Wire Line
+	7600 2650 7150 2650
+Wire Wire Line
+	7150 2650 7150 2850
+Wire Wire Line
+	7150 2850 6950 2850
+Wire Wire Line
+	7050 2050 7600 2050
+Wire Wire Line
+	4300 1850 4300 2850
+Wire Wire Line
+	4500 2250 4500 2700
+Wire Wire Line
+	4400 1950 4400 2550
+Wire Wire Line
+	4700 2400 4700 3000
+Wire Wire Line
+	4600 1800 4600 2350
+Wire Wire Line
+	4900 1950 4900 2150
+$Comp
+L Connector:DB9_Male_MountingHoles J4
+U 1 1 610B98B6
+P 7900 4850
+F 0 "J4" H 8080 4852 50  0000 L CNN
+F 1 "Joystick 2" H 8080 4761 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 7900 4850 50  0001 C CNN
+F 3 " ~" H 7900 4850 50  0001 C CNN
+	1    7900 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Network08 RN2
+U 1 1 610B98BC
+P 5600 4000
+F 0 "RN2" H 5988 4046 50  0000 L CNN
+F 1 "10K" H 5988 3955 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 6075 4000 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5600 4000 50  0001 C CNN
+	1    5600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR025
+U 1 1 610B98C2
+P 5200 3750
+F 0 "#PWR025" H 5200 3600 50  0001 C CNN
+F 1 "+5V" H 5215 3923 50  0000 C CNN
+F 2 "" H 5200 3750 50  0001 C CNN
+F 3 "" H 5200 3750 50  0001 C CNN
+	1    5200 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR020
+U 1 1 610B98C8
+P 2900 4100
+F 0 "#PWR020" H 2900 3950 50  0001 C CNN
+F 1 "+5V" H 2915 4273 50  0000 C CNN
+F 2 "" H 2900 4100 50  0001 C CNN
+F 3 "" H 2900 4100 50  0001 C CNN
+	1    2900 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 610B98CE
+P 2900 5800
+F 0 "#PWR021" H 2900 5550 50  0001 C CNN
+F 1 "GND" H 2905 5627 50  0000 C CNN
+F 2 "" H 2900 5800 50  0001 C CNN
+F 3 "" H 2900 5800 50  0001 C CNN
+	1    2900 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR031
+U 1 1 610B98D4
+P 7900 5550
+F 0 "#PWR031" H 7900 5300 50  0001 C CNN
+F 1 "GND" H 7905 5377 50  0000 C CNN
+F 2 "" H 7900 5550 50  0001 C CNN
+F 3 "" H 7900 5550 50  0001 C CNN
+	1    7900 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 610B98DA
+P 7550 5350
+F 0 "#PWR029" H 7550 5100 50  0001 C CNN
+F 1 "GND" H 7555 5177 50  0000 C CNN
+F 2 "" H 7550 5350 50  0001 C CNN
+F 3 "" H 7550 5350 50  0001 C CNN
+	1    7550 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR028
+U 1 1 610B98E0
+P 7500 4350
+F 0 "#PWR028" H 7500 4200 50  0001 C CNN
+F 1 "+5V" H 7515 4523 50  0000 C CNN
+F 2 "" H 7500 4350 50  0001 C CNN
+F 3 "" H 7500 4350 50  0001 C CNN
+	1    7500 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS574 U4
+U 1 1 610B98E6
+P 2900 4950
+F 0 "U4" H 2650 5600 50  0000 C CNN
+F 1 "74LS574" H 3200 4250 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 2900 4950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS574" H 2900 4950 50  0001 C CNN
+	1    2900 4950
+	-1   0    0    -1  
+$EndComp
+Text HLabel 3650 5350 2    50   Input ~ 0
+DATA_CLK
+Text HLabel 3650 5450 2    50   Input ~ 0
+~JOY2OE
+Wire Wire Line
+	3650 5450 3400 5450
+Wire Wire Line
+	3400 5350 3650 5350
+Wire Wire Line
+	2900 5800 2900 5750
+Wire Wire Line
+	2900 4150 2900 4100
+Wire Wire Line
+	7900 5550 7900 5450
+Wire Wire Line
+	4700 4850 4700 4650
+Wire Wire Line
+	4700 4650 3400 4650
+Wire Wire Line
+	4900 4750 3400 4750
+Wire Wire Line
+	4500 4850 3400 4850
+Wire Wire Line
+	4300 4450 3400 4450
+Wire Wire Line
+	4400 4550 3400 4550
+Text HLabel 4050 5600 0    50   Input ~ 0
+JOY2SEL
+Wire Wire Line
+	4700 5600 4200 5600
+Wire Wire Line
+	4600 4950 3400 4950
+$Comp
+L power:GND #PWR023
+U 1 1 610B98FC
+P 3450 5800
+F 0 "#PWR023" H 3450 5550 50  0001 C CNN
+F 1 "GND" H 3455 5627 50  0000 C CNN
+F 2 "" H 3450 5800 50  0001 C CNN
+F 3 "" H 3450 5800 50  0001 C CNN
+	1    3450 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 5150 3450 5150
+Wire Wire Line
+	3450 5150 3450 5800
+Wire Wire Line
+	5200 3750 5200 3800
+NoConn ~ 5900 4200
+Wire Wire Line
+	3400 5050 4200 5050
+Wire Wire Line
+	4200 5050 4200 5600
+Connection ~ 4200 5600
+Wire Wire Line
+	4200 5600 4050 5600
+Text HLabel 1900 4250 0    50   BiDi ~ 0
+D[0..7]
+Entry Wire Line
+	2000 4350 2100 4450
+Entry Wire Line
+	2000 4450 2100 4550
+Entry Wire Line
+	2000 4550 2100 4650
+Entry Wire Line
+	2000 4650 2100 4750
+Entry Wire Line
+	2000 4750 2100 4850
+Entry Wire Line
+	2000 4850 2100 4950
+Entry Wire Line
+	2000 4950 2100 5050
+Entry Wire Line
+	2000 5050 2100 5150
+Wire Wire Line
+	2100 4450 2400 4450
+Wire Wire Line
+	2100 4550 2400 4550
+Wire Wire Line
+	2100 4650 2400 4650
+Wire Wire Line
+	2100 4750 2400 4750
+Wire Wire Line
+	2100 4850 2400 4850
+Wire Wire Line
+	2100 4950 2400 4950
+Wire Wire Line
+	2100 5050 2400 5050
+Wire Wire Line
+	2100 5150 2400 5150
+Text Label 2200 4450 0    50   ~ 0
+D0
+Text Label 2200 4550 0    50   ~ 0
+D1
+Text Label 2200 4650 0    50   ~ 0
+D2
+Text Label 2200 4750 0    50   ~ 0
+D3
+Text Label 2200 4850 0    50   ~ 0
+D4
+Text Label 2200 4950 0    50   ~ 0
+D5
+Text Label 2200 5050 0    50   ~ 0
+D6
+Text Label 2200 5150 0    50   ~ 0
+D7
+Wire Bus Line
+	2000 4250 1900 4250
+$Comp
+L pspice:INDUCTOR L8
+U 1 1 610B992D
+P 6700 4550
+F 0 "L8" H 6800 4650 50  0000 C CNN
+F 1 "1uH" H 6550 4650 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2" H 6700 4550 50  0001 C CNN
+F 3 "~" H 6700 4550 50  0001 C CNN
+	1    6700 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L9
+U 1 1 610B9933
+P 6700 4700
+F 0 "L9" H 6800 4800 50  0000 C CNN
+F 1 "1uH" H 6550 4800 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2" H 6700 4700 50  0001 C CNN
+F 3 "~" H 6700 4700 50  0001 C CNN
+	1    6700 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L10
+U 1 1 610B993F
+P 6700 4850
+F 0 "L10" H 6800 4950 50  0000 C CNN
+F 1 "1uH" H 6550 4950 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2" H 6700 4850 50  0001 C CNN
+F 3 "~" H 6700 4850 50  0001 C CNN
+	1    6700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L11
+U 1 1 610B9945
+P 6700 5000
+F 0 "L11" H 6800 5100 50  0000 C CNN
+F 1 "1uH" H 6550 5100 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2" H 6700 5000 50  0001 C CNN
+F 3 "~" H 6700 5000 50  0001 C CNN
+	1    6700 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L12
+U 1 1 610B994B
+P 6700 5150
+F 0 "L12" H 6800 5250 50  0000 C CNN
+F 1 "1uH" H 6550 5250 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2" H 6700 5150 50  0001 C CNN
+F 3 "~" H 6700 5150 50  0001 C CNN
+	1    6700 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L13
+U 1 1 610B9951
+P 6700 5300
+F 0 "L13" H 6800 5400 50  0000 C CNN
+F 1 "1uH" H 6550 5400 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2" H 6700 5300 50  0001 C CNN
+F 3 "~" H 6700 5300 50  0001 C CNN
+	1    6700 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L14
+U 1 1 610B9957
+P 6700 5450
+F 0 "L14" H 6800 5550 50  0000 C CNN
+F 1 "1uH" H 6550 5550 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L6.6mm_D2.7mm_P10.16mm_Horizontal_Vishay_IM-2" H 6700 5450 50  0001 C CNN
+F 3 "~" H 6700 5450 50  0001 C CNN
+	1    6700 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4850 6950 4850
+Wire Wire Line
+	7600 4950 7000 4950
+Wire Wire Line
+	7000 4950 7000 5000
+Wire Wire Line
+	7000 5000 6950 5000
+Wire Wire Line
+	7600 5050 7050 5050
+Wire Wire Line
+	7050 5050 7050 5150
+Wire Wire Line
+	7050 5150 6950 5150
+Wire Wire Line
+	7600 5150 7100 5150
+Wire Wire Line
+	7100 5150 7100 5300
+Wire Wire Line
+	7100 5300 6950 5300
+Wire Wire Line
+	7600 5250 7150 5250
+Wire Wire Line
+	7150 5250 7150 5450
+Wire Wire Line
+	7150 5450 6950 5450
+Wire Wire Line
+	7050 4650 7600 4650
+Wire Wire Line
+	4300 4450 4300 5450
+Wire Wire Line
+	4500 4850 4500 5300
+Wire Wire Line
+	4400 4550 4400 5150
+Wire Wire Line
+	4700 5000 4700 5600
+Wire Wire Line
+	4600 4400 4600 4950
+Wire Wire Line
+	4900 4550 4900 4750
+$Comp
+L Device:C C?
+U 1 1 6127D2BB
+P 9200 2150
+AR Path="/6127D2BB" Ref="C?"  Part="1" 
+AR Path="/60FB2490/6127D2BB" Ref="C4"  Part="1" 
+F 0 "C4" H 9315 2196 50  0000 L CNN
+F 1 "100nF" H 9315 2105 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 9238 2000 50  0001 C CNN
+F 3 "~" H 9200 2150 50  0001 C CNN
+	1    9200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6127D2C1
+P 9700 2150
+AR Path="/6127D2C1" Ref="C?"  Part="1" 
+AR Path="/60FB2490/6127D2C1" Ref="C5"  Part="1" 
+F 0 "C5" H 9815 2196 50  0000 L CNN
+F 1 "100nF" H 9815 2105 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 9738 2000 50  0001 C CNN
+F 3 "~" H 9700 2150 50  0001 C CNN
+	1    9700 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6127D2C7
+P 10200 2150
+AR Path="/6127D2C7" Ref="C?"  Part="1" 
+AR Path="/60FB2490/6127D2C7" Ref="C6"  Part="1" 
+F 0 "C6" H 10315 2196 50  0000 L CNN
+F 1 "100nF" H 10315 2105 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 10238 2000 50  0001 C CNN
+F 3 "~" H 10200 2150 50  0001 C CNN
+	1    10200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6127D2CD
+P 9700 2500
+AR Path="/6127D2CD" Ref="#PWR?"  Part="1" 
+AR Path="/60FB2490/6127D2CD" Ref="#PWR033"  Part="1" 
+F 0 "#PWR033" H 9700 2250 50  0001 C CNN
+F 1 "GND" H 9705 2327 50  0000 C CNN
+F 2 "" H 9700 2500 50  0001 C CNN
+F 3 "" H 9700 2500 50  0001 C CNN
+	1    9700 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6127D2D3
+P 9700 1800
+AR Path="/6127D2D3" Ref="#PWR?"  Part="1" 
+AR Path="/60FB2490/6127D2D3" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 9700 1650 50  0001 C CNN
+F 1 "+5V" H 9715 1973 50  0000 C CNN
+F 2 "" H 9700 1800 50  0001 C CNN
+F 3 "" H 9700 1800 50  0001 C CNN
+	1    9700 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 2000 9200 1900
+Wire Wire Line
+	9200 1900 9700 1900
+Wire Wire Line
+	10200 1900 10200 2000
+Wire Wire Line
+	9700 2000 9700 1900
+Connection ~ 9700 1900
+Wire Wire Line
+	9700 1900 10200 1900
+Wire Wire Line
+	9700 1900 9700 1800
+Wire Wire Line
+	9200 2300 9200 2400
+Wire Wire Line
+	9200 2400 9700 2400
+Wire Wire Line
+	10200 2400 10200 2300
+Wire Wire Line
+	9700 2300 9700 2400
+Connection ~ 9700 2400
+Wire Wire Line
+	9700 2400 10200 2400
+Wire Wire Line
+	9700 2500 9700 2400
+Wire Wire Line
+	4600 1800 5700 1800
+Wire Wire Line
+	4900 1950 5500 1950
+Wire Wire Line
+	4700 2250 5400 2250
+Wire Wire Line
+	4700 2400 5800 2400
+Wire Wire Line
+	4400 2550 5300 2550
+Wire Wire Line
+	5400 1600 5400 2250
+Connection ~ 5400 2250
+Wire Wire Line
+	5400 2250 6450 2250
+Wire Wire Line
+	5500 1600 5500 1950
+Connection ~ 5500 1950
+Wire Wire Line
+	5500 1950 5950 1950
+Wire Wire Line
+	4300 2850 5200 2850
+Wire Wire Line
+	4500 2700 5600 2700
+Wire Wire Line
+	5200 1600 5200 2850
+Connection ~ 5200 2850
+Wire Wire Line
+	5200 2850 6450 2850
+Wire Wire Line
+	5300 2550 5300 1600
+Connection ~ 5300 2550
+Wire Wire Line
+	5300 2550 6450 2550
+Wire Wire Line
+	5600 1600 5600 2700
+Connection ~ 5600 2700
+Wire Wire Line
+	5600 2700 6450 2700
+Wire Wire Line
+	5700 1600 5700 1800
+Connection ~ 5700 1800
+Wire Wire Line
+	5700 1800 6050 1800
+Wire Wire Line
+	5800 1600 5800 2400
+Connection ~ 5800 2400
+Wire Wire Line
+	5800 2400 6450 2400
+Wire Wire Line
+	4300 5450 5200 5450
+Wire Wire Line
+	4500 5300 5600 5300
+Wire Wire Line
+	4400 5150 5300 5150
+Wire Wire Line
+	4700 5000 5800 5000
+Wire Wire Line
+	4700 4850 5400 4850
+Wire Wire Line
+	4900 4550 5500 4550
+Wire Wire Line
+	4600 4400 5700 4400
+Wire Wire Line
+	5200 4200 5200 5450
+Connection ~ 5200 5450
+Wire Wire Line
+	5200 5450 6450 5450
+Wire Wire Line
+	5300 5150 5300 4200
+Connection ~ 5300 5150
+Wire Wire Line
+	5300 5150 6450 5150
+Wire Wire Line
+	5400 4850 5400 4200
+Connection ~ 5400 4850
+Wire Wire Line
+	5400 4850 6450 4850
+Wire Wire Line
+	5500 4550 5500 4200
+Connection ~ 5600 5300
+Wire Wire Line
+	5600 5300 6450 5300
+Wire Wire Line
+	5600 4200 5600 5300
+Connection ~ 5700 4400
+Wire Wire Line
+	5700 4400 6100 4400
+Wire Wire Line
+	5700 4200 5700 4400
+Wire Wire Line
+	5800 4200 5800 5000
+Connection ~ 5800 5000
+Wire Wire Line
+	5800 5000 6450 5000
+Wire Wire Line
+	6450 4550 6100 4550
+Wire Wire Line
+	6100 4550 6100 4400
+Wire Wire Line
+	6950 4700 7050 4700
+Wire Wire Line
+	7050 4700 7050 4650
+Wire Wire Line
+	6950 4550 7600 4550
+Wire Wire Line
+	6950 2100 7050 2100
+Wire Wire Line
+	7050 2100 7050 2050
+Wire Wire Line
+	6450 2100 5950 2100
+Wire Wire Line
+	5950 2100 5950 1950
+Wire Wire Line
+	6950 1950 7600 1950
+Wire Wire Line
+	6450 1950 6050 1950
+Wire Wire Line
+	6050 1950 6050 1800
+Wire Wire Line
+	5500 4550 6000 4550
+Wire Wire Line
+	6000 4550 6000 4700
+Wire Wire Line
+	6000 4700 6450 4700
+Connection ~ 5500 4550
+Wire Wire Line
+	7500 2750 7500 2150
+Wire Wire Line
+	7500 2150 7600 2150
+Wire Wire Line
+	7500 1750 7500 1850
+Wire Wire Line
+	7500 1850 7600 1850
+Wire Wire Line
+	7500 4350 7500 4450
+Wire Wire Line
+	7500 4450 7600 4450
+Wire Wire Line
+	7550 5350 7550 4750
+Wire Wire Line
+	7550 4750 7600 4750
+Wire Bus Line
+	2000 1650 2000 2450
+Wire Bus Line
+	2000 4250 2000 5050
 $EndSCHEMATC
