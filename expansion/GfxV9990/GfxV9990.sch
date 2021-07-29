@@ -554,9 +554,9 @@ Text Label 9200 2100 0    50   ~ 0
 R~W
 Text Label 9200 2000 0    50   ~ 0
 ~UDS
-Text Label 9200 2700 0    50   ~ 0
-~VDPR
 Text Label 9200 2600 0    50   ~ 0
+~VDPR
+Text Label 9200 2700 0    50   ~ 0
 ~VDPW
 Text Label 9350 1800 0    50   ~ 0
 A7
