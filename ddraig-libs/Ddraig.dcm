@@ -14,6 +14,10 @@ D PIT Interface parallele et Timer
 K MPRO
 $ENDCMP
 #
+$CMP ADV7123JSTZ240
+F http://www.analog.com/media/en/technical-documentation/data-sheets/ADV7123.pdf
+$ENDCMP
+#
 $CMP ATX-24
 D ATX Power supply 24pins
 K ATX PSU
@@ -34,6 +38,11 @@ $ENDCMP
 #
 $CMP D68K_96PIN_PCB
 D DIN41612 C 96 Pin Female header for motherboard
+$ENDCMP
+#
+$CMP IS61WV102416FBLL-10TLI
+D SRAM 16M (1Mx16) 10ns Async SRAM 3.3V
+F https://componentsearchengine.com//IS61WV102416FBLL-10TLI.pdf
 $ENDCMP
 #
 $CMP LTC690x
