@@ -19,7 +19,7 @@ U 1 1 6128537B
 P 8450 3300
 F 0 "J501" H 8450 4167 50  0000 C CNN
 F 1 "VGA Out" H 8450 4076 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-15_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 7500 3700 50  0001 C CNN
+F 2 "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset3.03mm_Housed_MountingHolesOffset4.94mm" H 7500 3700 50  0001 C CNN
 F 3 " ~" H 7500 3700 50  0001 C CNN
 	1    8450 3300
 	1    0    0    -1  
@@ -483,7 +483,7 @@ F 1 "530R" H 5970 5555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 5830 5600 50  0001 C CNN
 F 3 "~" H 5900 5600 50  0001 C CNN
 	1    5900 5600
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0506
