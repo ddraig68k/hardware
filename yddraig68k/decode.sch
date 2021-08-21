@@ -1742,6 +1742,7 @@ Wire Wire Line
 	8800 10300 9300 10300
 Wire Wire Line
 	9300 10300 9300 10200
+Connection ~ 8800 10300
 Wire Bus Line
 	9000 3200 9000 3500
 Wire Bus Line
@@ -1754,5 +1755,4 @@ Wire Bus Line
 	9350 4250 9350 4700
 Wire Bus Line
 	12850 2000 12850 4600
-Connection ~ 8800 10300
 $EndSCHEMATC

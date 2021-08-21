@@ -1154,10 +1154,6 @@ Wire Wire Line
 	7400 6200 7400 4150
 Wire Wire Line
 	7400 4150 10100 4150
-Wire Bus Line
-	11650 2400 11650 6800
-Wire Bus Line
-	3350 1950 3350 8100
 $Comp
 L Ddraig:RPack04_Alt RN703
 U 1 1 6221DE2A
@@ -1202,4 +1198,8 @@ F 3 "~" H 6400 7500 50  0001 C CNN
 	1    6400 7500
 	0    1    1    0   
 $EndComp
+Wire Bus Line
+	11650 2400 11650 6800
+Wire Bus Line
+	3350 1950 3350 8100
 $EndSCHEMATC

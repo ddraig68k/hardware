@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 6
+Sheet 3 5
 Title ""
 Date ""
 Rev ""
@@ -14,76 +14,76 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Ddraig:XC3S500E-4PQG208I U?
+L Ddraig:XC3S500E-4PQG208I U301
 U 1 1 6121BA1A
 P 3100 3850
-F 0 "U?" H 2500 1550 50  0000 L CNN
+F 0 "U301" H 2500 1550 50  0000 L CNN
 F 1 "XC3S500E-4PQG208I" H 2900 1550 50  0000 L CNN
-F 2 "" H 3650 4000 50  0001 C CNN
+F 2 "Ddraig:QFP50P3060X3060X409-208N" H 3650 4000 50  0001 C CNN
 F 3 "" H 3650 4000 50  0001 C CNN
 	1    3100 3850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ddraig:XC3S500E-4PQG208I U?
+L Ddraig:XC3S500E-4PQG208I U301
 U 2 1 6121F2C7
 P 6650 3850
-F 0 "U?" H 6050 1550 50  0000 L CNN
+F 0 "U301" H 6050 1550 50  0000 L CNN
 F 1 "XC3S500E-4PQG208I" H 6450 1550 50  0000 L CNN
-F 2 "" H 7200 4000 50  0001 C CNN
+F 2 "Ddraig:QFP50P3060X3060X409-208N" H 7200 4000 50  0001 C CNN
 F 3 "" H 7200 4000 50  0001 C CNN
 	2    6650 3850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ddraig:XC3S500E-4PQG208I U?
+L Ddraig:XC3S500E-4PQG208I U301
 U 3 1 6121FDE5
 P 10500 3850
-F 0 "U?" H 9900 1550 50  0000 L CNN
+F 0 "U301" H 9900 1550 50  0000 L CNN
 F 1 "XC3S500E-4PQG208I" H 10300 1550 50  0000 L CNN
-F 2 "" H 11050 4000 50  0001 C CNN
+F 2 "Ddraig:QFP50P3060X3060X409-208N" H 11050 4000 50  0001 C CNN
 F 3 "" H 11050 4000 50  0001 C CNN
 	3    10500 3850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ddraig:XC3S500E-4PQG208I U?
+L Ddraig:XC3S500E-4PQG208I U301
 U 4 1 61226234
 P 14400 3850
-F 0 "U?" H 13800 1550 50  0000 L CNN
+F 0 "U301" H 13800 1550 50  0000 L CNN
 F 1 "XC3S500E-4PQG208I" H 14200 1550 50  0000 L CNN
-F 2 "" H 14950 4000 50  0001 C CNN
+F 2 "Ddraig:QFP50P3060X3060X409-208N" H 14950 4000 50  0001 C CNN
 F 3 "" H 14950 4000 50  0001 C CNN
 	4    14400 3850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ddraig:XC3S500E-4PQG208I U?
+L Ddraig:XC3S500E-4PQG208I U301
 U 5 1 6122C1B1
 P 4500 9450
-F 0 "U?" H 4000 11450 50  0000 C CNN
+F 0 "U301" H 4000 11450 50  0000 C CNN
 F 1 "XC3S500E-4PQG208I" H 4650 11450 50  0000 C CNN
-F 2 "" H 5050 9600 50  0001 C CNN
+F 2 "Ddraig:QFP50P3060X3060X409-208N" H 5050 9600 50  0001 C CNN
 F 3 "" H 5050 9600 50  0001 C CNN
 	5    4500 9450
 	1    0    0    -1  
 $EndComp
 $Comp
-L Ddraig:XC3S500E-4PQG208I U?
+L Ddraig:XC3S500E-4PQG208I U301
 U 6 1 61236505
-P 13750 8250
-F 0 "U?" H 13650 8800 50  0000 L CNN
-F 1 "XC3S500E-4PQG208I" H 13400 7750 50  0000 L CNN
-F 2 "" H 14300 8400 50  0001 C CNN
-F 3 "" H 14300 8400 50  0001 C CNN
-	6    13750 8250
+P 15050 7400
+F 0 "U301" H 14950 7950 50  0000 L CNN
+F 1 "XC3S500E-4PQG208I" H 14700 6900 50  0000 L CNN
+F 2 "Ddraig:QFP50P3060X3060X409-208N" H 15600 7550 50  0001 C CNN
+F 3 "" H 15600 7550 50  0001 C CNN
+	6    15050 7400
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0303
 U 1 1 6120B4C3
 P 5300 10150
-F 0 "#PWR?" H 5300 9900 50  0001 C CNN
+F 0 "#PWR0303" H 5300 9900 50  0001 C CNN
 F 1 "GND" H 5305 9977 50  0000 C CNN
 F 2 "" H 5300 10150 50  0001 C CNN
 F 3 "" H 5300 10150 50  0001 C CNN
@@ -190,25 +190,14 @@ Connection ~ 5300 10050
 Wire Wire Line
 	5300 10050 5300 9950
 $Comp
-L power:+1V2 #PWR?
+L power:+1V2 #PWR0302
 U 1 1 61220781
 P 3500 7450
-F 0 "#PWR?" H 3500 7300 50  0001 C CNN
+F 0 "#PWR0302" H 3500 7300 50  0001 C CNN
 F 1 "+1V2" H 3515 7623 50  0000 C CNN
 F 2 "" H 3500 7450 50  0001 C CNN
 F 3 "" H 3500 7450 50  0001 C CNN
 	1    3500 7450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 612244EB
-P 3150 9050
-F 0 "#PWR?" H 3150 8900 50  0001 C CNN
-F 1 "+3V3" H 3165 9223 50  0000 C CNN
-F 2 "" H 3150 9050 50  0001 C CNN
-F 3 "" H 3150 9050 50  0001 C CNN
-	1    3150 9050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -263,8 +252,6 @@ Wire Wire Line
 Connection ~ 3150 9200
 Wire Wire Line
 	3150 9200 3150 9300
-Wire Wire Line
-	3150 9050 3150 9100
 Connection ~ 3150 9100
 Wire Wire Line
 	3150 9100 3150 9200
@@ -290,11 +277,11 @@ Connection ~ 3500 7650
 Wire Wire Line
 	3500 7650 3500 7450
 Text HLabel 9700 10550 2    50   BiDi ~ 0
-SRAM_D[0..15]
+SRAM_D[0..31]
 Text HLabel 9700 10650 2    50   Input ~ 0
 SRAM_A[0..19]
 Text Label 9500 10550 2    50   ~ 0
-SRAM_D[0..15]
+SRAM_D[0..31]
 Text Label 9500 10650 2    50   ~ 0
 SRAM_A[0..19]
 Wire Bus Line
@@ -425,4 +412,505 @@ Text HLabel 12550 7050 0    50   Output ~ 0
 G[0..7]
 Text HLabel 12550 7150 0    50   Output ~ 0
 B[0..7]
+Text HLabel 8250 10500 2    50   Output ~ 0
+A[1..19]
+Text HLabel 8250 10650 2    50   BiDi ~ 0
+D[0..15]
+Text Label 8100 10500 2    50   ~ 0
+A[1..19]
+Text Label 8100 10650 2    50   ~ 0
+D[0..15]
+Wire Bus Line
+	8250 10650 8100 10650
+Wire Bus Line
+	8100 10500 8250 10500
+Text HLabel 11300 9200 2    50   Input ~ 0
+~LDS
+Text HLabel 11300 9300 2    50   Input ~ 0
+~UDS
+Text HLabel 11300 9400 2    50   Input ~ 0
+R~W
+Text HLabel 11300 9500 2    50   Input ~ 0
+~AS
+Text HLabel 11300 9600 2    50   Input ~ 0
+~RESET
+Text HLabel 11300 9700 2    50   Input ~ 0
+~REGCS
+Text HLabel 11300 9800 2    50   Input ~ 0
+~DATACS
+Text HLabel 11300 9100 2    50   Input ~ 0
+HOST_CLK
+Text Label 6550 7400 2    50   ~ 0
+A1
+Text Label 6550 7500 2    50   ~ 0
+A2
+Text Label 6550 7600 2    50   ~ 0
+A3
+Text Label 6550 7700 2    50   ~ 0
+A4
+Text Label 6550 7800 2    50   ~ 0
+A5
+Text Label 6550 7900 2    50   ~ 0
+A6
+Text Label 6550 8000 2    50   ~ 0
+A7
+Text Label 6550 8100 2    50   ~ 0
+A8
+Text Label 6550 8200 2    50   ~ 0
+A9
+Text Label 6550 8300 2    50   ~ 0
+A10
+Text Label 6550 8400 2    50   ~ 0
+A11
+Text Label 6550 8500 2    50   ~ 0
+A12
+Text Label 6550 8600 2    50   ~ 0
+A13
+Text Label 6550 8700 2    50   ~ 0
+A14
+Text Label 6550 8800 2    50   ~ 0
+A15
+Text Label 6550 8900 2    50   ~ 0
+A16
+Text Label 6550 9000 2    50   ~ 0
+A17
+Text Label 6550 9100 2    50   ~ 0
+A18
+Text Label 6550 9200 2    50   ~ 0
+A19
+Text Label 6750 7400 2    50   ~ 0
+D0
+Text Label 6750 7500 2    50   ~ 0
+D1
+Text Label 6750 7600 2    50   ~ 0
+D2
+Text Label 6750 7700 2    50   ~ 0
+D3
+Text Label 6750 7800 2    50   ~ 0
+D4
+Text Label 6750 7900 2    50   ~ 0
+D5
+Text Label 6750 8000 2    50   ~ 0
+D6
+Text Label 6750 8100 2    50   ~ 0
+D7
+Text Label 6750 8200 2    50   ~ 0
+D8
+Text Label 6750 8300 2    50   ~ 0
+D9
+Text Label 6750 8400 2    50   ~ 0
+D10
+Text Label 6750 8500 2    50   ~ 0
+D11
+Text Label 6750 8600 2    50   ~ 0
+D12
+Text Label 6750 8700 2    50   ~ 0
+D13
+Text Label 6750 8800 2    50   ~ 0
+D14
+Text Label 6750 8900 2    50   ~ 0
+D15
+$Comp
+L Ddraig:W25Q64JVSSIM U302
+U 1 1 612280BD
+P 14500 9600
+F 0 "U302" H 14200 10000 50  0000 C CNN
+F 1 "W25Q64JVSSIM" H 14850 10000 50  0000 C CNN
+F 2 "Ddraig:SOIC127P790X195-8N" H 14500 9600 50  0001 C CNN
+F 3 "" H 14500 9600 50  0001 C CNN
+	1    14500 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0306
+U 1 1 61229369
+P 14500 8850
+F 0 "#PWR0306" H 14500 8700 50  0001 C CNN
+F 1 "+3V3" H 14515 9023 50  0000 C CNN
+F 2 "" H 14500 8850 50  0001 C CNN
+F 3 "" H 14500 8850 50  0001 C CNN
+	1    14500 8850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0307
+U 1 1 6122A215
+P 14500 10150
+F 0 "#PWR0307" H 14500 9900 50  0001 C CNN
+F 1 "GND" H 14505 9977 50  0000 C CNN
+F 2 "" H 14500 10150 50  0001 C CNN
+F 3 "" H 14500 10150 50  0001 C CNN
+	1    14500 10150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14500 10100 14500 10150
+Wire Wire Line
+	14500 9100 14500 8900
+$Comp
+L Device:R R303
+U 1 1 6122F7CC
+P 15300 9200
+F 0 "R303" H 15370 9246 50  0000 L CNN
+F 1 "10K" H 15370 9155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 15230 9200 50  0001 C CNN
+F 3 "~" H 15300 9200 50  0001 C CNN
+	1    15300 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R302
+U 1 1 6122FF62
+P 13850 9150
+F 0 "R302" H 13920 9196 50  0000 L CNN
+F 1 "10K" H 13920 9105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 13780 9150 50  0001 C CNN
+F 3 "~" H 13850 9150 50  0001 C CNN
+	1    13850 9150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R301
+U 1 1 61230429
+P 13550 9150
+F 0 "R301" H 13620 9196 50  0000 L CNN
+F 1 "10K" H 13620 9105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 13480 9150 50  0001 C CNN
+F 3 "~" H 13550 9150 50  0001 C CNN
+	1    13550 9150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13550 9000 13550 8900
+Wire Wire Line
+	13550 8900 13850 8900
+Connection ~ 14500 8900
+Wire Wire Line
+	14500 8900 14500 8850
+Wire Wire Line
+	14500 8900 15300 8900
+Wire Wire Line
+	15300 8900 15300 9050
+Wire Wire Line
+	13850 9000 13850 8900
+Connection ~ 13850 8900
+Wire Wire Line
+	13850 8900 14500 8900
+Wire Wire Line
+	13850 9300 13850 9500
+Wire Wire Line
+	13850 9500 14000 9500
+Wire Wire Line
+	13550 9300 13550 9700
+Wire Wire Line
+	13550 9700 14000 9700
+Wire Wire Line
+	15300 9350 15300 9500
+Wire Wire Line
+	15300 9500 15000 9500
+Text Label 15250 9600 0    50   ~ 0
+FLASH_CLK
+Text Label 15250 9700 0    50   ~ 0
+FLASH_D0
+Text Label 13450 9600 2    50   ~ 0
+FLASH_D1
+Text Label 13450 9500 2    50   ~ 0
+FLASH_CS
+Wire Wire Line
+	13450 9500 13850 9500
+Connection ~ 13850 9500
+Wire Wire Line
+	14000 9600 13450 9600
+Wire Wire Line
+	15000 9600 15250 9600
+Wire Wire Line
+	15000 9700 15250 9700
+Text HLabel 12000 7800 2    50   Output ~ 0
+HSYNC
+Text HLabel 12000 7900 2    50   Output ~ 0
+VSYNC
+Text HLabel 12000 8100 2    50   Output ~ 0
+~BLANK
+Text HLabel 12000 8000 2    50   Output ~ 0
+PIXELCLOCK
+$Comp
+L Device:C C?
+U 1 1 6143CE18
+P 8800 1100
+AR Path="/6125C19F/6143CE18" Ref="C?"  Part="1" 
+AR Path="/6143CE18" Ref="C?"  Part="1" 
+AR Path="/6125C402/6143CE18" Ref="C304"  Part="1" 
+F 0 "C304" H 8915 1146 50  0000 L CNN
+F 1 "100nF" H 8915 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8838 950 50  0001 C CNN
+F 3 "~" H 8800 1100 50  0001 C CNN
+	1    8800 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6143CE1E
+P 8550 1450
+AR Path="/6143CE1E" Ref="#PWR?"  Part="1" 
+AR Path="/6125C227/6143CE1E" Ref="#PWR?"  Part="1" 
+AR Path="/6125C402/6143CE1E" Ref="#PWR0305"  Part="1" 
+F 0 "#PWR0305" H 8550 1200 50  0001 C CNN
+F 1 "GND" H 8555 1277 50  0000 C CNN
+F 2 "" H 8550 1450 50  0001 C CNN
+F 3 "" H 8550 1450 50  0001 C CNN
+	1    8550 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6143CE24
+P 9300 1100
+AR Path="/6125C19F/6143CE24" Ref="C?"  Part="1" 
+AR Path="/6143CE24" Ref="C?"  Part="1" 
+AR Path="/6125C402/6143CE24" Ref="C305"  Part="1" 
+F 0 "C305" H 9415 1146 50  0000 L CNN
+F 1 "100nF" H 9415 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9338 950 50  0001 C CNN
+F 3 "~" H 9300 1100 50  0001 C CNN
+	1    9300 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6143CE2A
+P 9850 1100
+AR Path="/6125C19F/6143CE2A" Ref="C?"  Part="1" 
+AR Path="/6143CE2A" Ref="C?"  Part="1" 
+AR Path="/6125C402/6143CE2A" Ref="C306"  Part="1" 
+F 0 "C306" H 9965 1146 50  0000 L CNN
+F 1 "100nF" H 9965 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9888 950 50  0001 C CNN
+F 3 "~" H 9850 1100 50  0001 C CNN
+	1    9850 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 950  8800 850 
+Wire Wire Line
+	8800 850  9300 850 
+Wire Wire Line
+	9850 850  9850 950 
+Connection ~ 9300 850 
+Wire Wire Line
+	9300 850  9850 850 
+Wire Wire Line
+	9300 850  9300 950 
+Wire Wire Line
+	8800 1250 8800 1350
+Wire Wire Line
+	8800 1350 9300 1350
+Wire Wire Line
+	9850 1350 9850 1250
+Connection ~ 9300 1350
+Wire Wire Line
+	9300 1350 9850 1350
+Wire Wire Line
+	9300 1250 9300 1350
+$Comp
+L Device:C C?
+U 1 1 6143CE3C
+P 7250 1100
+AR Path="/6125C19F/6143CE3C" Ref="C?"  Part="1" 
+AR Path="/6143CE3C" Ref="C?"  Part="1" 
+AR Path="/6125C402/6143CE3C" Ref="C301"  Part="1" 
+F 0 "C301" H 7365 1146 50  0000 L CNN
+F 1 "100nF" H 7365 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7288 950 50  0001 C CNN
+F 3 "~" H 7250 1100 50  0001 C CNN
+	1    7250 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6143CE42
+P 7750 1100
+AR Path="/6125C19F/6143CE42" Ref="C?"  Part="1" 
+AR Path="/6143CE42" Ref="C?"  Part="1" 
+AR Path="/6125C402/6143CE42" Ref="C302"  Part="1" 
+F 0 "C302" H 7865 1146 50  0000 L CNN
+F 1 "100nF" H 7865 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7788 950 50  0001 C CNN
+F 3 "~" H 7750 1100 50  0001 C CNN
+	1    7750 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6143CE48
+P 8300 1100
+AR Path="/6125C19F/6143CE48" Ref="C?"  Part="1" 
+AR Path="/6143CE48" Ref="C?"  Part="1" 
+AR Path="/6125C402/6143CE48" Ref="C303"  Part="1" 
+F 0 "C303" H 8415 1146 50  0000 L CNN
+F 1 "100nF" H 8415 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8338 950 50  0001 C CNN
+F 3 "~" H 8300 1100 50  0001 C CNN
+	1    8300 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 850  8550 850 
+Wire Wire Line
+	7250 850  7250 950 
+Connection ~ 8800 850 
+Wire Wire Line
+	7250 1250 7250 1350
+Wire Wire Line
+	7250 1350 7750 1350
+Connection ~ 8800 1350
+Wire Wire Line
+	8300 1250 8300 1350
+Connection ~ 8300 1350
+Wire Wire Line
+	8300 1350 8550 1350
+Wire Wire Line
+	7750 1250 7750 1350
+Connection ~ 7750 1350
+Wire Wire Line
+	7750 1350 8300 1350
+Wire Wire Line
+	7750 950  7750 850 
+Connection ~ 7750 850 
+Wire Wire Line
+	7750 850  7250 850 
+Wire Wire Line
+	8300 950  8300 850 
+Connection ~ 8300 850 
+Wire Wire Line
+	8300 850  7750 850 
+Wire Wire Line
+	8550 1450 8550 1350
+Connection ~ 8550 1350
+Wire Wire Line
+	8550 1350 8800 1350
+Wire Wire Line
+	8550 750  8550 850 
+Connection ~ 8550 850 
+Wire Wire Line
+	8550 850  8300 850 
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6143CE66
+P 8550 750
+AR Path="/6125C227/6143CE66" Ref="#PWR?"  Part="1" 
+AR Path="/6125C402/6143CE66" Ref="#PWR0304"  Part="1" 
+F 0 "#PWR0304" H 8550 600 50  0001 C CNN
+F 1 "+3V3" H 8565 923 50  0000 C CNN
+F 2 "" H 8550 750 50  0001 C CNN
+F 3 "" H 8550 750 50  0001 C CNN
+	1    8550 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0301
+U 1 1 6144045B
+P 3150 8050
+F 0 "#PWR0301" H 3150 7900 50  0001 C CNN
+F 1 "+3V3" H 3165 8223 50  0000 C CNN
+F 2 "" H 3150 8050 50  0001 C CNN
+F 3 "" H 3150 8050 50  0001 C CNN
+	1    3150 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 8850 3150 8850
+Wire Wire Line
+	3150 8850 3150 8750
+Wire Wire Line
+	3150 8850 3150 9100
+Connection ~ 3150 8850
+Wire Wire Line
+	3800 8750 3150 8750
+Connection ~ 3150 8750
+Wire Wire Line
+	3150 8750 3150 8650
+Wire Wire Line
+	3800 8650 3150 8650
+Connection ~ 3150 8650
+Wire Wire Line
+	3150 8650 3150 8550
+Wire Wire Line
+	3150 8550 3800 8550
+Connection ~ 3150 8550
+Wire Wire Line
+	3800 8450 3150 8450
+Wire Wire Line
+	3150 8050 3150 8150
+Connection ~ 3150 8450
+Wire Wire Line
+	3150 8450 3150 8550
+Wire Wire Line
+	3150 8350 3800 8350
+Connection ~ 3150 8350
+Wire Wire Line
+	3150 8350 3150 8450
+Wire Wire Line
+	3800 8250 3150 8250
+Connection ~ 3150 8250
+Wire Wire Line
+	3150 8250 3150 8350
+Wire Wire Line
+	3150 8150 3800 8150
+Connection ~ 3150 8150
+Wire Wire Line
+	3150 8150 3150 8250
+Text Label 10950 6950 0    50   ~ 0
+R0
+Text Label 10950 7050 0    50   ~ 0
+R1
+Text Label 10950 7150 0    50   ~ 0
+R2
+Text Label 10950 7250 0    50   ~ 0
+R3
+Text Label 10950 7350 0    50   ~ 0
+R4
+Text Label 10950 7450 0    50   ~ 0
+R5
+Text Label 10950 7550 0    50   ~ 0
+R6
+Text Label 10950 7650 0    50   ~ 0
+R7
+Text Label 11150 6950 0    50   ~ 0
+G0
+Text Label 11150 7050 0    50   ~ 0
+G1
+Text Label 11150 7150 0    50   ~ 0
+G2
+Text Label 11150 7250 0    50   ~ 0
+G3
+Text Label 11150 7350 0    50   ~ 0
+G4
+Text Label 11150 7450 0    50   ~ 0
+G5
+Text Label 11150 7550 0    50   ~ 0
+G6
+Text Label 11150 7650 0    50   ~ 0
+G7
+Text Label 11350 6950 0    50   ~ 0
+B0
+Text Label 11350 7050 0    50   ~ 0
+B1
+Text Label 11350 7150 0    50   ~ 0
+B2
+Text Label 11350 7250 0    50   ~ 0
+B3
+Text Label 11350 7350 0    50   ~ 0
+B4
+Text Label 11350 7450 0    50   ~ 0
+B5
+Text Label 11350 7550 0    50   ~ 0
+B6
+Text Label 11350 7650 0    50   ~ 0
+B7
+Text HLabel 13000 6600 0    50   Output ~ 0
+~CPU_DTACK
+Text HLabel 13000 6500 0    50   Output ~ 0
+~CPU_IRQ
+Text HLabel 13000 6400 0    50   Output ~ 0
+~CPU_BERR
 $EndSCHEMATC

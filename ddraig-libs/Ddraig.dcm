@@ -75,12 +75,20 @@ D 2 Channel serial port
 K MPRO
 $ENDCMP
 #
+$CMP SN74LVC8T245PWR
+D 8-Bit Dual-Supply Bus Transceiver with Configurable Voltage-Level Shifting and Three-State Outputs
+$ENDCMP
+#
 $CMP TPA3122D2
 D 15W Stereo Single Chip Class D DIP Power Amplifier
 $ENDCMP
 #
 $CMP V9990
 D Yamaha V9990 Video Display Processor
+$ENDCMP
+#
+$CMP W25Q64JVSSIM
+D FLASH - NOR Memory IC 64Mb (8M x 8) SPI 133MHz 8-SOIC
 $ENDCMP
 #
 $CMP XC9536PC44

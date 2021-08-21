@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Ddraig:IS61WV102416FBLL-10TLI U?
+L Ddraig:IS61WV102416FBLL-10TLI U401
 U 1 1 61200145
 P 4050 3450
-F 0 "U?" H 4400 1950 50  0000 C CNN
+F 0 "U401" H 4400 1950 50  0000 C CNN
 F 1 "IS61WV102416FBLL-10TLI" H 4700 4900 50  0000 C CNN
 F 2 "Ddraig:SOP50P2000X120-48N" H 5100 3550 50  0001 L CNN
 F 3 "https://componentsearchengine.com//IS61WV102416FBLL-10TLI.pdf" H 5100 3450 50  0001 L CNN
@@ -249,16 +249,16 @@ SRAM_D15
 Text HLabel 2550 2050 0    50   Input ~ 0
 SRAM_A[0..19]
 Text HLabel 5550 2050 2    50   BiDi ~ 0
-SRAM_D[0..15]
+SRAM_D[0..31]
 Wire Bus Line
 	5450 2050 5550 2050
 Wire Bus Line
 	2650 2050 2550 2050
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0401
 U 1 1 6120F899
 P 4050 1800
-F 0 "#PWR?" H 4050 1650 50  0001 C CNN
+F 0 "#PWR0401" H 4050 1650 50  0001 C CNN
 F 1 "+3.3V" H 4065 1973 50  0000 C CNN
 F 2 "" H 4050 1800 50  0001 C CNN
 F 3 "" H 4050 1800 50  0001 C CNN
@@ -283,10 +283,10 @@ Wire Wire Line
 Wire Wire Line
 	4100 5150 4100 5100
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0402
 U 1 1 612138EE
 P 4050 5200
-F 0 "#PWR?" H 4050 4950 50  0001 C CNN
+F 0 "#PWR0402" H 4050 4950 50  0001 C CNN
 F 1 "GND" H 4055 5027 50  0000 C CNN
 F 2 "" H 4050 5200 50  0001 C CNN
 F 3 "" H 4050 5200 50  0001 C CNN
@@ -305,9 +305,9 @@ Text HLabel 3100 4450 0    50   Input ~ 0
 Text HLabel 3100 4550 0    50   Input ~ 0
 ~SRAM_WE
 Text HLabel 3100 4650 0    50   Input ~ 0
-~SRAM_UB
+~SRAM_UB0
 Text HLabel 3100 4750 0    50   Input ~ 0
-~SRAM_LB
+~SRAM_LB0
 Wire Wire Line
 	3350 4350 3100 4350
 Wire Wire Line
@@ -318,8 +318,471 @@ Wire Wire Line
 	3350 4650 3100 4650
 Wire Wire Line
 	3350 4750 3100 4750
+$Comp
+L Ddraig:IS61WV102416FBLL-10TLI U402
+U 1 1 61268C54
+P 8650 3450
+F 0 "U402" H 9000 1950 50  0000 C CNN
+F 1 "IS61WV102416FBLL-10TLI" H 9300 4900 50  0000 C CNN
+F 2 "Ddraig:SOP50P2000X120-48N" H 9700 3550 50  0001 L CNN
+F 3 "https://componentsearchengine.com//IS61WV102416FBLL-10TLI.pdf" H 9700 3450 50  0001 L CNN
+F 4 "SRAM 16M (1Mx16) 10ns Async SRAM 3.3V" H 9700 3350 50  0001 L CNN "Description"
+F 5 "1.2" H 9700 3250 50  0001 L CNN "Height"
+F 6 "Integrated Silicon Solution Inc." H 9700 3150 50  0001 L CNN "Manufacturer_Name"
+F 7 "IS61WV102416FBLL-10TLI" H 9700 3050 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "870-61WV12416FBL1TLI" H 9700 2950 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/ISSI/IS61WV102416FBLL-10TLI/?qs=HXFqYaX1Q2y%2F6qe553VRZQ%3D%3D" H 9700 2850 50  0001 L CNN "Mouser Price/Stock"
+	1    8650 3450
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	7250 2150 7350 2250
+Entry Wire Line
+	7250 2250 7350 2350
+Entry Wire Line
+	7250 2350 7350 2450
+Entry Wire Line
+	7250 2450 7350 2550
+Entry Wire Line
+	7250 2550 7350 2650
+Entry Wire Line
+	7250 2650 7350 2750
+Entry Wire Line
+	7250 2750 7350 2850
+Entry Wire Line
+	7250 2850 7350 2950
+Entry Wire Line
+	7250 2950 7350 3050
+Entry Wire Line
+	7250 3050 7350 3150
+Entry Wire Line
+	7250 3150 7350 3250
+Entry Wire Line
+	7250 3250 7350 3350
+Entry Wire Line
+	7250 3350 7350 3450
+Entry Wire Line
+	7250 3450 7350 3550
+Entry Wire Line
+	7250 3550 7350 3650
+Entry Wire Line
+	7250 3650 7350 3750
+Entry Wire Line
+	7250 3750 7350 3850
+Entry Wire Line
+	7250 3850 7350 3950
+Entry Wire Line
+	7250 3950 7350 4050
+Entry Wire Line
+	7250 4050 7350 4150
+Text Label 7450 2250 0    50   ~ 0
+SRAM_A0
+Text Label 7450 2350 0    50   ~ 0
+SRAM_A1
+Text Label 7450 2450 0    50   ~ 0
+SRAM_A2
+Text Label 7450 2550 0    50   ~ 0
+SRAM_A3
+Text Label 7450 2650 0    50   ~ 0
+SRAM_A4
+Text Label 7450 2750 0    50   ~ 0
+SRAM_A5
+Text Label 7450 2850 0    50   ~ 0
+SRAM_A6
+Text Label 7450 2950 0    50   ~ 0
+SRAM_A7
+Text Label 7450 3050 0    50   ~ 0
+SRAM_A8
+Text Label 7450 3150 0    50   ~ 0
+SRAM_A9
+Text Label 7450 3250 0    50   ~ 0
+SRAM_A10
+Text Label 7450 3350 0    50   ~ 0
+SRAM_A11
+Text Label 7450 3450 0    50   ~ 0
+SRAM_A12
+Text Label 7450 3550 0    50   ~ 0
+SRAM_A13
+Text Label 7450 3650 0    50   ~ 0
+SRAM_A14
+Text Label 7450 3750 0    50   ~ 0
+SRAM_A15
+Text Label 7450 3850 0    50   ~ 0
+SRAM_A16
+Text Label 7450 3950 0    50   ~ 0
+SRAM_A17
+Text Label 7450 4050 0    50   ~ 0
+SRAM_A18
+Text Label 7450 4150 0    50   ~ 0
+SRAM_A19
+Wire Wire Line
+	7950 2250 7350 2250
+Wire Wire Line
+	7950 2350 7350 2350
+Wire Wire Line
+	7950 2450 7350 2450
+Wire Wire Line
+	7950 2550 7350 2550
+Wire Wire Line
+	7950 2650 7350 2650
+Wire Wire Line
+	7950 2750 7350 2750
+Wire Wire Line
+	7950 2850 7350 2850
+Wire Wire Line
+	7950 2950 7350 2950
+Wire Wire Line
+	7950 3050 7350 3050
+Wire Wire Line
+	7950 3150 7350 3150
+Wire Wire Line
+	7950 3250 7350 3250
+Wire Wire Line
+	7950 3350 7350 3350
+Wire Wire Line
+	7950 3450 7350 3450
+Wire Wire Line
+	7950 3550 7350 3550
+Wire Wire Line
+	7950 3650 7350 3650
+Wire Wire Line
+	7950 3750 7350 3750
+Wire Wire Line
+	7950 3850 7350 3850
+Wire Wire Line
+	7950 3950 7350 3950
+Wire Wire Line
+	7950 4050 7350 4050
+Wire Wire Line
+	7950 4150 7350 4150
+Entry Wire Line
+	10050 2150 9950 2250
+Entry Wire Line
+	10050 2250 9950 2350
+Entry Wire Line
+	10050 2350 9950 2450
+Entry Wire Line
+	10050 2450 9950 2550
+Entry Wire Line
+	10050 2550 9950 2650
+Entry Wire Line
+	10050 2650 9950 2750
+Entry Wire Line
+	10050 2750 9950 2850
+Entry Wire Line
+	10050 2850 9950 2950
+Entry Wire Line
+	10050 2950 9950 3050
+Entry Wire Line
+	10050 3050 9950 3150
+Entry Wire Line
+	10050 3150 9950 3250
+Entry Wire Line
+	10050 3250 9950 3350
+Entry Wire Line
+	10050 3350 9950 3450
+Entry Wire Line
+	10050 3450 9950 3550
+Entry Wire Line
+	10050 3550 9950 3650
+Entry Wire Line
+	10050 3650 9950 3750
+Wire Wire Line
+	9350 2250 9950 2250
+Wire Wire Line
+	9350 2350 9950 2350
+Wire Wire Line
+	9350 2450 9950 2450
+Wire Wire Line
+	9350 2550 9950 2550
+Wire Wire Line
+	9350 2650 9950 2650
+Wire Wire Line
+	9350 2750 9950 2750
+Wire Wire Line
+	9350 2850 9950 2850
+Wire Wire Line
+	9350 2950 9950 2950
+Wire Wire Line
+	9350 3050 9950 3050
+Wire Wire Line
+	9350 3150 9950 3150
+Wire Wire Line
+	9350 3250 9950 3250
+Wire Wire Line
+	9350 3350 9950 3350
+Wire Wire Line
+	9350 3450 9950 3450
+Wire Wire Line
+	9350 3550 9950 3550
+Wire Wire Line
+	9350 3650 9950 3650
+Wire Wire Line
+	9350 3750 9950 3750
+Text Label 9450 2250 0    50   ~ 0
+SRAM_D0
+Text Label 9450 2350 0    50   ~ 0
+SRAM_D1
+Text Label 9450 2450 0    50   ~ 0
+SRAM_D2
+Text Label 9450 2550 0    50   ~ 0
+SRAM_D3
+Text Label 9450 2650 0    50   ~ 0
+SRAM_D4
+Text Label 9450 2750 0    50   ~ 0
+SRAM_D5
+Text Label 9450 2850 0    50   ~ 0
+SRAM_D6
+Text Label 9450 2950 0    50   ~ 0
+SRAM_D7
+Text Label 9450 3050 0    50   ~ 0
+SRAM_D8
+Text Label 9450 3150 0    50   ~ 0
+SRAM_D9
+Text Label 9450 3250 0    50   ~ 0
+SRAM_D10
+Text Label 9450 3350 0    50   ~ 0
+SRAM_D11
+Text Label 9450 3450 0    50   ~ 0
+SRAM_D12
+Text Label 9450 3550 0    50   ~ 0
+SRAM_D13
+Text Label 9450 3650 0    50   ~ 0
+SRAM_D14
+Text Label 9450 3750 0    50   ~ 0
+SRAM_D15
+Text HLabel 7150 2050 0    50   Input ~ 0
+SRAM_A[0..19]
+Text HLabel 10150 2050 2    50   BiDi ~ 0
+SRAM_D[0..31]
+Wire Bus Line
+	10050 2050 10150 2050
+Wire Bus Line
+	7250 2050 7150 2050
+$Comp
+L power:+3.3V #PWR0405
+U 1 1 61268CCA
+P 8650 1800
+F 0 "#PWR0405" H 8650 1650 50  0001 C CNN
+F 1 "+3.3V" H 8665 1973 50  0000 C CNN
+F 2 "" H 8650 1800 50  0001 C CNN
+F 3 "" H 8650 1800 50  0001 C CNN
+	1    8650 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 1900 8600 1850
+Wire Wire Line
+	8600 1850 8650 1850
+Wire Wire Line
+	8700 1850 8700 1900
+Wire Wire Line
+	8650 1800 8650 1850
+Connection ~ 8650 1850
+Wire Wire Line
+	8650 1850 8700 1850
+Wire Wire Line
+	8600 5100 8600 5150
+Wire Wire Line
+	8600 5150 8650 5150
+Wire Wire Line
+	8700 5150 8700 5100
+$Comp
+L power:GND #PWR0406
+U 1 1 61268CD9
+P 8650 5200
+F 0 "#PWR0406" H 8650 4950 50  0001 C CNN
+F 1 "GND" H 8655 5027 50  0000 C CNN
+F 2 "" H 8650 5200 50  0001 C CNN
+F 3 "" H 8650 5200 50  0001 C CNN
+	1    8650 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 5200 8650 5150
+Connection ~ 8650 5150
+Wire Wire Line
+	8650 5150 8700 5150
+Text HLabel 7700 4350 0    50   Input ~ 0
+~SRAM_CS
+Text HLabel 7700 4450 0    50   Input ~ 0
+~SRAM_OE
+Text HLabel 7700 4550 0    50   Input ~ 0
+~SRAM_WE
+Text HLabel 7700 4650 0    50   Input ~ 0
+~SRAM_UB1
+Text HLabel 7700 4750 0    50   Input ~ 0
+~SRAM_LB1
+Wire Wire Line
+	7950 4350 7700 4350
+Wire Wire Line
+	7950 4450 7700 4450
+Wire Wire Line
+	7950 4550 7700 4550
+Wire Wire Line
+	7950 4650 7700 4650
+Wire Wire Line
+	7950 4750 7700 4750
+$Comp
+L Device:C C?
+U 1 1 614DCA6C
+P 5400 5500
+AR Path="/6125C19F/614DCA6C" Ref="C?"  Part="1" 
+AR Path="/614DCA6C" Ref="C?"  Part="1" 
+AR Path="/6125C80C/614DCA6C" Ref="C402"  Part="1" 
+F 0 "C402" H 5515 5546 50  0000 L CNN
+F 1 "100nF" H 5515 5455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5438 5350 50  0001 C CNN
+F 3 "~" H 5400 5500 50  0001 C CNN
+	1    5400 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 614DCA72
+P 5150 5850
+AR Path="/614DCA72" Ref="#PWR?"  Part="1" 
+AR Path="/6125C227/614DCA72" Ref="#PWR?"  Part="1" 
+AR Path="/6125C80C/614DCA72" Ref="#PWR0404"  Part="1" 
+F 0 "#PWR0404" H 5150 5600 50  0001 C CNN
+F 1 "GND" H 5155 5677 50  0000 C CNN
+F 2 "" H 5150 5850 50  0001 C CNN
+F 3 "" H 5150 5850 50  0001 C CNN
+	1    5150 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5350 5400 5250
+Wire Wire Line
+	5400 5650 5400 5750
+$Comp
+L Device:C C?
+U 1 1 614DCA7A
+P 4900 5500
+AR Path="/6125C19F/614DCA7A" Ref="C?"  Part="1" 
+AR Path="/614DCA7A" Ref="C?"  Part="1" 
+AR Path="/6125C80C/614DCA7A" Ref="C401"  Part="1" 
+F 0 "C401" H 5015 5546 50  0000 L CNN
+F 1 "100nF" H 5015 5455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4938 5350 50  0001 C CNN
+F 3 "~" H 4900 5500 50  0001 C CNN
+	1    4900 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5250 5150 5250
+Wire Wire Line
+	4900 5650 4900 5750
+Wire Wire Line
+	4900 5750 5150 5750
+Wire Wire Line
+	4900 5350 4900 5250
+Wire Wire Line
+	5150 5850 5150 5750
+Connection ~ 5150 5750
+Wire Wire Line
+	5150 5750 5400 5750
+Wire Wire Line
+	5150 5150 5150 5250
+Connection ~ 5150 5250
+Wire Wire Line
+	5150 5250 4900 5250
+$Comp
+L power:+3V3 #PWR?
+U 1 1 614DCA8A
+P 5150 5150
+AR Path="/6125C227/614DCA8A" Ref="#PWR?"  Part="1" 
+AR Path="/6125C80C/614DCA8A" Ref="#PWR0403"  Part="1" 
+F 0 "#PWR0403" H 5150 5000 50  0001 C CNN
+F 1 "+3V3" H 5165 5323 50  0000 C CNN
+F 2 "" H 5150 5150 50  0001 C CNN
+F 3 "" H 5150 5150 50  0001 C CNN
+	1    5150 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 614E192A
+P 10050 5600
+AR Path="/6125C19F/614E192A" Ref="C?"  Part="1" 
+AR Path="/614E192A" Ref="C?"  Part="1" 
+AR Path="/6125C80C/614E192A" Ref="C404"  Part="1" 
+F 0 "C404" H 10165 5646 50  0000 L CNN
+F 1 "100nF" H 10165 5555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 10088 5450 50  0001 C CNN
+F 3 "~" H 10050 5600 50  0001 C CNN
+	1    10050 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 614E1930
+P 9800 5950
+AR Path="/614E1930" Ref="#PWR?"  Part="1" 
+AR Path="/6125C227/614E1930" Ref="#PWR?"  Part="1" 
+AR Path="/6125C80C/614E1930" Ref="#PWR0408"  Part="1" 
+F 0 "#PWR0408" H 9800 5700 50  0001 C CNN
+F 1 "GND" H 9805 5777 50  0000 C CNN
+F 2 "" H 9800 5950 50  0001 C CNN
+F 3 "" H 9800 5950 50  0001 C CNN
+	1    9800 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 5450 10050 5350
+Wire Wire Line
+	10050 5750 10050 5850
+$Comp
+L Device:C C?
+U 1 1 614E1938
+P 9550 5600
+AR Path="/6125C19F/614E1938" Ref="C?"  Part="1" 
+AR Path="/614E1938" Ref="C?"  Part="1" 
+AR Path="/6125C80C/614E1938" Ref="C403"  Part="1" 
+F 0 "C403" H 9665 5646 50  0000 L CNN
+F 1 "100nF" H 9665 5555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9588 5450 50  0001 C CNN
+F 3 "~" H 9550 5600 50  0001 C CNN
+	1    9550 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 5350 9800 5350
+Wire Wire Line
+	9550 5750 9550 5850
+Wire Wire Line
+	9550 5850 9800 5850
+Wire Wire Line
+	9550 5450 9550 5350
+Wire Wire Line
+	9800 5950 9800 5850
+Connection ~ 9800 5850
+Wire Wire Line
+	9800 5850 10050 5850
+Wire Wire Line
+	9800 5250 9800 5350
+Connection ~ 9800 5350
+Wire Wire Line
+	9800 5350 9550 5350
+$Comp
+L power:+3V3 #PWR?
+U 1 1 614E1948
+P 9800 5250
+AR Path="/6125C227/614E1948" Ref="#PWR?"  Part="1" 
+AR Path="/6125C80C/614E1948" Ref="#PWR0407"  Part="1" 
+F 0 "#PWR0407" H 9800 5100 50  0001 C CNN
+F 1 "+3V3" H 9815 5423 50  0000 C CNN
+F 2 "" H 9800 5250 50  0001 C CNN
+F 3 "" H 9800 5250 50  0001 C CNN
+	1    9800 5250
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	5450 2050 5450 3650
 Wire Bus Line
 	2650 2050 2650 4050
+Wire Bus Line
+	10050 2050 10050 3650
+Wire Bus Line
+	7250 2050 7250 4050
 $EndSCHEMATC
