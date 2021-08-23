@@ -22,17 +22,6 @@ A[1..19]
 Text HLabel 3550 7300 2    50   BiDi ~ 0
 D[0..15]
 $Comp
-L Ddraig:SN74LVC8T245PWR U205
-U 1 1 61215A50
-P 9050 2350
-F 0 "U205" H 8700 3600 50  0000 C CNN
-F 1 "SN74LVC8T245PWR" H 9550 3600 50  0000 C CNN
-F 2 "Ddraig:SOP65P640X120-24N" H 9200 3600 50  0001 L BNN
-F 3 "" H 9050 2350 50  0001 L BNN
-	1    9050 2350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0225
 U 1 1 612184BA
 P 8950 900
@@ -89,38 +78,6 @@ F 3 "" H 9050 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9050 2900 9050 2850
-Text Label 8300 1400 2    50   ~ 0
-CPU_D0
-Text Label 8300 1500 2    50   ~ 0
-CPU_D1
-Text Label 8300 1600 2    50   ~ 0
-CPU_D2
-Text Label 8300 1700 2    50   ~ 0
-CPU_D3
-Text Label 8300 1800 2    50   ~ 0
-CPU_D4
-Text Label 8300 1900 2    50   ~ 0
-CPU_D5
-Text Label 8300 2000 2    50   ~ 0
-CPU_D6
-Text Label 8300 2100 2    50   ~ 0
-CPU_D7
-Text Label 9800 1400 0    50   ~ 0
-D0
-Text Label 9800 1500 0    50   ~ 0
-D1
-Text Label 9800 1600 0    50   ~ 0
-D2
-Text Label 9800 1700 0    50   ~ 0
-D3
-Text Label 9800 1800 0    50   ~ 0
-D4
-Text Label 9800 1900 0    50   ~ 0
-D5
-Text Label 9800 2000 0    50   ~ 0
-D6
-Text Label 9800 2100 0    50   ~ 0
-D7
 Wire Wire Line
 	8500 1400 8300 1400
 Wire Wire Line
@@ -153,25 +110,10 @@ Wire Wire Line
 	9800 2000 9600 2000
 Wire Wire Line
 	9800 2100 9600 2100
-Text Label 8300 2400 2    50   ~ 0
-CPU_DATADIR
-Text Label 8300 2300 2    50   ~ 0
-~CPU_DATAEN
 Wire Wire Line
 	8500 2400 8300 2400
 Wire Wire Line
 	8500 2300 8300 2300
-$Comp
-L Ddraig:SN74LVC8T245PWR U206
-U 1 1 6121F601
-P 9050 5000
-F 0 "U206" H 8700 6250 50  0000 C CNN
-F 1 "SN74LVC8T245PWR" H 9550 6250 50  0000 C CNN
-F 2 "Ddraig:SOP65P640X120-24N" H 9200 6250 50  0001 L BNN
-F 3 "" H 9050 5000 50  0001 L BNN
-	1    9050 5000
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR0226
 U 1 1 6121F607
@@ -261,57 +203,10 @@ Wire Wire Line
 	9800 4650 9600 4650
 Wire Wire Line
 	9800 4750 9600 4750
-Text Label 8300 5050 2    50   ~ 0
-CPU_DATADIR
-Text Label 8300 4950 2    50   ~ 0
-~CPU_DATAEN
 Wire Wire Line
 	8500 5050 8300 5050
 Wire Wire Line
 	8500 4950 8300 4950
-Text Label 9800 4050 0    50   ~ 0
-D8
-Text Label 9800 4150 0    50   ~ 0
-D9
-Text Label 9800 4250 0    50   ~ 0
-D10
-Text Label 9800 4350 0    50   ~ 0
-D11
-Text Label 9800 4450 0    50   ~ 0
-D12
-Text Label 9800 4550 0    50   ~ 0
-D13
-Text Label 9800 4650 0    50   ~ 0
-D14
-Text Label 9800 4750 0    50   ~ 0
-D15
-Text Label 8300 4050 2    50   ~ 0
-CPU_D8
-Text Label 8300 4150 2    50   ~ 0
-CPU_D9
-Text Label 8300 4250 2    50   ~ 0
-CPU_D10
-Text Label 8300 4350 2    50   ~ 0
-CPU_D11
-Text Label 8300 4450 2    50   ~ 0
-CPU_D12
-Text Label 8300 4550 2    50   ~ 0
-CPU_D13
-Text Label 8300 4650 2    50   ~ 0
-CPU_D14
-Text Label 8300 4750 2    50   ~ 0
-CPU_D15
-$Comp
-L Ddraig:SN74LVC8T245PWR U201
-U 1 1 61236918
-P 2800 2350
-F 0 "U201" H 2450 3600 50  0000 C CNN
-F 1 "SN74LVC8T245PWR" H 3300 3600 50  0000 C CNN
-F 2 "Ddraig:SOP65P640X120-24N" H 2950 3600 50  0001 L BNN
-F 3 "" H 2800 2350 50  0001 L BNN
-	1    2800 2350
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR0205
 U 1 1 6123691E
@@ -401,82 +296,6 @@ Wire Wire Line
 	3550 2000 3350 2000
 Wire Wire Line
 	3550 2100 3350 2100
-Text Label 2050 1400 2    50   ~ 0
-CPU_A1
-Text Label 2050 1500 2    50   ~ 0
-CPU_A2
-Text Label 2050 1600 2    50   ~ 0
-CPU_A3
-Text Label 2050 1700 2    50   ~ 0
-CPU_A4
-Text Label 2050 1800 2    50   ~ 0
-CPU_A5
-Text Label 2050 1900 2    50   ~ 0
-CPU_A6
-Text Label 2050 2000 2    50   ~ 0
-CPU_A7
-Text Label 2050 2100 2    50   ~ 0
-CPU_A8
-Text Label 2050 4050 2    50   ~ 0
-CPU_A9
-Text Label 2050 4150 2    50   ~ 0
-CPU_A10
-Text Label 2050 4250 2    50   ~ 0
-CPU_A11
-Text Label 2050 4350 2    50   ~ 0
-CPU_A12
-Text Label 2050 4450 2    50   ~ 0
-CPU_A13
-Text Label 2050 4550 2    50   ~ 0
-CPU_A14
-Text Label 2050 4650 2    50   ~ 0
-CPU_A15
-Text Label 2050 4750 2    50   ~ 0
-CPU_A16
-Text Label 5000 1350 2    50   ~ 0
-CPU_A17
-Text Label 5000 1450 2    50   ~ 0
-CPU_A18
-Text Label 5000 1550 2    50   ~ 0
-CPU_A19
-Text Label 3550 1400 0    50   ~ 0
-A1
-Text Label 3550 1500 0    50   ~ 0
-A2
-Text Label 3550 1600 0    50   ~ 0
-A3
-Text Label 3550 1700 0    50   ~ 0
-A4
-Text Label 3550 1800 0    50   ~ 0
-A5
-Text Label 3550 1900 0    50   ~ 0
-A6
-Text Label 3550 2000 0    50   ~ 0
-A7
-Text Label 3550 2100 0    50   ~ 0
-A8
-Text Label 3550 4050 0    50   ~ 0
-A9
-Text Label 3550 4150 0    50   ~ 0
-A10
-Text Label 3550 4250 0    50   ~ 0
-A11
-Text Label 3550 4350 0    50   ~ 0
-A12
-Text Label 3550 4450 0    50   ~ 0
-A13
-Text Label 3550 4550 0    50   ~ 0
-A14
-Text Label 3550 4650 0    50   ~ 0
-A15
-Text Label 3550 4750 0    50   ~ 0
-A16
-Text Label 6500 1350 0    50   ~ 0
-A17
-Text Label 6500 1450 0    50   ~ 0
-A18
-Text Label 6500 1550 0    50   ~ 0
-A19
 $Comp
 L power:+5V #PWR0203
 U 1 1 6129F959
@@ -507,17 +326,6 @@ Wire Wire Line
 	2250 2300 2150 2300
 Wire Wire Line
 	2150 2300 2150 2500
-$Comp
-L Ddraig:SN74LVC8T245PWR U202
-U 1 1 612B64E8
-P 2800 5000
-F 0 "U202" H 2450 6250 50  0000 C CNN
-F 1 "SN74LVC8T245PWR" H 3300 6250 50  0000 C CNN
-F 2 "Ddraig:SOP65P640X120-24N" H 2950 6250 50  0001 L BNN
-F 3 "" H 2800 5000 50  0001 L BNN
-	1    2800 5000
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR0206
 U 1 1 612B64EE
@@ -638,17 +446,6 @@ Wire Wire Line
 Wire Wire Line
 	2150 4950 2150 5150
 $Comp
-L Ddraig:SN74LVC8T245PWR U203
-U 1 1 612E17E1
-P 5750 2300
-F 0 "U203" H 5400 3550 50  0000 C CNN
-F 1 "SN74LVC8T245PWR" H 6250 3550 50  0000 C CNN
-F 2 "Ddraig:SOP65P640X120-24N" H 5900 3550 50  0001 L BNN
-F 3 "" H 5750 2300 50  0001 L BNN
-	1    5750 2300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0217
 U 1 1 612E17E7
 P 5650 850
@@ -706,19 +503,7 @@ $EndComp
 Wire Wire Line
 	5750 2850 5750 2800
 Wire Wire Line
-	5200 1350 5000 1350
-Wire Wire Line
-	5200 1450 5000 1450
-Wire Wire Line
-	5200 1550 5000 1550
-Wire Wire Line
 	5200 2050 5000 2050
-Wire Wire Line
-	6500 1350 6300 1350
-Wire Wire Line
-	6500 1450 6300 1450
-Wire Wire Line
-	6500 1550 6300 1550
 Wire Wire Line
 	6500 2050 6300 2050
 $Comp
@@ -751,17 +536,6 @@ Wire Wire Line
 	5200 2250 5100 2250
 Wire Wire Line
 	5100 2250 5100 2450
-$Comp
-L Ddraig:SN74LVC8T245PWR U204
-U 1 1 612E1846
-P 5750 4950
-F 0 "U204" H 5400 6200 50  0000 C CNN
-F 1 "SN74LVC8T245PWR" H 6250 6200 50  0000 C CNN
-F 2 "Ddraig:SOP65P640X120-24N" H 5900 6200 50  0001 L BNN
-F 3 "" H 5750 4950 50  0001 L BNN
-	1    5750 4950
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR0218
 U 1 1 612E184C
@@ -877,48 +651,43 @@ Wire Wire Line
 	5200 4900 5100 4900
 Wire Wire Line
 	5100 4900 5100 5100
-Text HLabel 5000 4000 0    50   Input ~ 0
+Text HLabel 5000 4400 0    50   Input ~ 0
 ~CPU_LDS
-Text HLabel 5000 4100 0    50   Input ~ 0
+Text HLabel 5000 4500 0    50   Input ~ 0
 ~CPU_UDS
 Text HLabel 5000 4200 0    50   Input ~ 0
 CPU_R~W
-Text HLabel 5000 4300 0    50   Input ~ 0
-~CPU_AS
-Text HLabel 5000 2050 0    50   Input ~ 0
-CPU_CLK
-Text HLabel 5000 4400 0    50   Input ~ 0
-~CPU_RESET
-Text HLabel 5000 4500 0    50   Input ~ 0
-~CPU_REGCS
 Text HLabel 5000 4600 0    50   Input ~ 0
+~CPU_AS
+Text HLabel 5000 1350 0    50   Input ~ 0
+CPU_CLK
+Text HLabel 5000 4300 0    50   Input ~ 0
+~CPU_RESET
+Text HLabel 5000 4000 0    50   Input ~ 0
+~CPU_REGCS
+Text HLabel 5000 4100 0    50   Input ~ 0
 ~CPU_DATACS
 NoConn ~ 5200 4700
 NoConn ~ 6300 4700
-Text HLabel 6500 4000 2    50   Output ~ 0
+Text HLabel 6500 4400 2    50   Output ~ 0
 ~LDS
-Text HLabel 6500 4100 2    50   Output ~ 0
+Text HLabel 6500 4500 2    50   Output ~ 0
 ~UDS
 Text HLabel 6500 4200 2    50   Output ~ 0
 R~W
-Text HLabel 6500 4300 2    50   Output ~ 0
-~AS
-Text HLabel 6500 4400 2    50   Output ~ 0
-~RESET
-Text HLabel 6500 4500 2    50   Output ~ 0
-~REGCS
 Text HLabel 6500 4600 2    50   Output ~ 0
+~AS
+Text HLabel 6500 4300 2    50   Output ~ 0
+~RESET
+Text HLabel 6500 4000 2    50   Output ~ 0
+~REGCS
+Text HLabel 6500 4100 2    50   Output ~ 0
 ~DATACS
-Text HLabel 6500 2050 2    50   Output ~ 0
+Text HLabel 6500 1350 2    50   Output ~ 0
 HOST_CLK
-NoConn ~ 6300 1950
-NoConn ~ 6300 1850
 NoConn ~ 6300 1750
 NoConn ~ 6300 1650
-NoConn ~ 5200 1950
-NoConn ~ 5200 1850
 NoConn ~ 5200 1750
-NoConn ~ 5200 1650
 Text Label 2450 7150 0    50   ~ 0
 CPU_A[1..19]
 Text Label 2450 7300 0    50   ~ 0
@@ -1277,4 +1046,235 @@ F 3 "" H 8150 6150 50  0001 C CNN
 	1    8150 6150
 	1    0    0    -1  
 $EndComp
+Text Label 8300 2300 2    50   ~ 0
+~CPU_DATAEN
+Text Label 8300 2400 2    50   ~ 0
+CPU_DATADIR
+$Comp
+L Ddraig:SN74LVC8T245PWR U201
+U 1 1 6136D92B
+P 2800 2350
+F 0 "U201" H 3100 3600 50  0000 C CNN
+F 1 "SN74LVC8T245PWR" H 3300 2000 50  0000 C CNN
+F 2 "Ddraig:SOP65P640X120-24N" H 2950 3600 50  0001 L BNN
+F 3 "" H 2800 2350 50  0001 L BNN
+	1    2800 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ddraig:SN74LVC8T245PWR U203
+U 1 1 6136ECEF
+P 5750 2300
+F 0 "U203" H 6050 3550 50  0000 C CNN
+F 1 "SN74LVC8T245PWR" H 6250 1950 50  0000 C CNN
+F 2 "Ddraig:SOP65P640X120-24N" H 5900 3550 50  0001 L BNN
+F 3 "" H 5750 2300 50  0001 L BNN
+	1    5750 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ddraig:SN74LVC8T245PWR U205
+U 1 1 6136FBBF
+P 9050 2350
+F 0 "U205" H 9350 3600 50  0000 C CNN
+F 1 "SN74LVC8T245PWR" H 9550 2000 50  0000 C CNN
+F 2 "Ddraig:SOP65P640X120-24N" H 9200 3600 50  0001 L BNN
+F 3 "" H 9050 2350 50  0001 L BNN
+	1    9050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ddraig:SN74LVC8T245PWR U206
+U 1 1 6137111C
+P 9050 5000
+F 0 "U206" H 9350 6250 50  0000 C CNN
+F 1 "SN74LVC8T245PWR" H 9550 4650 50  0000 C CNN
+F 2 "Ddraig:SOP65P640X120-24N" H 9200 6250 50  0001 L BNN
+F 3 "" H 9050 5000 50  0001 L BNN
+	1    9050 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ddraig:SN74LVC8T245PWR U204
+U 1 1 6137206E
+P 5750 4950
+F 0 "U204" H 6050 6200 50  0000 C CNN
+F 1 "SN74LVC8T245PWR" H 6250 4600 50  0000 C CNN
+F 2 "Ddraig:SOP65P640X120-24N" H 5900 6200 50  0001 L BNN
+F 3 "" H 5750 4950 50  0001 L BNN
+	1    5750 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ddraig:SN74LVC8T245PWR U202
+U 1 1 61372564
+P 2800 5000
+F 0 "U202" H 3100 6250 50  0000 C CNN
+F 1 "SN74LVC8T245PWR" H 3300 4650 50  0000 C CNN
+F 2 "Ddraig:SOP65P640X120-24N" H 2950 6250 50  0001 L BNN
+F 3 "" H 2800 5000 50  0001 L BNN
+	1    2800 5000
+	1    0    0    -1  
+$EndComp
+Text Label 8300 4950 2    50   ~ 0
+~CPU_DATAEN
+Text Label 8300 5050 2    50   ~ 0
+CPU_DATADIR
+Text Label 8300 2100 2    50   ~ 0
+CPU_D0
+Text Label 8300 2000 2    50   ~ 0
+CPU_D1
+Text Label 8300 1900 2    50   ~ 0
+CPU_D2
+Text Label 8300 1800 2    50   ~ 0
+CPU_D3
+Text Label 8300 1700 2    50   ~ 0
+CPU_D4
+Text Label 8300 1600 2    50   ~ 0
+CPU_D5
+Text Label 8300 1500 2    50   ~ 0
+CPU_D6
+Text Label 8300 1400 2    50   ~ 0
+CPU_D7
+Text Label 9800 2100 0    50   ~ 0
+D0
+Text Label 9800 2000 0    50   ~ 0
+D1
+Text Label 9800 1900 0    50   ~ 0
+D2
+Text Label 9800 1800 0    50   ~ 0
+D3
+Text Label 9800 1700 0    50   ~ 0
+D4
+Text Label 9800 1600 0    50   ~ 0
+D5
+Text Label 9800 1500 0    50   ~ 0
+D6
+Text Label 9800 1400 0    50   ~ 0
+D7
+Text Label 9800 4750 0    50   ~ 0
+D8
+Text Label 9800 4650 0    50   ~ 0
+D9
+Text Label 9800 4550 0    50   ~ 0
+D10
+Text Label 9800 4450 0    50   ~ 0
+D11
+Text Label 9800 4350 0    50   ~ 0
+D12
+Text Label 9800 4250 0    50   ~ 0
+D13
+Text Label 9800 4150 0    50   ~ 0
+D14
+Text Label 9800 4050 0    50   ~ 0
+D15
+Text Label 8300 4750 2    50   ~ 0
+CPU_D8
+Text Label 8300 4650 2    50   ~ 0
+CPU_D9
+Text Label 8300 4550 2    50   ~ 0
+CPU_D10
+Text Label 8300 4450 2    50   ~ 0
+CPU_D11
+Text Label 8300 4350 2    50   ~ 0
+CPU_D12
+Text Label 8300 4250 2    50   ~ 0
+CPU_D13
+Text Label 8300 4150 2    50   ~ 0
+CPU_D14
+Text Label 8300 4050 2    50   ~ 0
+CPU_D15
+Text Label 3550 2100 0    50   ~ 0
+A1
+Text Label 3550 2000 0    50   ~ 0
+A2
+Text Label 3550 1900 0    50   ~ 0
+A3
+Text Label 3550 1800 0    50   ~ 0
+A4
+Text Label 3550 1700 0    50   ~ 0
+A5
+Text Label 3550 1600 0    50   ~ 0
+A6
+Text Label 3550 1500 0    50   ~ 0
+A7
+Text Label 3550 1400 0    50   ~ 0
+A8
+Text Label 2050 2100 2    50   ~ 0
+CPU_A1
+Text Label 2050 2000 2    50   ~ 0
+CPU_A2
+Text Label 2050 1900 2    50   ~ 0
+CPU_A3
+Text Label 2050 1800 2    50   ~ 0
+CPU_A4
+Text Label 2050 1700 2    50   ~ 0
+CPU_A5
+Text Label 2050 1600 2    50   ~ 0
+CPU_A6
+Text Label 2050 1500 2    50   ~ 0
+CPU_A7
+Text Label 2050 1400 2    50   ~ 0
+CPU_A8
+Text Label 3550 4350 0    50   ~ 0
+A13
+Text Label 3550 4250 0    50   ~ 0
+A14
+Text Label 3550 4150 0    50   ~ 0
+A15
+Text Label 3550 4050 0    50   ~ 0
+A16
+Text Label 2050 4350 2    50   ~ 0
+CPU_A13
+Text Label 2050 4250 2    50   ~ 0
+CPU_A14
+Text Label 2050 4150 2    50   ~ 0
+CPU_A15
+Text Label 2050 4050 2    50   ~ 0
+CPU_A16
+Text Label 5000 1950 2    50   ~ 0
+CPU_A17
+Text Label 5000 2050 2    50   ~ 0
+CPU_A18
+Text Label 5000 1850 2    50   ~ 0
+CPU_A19
+Wire Wire Line
+	5200 1350 5000 1350
+Wire Wire Line
+	6300 1350 6500 1350
+Wire Wire Line
+	5200 1950 5000 1950
+Wire Wire Line
+	5000 1850 5200 1850
+Text Label 6500 1950 0    50   ~ 0
+A17
+Text Label 6500 2050 0    50   ~ 0
+A18
+Text Label 6500 1850 0    50   ~ 0
+A19
+Wire Wire Line
+	6500 1850 6300 1850
+Wire Wire Line
+	6300 1950 6500 1950
+NoConn ~ 5200 1650
+NoConn ~ 5200 1550
+NoConn ~ 5200 1450
+NoConn ~ 6300 1550
+NoConn ~ 6300 1450
+Text Label 3550 4450 0    50   ~ 0
+A12
+Text Label 3550 4550 0    50   ~ 0
+A11
+Text Label 3550 4650 0    50   ~ 0
+A10
+Text Label 3550 4750 0    50   ~ 0
+A9
+Text Label 2050 4650 2    50   ~ 0
+CPU_A10
+Text Label 2050 4750 2    50   ~ 0
+CPU_A9
+Text Label 2050 4450 2    50   ~ 0
+CPU_A12
+Text Label 2050 4550 2    50   ~ 0
+CPU_A11
 $EndSCHEMATC

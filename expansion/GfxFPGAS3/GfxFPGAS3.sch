@@ -682,14 +682,14 @@ Wire Wire Line
 $Comp
 L power:+1V2 #PWR?
 U 1 1 6125DBDA
-P 9150 900
+P 9350 900
 AR Path="/6125C19F/6125DBDA" Ref="#PWR?"  Part="1" 
 AR Path="/6125DBDA" Ref="#PWR0114"  Part="1" 
-F 0 "#PWR0114" H 9150 750 50  0001 C CNN
-F 1 "+1V2" H 9165 1073 50  0000 C CNN
-F 2 "" H 9150 900 50  0001 C CNN
-F 3 "" H 9150 900 50  0001 C CNN
-	1    9150 900 
+F 0 "#PWR0114" H 9350 750 50  0001 C CNN
+F 1 "+1V2" H 9365 1073 50  0000 C CNN
+F 2 "" H 9350 900 50  0001 C CNN
+F 3 "" H 9350 900 50  0001 C CNN
+	1    9350 900 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -741,7 +741,7 @@ Wire Wire Line
 Wire Wire Line
 	8150 1150 8450 1150
 Wire Wire Line
-	9150 1150 9150 900 
+	9350 1150 9350 900 
 Wire Wire Line
 	8850 1300 8850 1150
 Wire Wire Line
@@ -769,14 +769,10 @@ Text Label 4400 2100 0    50   ~ 0
 CPU_D[0..15]
 Text Label 1650 2100 2    50   ~ 0
 CPU_A[1..19]
-Text Label 5800 2600 2    50   ~ 0
-CPU_D[0..15]
 Text Label 5800 2700 2    50   ~ 0
+CPU_D[0..15]
+Text Label 5800 2600 2    50   ~ 0
 CPU_A[1..19]
-Wire Bus Line
-	6000 2700 5800 2700
-Wire Bus Line
-	5800 2600 6000 2600
 $Comp
 L Device:C C?
 U 1 1 6132D656
@@ -865,7 +861,7 @@ Wire Wire Line
 Wire Wire Line
 	7750 6100 7750 6000
 Wire Wire Line
-	8850 1150 9150 1150
+	8850 1150 9350 1150
 Connection ~ 8850 1150
 Wire Bus Line
 	7100 2600 7800 2600
@@ -1062,7 +1058,32 @@ Wire Wire Line
 Wire Wire Line
 	7600 4250 7800 4250
 Wire Bus Line
+	5800 2600 6000 2600
+Wire Bus Line
+	5800 2700 6000 2700
+$Comp
+L Device:C C?
+U 1 1 61962C16
+P 9350 1450
+AR Path="/6125C19F/61962C16" Ref="C?"  Part="1" 
+AR Path="/61962C16" Ref="C106"  Part="1" 
+F 0 "C106" H 9465 1496 50  0000 L CNN
+F 1 "100nF" H 9465 1405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9388 1300 50  0001 C CNN
+F 3 "~" H 9350 1450 50  0001 C CNN
+	1    9350 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 1700 9350 1700
+Wire Wire Line
+	9350 1700 9350 1600
+Connection ~ 8850 1700
+Wire Wire Line
+	9350 1300 9350 1150
+Wire Bus Line
 	4300 2100 4300 3700
 Wire Bus Line
 	1750 2100 1750 4000
+Connection ~ 9350 1150
 $EndSCHEMATC
