@@ -519,38 +519,6 @@ Wire Wire Line
 	9350 3650 9950 3650
 Wire Wire Line
 	9350 3750 9950 3750
-Text Label 9450 2250 0    50   ~ 0
-SRAM_D0
-Text Label 9450 2350 0    50   ~ 0
-SRAM_D1
-Text Label 9450 2450 0    50   ~ 0
-SRAM_D2
-Text Label 9450 2550 0    50   ~ 0
-SRAM_D3
-Text Label 9450 2650 0    50   ~ 0
-SRAM_D4
-Text Label 9450 2750 0    50   ~ 0
-SRAM_D5
-Text Label 9450 2850 0    50   ~ 0
-SRAM_D6
-Text Label 9450 2950 0    50   ~ 0
-SRAM_D7
-Text Label 9450 3050 0    50   ~ 0
-SRAM_D8
-Text Label 9450 3150 0    50   ~ 0
-SRAM_D9
-Text Label 9450 3250 0    50   ~ 0
-SRAM_D10
-Text Label 9450 3350 0    50   ~ 0
-SRAM_D11
-Text Label 9450 3450 0    50   ~ 0
-SRAM_D12
-Text Label 9450 3550 0    50   ~ 0
-SRAM_D13
-Text Label 9450 3650 0    50   ~ 0
-SRAM_D14
-Text Label 9450 3750 0    50   ~ 0
-SRAM_D15
 Text HLabel 7150 2050 0    50   Input ~ 0
 SRAM_A[0..19]
 Text HLabel 10150 2050 2    50   BiDi ~ 0
@@ -777,6 +745,38 @@ F 3 "" H 9800 5250 50  0001 C CNN
 	1    9800 5250
 	1    0    0    -1  
 $EndComp
+Text Label 9450 2250 0    50   ~ 0
+SRAM_D16
+Text Label 9450 2350 0    50   ~ 0
+SRAM_D17
+Text Label 9450 2450 0    50   ~ 0
+SRAM_D18
+Text Label 9450 2550 0    50   ~ 0
+SRAM_D19
+Text Label 9450 2650 0    50   ~ 0
+SRAM_D20
+Text Label 9450 2750 0    50   ~ 0
+SRAM_D21
+Text Label 9450 2850 0    50   ~ 0
+SRAM_D22
+Text Label 9450 2950 0    50   ~ 0
+SRAM_D23
+Text Label 9450 3050 0    50   ~ 0
+SRAM_D24
+Text Label 9450 3150 0    50   ~ 0
+SRAM_D25
+Text Label 9450 3250 0    50   ~ 0
+SRAM_D26
+Text Label 9450 3350 0    50   ~ 0
+SRAM_D27
+Text Label 9450 3450 0    50   ~ 0
+SRAM_D28
+Text Label 9450 3550 0    50   ~ 0
+SRAM_D29
+Text Label 9450 3650 0    50   ~ 0
+SRAM_D30
+Text Label 9450 3750 0    50   ~ 0
+SRAM_D31
 Wire Bus Line
 	5450 2050 5450 3650
 Wire Bus Line
