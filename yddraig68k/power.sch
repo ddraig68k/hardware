@@ -80,17 +80,6 @@ F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 6700 
 	0    1    1    0   
 $EndComp
 $Comp
-L Switch:SW_DPST SW201
-U 1 1 605A19F0
-P 4600 5400
-F 0 "SW201" H 4600 5725 50  0000 C CNN
-F 1 "SW_DPST" H 4600 5634 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 4600 5400 50  0001 C CNN
-F 3 "~" H 4600 5400 50  0001 C CNN
-	1    4600 5400
-	0    1    -1   0   
-$EndComp
-$Comp
 L Device:LED D208
 U 1 1 605A29BA
 P 7500 2100
@@ -104,12 +93,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J202
 U 1 1 605A428A
-P 4050 5350
-F 0 "J202" H 4130 5342 50  0000 L CNN
-F 1 "ExtPWR" H 4130 5251 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4050 5350 50  0001 C CNN
-F 3 "~" H 4050 5350 50  0001 C CNN
-	1    4050 5350
+P 4200 5350
+F 0 "J202" H 4280 5342 50  0000 L CNN
+F 1 "ExtPWR" H 4280 5251 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4200 5350 50  0001 C CNN
+F 3 "~" H 4200 5350 50  0001 C CNN
+	1    4200 5350
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -343,23 +332,15 @@ F 3 "~" H 5350 4750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4500 5750 4500 5600
-Wire Wire Line
 	4700 5600 4700 5750
 Connection ~ 4700 5750
-Wire Wire Line
-	4700 5750 4500 5750
 Wire Wire Line
 	5000 4600 5000 4750
 Wire Wire Line
 	5000 5050 4700 5050
 Wire Wire Line
-	4500 5050 4500 5200
-Wire Wire Line
 	4700 5200 4700 5050
 Connection ~ 4700 5050
-Wire Wire Line
-	4700 5050 4500 5050
 Wire Wire Line
 	5500 4750 5650 4750
 Wire Wire Line
@@ -1035,19 +1016,28 @@ $EndComp
 Wire Wire Line
 	4700 5750 5650 5750
 Wire Wire Line
-	4250 5350 4300 5350
+	4400 5350 4450 5350
 Wire Wire Line
-	4300 5350 4300 5050
+	4450 5350 4450 5050
 Wire Wire Line
-	4300 5050 4500 5050
-Connection ~ 4500 5050
-Connection ~ 4500 5750
+	4400 5450 4450 5450
 Wire Wire Line
-	4250 5450 4300 5450
-Wire Wire Line
-	4300 5450 4300 5750
-Wire Wire Line
-	4300 5750 4500 5750
+	4450 5450 4450 5750
 Wire Wire Line
 	9350 4850 9750 4850
+$Comp
+L Switch:SW_SPST SW201
+U 1 1 6125E45F
+P 4700 5400
+F 0 "SW201" V 4746 5312 50  0000 R CNN
+F 1 "SW_SPST" V 4655 5312 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 4700 5400 50  0001 C CNN
+F 3 "~" H 4700 5400 50  0001 C CNN
+	1    4700 5400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4450 5050 4700 5050
+Wire Wire Line
+	4450 5750 4700 5750
 $EndSCHEMATC

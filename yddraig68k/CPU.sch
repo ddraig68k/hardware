@@ -1144,19 +1144,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 5150 8500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Switch:SW_DPST SW?
-U 1 1 609F7730
-P 2700 9800
-AR Path="/6058AC66/609F7730" Ref="SW?"  Part="1" 
-AR Path="/606E9E62/609F7730" Ref="SW301"  Part="1" 
-F 0 "SW301" H 2700 10125 50  0000 C CNN
-F 1 "SW_DPST" H 2700 10034 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-10xx" H 2700 9800 50  0001 C CNN
-F 3 "~" H 2700 9800 50  0001 C CNN
-	1    2700 9800
-	0    1    -1   0   
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 609F7736
 P 2200 9750
@@ -1175,8 +1162,6 @@ Wire Wire Line
 	2800 10150 2600 10150
 Wire Wire Line
 	2800 9600 2800 9450
-Wire Wire Line
-	2800 9450 2600 9450
 $Comp
 L Device:R R306
 U 1 1 60A08D9F
@@ -1255,16 +1240,9 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS06" H 6050 8700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 10000 2600 10150
-Wire Wire Line
-	2600 9450 2600 9600
-Wire Wire Line
 	2400 9750 2450 9750
 Wire Wire Line
 	2450 9750 2450 9450
-Wire Wire Line
-	2450 9450 2600 9450
-Connection ~ 2600 9450
 Wire Wire Line
 	2400 9850 2450 9850
 Wire Wire Line
@@ -2196,6 +2174,19 @@ Wire Wire Line
 	1700 1550 1500 1550
 Wire Wire Line
 	1500 1700 2000 1700
+$Comp
+L Switch:SW_SPST SW?
+U 1 1 61295AFD
+P 2800 9800
+AR Path="/6058AC66/61295AFD" Ref="SW?"  Part="1" 
+AR Path="/606E9E62/61295AFD" Ref="SW301"  Part="1" 
+F 0 "SW301" V 2846 9712 50  0000 R CNN
+F 1 "SW_SPST" V 2755 9712 50  0000 R CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H4.3mm" H 2800 9800 50  0001 C CNN
+F 3 "~" H 2800 9800 50  0001 C CNN
+	1    2800 9800
+	0    -1   -1   0   
+$EndComp
 Wire Bus Line
 	3400 2000 3400 2250
 Wire Bus Line
@@ -2220,4 +2211,6 @@ Wire Bus Line
 	6350 4050 6350 5650
 Wire Bus Line
 	6350 1700 6350 3950
+Wire Wire Line
+	2450 9450 2800 9450
 $EndSCHEMATC
