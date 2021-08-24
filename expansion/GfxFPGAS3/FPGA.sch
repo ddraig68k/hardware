@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 5
+Sheet 5 5
 Title ""
 Date ""
 Rev ""
@@ -288,129 +288,63 @@ Wire Bus Line
 	9700 10550 9500 10550
 Wire Bus Line
 	9500 10650 9700 10650
-Text Label 5850 8550 0    50   ~ 0
+Text Label 2050 4650 2    50   ~ 0
 SRAM_A0
-Text Label 5850 8650 0    50   ~ 0
+Text Label 2050 4750 2    50   ~ 0
 SRAM_A1
-Text Label 5850 8750 0    50   ~ 0
+Text Label 2050 4850 2    50   ~ 0
 SRAM_A2
-Text Label 5850 8850 0    50   ~ 0
+Text Label 2050 4950 2    50   ~ 0
 SRAM_A3
-Text Label 5850 8950 0    50   ~ 0
+Text Label 2050 5050 2    50   ~ 0
 SRAM_A4
-Text Label 5850 9050 0    50   ~ 0
+Text Label 13350 3850 2    50   ~ 0
 SRAM_A5
-Text Label 5850 9150 0    50   ~ 0
+Text Label 13350 3750 2    50   ~ 0
 SRAM_A6
-Text Label 5850 9250 0    50   ~ 0
+Text Label 13350 3650 2    50   ~ 0
 SRAM_A7
-Text Label 5850 9350 0    50   ~ 0
+Text Label 13350 3550 2    50   ~ 0
 SRAM_A8
-Text Label 5850 9450 0    50   ~ 0
+Text Label 2050 2650 2    50   ~ 0
 SRAM_A9
-Text Label 5850 9550 0    50   ~ 0
+Text Label 2050 2550 2    50   ~ 0
 SRAM_A10
-Text Label 5850 9650 0    50   ~ 0
+Text Label 2050 2450 2    50   ~ 0
 SRAM_A11
-Text Label 5850 9750 0    50   ~ 0
+Text Label 2050 2350 2    50   ~ 0
 SRAM_A12
-Text Label 5850 9850 0    50   ~ 0
+Text Label 2050 2250 2    50   ~ 0
 SRAM_A13
-Text Label 5850 9950 0    50   ~ 0
+Text Label 2050 2150 2    50   ~ 0
 SRAM_A14
-Text Label 5850 10050 0    50   ~ 0
+Text Label 2050 3150 2    50   ~ 0
 SRAM_A15
-Text Label 5850 10150 0    50   ~ 0
+Text Label 2050 3250 2    50   ~ 0
 SRAM_A16
-Text Label 5850 10250 0    50   ~ 0
+Text Label 2050 3350 2    50   ~ 0
 SRAM_A17
-Text Label 5850 10350 0    50   ~ 0
+Text Label 2050 3450 2    50   ~ 0
 SRAM_A18
-Text Label 5850 10450 0    50   ~ 0
+Text Label 2050 3550 2    50   ~ 0
 SRAM_A19
-Text Label 6550 8550 0    50   ~ 0
-DRAM_D0
-Text Label 6550 8650 0    50   ~ 0
-DRAM_D1
-Text Label 6550 8750 0    50   ~ 0
-DRAM_D2
-Text Label 6550 8850 0    50   ~ 0
-DRAM_D3
-Text Label 6550 8950 0    50   ~ 0
-DRAM_D4
-Text Label 6550 9050 0    50   ~ 0
-DRAM_D5
-Text Label 6550 9150 0    50   ~ 0
-DRAM_D6
-Text Label 6550 9250 0    50   ~ 0
-DRAM_D7
-Text Label 6550 9350 0    50   ~ 0
-DRAM_D8
-Text Label 6550 9450 0    50   ~ 0
-DRAM_D9
-Text Label 6550 9550 0    50   ~ 0
-DRAM_D10
-Text Label 6550 9650 0    50   ~ 0
-DRAM_D11
-Text Label 6550 9750 0    50   ~ 0
-DRAM_D12
-Text Label 6550 9850 0    50   ~ 0
-DRAM_D13
-Text Label 6550 9950 0    50   ~ 0
-DRAM_D14
-Text Label 6550 10050 0    50   ~ 0
-DRAM_D15
-Text Label 7250 8550 0    50   ~ 0
-DRAM_D16
-Text Label 7250 8650 0    50   ~ 0
-DRAM_D17
-Text Label 7250 8750 0    50   ~ 0
-DRAM_D18
-Text Label 7250 8850 0    50   ~ 0
-DRAM_D19
-Text Label 7250 8950 0    50   ~ 0
-DRAM_D20
-Text Label 7250 9050 0    50   ~ 0
-DRAM_D21
-Text Label 7250 9150 0    50   ~ 0
-DRAM_D22
-Text Label 7250 9250 0    50   ~ 0
-DRAM_D23
-Text Label 7250 9350 0    50   ~ 0
-DRAM_D24
-Text Label 7250 9450 0    50   ~ 0
-DRAM_D25
-Text Label 7250 9550 0    50   ~ 0
-DRAM_D26
-Text Label 7250 9650 0    50   ~ 0
-DRAM_D27
-Text Label 7250 9750 0    50   ~ 0
-DRAM_D28
-Text Label 7250 9850 0    50   ~ 0
-DRAM_D29
-Text Label 7250 9950 0    50   ~ 0
-DRAM_D30
-Text Label 7250 10050 0    50   ~ 0
-DRAM_D31
-Text HLabel 8450 9400 0    50   Input ~ 0
-~SRAM_OE
-Text HLabel 8450 9500 0    50   Input ~ 0
+Text HLabel 1550 3650 0    50   Output ~ 0
 ~SRAM_WE
-Text HLabel 8450 9600 0    50   Input ~ 0
+Text HLabel 1550 4550 0    50   Output ~ 0
 ~SRAM_CS
-Text HLabel 8450 9700 0    50   Input ~ 0
+Text HLabel 12900 3950 0    50   Output ~ 0
 ~SRAM_UB0
-Text HLabel 8450 9800 0    50   Input ~ 0
+Text HLabel 12900 3450 0    50   Output ~ 0
 ~SRAM_UB1
-Text HLabel 8450 9900 0    50   Input ~ 0
+Text HLabel 12900 4050 0    50   Output ~ 0
 ~SRAM_LB0
-Text HLabel 8450 10000 0    50   Input ~ 0
+Text HLabel 12900 3350 0    50   Output ~ 0
 ~SRAM_LB1
-Text HLabel 11600 8150 0    50   Output ~ 0
+Text HLabel 9700 10100 2    50   Output ~ 0
 R[0..7]
-Text HLabel 11600 8250 0    50   Output ~ 0
+Text HLabel 9700 10200 2    50   Output ~ 0
 G[0..7]
-Text HLabel 11600 8350 0    50   Output ~ 0
+Text HLabel 9700 10300 2    50   Output ~ 0
 B[0..7]
 Text HLabel 8250 10500 2    50   Output ~ 0
 A[1..19]
@@ -440,75 +374,75 @@ Text HLabel 10250 8950 2    50   Input ~ 0
 ~DATACS
 Text HLabel 10250 8250 2    50   Input ~ 0
 HOST_CLK
-Text Label 5100 8850 2    50   ~ 0
+Text Label 9450 4150 2    50   ~ 0
 A1
-Text Label 5100 8950 2    50   ~ 0
+Text Label 9450 4050 2    50   ~ 0
 A2
-Text Label 5100 9050 2    50   ~ 0
+Text Label 9450 3950 2    50   ~ 0
 A3
-Text Label 5100 9150 2    50   ~ 0
+Text Label 9450 3850 2    50   ~ 0
 A4
-Text Label 5100 9250 2    50   ~ 0
+Text Label 9450 6250 2    50   ~ 0
 A5
-Text Label 5100 9350 2    50   ~ 0
+Text Label 9450 6150 2    50   ~ 0
 A6
-Text Label 5100 9450 2    50   ~ 0
+Text Label 9450 3750 2    50   ~ 0
 A7
-Text Label 5100 9550 2    50   ~ 0
+Text Label 9450 3650 2    50   ~ 0
 A8
-Text Label 5100 9650 2    50   ~ 0
+Text Label 9450 3550 2    50   ~ 0
 A9
-Text Label 5100 9750 2    50   ~ 0
+Text Label 9450 3450 2    50   ~ 0
 A10
-Text Label 5100 9850 2    50   ~ 0
+Text Label 9450 3350 2    50   ~ 0
 A11
-Text Label 5100 9950 2    50   ~ 0
+Text Label 9450 3250 2    50   ~ 0
 A12
-Text Label 5100 10050 2    50   ~ 0
+Text Label 9450 3150 2    50   ~ 0
 A13
-Text Label 5100 10150 2    50   ~ 0
+Text Label 9450 3050 2    50   ~ 0
 A14
-Text Label 5100 10250 2    50   ~ 0
+Text Label 9450 2950 2    50   ~ 0
 A15
-Text Label 5100 10350 2    50   ~ 0
+Text Label 9450 2850 2    50   ~ 0
 A16
-Text Label 5100 10450 2    50   ~ 0
+Text Label 9450 2750 2    50   ~ 0
 A17
-Text Label 5100 10550 2    50   ~ 0
+Text Label 9450 2650 2    50   ~ 0
 A18
-Text Label 5100 10650 2    50   ~ 0
+Text Label 9450 2550 2    50   ~ 0
 A19
-Text Label 5300 8850 2    50   ~ 0
+Text Label 5550 2450 2    50   ~ 0
 D0
-Text Label 5300 8950 2    50   ~ 0
+Text Label 5550 2350 2    50   ~ 0
 D1
-Text Label 5300 9050 2    50   ~ 0
+Text Label 5550 2250 2    50   ~ 0
 D2
-Text Label 5300 9150 2    50   ~ 0
+Text Label 5550 2150 2    50   ~ 0
 D3
-Text Label 5300 9250 2    50   ~ 0
+Text Label 9450 5350 2    50   ~ 0
 D4
-Text Label 5300 9350 2    50   ~ 0
+Text Label 9450 5250 2    50   ~ 0
 D5
-Text Label 5300 9450 2    50   ~ 0
+Text Label 9450 5150 2    50   ~ 0
 D6
-Text Label 5300 9550 2    50   ~ 0
+Text Label 9450 5050 2    50   ~ 0
 D7
-Text Label 5300 9650 2    50   ~ 0
+Text Label 9450 4950 2    50   ~ 0
 D8
-Text Label 5300 9750 2    50   ~ 0
+Text Label 9450 4850 2    50   ~ 0
 D9
-Text Label 5300 9850 2    50   ~ 0
+Text Label 9450 4750 2    50   ~ 0
 D10
-Text Label 5300 9950 2    50   ~ 0
+Text Label 9450 4650 2    50   ~ 0
 D11
-Text Label 5300 10050 2    50   ~ 0
+Text Label 9450 4550 2    50   ~ 0
 D12
-Text Label 5300 10150 2    50   ~ 0
+Text Label 9450 4450 2    50   ~ 0
 D13
-Text Label 5300 10250 2    50   ~ 0
+Text Label 9450 4350 2    50   ~ 0
 D14
-Text Label 5300 10350 2    50   ~ 0
+Text Label 9450 4250 2    50   ~ 0
 D15
 $Comp
 L Ddraig:W25Q64JVSSIM U302
@@ -625,13 +559,13 @@ Wire Wire Line
 	15000 9600 15250 9600
 Wire Wire Line
 	15000 9700 15250 9700
-Text HLabel 11350 8650 2    50   Output ~ 0
+Text HLabel 5350 2550 0    50   Output ~ 0
 HSYNC
-Text HLabel 11350 8750 2    50   Output ~ 0
+Text HLabel 5350 2650 0    50   Output ~ 0
 VSYNC
-Text HLabel 11350 8950 2    50   Output ~ 0
+Text HLabel 5350 3650 0    50   Output ~ 0
 ~BLANK
-Text HLabel 11350 8850 2    50   Output ~ 0
+Text HLabel 5350 2750 0    50   Output ~ 0
 PIXELCLOCK
 $Comp
 L Device:C C?
@@ -891,21 +825,21 @@ Text Label 5550 3850 2    50   ~ 0
 G6
 Text Label 5550 3750 2    50   ~ 0
 G7
-Text Label 5550 3650 2    50   ~ 0
-B0
 Text Label 5550 3550 2    50   ~ 0
-B1
+B0
 Text Label 5550 3450 2    50   ~ 0
-B2
+B1
 Text Label 5550 3350 2    50   ~ 0
-B3
+B2
 Text Label 5550 3250 2    50   ~ 0
-B4
+B3
 Text Label 5550 3150 2    50   ~ 0
-B5
+B4
 Text Label 5550 3050 2    50   ~ 0
-B6
+B5
 Text Label 5550 2950 2    50   ~ 0
+B6
+Text Label 5550 2850 2    50   ~ 0
 B7
 Text HLabel 11600 7900 0    50   Output ~ 0
 ~CPU_DTACK
@@ -930,6 +864,8 @@ Wire Wire Line
 Wire Wire Line
 	5850 4250 5550 4250
 Wire Wire Line
+	5550 2850 5850 2850
+Wire Wire Line
 	5550 2950 5850 2950
 Wire Wire Line
 	5550 3050 5850 3050
@@ -943,8 +879,6 @@ Wire Wire Line
 	5550 3450 5850 3450
 Wire Wire Line
 	5550 3550 5850 3550
-Wire Wire Line
-	5550 3650 5850 3650
 Wire Wire Line
 	5850 4550 5550 4550
 Wire Wire Line
@@ -1084,4 +1018,274 @@ Wire Wire Line
 Connection ~ 6550 950 
 Wire Wire Line
 	6550 950  6800 950 
+Text Label 13350 2150 2    50   ~ 0
+SRAM_D0
+Text Label 13350 2250 2    50   ~ 0
+SRAM_D1
+Text Label 13350 2350 2    50   ~ 0
+SRAM_D2
+Text Label 13350 2450 2    50   ~ 0
+SRAM_D3
+Text Label 13350 2550 2    50   ~ 0
+SRAM_D4
+Text Label 13350 2650 2    50   ~ 0
+SRAM_D5
+Text Label 13350 2750 2    50   ~ 0
+SRAM_D6
+Text Label 13350 2850 2    50   ~ 0
+SRAM_D7
+Text Label 13350 4850 2    50   ~ 0
+SRAM_D8
+Text Label 13350 4750 2    50   ~ 0
+SRAM_D9
+Text Label 13350 4650 2    50   ~ 0
+SRAM_D10
+Text Label 13350 4550 2    50   ~ 0
+SRAM_D11
+Text Label 13350 4450 2    50   ~ 0
+SRAM_D12
+Text Label 13350 4350 2    50   ~ 0
+SRAM_D13
+Text Label 13350 4250 2    50   ~ 0
+SRAM_D14
+Text Label 13350 4150 2    50   ~ 0
+SRAM_D15
+Text Label 2050 4450 2    50   ~ 0
+SRAM_D16
+Text Label 2050 4350 2    50   ~ 0
+SRAM_D17
+Text Label 2050 4250 2    50   ~ 0
+SRAM_D18
+Text Label 2050 4150 2    50   ~ 0
+SRAM_D19
+Text Label 2050 4050 2    50   ~ 0
+SRAM_D20
+Text Label 2050 3950 2    50   ~ 0
+SRAM_D21
+Text Label 2050 3850 2    50   ~ 0
+SRAM_D22
+Text Label 2050 3750 2    50   ~ 0
+SRAM_D23
+Text Label 2050 2750 2    50   ~ 0
+SRAM_D24
+Text Label 2050 2850 2    50   ~ 0
+SRAM_D25
+Text Label 2050 2950 2    50   ~ 0
+SRAM_D26
+Text Label 2050 3050 2    50   ~ 0
+SRAM_D27
+Text Label 13350 2950 2    50   ~ 0
+SRAM_D28
+Text Label 13350 3050 2    50   ~ 0
+SRAM_D29
+Text Label 13350 3150 2    50   ~ 0
+SRAM_D30
+Text Label 13350 3250 2    50   ~ 0
+SRAM_D31
+Wire Wire Line
+	2300 5050 2050 5050
+Wire Wire Line
+	2050 4950 2300 4950
+Wire Wire Line
+	2300 4850 2050 4850
+Wire Wire Line
+	2300 4750 2050 4750
+Wire Wire Line
+	2300 4650 2050 4650
+Wire Wire Line
+	2300 4250 2050 4250
+Wire Wire Line
+	2300 4350 2050 4350
+Wire Wire Line
+	2300 4450 2050 4450
+Wire Wire Line
+	2300 3850 2050 3850
+Wire Wire Line
+	2300 3950 2050 3950
+Wire Wire Line
+	2300 4050 2050 4050
+Wire Wire Line
+	2300 4150 2050 4150
+Wire Wire Line
+	2300 3250 2050 3250
+Wire Wire Line
+	2300 3350 2050 3350
+Wire Wire Line
+	2300 3450 2050 3450
+Wire Wire Line
+	2300 3550 2050 3550
+Wire Wire Line
+	13600 3450 12900 3450
+Wire Wire Line
+	12900 3350 13600 3350
+Wire Wire Line
+	2050 2250 2300 2250
+Wire Wire Line
+	2050 2350 2300 2350
+Wire Wire Line
+	2050 2450 2300 2450
+Wire Wire Line
+	2050 2650 2300 2650
+Wire Wire Line
+	2050 2750 2300 2750
+Wire Wire Line
+	2050 2850 2300 2850
+Wire Wire Line
+	2050 2950 2300 2950
+Wire Wire Line
+	2050 2550 2300 2550
+Wire Wire Line
+	2300 2150 2050 2150
+Wire Wire Line
+	13600 2150 13350 2150
+Wire Wire Line
+	13600 2250 13350 2250
+Wire Wire Line
+	13600 2350 13350 2350
+Wire Wire Line
+	13600 2450 13350 2450
+Wire Wire Line
+	13600 2550 13350 2550
+Wire Wire Line
+	13350 2650 13600 2650
+Wire Wire Line
+	13600 2750 13350 2750
+Wire Wire Line
+	13350 2850 13600 2850
+Wire Wire Line
+	13600 2950 13350 2950
+Wire Wire Line
+	13600 3050 13350 3050
+Wire Wire Line
+	13600 3150 13350 3150
+Wire Wire Line
+	13600 3250 13350 3250
+Wire Wire Line
+	5850 2750 5350 2750
+Wire Wire Line
+	5850 3650 5350 3650
+Wire Wire Line
+	9450 5250 9700 5250
+Wire Wire Line
+	9450 5350 9700 5350
+Wire Wire Line
+	5550 2150 5850 2150
+Wire Wire Line
+	5550 2250 5850 2250
+Wire Wire Line
+	5550 2350 5850 2350
+Wire Wire Line
+	5550 2450 5850 2450
+Wire Wire Line
+	9450 4250 9700 4250
+Wire Wire Line
+	9450 4350 9700 4350
+Wire Wire Line
+	9450 4450 9700 4450
+Wire Wire Line
+	9450 4550 9700 4550
+Wire Wire Line
+	9450 4650 9700 4650
+Wire Wire Line
+	9450 4750 9700 4750
+Wire Wire Line
+	9450 4850 9700 4850
+Wire Wire Line
+	9450 4950 9700 4950
+Wire Wire Line
+	9450 5050 9700 5050
+Wire Wire Line
+	9450 5150 9700 5150
+Wire Wire Line
+	9700 2550 9450 2550
+Wire Wire Line
+	9700 2650 9450 2650
+Wire Wire Line
+	9700 2750 9450 2750
+Wire Wire Line
+	9700 2850 9450 2850
+Wire Wire Line
+	9700 2950 9450 2950
+Wire Wire Line
+	9700 3050 9450 3050
+Wire Wire Line
+	9700 3150 9450 3150
+Wire Wire Line
+	9700 3250 9450 3250
+Wire Wire Line
+	9700 3350 9450 3350
+Wire Wire Line
+	9700 3450 9450 3450
+Wire Wire Line
+	9700 3550 9450 3550
+Wire Wire Line
+	9700 3650 9450 3650
+Wire Wire Line
+	9700 3750 9450 3750
+Wire Wire Line
+	9700 6150 9450 6150
+Wire Wire Line
+	9700 6250 9450 6250
+Wire Wire Line
+	9700 3850 9450 3850
+Wire Wire Line
+	9700 3950 9450 3950
+Wire Wire Line
+	9700 4050 9450 4050
+Wire Wire Line
+	9700 4150 9450 4150
+Wire Wire Line
+	2300 3050 2050 3050
+Wire Wire Line
+	2050 3150 2300 3150
+Wire Wire Line
+	13350 3550 13600 3550
+Wire Wire Line
+	13350 3650 13600 3650
+Wire Wire Line
+	13350 3750 13600 3750
+Wire Wire Line
+	13350 3850 13600 3850
+Wire Wire Line
+	13600 3950 12900 3950
+Wire Wire Line
+	12900 4050 13600 4050
+Wire Wire Line
+	2300 3750 2050 3750
+Wire Wire Line
+	1550 3650 2300 3650
+Wire Wire Line
+	1550 4550 2300 4550
+Wire Wire Line
+	13350 4150 13600 4150
+Wire Wire Line
+	13350 4250 13600 4250
+Wire Wire Line
+	13350 4350 13600 4350
+Wire Wire Line
+	13350 4450 13600 4450
+Wire Wire Line
+	13350 4550 13600 4550
+Wire Wire Line
+	13350 4650 13600 4650
+Wire Wire Line
+	13350 4750 13600 4750
+Wire Wire Line
+	13350 4850 13600 4850
+Text Label 9450 10100 2    50   ~ 0
+R[0..7]
+Text Label 9450 10200 2    50   ~ 0
+G[0..7]
+Text Label 9450 10300 2    50   ~ 0
+B[0..7]
+Wire Bus Line
+	9450 10100 9700 10100
+Wire Bus Line
+	9450 10200 9700 10200
+Wire Bus Line
+	9700 10300 9450 10300
+Wire Wire Line
+	5350 2650 5850 2650
+Wire Wire Line
+	5850 2550 5350 2550
 $EndSCHEMATC

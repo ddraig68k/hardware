@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 3 5
 Title ""
 Date ""
 Rev ""
@@ -300,8 +300,6 @@ Wire Wire Line
 	4050 5150 4100 5150
 Text HLabel 3100 4350 0    50   Input ~ 0
 ~SRAM_CS
-Text HLabel 3100 4450 0    50   Input ~ 0
-~SRAM_OE
 Text HLabel 3100 4550 0    50   Input ~ 0
 ~SRAM_WE
 Text HLabel 3100 4650 0    50   Input ~ 0
@@ -310,8 +308,6 @@ Text HLabel 3100 4750 0    50   Input ~ 0
 ~SRAM_LB0
 Wire Wire Line
 	3350 4350 3100 4350
-Wire Wire Line
-	3350 4450 3100 4450
 Wire Wire Line
 	3350 4550 3100 4550
 Wire Wire Line
@@ -573,8 +569,6 @@ Wire Wire Line
 	8650 5150 8700 5150
 Text HLabel 7700 4350 0    50   Input ~ 0
 ~SRAM_CS
-Text HLabel 7700 4450 0    50   Input ~ 0
-~SRAM_OE
 Text HLabel 7700 4550 0    50   Input ~ 0
 ~SRAM_WE
 Text HLabel 7700 4650 0    50   Input ~ 0
@@ -583,8 +577,6 @@ Text HLabel 7700 4750 0    50   Input ~ 0
 ~SRAM_LB1
 Wire Wire Line
 	7950 4350 7700 4350
-Wire Wire Line
-	7950 4450 7700 4450
 Wire Wire Line
 	7950 4550 7700 4550
 Wire Wire Line
@@ -777,6 +769,36 @@ Text Label 9450 3650 0    50   ~ 0
 SRAM_D30
 Text Label 9450 3750 0    50   ~ 0
 SRAM_D31
+$Comp
+L power:GND #PWR0119
+U 1 1 6136534C
+P 3250 4900
+F 0 "#PWR0119" H 3250 4650 50  0001 C CNN
+F 1 "GND" H 3255 4727 50  0000 C CNN
+F 2 "" H 3250 4900 50  0001 C CNN
+F 3 "" H 3250 4900 50  0001 C CNN
+	1    3250 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 4900 3250 4450
+Wire Wire Line
+	3250 4450 3350 4450
+$Comp
+L power:GND #PWR0120
+U 1 1 6136A605
+P 7850 4850
+F 0 "#PWR0120" H 7850 4600 50  0001 C CNN
+F 1 "GND" H 7855 4677 50  0000 C CNN
+F 2 "" H 7850 4850 50  0001 C CNN
+F 3 "" H 7850 4850 50  0001 C CNN
+	1    7850 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 4450 7850 4450
+Wire Wire Line
+	7850 4450 7850 4850
 Wire Bus Line
 	5450 2050 5450 3650
 Wire Bus Line
