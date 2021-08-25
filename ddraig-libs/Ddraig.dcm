@@ -40,6 +40,10 @@ $CMP D68K_96PIN_PCB
 D DIN41612 C 96 Pin Female header for motherboard
 $ENDCMP
 #
+$CMP ECS-3963
+D HCMOS Oscillator 3.3V Enable/Disable 4-SMD, No Lead
+$ENDCMP
+#
 $CMP IS61WV102416FBLL-10TLI
 D SRAM 16M (1Mx16) 10ns Async SRAM 3.3V
 F https://componentsearchengine.com//IS61WV102416FBLL-10TLI.pdf

@@ -276,18 +276,18 @@ Wire Wire Line
 Connection ~ 1900 7700
 Wire Wire Line
 	1900 7700 1900 7500
-Text HLabel 9700 10550 2    50   BiDi ~ 0
+Text HLabel 7050 10600 2    50   BiDi ~ 0
 SRAM_D[0..31]
-Text HLabel 9700 10650 2    50   Input ~ 0
+Text HLabel 7050 10700 2    50   Input ~ 0
 SRAM_A[0..19]
-Text Label 9500 10550 2    50   ~ 0
+Text Label 6850 10600 2    50   ~ 0
 SRAM_D[0..31]
-Text Label 9500 10650 2    50   ~ 0
+Text Label 6850 10700 2    50   ~ 0
 SRAM_A[0..19]
 Wire Bus Line
-	9700 10550 9500 10550
+	7050 10600 6850 10600
 Wire Bus Line
-	9500 10650 9700 10650
+	6850 10700 7050 10700
 Text Label 2050 4650 2    50   ~ 0
 SRAM_A0
 Text Label 2050 4750 2    50   ~ 0
@@ -340,39 +340,39 @@ Text HLabel 12900 4050 0    50   Output ~ 0
 ~SRAM_LB0
 Text HLabel 12900 3350 0    50   Output ~ 0
 ~SRAM_LB1
-Text HLabel 9700 10100 2    50   Output ~ 0
+Text HLabel 7050 10150 2    50   Output ~ 0
 R[0..7]
-Text HLabel 9700 10200 2    50   Output ~ 0
+Text HLabel 7050 10250 2    50   Output ~ 0
 G[0..7]
-Text HLabel 9700 10300 2    50   Output ~ 0
+Text HLabel 7050 10350 2    50   Output ~ 0
 B[0..7]
-Text HLabel 8250 10500 2    50   Output ~ 0
+Text HLabel 5600 10550 2    50   Output ~ 0
 A[1..19]
-Text HLabel 8250 10650 2    50   BiDi ~ 0
+Text HLabel 5600 10700 2    50   BiDi ~ 0
 D[0..15]
-Text Label 8100 10500 2    50   ~ 0
+Text Label 5450 10550 2    50   ~ 0
 A[1..19]
-Text Label 8100 10650 2    50   ~ 0
+Text Label 5450 10700 2    50   ~ 0
 D[0..15]
 Wire Bus Line
-	8250 10650 8100 10650
+	5600 10700 5450 10700
 Wire Bus Line
-	8100 10500 8250 10500
-Text HLabel 10250 8350 2    50   Input ~ 0
+	5450 10550 5600 10550
+Text HLabel 8150 7350 2    50   Input ~ 0
 ~LDS
-Text HLabel 10250 8450 2    50   Input ~ 0
+Text HLabel 8150 7450 2    50   Input ~ 0
 ~UDS
-Text HLabel 10250 8550 2    50   Input ~ 0
+Text HLabel 8150 7550 2    50   Input ~ 0
 R~W
-Text HLabel 10250 8650 2    50   Input ~ 0
+Text HLabel 8150 7650 2    50   Input ~ 0
 ~AS
-Text HLabel 10250 8750 2    50   Input ~ 0
+Text HLabel 8150 7750 2    50   Input ~ 0
 ~RESET
-Text HLabel 10250 8850 2    50   Input ~ 0
+Text HLabel 8150 7850 2    50   Input ~ 0
 ~REGCS
-Text HLabel 10250 8950 2    50   Input ~ 0
+Text HLabel 8150 7950 2    50   Input ~ 0
 ~DATACS
-Text HLabel 10250 8250 2    50   Input ~ 0
+Text HLabel 8150 7250 2    50   Input ~ 0
 HOST_CLK
 Text Label 9450 4050 2    50   ~ 0
 A1
@@ -841,11 +841,11 @@ Text Label 5550 2950 2    50   ~ 0
 B6
 Text Label 5550 2850 2    50   ~ 0
 B7
-Text HLabel 11600 7900 0    50   Output ~ 0
+Text HLabel 9500 6900 0    50   Output ~ 0
 ~CPU_DTACK
-Text HLabel 11600 7800 0    50   Output ~ 0
+Text HLabel 8850 6900 0    50   Output ~ 0
 ~CPU_IRQ
-Text HLabel 11600 7700 0    50   Output ~ 0
+Text HLabel 9500 6700 0    50   Output ~ 0
 ~CPU_BERR
 Wire Wire Line
 	5850 4450 5550 4450
@@ -1272,18 +1272,18 @@ Wire Wire Line
 	13350 4750 13600 4750
 Wire Wire Line
 	13350 4850 13600 4850
-Text Label 9450 10100 2    50   ~ 0
+Text Label 6800 10150 2    50   ~ 0
 R[0..7]
-Text Label 9450 10200 2    50   ~ 0
+Text Label 6800 10250 2    50   ~ 0
 G[0..7]
-Text Label 9450 10300 2    50   ~ 0
+Text Label 6800 10350 2    50   ~ 0
 B[0..7]
 Wire Bus Line
-	9450 10100 9700 10100
+	6800 10150 7050 10150
 Wire Bus Line
-	9450 10200 9700 10200
+	6800 10250 7050 10250
 Wire Bus Line
-	9700 10300 9450 10300
+	7050 10350 6800 10350
 Wire Wire Line
 	5350 2650 5850 2650
 Wire Wire Line
@@ -1292,6 +1292,424 @@ Text Label 9450 5350 2    50   ~ 0
 CLK_25MHZ
 Wire Wire Line
 	9450 5350 9700 5350
-Text HLabel 10200 8000 0    50   Output ~ 0
+Text HLabel 8100 7000 0    50   Output ~ 0
 ~BUSEN
+$Comp
+L power:GND #PWR?
+U 1 1 612A2F52
+P 13150 8100
+F 0 "#PWR?" H 13150 7850 50  0001 C CNN
+F 1 "GND" H 13155 7927 50  0000 C CNN
+F 2 "" H 13150 8100 50  0001 C CNN
+F 3 "" H 13150 8100 50  0001 C CNN
+	1    13150 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612A4400
+P 13550 7900
+F 0 "R?" H 13620 7946 50  0000 L CNN
+F 1 "10K" H 13620 7855 50  0000 L CNN
+F 2 "" V 13480 7900 50  0001 C CNN
+F 3 "~" H 13550 7900 50  0001 C CNN
+	1    13550 7900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 612A4E95
+P 13150 7900
+F 0 "R?" H 13220 7946 50  0000 L CNN
+F 1 "10K" H 13220 7855 50  0000 L CNN
+F 2 "" V 13080 7900 50  0001 C CNN
+F 3 "~" H 13150 7900 50  0001 C CNN
+	1    13150 7900
+	1    0    0    -1  
+$EndComp
+Text Label 12850 7200 2    50   ~ 0
+FPGA_M0
+Text Label 12850 7400 2    50   ~ 0
+FPGA_M1
+Wire Wire Line
+	12850 7400 13000 7400
+Wire Wire Line
+	12850 7300 13000 7300
+Wire Wire Line
+	13150 8050 13150 8100
+Text Label 12850 7500 2    50   ~ 0
+A1
+Wire Wire Line
+	12850 7500 13000 7500
+Wire Wire Line
+	13000 7500 13000 7400
+Text Label 12850 7300 2    50   ~ 0
+D15
+Wire Wire Line
+	12850 7200 13000 7200
+Wire Wire Line
+	13000 7200 13000 7300
+Text Label 9450 2250 2    50   ~ 0
+FPGA_INITB
+Wire Wire Line
+	9700 2250 9450 2250
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6144A2D4
+P 15150 7250
+F 0 "#PWR?" H 15150 7100 50  0001 C CNN
+F 1 "+3V3" H 15165 7423 50  0000 C CNN
+F 2 "" H 15150 7250 50  0001 C CNN
+F 3 "" H 15150 7250 50  0001 C CNN
+	1    15150 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6144A2DA
+P 15150 7450
+F 0 "R?" H 15220 7496 50  0000 L CNN
+F 1 "10K" H 15220 7405 50  0000 L CNN
+F 2 "" V 15080 7450 50  0001 C CNN
+F 3 "~" H 15150 7450 50  0001 C CNN
+	1    15150 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15150 7300 15150 7250
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61461CAF
+P 15500 7250
+F 0 "#PWR?" H 15500 7100 50  0001 C CNN
+F 1 "+3V3" H 15515 7423 50  0000 C CNN
+F 2 "" H 15500 7250 50  0001 C CNN
+F 3 "" H 15500 7250 50  0001 C CNN
+	1    15500 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61461CB5
+P 15500 7450
+F 0 "R?" H 15570 7496 50  0000 L CNN
+F 1 "10K" H 15570 7405 50  0000 L CNN
+F 2 "" V 15430 7450 50  0001 C CNN
+F 3 "~" H 15500 7450 50  0001 C CNN
+	1    15500 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15500 7300 15500 7250
+Text Label 14950 7750 2    50   ~ 0
+FPGA_INITB
+Text Label 14950 7850 2    50   ~ 0
+FPGA_PROGB
+Wire Wire Line
+	14950 7750 15150 7750
+Wire Wire Line
+	15150 7600 15150 7750
+Wire Wire Line
+	14950 7850 15500 7850
+Wire Wire Line
+	15500 7600 15500 7850
+$Comp
+L Ddraig:ECS-3963 Y?
+U 1 1 612894BC
+P 12300 9550
+F 0 "Y?" H 12450 9800 50  0000 L CNN
+F 1 "ECS-3963" H 12450 9300 50  0000 L CNN
+F 2 "Ddraig:OSC_ECS-3963" H 12500 9400 50  0001 L BNN
+F 3 "" H 12300 9550 50  0001 L BNN
+F 4 "Manufacturer Recommendations" H 12500 9350 50  0001 L BNN "STANDARD"
+F 5 "ECS Inc" H 12500 9300 50  0001 L BNN "MANUFACTURER"
+F 6 "N/A" H 12500 9250 50  0001 L BNN "PARTREV"
+	1    12300 9550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61289AD4
+P 12300 9050
+F 0 "#PWR?" H 12300 8900 50  0001 C CNN
+F 1 "+3V3" H 12315 9223 50  0000 C CNN
+F 2 "" H 12300 9050 50  0001 C CNN
+F 3 "" H 12300 9050 50  0001 C CNN
+	1    12300 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61289F12
+P 12300 9950
+F 0 "#PWR?" H 12300 9700 50  0001 C CNN
+F 1 "GND" H 12305 9777 50  0000 C CNN
+F 2 "" H 12300 9950 50  0001 C CNN
+F 3 "" H 12300 9950 50  0001 C CNN
+	1    12300 9950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 9900 12300 9950
+Wire Wire Line
+	12300 9050 12300 9100
+Wire Wire Line
+	11950 9550 11900 9550
+Wire Wire Line
+	11900 9550 11900 9100
+Wire Wire Line
+	11900 9100 12300 9100
+Connection ~ 12300 9100
+Wire Wire Line
+	12300 9100 12300 9200
+Text Label 12750 9550 0    50   ~ 0
+CLK_25MHZ
+Wire Wire Line
+	12750 9550 12650 9550
+Text Label 14450 8950 2    50   ~ 0
+FPGA_PROGB
+Wire Wire Line
+	14700 8950 14450 8950
+$Comp
+L Device:CP C?
+U 1 1 6133828E
+P 15500 8050
+F 0 "C?" H 15618 8096 50  0000 L CNN
+F 1 "0.1uF" H 15618 8005 50  0000 L CNN
+F 2 "" H 15538 7900 50  0001 C CNN
+F 3 "~" H 15500 8050 50  0001 C CNN
+	1    15500 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613387C3
+P 15500 8250
+F 0 "#PWR?" H 15500 8000 50  0001 C CNN
+F 1 "GND" H 15505 8077 50  0000 C CNN
+F 2 "" H 15500 8250 50  0001 C CNN
+F 3 "" H 15500 8250 50  0001 C CNN
+	1    15500 8250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15500 8250 15500 8200
+Wire Wire Line
+	15500 7900 15500 7850
+Connection ~ 15500 7850
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 6136DA30
+P 13750 9750
+F 0 "J?" H 13668 10167 50  0000 C CNN
+F 1 "JTAG" H 13668 10076 50  0000 C CNN
+F 2 "" H 13750 9750 50  0001 C CNN
+F 3 "~" H 13750 9750 50  0001 C CNN
+	1    13750 9750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6136E219
+P 14050 9450
+F 0 "#PWR?" H 14050 9300 50  0001 C CNN
+F 1 "+3V3" H 14065 9623 50  0000 C CNN
+F 2 "" H 14050 9450 50  0001 C CNN
+F 3 "" H 14050 9450 50  0001 C CNN
+	1    14050 9450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6136E882
+P 14050 10150
+F 0 "#PWR?" H 14050 9900 50  0001 C CNN
+F 1 "GND" H 14055 9977 50  0000 C CNN
+F 2 "" H 14050 10150 50  0001 C CNN
+F 3 "" H 14050 10150 50  0001 C CNN
+	1    14050 10150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14050 10150 14050 10050
+Wire Wire Line
+	14050 10050 13950 10050
+Wire Wire Line
+	13950 9550 14050 9550
+Wire Wire Line
+	14050 9550 14050 9450
+Wire Wire Line
+	13950 9650 14300 9650
+Wire Wire Line
+	14300 9650 14300 9300
+Wire Wire Line
+	14300 9300 14700 9300
+Wire Wire Line
+	13950 9750 14400 9750
+Wire Wire Line
+	14400 9750 14400 9400
+Wire Wire Line
+	14400 9400 14700 9400
+Wire Wire Line
+	13950 9850 14500 9850
+Wire Wire Line
+	14500 9850 14500 9500
+Wire Wire Line
+	14500 9500 14700 9500
+Wire Wire Line
+	14700 9600 14600 9600
+Wire Wire Line
+	14600 9600 14600 9950
+Wire Wire Line
+	14600 9950 13950 9950
+$Comp
+L Device:R R?
+U 1 1 61461694
+P 10000 9600
+F 0 "R?" V 9793 9600 50  0000 C CNN
+F 1 "1K" V 9884 9600 50  0000 C CNN
+F 2 "" V 9930 9600 50  0001 C CNN
+F 3 "~" H 10000 9600 50  0001 C CNN
+	1    10000 9600
+	0    1    1    0   
+$EndComp
+Text Label 14450 9050 2    50   ~ 0
+FPGA_DONE
+Wire Wire Line
+	14700 9050 14450 9050
+Text Label 9800 9600 2    50   ~ 0
+FPGA_DONE
+Wire Wire Line
+	9850 9600 9800 9600
+$Comp
+L Transistor_BJT:BC856 Q?
+U 1 1 6149ADCE
+P 10400 9600
+F 0 "Q?" H 10591 9554 50  0000 L CNN
+F 1 "BC856" H 10591 9645 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10600 9525 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 10400 9600 50  0001 L CNN
+	1    10400 9600
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 6149C363
+P 10500 9350
+F 0 "#PWR?" H 10500 9200 50  0001 C CNN
+F 1 "+3V3" H 10515 9523 50  0000 C CNN
+F 2 "" H 10500 9350 50  0001 C CNN
+F 3 "" H 10500 9350 50  0001 C CNN
+	1    10500 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 614B91DB
+P 10200 9950
+F 0 "D?" H 10193 10167 50  0000 C CNN
+F 1 "LED" H 10193 10076 50  0000 C CNN
+F 2 "" H 10200 9950 50  0001 C CNN
+F 3 "~" H 10200 9950 50  0001 C CNN
+	1    10200 9950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 614B99AD
+P 9800 9950
+F 0 "R?" V 9593 9950 50  0000 C CNN
+F 1 "220R" V 9684 9950 50  0000 C CNN
+F 2 "" V 9730 9950 50  0001 C CNN
+F 3 "~" H 9800 9950 50  0001 C CNN
+	1    9800 9950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 614B9E3A
+P 9600 10050
+F 0 "#PWR?" H 9600 9800 50  0001 C CNN
+F 1 "GND" H 9605 9877 50  0000 C CNN
+F 2 "" H 9600 10050 50  0001 C CNN
+F 3 "" H 9600 10050 50  0001 C CNN
+	1    9600 10050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 10050 9600 9950
+Wire Wire Line
+	9600 9950 9650 9950
+Wire Wire Line
+	9950 9950 10050 9950
+Wire Wire Line
+	10350 9950 10500 9950
+Wire Wire Line
+	10500 9950 10500 9800
+Wire Wire Line
+	10500 9400 10500 9350
+Wire Wire Line
+	10200 9600 10150 9600
+Text Label 12850 7700 2    50   ~ 0
+A4
+Text Label 12850 7600 2    50   ~ 0
+FPGA_M2
+Wire Wire Line
+	12850 7600 13000 7600
+Wire Wire Line
+	13000 7600 13000 7700
+Wire Wire Line
+	13000 7700 12850 7700
+$Comp
+L Device:R R?
+U 1 1 615DCDF8
+P 13900 7900
+F 0 "R?" H 13970 7946 50  0000 L CNN
+F 1 "10K" H 13970 7855 50  0000 L CNN
+F 2 "" V 13830 7900 50  0001 C CNN
+F 3 "~" H 13900 7900 50  0001 C CNN
+	1    13900 7900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13000 7700 13150 7700
+Wire Wire Line
+	13150 7700 13150 7750
+Connection ~ 13000 7700
+Wire Wire Line
+	13000 7500 13550 7500
+Wire Wire Line
+	13550 7500 13550 7750
+Connection ~ 13000 7500
+Wire Wire Line
+	13000 7300 13900 7300
+Wire Wire Line
+	13900 7300 13900 7750
+Connection ~ 13000 7300
+$Comp
+L power:GND #PWR?
+U 1 1 616DE921
+P 13550 8100
+F 0 "#PWR?" H 13550 7850 50  0001 C CNN
+F 1 "GND" H 13555 7927 50  0000 C CNN
+F 2 "" H 13550 8100 50  0001 C CNN
+F 3 "" H 13550 8100 50  0001 C CNN
+	1    13550 8100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616DEA9E
+P 13900 8100
+F 0 "#PWR?" H 13900 7850 50  0001 C CNN
+F 1 "GND" H 13905 7927 50  0000 C CNN
+F 2 "" H 13900 8100 50  0001 C CNN
+F 3 "" H 13900 8100 50  0001 C CNN
+	1    13900 8100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13550 8100 13550 8050
+Wire Wire Line
+	13900 8100 13900 8050
 $EndSCHEMATC

@@ -110,10 +110,6 @@ Wire Wire Line
 	9800 2000 9600 2000
 Wire Wire Line
 	9800 2100 9600 2100
-Wire Wire Line
-	8500 2400 8300 2400
-Wire Wire Line
-	8500 2300 8300 2300
 $Comp
 L power:+5V #PWR0226
 U 1 1 6121F607
@@ -986,7 +982,7 @@ F 3 "" H 8150 6150 50  0001 C CNN
 	1    8150 6150
 	1    0    0    -1  
 $EndComp
-Text Label 8300 2300 2    50   ~ 0
+Text Label 7550 2300 2    50   ~ 0
 ~CPU_DATAEN
 Text Label 8300 2400 2    50   ~ 0
 CPU_DATADIR
@@ -1262,4 +1258,37 @@ Text HLabel 5000 4900 0    50   Input ~ 0
 ~BUSEN
 Text HLabel 2050 4950 0    50   Input ~ 0
 ~BUSEN
+$Comp
+L Device:R R?
+U 1 1 6136707C
+P 7700 1100
+F 0 "R?" H 7770 1146 50  0000 L CNN
+F 1 "10K" H 7770 1055 50  0000 L CNN
+F 2 "" V 7630 1100 50  0001 C CNN
+F 3 "~" H 7700 1100 50  0001 C CNN
+	1    7700 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 900  7700 950 
+$Comp
+L power:+5V #PWR?
+U 1 1 61367083
+P 7700 900
+F 0 "#PWR?" H 7700 750 50  0001 C CNN
+F 1 "+5V" H 7715 1073 50  0000 C CNN
+F 2 "" H 7700 900 50  0001 C CNN
+F 3 "" H 7700 900 50  0001 C CNN
+	1    7700 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 2400 8500 2400
+Wire Wire Line
+	7550 2300 7700 2300
+Wire Wire Line
+	7700 1250 7700 2300
+Connection ~ 7700 2300
+Wire Wire Line
+	7700 2300 8500 2300
 $EndSCHEMATC
