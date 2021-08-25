@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 5
+Sheet 5 5
 Title ""
 Date ""
 Rev ""
@@ -307,25 +307,10 @@ F 3 "" H 2200 900 50  0001 C CNN
 	1    2200 900 
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0201
-U 1 1 6129FD3B
-P 2150 2500
-F 0 "#PWR0201" H 2150 2250 50  0001 C CNN
-F 1 "GND" H 2155 2327 50  0000 C CNN
-F 2 "" H 2150 2500 50  0001 C CNN
-F 3 "" H 2150 2500 50  0001 C CNN
-	1    2150 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2200 2400 2250 2400
 Wire Wire Line
 	2200 900  2200 2400
-Wire Wire Line
-	2250 2300 2150 2300
-Wire Wire Line
-	2150 2300 2150 2500
 $Comp
 L power:+5V #PWR0206
 U 1 1 612B64EE
@@ -426,25 +411,10 @@ F 3 "" H 2200 3550 50  0001 C CNN
 	1    2200 3550
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0202
-U 1 1 612B6533
-P 2150 5150
-F 0 "#PWR0202" H 2150 4900 50  0001 C CNN
-F 1 "GND" H 2155 4977 50  0000 C CNN
-F 2 "" H 2150 5150 50  0001 C CNN
-F 3 "" H 2150 5150 50  0001 C CNN
-	1    2150 5150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2200 5050 2250 5050
 Wire Wire Line
 	2200 3550 2200 5050
-Wire Wire Line
-	2250 4950 2150 4950
-Wire Wire Line
-	2150 4950 2150 5150
 $Comp
 L power:+5V #PWR0217
 U 1 1 612E17E7
@@ -517,25 +487,10 @@ F 3 "" H 5150 850 50  0001 C CNN
 	1    5150 850 
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0213
-U 1 1 612E183C
-P 5100 2450
-F 0 "#PWR0213" H 5100 2200 50  0001 C CNN
-F 1 "GND" H 5105 2277 50  0000 C CNN
-F 2 "" H 5100 2450 50  0001 C CNN
-F 3 "" H 5100 2450 50  0001 C CNN
-	1    5100 2450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5150 2350 5200 2350
 Wire Wire Line
 	5150 850  5150 2350
-Wire Wire Line
-	5200 2250 5100 2250
-Wire Wire Line
-	5100 2250 5100 2450
 $Comp
 L power:+5V #PWR0218
 U 1 1 612E184C
@@ -632,25 +587,10 @@ F 3 "" H 5150 3500 50  0001 C CNN
 	1    5150 3500
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0214
-U 1 1 612E1881
-P 5100 5100
-F 0 "#PWR0214" H 5100 4850 50  0001 C CNN
-F 1 "GND" H 5105 4927 50  0000 C CNN
-F 2 "" H 5100 5100 50  0001 C CNN
-F 3 "" H 5100 5100 50  0001 C CNN
-	1    5100 5100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5150 5000 5200 5000
 Wire Wire Line
 	5150 3500 5150 5000
-Wire Wire Line
-	5200 4900 5100 4900
-Wire Wire Line
-	5100 4900 5100 5100
 Text HLabel 5000 4400 0    50   Input ~ 0
 ~CPU_LDS
 Text HLabel 5000 4500 0    50   Input ~ 0
@@ -1277,4 +1217,49 @@ Text Label 2050 4450 2    50   ~ 0
 CPU_A12
 Text Label 2050 4550 2    50   ~ 0
 CPU_A11
+Wire Wire Line
+	2250 2300 1400 2300
+Wire Wire Line
+	2250 4950 2050 4950
+Wire Wire Line
+	5200 4900 5000 4900
+$Comp
+L Device:R R?
+U 1 1 61475664
+P 1400 1100
+F 0 "R?" H 1470 1146 50  0000 L CNN
+F 1 "10K" H 1470 1055 50  0000 L CNN
+F 2 "" V 1330 1100 50  0001 C CNN
+F 3 "~" H 1400 1100 50  0001 C CNN
+	1    1400 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 900  1400 950 
+$Comp
+L power:+5V #PWR?
+U 1 1 6147656E
+P 1400 900
+F 0 "#PWR?" H 1400 750 50  0001 C CNN
+F 1 "+5V" H 1415 1073 50  0000 C CNN
+F 2 "" H 1400 900 50  0001 C CNN
+F 3 "" H 1400 900 50  0001 C CNN
+	1    1400 900 
+	1    0    0    -1  
+$EndComp
+Text HLabel 5000 2250 0    50   Input ~ 0
+~BUSEN
+Wire Wire Line
+	1400 1250 1400 2300
+Text HLabel 1300 2300 0    50   Input ~ 0
+~BUSEN
+Connection ~ 1400 2300
+Wire Wire Line
+	1400 2300 1300 2300
+Wire Wire Line
+	5000 2250 5200 2250
+Text HLabel 5000 4900 0    50   Input ~ 0
+~BUSEN
+Text HLabel 2050 4950 0    50   Input ~ 0
+~BUSEN
 $EndSCHEMATC
