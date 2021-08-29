@@ -126,8 +126,8 @@ begin
 			when mem_rw4 =>								-- assert CAS
 				s_ras0_async	<= '0';
 				s_ras1_async	<= '0';
-				s_cas0_async	<= lds_i;
-				s_cas1_async	<= uds_i;
+				s_cas0_async	<= uds_i;
+				s_cas1_async	<= lds_i;
 				s_refack_async	<= '0';
 				s_dtack_async	<= '1';
 				s_mux_async		<= '1';
@@ -137,8 +137,8 @@ begin
 			when mem_rw5 =>								-- assert DTACK
 				s_ras0_async	<= '0';
 				s_ras1_async	<= '0';
-				s_cas0_async	<= lds_i;
-				s_cas1_async	<= uds_i;
+				s_cas0_async	<= uds_i;
+				s_cas1_async	<= lds_i;
 				s_refack_async	<= '0';
 				s_dtack_async	<= '0';
 				s_mux_async		<= '1';

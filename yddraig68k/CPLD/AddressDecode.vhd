@@ -64,7 +64,6 @@ architecture Behavioral of AddressDecode is
 	
 	signal s_ext_id   	: std_logic;
 
-	
 begin
 	process (clk_i, reset_i, as_i)
 	begin
