@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 4
+Sheet 4 15
 Title ""
 Date ""
 Rev ""
@@ -2465,4 +2465,10 @@ Wire Bus Line
 	4000 2400 4000 5500
 Wire Bus Line
 	1750 2300 1750 4700
+$Sheet
+S 7450 8900 1450 1150
+U 6134D545
+F0 "Bus Buffers" 50
+F1 "BusBuffer.sch" 50
+$EndSheet
 $EndSCHEMATC

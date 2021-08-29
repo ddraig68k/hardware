@@ -1,0 +1,321 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 13 15
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Ddraig:RTC-72421 U?
+U 1 1 6152EE0C
+P 7300 4350
+F 0 "U?" H 7500 4900 50  0000 C CNN
+F 1 "RTC-72421" H 7550 3700 50  0000 C CNN
+F 2 "Package_DIP:DIP-18_W7.62mm_Socket" H 7150 4400 50  0001 C CNN
+F 3 "" H 7150 4400 50  0001 C CNN
+	1    7300 4350
+	1    0    0    -1  
+$EndComp
+Text HLabel 6500 4800 0    50   Input ~ 0
+~CS_RTC
+Text HLabel 6500 4700 0    50   Input ~ 0
+RD~WR
+Text HLabel 6500 4600 0    50   Input ~ 0
+~RD~WR
+Text HLabel 8100 4800 2    50   Input ~ 0
+~RESET
+$Comp
+L Device:Q_NPN_EBC Q?
+U 1 1 6152EE16
+P 4150 3950
+F 0 "Q?" H 4341 3996 50  0000 L CNN
+F 1 "BC549B" H 4341 3905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 4350 4050 50  0001 C CNN
+F 3 "~" H 4150 3950 50  0001 C CNN
+	1    4150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_PNP_EBC Q?
+U 1 1 6152EE1C
+P 4250 3050
+F 0 "Q?" V 4578 3050 50  0000 C CNN
+F 1 "2N4403" V 4487 3050 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92" H 4450 3150 50  0001 C CNN
+F 3 "~" H 4250 3050 50  0001 C CNN
+	1    4250 3050
+	0    1    -1   0   
+$EndComp
+$Comp
+L Diode:1N4148 D?
+U 1 1 6152EE22
+P 4950 3250
+F 0 "D?" V 4904 3330 50  0000 L CNN
+F 1 "1N4148" V 4995 3330 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4950 3075 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 4950 3250 50  0001 C CNN
+	1    4950 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 6152EE28
+P 4950 3700
+F 0 "BT?" H 5068 3796 50  0000 L CNN
+F 1 "CR2032" H 5068 3705 50  0000 L CNN
+F 2 "Battery:BatteryHolder_Keystone_103_1x20mm" V 4950 3760 50  0001 C CNN
+F 3 "~" V 4950 3760 50  0001 C CNN
+	1    4950 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6152EE2E
+P 3700 4200
+F 0 "R?" H 3770 4246 50  0000 L CNN
+F 1 "4K7" H 3770 4155 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3630 4200 50  0001 C CNN
+F 3 "~" H 3700 4200 50  0001 C CNN
+	1    3700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C?
+U 1 1 6152EE34
+P 5600 3450
+F 0 "C?" H 5718 3496 50  0000 L CNN
+F 1 "10uF" H 5718 3405 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 5638 3300 50  0001 C CNN
+F 3 "~" H 5600 3450 50  0001 C CNN
+	1    5600 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4600 6500 4600
+Wire Wire Line
+	6500 4700 6800 4700
+Wire Wire Line
+	6800 4800 6500 4800
+Wire Wire Line
+	8100 4800 7800 4800
+$Comp
+L power:GND #PWR?
+U 1 1 6152EE3E
+P 4950 3900
+F 0 "#PWR?" H 4950 3650 50  0001 C CNN
+F 1 "GND" H 4955 3727 50  0000 C CNN
+F 2 "" H 4950 3900 50  0001 C CNN
+F 3 "" H 4950 3900 50  0001 C CNN
+	1    4950 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6152EE44
+P 3700 2750
+F 0 "#PWR?" H 3700 2600 50  0001 C CNN
+F 1 "+5V" H 3715 2923 50  0000 C CNN
+F 2 "" H 3700 2750 50  0001 C CNN
+F 3 "" H 3700 2750 50  0001 C CNN
+	1    3700 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6152EE4A
+P 5600 3900
+F 0 "#PWR?" H 5600 3650 50  0001 C CNN
+F 1 "GND" H 5605 3727 50  0000 C CNN
+F 2 "" H 5600 3900 50  0001 C CNN
+F 3 "" H 5600 3900 50  0001 C CNN
+	1    5600 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6152EE50
+P 4250 3500
+F 0 "R?" H 4320 3546 50  0000 L CNN
+F 1 "4K7" H 4320 3455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4180 3500 50  0001 C CNN
+F 3 "~" H 4250 3500 50  0001 C CNN
+	1    4250 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6152EE56
+P 3700 3500
+F 0 "R?" H 3770 3546 50  0000 L CNN
+F 1 "4K7" H 3770 3455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3630 3500 50  0001 C CNN
+F 3 "~" H 3700 3500 50  0001 C CNN
+	1    3700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6152EE5C
+P 4000 4500
+F 0 "#PWR?" H 4000 4250 50  0001 C CNN
+F 1 "GND" H 4005 4327 50  0000 C CNN
+F 2 "" H 4000 4500 50  0001 C CNN
+F 3 "" H 4000 4500 50  0001 C CNN
+	1    4000 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2750 3700 2950
+Wire Wire Line
+	3700 3650 3700 3950
+Wire Wire Line
+	3700 4350 3700 4450
+Wire Wire Line
+	3700 4450 4000 4450
+Wire Wire Line
+	4000 4450 4000 4500
+Wire Wire Line
+	4250 4150 4250 4450
+Wire Wire Line
+	4250 4450 4000 4450
+Connection ~ 4000 4450
+Wire Wire Line
+	3950 3950 3700 3950
+Connection ~ 3700 3950
+Wire Wire Line
+	3700 3950 3700 4050
+Wire Wire Line
+	4250 3750 4250 3650
+Wire Wire Line
+	4250 3250 4250 3350
+Wire Wire Line
+	4050 2950 3700 2950
+Connection ~ 3700 2950
+Wire Wire Line
+	3700 2950 3700 3350
+Wire Wire Line
+	4450 2950 4950 2950
+Wire Wire Line
+	4950 2950 4950 3100
+Wire Wire Line
+	4950 3400 4950 3500
+Wire Wire Line
+	4950 3800 4950 3900
+Wire Wire Line
+	5600 3900 5600 3600
+Wire Wire Line
+	5600 3300 5600 2950
+Wire Wire Line
+	5600 2950 4950 2950
+Connection ~ 4950 2950
+Wire Wire Line
+	5600 2950 7000 2950
+Wire Wire Line
+	7300 2950 7300 3500
+Connection ~ 5600 2950
+Entry Wire Line
+	6400 4000 6500 4100
+Entry Wire Line
+	6400 4100 6500 4200
+Entry Wire Line
+	6400 4200 6500 4300
+Entry Wire Line
+	6400 4300 6500 4400
+Entry Wire Line
+	8150 4000 8050 4100
+Entry Wire Line
+	8150 4100 8050 4200
+Entry Wire Line
+	8150 4200 8050 4300
+Entry Wire Line
+	8150 4300 8050 4400
+Wire Wire Line
+	6800 3950 6700 3950
+Wire Wire Line
+	6700 3950 6700 3500
+Wire Wire Line
+	6700 3500 7300 3500
+Connection ~ 7300 3500
+Wire Wire Line
+	7300 3500 7300 3700
+Wire Wire Line
+	6500 4100 6800 4100
+Wire Wire Line
+	6800 4200 6500 4200
+Wire Wire Line
+	6500 4300 6800 4300
+Wire Wire Line
+	6800 4400 6500 4400
+Wire Wire Line
+	7800 4400 8050 4400
+Wire Wire Line
+	8050 4300 7800 4300
+Wire Wire Line
+	7800 4200 8050 4200
+Wire Wire Line
+	8050 4100 7800 4100
+Wire Bus Line
+	6400 3900 6100 3900
+Wire Bus Line
+	8150 3900 8450 3900
+Text Label 7850 4100 0    50   ~ 0
+D8
+Text Label 7850 4200 0    50   ~ 0
+D9
+Text Label 7850 4300 0    50   ~ 0
+D10
+Text Label 7850 4400 0    50   ~ 0
+D11
+Text Label 6600 4100 0    50   ~ 0
+A1
+Text Label 6600 4200 0    50   ~ 0
+A2
+Text Label 6600 4300 0    50   ~ 0
+A3
+Text Label 6600 4400 0    50   ~ 0
+A4
+Text Label 6100 3900 0    50   ~ 0
+A[1..23]
+Text Label 8150 3900 0    50   ~ 0
+D[0..16]
+$Comp
+L power:GND #PWR?
+U 1 1 6152EE9E
+P 7300 5200
+F 0 "#PWR?" H 7300 4950 50  0001 C CNN
+F 1 "GND" H 7305 5027 50  0000 C CNN
+F 2 "" H 7300 5200 50  0001 C CNN
+F 3 "" H 7300 5200 50  0001 C CNN
+	1    7300 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 5200 7300 5100
+NoConn ~ 7800 4600
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 6152EEA6
+P 7000 2950
+F 0 "#FLG?" H 7000 3025 50  0001 C CNN
+F 1 "PWR_FLAG" H 7000 3123 50  0000 C CNN
+F 2 "" H 7000 2950 50  0001 C CNN
+F 3 "~" H 7000 2950 50  0001 C CNN
+	1    7000 2950
+	1    0    0    -1  
+$EndComp
+Connection ~ 7000 2950
+Wire Wire Line
+	7000 2950 7300 2950
+Wire Bus Line
+	6400 3900 6400 4300
+Wire Bus Line
+	8150 3900 8150 4300
+$EndSCHEMATC

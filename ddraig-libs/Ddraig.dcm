@@ -36,6 +36,10 @@ $CMP D68K_64PIN_PCB
 D DIN41612 C 64 Pin Female header for motherboard
 $ENDCMP
 #
+$CMP D68K_96PIN_BOARD
+D DIN41612 C 96 Pin Female header for motherboard
+$ENDCMP
+#
 $CMP D68K_96PIN_PCB
 D DIN41612 C 96 Pin Female header for motherboard
 $ENDCMP
@@ -51,6 +55,10 @@ $ENDCMP
 #
 $CMP LTC690x
 D LTC6903/LTC6904 1kHz to 68MHz Serial Programmable Oscillator
+$ENDCMP
+#
+$CMP MAX3420EECJ+
+D Usb Peripheral Controller w/Spi Interface
 $ENDCMP
 #
 $CMP MC68881FN
