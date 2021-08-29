@@ -2189,6 +2189,10 @@ F 3 "~" H 2800 9800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2450 9450 2800 9450
+Text Notes 12250 2750 0    150  ~ 0
+ODD
+Text Notes 12700 7450 0    150  ~ 0
+EVEN\n
 Wire Bus Line
 	3400 2000 3400 2250
 Wire Bus Line
@@ -2213,8 +2217,4 @@ Wire Bus Line
 	6350 4050 6350 5650
 Wire Bus Line
 	6350 1700 6350 3950
-Text Notes 12250 2750 0    150  ~ 0
-ODD
-Text Notes 12700 7450 0    150  ~ 0
-EVEN\n
 $EndSCHEMATC

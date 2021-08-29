@@ -820,7 +820,7 @@ F 1 "74HCT74" H 10750 6600 50  0000 C CNN
 F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 10550 6250 50  0001 C CNN
 F 3 "74xx/74hc_hct74.pdf" H 10550 6250 50  0001 C CNN
 	3    10550 6250
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0225
