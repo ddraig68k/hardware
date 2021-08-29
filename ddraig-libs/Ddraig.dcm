@@ -116,8 +116,16 @@ $CMP YM2151
 D Yamaha YM2151 OPM (FM Operator Type-M) Sound Generator
 $ENDCMP
 #
+$CMP YM2203
+D Yamaha YM2203  three-channel sound chip
+$ENDCMP
+#
 $CMP YM3012
 D Yamaha YM 3012 DAC
+$ENDCMP
+#
+$CMP YM3014B
+D Yamaha YM4014B Serial Input Floating D/A Converter
 $ENDCMP
 #
 #End Doc Library
