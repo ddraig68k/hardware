@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 15
+Sheet 7 14
 Title ""
 Date ""
 Rev ""
@@ -14,14 +14,110 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CPLD_Xilinx:XC95144XL-TQ144 U?
-U 1 1 6150F58C
-P 4400 4200
-F 0 "U?" H 3400 7600 50  0000 C CNN
-F 1 "XC95144XL-TQ144" H 5300 7550 50  0000 C CNN
-F 2 "Package_QFP:TQFP-144_20x20mm_P0.5mm" H 4400 4200 50  0001 C CNN
-F 3 "https://www.xilinx.com/support/documentation/data_sheets/ds056.pdf" H 4400 4200 50  0001 C CNN
-	1    4400 4200
+L CPLD_Xilinx:XC95108PQ100 U?
+U 1 1 617369BA
+P 4450 4000
+F 0 "U?" H 3750 6350 50  0000 C CNN
+F 1 "XC95108PQ100" H 5100 6350 50  0000 C CNN
+F 2 "" H 4450 4000 50  0001 C CNN
+F 3 "xilinx/xc95108.pdf" H 4450 4000 50  0001 C CNN
+	1    4450 4000
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61738A8A
+P 4450 1400
+F 0 "#PWR?" H 4450 1250 50  0001 C CNN
+F 1 "+5V" H 4465 1573 50  0000 C CNN
+F 2 "" H 4450 1400 50  0001 C CNN
+F 3 "" H 4450 1400 50  0001 C CNN
+	1    4450 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 1500 4150 1450
+Wire Wire Line
+	4150 1450 4250 1450
+Wire Wire Line
+	4750 1450 4750 1500
+Wire Wire Line
+	4650 1500 4650 1450
+Connection ~ 4650 1450
+Wire Wire Line
+	4650 1450 4750 1450
+Wire Wire Line
+	4250 1500 4250 1450
+Connection ~ 4250 1450
+Wire Wire Line
+	4250 1450 4350 1450
+Wire Wire Line
+	4350 1500 4350 1450
+Connection ~ 4350 1450
+Wire Wire Line
+	4350 1450 4450 1450
+Wire Wire Line
+	4550 1500 4550 1450
+Connection ~ 4550 1450
+Wire Wire Line
+	4550 1450 4650 1450
+Wire Wire Line
+	4450 1500 4450 1450
+Connection ~ 4450 1450
+Wire Wire Line
+	4450 1450 4550 1450
+Wire Wire Line
+	4450 1400 4450 1450
+Wire Wire Line
+	4150 6600 4150 6650
+Wire Wire Line
+	4150 6650 4250 6650
+Wire Wire Line
+	4850 6650 4850 6600
+Wire Wire Line
+	4750 6600 4750 6650
+Connection ~ 4750 6650
+Wire Wire Line
+	4750 6650 4850 6650
+Wire Wire Line
+	4250 6600 4250 6650
+Connection ~ 4250 6650
+Wire Wire Line
+	4250 6650 4350 6650
+Wire Wire Line
+	4350 6600 4350 6650
+Connection ~ 4350 6650
+Wire Wire Line
+	4350 6650 4450 6650
+Wire Wire Line
+	4650 6600 4650 6650
+Connection ~ 4650 6650
+Wire Wire Line
+	4650 6650 4750 6650
+Wire Wire Line
+	4450 6600 4450 6650
+Connection ~ 4450 6650
+Wire Wire Line
+	4450 6650 4500 6650
+Wire Wire Line
+	4550 6600 4550 6650
+Connection ~ 4550 6650
+Wire Wire Line
+	4550 6650 4650 6650
+$Comp
+L power:GND #PWR?
+U 1 1 6173BF38
+P 4500 6700
+F 0 "#PWR?" H 4500 6450 50  0001 C CNN
+F 1 "GND" H 4505 6527 50  0000 C CNN
+F 2 "" H 4500 6700 50  0001 C CNN
+F 3 "" H 4500 6700 50  0001 C CNN
+	1    4500 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 6700 4500 6650
+Connection ~ 4500 6650
+Wire Wire Line
+	4500 6650 4550 6650
 $EndSCHEMATC

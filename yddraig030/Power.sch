@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 15
+Sheet 6 14
 Title ""
 Date ""
 Rev ""
@@ -820,7 +820,7 @@ F 1 "74HCT74" H 10750 6200 50  0000 C CNN
 F 2 "Package_SO:SO-14_3.9x8.65mm_P1.27mm" H 10550 5850 50  0001 C CNN
 F 3 "74xx/74hc_hct74.pdf" H 10550 5850 50  0001 C CNN
 	3    10550 5850
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?

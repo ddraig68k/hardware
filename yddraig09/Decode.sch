@@ -453,6 +453,14 @@ Wire Wire Line
 	6450 2100 6450 1550
 Wire Wire Line
 	6450 1550 5950 1550
+Text HLabel 6650 5600 0    50   Output ~ 0
+~YM_CS
+Text HLabel 6650 5700 0    50   Output ~ 0
+~YM_WR
+Text HLabel 6650 5800 0    50   Output ~ 0
+~YM_RD
+Text HLabel 6650 5900 0    50   Input ~ 0
+~YM_IRQ
 Wire Bus Line
 	9200 2100 9200 2400
 Wire Bus Line

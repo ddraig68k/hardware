@@ -87,10 +87,6 @@ F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" V 10040 349
 	1    10050 3500
 	1    0    0    -1  
 $EndComp
-Text Label 10550 3600 0    50   ~ 0
-AUDIO_L
-Text Label 9550 3600 2    50   ~ 0
-AUDIO_R
 $Comp
 L power:+5V #PWR?
 U 1 1 619F81A3
@@ -120,8 +116,6 @@ Wire Wire Line
 	10150 3100 10050 3100
 Wire Wire Line
 	10050 3100 10050 3200
-Wire Wire Line
-	9750 3600 9550 3600
 Wire Wire Line
 	9750 3500 9650 3500
 Wire Wire Line
@@ -911,21 +905,6 @@ $EndComp
 Wire Wire Line
 	10050 1150 10050 1100
 $Comp
-L Ddraig:35RAPC2BHN2 J?
-U 1 1 619F8361
-P 10450 5050
-F 0 "J?" H 10172 5146 50  0000 R CNN
-F 1 "Audio Out" H 10172 5055 50  0000 R CNN
-F 2 "Ddraig:SWITCHCRAFT_35RAPC2BHN2" H 10450 5050 50  0001 L BNN
-F 3 "" H 10450 5050 50  0001 L BNN
-F 4 "Manufacturer Recommendations" H 10450 5050 50  0001 L BNN "STANDARD"
-F 5 "6.1214mm" H 10450 5050 50  0001 L BNN "MAXIMUM_PACKAGE_HIEGHT"
-F 6 "Switchcraft Inc." H 10450 5050 50  0001 L BNN "MANUFACTURER"
-F 7 "L" H 10450 5050 50  0001 L BNN "PARTREV"
-	1    10450 5050
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 619F8367
 P 10050 3900
@@ -936,25 +915,6 @@ F 3 "" H 10050 3900 50  0001 C CNN
 	1    10050 3900
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 619F836D
-P 10050 5250
-F 0 "#PWR?" H 10050 5000 50  0001 C CNN
-F 1 "GND" H 10055 5077 50  0000 C CNN
-F 2 "" H 10050 5250 50  0001 C CNN
-F 3 "" H 10050 5250 50  0001 C CNN
-	1    10050 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9800 4850 10150 4850
-Wire Wire Line
-	10150 4950 9800 4950
-Wire Wire Line
-	10150 5150 10050 5150
-Wire Wire Line
-	10050 5150 10050 5250
 NoConn ~ 5850 6350
 NoConn ~ 5850 6850
 NoConn ~ 4450 6850
@@ -1061,8 +1021,10 @@ Text Label 8500 4950 0    50   ~ 0
 SYNCOUT
 Wire Wire Line
 	8500 4950 8400 4950
-Text HLabel 9800 4850 0    50   Input ~ 0
-AUDIO_L
-Text HLabel 9800 4950 0    50   Input ~ 0
+Text HLabel 9550 3600 0    50   Input ~ 0
 AUDIO_R
+Text HLabel 10550 3600 2    50   Input ~ 0
+AUDIO_L
+Wire Wire Line
+	9750 3600 9550 3600
 $EndSCHEMATC
