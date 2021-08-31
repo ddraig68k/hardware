@@ -8,23 +8,23 @@ These files are untested. The design was initially created in [Proteus](https://
 
 ## Tested and working designs
 
-[Y Ddraig main pcb](/ddraig68k/hardware/tree/master/yddraig)
+[Y Ddraig main pcb](yddraig)
 
 ## Untested designs
 
-[YM2151 Audio card](/ddraig68k/hardware/tree/master/expansion/AudioYM2151)
+[YM2151 Audio card](expansion/AudioYM2151)
 
-[YM2612 Audio card](/ddraig68k/hardware/tree/master/expansion/AudioYM2612)
+[YM2612 Audio card](expansion/AudioYM2612)
 
-[RTL8019 Ethernet card](/ddraig68k/hardware/tree/master/expansion/Eth8019)
+[RTL8019 Ethernet card](expansion/Eth8019)
 
-[Floppy Disk controller card](/ddraig68k/hardware/tree/master/expansion/FloppyDiskController)
+[Floppy Disk controller card](expansion/FloppyDiskController)
 
-[TMS9918 Graphics card](/ddraig68k/hardware/tree/master/expansion/GfxTMS9918)
+[TMS9918 Graphics card](expansion/GfxTMS9918)
 
-[V9958 Graphics card](/ddraig68k/hardware/tree/master/expansion/GfxV9958)
+[V9958 Graphics card](expansion/GfxV9958)
 
-[V9990 Graphics card](/ddraig68k/hardware/tree/master/expansion/GfxV9990)
+[V9990 Graphics card](expansion/GfxV9990)
 
-[Sega Megadrive joypad card](/ddraig68k/hardware/tree/master/expansion/JoypadController)
+[Sega Megadrive joypad card](expansion/JoypadController)
 
