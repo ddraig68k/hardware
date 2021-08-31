@@ -158,10 +158,10 @@ Text HLabel 2550 3700 0    50   Input ~ 0
 ~UART_WR
 Text HLabel 2550 3600 0    50   Input ~ 0
 ~UART_CS
-Text HLabel 2550 3400 0    50   Output ~ 0
+Text HLabel 1450 3400 0    50   Output ~ 0
 ~UART_INT
 Wire Wire Line
-	2750 3400 2550 3400
+	2750 3400 1600 3400
 Wire Wire Line
 	2750 3600 2550 3600
 Wire Wire Line
@@ -601,9 +601,42 @@ Wire Wire Line
 Connection ~ 4400 5600
 Wire Wire Line
 	4900 5600 4900 5200
+Connection ~ 4900 5600
+$Comp
+L Device:R R?
+U 1 1 6138ADB2
+P 1300 3000
+F 0 "R?" H 1370 3046 50  0000 L CNN
+F 1 "10K" H 1370 2955 50  0000 L CNN
+F 2 "" V 1230 3000 50  0001 C CNN
+F 3 "~" H 1300 3000 50  0001 C CNN
+	1    1300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6138B0F8
+P 1300 2800
+F 0 "#PWR?" H 1300 2650 50  0001 C CNN
+F 1 "+5V" H 1315 2973 50  0000 C CNN
+F 2 "" H 1300 2800 50  0001 C CNN
+F 3 "" H 1300 2800 50  0001 C CNN
+	1    1300 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 2800 1300 2850
+Wire Wire Line
+	1300 3150 1300 3250
+Wire Wire Line
+	1300 3250 1600 3250
+Wire Wire Line
+	1600 3250 1600 3400
 Wire Bus Line
 	2200 2650 2200 3050
 Wire Bus Line
 	2000 3950 2000 4800
-Connection ~ 4900 5600
+Connection ~ 1600 3400
+Wire Wire Line
+	1600 3400 1450 3400
 $EndSCHEMATC
