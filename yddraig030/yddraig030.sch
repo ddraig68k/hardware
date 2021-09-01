@@ -3,11 +3,11 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 14
-Title ""
+Sheet 1 13
+Title "Y Ddraig Fawr"
 Date ""
 Rev ""
-Comp ""
+Comp "Stephen Moody"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -44,7 +44,7 @@ F0 "Decode and Logic" 50
 F1 "Decode.sch" 50
 $EndSheet
 $Sheet
-S 9750 6300 1000 650 
+S 8700 6300 1000 650 
 U 6139A713
 F0 "Ethernet" 50
 F1 "Ethernet.sch" 50
@@ -66,12 +66,6 @@ S 2700 6300 950  650
 U 6139AB8F
 F0 "IDE" 50
 F1 "IDE Interface.sch" 50
-$EndSheet
-$Sheet
-S 8700 6300 1000 650 
-U 6145CEA3
-F0 "Parallel Port" 50
-F1 "Parallel.sch" 50
 $EndSheet
 $Sheet
 S 3700 6300 950  650 

@@ -4,10 +4,10 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 7 9
-Title ""
+Title "Y Ddraig"
 Date ""
 Rev ""
-Comp ""
+Comp "Stephen Moody"
 Comment1 ""
 Comment2 ""
 Comment3 ""
