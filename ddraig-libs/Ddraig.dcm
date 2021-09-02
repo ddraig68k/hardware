@@ -18,6 +18,14 @@ $CMP ADV7123JSTZ240
 F http://www.analog.com/media/en/technical-documentation/data-sheets/ADV7123.pdf
 $ENDCMP
 #
+$CMP AT28C256B
+D EEPROM 256K 32K x 8 150 ns 4.5V-5.5V 
+$ENDCMP
+#
+$CMP AT28C64B
+D EEPROM 256K 8K x 8 150 ns 4.5V-5.5V 
+$ENDCMP
+#
 $CMP ATX-24
 D ATX Power supply 24pins
 K ATX PSU
