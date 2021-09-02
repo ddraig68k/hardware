@@ -3,11 +3,11 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 14
-Title ""
+Sheet 7 13
+Title "Y Ddraig Fawr"
 Date ""
 Rev ""
-Comp ""
+Comp "Stephen Moody"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -120,4 +120,76 @@ Wire Wire Line
 Connection ~ 4500 6650
 Wire Wire Line
 	4500 6650 4550 6650
+Text Label 3200 4700 2    50   ~ 0
+A0
+Text Label 3200 4600 2    50   ~ 0
+A1
+Text Label 3200 4500 2    50   ~ 0
+A2
+Text Label 3200 4400 2    50   ~ 0
+A3
+Text Label 3200 4300 2    50   ~ 0
+A8
+Text Label 3200 4200 2    50   ~ 0
+A9
+Text Label 3200 4000 2    50   ~ 0
+A10
+Text Label 3200 3900 2    50   ~ 0
+A11
+Text Label 3200 3800 2    50   ~ 0
+A12
+Text Label 3200 3700 2    50   ~ 0
+A13
+Text Label 3200 3600 2    50   ~ 0
+A14
+Text Label 3200 3500 2    50   ~ 0
+A15
+Text Label 3200 3400 2    50   ~ 0
+A16
+Text Label 3200 3300 2    50   ~ 0
+A17
+Text Label 3200 3200 2    50   ~ 0
+A18
+Text Label 3200 3100 2    50   ~ 0
+A19
+Text Label 3200 3000 2    50   ~ 0
+A20
+Text Label 3200 2800 2    50   ~ 0
+A21
+Text Label 3200 2700 2    50   ~ 0
+A22
+Text Label 3200 2600 2    50   ~ 0
+A23
+Text Label 3200 2500 2    50   ~ 0
+A24
+Text Label 3200 2400 2    50   ~ 0
+A25
+Text Label 3200 2300 2    50   ~ 0
+A26
+Text Label 3200 2200 2    50   ~ 0
+A27
+Text Label 3200 2100 2    50   ~ 0
+A28
+Text Label 3200 2000 2    50   ~ 0
+A29
+Text Label 3200 1900 2    50   ~ 0
+A30
+Text Label 3200 1800 2    50   ~ 0
+A31
+Text Label 3200 4800 2    50   ~ 0
+D24
+Text Label 3200 4900 2    50   ~ 0
+D25
+Text Label 3200 5000 2    50   ~ 0
+D26
+Text Label 3200 5100 2    50   ~ 0
+D27
+Text Label 3200 5200 2    50   ~ 0
+D28
+Text Label 3200 5300 2    50   ~ 0
+D29
+Text Label 3200 5400 2    50   ~ 0
+D30
+Text Label 3200 5500 2    50   ~ 0
+D31
 $EndSCHEMATC

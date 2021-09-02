@@ -95,6 +95,10 @@ D 2 Channel serial port
 K MPRO
 $ENDCMP
 #
+$CMP SL811HST-AXC
+D Embedded  USB  Host/Slave  Controller
+$ENDCMP
+#
 $CMP SN74LVC8T245PWR
 D 8-Bit Dual-Supply Bus Transceiver with Configurable Voltage-Level Shifting and Three-State Outputs
 $ENDCMP

@@ -3,11 +3,11 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 14
-Title ""
+Sheet 4 13
+Title "Y Ddraig Fawr"
 Date ""
 Rev ""
-Comp ""
+Comp "Stephen Moody"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -119,10 +119,6 @@ Wire Wire Line
 Wire Wire Line
 	13800 7400 13800 7500
 Wire Wire Line
-	13400 6800 13250 6800
-Wire Wire Line
-	13250 6900 13400 6900
-Wire Wire Line
 	14750 6500 14950 6500
 Wire Wire Line
 	14950 6400 14750 6400
@@ -135,17 +131,21 @@ Wire Wire Line
 Wire Wire Line
 	14750 5800 14950 5800
 Wire Wire Line
-	13250 6600 13400 6600
+	13250 6800 13400 6800
 Wire Wire Line
-	13400 6500 13250 6500
+	13400 6700 13250 6700
+Wire Wire Line
+	13250 6500 13400 6500
+Wire Wire Line
+	13400 6400 13250 6400
 Wire Wire Line
 	13250 6300 13400 6300
 Wire Wire Line
 	13400 6200 13250 6200
 Wire Wire Line
-	13250 6100 13400 6100
+	13250 6000 13400 6000
 Wire Wire Line
-	13400 6000 13250 6000
+	13400 5900 13250 5900
 Wire Wire Line
 	13250 5800 13400 5800
 Wire Wire Line
@@ -153,15 +153,11 @@ Wire Wire Line
 Wire Wire Line
 	13250 5600 13400 5600
 Wire Wire Line
-	13400 5500 13250 5500
+	13400 5400 13250 5400
 Wire Wire Line
-	13250 5400 13400 5400
+	13250 5300 13400 5300
 Wire Wire Line
 	13400 5200 13250 5200
-Wire Wire Line
-	13250 5100 13400 5100
-Wire Wire Line
-	13400 5000 13250 5000
 Entry Wire Line
 	15250 2400 15150 2500
 Entry Wire Line
@@ -358,27 +354,27 @@ Text Label 15450 2400 0    50   ~ 0
 BD[0..31]
 Wire Bus Line
 	15250 2400 15450 2400
-Text Label 13250 5200 2    50   ~ 0
+Text Label 13250 5400 2    50   ~ 0
 BE
-Text Label 13250 5100 2    50   ~ 0
+Text Label 13250 5300 2    50   ~ 0
 ~BVPA
-Text Label 13250 5000 2    50   ~ 0
+Text Label 13250 5200 2    50   ~ 0
 ~BVMA
 Text Label 14950 6200 0    50   ~ 0
 ~BRESET
-Text Label 13250 6100 2    50   ~ 0
+Text Label 13250 6300 2    50   ~ 0
 BSIZ1
-Text Label 13250 6000 2    50   ~ 0
+Text Label 13250 6200 2    50   ~ 0
 BSIZ0
-Text Label 13250 5800 2    50   ~ 0
+Text Label 13250 6000 2    50   ~ 0
 ~BDS
-Text Label 13250 5700 2    50   ~ 0
+Text Label 13250 5900 2    50   ~ 0
 ~BAS
-Text Label 13250 5600 2    50   ~ 0
+Text Label 13250 5800 2    50   ~ 0
 BRD~WR
-Text Label 13250 5500 2    50   ~ 0
+Text Label 13250 5700 2    50   ~ 0
 ~BUDS
-Text Label 13250 5400 2    50   ~ 0
+Text Label 13250 5600 2    50   ~ 0
 ~BLDS
 Wire Wire Line
 	14750 6850 14950 6850
@@ -688,10 +684,6 @@ Wire Wire Line
 Wire Wire Line
 	10050 7400 10050 7500
 Wire Wire Line
-	9650 6800 9500 6800
-Wire Wire Line
-	9500 6900 9650 6900
-Wire Wire Line
 	11000 6500 11200 6500
 Wire Wire Line
 	11200 6400 11000 6400
@@ -704,17 +696,21 @@ Wire Wire Line
 Wire Wire Line
 	11000 5800 11200 5800
 Wire Wire Line
-	9500 6600 9650 6600
+	9500 6800 9650 6800
 Wire Wire Line
-	9650 6500 9500 6500
+	9650 6700 9500 6700
+Wire Wire Line
+	9500 6500 9650 6500
+Wire Wire Line
+	9650 6400 9500 6400
 Wire Wire Line
 	9500 6300 9650 6300
 Wire Wire Line
 	9650 6200 9500 6200
 Wire Wire Line
-	9500 6100 9650 6100
+	9500 6000 9650 6000
 Wire Wire Line
-	9650 6000 9500 6000
+	9650 5900 9500 5900
 Wire Wire Line
 	9500 5800 9650 5800
 Wire Wire Line
@@ -722,15 +718,11 @@ Wire Wire Line
 Wire Wire Line
 	9500 5600 9650 5600
 Wire Wire Line
-	9650 5500 9500 5500
+	9650 5400 9500 5400
 Wire Wire Line
-	9500 5400 9650 5400
+	9500 5300 9650 5300
 Wire Wire Line
 	9650 5200 9500 5200
-Wire Wire Line
-	9500 5100 9650 5100
-Wire Wire Line
-	9650 5000 9500 5000
 Entry Wire Line
 	11500 2400 11400 2500
 Entry Wire Line
@@ -927,25 +919,25 @@ Text Label 11700 2400 0    50   ~ 0
 BD[0..31]
 Wire Bus Line
 	11500 2400 11700 2400
-Text Label 9500 5200 2    50   ~ 0
-BE
-Text Label 9500 5100 2    50   ~ 0
-~BVPA
-Text Label 9500 5000 2    50   ~ 0
-~BVMA
-Text Label 9500 6100 2    50   ~ 0
-BSIZ1
-Text Label 9500 6000 2    50   ~ 0
-BSIZ0
-Text Label 9500 5800 2    50   ~ 0
-~BDS
-Text Label 9500 5700 2    50   ~ 0
-~BAS
-Text Label 9500 5600 2    50   ~ 0
-BRD~WR
-Text Label 9500 5500 2    50   ~ 0
-~BUDS
 Text Label 9500 5400 2    50   ~ 0
+BE
+Text Label 9500 5300 2    50   ~ 0
+~BVPA
+Text Label 9500 5200 2    50   ~ 0
+~BVMA
+Text Label 9500 6300 2    50   ~ 0
+BSIZ1
+Text Label 9500 6200 2    50   ~ 0
+BSIZ0
+Text Label 9500 6000 2    50   ~ 0
+~BDS
+Text Label 9500 5900 2    50   ~ 0
+~BAS
+Text Label 9500 5800 2    50   ~ 0
+BRD~WR
+Text Label 9500 5700 2    50   ~ 0
+~BUDS
+Text Label 9500 5600 2    50   ~ 0
 ~BLDS
 Wire Wire Line
 	11000 6850 11200 6850
@@ -1255,10 +1247,6 @@ Wire Wire Line
 Wire Wire Line
 	6300 7400 6300 7500
 Wire Wire Line
-	5900 6800 5750 6800
-Wire Wire Line
-	5750 6900 5900 6900
-Wire Wire Line
 	7250 6500 7450 6500
 Wire Wire Line
 	7450 6400 7250 6400
@@ -1271,17 +1259,21 @@ Wire Wire Line
 Wire Wire Line
 	7250 5800 7450 5800
 Wire Wire Line
-	5750 6600 5900 6600
+	5750 6800 5900 6800
 Wire Wire Line
-	5900 6500 5750 6500
+	5900 6700 5750 6700
+Wire Wire Line
+	5750 6500 5900 6500
+Wire Wire Line
+	5900 6400 5750 6400
 Wire Wire Line
 	5750 6300 5900 6300
 Wire Wire Line
 	5900 6200 5750 6200
 Wire Wire Line
-	5750 6100 5900 6100
+	5750 6000 5900 6000
 Wire Wire Line
-	5900 6000 5750 6000
+	5900 5900 5750 5900
 Wire Wire Line
 	5750 5800 5900 5800
 Wire Wire Line
@@ -1289,15 +1281,11 @@ Wire Wire Line
 Wire Wire Line
 	5750 5600 5900 5600
 Wire Wire Line
-	5900 5500 5750 5500
+	5900 5400 5750 5400
 Wire Wire Line
-	5750 5400 5900 5400
+	5750 5300 5900 5300
 Wire Wire Line
 	5900 5200 5750 5200
-Wire Wire Line
-	5750 5100 5900 5100
-Wire Wire Line
-	5900 5000 5750 5000
 Entry Wire Line
 	7750 2400 7650 2500
 Entry Wire Line
@@ -1494,25 +1482,25 @@ Text Label 7950 2400 0    50   ~ 0
 BD[0..31]
 Wire Bus Line
 	7750 2400 7950 2400
-Text Label 5750 5200 2    50   ~ 0
-BE
-Text Label 5750 5100 2    50   ~ 0
-~BVPA
-Text Label 5750 5000 2    50   ~ 0
-~BVMA
-Text Label 5750 6100 2    50   ~ 0
-BSIZ1
-Text Label 5750 6000 2    50   ~ 0
-BSIZ0
-Text Label 5750 5800 2    50   ~ 0
-~BDS
-Text Label 5750 5700 2    50   ~ 0
-~BAS
-Text Label 5750 5600 2    50   ~ 0
-BRD~WR
-Text Label 5750 5500 2    50   ~ 0
-~BUDS
 Text Label 5750 5400 2    50   ~ 0
+BE
+Text Label 5750 5300 2    50   ~ 0
+~BVPA
+Text Label 5750 5200 2    50   ~ 0
+~BVMA
+Text Label 5750 6300 2    50   ~ 0
+BSIZ1
+Text Label 5750 6200 2    50   ~ 0
+BSIZ0
+Text Label 5750 6000 2    50   ~ 0
+~BDS
+Text Label 5750 5900 2    50   ~ 0
+~BAS
+Text Label 5750 5800 2    50   ~ 0
+BRD~WR
+Text Label 5750 5700 2    50   ~ 0
+~BUDS
+Text Label 5750 5600 2    50   ~ 0
 ~BLDS
 Wire Wire Line
 	7250 6850 7450 6850
@@ -1822,10 +1810,6 @@ Wire Wire Line
 Wire Wire Line
 	2550 7400 2550 7500
 Wire Wire Line
-	2150 6800 2000 6800
-Wire Wire Line
-	2000 6900 2150 6900
-Wire Wire Line
 	3500 6500 3700 6500
 Wire Wire Line
 	3700 6400 3500 6400
@@ -1838,17 +1822,21 @@ Wire Wire Line
 Wire Wire Line
 	3500 5800 3700 5800
 Wire Wire Line
-	2000 6600 2150 6600
+	2000 6800 2150 6800
 Wire Wire Line
-	2150 6500 2000 6500
+	2150 6700 2000 6700
+Wire Wire Line
+	2000 6500 2150 6500
+Wire Wire Line
+	2150 6400 2000 6400
 Wire Wire Line
 	2000 6300 2150 6300
 Wire Wire Line
 	2150 6200 2000 6200
 Wire Wire Line
-	2000 6100 2150 6100
+	2000 6000 2150 6000
 Wire Wire Line
-	2150 6000 2000 6000
+	2150 5900 2000 5900
 Wire Wire Line
 	2000 5800 2150 5800
 Wire Wire Line
@@ -1856,15 +1844,11 @@ Wire Wire Line
 Wire Wire Line
 	2000 5600 2150 5600
 Wire Wire Line
-	2150 5500 2000 5500
+	2150 5400 2000 5400
 Wire Wire Line
-	2000 5400 2150 5400
+	2000 5300 2150 5300
 Wire Wire Line
 	2150 5200 2000 5200
-Wire Wire Line
-	2000 5100 2150 5100
-Wire Wire Line
-	2150 5000 2000 5000
 Entry Wire Line
 	4000 2400 3900 2500
 Entry Wire Line
@@ -2061,29 +2045,29 @@ Text Label 4200 2400 0    50   ~ 0
 BD[0..31]
 Wire Bus Line
 	4000 2400 4200 2400
-Text Label 2000 5200 2    50   ~ 0
-BE
-Text Label 2000 5100 2    50   ~ 0
-~BVPA
-Text Label 2000 5000 2    50   ~ 0
-~BVMA
-Text Label 2000 6600 2    50   ~ 0
-BCPUCLK
-Text Label 2000 6500 2    50   ~ 0
-BCLK10
-Text Label 2000 6100 2    50   ~ 0
-BSIZ1
-Text Label 2000 6000 2    50   ~ 0
-BSIZ0
-Text Label 2000 5800 2    50   ~ 0
-~BDS
-Text Label 2000 5700 2    50   ~ 0
-~BAS
-Text Label 2000 5600 2    50   ~ 0
-BRD~WR
-Text Label 2000 5500 2    50   ~ 0
-~BUDS
 Text Label 2000 5400 2    50   ~ 0
+BE
+Text Label 2000 5300 2    50   ~ 0
+~BVPA
+Text Label 2000 5200 2    50   ~ 0
+~BVMA
+Text Label 2000 6800 2    50   ~ 0
+BCPUCLK
+Text Label 2000 6700 2    50   ~ 0
+BCLK10
+Text Label 2000 6300 2    50   ~ 0
+BSIZ1
+Text Label 2000 6200 2    50   ~ 0
+BSIZ0
+Text Label 2000 6000 2    50   ~ 0
+~BDS
+Text Label 2000 5900 2    50   ~ 0
+~BAS
+Text Label 2000 5800 2    50   ~ 0
+BRD~WR
+Text Label 2000 5700 2    50   ~ 0
+~BUDS
+Text Label 2000 5600 2    50   ~ 0
 ~BLDS
 Wire Wire Line
 	3500 6850 3700 6850
@@ -2405,70 +2389,102 @@ Text HLabel 3700 6500 2    50   Input ~ 0
 ~CS_DATA0
 Text HLabel 3700 5800 2    50   Output ~ 0
 ~EXTBERR
-Text HLabel 2000 6800 0    50   BiDi ~ 0
-SCL
-Text HLabel 2000 6900 0    50   BiDi ~ 0
-SDA
-Text HLabel 2000 6200 0    50   Output ~ 0
+Text HLabel 2000 6400 0    50   Output ~ 0
 ~DSACK1_EXT
-Text HLabel 2000 6300 0    50   Output ~ 0
+Text HLabel 2000 6500 0    50   Output ~ 0
 ~DSACK0_EXT
-Text Label 5750 6600 2    50   ~ 0
+Text Label 5750 6800 2    50   ~ 0
 BCPUCLK
-Text Label 5750 6500 2    50   ~ 0
+Text Label 5750 6700 2    50   ~ 0
 BCLK10
-Text HLabel 5750 6800 0    50   BiDi ~ 0
-SCL
-Text HLabel 5750 6900 0    50   BiDi ~ 0
-SDA
-Text HLabel 5750 6200 0    50   Output ~ 0
+Text HLabel 5750 6400 0    50   Output ~ 0
 ~DSACK1_EXT
-Text HLabel 5750 6300 0    50   Output ~ 0
+Text HLabel 5750 6500 0    50   Output ~ 0
 ~DSACK0_EXT
-Text Label 9500 6600 2    50   ~ 0
+Text Label 9500 6800 2    50   ~ 0
 BCPUCLK
-Text Label 9500 6500 2    50   ~ 0
+Text Label 9500 6700 2    50   ~ 0
 BCLK10
-Text HLabel 9500 6800 0    50   BiDi ~ 0
-SCL
-Text HLabel 9500 6900 0    50   BiDi ~ 0
-SDA
-Text HLabel 9500 6200 0    50   Output ~ 0
+Text HLabel 9500 6400 0    50   Output ~ 0
 ~DSACK1_EXT
-Text HLabel 9500 6300 0    50   Output ~ 0
+Text HLabel 9500 6500 0    50   Output ~ 0
 ~DSACK0_EXT
-Text Label 13250 6600 2    50   ~ 0
+Text Label 13250 6800 2    50   ~ 0
 BCPUCLK
-Text Label 13250 6500 2    50   ~ 0
+Text Label 13250 6700 2    50   ~ 0
 BCLK10
-Text HLabel 13250 6800 0    50   BiDi ~ 0
-SCL
-Text HLabel 13250 6900 0    50   BiDi ~ 0
-SDA
-Text HLabel 13250 6200 0    50   Output ~ 0
+Text HLabel 13250 6400 0    50   Output ~ 0
 ~DSACK1_EXT
-Text HLabel 13250 6300 0    50   Output ~ 0
+Text HLabel 13250 6500 0    50   Output ~ 0
 ~DSACK0_EXT
-Wire Bus Line
-	15250 2400 15250 5500
-Wire Bus Line
-	13000 2300 13000 4700
-Wire Bus Line
-	11500 2400 11500 5500
-Wire Bus Line
-	9250 2300 9250 4700
-Wire Bus Line
-	7750 2400 7750 5500
-Wire Bus Line
-	5500 2300 5500 4700
-Wire Bus Line
-	4000 2400 4000 5500
-Wire Bus Line
-	1750 2300 1750 4700
 $Sheet
 S 7450 8900 1450 1150
 U 6134D545
 F0 "Bus Buffers" 50
 F1 "BusBuffer.sch" 50
 $EndSheet
+Text Label 5650 5000 0    50   ~ 0
+BA26
+Text Label 5650 4900 0    50   ~ 0
+BA25
+Wire Wire Line
+	5600 5000 5900 5000
+Wire Wire Line
+	5600 4900 5900 4900
+Entry Wire Line
+	5500 4900 5600 5000
+Entry Wire Line
+	5500 4800 5600 4900
+Text Label 1900 5000 0    50   ~ 0
+BA26
+Text Label 1900 4900 0    50   ~ 0
+BA25
+Wire Wire Line
+	1850 5000 2150 5000
+Wire Wire Line
+	1850 4900 2150 4900
+Entry Wire Line
+	1750 4900 1850 5000
+Entry Wire Line
+	1750 4800 1850 4900
+Text Label 9400 5000 0    50   ~ 0
+BA26
+Text Label 9400 4900 0    50   ~ 0
+BA25
+Wire Wire Line
+	9350 5000 9650 5000
+Wire Wire Line
+	9350 4900 9650 4900
+Entry Wire Line
+	9250 4900 9350 5000
+Entry Wire Line
+	9250 4800 9350 4900
+Text Label 13150 5000 0    50   ~ 0
+BA26
+Text Label 13150 4900 0    50   ~ 0
+BA25
+Wire Wire Line
+	13100 5000 13400 5000
+Wire Wire Line
+	13100 4900 13400 4900
+Entry Wire Line
+	13000 4900 13100 5000
+Entry Wire Line
+	13000 4800 13100 4900
+Wire Bus Line
+	15250 2400 15250 5500
+Wire Bus Line
+	13000 2300 13000 4900
+Wire Bus Line
+	11500 2400 11500 5500
+Wire Bus Line
+	9250 2300 9250 4900
+Wire Bus Line
+	7750 2400 7750 5500
+Wire Bus Line
+	5500 2300 5500 4900
+Wire Bus Line
+	4000 2400 4000 5500
+Wire Bus Line
+	1750 2300 1750 4900
 $EndSCHEMATC
