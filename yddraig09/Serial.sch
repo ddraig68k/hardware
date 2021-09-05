@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 4 8
 Title "Y Ddraig Fechan"
 Date ""
 Rev ""
@@ -632,11 +632,11 @@ Wire Wire Line
 	1300 3250 1600 3250
 Wire Wire Line
 	1600 3250 1600 3400
+Connection ~ 1600 3400
+Wire Wire Line
+	1600 3400 1450 3400
 Wire Bus Line
 	2200 2650 2200 3050
 Wire Bus Line
 	2000 3950 2000 4800
-Connection ~ 1600 3400
-Wire Wire Line
-	1600 3400 1450 3400
 $EndSCHEMATC

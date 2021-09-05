@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title "Y Ddraig Fechan"
 Date ""
 Rev ""
@@ -272,4 +272,10 @@ Wire Wire Line
 	9800 5600 9800 4050
 Wire Wire Line
 	9800 4050 9950 4050
+$Sheet
+S 4850 4350 1150 1500
+U 61449201
+F0 "IO" 50
+F1 "IO.sch" 50
+$EndSheet
 $EndSCHEMATC
