@@ -19,11 +19,11 @@ F http://www.analog.com/media/en/technical-documentation/data-sheets/ADV7123.pdf
 $ENDCMP
 #
 $CMP AT28C256B
-D EEPROM 256K 32K x 8 150 ns 4.5V-5.5V 
+D EEPROM 256K 32K x 8 150 ns 4.5V-5.5V
 $ENDCMP
 #
 $CMP AT28C64B
-D EEPROM 256K 8K x 8 150 ns 4.5V-5.5V 
+D EEPROM 256K 8K x 8 150 ns 4.5V-5.5V
 $ENDCMP
 #
 $CMP ATX-24
@@ -88,6 +88,10 @@ $CMP RPack04_Alt
 D 4 resistor network, parallel topology
 K R network parallel topology isolated
 F ~
+$ENDCMP
+#
+$CMP RYC8220-2M
+D Power switch device
 $ENDCMP
 #
 $CMP SCC68681
