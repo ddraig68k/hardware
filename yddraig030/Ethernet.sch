@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 14
+Sheet 9 14
 Title "Y Ddraig Fawr"
 Date ""
 Rev ""
@@ -558,7 +558,7 @@ Wire Wire Line
 Wire Wire Line
 	4500 5000 4000 5000
 Text HLabel 4600 5000 2    50   Output ~ 0
-INT
+INT_ETH
 Wire Wire Line
 	4600 5000 4500 5000
 Connection ~ 4500 5000
@@ -626,14 +626,10 @@ Wire Wire Line
 Wire Wire Line
 	1900 5700 1900 5600
 Connection ~ 1900 5600
-Text HLabel 2600 6000 0    50   Input ~ 0
-~RD
-Text HLabel 2600 6100 0    50   Input ~ 0
-~WR
 Text HLabel 2600 6200 0    50   Input ~ 0
 RESET
 Text HLabel 2600 6400 0    50   Input ~ 0
-~CS
+~CS_ETH
 Wire Wire Line
 	2600 6400 2800 6400
 Wire Wire Line
@@ -981,6 +977,10 @@ Text Label 2450 2000 0    50   ~ 0
 A4
 Text Label 2450 2100 0    50   ~ 0
 A5
+Text HLabel 2600 6100 0    50   Input ~ 0
+RD~WR
+Text HLabel 2600 6000 0    50   Input ~ 0
+~RD~WR
 Wire Bus Line
 	2050 1500 2050 2000
 Wire Bus Line

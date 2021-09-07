@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 14
+Sheet 11 14
 Title "Y Ddraig Fawr"
 Date ""
 Rev ""
@@ -29,14 +29,14 @@ $EndComp
 $Comp
 L Oscillator:CXO_DIP8 X?
 U 1 1 6141E3A7
-P 3300 2350
+P 2950 2100
 AR Path="/6139AAF1/6141E3A7" Ref="X?"  Part="1" 
 AR Path="/6139AB5E/6141E3A7" Ref="X?"  Part="1" 
-F 0 "X?" H 3400 2700 50  0000 L CNN
-F 1 "CXO_DIP8" H 3400 2600 50  0000 L CNN
-F 2 "Oscillator:Oscillator_DIP-8" H 3750 2000 50  0001 C CNN
-F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 3200 2350 50  0001 C CNN
-	1    3300 2350
+F 0 "X?" H 3050 2450 50  0000 L CNN
+F 1 "CXO_DIP8" H 3050 2350 50  0000 L CNN
+F 2 "Oscillator:Oscillator_DIP-8" H 3400 1750 50  0001 C CNN
+F 3 "http://cdn-reichelt.de/documents/datenblatt/B400/OSZI.pdf" H 2850 2100 50  0001 C CNN
+	1    2950 2100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -396,8 +396,6 @@ Text HLabel 4100 4050 0    50   Input ~ 0
 Text Label 4100 3850 2    50   ~ 0
 A1
 Wire Wire Line
-	4400 3850 4100 3850
-Wire Wire Line
 	4400 4050 4100 4050
 Wire Wire Line
 	4100 4150 4400 4150
@@ -435,35 +433,19 @@ Wire Wire Line
 	4100 3600 4400 3600
 Wire Wire Line
 	4400 3700 4100 3700
-Text Label 4200 3000 0    50   ~ 0
-D8
-Text Label 4200 3100 0    50   ~ 0
-D9
-Text Label 4200 3200 0    50   ~ 0
-D10
-Text Label 4200 3300 0    50   ~ 0
-D11
-Text Label 4200 3400 0    50   ~ 0
-D12
-Text Label 4200 3500 0    50   ~ 0
-D13
-Text Label 4200 3600 0    50   ~ 0
-D14
-Text Label 4200 3700 0    50   ~ 0
-D15
 Wire Bus Line
 	4000 2850 3750 2850
 $Comp
 L power:GND #PWR?
 U 1 1 6141E481
-P 3300 2900
+P 2950 2650
 AR Path="/6139AAF1/6141E481" Ref="#PWR?"  Part="1" 
 AR Path="/6139AB5E/6141E481" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3300 2650 50  0001 C CNN
-F 1 "GND" H 3305 2727 50  0000 C CNN
-F 2 "" H 3300 2900 50  0001 C CNN
-F 3 "" H 3300 2900 50  0001 C CNN
-	1    3300 2900
+F 0 "#PWR?" H 2950 2400 50  0001 C CNN
+F 1 "GND" H 2955 2477 50  0000 C CNN
+F 2 "" H 2950 2650 50  0001 C CNN
+F 3 "" H 2950 2650 50  0001 C CNN
+	1    2950 2650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -503,43 +485,34 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR?
 U 1 1 6141E497
-P 3300 1950
+P 2950 1700
 AR Path="/6139AAF1/6141E497" Ref="#PWR?"  Part="1" 
 AR Path="/6139AB5E/6141E497" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3300 1800 50  0001 C CNN
-F 1 "+5V" H 3315 2123 50  0000 C CNN
-F 2 "" H 3300 1950 50  0001 C CNN
-F 3 "" H 3300 1950 50  0001 C CNN
-	1    3300 1950
+F 0 "#PWR?" H 2950 1550 50  0001 C CNN
+F 1 "+5V" H 2965 1873 50  0000 C CNN
+F 2 "" H 2950 1700 50  0001 C CNN
+F 3 "" H 2950 1700 50  0001 C CNN
+	1    2950 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 2800 3300 2900
+	2950 2550 2950 2650
 Wire Wire Line
-	3300 2800 3700 2800
+	2950 1800 2950 1750
 Wire Wire Line
-	3300 2050 3300 2000
+	2950 1750 2550 1750
 Wire Wire Line
-	3300 2000 2900 2000
+	2550 1750 2550 2100
 Wire Wire Line
-	2900 2000 2900 2350
+	2550 2100 2650 2100
+Connection ~ 2950 1750
 Wire Wire Line
-	2900 2350 3000 2350
-Connection ~ 3300 2000
+	2950 1750 2950 1700
 Wire Wire Line
-	3300 2000 3300 1950
+	2950 2400 2950 2550
+Connection ~ 2950 2550
 Wire Wire Line
-	3300 2650 3300 2800
-Connection ~ 3300 2800
-Wire Wire Line
-	3600 2350 4400 2350
-Wire Wire Line
-	4400 2250 3700 2250
-Wire Wire Line
-	3700 2250 3700 2800
-Connection ~ 3700 2800
-Wire Wire Line
-	3700 2800 4400 2800
+	4400 2250 4300 2250
 $Comp
 L Device:R R?
 U 1 1 6141E4AC
@@ -633,6 +606,51 @@ Wire Wire Line
 	3000 4500 3000 4550
 Wire Wire Line
 	3000 5550 3000 5600
+Text HLabel 3750 2850 0    50   BiDi ~ 0
+D[0..31]
+Text HLabel 3650 3600 0    50   Input ~ 0
+A[0..31]
+Entry Wire Line
+	3850 3750 3950 3850
+Wire Wire Line
+	3250 2100 4050 2100
+Wire Wire Line
+	4300 2800 4300 2250
+Wire Wire Line
+	4300 2800 4400 2800
+Connection ~ 4300 2250
+Wire Wire Line
+	2950 2550 3350 2550
+Wire Wire Line
+	3350 2250 3350 2550
+Wire Wire Line
+	3350 2250 4300 2250
+Wire Wire Line
+	4050 2350 4050 2100
+Wire Wire Line
+	4050 2350 4400 2350
+Wire Wire Line
+	3950 3850 4400 3850
+Wire Bus Line
+	3850 3750 3850 3600
+Wire Bus Line
+	3850 3600 3650 3600
+Text Label 4200 3000 0    50   ~ 0
+D24
+Text Label 4200 3100 0    50   ~ 0
+D25
+Text Label 4200 3200 0    50   ~ 0
+D26
+Text Label 4200 3300 0    50   ~ 0
+D27
+Text Label 4200 3400 0    50   ~ 0
+D28
+Text Label 4200 3500 0    50   ~ 0
+D29
+Text Label 4200 3600 0    50   ~ 0
+D30
+Text Label 4200 3700 0    50   ~ 0
+D31
 Wire Bus Line
 	4000 2850 4000 3600
 $EndSCHEMATC
