@@ -13,78 +13,62 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 2500 9200 0    50   ~ 0
-~PD0_0
-Text Label 2500 9300 0    50   ~ 0
-~PD0_1
-Text Label 2500 9500 0    50   ~ 0
-~PD1_1
-Text Label 2500 9600 0    50   ~ 0
-~PD2_0
-Text Label 2500 9700 0    50   ~ 0
-~PD2_1
-Text Label 2500 9800 0    50   ~ 0
-~PD3_0
-Text Label 2500 9900 0    50   ~ 0
-~PD3_1
 Wire Wire Line
-	2350 9200 2350 9100
+	2050 10050 2050 9850
 Wire Wire Line
-	2350 9200 2500 9200
+	2050 10050 2600 10050
 Wire Wire Line
-	2500 9300 2250 9300
+	2600 10150 1950 10150
 Wire Wire Line
-	2250 9300 2250 9100
+	1950 10150 1950 9850
 Wire Wire Line
-	2150 9100 2150 9400
+	1850 9850 1850 10250
 Wire Wire Line
-	2150 9400 2500 9400
+	1850 10250 2600 10250
 Wire Wire Line
-	2500 9500 2050 9500
+	2600 10350 1750 10350
 Wire Wire Line
-	2050 9500 2050 9100
+	1750 10350 1750 9850
 Wire Wire Line
-	1950 9100 1950 9600
+	1650 9850 1650 10450
 Wire Wire Line
-	1950 9600 2500 9600
+	1650 10450 2700 10450
 Wire Wire Line
-	2500 9700 1850 9700
+	2700 10550 1550 10550
 Wire Wire Line
-	1850 9700 1850 9100
+	1550 10550 1550 9850
 Wire Wire Line
-	1750 9100 1750 9800
+	1450 9850 1450 10650
 Wire Wire Line
-	1750 9800 2500 9800
+	1450 10650 2700 10650
 Wire Wire Line
-	2500 9900 1650 9900
+	2700 10750 1350 10750
 Wire Wire Line
-	1650 9900 1650 9100
+	1350 10750 1350 9850
 $Comp
 L Device:R_Network08 RN?
 U 1 1 60FBA84A
-P 2050 8900
-F 0 "RN?" H 2438 8946 50  0000 L CNN
-F 1 "10K" H 2438 8855 50  0000 L CNN
-F 2 "Resistor_THT:R_Array_SIP9" V 2525 8900 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2050 8900 50  0001 C CNN
-	1    2050 8900
+P 1750 9650
+F 0 "RN?" H 2138 9696 50  0000 L CNN
+F 1 "10K" H 2138 9605 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 2225 9650 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 1750 9650 50  0001 C CNN
+	1    1750 9650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 8600 1650 8700
+	1350 9400 1350 9450
 $Comp
 L power:+5V #PWR?
 U 1 1 60F97912
-P 1650 8600
-F 0 "#PWR?" H 1650 8450 50  0001 C CNN
-F 1 "+5V" H 1665 8773 50  0000 C CNN
-F 2 "" H 1650 8600 50  0001 C CNN
-F 3 "" H 1650 8600 50  0001 C CNN
-	1    1650 8600
+P 1350 9400
+F 0 "#PWR?" H 1350 9250 50  0001 C CNN
+F 1 "+5V" H 1365 9573 50  0000 C CNN
+F 2 "" H 1350 9400 50  0001 C CNN
+F 3 "" H 1350 9400 50  0001 C CNN
+	1    1350 9400
 	1    0    0    -1  
 $EndComp
-Text Label 2500 9400 0    50   ~ 0
-~PD1_0
 Wire Wire Line
 	13900 7500 14000 7500
 Connection ~ 13900 7500
@@ -128,8 +112,6 @@ Wire Wire Line
 	14750 6000 14950 6000
 Wire Wire Line
 	14950 5900 14750 5900
-Wire Wire Line
-	14750 5800 14950 5800
 Wire Wire Line
 	13250 6800 13400 6800
 Wire Wire Line
@@ -380,10 +362,6 @@ Wire Wire Line
 	14750 6850 14950 6850
 Wire Wire Line
 	14950 6750 14750 6750
-Text HLabel 14950 6850 2    50   Output ~ 0
-~PD3_1
-Text HLabel 14950 6750 2    50   Output ~ 0
-~PD3_0
 $Comp
 L power:GND #PWR?
 U 1 1 6134FF16
@@ -398,7 +376,7 @@ $EndComp
 Wire Bus Line
 	12800 2300 13000 2300
 Text Label 12800 2300 2    50   ~ 0
-BA[0..24]
+BA[0..26]
 Wire Wire Line
 	15100 2050 15100 2150
 Connection ~ 15100 2050
@@ -692,10 +670,6 @@ Wire Wire Line
 Wire Wire Line
 	11000 6000 11200 6000
 Wire Wire Line
-	11200 5900 11000 5900
-Wire Wire Line
-	11000 5800 11200 5800
-Wire Wire Line
 	9500 6800 9650 6800
 Wire Wire Line
 	9650 6700 9500 6700
@@ -943,10 +917,6 @@ Wire Wire Line
 	11000 6850 11200 6850
 Wire Wire Line
 	11200 6750 11000 6750
-Text HLabel 11200 6850 2    50   Output ~ 0
-~PD2_1
-Text HLabel 11200 6750 2    50   Output ~ 0
-~PD2_0
 $Comp
 L power:GND #PWR?
 U 1 1 6134FDE7
@@ -961,7 +931,7 @@ $EndComp
 Wire Bus Line
 	9050 2300 9250 2300
 Text Label 9050 2300 2    50   ~ 0
-BA[0..24]
+BA[0..26]
 Wire Wire Line
 	11350 2050 11350 2150
 Connection ~ 11350 2050
@@ -1257,8 +1227,6 @@ Wire Wire Line
 Wire Wire Line
 	7450 5900 7250 5900
 Wire Wire Line
-	7250 5800 7450 5800
-Wire Wire Line
 	5750 6800 5900 6800
 Wire Wire Line
 	5900 6700 5750 6700
@@ -1506,10 +1474,8 @@ Wire Wire Line
 	7250 6850 7450 6850
 Wire Wire Line
 	7450 6750 7250 6750
-Text HLabel 7450 6850 2    50   Output ~ 0
-~PD1_1
-Text HLabel 7450 6750 2    50   Output ~ 0
-~PD1_0
+Text HLabel 2700 9950 2    50   Output ~ 0
+~EXT_PRD0[1..4]
 $Comp
 L power:GND #PWR?
 U 1 1 61298191
@@ -1524,7 +1490,7 @@ $EndComp
 Wire Bus Line
 	5300 2300 5500 2300
 Text Label 5300 2300 2    50   ~ 0
-BA[0..24]
+BA[0..26]
 Wire Wire Line
 	7600 2050 7600 2150
 Connection ~ 7600 2050
@@ -1820,8 +1786,6 @@ Wire Wire Line
 Wire Wire Line
 	3700 5900 3500 5900
 Wire Wire Line
-	3500 5800 3700 5800
-Wire Wire Line
 	2000 6800 2150 6800
 Wire Wire Line
 	2150 6700 2000 6700
@@ -2073,10 +2037,6 @@ Wire Wire Line
 	3500 6850 3700 6850
 Wire Wire Line
 	3700 6750 3500 6750
-Text HLabel 3700 6850 2    50   Output ~ 0
-~PD0_1
-Text HLabel 3700 6750 2    50   Output ~ 0
-~PD0_0
 $Comp
 L power:GND #PWR?
 U 1 1 60F79ABA
@@ -2091,7 +2051,7 @@ $EndComp
 Wire Bus Line
 	1550 2300 1750 2300
 Text Label 1550 2300 2    50   ~ 0
-BA[0..24]
+BA[0..26]
 Wire Wire Line
 	3850 2050 3850 2150
 Connection ~ 3850 2050
@@ -2343,85 +2303,73 @@ F 3 "" H 5650 2500 50  0001 C CNN
 	1    2850 4200
 	1    0    0    -1  
 $EndComp
-Text HLabel 14950 5900 2    50   Output ~ 0
-~EXTIRQ3
-Text HLabel 14950 6000 2    50   Output ~ 0
-~EXTACK3
-Text HLabel 14950 6400 2    50   Input ~ 0
-~CS_REG3
-Text HLabel 14950 6500 2    50   Input ~ 0
-~CS_DATA3
-Text HLabel 14950 5800 2    50   Output ~ 0
-~EXTBERR
+Text HLabel 13700 9750 2    50   Output ~ 0
+~EXT_DTACK
+Text HLabel 13700 9100 2    50   Output ~ 0
+~EXT_BERR
 Text Label 11200 6200 0    50   ~ 0
 ~BRESET
-Text HLabel 11200 5900 2    50   Output ~ 0
-~EXTIRQ2
-Text HLabel 11200 6000 2    50   Output ~ 0
-~EXTACK2
-Text HLabel 11200 6400 2    50   Input ~ 0
-~CS_REG2
-Text HLabel 11200 6500 2    50   Input ~ 0
-~CS_DATA2
-Text HLabel 11200 5800 2    50   Output ~ 0
-~EXTBERR
 Text Label 7450 6200 0    50   ~ 0
 ~BRESET
-Text HLabel 7450 5900 2    50   Output ~ 0
-~EXTIRQ1
-Text HLabel 7450 6000 2    50   Output ~ 0
-~EXTACK1
-Text HLabel 7450 6400 2    50   Input ~ 0
-~CS_REG1
-Text HLabel 7450 6500 2    50   Input ~ 0
-~CS_DATA1
-Text HLabel 7450 5800 2    50   Output ~ 0
-~EXTBERR
+Text HLabel 5100 9800 2    50   Output ~ 0
+~EXT_IRQ[1..4]
 Text Label 3700 6200 0    50   ~ 0
 ~BRESET
-Text HLabel 3700 5900 2    50   Output ~ 0
-~EXTIRQ0
-Text HLabel 3700 6000 2    50   Output ~ 0
-~EXTACK0
-Text HLabel 3700 6400 2    50   Input ~ 0
-~CS_REG0
-Text HLabel 3700 6500 2    50   Input ~ 0
-~CS_DATA0
-Text HLabel 3700 5800 2    50   Output ~ 0
-~EXTBERR
-Text HLabel 2000 6400 0    50   Output ~ 0
-~DSACK1_EXT
-Text HLabel 2000 6500 0    50   Output ~ 0
-~DSACK0_EXT
 Text Label 5750 6800 2    50   ~ 0
 BCPUCLK
 Text Label 5750 6700 2    50   ~ 0
 BCLK10
-Text HLabel 5750 6400 0    50   Output ~ 0
-~DSACK1_EXT
-Text HLabel 5750 6500 0    50   Output ~ 0
-~DSACK0_EXT
 Text Label 9500 6800 2    50   ~ 0
 BCPUCLK
 Text Label 9500 6700 2    50   ~ 0
 BCLK10
-Text HLabel 9500 6400 0    50   Output ~ 0
-~DSACK1_EXT
-Text HLabel 9500 6500 0    50   Output ~ 0
-~DSACK0_EXT
 Text Label 13250 6800 2    50   ~ 0
 BCPUCLK
 Text Label 13250 6700 2    50   ~ 0
 BCLK10
-Text HLabel 13250 6400 0    50   Output ~ 0
+Text HLabel 4500 10500 2    50   Output ~ 0
 ~DSACK1_EXT
-Text HLabel 13250 6500 0    50   Output ~ 0
+Text HLabel 4500 10600 2    50   Output ~ 0
 ~DSACK0_EXT
 $Sheet
-S 7450 8900 1450 1150
+S 7750 8400 1600 2200
 U 6134D545
 F0 "Bus Buffers" 50
 F1 "BusBuffer.sch" 50
+F2 "A[0..31]" I L 7750 8500 50 
+F3 "~AS" I L 7750 8950 50 
+F4 "~EXT_DBEN" I L 7750 10400 50 
+F5 "~RD~WR" I L 7750 10500 50 
+F6 "BA[0..26]" O R 9350 8500 50 
+F7 "BD[0..31]" B R 9350 8600 50 
+F8 "D[0..31]" B L 7750 8600 50 
+F9 "~RESET" I L 7750 9200 50 
+F10 "~LDS" I L 7750 9450 50 
+F11 "~UDS" I L 7750 9550 50 
+F12 "RD~WR" I L 7750 9350 50 
+F13 "CLK10" I L 7750 9900 50 
+F14 "~BRESET" O R 9350 9200 50 
+F15 "~BLDS" O R 9350 9450 50 
+F16 "~BUDS" O R 9350 9550 50 
+F17 "BRD~WR" O R 9350 9350 50 
+F18 "~BAS" O R 9350 8950 50 
+F19 "~BVMA" O R 9350 9650 50 
+F20 "BCLK10" O R 9350 9900 50 
+F21 "CS_EXTREG[1..4]" I L 7750 10150 50 
+F22 "CS_EXTDATA[1..4]" I L 7750 10250 50 
+F23 "~BCS_EXTREG[1..4]" O R 9350 10150 50 
+F24 "~BCS_EXTDATA[1..4]" O R 9350 10250 50 
+F25 "BE" O R 9350 10000 50 
+F26 "~VMA" I L 7750 9650 50 
+F27 "~E" I L 7750 10000 50 
+F28 "~BDS" O R 9350 9050 50 
+F29 "BSIZ0" O R 9350 8750 50 
+F30 "BSIZ1" O R 9350 8850 50 
+F31 "BCPUCLK" O R 9350 9800 50 
+F32 "~DS" I L 7750 9050 50 
+F33 "SIZ0" I L 7750 8750 50 
+F34 "SIZ1" I L 7750 8850 50 
+F35 "CPUCLK" B L 7750 9800 50 
 $EndSheet
 Text Label 5650 5000 0    50   ~ 0
 BA26
@@ -2471,6 +2419,460 @@ Entry Wire Line
 	13000 4900 13100 5000
 Entry Wire Line
 	13000 4800 13100 4900
+Text Label 9600 8500 0    50   ~ 0
+BA[0..26]
+Text Label 9600 8600 0    50   ~ 0
+BD[0..31]
+Wire Bus Line
+	9600 8500 9350 8500
+Wire Bus Line
+	9600 8600 9350 8600
+Text Label 2000 6400 2    50   ~ 0
+~DSACK1_EXT
+Text Label 2000 6500 2    50   ~ 0
+~DSACK0_EXT
+$Comp
+L Device:R_Network08 RN?
+U 1 1 62FCD025
+P 11950 8450
+F 0 "RN?" H 12338 8496 50  0000 L CNN
+F 1 "10K" H 12338 8405 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 12425 8450 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 11950 8450 50  0001 C CNN
+	1    11950 8450
+	1    0    0    -1  
+$EndComp
+Text Label 12450 8950 0    50   ~ 0
+~EXT_BERR1
+Text Label 12450 9600 0    50   ~ 0
+~DTACK_EXT1
+Text Label 12450 9050 0    50   ~ 0
+~EXT_BERR2
+Text Label 12450 9700 0    50   ~ 0
+~DTACK_EXT2
+Text Label 12450 9150 0    50   ~ 0
+~EXT_BERR3
+Text Label 12450 9800 0    50   ~ 0
+~DTACK_EXT3
+Text Label 12450 9250 0    50   ~ 0
+~EXT_BERR4
+Text Label 12450 9900 0    50   ~ 0
+~DTACK_EXT4
+Wire Wire Line
+	13000 8950 12250 8950
+Wire Wire Line
+	13000 9050 12150 9050
+Wire Wire Line
+	13000 9150 12050 9150
+$Comp
+L power:+5V #PWR?
+U 1 1 62FCD036
+P 11550 8200
+F 0 "#PWR?" H 11550 8050 50  0001 C CNN
+F 1 "+5V" H 11565 8373 50  0000 C CNN
+F 2 "" H 11550 8200 50  0001 C CNN
+F 3 "" H 11550 8200 50  0001 C CNN
+	1    11550 8200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12250 8650 12250 8950
+Wire Wire Line
+	12150 8650 12150 9050
+Wire Wire Line
+	11950 8650 11950 9250
+Wire Wire Line
+	11950 9250 13000 9250
+Wire Wire Line
+	11850 8650 11850 9600
+Wire Wire Line
+	11850 9600 13000 9600
+Wire Wire Line
+	11750 9700 11750 8650
+Wire Wire Line
+	11750 9700 13000 9700
+Wire Wire Line
+	11650 8650 11650 9800
+Wire Wire Line
+	11650 9800 13000 9800
+Wire Wire Line
+	11550 9900 11550 8650
+Wire Wire Line
+	11550 9900 13000 9900
+Wire Wire Line
+	12050 8650 12050 9150
+Wire Wire Line
+	11550 8200 11550 8250
+$Comp
+L 74xx:74LS21 U?
+U 1 1 63041D72
+P 13300 9100
+F 0 "U?" H 13300 9475 50  0000 C CNN
+F 1 "74LS21" H 13300 9384 50  0000 C CNN
+F 2 "" H 13300 9100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS21" H 13300 9100 50  0001 C CNN
+	1    13300 9100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS21 U?
+U 2 1 630427A7
+P 13300 9750
+F 0 "U?" H 13300 10125 50  0000 C CNN
+F 1 "74LS21" H 13300 10034 50  0000 C CNN
+F 2 "" H 13300 9750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS21" H 13300 9750 50  0001 C CNN
+	2    13300 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS21 U?
+U 3 1 63044317
+P 15100 9600
+F 0 "U?" H 15330 9646 50  0000 L CNN
+F 1 "74LS21" H 15330 9555 50  0000 L CNN
+F 2 "" H 15100 9600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS21" H 15100 9600 50  0001 C CNN
+	3    15100 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13700 9750 13600 9750
+Wire Wire Line
+	13700 9100 13600 9100
+Text Label 3700 5800 0    50   ~ 0
+~EXT_BERR1
+Text Label 3700 6000 0    50   ~ 0
+~DTACK_EXT1
+Text Label 7450 5800 0    50   ~ 0
+~EXT_BERR2
+Text Label 7450 6000 0    50   ~ 0
+~DTACK_EXT2
+Text Label 11200 5800 0    50   ~ 0
+~EXT_BERR3
+Text Label 11200 6000 0    50   ~ 0
+~DTACK_EXT3
+Text Label 14950 5800 0    50   ~ 0
+~EXT_BERR4
+Text Label 14950 6000 0    50   ~ 0
+~DTACK_EXT4
+Wire Wire Line
+	14750 5800 14950 5800
+Wire Wire Line
+	11000 5800 11200 5800
+Wire Wire Line
+	7250 5800 7450 5800
+$Comp
+L power:GND #PWR?
+U 1 1 6388C2C9
+P 15100 10150
+F 0 "#PWR?" H 15100 9900 50  0001 C CNN
+F 1 "GND" H 15105 9977 50  0000 C CNN
+F 2 "" H 15100 10150 50  0001 C CNN
+F 3 "" H 15100 10150 50  0001 C CNN
+	1    15100 10150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6388C5C7
+P 15100 9050
+F 0 "#PWR?" H 15100 8900 50  0001 C CNN
+F 1 "+5V" H 15115 9223 50  0000 C CNN
+F 2 "" H 15100 9050 50  0001 C CNN
+F 3 "" H 15100 9050 50  0001 C CNN
+	1    15100 9050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15100 9050 15100 9100
+Wire Wire Line
+	15100 10150 15100 10100
+Text Label 5750 6400 2    50   ~ 0
+~DSACK1_EXT
+Text Label 5750 6500 2    50   ~ 0
+~DSACK0_EXT
+Text Label 9500 6400 2    50   ~ 0
+~DSACK1_EXT
+Text Label 9500 6500 2    50   ~ 0
+~DSACK0_EXT
+Text Label 13250 6400 2    50   ~ 0
+~DSACK1_EXT
+Text Label 13250 6500 2    50   ~ 0
+~DSACK0_EXT
+Text HLabel 7400 8500 0    50   Input ~ 0
+A[0..31]
+Text HLabel 7400 8600 0    50   BiDi ~ 0
+D[0..31]
+Text HLabel 7400 8750 0    50   Input ~ 0
+SIZ0
+Text HLabel 7400 8850 0    50   Input ~ 0
+SIZ1
+Text HLabel 7400 8950 0    50   Input ~ 0
+~AS
+Text HLabel 7400 9050 0    50   Input ~ 0
+~DS
+Text HLabel 7400 9200 0    50   Input ~ 0
+~RESET
+Text HLabel 7400 9350 0    50   Input ~ 0
+RD~WR
+Text HLabel 7400 9450 0    50   Input ~ 0
+~LDS
+Text HLabel 7400 9550 0    50   Input ~ 0
+~UDS
+Text HLabel 7400 9650 0    50   Input ~ 0
+~VMA
+Text HLabel 7400 9800 0    50   Input ~ 0
+CPUCLK
+Text HLabel 7400 9900 0    50   Input ~ 0
+CLK10
+Text HLabel 7400 10000 0    50   Input ~ 0
+E
+Text HLabel 7400 10150 0    50   Input ~ 0
+CS_EXTREG[1..4]
+Text HLabel 7400 10250 0    50   Input ~ 0
+CS_EXTDATA[1..4]
+Text HLabel 7400 10400 0    50   Input ~ 0
+~EXT_DBEN
+Text HLabel 7400 10500 0    50   Input ~ 0
+~RD~WR
+Wire Bus Line
+	7400 8500 7750 8500
+Wire Bus Line
+	7750 8600 7400 8600
+Wire Wire Line
+	7400 8750 7750 8750
+Wire Wire Line
+	7750 8850 7400 8850
+Wire Wire Line
+	7400 8950 7750 8950
+Wire Wire Line
+	7750 9050 7400 9050
+Wire Wire Line
+	7400 9200 7750 9200
+Wire Wire Line
+	7750 9350 7400 9350
+Wire Wire Line
+	7750 9450 7400 9450
+Wire Wire Line
+	7750 9550 7400 9550
+Wire Wire Line
+	7750 9650 7400 9650
+Wire Wire Line
+	7750 9800 7400 9800
+Wire Wire Line
+	7750 9900 7400 9900
+Wire Wire Line
+	7750 10000 7400 10000
+Wire Wire Line
+	7750 10400 7400 10400
+Wire Wire Line
+	7750 10500 7400 10500
+Wire Bus Line
+	7750 10150 7400 10150
+Wire Bus Line
+	7750 10250 7400 10250
+Text Label 9600 10150 0    50   ~ 0
+~BCS_EXTREG[1..4]
+Text Label 9600 10250 0    50   ~ 0
+~BCS_EXTDATA[1..4]
+Wire Bus Line
+	9600 10250 9350 10250
+Wire Bus Line
+	9600 10150 9350 10150
+Text Label 3700 6400 0    50   ~ 0
+~BCS_EXTREG1
+Text Label 3700 6500 0    50   ~ 0
+~BCS_EXTDATA1
+Text Label 7450 6400 0    50   ~ 0
+~BCS_EXTREG2
+Text Label 7450 6500 0    50   ~ 0
+~BCS_EXTDATA2
+Text Label 11200 6400 0    50   ~ 0
+~BCS_EXTREG3
+Text Label 11200 6500 0    50   ~ 0
+~BCS_EXTDATA3
+Text Label 14950 6400 0    50   ~ 0
+~BCS_EXTREG4
+Text Label 14950 6500 0    50   ~ 0
+~BCS_EXTDATA4
+Text Label 3700 6750 0    50   ~ 0
+~EXT_PRD01
+Text Label 3700 6850 0    50   ~ 0
+~EXT_PRD11
+Text Label 7450 6750 0    50   ~ 0
+~EXT_PRD02
+Text Label 7450 6850 0    50   ~ 0
+~EXT_PRD12
+Text Label 11200 6750 0    50   ~ 0
+~EXT_PRD03
+Text Label 11200 6850 0    50   ~ 0
+~EXT_PRD13
+Text Label 14950 6750 0    50   ~ 0
+~EXT_PRD04
+Text Label 14950 6850 0    50   ~ 0
+~EXT_PRD14
+Text HLabel 2800 10350 2    50   Output ~ 0
+~EXT_PRD1[1..4
+Text Label 2100 10050 0    50   ~ 0
+~EXT_PRD01
+Text Label 2100 10450 0    50   ~ 0
+~EXT_PRD11
+Text Label 2100 10150 0    50   ~ 0
+~EXT_PRD02
+Text Label 2100 10550 0    50   ~ 0
+~EXT_PRD12
+Text Label 2100 10250 0    50   ~ 0
+~EXT_PRD03
+Text Label 2100 10650 0    50   ~ 0
+~EXT_PRD13
+Text Label 2100 10350 0    50   ~ 0
+~EXT_PRD04
+Text Label 2100 10750 0    50   ~ 0
+~EXT_PRD14
+Wire Bus Line
+	2600 10350 2600 9950
+Wire Bus Line
+	2600 9950 2700 9950
+Wire Bus Line
+	2700 10750 2700 10350
+Wire Bus Line
+	2700 10350 2800 10350
+Text Label 9600 8850 0    50   ~ 0
+BSIZ1
+Text Label 9600 8750 0    50   ~ 0
+BSIZ0
+Text Label 9600 10000 0    50   ~ 0
+BE
+Text Label 4500 10400 0    50   ~ 0
+~BVPA
+Text Label 9600 9650 0    50   ~ 0
+~BVMA
+Text Label 9600 9050 0    50   ~ 0
+~BDS
+Text Label 9600 8950 0    50   ~ 0
+~BAS
+Text Label 9600 9350 0    50   ~ 0
+BRD~WR
+Text Label 9600 9550 0    50   ~ 0
+~BUDS
+Text Label 9600 9450 0    50   ~ 0
+~BLDS
+Text Label 9600 9800 0    50   ~ 0
+BCPUCLK
+Text Label 9600 9900 0    50   ~ 0
+BCLK10
+Text Label 9600 9200 0    50   ~ 0
+~BRESET
+Wire Wire Line
+	9350 8750 9600 8750
+Wire Wire Line
+	9350 8850 9600 8850
+Wire Wire Line
+	9350 8950 9600 8950
+Wire Wire Line
+	9350 9050 9600 9050
+Wire Wire Line
+	9600 9200 9350 9200
+Wire Wire Line
+	9350 9350 9600 9350
+Wire Wire Line
+	9350 9450 9600 9450
+Wire Wire Line
+	9350 9550 9600 9550
+Wire Wire Line
+	9350 9650 9600 9650
+Wire Wire Line
+	9600 9800 9350 9800
+Wire Wire Line
+	9600 9900 9350 9900
+Wire Wire Line
+	9600 10000 9350 10000
+$Comp
+L Device:R_Network08 RN?
+U 1 1 66EBBA9A
+P 4150 9650
+F 0 "RN?" H 4538 9696 50  0000 L CNN
+F 1 "10K" H 4538 9605 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 4625 9650 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4150 9650 50  0001 C CNN
+	1    4150 9650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 9400 3750 9450
+$Comp
+L power:+5V #PWR?
+U 1 1 66EBBAA1
+P 3750 9400
+F 0 "#PWR?" H 3750 9250 50  0001 C CNN
+F 1 "+5V" H 3765 9573 50  0000 C CNN
+F 2 "" H 3750 9400 50  0001 C CNN
+F 3 "" H 3750 9400 50  0001 C CNN
+	1    3750 9400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 5800 3500 5800
+Text Label 3700 5900 0    50   ~ 0
+~EXT_IRQ1
+Text Label 7450 5900 0    50   ~ 0
+~EXT_IRQ2
+Text Label 11200 5900 0    50   ~ 0
+~EXT_IRQ2
+Wire Wire Line
+	11000 5900 11200 5900
+Text Label 14950 5900 0    50   ~ 0
+~EXT_IRQ4
+Text Label 4500 10000 0    50   ~ 0
+~EXT_IRQ1
+Text Label 4500 10100 0    50   ~ 0
+~EXT_IRQ2
+Text Label 4500 10200 0    50   ~ 0
+~EXT_IRQ3
+Text Label 4500 10300 0    50   ~ 0
+~EXT_IRQ4
+Entry Wire Line
+	5000 9900 4900 10000
+Entry Wire Line
+	5000 10000 4900 10100
+Entry Wire Line
+	5000 10100 4900 10200
+Entry Wire Line
+	5000 10200 4900 10300
+Wire Bus Line
+	5000 9800 5100 9800
+Wire Wire Line
+	4900 10000 4450 10000
+Wire Wire Line
+	4450 10000 4450 9850
+Wire Wire Line
+	4900 10100 4350 10100
+Wire Wire Line
+	4350 10100 4350 9850
+Wire Wire Line
+	4250 10200 4250 9850
+Wire Wire Line
+	4900 10300 4150 10300
+Wire Wire Line
+	4150 10300 4150 9850
+Wire Wire Line
+	4250 10200 4900 10200
+Wire Wire Line
+	4500 10400 4050 10400
+Wire Wire Line
+	4050 10400 4050 9850
+Wire Wire Line
+	4500 10500 3950 10500
+Wire Wire Line
+	3950 10500 3950 9850
+Wire Wire Line
+	4500 10600 3850 10600
+Wire Wire Line
+	3850 10600 3850 9850
+NoConn ~ 3750 9850
+Wire Bus Line
+	5000 9800 5000 10200
 Wire Bus Line
 	15250 2400 15250 5500
 Wire Bus Line
