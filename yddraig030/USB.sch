@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 12 14
+Sheet 11 14
 Title "Y Ddraig Fawr"
 Date ""
 Rev ""
@@ -137,7 +137,7 @@ Wire Bus Line
 Wire Bus Line
 	3150 4100 3050 4100
 Text Label 4000 4250 0    50   ~ 0
-A0
+A1
 Wire Wire Line
 	5250 3450 5950 3450
 Wire Wire Line
@@ -375,9 +375,9 @@ Wire Wire Line
 Text HLabel 3800 4650 0    50   Input ~ 0
 ~USB_CS
 Text HLabel 3800 4550 0    50   Input ~ 0
-~USB_WR
+RD~WR
 Text HLabel 3800 4450 0    50   Input ~ 0
-~USB_RD
+~RD~WR
 Text HLabel 3800 4950 0    50   Input ~ 0
 ~RESET
 Text HLabel 3800 5150 0    50   Output ~ 0

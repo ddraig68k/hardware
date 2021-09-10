@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 14
+Sheet 6 14
 Title "Y Ddraig Fawr"
 Date ""
 Rev ""
@@ -283,4 +283,74 @@ Wire Wire Line
 	5000 1000 4350 1000
 Wire Wire Line
 	4450 2250 4800 2250
+Text HLabel 6100 6150 0    50   Output ~ 0
+~DSACK0
+Text HLabel 6100 6250 0    50   Output ~ 0
+~DSACK1
+Text HLabel 6000 6550 0    50   Input ~ 0
+~DRAM_DSACK0
+Text HLabel 6000 6650 0    50   Input ~ 0
+~DRAM_DSACK1
+Text HLabel 6600 6550 0    50   Output ~ 0
+A[0..31]
+Text HLabel 6600 6650 0    50   BiDi ~ 0
+D[0..31]
+Text HLabel 10550 6550 0    50   Input ~ 0
+~LDS
+Text HLabel 10550 6650 0    50   Input ~ 0
+~UDS
+Text HLabel 10550 6750 0    50   Input ~ 0
+E
+Text HLabel 10550 6850 0    50   Input ~ 0
+~EXT_DBEN
+Text HLabel 10550 6950 0    50   Input ~ 0
+~RD~WR
+Text HLabel 10500 6450 2    50   Output ~ 0
+~EXT_IRQ[1..4]
+Text HLabel 10500 6250 2    50   Output ~ 0
+~DSACK1_EXT
+Text HLabel 10500 6350 2    50   Output ~ 0
+~DSACK0_EXT
+Text HLabel 9500 6000 2    50   Output ~ 0
+~EXT_PRD0[1..4]
+Text HLabel 9500 6100 2    50   Output ~ 0
+~EXT_PRD1[1..4
+Text HLabel 9500 6300 2    50   Output ~ 0
+~EXT_DTACK
+Text HLabel 9500 6200 2    50   Output ~ 0
+~EXT_BERR
+Text HLabel 9800 6400 0    50   Input ~ 0
+CLK10
+Text HLabel 10900 4800 0    50   Input ~ 0
+~CS_ETH
+Text HLabel 10900 4700 0    50   Input ~ 0
+RESET
+Text HLabel 10550 4900 2    50   Output ~ 0
+INT_ETH
+Text HLabel 10850 3900 0    50   Output ~ 0
+~INT_DUART
+Text HLabel 10850 3800 0    50   Output ~ 0
+~DTACK_DUART
+Text HLabel 10850 4000 0    50   Input ~ 0
+~CS_DUART
+Text HLabel 9150 5300 0    50   Input ~ 0
+~CS_KBD
+Text HLabel 8800 5400 2    50   Output ~ 0
+~INT_PS2
+Text HLabel 9200 4950 0    50   Input ~ 0
+~CS_RTC
+Text HLabel 8150 5650 0    50   Input ~ 0
+~USB_CS
+Text HLabel 8150 5750 0    50   Output ~ 0
+USB_INT
+Text HLabel 8200 5850 0    50   Input ~ 0
+~USB_ENABLE
+Text HLabel 8200 5950 0    50   Output ~ 0
+~USB_OVERCUR
+Text HLabel 9550 4300 0    50   Input ~ 0
+~CS_IDE
+Text HLabel 9550 4100 0    50   Input ~ 0
+~IDE_WR
+Text HLabel 9550 4200 0    50   Input ~ 0
+~IDE_RD
 $EndSCHEMATC

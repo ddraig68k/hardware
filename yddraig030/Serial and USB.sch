@@ -859,11 +859,7 @@ Wire Wire Line
 	7050 3650 4850 3650
 Wire Wire Line
 	7550 6000 7000 6000
-Wire Wire Line
-	5950 4550 4850 4550
-Text Label 2550 4750 2    50   ~ 0
-RD~WR
-Text HLabel 2550 4600 0    50   Input ~ 0
+Text HLabel 2550 4650 0    50   Input ~ 0
 ~CS_DUART
 $Comp
 L power:+5V #PWR?
@@ -899,18 +895,8 @@ Wire Wire Line
 	1450 4850 1450 4750
 Wire Wire Line
 	1450 4450 1450 4400
-Text Label 2550 4950 2    50   ~ 0
-~RESET
-Text Label 2550 5150 2    50   ~ 0
-~DTACK_68K
 Wire Wire Line
 	2550 5150 2850 5150
-Wire Wire Line
-	2650 4650 2650 4600
-Wire Wire Line
-	2650 4600 2550 4600
-Wire Wire Line
-	2650 4650 2850 4650
 Wire Wire Line
 	2850 4750 2550 4750
 Wire Wire Line
@@ -933,34 +919,6 @@ Text Label 5000 2950 0    50   ~ 0
 TXDA
 Text Label 5000 3050 0    50   ~ 0
 RXDA
-Entry Wire Line
-	5300 4650 5400 4750
-Entry Wire Line
-	5300 4750 5400 4850
-Entry Wire Line
-	5300 4850 5400 4950
-Entry Wire Line
-	5300 4950 5400 5050
-Text Label 4900 4750 0    50   ~ 0
-~EXT_PD2
-Text Label 4900 4850 0    50   ~ 0
-~EXT_PD3
-Text Label 4900 4950 0    50   ~ 0
-~EXT_PD4
-Text HLabel 5700 5150 2    50   Input ~ 0
-~EXT_PD[1..4]
-Wire Bus Line
-	5400 5150 5700 5150
-Text Label 4900 4650 0    50   ~ 0
-~EXT_PD1
-Wire Wire Line
-	4850 4950 5300 4950
-Wire Wire Line
-	4850 4850 5300 4850
-Wire Wire Line
-	4850 4750 5300 4750
-Wire Wire Line
-	4850 4650 5300 4650
 Wire Wire Line
 	9850 4100 9850 4400
 Wire Wire Line
@@ -981,10 +939,18 @@ Text Label 2550 3850 0    50   ~ 0
 D30
 Text Label 2550 3950 0    50   ~ 0
 D31
+Wire Wire Line
+	5950 4550 4850 4550
+Text HLabel 2550 5150 0    50   Output ~ 0
+~DTACK_DUART
+Text HLabel 2550 4950 0    50   Input ~ 0
+~RESET
+Text HLabel 2550 4750 0    50   Input ~ 0
+RD~WR
+Wire Wire Line
+	2550 4650 2850 4650
 Wire Bus Line
 	2200 4000 2200 4350
-Wire Bus Line
-	5400 4750 5400 5150
 Wire Bus Line
 	2200 3050 2200 3850
 $EndSCHEMATC

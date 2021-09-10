@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 3 14
+Sheet 2 14
 Title "Y Ddraig Fawr"
 Date ""
 Rev ""
@@ -45,10 +45,10 @@ A8
 Text Label 5100 5400 0    50   ~ 0
 A9
 $Comp
-L Ddraig:MC68881FN IC?
+L Ddraig:MC68881FN U?
 U 1 1 60FCAB24
 P 8900 4400
-F 0 "IC?" H 8250 6650 50  0000 C CNN
+F 0 "U?" H 8250 6650 50  0000 C CNN
 F 1 "MC68881FN" H 9450 6650 50  0000 C CNN
 F 2 "" H 8900 4400 60  0000 C CNN
 F 3 "" H 8900 4400 60  0000 C CNN
@@ -908,7 +908,7 @@ Wire Wire Line
 	9800 2550 10050 2550
 Wire Wire Line
 	10050 2450 9800 2450
-Text HLabel 10900 2850 2    50   Input ~ 0
+Text HLabel 10900 2850 2    50   Output ~ 0
 ~FPUSENSE
 $Comp
 L Device:R R?
@@ -953,10 +953,10 @@ Wire Wire Line
 	9800 3350 10200 3350
 Wire Wire Line
 	10200 3250 9800 3250
-Text HLabel 10950 3150 2    50   Input ~ 0
+Text HLabel 10900 3150 2    50   Input ~ 0
 ~CS_FPU
 Wire Wire Line
-	10950 3150 9800 3150
+	10900 3150 9800 3150
 $Comp
 L power:+5V #PWR?
 U 1 1 6147031E
@@ -997,10 +997,6 @@ Text Label 7700 2550 2    50   ~ 0
 ~RESET
 Wire Wire Line
 	7700 2550 8000 2550
-Text Label 7700 2450 2    50   ~ 0
-CPU_CLK
-Wire Wire Line
-	7700 2450 8000 2450
 Wire Wire Line
 	2800 2300 3000 2300
 Text Label 2800 2100 2    50   ~ 0
@@ -1026,9 +1022,9 @@ Text HLabel 2800 3100 0    50   Output ~ 0
 Text HLabel 2800 3200 0    50   Output ~ 0
 ~AS
 Text HLabel 2800 3400 0    50   Input ~ 0
-DSACK0
+~DSACK0
 Text HLabel 2800 3500 0    50   Input ~ 0
-DSACK1
+~DSACK1
 Text HLabel 2800 3600 0    50   Input ~ 0
 ~STERM
 Text HLabel 2800 3800 0    50   Input ~ 0
@@ -1079,6 +1075,90 @@ Wire Wire Line
 	5100 4300 5100 4200
 Wire Wire Line
 	5100 4200 5250 4200
+$Comp
+L Oscillator:ACO-xxxMHz X?
+U 1 1 613B7690
+P 7450 1550
+F 0 "X?" H 7107 1596 50  0000 R CNN
+F 1 "ACO-xxxMHz" H 7107 1505 50  0000 R CNN
+F 2 "Oscillator:Oscillator_DIP-14" H 7900 1200 50  0001 C CNN
+F 3 "http://www.conwin.com/datasheets/cx/cx030.pdf" H 7350 1550 50  0001 C CNN
+	1    7450 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 613B8943
+P 7450 1200
+F 0 "#PWR?" H 7450 1050 50  0001 C CNN
+F 1 "+5V" H 7465 1373 50  0000 C CNN
+F 2 "" H 7450 1200 50  0001 C CNN
+F 3 "" H 7450 1200 50  0001 C CNN
+	1    7450 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613B8DE8
+P 7450 1900
+F 0 "#PWR?" H 7450 1650 50  0001 C CNN
+F 1 "GND" H 7455 1727 50  0000 C CNN
+F 2 "" H 7450 1900 50  0001 C CNN
+F 3 "" H 7450 1900 50  0001 C CNN
+	1    7450 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 1200 7450 1250
+Wire Wire Line
+	7450 1900 7450 1850
+Wire Wire Line
+	7750 1550 7900 1550
+Wire Wire Line
+	7900 2450 8000 2450
+Wire Wire Line
+	7900 1550 7900 2450
+Text HLabel 5250 2650 2    50   Input ~ 0
+~AVEC
+Text HLabel 5250 3050 2    50   Output ~ 0
+~ECS
+Text HLabel 5250 3150 2    50   Output ~ 0
+~OCS
+Text HLabel 5250 3350 2    50   Output ~ 0
+~BG
+$Comp
+L Device:R R?
+U 1 1 6144CC5A
+P 5950 2050
+F 0 "R?" H 6020 2096 50  0000 L CNN
+F 1 "10K" H 6020 2005 50  0000 L CNN
+F 2 "" V 5880 2050 50  0001 C CNN
+F 3 "~" H 5950 2050 50  0001 C CNN
+	1    5950 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2750 5950 2750
+Wire Wire Line
+	5950 2750 5950 2200
+Wire Wire Line
+	5000 3550 5950 3550
+Wire Wire Line
+	5950 3550 5950 2750
+Connection ~ 5950 2750
+$Comp
+L power:+5V #PWR?
+U 1 1 614767C1
+P 5950 1850
+F 0 "#PWR?" H 5950 1700 50  0001 C CNN
+F 1 "+5V" H 5965 2023 50  0000 C CNN
+F 2 "" H 5950 1850 50  0001 C CNN
+F 3 "" H 5950 1850 50  0001 C CNN
+	1    5950 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1850 5950 1900
 Wire Bus Line
 	7550 2700 7550 5850
 Wire Bus Line
