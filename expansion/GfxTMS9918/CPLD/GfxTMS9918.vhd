@@ -3,31 +3,27 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity Eth8019 is
+entity GfxTMS9918 is
     Port (
-        data_io     : inout std_logic_vector(15 downto 8);
+        data_io     : inout std_logic_vector(7 downto 0);
         addr_i      : in std_logic_vector(7 downto 1);
         cpuclk_i    : in std_logic;
-        ethint_i    : in std_logic;
         csreg_i     : in std_logic;
         csdata_i    : in std_logic;
         uds_i       : in std_logic;
         lds_i       : in std_logic;
         rw_i        : in std_logic;
         reset_i     : in std_logic;
-        reset_o     : out std_logic;
-        cs_o        : out std_logic;
         wr_o        : out std_logic;
         rd_o        : out std_logic;
-        irq_o       : out std_logic;
         dtack_o     : out std_logic;
         led_o       : out std_logic
     );
-end Eth8019;
+end GfxTMS9918;
 
-architecture Behavioral of Eth8019 is
+architecture Behavioral of GfxTMS9918 is
 
-    constant BOARD_ID       : std_logic_vector(7 downto 0) := X"31";
+    constant BOARD_ID       : std_logic_vector(7 downto 0) := X"14";
 
     signal s_dtackcount     : std_logic_vector(2 downto 0);
     signal s_ledtime        : std_logic_vector(9 downto 0);
@@ -62,8 +58,6 @@ begin
                 clk_i => cpuclk_i, clk_div2_o => OPEN, clk_div4_o => OPEN, clk_div8_o => s_clkdiv
             );
 
-	reset_o <= not reset_i;
-
     -- Generate DTACK signal
     dtack_o <= '0' when s_dtackcount > "010" and (csdata_i = '0' or csreg_i = '0') else '1';
     
@@ -72,15 +66,11 @@ begin
               
     -- Address decoding
     s_idaddr <= '1' when addr_i = "1111111" else '0';
-    cs_o <= '0' when s_idaddr = '0' and csreg_i = '0' else '1';
     rd_o <= '0' when s_idaddr = '0' and csreg_i = '0' and rw_i = '1' else '1';
     wr_o <= '0' when s_idaddr = '0' and csreg_i = '0' and rw_i = '0' else '1';
     
-    -- Set the interrupt output
-    irq_o <= not ethint_i;
     
     -- Write out device ID
     data_io <= BOARD_ID when s_idaddr = '1' and uds_i = '0' and csreg_i = '0' else "ZZZZZZZZ";
-
 end Behavioral;
 

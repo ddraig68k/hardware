@@ -345,7 +345,7 @@ Wire Wire Line
 Wire Wire Line
 	4750 4250 4750 4350
 Wire Wire Line
-	5400 3400 4750 3400
+	5400 3400 5100 3400
 Wire Wire Line
 	4750 3400 4750 3500
 Text Label 1450 1850 2    50   ~ 0
@@ -905,6 +905,32 @@ Wire Wire Line
 	7650 5400 7900 5400
 NoConn ~ 9000 2800
 NoConn ~ 6700 4750
+$Comp
+L Device:R R?
+U 1 1 614EA581
+P 5100 3150
+F 0 "R?" H 5170 3196 50  0000 L CNN
+F 1 "10k" H 5170 3105 50  0000 L CNN
+F 2 "" V 5030 3150 50  0001 C CNN
+F 3 "~" H 5100 3150 50  0001 C CNN
+	1    5100 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 614EACCA
+P 5100 2950
+F 0 "#PWR?" H 5100 2800 50  0001 C CNN
+F 1 "+5V" H 5115 3123 50  0000 C CNN
+F 2 "" H 5100 2950 50  0001 C CNN
+F 3 "" H 5100 2950 50  0001 C CNN
+	1    5100 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3000 5100 2950
+Wire Wire Line
+	5100 3300 5100 3400
 Wire Bus Line
 	7200 1100 7200 1400
 Wire Bus Line
@@ -915,4 +941,7 @@ Wire Bus Line
 	3950 2650 3950 3450
 Wire Bus Line
 	6600 1500 6600 2300
+Connection ~ 5100 3400
+Wire Wire Line
+	5100 3400 4750 3400
 $EndSCHEMATC
