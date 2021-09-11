@@ -62,7 +62,7 @@ begin
     dtack_o <= '0' when s_dtackcount > "010" and (csdata_i = '0' or csreg_i = '0') else '1';
     
         -- Flash activity LED
-    led_o <= '0' when s_ledtime < "1111111111" else '1';
+    led_o <= '1' when s_ledtime < "1111111111" else '0';
               
     -- Address decoding
     s_idaddr <= '1' when addr_i = "1111111" else '0';

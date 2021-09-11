@@ -1157,6 +1157,16 @@ Wire Wire Line
 Connection ~ 3850 7400
 Wire Wire Line
 	3850 7400 3950 7400
+Wire Wire Line
+	4550 1400 4300 1400
+Wire Wire Line
+	4550 1800 4300 1800
+Wire Wire Line
+	4550 2200 4300 2200
+Wire Wire Line
+	4550 2300 4300 2300
+Wire Wire Line
+	4550 2500 4300 2500
 Wire Bus Line
 	4750 3500 4750 6650
 Wire Bus Line
