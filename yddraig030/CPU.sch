@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 14
+Sheet 2 16
 Title "Y Ddraig Fawr"
 Date ""
 Rev ""
@@ -893,7 +893,7 @@ Text HLabel 2100 1550 0    50   Input ~ 0
 Text HLabel 2100 1750 0    50   Output ~ 0
 FC0
 Text HLabel 2100 1850 0    50   Output ~ 0
-PC1
+FC1
 Text HLabel 2100 1950 0    50   Output ~ 0
 FC2
 Text HLabel 2100 2150 0    50   Output ~ 0
