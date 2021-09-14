@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 16
+Sheet 9 16
 Title "Y Ddraig Fawr"
 Date ""
 Rev ""
@@ -216,9 +216,9 @@ $EndComp
 Wire Wire Line
 	6050 2200 8000 2200
 Text HLabel 4700 2950 0    50   Input ~ 0
-~IDE_WR
+RD~WR
 Text HLabel 4700 3050 0    50   Input ~ 0
-~IDE_RD
+~RD~WR
 Text HLabel 4700 3150 0    50   Input ~ 0
 ~RESET
 Text HLabel 4800 4150 0    50   Input ~ 0

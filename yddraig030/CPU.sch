@@ -769,18 +769,6 @@ Entry Wire Line
 	4750 3650 4650 3750
 Entry Wire Line
 	4750 3550 4650 3650
-Text HLabel 2100 3250 0    50   Input ~ 0
-~IPL0
-Text HLabel 2100 3350 0    50   Input ~ 0
-~IPL1
-Text HLabel 2100 3450 0    50   Input ~ 0
-~IPL2
-Wire Wire Line
-	2100 3450 2300 3450
-Wire Wire Line
-	2300 3350 2100 3350
-Wire Wire Line
-	2100 3250 2300 3250
 Text Label 9550 2300 0    50   ~ 0
 ~DSACK0
 Text Label 9550 2400 0    50   ~ 0
@@ -886,16 +874,8 @@ Wire Wire Line
 	2100 1250 2300 1250
 Wire Wire Line
 	2100 1550 2300 1550
-Text Label 2100 1450 2    50   ~ 0
-~RESET
 Text HLabel 2100 1550 0    50   Input ~ 0
 ~BERR
-Text HLabel 2100 1750 0    50   Output ~ 0
-FC0
-Text HLabel 2100 1850 0    50   Output ~ 0
-FC1
-Text HLabel 2100 1950 0    50   Output ~ 0
-FC2
 Text HLabel 2100 2150 0    50   Output ~ 0
 RD~WR
 Text HLabel 2100 2250 0    50   Output ~ 0
@@ -912,12 +892,6 @@ Text HLabel 2100 2950 0    50   Input ~ 0
 ~CDIS
 Text HLabel 2100 3050 0    50   Input ~ 0
 ~MMUDIS
-Wire Wire Line
-	2100 1750 2300 1750
-Wire Wire Line
-	2100 1850 2300 1850
-Wire Wire Line
-	2100 1950 2300 1950
 Wire Wire Line
 	2100 2150 2300 2150
 Wire Wire Line
@@ -952,12 +926,6 @@ Wire Wire Line
 	7400 1400 7400 2300
 Text HLabel 4550 1800 2    50   Input ~ 0
 ~AVEC
-Text HLabel 4550 2200 2    50   Output ~ 0
-~ECS
-Text HLabel 4550 2300 2    50   Output ~ 0
-~OCS
-Text HLabel 4550 2500 2    50   Output ~ 0
-~BG
 $Comp
 L Device:R R?
 U 1 1 6144CC5A
@@ -1161,16 +1129,72 @@ Wire Wire Line
 	4550 1400 4300 1400
 Wire Wire Line
 	4550 1800 4300 1800
+Text HLabel 1600 1550 0    50   Output ~ 0
+FC[0..2]
+Entry Wire Line
+	1800 1750 1700 1650
+Entry Wire Line
+	1700 1750 1800 1850
+Entry Wire Line
+	1700 1850 1800 1950
+Wire Bus Line
+	1700 1550 1600 1550
+Text Label 2000 1750 2    50   ~ 0
+FC0
+Text Label 2000 1850 2    50   ~ 0
+FC1
+Text Label 2000 1950 2    50   ~ 0
+FC2
 Wire Wire Line
-	4550 2200 4300 2200
+	1800 1750 2300 1750
 Wire Wire Line
-	4550 2300 4300 2300
+	1800 1850 2300 1850
 Wire Wire Line
-	4550 2500 4300 2500
+	1800 1950 2300 1950
+Text HLabel 1350 3000 0    50   Output ~ 0
+~IPL[0..2]
+Entry Wire Line
+	1550 3200 1450 3100
+Entry Wire Line
+	1450 3200 1550 3300
+Entry Wire Line
+	1450 3300 1550 3400
+Wire Bus Line
+	1450 3000 1350 3000
+Text Label 1750 3200 2    50   ~ 0
+~IPL0
+Text Label 1750 3300 2    50   ~ 0
+~IPL1
+Text Label 1750 3400 2    50   ~ 0
+~IPL2
+Wire Wire Line
+	2200 3200 2200 3250
+Wire Wire Line
+	2200 3250 2300 3250
+Wire Wire Line
+	1550 3200 2200 3200
+Wire Wire Line
+	2150 3300 2150 3350
+Wire Wire Line
+	2150 3350 2300 3350
+Wire Wire Line
+	1550 3300 2150 3300
+Wire Wire Line
+	2100 3400 2100 3450
+Wire Bus Line
+	1700 1550 1700 1850
+Wire Bus Line
+	1450 3000 1450 3300
 Wire Bus Line
 	4750 3500 4750 6650
 Wire Bus Line
 	1850 3500 1850 6650
 Wire Bus Line
 	7050 2550 7050 5700
+Wire Wire Line
+	2100 3450 2300 3450
+Wire Wire Line
+	1550 3400 2100 3400
+Text HLabel 2100 1450 0    50   Input ~ 0
+~RESET
 $EndSCHEMATC
