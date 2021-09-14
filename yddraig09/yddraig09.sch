@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title "Y Ddraig Fechan"
 Date ""
 Rev ""
@@ -290,5 +290,11 @@ F11 "~SPI_SS2" O R 6000 5300 50
 F12 "SPI_SS3" O R 6000 5400 50 
 F13 "SPI_MOSI" O R 6000 5000 50 
 F14 "SPI_MISO" I R 6000 5100 50 
+$EndSheet
+$Sheet
+S 6850 3800 800  1000
+U 6145D500
+F0 "Keyboard" 50
+F1 "Keyboard.sch" 50
 $EndSheet
 $EndSCHEMATC
