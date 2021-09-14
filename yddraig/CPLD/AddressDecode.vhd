@@ -14,6 +14,7 @@ entity AddressDecode is
         bootrom_i 		: in std_logic;
         reset_i 		: in std_logic;
 		rw_i			: in std_logic;
+		uds_i			: in std_logic;
         dtack_o 		: out std_logic;
         cs_rom_o 		: out std_logic;
         cs_sram_o 		: out std_logic;
@@ -81,8 +82,8 @@ begin
 
 	s_rom 	<= '0' WHEN s_addr_sel = '1' AND (bootrom_i = '0' OR std_match(a_i, "11111-----------")) ELSE '1';		-- $F80000 - $FFFFFF
 	s_sram 	<= '0' WHEN s_addr_sel = '1' AND bootrom_i = '1' AND std_match(a_i, "0000------------") ELSE '1';		-- $000000 - $0FFFFF
-	s_duart	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110000") ELSE '1';							-- $F7F000 - $F7F0FF
-	s_pit	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110001") ELSE '1';							-- $F7F100 - $F7F1FF
+	s_duart	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110000") AND uds_i = '0' ELSE '1';			-- $F7F000 - $F7F0FF
+	s_pit	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110001") AND uds_i = '0' ELSE '1';			-- $F7F100 - $F7F1FF
 	s_kbd	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110010") ELSE '1';							-- $F7F200 - $F7F2FF
 	s_ide	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110011") ELSE '1';							-- $F7F300 - $F7F3FF
 	s_rtc	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110100") ELSE '1';							-- $F7F400 - $F7F4FF

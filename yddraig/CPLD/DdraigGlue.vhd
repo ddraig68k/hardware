@@ -84,7 +84,7 @@ begin
 	ClkGen: entity work.Clock port map(clk_i => clk_ip, clk20_o => s_clk_20mhz, clk10_o => s_cpu_clk);
 	
 	Decode: entity work.AddressDecode port map(a_i => a_ip, clk_i => s_clk_20mhz, as_i => as_ip, fc0_i => fc0_ip, fc1_i => fc1_ip, fc2_i => fc2_ip, rw_i => rw_ip,
-											bootrom_i => bootrom_ip, reset_i => reset_ip,  dtack_o => s_dtack_address, 
+											bootrom_i => bootrom_ip, reset_i => reset_ip,  dtack_o => s_dtack_address, uds_i => uds_ip,
 											vpa_o => vpa_op, cs_rom_o => cs_rom_op, cs_sram_o => cs_sram_op, dram_sel_o => s_dram_sel, cs_duart_o => cs_duart_op,
 											cs_pit_o => cs_pit_op, cs_kbd_o => cs_kbd_op, cs_rtc_o => cs_rtc_op, cs_ide_o => cs_ide_op, ide_wr_o => ide_wr_op, ide_rd_o => ide_rd_op,
 											cs_data1_o => s_ext_data1, cs_data2_o => s_ext_data2, cs_data3_o => s_ext_data3, cs_data4_o => s_ext_data4,
