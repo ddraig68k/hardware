@@ -447,7 +447,7 @@ Text Label 4800 7550 0    50   ~ 0
 D31
 Text HLabel 4800 7850 2    50   Input ~ 0
 ~CS_DRAM
-Text HLabel 2350 7550 0    50   Input ~ 0
+Text HLabel 2350 7550 0    50   Output ~ 0
 ~STERM
 Text HLabel 2350 7650 0    50   Input ~ 0
 ~AS
@@ -457,8 +457,6 @@ Text HLabel 4800 6550 2    50   Input ~ 0
 SIZ0
 Text HLabel 4800 6650 2    50   Input ~ 0
 SIZ1
-Text HLabel 2350 7950 0    50   Input ~ 0
-~BG
 Text Label 4700 5250 0    50   ~ 0
 ~RAS0
 Text Label 4700 5450 0    50   ~ 0
@@ -997,8 +995,6 @@ Wire Wire Line
 	2350 7750 2600 7750
 Wire Wire Line
 	2350 7850 2600 7850
-Wire Wire Line
-	2350 7950 2600 7950
 Wire Wire Line
 	4600 7750 4800 7750
 Wire Wire Line
@@ -1642,6 +1638,10 @@ Text HLabel 2350 7150 0    50   Output ~ 0
 ~DSACK0
 Text HLabel 2350 7250 0    50   Output ~ 0
 ~DSACK1
+Text HLabel 2350 7450 0    50   Input ~ 0
+~DS
+Wire Wire Line
+	2350 7450 2600 7450
 Wire Bus Line
 	5500 2200 5500 5550
 Wire Bus Line

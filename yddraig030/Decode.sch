@@ -347,10 +347,6 @@ Text HLabel 4650 5250 2    50   Input ~ 0
 ~USB_OVERCUR
 Text HLabel 4650 4150 2    50   Output ~ 0
 ~CS_IDE
-Text HLabel 4650 4350 2    50   Output ~ 0
-~IDE_WR
-Text HLabel 4650 4250 2    50   Output ~ 0
-~IDE_RD
 Text HLabel 10700 1150 2    50   Output ~ 0
 ~IPL[0..2]
 $Comp
@@ -1381,8 +1377,32 @@ Text HLabel 4650 4850 2    50   Output ~ 0
 ~CS_DRAM
 Text HLabel 4650 4750 2    50   Output ~ 0
 ~CS_DRAMCPLD
+Text HLabel 2800 7150 2    50   Input ~ 0
+FC[0..2]
+Entry Wire Line
+	2600 7350 2700 7250
+Entry Wire Line
+	2700 7350 2600 7450
+Entry Wire Line
+	2700 7450 2600 7550
+Wire Wire Line
+	2300 7550 2600 7550
+Wire Wire Line
+	2600 7450 2300 7450
+Wire Wire Line
+	2300 7350 2600 7350
+Wire Bus Line
+	2700 7150 2800 7150
+Text Label 2400 7350 0    50   ~ 0
+FC0
+Text Label 2400 7450 0    50   ~ 0
+FC1
+Text Label 2400 7550 0    50   ~ 0
+FC2
 Wire Bus Line
 	10600 1150 10600 1450
+Wire Bus Line
+	2700 7150 2700 7450
 Wire Bus Line
 	7150 700  7150 1100
 Wire Bus Line
