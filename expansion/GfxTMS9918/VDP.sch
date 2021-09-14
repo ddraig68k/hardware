@@ -127,17 +127,6 @@ F 3 "https://www.onsemi.com/pub/Collateral/2N3903-D.PDF" H 9100 4300 50  0001 L 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_Coaxial J3
-U 1 1 612328F0
-P 10450 4600
-F 0 "J3" H 10550 4575 50  0000 L CNN
-F 1 "Conn_Coaxial" H 10550 4484 50  0000 L CNN
-F 2 "Ddraig:KLPX0848A2RG" H 10450 4600 50  0001 C CNN
-F 3 " ~" H 10450 4600 50  0001 C CNN
-	1    10450 4600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R2
 U 1 1 612328F6
 P 8800 4850
@@ -1536,4 +1525,15 @@ Wire Bus Line
 	1800 1000 1800 1900
 Wire Bus Line
 	8500 900  8500 2350
+$Comp
+L Ddraig:Conn_Coaxial-KLPX0848A2RG J3
+U 1 1 6144F3A8
+P 10450 4600
+F 0 "J3" H 10550 4575 50  0000 L CNN
+F 1 "CompositeOut" H 10550 4484 50  0000 L CNN
+F 2 "Ddraig:KLPX0848A2RG" H 10450 4600 50  0001 C CNN
+F 3 " ~" H 10450 4600 50  0001 C CNN
+	1    10450 4600
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

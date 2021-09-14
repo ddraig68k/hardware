@@ -29,6 +29,7 @@ architecture Behavioral of GfxTMS9918 is
     signal s_ledtime        : std_logic_vector(9 downto 0);
     signal s_clkdiv         : std_logic;
     signal s_idaddr         : std_logic;
+	
 begin
 
     dtack_gen : process(cpuclk_i, reset_i, csreg_i, csdata_i)
@@ -52,25 +53,25 @@ begin
 			end if;
 		end if;
 	end process;
-
+	
     ClkGen: entity work.Clock 
         port map (
                 clk_i => cpuclk_i, clk_div2_o => OPEN, clk_div4_o => OPEN, clk_div8_o => s_clkdiv
             );
 
     -- Generate DTACK signal
-    dtack_o <= '0' when s_dtackcount > "010" and (csdata_i = '0' or csreg_i = '0') else '1';
+    dtack_o <= '0' when s_dtackcount > "011" and (csdata_i = '0' or csreg_i = '0') else '1';
     
         -- Flash activity LED
-    led_o <= '1' when s_ledtime < "1111111111" else '0';
+    led_o <= '0' when s_ledtime < "1111111111" else '1';
               
     -- Address decoding
     s_idaddr <= '1' when addr_i = "1111111" else '0';
-    rd_o <= '0' when s_idaddr = '0' and csreg_i = '0' and rw_i = '1' else '1';
-    wr_o <= '0' when s_idaddr = '0' and csreg_i = '0' and rw_i = '0' else '1';
+    rd_o <= '0' when s_idaddr = '0' and uds_i = '0' and csreg_i = '0' and rw_i = '1' else '1';
+    wr_o <= '0' when s_idaddr = '0' and uds_i = '0' and csreg_i = '0' and rw_i = '0' else '1';
     
     
     -- Write out device ID
-    data_io <= BOARD_ID when s_idaddr = '1' and uds_i = '0' and csreg_i = '0' else "ZZZZZZZZ";
+    data_io <= BOARD_ID when addr_i = "1111111" and uds_i = '0' and csreg_i = '0' else "ZZZZZZZZ";
 end Behavioral;
 

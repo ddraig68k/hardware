@@ -30,10 +30,10 @@ NET "dtack_o"  LOC = "P33"  ;
 NET "lds_i"  LOC = "P39"  ;
 NET "led_o"  LOC = "P19"  ;
 NET "rd_o"  LOC = "P28"  ;
+NET "wr_o"  LOC = "P29"  ;
 NET "reset_i"  LOC = "P34"  ;
 NET "rw_i"  LOC = "P37"  ;
 NET "uds_i"  LOC = "P38"  ;
-NET "wr_o"  LOC = "P29"  ;
 
 #PACE: Start of PACE Area Constraints
 
