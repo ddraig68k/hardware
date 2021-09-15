@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 11
 Title "Y Ddraig Fechan"
 Date ""
 Rev ""
@@ -296,5 +296,17 @@ S 6850 3800 800  1000
 U 6145D500
 F0 "Keyboard" 50
 F1 "Keyboard.sch" 50
+$EndSheet
+$Sheet
+S 2600 4400 1350 1100
+U 61432D30
+F0 "RAM and ROM" 50
+F1 "RAMROM.sch" 50
+$EndSheet
+$Sheet
+S 3500 3150 900  950 
+U 6162D433
+F0 "Interrupts" 50
+F1 "Interrupts.sch" 50
 $EndSheet
 $EndSCHEMATC
