@@ -26,6 +26,10 @@ $CMP AT28C64B
 D EEPROM 256K 8K x 8 150 ns 4.5V-5.5V
 $ENDCMP
 #
+$CMP AT89C51-24PI
+D 8-bit Microcontroller with 4KB Flash and 128B RAM
+$ENDCMP
+#
 $CMP ATX-24
 D ATX Power supply 24pins
 K ATX PSU
