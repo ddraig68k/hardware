@@ -164,21 +164,21 @@ Text Label 2650 2450 2    50   ~ 0
 ~ROW6
 Text Label 2650 2550 2    50   ~ 0
 ~ROW7
-Text Label 3500 2750 2    50   ~ 0
+Text Label 1850 7300 0    50   ~ 0
 ~COL0
-Text Label 3500 2850 2    50   ~ 0
+Text Label 1850 7200 0    50   ~ 0
 ~COL1
-Text Label 3500 2950 2    50   ~ 0
+Text Label 1850 7100 0    50   ~ 0
 ~COL2
-Text Label 3500 3050 2    50   ~ 0
+Text Label 1850 7000 0    50   ~ 0
 ~COL3
-Text Label 3500 3150 2    50   ~ 0
+Text Label 1850 6900 0    50   ~ 0
 ~COL4
-Text Label 3500 3250 2    50   ~ 0
+Text Label 1850 6800 0    50   ~ 0
 ~COL5
-Text Label 3500 3350 2    50   ~ 0
+Text Label 1850 6700 0    50   ~ 0
 ~COL6
-Text Label 3500 3450 2    50   ~ 0
+Text Label 1850 6600 0    50   ~ 0
 ~COL7
 Wire Wire Line
 	3700 1850 2800 1850
@@ -403,7 +403,7 @@ Wire Wire Line
 Wire Wire Line
 	6650 2850 7550 2850
 Text HLabel 9700 6050 2    50   Input ~ 0
-BD[0..7]
+D[0..7]
 $Comp
 L 74xx:74LS138 U?
 U 1 1 614E88B4
@@ -518,10 +518,6 @@ Text Label 9150 2450 0    50   ~ 0
 BD6
 Text Label 9150 2550 0    50   ~ 0
 BD7
-Wire Wire Line
-	5000 3050 5400 3050
-Wire Wire Line
-	5400 3050 5400 4000
 $Comp
 L 74xx:74HCT541 U?
 U 1 1 61471D33
@@ -567,22 +563,6 @@ Wire Wire Line
 	8950 5300 9450 5300
 Wire Wire Line
 	8950 5400 9450 5400
-Text Label 9150 4700 0    50   ~ 0
-BD0
-Text Label 9150 4800 0    50   ~ 0
-BD1
-Text Label 9150 4900 0    50   ~ 0
-BD2
-Text Label 9150 5000 0    50   ~ 0
-BD3
-Text Label 9150 5100 0    50   ~ 0
-BD4
-Text Label 9150 5200 0    50   ~ 0
-BD5
-Text Label 9150 5300 0    50   ~ 0
-BD6
-Text Label 9150 5400 0    50   ~ 0
-BD7
 Wire Wire Line
 	9250 3950 7550 3950
 Wire Wire Line
@@ -753,6 +733,95 @@ Wire Wire Line
 	5200 5400 5200 6000
 Wire Wire Line
 	5200 6000 5400 6000
+Text Label 1850 6500 0    50   ~ 0
+~ROW0
+Text Label 1850 6400 0    50   ~ 0
+~ROW1
+Text Label 1850 6300 0    50   ~ 0
+~ROW2
+Text Label 1850 6200 0    50   ~ 0
+~ROW3
+Text Label 1850 6100 0    50   ~ 0
+~ROW4
+Text Label 1850 6000 0    50   ~ 0
+~ROW5
+Text Label 1850 5900 0    50   ~ 0
+~ROW6
+Text Label 1850 5800 0    50   ~ 0
+~ROW7
+Text Label 3500 2750 2    50   ~ 0
+~COL0
+Text Label 3500 2850 2    50   ~ 0
+~COL1
+Text Label 3500 2950 2    50   ~ 0
+~COL2
+Text Label 3500 3050 2    50   ~ 0
+~COL3
+Text Label 3500 3150 2    50   ~ 0
+~COL4
+Text Label 3500 3250 2    50   ~ 0
+~COL5
+Text Label 3500 3350 2    50   ~ 0
+~COL6
+Text Label 3500 3450 2    50   ~ 0
+~COL7
+Text Label 1850 5400 0    50   ~ 0
+~COL8
+Text Label 1850 5600 0    50   ~ 0
+~ROW8
+NoConn ~ 1600 5700
+Wire Wire Line
+	1850 5400 1600 5400
+Wire Wire Line
+	1600 5600 1850 5600
+Wire Wire Line
+	1850 5800 1600 5800
+Wire Wire Line
+	1850 5900 1600 5900
+Wire Wire Line
+	1850 6000 1600 6000
+Wire Wire Line
+	1850 6100 1600 6100
+Wire Wire Line
+	1850 6200 1600 6200
+Wire Wire Line
+	1850 6300 1600 6300
+Wire Wire Line
+	1850 6400 1600 6400
+Wire Wire Line
+	1850 6500 1600 6500
+Wire Wire Line
+	1850 6600 1600 6600
+Wire Wire Line
+	1850 6700 1600 6700
+Wire Wire Line
+	1850 6800 1600 6800
+Wire Wire Line
+	1850 6900 1600 6900
+Wire Wire Line
+	1850 7000 1600 7000
+Wire Wire Line
+	1850 7100 1600 7100
+Wire Wire Line
+	1850 7200 1600 7200
+Wire Wire Line
+	1850 7300 1600 7300
+Text Label 9100 4700 0    50   ~ 0
+D0
+Text Label 9100 4800 0    50   ~ 0
+D1
+Text Label 9100 4900 0    50   ~ 0
+D2
+Text Label 9100 5000 0    50   ~ 0
+D3
+Text Label 9100 5100 0    50   ~ 0
+D4
+Text Label 9100 5200 0    50   ~ 0
+D5
+Text Label 9100 5300 0    50   ~ 0
+D6
+Text Label 9100 5400 0    50   ~ 0
+D7
 Wire Bus Line
 	9550 1950 9550 6050
 $EndSCHEMATC

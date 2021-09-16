@@ -137,14 +137,6 @@ Text Label 10300 5300 0    50   ~ 0
 D6
 Text Label 10300 5400 0    50   ~ 0
 D7
-Wire Bus Line
-	10600 4500 10850 4500
-Text Label 10600 4500 0    50   ~ 0
-D[0..7]
-Text Label 8500 4500 0    50   ~ 0
-A[0..15]
-Wire Bus Line
-	8500 4500 8800 4500
 Entry Wire Line
 	7850 4600 7750 4700
 Entry Wire Line
@@ -193,10 +185,6 @@ Text Label 7550 5300 0    50   ~ 0
 D6
 Text Label 7550 5400 0    50   ~ 0
 D7
-Wire Bus Line
-	7850 4500 8100 4500
-Text Label 7850 4500 0    50   ~ 0
-D[0..7]
 Wire Wire Line
 	8900 5900 9200 5900
 Wire Wire Line
@@ -651,10 +639,6 @@ Text Label 6250 4800 0    50   ~ 0
 A1
 Text Label 6250 4700 0    50   ~ 0
 A0
-Text Label 5750 4500 0    50   ~ 0
-A[0..15]
-Wire Bus Line
-	5750 4500 6050 4500
 Wire Wire Line
 	6150 5900 6450 5900
 Entry Wire Line
@@ -773,14 +757,32 @@ Wire Wire Line
 	4150 1800 4150 2950
 Wire Wire Line
 	4050 1700 4050 2500
+Text HLabel 10800 3800 2    50   Input ~ 0
+A[0..15]
+Text HLabel 10800 3900 2    50   BiDi ~ 0
+D[0..7]
+Wire Bus Line
+	7850 3900 10600 3900
+Wire Bus Line
+	6050 4150 7750 4150
+Wire Bus Line
+	7750 4150 7750 3800
+Wire Bus Line
+	7750 3800 8800 3800
+Connection ~ 8800 3800
+Wire Bus Line
+	8800 3800 10800 3800
+Wire Bus Line
+	10800 3900 10600 3900
 Wire Bus Line
 	1500 1300 1500 2100
 Wire Bus Line
-	7850 4500 7850 5300
+	7850 3900 7850 5300
 Wire Bus Line
-	10600 4500 10600 5300
+	10600 3900 10600 5300
 Wire Bus Line
-	8800 4500 8800 5900
+	8800 3800 8800 5900
 Wire Bus Line
-	6050 4500 6050 5900
+	6050 4150 6050 5900
+Connection ~ 10600 3900
 $EndSCHEMATC
