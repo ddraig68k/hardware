@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 11
+Sheet 7 11
 Title ""
 Date ""
 Rev ""
@@ -402,7 +402,7 @@ Wire Wire Line
 	6650 3450 6650 2850
 Wire Wire Line
 	6650 2850 7550 2850
-Text HLabel 9700 6050 2    50   Input ~ 0
+Text HLabel 9700 6050 2    50   BiDi ~ 0
 D[0..7]
 $Comp
 L 74xx:74LS138 U?
@@ -688,8 +688,8 @@ Wire Wire Line
 	10300 1750 8950 1750
 Text Label 9600 1750 0    50   ~ 0
 ~FIFO_RD
-Text HLabel 5000 5500 0    50   Input ~ 0
-A0
+Text HLabel 4600 5350 0    50   Input ~ 0
+A[0..15]
 Text HLabel 5000 6100 0    50   Input ~ 0
 ~RD
 Text HLabel 5000 6200 0    50   Input ~ 0
@@ -699,38 +699,35 @@ Wire Wire Line
 Wire Wire Line
 	5400 6100 5000 6100
 Wire Wire Line
-	5000 5500 5400 5500
+	4900 5500 5400 5500
 $Comp
 L power:GND #PWR?
 U 1 1 614D6384
-P 5300 6300
-F 0 "#PWR?" H 5300 6050 50  0001 C CNN
-F 1 "GND" H 5305 6127 50  0000 C CNN
-F 2 "" H 5300 6300 50  0001 C CNN
-F 3 "" H 5300 6300 50  0001 C CNN
-	1    5300 6300
+P 5300 6550
+F 0 "#PWR?" H 5300 6300 50  0001 C CNN
+F 1 "GND" H 5305 6377 50  0000 C CNN
+F 2 "" H 5300 6550 50  0001 C CNN
+F 3 "" H 5300 6550 50  0001 C CNN
+	1    5300 6550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 6300 5300 5700
+	5300 6550 5300 5700
 Wire Wire Line
 	5300 5700 5400 5700
-Wire Wire Line
-	5400 5700 5400 5600
-Connection ~ 5400 5700
 $Comp
 L power:+5V #PWR?
 U 1 1 614E077C
-P 5200 5400
-F 0 "#PWR?" H 5200 5250 50  0001 C CNN
-F 1 "+5V" H 5215 5573 50  0000 C CNN
-F 2 "" H 5200 5400 50  0001 C CNN
-F 3 "" H 5200 5400 50  0001 C CNN
-	1    5200 5400
+P 5200 5150
+F 0 "#PWR?" H 5200 5000 50  0001 C CNN
+F 1 "+5V" H 5215 5323 50  0000 C CNN
+F 2 "" H 5200 5150 50  0001 C CNN
+F 3 "" H 5200 5150 50  0001 C CNN
+	1    5200 5150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 5400 5200 6000
+	5200 5150 5200 6000
 Wire Wire Line
 	5200 6000 5400 6000
 Text Label 1850 6500 0    50   ~ 0
@@ -822,6 +819,23 @@ Text Label 9100 5300 0    50   ~ 0
 D6
 Text Label 9100 5400 0    50   ~ 0
 D7
+Entry Wire Line
+	4800 5400 4900 5500
+Wire Bus Line
+	4600 5350 4800 5350
+Wire Bus Line
+	4800 5350 4800 5400
+Text Label 5000 5500 0    50   ~ 0
+A0
+Text Label 6650 5500 0    50   ~ 0
+~FIFO_RD
+Text Label 6650 5600 0    50   ~ 0
+~KBD_STATUS
+Wire Wire Line
+	5300 5700 5300 5600
+Wire Wire Line
+	5300 5600 5400 5600
+Connection ~ 5300 5700
 Wire Bus Line
 	9550 1950 9550 6050
 $EndSCHEMATC

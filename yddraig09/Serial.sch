@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 11
+Sheet 11 11
 Title "Y Ddraig Fechan"
 Date ""
 Rev ""
@@ -153,9 +153,9 @@ RTSB
 Text HLabel 2550 4000 0    50   Input ~ 0
 RESET
 Text HLabel 2550 3800 0    50   Input ~ 0
-~UART_RD
+~RD
 Text HLabel 2550 3700 0    50   Input ~ 0
-~UART_WR
+~WR
 Text HLabel 2550 3600 0    50   Input ~ 0
 ~UART_CS
 Text HLabel 1450 3400 0    50   Output ~ 0
