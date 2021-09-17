@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 11
+Sheet 6 11
 Title ""
 Date ""
 Rev ""
@@ -209,7 +209,7 @@ Wire Wire Line
 Text HLabel 2200 3550 0    50   Output ~ 0
 ~IRQ_VIA
 Text HLabel 2200 3650 0    50   Input ~ 0
-RD~WR
+~WR
 Text HLabel 2200 3950 0    50   Input ~ 0
 ~CS_VIA
 Text HLabel 2200 4150 0    50   Input ~ 0
