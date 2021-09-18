@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 12
+Sheet 6 13
 Title ""
 Date ""
 Rev ""
@@ -882,30 +882,24 @@ Wire Wire Line
 	4050 3550 3700 3550
 Text HLabel 1550 5600 0    50   Output ~ 0
 SPI_CLK
-Text HLabel 1550 5100 0    50   Output ~ 0
-~SPI_SS1
 Text HLabel 1550 5200 0    50   Output ~ 0
-~SPI_SS2
+~SPI_SS1
 Text HLabel 1550 5300 0    50   Output ~ 0
-SPI_SS3
+~SPI_SS2
 Text HLabel 1550 5400 0    50   Output ~ 0
 SPI_MOSI
 Text HLabel 1550 5500 0    50   Input ~ 0
 SPI_MISO
-Text Label 1750 5100 0    50   ~ 0
-~SPI_SS1
 Text Label 1750 5200 0    50   ~ 0
-~SPI_SS2
+~SPI_SS1
 Text Label 1750 5300 0    50   ~ 0
-~SPI_SS3
+~SPI_SS2
 Text Label 1750 5400 0    50   ~ 0
 SPI_MOSI
 Text Label 1750 5500 0    50   ~ 0
 SPI_MISO
 Text Label 1750 5600 0    50   ~ 0
 SPI_CLK
-Wire Wire Line
-	1750 5100 1550 5100
 Wire Wire Line
 	1750 5200 1550 5200
 Wire Wire Line
@@ -924,6 +918,63 @@ Wire Wire Line
 	5500 2150 5500 1800
 Wire Wire Line
 	3700 2150 5500 2150
+Text Label 3050 5600 2    50   ~ 0
+~SPI_SS3
+Text Label 3050 5700 2    50   ~ 0
+SPI_MOSI
+Text Label 3050 5800 2    50   ~ 0
+SPI_MISO
+Text Label 3050 5900 2    50   ~ 0
+SPI_CLK
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 617C4BAE
+P 3450 5700
+F 0 "J?" H 3530 5692 50  0000 L CNN
+F 1 "SPI" H 3530 5601 50  0000 L CNN
+F 2 "" H 3450 5700 50  0001 C CNN
+F 3 "~" H 3450 5700 50  0001 C CNN
+	1    3450 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 617C533E
+P 3150 5400
+F 0 "#PWR?" H 3150 5250 50  0001 C CNN
+F 1 "+5V" H 3165 5573 50  0000 C CNN
+F 2 "" H 3150 5400 50  0001 C CNN
+F 3 "" H 3150 5400 50  0001 C CNN
+	1    3150 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 617C5902
+P 3150 6100
+F 0 "#PWR?" H 3150 5850 50  0001 C CNN
+F 1 "GND" H 3155 5927 50  0000 C CNN
+F 2 "" H 3150 6100 50  0001 C CNN
+F 3 "" H 3150 6100 50  0001 C CNN
+	1    3150 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 6100 3150 6000
+Wire Wire Line
+	3150 6000 3250 6000
+Wire Wire Line
+	3250 5500 3150 5500
+Wire Wire Line
+	3150 5500 3150 5400
+Wire Wire Line
+	3250 5600 3050 5600
+Wire Wire Line
+	3250 5700 3050 5700
+Wire Wire Line
+	3250 5800 3050 5800
+Wire Wire Line
+	3250 5900 3050 5900
 Wire Bus Line
 	2050 2850 2050 3250
 Wire Bus Line

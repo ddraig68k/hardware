@@ -1,0 +1,408 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 13 13
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 3150 4250 2    50   Input ~ 0
+CLOCK_E
+Text HLabel 3150 4150 2    50   Input ~ 0
+CLOCK_Q
+Text HLabel 2300 4150 0    50   Output ~ 0
+~HALT
+Text HLabel 2100 4350 2    50   Input ~ 0
+BS
+Text HLabel 2100 4250 2    50   Input ~ 0
+BA
+Text HLabel 3150 3950 2    50   Input ~ 0
+~RESET
+Text HLabel 3150 4050 2    50   Input ~ 0
+RESET
+Text HLabel 2250 3100 0    50   Output ~ 0
+~INT_EXP
+Text HLabel 2250 3200 0    50   Output ~ 0
+~CS_EXP
+Text HLabel 1800 2050 0    50   BiDi ~ 0
+D[0..7]
+Text HLabel 3750 2150 2    50   Input ~ 0
+A[0..15]
+Text HLabel 2100 3900 2    50   Input ~ 0
+~WR
+Text HLabel 2100 4000 2    50   Input ~ 0
+~RD
+Text HLabel 2250 3700 0    50   Input ~ 0
+SPI_CLK
+Text HLabel 2250 3300 0    50   Input ~ 0
+~SPI_SS1
+Text HLabel 2250 3400 0    50   Input ~ 0
+~SPI_SS2
+Text HLabel 2250 3500 0    50   Input ~ 0
+SPI_MOSI
+Text HLabel 2250 3600 0    50   Output ~ 0
+SPI_MISO
+Text Label 2150 2250 0    50   ~ 0
+D0
+Text Label 2150 2350 0    50   ~ 0
+D1
+Text Label 2150 2450 0    50   ~ 0
+D2
+Text Label 2150 2550 0    50   ~ 0
+D3
+Text Label 2150 2650 0    50   ~ 0
+D4
+Text Label 2150 2750 0    50   ~ 0
+D5
+Text Label 2150 2850 0    50   ~ 0
+D6
+Text Label 2150 2950 0    50   ~ 0
+D7
+Text Label 3250 2350 0    50   ~ 0
+A0
+Text Label 3250 2450 0    50   ~ 0
+A1
+Text Label 3250 2550 0    50   ~ 0
+A2
+Text Label 3250 2650 0    50   ~ 0
+A3
+Text Label 3250 2750 0    50   ~ 0
+A4
+Text Label 3250 2850 0    50   ~ 0
+A5
+Text Label 3250 2950 0    50   ~ 0
+A6
+Text Label 3250 3050 0    50   ~ 0
+A7
+Text Label 3250 3150 0    50   ~ 0
+A8
+Text Label 3250 3250 0    50   ~ 0
+A9
+Text Label 3250 3350 0    50   ~ 0
+A10
+Text Label 3250 3450 0    50   ~ 0
+A11
+Text Label 3250 3550 0    50   ~ 0
+A12
+Text Label 3250 3650 0    50   ~ 0
+A13
+Text Label 3250 3750 0    50   ~ 0
+A14
+Text Label 3250 3850 0    50   ~ 0
+A15
+$Comp
+L power:+5V #PWR?
+U 1 1 619A9BC3
+P 2300 1850
+F 0 "#PWR?" H 2300 1700 50  0001 C CNN
+F 1 "+5V" H 2315 2023 50  0000 C CNN
+F 2 "" H 2300 1850 50  0001 C CNN
+F 3 "" H 2300 1850 50  0001 C CNN
+	1    2300 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 619A9F14
+P 2200 4800
+F 0 "#PWR?" H 2200 4650 50  0001 C CNN
+F 1 "+3V3" H 2215 4973 50  0000 C CNN
+F 2 "" H 2200 4800 50  0001 C CNN
+F 3 "" H 2200 4800 50  0001 C CNN
+	1    2200 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 619AA22E
+P 3250 1950
+F 0 "#PWR?" H 3250 1800 50  0001 C CNN
+F 1 "+12V" H 3265 2123 50  0000 C CNN
+F 2 "" H 3250 1950 50  0001 C CNN
+F 3 "" H 3250 1950 50  0001 C CNN
+	1    3250 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619AA4CD
+P 3050 4650
+F 0 "#PWR?" H 3050 4400 50  0001 C CNN
+F 1 "GND" H 3055 4477 50  0000 C CNN
+F 2 "" H 3050 4650 50  0001 C CNN
+F 3 "" H 3050 4650 50  0001 C CNN
+	1    3050 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x24_Odd_Even J?
+U 1 1 619AA978
+P 2650 3250
+F 0 "J?" H 2700 4567 50  0000 C CNN
+F 1 "Expansion" H 2700 4476 50  0000 C CNN
+F 2 "" H 2650 3250 50  0001 C CNN
+F 3 "~" H 2650 3250 50  0001 C CNN
+	1    2650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 619AE429
+P 3050 1950
+F 0 "#PWR?" H 3050 1800 50  0001 C CNN
+F 1 "+5V" H 3065 2123 50  0000 C CNN
+F 2 "" H 3050 1950 50  0001 C CNN
+F 3 "" H 3050 1950 50  0001 C CNN
+	1    3050 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2150 3050 2150
+Wire Wire Line
+	3050 2150 3050 1950
+Wire Wire Line
+	2950 2250 3250 2250
+Wire Wire Line
+	3250 2250 3250 1950
+Wire Wire Line
+	2450 2150 2300 2150
+Wire Wire Line
+	2300 2150 2300 1850
+$Comp
+L Connector:DIN-5_180degree J?
+U 1 1 619B837D
+P 6550 2900
+F 0 "J?" H 6550 2625 50  0000 C CNN
+F 1 "57PC5F" H 6550 2534 50  0000 C CNN
+F 2 "Ddraig:SWITCHCRAFT_57PC5F" H 6550 2900 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 6550 2900 50  0001 C CNN
+	1    6550 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 619B8383
+P 7800 2750
+F 0 "L?" V 7990 2750 50  0000 C CNN
+F 1 "L" V 7899 2750 50  0000 C CNN
+F 2 "" H 7800 2750 50  0001 C CNN
+F 3 "~" H 7800 2750 50  0001 C CNN
+	1    7800 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 619B8389
+P 7800 3150
+F 0 "L?" V 7990 3150 50  0000 C CNN
+F 1 "L" V 7899 3150 50  0000 C CNN
+F 2 "" H 7800 3150 50  0001 C CNN
+F 3 "~" H 7800 3150 50  0001 C CNN
+	1    7800 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push_DPDT SW?
+U 1 1 619B838F
+P 7300 2850
+F 0 "SW?" H 7300 3335 50  0000 C CNN
+F 1 "PowerSwitch" H 7300 3244 50  0000 C CNN
+F 2 "" H 7300 3050 50  0001 C CNN
+F 3 "~" H 7300 3050 50  0001 C CNN
+	1    7300 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2800 6950 2800
+Wire Wire Line
+	6950 2800 6950 2650
+Wire Wire Line
+	6950 2650 7100 2650
+Wire Wire Line
+	6850 2900 6950 2900
+Wire Wire Line
+	6950 2900 6950 3050
+Wire Wire Line
+	6950 3050 7100 3050
+Wire Wire Line
+	7500 2750 7650 2750
+Wire Wire Line
+	7500 3150 7650 3150
+$Comp
+L power:+5V #PWR?
+U 1 1 619B839D
+P 8250 2650
+F 0 "#PWR?" H 8250 2500 50  0001 C CNN
+F 1 "+5V" H 8265 2823 50  0000 C CNN
+F 2 "" H 8250 2650 50  0001 C CNN
+F 3 "" H 8250 2650 50  0001 C CNN
+	1    8250 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 619B83A3
+P 8600 3050
+F 0 "#PWR?" H 8600 2900 50  0001 C CNN
+F 1 "+12V" H 8615 3223 50  0000 C CNN
+F 2 "" H 8600 3050 50  0001 C CNN
+F 3 "" H 8600 3050 50  0001 C CNN
+	1    8600 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619B83A9
+P 6100 3000
+F 0 "#PWR?" H 6100 2750 50  0001 C CNN
+F 1 "GND" H 6105 2827 50  0000 C CNN
+F 2 "" H 6100 3000 50  0001 C CNN
+F 3 "" H 6100 3000 50  0001 C CNN
+	1    6100 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2900 6100 2900
+Wire Wire Line
+	6100 2900 6100 3000
+Wire Wire Line
+	6550 2600 6550 2500
+Wire Wire Line
+	6550 2500 6100 2500
+Wire Wire Line
+	6100 2500 6100 2900
+Connection ~ 6100 2900
+Wire Wire Line
+	7950 3150 8600 3150
+Wire Wire Line
+	8600 3150 8600 3050
+Wire Wire Line
+	7950 2750 8250 2750
+Wire Wire Line
+	8250 2750 8250 2650
+NoConn ~ 7500 2950
+NoConn ~ 7500 2550
+NoConn ~ 6250 2800
+$Comp
+L Device:C C?
+U 1 1 619B83BC
+P 9250 2800
+F 0 "C?" H 9365 2846 50  0000 L CNN
+F 1 "C" H 9365 2755 50  0000 L CNN
+F 2 "" H 9288 2650 50  0001 C CNN
+F 3 "~" H 9250 2800 50  0001 C CNN
+	1    9250 2800
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	1900 2150 2000 2250
+Entry Wire Line
+	1900 2250 2000 2350
+Entry Wire Line
+	1900 2350 2000 2450
+Entry Wire Line
+	1900 2450 2000 2550
+Entry Wire Line
+	1900 2550 2000 2650
+Entry Wire Line
+	1900 2650 2000 2750
+Entry Wire Line
+	1900 2750 2000 2850
+Entry Wire Line
+	1900 2850 2000 2950
+Wire Wire Line
+	2000 2250 2450 2250
+Wire Wire Line
+	2000 2350 2450 2350
+Wire Wire Line
+	2000 2450 2450 2450
+Wire Wire Line
+	2000 2550 2450 2550
+Wire Wire Line
+	2000 2650 2450 2650
+Wire Wire Line
+	2000 2750 2450 2750
+Wire Wire Line
+	2000 2850 2450 2850
+Wire Wire Line
+	2000 2950 2450 2950
+Wire Bus Line
+	1900 2050 1800 2050
+Entry Wire Line
+	3650 2250 3550 2350
+Entry Wire Line
+	3650 2350 3550 2450
+Entry Wire Line
+	3650 2450 3550 2550
+Entry Wire Line
+	3650 2550 3550 2650
+Entry Wire Line
+	3650 2650 3550 2750
+Entry Wire Line
+	3650 2750 3550 2850
+Entry Wire Line
+	3650 2850 3550 2950
+Entry Wire Line
+	3650 2950 3550 3050
+Entry Wire Line
+	3650 3050 3550 3150
+Entry Wire Line
+	3650 3150 3550 3250
+Entry Wire Line
+	3650 3250 3550 3350
+Entry Wire Line
+	3650 3350 3550 3450
+Entry Wire Line
+	3650 3450 3550 3550
+Entry Wire Line
+	3650 3550 3550 3650
+Entry Wire Line
+	3650 3650 3550 3750
+Entry Wire Line
+	3650 3750 3550 3850
+Wire Wire Line
+	2950 2350 3550 2350
+Wire Wire Line
+	2950 2450 3550 2450
+Wire Wire Line
+	2950 2550 3550 2550
+Wire Wire Line
+	2950 2650 3550 2650
+Wire Wire Line
+	2950 2750 3550 2750
+Wire Wire Line
+	2950 2850 3550 2850
+Wire Wire Line
+	2950 2950 3550 2950
+Wire Wire Line
+	2950 3050 3550 3050
+Wire Wire Line
+	2950 3150 3550 3150
+Wire Wire Line
+	2950 3250 3550 3250
+Wire Wire Line
+	2950 3350 3550 3350
+Wire Wire Line
+	2950 3450 3550 3450
+Wire Wire Line
+	2950 3550 3550 3550
+Wire Wire Line
+	2950 3650 3550 3650
+Wire Wire Line
+	2950 3750 3550 3750
+Wire Wire Line
+	2950 3850 3550 3850
+Wire Bus Line
+	3650 2150 3750 2150
+Wire Bus Line
+	1900 2050 1900 2850
+Wire Bus Line
+	3650 2150 3650 3700
+$EndSCHEMATC

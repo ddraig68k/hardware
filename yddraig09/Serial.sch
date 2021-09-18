@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 12
+Sheet 10 13
 Title "Y Ddraig Fechan"
 Date ""
 Rev ""
@@ -157,7 +157,7 @@ Text HLabel 3000 3800 0    50   Input ~ 0
 Text HLabel 3000 3700 0    50   Input ~ 0
 ~WR
 Text HLabel 3000 3600 0    50   Input ~ 0
-~UART_CS
+~CS_UART
 Text HLabel 1950 3400 0    50   Output ~ 0
 ~INT_UART
 Wire Wire Line
