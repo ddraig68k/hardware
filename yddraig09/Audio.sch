@@ -643,7 +643,7 @@ U 1 1 6171BA42
 P 9600 3500
 F 0 "RV401" H 9531 3546 50  0000 R CNN
 F 1 "100K" H 9531 3455 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 9600 3500 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3386F_Vertical" H 9600 3500 50  0001 C CNN
 F 3 "~" H 9600 3500 50  0001 C CNN
 	1    9600 3500
 	1    0    0    -1  
