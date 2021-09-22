@@ -19,7 +19,7 @@ U 1 1 60AC6A3B
 P 8600 2450
 F 0 "U1104" H 8250 3800 50  0000 C CNN
 F 1 "MC68B09E" H 8900 1100 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm" H 8600 950 50  0001 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_Socket" H 8600 950 50  0001 C CNN
 F 3 "http://pdf.datasheetcatalog.com/datasheet/motorola/MC68B09S.pdf" H 8500 3875 50  0001 C CNN
 	1    8600 2450
 	1    0    0    -1  

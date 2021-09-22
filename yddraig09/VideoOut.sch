@@ -180,28 +180,6 @@ F 3 "~" H 6250 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R512
-U 1 1 619F81D5
-P 6250 2550
-F 0 "R512" V 6150 2450 50  0000 C CNN
-F 1 "75R" V 6150 2700 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6180 2550 50  0001 C CNN
-F 3 "~" H 6250 2550 50  0001 C CNN
-	1    6250 2550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R513
-U 1 1 619F81DB
-P 6250 2800
-F 0 "R513" V 6150 2700 50  0000 C CNN
-F 1 "75R" V 6150 2950 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6180 2800 50  0001 C CNN
-F 3 "~" H 6250 2800 50  0001 C CNN
-	1    6250 2800
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:CP C508
 U 1 1 619F81E1
 P 7100 1550
@@ -245,28 +223,6 @@ F 3 "~" H 7100 2300 50  0001 C CNN
 	1    7100 2300
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Device:CP C512
-U 1 1 619F81F9
-P 7100 2550
-F 0 "C512" V 7200 2750 50  0000 C CNN
-F 1 "220uF" V 7200 2350 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 7138 2400 50  0001 C CNN
-F 3 "~" H 7100 2550 50  0001 C CNN
-	1    7100 2550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:CP C513
-U 1 1 619F81FF
-P 7100 2800
-F 0 "C513" V 7200 3000 50  0000 C CNN
-F 1 "220uF" V 7200 2600 50  0000 C CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 7138 2650 50  0001 C CNN
-F 3 "~" H 7100 2800 50  0001 C CNN
-	1    7100 2800
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	6950 1550 6400 1550
 Wire Wire Line
@@ -275,10 +231,6 @@ Wire Wire Line
 	6400 2050 6950 2050
 Wire Wire Line
 	6950 2300 6650 2300
-Wire Wire Line
-	6400 2550 6950 2550
-Wire Wire Line
-	6950 2800 6400 2800
 Wire Wire Line
 	5000 1800 5650 1800
 Wire Wire Line
@@ -303,18 +255,6 @@ Wire Wire Line
 	5750 2200 5750 2300
 Wire Wire Line
 	5750 2300 6100 2300
-Wire Wire Line
-	5000 2400 5750 2400
-Wire Wire Line
-	5750 2400 5750 2550
-Wire Wire Line
-	5750 2550 6100 2550
-Wire Wire Line
-	5000 2500 5650 2500
-Wire Wire Line
-	5650 2500 5650 2800
-Wire Wire Line
-	5650 2800 6100 2800
 $Comp
 L power:+5V #PWR0510
 U 1 1 619F821D
@@ -340,14 +280,6 @@ Text Label 7650 2050 0    50   ~ 0
 BOUT
 Text Label 7650 2300 0    50   ~ 0
 CVOUT
-Text Label 7650 2550 0    50   ~ 0
-YOUT
-Text Label 7650 2800 0    50   ~ 0
-COUT
-Wire Wire Line
-	7650 2800 7250 2800
-Wire Wire Line
-	7250 2550 7650 2550
 Wire Wire Line
 	7650 2300 7250 2300
 Wire Wire Line
@@ -832,51 +764,6 @@ PAL_CLK
 Wire Wire Line
 	4000 2200 3350 2200
 $Comp
-L Connector:Mini-DIN-4 J501
-U 1 1 619F8336
-P 10000 2150
-F 0 "J501" H 10000 2517 50  0000 C CNN
-F 1 "S-Video" H 10000 2426 50  0000 C CNN
-F 2 "Ddraig:MINI-DIN-4-TE_5749181-1" H 10000 2150 50  0001 C CNN
-F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 10000 2150 50  0001 C CNN
-	1    10000 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0517
-U 1 1 619F833C
-P 10000 2500
-F 0 "#PWR0517" H 10000 2250 50  0001 C CNN
-F 1 "GND" H 10005 2327 50  0000 C CNN
-F 2 "" H 10000 2500 50  0001 C CNN
-F 3 "" H 10000 2500 50  0001 C CNN
-	1    10000 2500
-	1    0    0    -1  
-$EndComp
-Text Label 10450 2050 0    50   ~ 0
-YOUT
-Text Label 9550 2050 2    50   ~ 0
-COUT
-Wire Wire Line
-	10450 2050 10300 2050
-Wire Wire Line
-	9700 2050 9550 2050
-Wire Wire Line
-	10300 2150 10400 2150
-Wire Wire Line
-	10400 2150 10400 2450
-Wire Wire Line
-	10400 2450 10000 2450
-Wire Wire Line
-	9600 2450 9600 2150
-Wire Wire Line
-	9600 2150 9700 2150
-Wire Wire Line
-	10000 2500 10000 2450
-Connection ~ 10000 2450
-Wire Wire Line
-	10000 2450 9600 2450
-$Comp
 L Connector:Conn_Coaxial J502
 U 1 1 619F834E
 P 10050 900
@@ -1135,4 +1022,6 @@ Wire Wire Line
 Connection ~ 9900 6250
 Wire Wire Line
 	9900 6250 10400 6250
+NoConn ~ 5000 2400
+NoConn ~ 5000 2500
 $EndSCHEMATC

@@ -62,6 +62,10 @@ $CMP D68K_96PIN_PCB
 D DIN41612 C 96 Pin Female header for motherboard
 $ENDCMP
 #
+$CMP DIN41612_C64_Male_RA
+D DIN41612 C 64 Pin Male header Right Angled
+$ENDCMP
+#
 $CMP ECS-3963
 D HCMOS Oscillator 3.3V Enable/Disable 4-SMD, No Lead
 $ENDCMP
