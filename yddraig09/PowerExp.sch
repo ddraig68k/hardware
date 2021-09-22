@@ -628,7 +628,7 @@ U 1 1 6147761E
 P 9850 2350
 F 0 "U1201" H 9850 2592 50  0000 C CNN
 F 1 "TC1262-3.3VAB" H 9850 2501 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabUp" H 9850 2575 50  0001 C CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 9850 2575 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21373C.pdf" H 9850 2050 50  0001 C CNN
 	1    9850 2350
 	1    0    0    -1  
