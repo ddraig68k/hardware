@@ -783,31 +783,6 @@ X A1 9 500 1100 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #
-# Connector_Conn_Coaxial
-#
-DEF Connector_Conn_Coaxial J 0 40 Y N 1 F N
-F0 "J" 10 120 50 H V C CNN
-F1 "Connector_Conn_Coaxial" 115 0 50 V V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- *BNC*
- *SMA*
- *SMB*
- *SMC*
- *Cinch*
-$ENDFPLIST
-DRAW
-A -2 0 71 1636 0 0 1 10 N -70 20 70 0
-A -1 0 71 0 -1638 0 1 10 N 70 0 -70 -20
-C 0 0 20 0 1 8 N
-P 2 0 1 0 -100 0 -20 0 N
-P 2 0 1 0 0 -100 0 -70 N
-X In 1 -200 0 100 R 50 50 1 1 P
-X Ext 2 0 -200 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Connector_DB9_Male_MountingHoles
 #
 DEF Connector_DB9_Male_MountingHoles J 0 40 Y N 1 F N
@@ -1287,6 +1262,31 @@ X SCIN 6 -500 50 150 R 50 50 1 1 I
 X NPIN 7 -500 -50 150 R 50 50 1 1 I
 X BFOUT 8 500 -50 150 L 50 50 1 1 O
 X NC 9 -500 -150 150 R 50 50 1 1 N N
+ENDDRAW
+ENDDEF
+#
+# Ddraig_Conn_Coaxial-KLPX0848A2RG
+#
+DEF Ddraig_Conn_Coaxial-KLPX0848A2RG J 0 40 Y N 1 F N
+F0 "J" 10 120 50 H V C CNN
+F1 "Ddraig_Conn_Coaxial-KLPX0848A2RG" 115 0 50 V V C CNN
+F2 "Ddraig:KLPX0848A2RG" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *BNC*
+ *SMA*
+ *SMB*
+ *SMC*
+ *Cinch*
+$ENDFPLIST
+DRAW
+A -2 0 71 1636 0 0 1 10 N -70 20 70 0
+A -1 0 71 0 -1638 0 1 10 N 70 0 -70 -20
+C 0 0 20 0 1 8 N
+P 2 0 1 0 -100 0 -20 0 N
+P 2 0 1 0 0 -100 0 -70 N
+X Ext 1 0 -200 100 U 50 50 1 1 P
+X In 2 -200 0 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
