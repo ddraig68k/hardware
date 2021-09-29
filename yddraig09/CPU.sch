@@ -1262,11 +1262,11 @@ Wire Wire Line
 	9450 3450 10300 3450
 Wire Wire Line
 	9950 3600 9950 3350
+Connection ~ 9950 3350
+Wire Wire Line
+	9950 3350 9100 3350
 Wire Bus Line
 	7450 1050 7450 1850
 Wire Bus Line
 	9750 1050 9750 2650
-Connection ~ 9950 3350
-Wire Wire Line
-	9950 3350 9100 3350
 $EndSCHEMATC

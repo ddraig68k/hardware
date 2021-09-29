@@ -83,6 +83,10 @@ $CMP MAX3420EECJ+
 D Usb Peripheral Controller w/Spi Interface
 $ENDCMP
 #
+$CMP MC1377
+D Color Television RGB to PAL/NTSC encoder
+$ENDCMP
+#
 $CMP MC68881FN
 D MC68881/2 Math Co-Processor
 $ENDCMP
