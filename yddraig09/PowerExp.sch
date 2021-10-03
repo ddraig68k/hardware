@@ -816,21 +816,21 @@ Text HLabel 2450 3450 0    50   Output ~ 0
 Wire Bus Line
 	2150 2350 2050 2350
 Wire Wire Line
-	2250 3250 2700 3250
-Wire Wire Line
-	2250 3150 2700 3150
-Wire Wire Line
-	2250 3050 2700 3050
-Wire Wire Line
-	2250 2950 2700 2950
-Wire Wire Line
-	2250 2850 2700 2850
-Wire Wire Line
-	2250 2750 2700 2750
+	2250 2550 2700 2550
 Wire Wire Line
 	2250 2650 2700 2650
 Wire Wire Line
-	2250 2550 2700 2550
+	2250 2750 2700 2750
+Wire Wire Line
+	2250 2850 2700 2850
+Wire Wire Line
+	2250 2950 2700 2950
+Wire Wire Line
+	2250 3050 2700 3050
+Wire Wire Line
+	2250 3150 2700 3150
+Wire Wire Line
+	2250 3250 2700 3250
 Entry Wire Line
 	2150 3150 2250 3250
 Entry Wire Line
@@ -847,21 +847,21 @@ Entry Wire Line
 	2150 2550 2250 2650
 Entry Wire Line
 	2150 2450 2250 2550
-Text Label 2400 3250 0    50   ~ 0
-D7
-Text Label 2400 3150 0    50   ~ 0
-D6
-Text Label 2400 3050 0    50   ~ 0
-D5
-Text Label 2400 2950 0    50   ~ 0
-D4
-Text Label 2400 2850 0    50   ~ 0
-D3
-Text Label 2400 2750 0    50   ~ 0
-D2
-Text Label 2400 2650 0    50   ~ 0
-D1
 Text Label 2400 2550 0    50   ~ 0
+D7
+Text Label 2400 2650 0    50   ~ 0
+D6
+Text Label 2400 2750 0    50   ~ 0
+D5
+Text Label 2400 2850 0    50   ~ 0
+D4
+Text Label 2400 2950 0    50   ~ 0
+D3
+Text Label 2400 3050 0    50   ~ 0
+D2
+Text Label 2400 3150 0    50   ~ 0
+D1
+Text Label 2400 3250 0    50   ~ 0
 D0
 Text HLabel 2450 3950 0    50   Output ~ 0
 SPI_MISO
