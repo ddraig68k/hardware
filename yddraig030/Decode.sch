@@ -120,14 +120,10 @@ Wire Wire Line
 Connection ~ 3500 6800
 Wire Wire Line
 	3500 6800 3550 6800
-Text Label 2300 4850 2    50   ~ 0
-A0
-Text Label 2300 4750 2    50   ~ 0
-A1
 Text Label 2300 4650 2    50   ~ 0
-A2
+A0
 Text Label 2300 4550 2    50   ~ 0
-A3
+A1
 Text Label 2300 4450 2    50   ~ 0
 A8
 Text Label 2300 4350 2    50   ~ 0
@@ -176,21 +172,21 @@ Text Label 2300 2050 2    50   ~ 0
 A30
 Text Label 2300 1950 2    50   ~ 0
 A31
-Text Label 2300 4950 2    50   ~ 0
+Text Label 2300 4750 2    50   ~ 0
 D24
-Text Label 2300 5050 2    50   ~ 0
+Text Label 2300 4850 2    50   ~ 0
 D25
-Text Label 2300 5150 2    50   ~ 0
+Text Label 2300 4950 2    50   ~ 0
 D26
-Text Label 2300 5250 2    50   ~ 0
+Text Label 2300 5050 2    50   ~ 0
 D27
-Text Label 2300 5350 2    50   ~ 0
+Text Label 2300 5150 2    50   ~ 0
 D28
-Text Label 2300 5450 2    50   ~ 0
+Text Label 2300 5250 2    50   ~ 0
 D29
-Text Label 2300 5550 2    50   ~ 0
+Text Label 2300 5350 2    50   ~ 0
 D30
-Text Label 2300 5650 2    50   ~ 0
+Text Label 2300 5450 2    50   ~ 0
 D31
 $Comp
 L Connector_Generic:Conn_01x06 J?
@@ -293,7 +289,7 @@ Text HLabel 12000 9050 0    50   Input ~ 0
 ~DRAM_DSACK1
 Text HLabel 1850 1750 0    50   Input ~ 0
 A[0..31]
-Text HLabel 1650 4750 0    50   BiDi ~ 0
+Text HLabel 1650 4550 0    50   BiDi ~ 0
 D[0..31]
 Text HLabel 4650 5850 2    50   Output ~ 0
 ~LDS
@@ -645,9 +641,9 @@ Entry Wire Line
 Entry Wire Line
 	1950 4550 2050 4650
 Entry Wire Line
-	1950 4650 2050 4750
+	1750 4650 1850 4750
 Entry Wire Line
-	1950 4750 2050 4850
+	1750 4750 1850 4850
 Entry Wire Line
 	1750 4850 1850 4950
 Entry Wire Line
@@ -660,10 +656,6 @@ Entry Wire Line
 	1750 5250 1850 5350
 Entry Wire Line
 	1750 5350 1850 5450
-Entry Wire Line
-	1750 5450 1850 5550
-Entry Wire Line
-	1750 5550 1850 5650
 Wire Wire Line
 	2450 1950 2050 1950
 Wire Wire Line
@@ -717,9 +709,9 @@ Wire Wire Line
 Wire Wire Line
 	2450 4650 2050 4650
 Wire Wire Line
-	2450 4750 2050 4750
+	2450 4750 1850 4750
 Wire Wire Line
-	2450 4850 2050 4850
+	2450 4850 1850 4850
 Wire Wire Line
 	2450 4950 1850 4950
 Wire Wire Line
@@ -732,12 +724,8 @@ Wire Wire Line
 	2450 5350 1850 5350
 Wire Wire Line
 	2450 5450 1850 5450
-Wire Wire Line
-	2450 5550 1850 5550
-Wire Wire Line
-	2450 5650 1850 5650
 Wire Bus Line
-	1750 4750 1650 4750
+	1750 4550 1650 4550
 Wire Bus Line
 	1950 1750 1850 1750
 Wire Wire Line
@@ -1444,22 +1432,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 12950 5450 50  0001 C CNN
 	1    12950 5450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13450 5150 13650 5150
-Wire Wire Line
-	13450 5250 13650 5250
-Wire Wire Line
-	13450 5350 13650 5350
-Wire Wire Line
-	13450 5450 13650 5450
-Wire Wire Line
-	13450 5550 13650 5550
-Wire Wire Line
-	13450 5650 13650 5650
-Wire Wire Line
-	13450 5750 13650 5750
-Wire Wire Line
-	13450 5850 13650 5850
 Text Label 5200 4750 0    50   ~ 0
 EXPSEL0
 Text Label 5200 4850 0    50   ~ 0
@@ -1480,6 +1452,66 @@ Text Label 12250 5350 2    50   ~ 0
 EXPSEL2
 Wire Wire Line
 	4450 5050 4650 5050
+Wire Wire Line
+	12450 5650 12250 5650
+Text Label 12250 5650 2    50   ~ 0
+EXPSELEN
+$Comp
+L Device:R_Network08 RN?
+U 1 1 615D2346
+P 14700 4850
+F 0 "RN?" H 15088 4896 50  0000 L CNN
+F 1 "10K" H 14600 5050 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 15175 4850 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 14700 4850 50  0001 C CNN
+	1    14700 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 615D234C
+P 14300 4600
+F 0 "#PWR?" H 14300 4450 50  0001 C CNN
+F 1 "+5V" H 14315 4773 50  0000 C CNN
+F 2 "" H 14300 4600 50  0001 C CNN
+F 3 "" H 14300 4600 50  0001 C CNN
+	1    14300 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14300 4600 14300 4650
+Wire Wire Line
+	14300 5150 14300 5050
+Wire Wire Line
+	13450 5150 14300 5150
+Wire Wire Line
+	14400 5250 14400 5050
+Wire Wire Line
+	13450 5250 14400 5250
+Wire Wire Line
+	14500 5350 14500 5050
+Wire Wire Line
+	13450 5350 14500 5350
+Wire Wire Line
+	14600 5450 14600 5050
+Wire Wire Line
+	13450 5450 14600 5450
+Wire Wire Line
+	14700 5550 14700 5050
+Wire Wire Line
+	13450 5550 14700 5550
+Wire Wire Line
+	14800 5650 14800 5050
+Wire Wire Line
+	13450 5650 14800 5650
+Wire Wire Line
+	14900 5750 14900 5050
+Wire Wire Line
+	13450 5750 14900 5750
+Wire Wire Line
+	15000 5850 15000 5050
+Wire Wire Line
+	13450 5850 15000 5850
 Wire Bus Line
 	14600 1500 14600 1800
 Wire Bus Line
@@ -1489,7 +1521,7 @@ Wire Bus Line
 Wire Bus Line
 	9100 8650 9100 9450
 Wire Bus Line
-	1750 4750 1750 5550
+	1750 4550 1750 5350
 Wire Bus Line
-	1950 1750 1950 4750
+	1950 1750 1950 4550
 $EndSCHEMATC
