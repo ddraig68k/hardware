@@ -1244,8 +1244,6 @@ Wire Wire Line
 Connection ~ 3250 5450
 Wire Wire Line
 	3250 5450 4600 5450
-Wire Bus Line
-	1650 1550 1650 2350
 $Comp
 L Ddraig:YM3014B U16
 U 1 1 612BEC77
@@ -1257,4 +1255,6 @@ F 3 "" H 6550 1500 50  0001 C CNN
 	1    6550 1500
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	1650 1550 1650 2350
 $EndSCHEMATC

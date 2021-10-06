@@ -1015,12 +1015,6 @@ Wire Wire Line
 NoConn ~ 9100 2950
 Wire Wire Line
 	9100 3450 9450 3450
-Wire Wire Line
-	10300 3350 9950 3350
-Text HLabel 10300 3450 2    50   Output ~ 0
-BS
-Text HLabel 10300 3350 2    50   Output ~ 0
-BA
 NoConn ~ 9100 3050
 $Comp
 L Device:C C78
@@ -1257,12 +1251,8 @@ Wire Wire Line
 	9950 3950 9950 3900
 Wire Wire Line
 	9450 3600 9450 3450
-Connection ~ 9450 3450
-Wire Wire Line
-	9450 3450 10300 3450
 Wire Wire Line
 	9950 3600 9950 3350
-Connection ~ 9950 3350
 Wire Wire Line
 	9950 3350 9100 3350
 Wire Bus Line

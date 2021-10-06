@@ -485,8 +485,6 @@ Entry Wire Line
 	2500 6200 2600 6300
 Entry Wire Line
 	2500 6300 2600 6400
-Entry Wire Line
-	2500 6400 2600 6500
 Text HLabel 1500 6800 0    50   Input ~ 0
 ~WR
 Wire Wire Line
@@ -535,8 +533,6 @@ Text Label 2750 6300 0    50   ~ 0
 D5
 Text Label 2750 6400 0    50   ~ 0
 D6
-Text Label 2750 6500 0    50   ~ 0
-D7
 Wire Wire Line
 	2600 5800 3000 5800
 Wire Wire Line
@@ -551,8 +547,6 @@ Wire Wire Line
 	2600 6300 3000 6300
 Wire Wire Line
 	2600 6400 3000 6400
-Wire Wire Line
-	2600 6500 3000 6500
 Wire Wire Line
 	2350 6700 3000 6700
 Wire Bus Line
@@ -930,8 +924,14 @@ Wire Bus Line
 	6950 5350 6950 4950
 Wire Bus Line
 	6950 4950 10850 4950
+Entry Wire Line
+	2500 6400 2600 6500
 Wire Bus Line
 	10850 3350 10850 4950
 Wire Bus Line
 	2500 5500 2500 7600
+Wire Wire Line
+	2600 6500 3000 6500
+Text Label 2750 6500 0    50   ~ 0
+D7
 $EndSCHEMATC

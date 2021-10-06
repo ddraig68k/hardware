@@ -1254,23 +1254,15 @@ Wire Wire Line
 Wire Wire Line
 	3700 3850 4600 3850
 Wire Wire Line
-	5100 5000 5100 5850
+	5000 5000 5000 5850
 Wire Wire Line
-	5000 5000 5000 5500
+	5100 5000 5100 5500
 Wire Wire Line
 	4600 3850 4600 5850
 Wire Wire Line
 	4500 3950 4500 5500
 Wire Wire Line
-	4600 5850 5100 5850
-Wire Wire Line
-	4500 5500 5000 5500
-Connection ~ 5100 5850
-Wire Wire Line
-	5100 5850 5950 5850
-Connection ~ 5000 5500
-Wire Wire Line
-	5000 5500 5950 5500
+	4600 5850 5000 5850
 Wire Wire Line
 	7200 5850 6550 5850
 Wire Wire Line
@@ -1424,6 +1416,14 @@ Wire Wire Line
 	6800 1250 6800 1350
 Wire Wire Line
 	6800 1350 7800 1350
+Wire Wire Line
+	4500 5500 5100 5500
+Connection ~ 5000 5850
+Wire Wire Line
+	5000 5850 5950 5850
+Connection ~ 5100 5500
+Wire Wire Line
+	5100 5500 5950 5500
 Wire Bus Line
 	2050 2850 2050 3250
 Wire Bus Line

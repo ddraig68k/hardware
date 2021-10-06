@@ -786,11 +786,7 @@ Wire Wire Line
 Connection ~ 2600 5250
 NoConn ~ 2700 5050
 Wire Wire Line
-	2450 4550 2700 4550
-Wire Wire Line
-	2450 4450 2700 4450
-Wire Wire Line
-	2450 4350 2700 4350
+	2450 2450 2700 2450
 Wire Wire Line
 	2450 4250 2700 4250
 Wire Wire Line
@@ -808,60 +804,60 @@ Wire Wire Line
 Wire Wire Line
 	2450 3550 2700 3550
 Wire Wire Line
-	2450 3450 2700 3450
+	3750 3350 3400 3350
 Wire Wire Line
 	2450 3350 2700 3350
-Text HLabel 2450 3450 0    50   Output ~ 0
+Text HLabel 3750 3350 2    50   Output ~ 0
 ~INT_EXP2
 Wire Bus Line
-	2150 2350 2050 2350
+	1700 2350 1600 2350
 Wire Wire Line
-	2250 2550 2700 2550
+	1800 2550 2700 2550
 Wire Wire Line
-	2250 2650 2700 2650
+	1800 2650 2700 2650
 Wire Wire Line
-	2250 2750 2700 2750
+	1800 2750 2700 2750
 Wire Wire Line
-	2250 2850 2700 2850
+	1800 2850 2700 2850
 Wire Wire Line
-	2250 2950 2700 2950
+	1800 2950 2700 2950
 Wire Wire Line
-	2250 3050 2700 3050
+	1800 3050 2700 3050
 Wire Wire Line
-	2250 3150 2700 3150
+	1800 3150 2700 3150
 Wire Wire Line
-	2250 3250 2700 3250
+	1800 3250 2700 3250
 Entry Wire Line
-	2150 3150 2250 3250
+	1700 3150 1800 3250
 Entry Wire Line
-	2150 3050 2250 3150
+	1700 3050 1800 3150
 Entry Wire Line
-	2150 2950 2250 3050
+	1700 2950 1800 3050
 Entry Wire Line
-	2150 2850 2250 2950
+	1700 2850 1800 2950
 Entry Wire Line
-	2150 2750 2250 2850
+	1700 2750 1800 2850
 Entry Wire Line
-	2150 2650 2250 2750
+	1700 2650 1800 2750
 Entry Wire Line
-	2150 2550 2250 2650
+	1700 2550 1800 2650
 Entry Wire Line
-	2150 2450 2250 2550
-Text Label 2400 2550 0    50   ~ 0
+	1700 2450 1800 2550
+Text Label 2000 2550 0    50   ~ 0
 D7
-Text Label 2400 2650 0    50   ~ 0
+Text Label 2000 2650 0    50   ~ 0
 D6
-Text Label 2400 2750 0    50   ~ 0
+Text Label 2000 2750 0    50   ~ 0
 D5
-Text Label 2400 2850 0    50   ~ 0
+Text Label 2000 2850 0    50   ~ 0
 D4
-Text Label 2400 2950 0    50   ~ 0
+Text Label 2000 2950 0    50   ~ 0
 D3
-Text Label 2400 3050 0    50   ~ 0
+Text Label 2000 3050 0    50   ~ 0
 D2
-Text Label 2400 3150 0    50   ~ 0
+Text Label 2000 3150 0    50   ~ 0
 D1
-Text Label 2400 3250 0    50   ~ 0
+Text Label 2000 3250 0    50   ~ 0
 D0
 Text HLabel 2450 3950 0    50   Output ~ 0
 SPI_MISO
@@ -877,17 +873,13 @@ Text HLabel 2450 4250 0    50   Input ~ 0
 ~RD
 Text HLabel 2450 4150 0    50   Input ~ 0
 ~WR
-Text HLabel 2050 2350 0    50   BiDi ~ 0
+Text HLabel 1600 2350 0    50   BiDi ~ 0
 D[0..7]
 Text HLabel 2450 3550 0    50   Output ~ 0
 ~CS_EXP
 Text HLabel 2450 3350 0    50   Output ~ 0
 ~INT_EXP1
-Text HLabel 2450 4450 0    50   Input ~ 0
-BA
-Text HLabel 2450 4550 0    50   Input ~ 0
-BS
-Text HLabel 2450 4350 0    50   Output ~ 0
+Text HLabel 2450 2450 0    50   Output ~ 0
 ~HALT
 Wire Wire Line
 	3400 2850 3750 2850
@@ -898,71 +890,71 @@ Wire Wire Line
 Wire Wire Line
 	3400 2550 3750 2550
 Wire Bus Line
-	4100 3350 4200 3350
+	4350 3350 4450 3350
 Wire Wire Line
-	3400 3550 4000 3550
+	3400 3550 4250 3550
 Wire Wire Line
-	3400 3650 4000 3650
+	3400 3650 4250 3650
 Wire Wire Line
-	3400 3750 4000 3750
+	3400 3750 4250 3750
 Wire Wire Line
-	3400 3850 4000 3850
+	3400 3850 4250 3850
 Wire Wire Line
-	3400 3950 4000 3950
+	3400 3950 4250 3950
 Wire Wire Line
-	3400 4050 4000 4050
+	3400 4050 4250 4050
 Wire Wire Line
-	3400 4150 4000 4150
+	3400 4150 4250 4150
 Wire Wire Line
-	3400 4250 4000 4250
+	3400 4250 4250 4250
 Wire Wire Line
-	3400 4350 4000 4350
+	3400 4350 4250 4350
 Wire Wire Line
-	3400 4450 4000 4450
+	3400 4450 4250 4450
 Wire Wire Line
-	3400 4550 4000 4550
+	3400 4550 4250 4550
 Wire Wire Line
-	3400 4650 4000 4650
+	3400 4650 4250 4650
 Wire Wire Line
-	3400 4750 4000 4750
+	3400 4750 4250 4750
 Wire Wire Line
-	3400 4850 4000 4850
+	3400 4850 4250 4850
 Wire Wire Line
-	3400 4950 4000 4950
+	3400 4950 4250 4950
 Wire Wire Line
-	3400 5050 4000 5050
+	3400 5050 4250 5050
 Entry Wire Line
-	4100 4950 4000 5050
+	4350 4950 4250 5050
 Entry Wire Line
-	4100 4850 4000 4950
+	4350 4850 4250 4950
 Entry Wire Line
-	4100 4750 4000 4850
+	4350 4750 4250 4850
 Entry Wire Line
-	4100 4650 4000 4750
+	4350 4650 4250 4750
 Entry Wire Line
-	4100 4550 4000 4650
+	4350 4550 4250 4650
 Entry Wire Line
-	4100 4450 4000 4550
+	4350 4450 4250 4550
 Entry Wire Line
-	4100 4350 4000 4450
+	4350 4350 4250 4450
 Entry Wire Line
-	4100 4250 4000 4350
+	4350 4250 4250 4350
 Entry Wire Line
-	4100 4150 4000 4250
+	4350 4150 4250 4250
 Entry Wire Line
-	4100 4050 4000 4150
+	4350 4050 4250 4150
 Entry Wire Line
-	4100 3950 4000 4050
+	4350 3950 4250 4050
 Entry Wire Line
-	4100 3850 4000 3950
+	4350 3850 4250 3950
 Entry Wire Line
-	4100 3750 4000 3850
+	4350 3750 4250 3850
 Entry Wire Line
-	4100 3650 4000 3750
+	4350 3650 4250 3750
 Entry Wire Line
-	4100 3550 4000 3650
+	4350 3550 4250 3650
 Entry Wire Line
-	4100 3450 4000 3550
+	4350 3450 4250 3550
 Wire Wire Line
 	3700 2250 3700 1950
 Wire Wire Line
@@ -993,39 +985,39 @@ F 3 "" H 3700 1950 50  0001 C CNN
 	1    3700 1950
 	1    0    0    -1  
 $EndComp
-Text Label 3700 3550 0    50   ~ 0
+Text Label 3950 3550 0    50   ~ 0
 A15
-Text Label 3700 3650 0    50   ~ 0
+Text Label 3950 3650 0    50   ~ 0
 A14
-Text Label 3700 3750 0    50   ~ 0
+Text Label 3950 3750 0    50   ~ 0
 A13
-Text Label 3700 3850 0    50   ~ 0
+Text Label 3950 3850 0    50   ~ 0
 A12
-Text Label 3700 3950 0    50   ~ 0
+Text Label 3950 3950 0    50   ~ 0
 A11
-Text Label 3700 4050 0    50   ~ 0
+Text Label 3950 4050 0    50   ~ 0
 A10
-Text Label 3700 4150 0    50   ~ 0
+Text Label 3950 4150 0    50   ~ 0
 A9
-Text Label 3700 4250 0    50   ~ 0
+Text Label 3950 4250 0    50   ~ 0
 A8
-Text Label 3700 4350 0    50   ~ 0
+Text Label 3950 4350 0    50   ~ 0
 A7
-Text Label 3700 4450 0    50   ~ 0
+Text Label 3950 4450 0    50   ~ 0
 A6
-Text Label 3700 4550 0    50   ~ 0
+Text Label 3950 4550 0    50   ~ 0
 A5
-Text Label 3700 4650 0    50   ~ 0
+Text Label 3950 4650 0    50   ~ 0
 A4
-Text Label 3700 4750 0    50   ~ 0
+Text Label 3950 4750 0    50   ~ 0
 A3
-Text Label 3700 4850 0    50   ~ 0
+Text Label 3950 4850 0    50   ~ 0
 A2
-Text Label 3700 4950 0    50   ~ 0
+Text Label 3950 4950 0    50   ~ 0
 A1
-Text Label 3700 5050 0    50   ~ 0
+Text Label 3950 5050 0    50   ~ 0
 A0
-Text HLabel 4200 3350 2    50   Input ~ 0
+Text HLabel 4450 3350 2    50   Input ~ 0
 A[0..15]
 Text HLabel 3750 2650 2    50   Input ~ 0
 RESET
@@ -1035,18 +1027,14 @@ Text HLabel 3750 2750 2    50   Input ~ 0
 CLOCK_Q
 Text HLabel 3750 2850 2    50   Input ~ 0
 CLOCK_E
-NoConn ~ 3400 2350
-NoConn ~ 3400 2450
-NoConn ~ 2700 2350
-NoConn ~ 2700 2450
-Text HLabel 2450 4650 0    50   Output ~ 0
+Text HLabel 3750 2350 2    50   Output ~ 0
 ~NMI
-Text HLabel 2450 4750 0    50   Output ~ 0
+Text HLabel 3750 2450 2    50   Output ~ 0
 ~FIRQ
 Wire Wire Line
-	2450 4650 2700 4650
+	3750 2350 3400 2350
 Wire Wire Line
-	2700 4750 2450 4750
+	3400 2450 3750 2450
 NoConn ~ 2700 4950
 $Comp
 L Connector_Generic:Conn_01x02 J?
@@ -1110,10 +1098,16 @@ NoConn ~ 3400 2950
 NoConn ~ 3400 3050
 NoConn ~ 3400 3150
 NoConn ~ 3400 3250
-NoConn ~ 3400 3350
 NoConn ~ 3400 3450
+NoConn ~ 2700 4350
+NoConn ~ 2700 4450
+NoConn ~ 2700 4550
+NoConn ~ 2700 4650
+NoConn ~ 2700 4750
+NoConn ~ 2700 2350
+NoConn ~ 2700 3450
 Wire Bus Line
-	2150 2350 2150 3150
+	1700 2350 1700 3150
 Wire Bus Line
-	4100 3350 4100 4950
+	4350 3350 4350 4950
 $EndSCHEMATC
