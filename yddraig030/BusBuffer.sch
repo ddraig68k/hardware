@@ -719,32 +719,6 @@ Wire Wire Line
 Wire Wire Line
 	8400 3550 8400 3600
 $Comp
-L power:GND #PWR0419
-U 1 1 61363B1F
-P 8400 6500
-F 0 "#PWR0419" H 8400 6250 50  0001 C CNN
-F 1 "GND" H 8405 6327 50  0000 C CNN
-F 2 "" H 8400 6500 50  0001 C CNN
-F 3 "" H 8400 6500 50  0001 C CNN
-	1    8400 6500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR0418
-U 1 1 61363B25
-P 8400 4800
-F 0 "#PWR0418" H 8400 4650 50  0001 C CNN
-F 1 "+5V" H 8415 4973 50  0000 C CNN
-F 2 "" H 8400 4800 50  0001 C CNN
-F 3 "" H 8400 4800 50  0001 C CNN
-	1    8400 4800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8400 4800 8400 4850
-Wire Wire Line
-	8400 6450 8400 6500
-$Comp
 L power:GND #PWR0414
 U 1 1 61363B2D
 P 7800 3350
@@ -755,26 +729,6 @@ F 3 "" H 7800 3350 50  0001 C CNN
 	1    7800 3350
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0415
-U 1 1 61363B33
-P 7800 6250
-F 0 "#PWR0415" H 7800 6000 50  0001 C CNN
-F 1 "GND" H 7805 6077 50  0000 C CNN
-F 2 "" H 7800 6250 50  0001 C CNN
-F 3 "" H 7800 6250 50  0001 C CNN
-	1    7800 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7900 6150 7800 6150
-Wire Wire Line
-	7800 6150 7800 6250
-Wire Wire Line
-	7900 6050 7800 6050
-Wire Wire Line
-	7800 6050 7800 6150
-Connection ~ 7800 6150
 Wire Wire Line
 	7900 3250 7800 3250
 Wire Wire Line
@@ -784,30 +738,6 @@ Wire Wire Line
 Wire Wire Line
 	7800 3150 7800 3250
 Connection ~ 7800 3250
-Text Label 8950 5150 0    50   ~ 0
-~CS_EXTREG1
-Text Label 8950 5250 0    50   ~ 0
-~CS_EXTREG2
-Text Label 8950 5350 0    50   ~ 0
-~CS_EXTREG3
-Text Label 8950 5450 0    50   ~ 0
-~CS_EXTREG4
-Text Label 7350 5150 0    50   ~ 0
-~BCS_EXTREG1
-Text Label 7350 5250 0    50   ~ 0
-~BCS_EXTREG2
-Text Label 7350 5350 0    50   ~ 0
-~BCS_EXTREG3
-Text Label 7350 5450 0    50   ~ 0
-~BCS_EXTREG4
-Text Label 7350 5550 0    50   ~ 0
-~BCS_EXTDATA1
-Text Label 7350 5650 0    50   ~ 0
-~BCS_EXTDATA2
-Text Label 7350 5750 0    50   ~ 0
-~BCS_EXTDATA3
-Text Label 7350 5850 0    50   ~ 0
-~BCS_EXTDATA4
 Text HLabel 9100 2250 2    50   Input ~ 0
 ~RESET
 Text HLabel 9100 2350 2    50   Input ~ 0
@@ -858,22 +788,6 @@ Wire Wire Line
 	8900 2650 9100 2650
 Wire Wire Line
 	8900 2950 9100 2950
-Text HLabel 9700 4950 2    50   Input ~ 0
-~CS_EXTREG[1..4]
-Text HLabel 9800 5350 2    50   Input ~ 0
-~CS_EXTDATA[1..4]
-Text Label 8950 5550 0    50   ~ 0
-~CS_EXTDATA1
-Text Label 8950 5650 0    50   ~ 0
-~CS_EXTDATA2
-Text Label 8950 5750 0    50   ~ 0
-~CS_EXTDATA3
-Text Label 8950 5850 0    50   ~ 0
-~CS_EXTDATA4
-Text HLabel 7100 4950 0    50   Output ~ 0
-~BCS_EXTREG[1..4]
-Text HLabel 7000 5350 0    50   Output ~ 0
-~BCS_EXTDATA[1..4]
 Wire Wire Line
 	7900 2450 7700 2450
 $Comp
@@ -1610,17 +1524,6 @@ BA25
 Text Label 3850 8300 0    50   ~ 0
 BA26
 $Comp
-L 74xx:74LS245 U406
-U 1 1 61363B19
-P 8400 5650
-F 0 "U406" H 8600 6350 50  0000 C CNN
-F 1 "74LS245" H 8600 5000 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 8400 5650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 8400 5650 50  0001 C CNN
-	1    8400 5650
-	1    0    0    -1  
-$EndComp
-$Comp
 L 74xx:74LS245 U405
 U 1 1 61363B05
 P 8400 2750
@@ -1639,78 +1542,6 @@ Text HLabel 3950 8600 2    50   Output ~ 0
 BSIZ1
 Text HLabel 3950 8800 2    50   Output ~ 0
 BCPUCLK
-Wire Wire Line
-	7300 5150 7900 5150
-Entry Wire Line
-	7200 5050 7300 5150
-Entry Wire Line
-	7200 5150 7300 5250
-Entry Wire Line
-	7200 5250 7300 5350
-Entry Wire Line
-	7200 5350 7300 5450
-Entry Wire Line
-	7100 5450 7200 5550
-Entry Wire Line
-	7100 5550 7200 5650
-Entry Wire Line
-	7100 5650 7200 5750
-Entry Wire Line
-	7100 5750 7200 5850
-Wire Wire Line
-	7300 5250 7900 5250
-Wire Wire Line
-	7300 5350 7900 5350
-Wire Wire Line
-	7300 5450 7900 5450
-Wire Wire Line
-	7200 5550 7900 5550
-Wire Wire Line
-	7200 5650 7900 5650
-Wire Wire Line
-	7200 5750 7900 5750
-Wire Wire Line
-	7200 5850 7900 5850
-Wire Wire Line
-	9500 5150 8900 5150
-Entry Wire Line
-	9600 5050 9500 5150
-Entry Wire Line
-	9600 5150 9500 5250
-Entry Wire Line
-	9600 5250 9500 5350
-Entry Wire Line
-	9600 5350 9500 5450
-Entry Wire Line
-	9700 5450 9600 5550
-Entry Wire Line
-	9700 5550 9600 5650
-Entry Wire Line
-	9700 5650 9600 5750
-Entry Wire Line
-	9700 5750 9600 5850
-Wire Wire Line
-	9500 5250 8900 5250
-Wire Wire Line
-	9500 5350 8900 5350
-Wire Wire Line
-	9500 5450 8900 5450
-Wire Wire Line
-	9600 5550 8900 5550
-Wire Wire Line
-	9600 5650 8900 5650
-Wire Wire Line
-	9600 5750 8900 5750
-Wire Wire Line
-	9600 5850 8900 5850
-Wire Bus Line
-	9600 4950 9700 4950
-Wire Bus Line
-	9700 5350 9800 5350
-Wire Bus Line
-	7100 5350 7000 5350
-Wire Bus Line
-	7200 4950 7100 4950
 $Comp
 L power:+5V #PWR?
 U 1 1 61363BE9
@@ -2114,14 +1945,6 @@ Wire Wire Line
 	3950 8400 3750 8400
 Wire Wire Line
 	3750 8600 3950 8600
-Wire Bus Line
-	9700 5350 9700 5750
-Wire Bus Line
-	9600 4950 9600 5350
-Wire Bus Line
-	7100 5350 7100 5750
-Wire Bus Line
-	7200 4950 7200 5300
 Wire Bus Line
 	4250 1250 4250 8200
 Wire Bus Line
