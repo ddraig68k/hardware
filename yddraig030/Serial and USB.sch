@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 15
+Sheet 14 15
 Title "Y Ddraig Fawr"
 Date ""
 Rev ""
@@ -839,26 +839,6 @@ Wire Wire Line
 	5850 2800 5850 4450
 Wire Wire Line
 	5850 4450 4850 4450
-Wire Wire Line
-	7550 5400 6950 5400
-Wire Wire Line
-	7250 3800 7250 3250
-Wire Wire Line
-	7250 3250 4850 3250
-Wire Wire Line
-	7550 5800 6800 5800
-Wire Wire Line
-	7150 3900 7150 3350
-Wire Wire Line
-	7150 3350 4850 3350
-Wire Wire Line
-	7550 5600 6900 5600
-Wire Wire Line
-	7050 4000 7050 3650
-Wire Wire Line
-	7050 3650 4850 3650
-Wire Wire Line
-	7550 6000 7000 6000
 Text HLabel 2550 4650 0    50   Input ~ 0
 ~CS_DUART
 $Comp
@@ -939,8 +919,6 @@ Text Label 2550 3850 0    50   ~ 0
 D30
 Text Label 2550 3950 0    50   ~ 0
 D31
-Wire Wire Line
-	5950 4550 4850 4550
 Text HLabel 2550 5150 0    50   Output ~ 0
 ~DTACK_DUART
 Text HLabel 2550 4950 0    50   Input ~ 0
@@ -949,6 +927,30 @@ Text HLabel 2550 4750 0    50   Input ~ 0
 RD~WR
 Wire Wire Line
 	2550 4650 2850 4650
+Wire Wire Line
+	6450 3650 4850 3650
+Wire Wire Line
+	6550 3350 4850 3350
+Wire Wire Line
+	6650 3250 4850 3250
+Wire Wire Line
+	6650 5400 7550 5400
+Wire Wire Line
+	6650 3250 6650 5400
+Wire Wire Line
+	6550 5800 7550 5800
+Wire Wire Line
+	6550 3350 6550 5800
+Wire Wire Line
+	6450 5600 7550 5600
+Wire Wire Line
+	6450 3650 6450 5600
+Wire Wire Line
+	6350 4550 6350 6000
+Wire Wire Line
+	6350 6000 7550 6000
+Wire Wire Line
+	4850 4550 6350 4550
 Wire Bus Line
 	2200 4000 2200 4350
 Wire Bus Line

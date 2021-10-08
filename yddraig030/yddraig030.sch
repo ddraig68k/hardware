@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 15
+Sheet 1 16
 Title "Y Ddraig Fawr"
 Date ""
 Rev ""
@@ -71,7 +71,7 @@ F25 "~CS_EXTDATA[1..4]" I L 10750 3000 50
 F26 "~EXT_PRD1[1..4]" O L 10750 3850 50 
 $EndSheet
 $Sheet
-S 7400 9250 1500 900 
+S 13450 8900 1500 900 
 U 6139A64F
 F0 "Power" 50
 F1 "Power.sch" 50
@@ -181,7 +181,7 @@ $Sheet
 S 2300 7650 1000 1100
 U 6139AAF1
 F0 "Serial" 50
-F1 "Serial and USB.sch" 50
+F1 "Serial.sch" 50
 F2 "~CS_DUART" I R 3300 8350 50 
 F3 "~INT_DUART" O R 3300 8650 50 
 F4 "A[0..31]" I R 3300 7850 50 
@@ -342,8 +342,6 @@ Wire Wire Line
 	10750 8250 10450 8250
 Connection ~ 10450 8250
 Wire Wire Line
-	10450 8250 10450 9700
-Wire Wire Line
 	10750 8350 10350 8350
 Connection ~ 10350 8350
 Wire Wire Line
@@ -425,7 +423,7 @@ Connection ~ 4300 3400
 Wire Wire Line
 	4300 3400 3300 3400
 $Sheet
-S 5000 2100 1550 7200
+S 5000 2100 1550 7550
 U 6139A6BE
 F0 "Decode and Logic" 50
 F1 "Decode.sch" 50
@@ -483,6 +481,10 @@ F52 "~INT_KBD" I R 6550 7450 50
 F53 "~EXT_PRD1[1..4]" I R 6550 3850 50 
 F54 "~CS_EXTREG[1..4]" O R 6550 2900 50 
 F55 "~CS_EXTDATA[1..4]" O R 6550 3000 50 
+F56 "~USB_ENABLE" O R 6550 9400 50 
+F57 "~USB_OVERCUR" I R 6550 9500 50 
+F58 "INT_USB" I R 6550 9200 50 
+F59 "~CS_USB" O R 6550 9100 50 
 $EndSheet
 Wire Wire Line
 	4900 1050 4900 4650
@@ -600,9 +602,9 @@ Connection ~ 4600 9650
 Wire Wire Line
 	4600 9650 4600 9900
 Wire Bus Line
-	3450 1200 10650 1200
+	3450 1200 7750 1200
 Wire Bus Line
-	3550 1300 10550 1300
+	3550 1300 7650 1300
 Wire Wire Line
 	4800 1500 10450 1500
 Wire Wire Line
@@ -667,6 +669,88 @@ Wire Wire Line
 	10750 6300 6750 6300
 Wire Wire Line
 	6750 6300 6750 10000
+$Sheet
+S 7850 9050 1150 1500
+U 615F88BB
+F0 "USB" 50
+F1 "USB.sch" 50
+F2 "D[0..31]" B L 7850 9150 50 
+F3 "A[0..31]" B L 7850 9250 50 
+F4 "RD~WR" I L 7850 9550 50 
+F5 "~RD~WR" I L 7850 9650 50 
+F6 "~RESET" I L 7850 9750 50 
+F7 "~USB_ENABLE" I L 7850 10150 50 
+F8 "~USB_OVERCUR" O L 7850 10250 50 
+F9 "~CS_USB" I L 7850 9450 50 
+F10 "INT_USB" O L 7850 9950 50 
+$EndSheet
+Wire Bus Line
+	7850 9150 7750 9150
+Wire Bus Line
+	7750 9150 7750 1200
+Connection ~ 7750 1200
+Wire Bus Line
+	7750 1200 10650 1200
+Wire Bus Line
+	7850 9250 7650 9250
+Wire Bus Line
+	7650 9250 7650 1300
+Connection ~ 7650 1300
+Wire Bus Line
+	7650 1300 10550 1300
+Wire Wire Line
+	6550 9100 7550 9100
+Wire Wire Line
+	7550 9100 7550 9450
+Wire Wire Line
+	7550 9450 7850 9450
+Wire Wire Line
+	6550 9200 7450 9200
+Wire Wire Line
+	7450 9200 7450 9950
+Wire Wire Line
+	7450 9950 7850 9950
+Wire Wire Line
+	6550 9400 7350 9400
+Wire Wire Line
+	7350 9400 7350 10150
+Wire Wire Line
+	7350 10150 7850 10150
+Wire Wire Line
+	6550 9500 7250 9500
+Wire Wire Line
+	7250 9500 7250 10250
+Wire Wire Line
+	7250 10250 7850 10250
+Wire Wire Line
+	10350 9800 10350 10800
+Wire Wire Line
+	10350 10800 7750 10800
+Wire Wire Line
+	7750 10800 7750 9550
+Wire Wire Line
+	7750 9550 7850 9550
+Connection ~ 10350 9800
+Wire Wire Line
+	10250 9900 10250 10900
+Wire Wire Line
+	7650 10900 7650 9650
+Wire Wire Line
+	7650 9650 7850 9650
+Wire Wire Line
+	7650 10900 10250 10900
+Connection ~ 10250 9900
+Wire Wire Line
+	7550 11000 7550 9750
+Wire Wire Line
+	7550 9750 7850 9750
+Wire Wire Line
+	10450 8250 10450 9700
+Wire Wire Line
+	7550 11000 10450 11000
+Connection ~ 10450 9700
+Wire Wire Line
+	10450 9700 10450 11000
 Text Notes 12950 3150 0    50   ~ 0
-Notes:\n\nTo be fixed...\nDSACKx from decode needs to be open collector\nPullups on CPU pins and DSACK\n\nCheck signals needed from CPU\n\nExpansion bus CS lines need to be added\n\nCPU clock and 10Mhz clock needed\n
+Notes:\n\nTo be fixed...\nDSACKx from decode needs to be open collector\nPullups on CPU pins and DSACK\n\nCheck signals needed from CPU\n\nCPU clock and 10Mhz clock needed\n
 $EndSCHEMATC
