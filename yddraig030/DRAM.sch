@@ -412,21 +412,21 @@ A25
 Text Label 2350 6350 0    50   ~ 0
 A26
 Text Label 4700 6150 0    50   ~ 0
-~CASB0
+~CAS_B0
 Text Label 4700 6250 0    50   ~ 0
-~CASB1
+~CAS_B1
 Text Label 4700 6350 0    50   ~ 0
-~CASB2
+~CAS_B2
 Text Label 4700 6450 0    50   ~ 0
-~CASB3
+~CAS_B3
 Text Label 4700 5750 0    50   ~ 0
-~CASA0
+~CAS_A0
 Text Label 4700 5850 0    50   ~ 0
-~CASA1
+~CAS_A1
 Text Label 4700 5950 0    50   ~ 0
-~CASA2
+~CAS_A2
 Text Label 4700 6050 0    50   ~ 0
-~CASA3
+~CAS_A3
 Text HLabel 2350 7750 0    50   Input ~ 0
 DRAM_CLK
 Text Label 4800 6850 0    50   ~ 0
@@ -624,30 +624,6 @@ Wire Wire Line
 	2350 9800 2700 9800
 Wire Wire Line
 	2350 9600 2350 9800
-Text Label 9700 3800 0    50   ~ 0
-SIM_A0
-Text Label 9700 3900 0    50   ~ 0
-SIM_A1
-Text Label 9700 4000 0    50   ~ 0
-SIM_A2
-Text Label 9700 4100 0    50   ~ 0
-SIM_A3
-Text Label 9700 4200 0    50   ~ 0
-SIM_A4
-Text Label 9700 4300 0    50   ~ 0
-SIM_A5
-Text Label 9700 4400 0    50   ~ 0
-SIM_A6
-Text Label 9700 4500 0    50   ~ 0
-SIM_A7
-Text Label 9700 4600 0    50   ~ 0
-SIM_A8
-Text Label 9700 4700 0    50   ~ 0
-SIM_A9
-Text Label 9700 4800 0    50   ~ 0
-SIM_A10
-Text Label 9700 4900 0    50   ~ 0
-SIM_A11
 Text Label 9900 6750 2    50   ~ 0
 PRDA0
 Text Label 9900 6850 2    50   ~ 0
@@ -1012,7 +988,7 @@ Text Label 8050 2300 0    50   ~ 0
 Text Label 8050 2400 0    50   ~ 0
 ~BCAS_B[0..3]
 Text Label 8050 2200 0    50   ~ 0
-BRAS[0..3]
+~BRAS[0..3]
 Text Label 8050 2000 0    50   ~ 0
 SIM_A[0..11]
 Text Label 8050 1850 0    50   ~ 0
@@ -1647,6 +1623,30 @@ Text HLabel 2350 7950 0    50   Input ~ 0
 ~RESET
 Wire Wire Line
 	2600 7950 2350 7950
+Text Label 9700 3800 0    50   ~ 0
+SIM_A0
+Text Label 9700 3900 0    50   ~ 0
+SIM_A1
+Text Label 9700 4000 0    50   ~ 0
+SIM_A2
+Text Label 9700 4100 0    50   ~ 0
+SIM_A3
+Text Label 9700 4200 0    50   ~ 0
+SIM_A4
+Text Label 9700 4300 0    50   ~ 0
+SIM_A5
+Text Label 9700 4400 0    50   ~ 0
+SIM_A6
+Text Label 9700 4500 0    50   ~ 0
+SIM_A7
+Text Label 9700 4600 0    50   ~ 0
+SIM_A8
+Text Label 9700 4700 0    50   ~ 0
+SIM_A9
+Text Label 9700 4800 0    50   ~ 0
+SIM_A10
+Text Label 9700 4900 0    50   ~ 0
+SIM_A11
 Wire Bus Line
 	5500 2200 5500 5550
 Wire Bus Line

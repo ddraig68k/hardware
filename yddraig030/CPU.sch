@@ -597,8 +597,6 @@ Wire Bus Line
 	4750 3500 4900 3500
 Text HLabel 4900 3500 2    50   Output ~ 0
 A[0..31]
-Text Label 4400 6750 0    50   ~ 0
-A31
 Text Label 4400 6650 0    50   ~ 0
 A30
 Text Label 4400 6550 0    50   ~ 0
@@ -641,8 +639,6 @@ Text Label 4400 4750 0    50   ~ 0
 A11
 Text Label 4400 4650 0    50   ~ 0
 A10
-Wire Wire Line
-	4650 6750 4300 6750
 Wire Wire Line
 	4650 6650 4300 6650
 Wire Wire Line
@@ -705,8 +701,6 @@ Wire Wire Line
 	4650 3750 4300 3750
 Wire Wire Line
 	4650 3650 4300 3650
-Entry Wire Line
-	4750 6650 4650 6750
 Entry Wire Line
 	4750 6550 4650 6650
 Entry Wire Line
@@ -815,7 +809,7 @@ Text Label 9850 3100 0    50   ~ 0
 Text Label 9850 3200 0    50   ~ 0
 ~DS
 Text Label 9850 3300 0    50   ~ 0
-RD~WR
+R~W
 Wire Wire Line
 	9850 3300 9750 3300
 Wire Wire Line
@@ -908,8 +902,6 @@ Wire Wire Line
 	2100 2950 2300 2950
 Wire Wire Line
 	2100 3050 2300 3050
-Text HLabel 5400 1400 2    50   Output ~ 0
-~HALT
 Text HLabel 4550 3150 2    50   Output ~ 0
 SIZ0
 Text HLabel 4550 3250 2    50   Output ~ 0
@@ -919,86 +911,46 @@ Wire Wire Line
 Wire Wire Line
 	4300 3250 4550 3250
 Wire Wire Line
-	7700 1400 7850 1400
+	7200 1400 7850 1400
 Wire Wire Line
 	7850 2300 7950 2300
 Wire Wire Line
 	7850 1400 7850 2300
-Text HLabel 5450 1800 2    50   Input ~ 0
-~AVEC
-$Comp
-L Device:R R201
-U 1 1 6144CC5A
-P 5250 1100
-F 0 "R201" H 5320 1146 50  0000 L CNN
-F 1 "10K" H 5320 1055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5180 1100 50  0001 C CNN
-F 3 "~" H 5250 1100 50  0001 C CNN
-	1    5250 1100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4300 1900 5250 1900
+	6900 1750 6900 1700
 Wire Wire Line
-	5250 1900 5250 1800
-$Comp
-L power:+5V #PWR0203
-U 1 1 614767C1
-P 5250 900
-F 0 "#PWR0203" H 5250 750 50  0001 C CNN
-F 1 "+5V" H 5265 1073 50  0000 C CNN
-F 2 "" H 5250 900 50  0001 C CNN
-F 3 "" H 5250 900 50  0001 C CNN
-	1    5250 900 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5250 900  5250 950 
-Wire Wire Line
-	4300 1500 5250 1500
-Connection ~ 5250 1500
-Wire Wire Line
-	5250 1500 5250 1400
-Wire Wire Line
-	4300 1600 5250 1600
-Connection ~ 5250 1600
-Wire Wire Line
-	5250 1600 5250 1500
-Wire Wire Line
-	7400 1750 7400 1700
-Wire Wire Line
-	7400 1050 7400 1100
+	6900 1050 6900 1100
 $Comp
 L power:GND #PWR0205
 U 1 1 613B8DE8
-P 7400 1750
-F 0 "#PWR0205" H 7400 1500 50  0001 C CNN
-F 1 "GND" H 7405 1577 50  0000 C CNN
-F 2 "" H 7400 1750 50  0001 C CNN
-F 3 "" H 7400 1750 50  0001 C CNN
-	1    7400 1750
+P 6900 1750
+F 0 "#PWR0205" H 6900 1500 50  0001 C CNN
+F 1 "GND" H 6905 1577 50  0000 C CNN
+F 2 "" H 6900 1750 50  0001 C CNN
+F 3 "" H 6900 1750 50  0001 C CNN
+	1    6900 1750
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0204
 U 1 1 613B8943
-P 7400 1050
-F 0 "#PWR0204" H 7400 900 50  0001 C CNN
-F 1 "+5V" H 7415 1223 50  0000 C CNN
-F 2 "" H 7400 1050 50  0001 C CNN
-F 3 "" H 7400 1050 50  0001 C CNN
-	1    7400 1050
+P 6900 1050
+F 0 "#PWR0204" H 6900 900 50  0001 C CNN
+F 1 "+5V" H 6915 1223 50  0000 C CNN
+F 2 "" H 6900 1050 50  0001 C CNN
+F 3 "" H 6900 1050 50  0001 C CNN
+	1    6900 1050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Oscillator:ACO-xxxMHz X201
 U 1 1 613B7690
-P 7400 1400
-F 0 "X201" H 7057 1446 50  0000 R CNN
-F 1 "ACO-xxxMHz" H 7057 1355 50  0000 R CNN
-F 2 "Oscillator:Oscillator_DIP-14" H 7850 1050 50  0001 C CNN
-F 3 "http://www.conwin.com/datasheets/cx/cx030.pdf" H 7300 1400 50  0001 C CNN
-	1    7400 1400
+P 6900 1400
+F 0 "X201" H 6600 1450 50  0000 R CNN
+F 1 "40Mhz" H 6650 1350 50  0000 R CNN
+F 2 "Oscillator:Oscillator_DIP-14" H 7350 1050 50  0001 C CNN
+F 3 "http://www.conwin.com/datasheets/cx/cx030.pdf" H 6800 1400 50  0001 C CNN
+	1    6900 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1184,36 +1136,83 @@ NoConn ~ 4300 2300
 NoConn ~ 4300 2400
 NoConn ~ 4300 2500
 NoConn ~ 4300 2600
-NoConn ~ 4300 2700
 NoConn ~ 4300 2800
 NoConn ~ 4300 2900
+$Comp
+L Device:R_Network08 RN?
+U 1 1 6170C48E
+P 5050 1050
+AR Path="/6139A6BE/6170C48E" Ref="RN?"  Part="1" 
+AR Path="/60EB395D/6170C48E" Ref="RN201"  Part="1" 
+F 0 "RN201" H 5200 1250 50  0000 L CNN
+F 1 "10K" H 4950 1250 50  0000 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 5525 1050 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5050 1050 50  0001 C CNN
+	1    5050 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6170C494
+P 4650 800
+AR Path="/6139A6BE/6170C494" Ref="#PWR?"  Part="1" 
+AR Path="/60EB395D/6170C494" Ref="#PWR0203"  Part="1" 
+F 0 "#PWR0203" H 4650 650 50  0001 C CNN
+F 1 "+5V" H 4665 973 50  0000 C CNN
+F 2 "" H 4650 800 50  0001 C CNN
+F 3 "" H 4650 800 50  0001 C CNN
+	1    4650 800 
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4300 1700 5250 1700
-Connection ~ 5250 1700
+	4650 800  4650 850 
 Wire Wire Line
-	5250 1700 5250 1600
+	4300 1400 4650 1400
 Wire Wire Line
-	4300 1400 5250 1400
-Connection ~ 5250 1400
+	4650 1400 4650 1250
 Wire Wire Line
-	5250 1400 5250 1250
+	4300 1500 4750 1500
 Wire Wire Line
-	5250 1400 5400 1400
+	4750 1500 4750 1250
 Wire Wire Line
-	4300 1800 5250 1800
-Connection ~ 5250 1800
+	4300 1600 4850 1600
 Wire Wire Line
-	5250 1800 5250 1700
+	4850 1600 4850 1250
 Wire Wire Line
-	5450 1800 5250 1800
+	4950 1250 4950 1700
+Wire Wire Line
+	4950 1700 4300 1700
+Wire Wire Line
+	4300 1800 5050 1800
+Wire Wire Line
+	5050 1800 5050 1250
+Wire Wire Line
+	4300 1900 5150 1900
+Wire Wire Line
+	5150 1900 5150 1250
+NoConn ~ 5250 1250
+NoConn ~ 5350 1250
+Text Label 7750 1400 2    50   ~ 0
+CPU_CLK
+Text HLabel 4550 2700 2    50   Output ~ 0
+~CBREQ
+Wire Wire Line
+	4550 2700 4300 2700
+Wire Wire Line
+	4650 1400 5550 1400
+Connection ~ 4650 1400
+NoConn ~ 4300 3450
+NoConn ~ 4300 6750
 Wire Bus Line
 	1700 1550 1700 1850
 Wire Bus Line
 	1450 3000 1450 3300
 Wire Bus Line
-	4750 3500 4750 6650
+	4750 3500 4750 6550
 Wire Bus Line
 	1850 3500 1850 6650
 Wire Bus Line
 	7500 2550 7500 5700
+Text HLabel 5550 1400 2    50   Output ~ 0
+~HALT
 $EndSCHEMATC

@@ -1945,6 +1945,8 @@ Wire Wire Line
 	3950 8400 3750 8400
 Wire Wire Line
 	3750 8600 3950 8600
+NoConn ~ 2750 8700
+NoConn ~ 3750 8700
 Wire Bus Line
 	4250 1250 4250 8200
 Wire Bus Line
