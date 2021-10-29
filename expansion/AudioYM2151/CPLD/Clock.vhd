@@ -8,7 +8,8 @@ entity Clock is
 			clk_i 		: in std_logic;
 			clk_div2_o	: out std_logic;
 			clk_div4_o 	: out std_logic;
-			clk_div8_o 	: out std_logic
+			clk_div8_o 	: out std_logic;
+            clk_div16_o : out std_logic
 		);
 end Clock;
 
@@ -25,6 +26,7 @@ begin
 	clk_div2_o <= s_clk_divider(0);
 	clk_div4_o <= s_clk_divider(1);
 	clk_div8_o <= s_clk_divider(2);
+    clk_div16_o <= s_clk_divider(3);
 	
 end Behavioral;
 
