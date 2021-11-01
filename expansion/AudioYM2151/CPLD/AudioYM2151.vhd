@@ -6,28 +6,28 @@ use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity AudioYM2151 is
     Port (
         data_io     : inout std_logic_vector (15 downto 0);
-        addr_i      : in  std_logic_vector (7 downto 1);
+        addr_i      : in std_logic_vector (7 downto 1);
 
-        cpuclk_i    : in  std_logic;
-        csdata_i    : in  std_logic;
-        csreg_i     : in  std_logic;
+        cpuclk_i    : in std_logic;
+        csdata_i    : in std_logic;
+        csreg_i     : in std_logic;
 
-        reset_i     : in  std_logic;
-        lds_i       : in  std_logic;
-        uds_i       : in  std_logic;
-        rw_i        : in  std_logic;
+        reset_i     : in std_logic;
+        lds_i       : in std_logic;
+        uds_i       : in std_logic;
+        rw_i        : in std_logic;
 
-        dtack_o     : out  std_logic;
+        dtack_o     : out std_logic;
 
-        ym_cs_o     : out  std_logic;
-        ym_wr_o     : out  std_logic;
-        ym_rd_o     : out  std_logic;
+        ym_cs_o     : out std_logic;
+        ym_wr_o     : out std_logic;
+        ym_rd_o     : out std_logic;
 
-        csymclk_o   : out  std_logic;
-        spi_clk_o   : out  std_logic;
-        spi_do_o    : out  std_logic;
+        csymclk_o   : out std_logic;
+        spi_clk_o   : out std_logic;
+        spi_do_o    : out std_logic;
 
-        led_o       : out  std_logic
+        led_o       : out std_logic
     );
 end AudioYM2151;
 
@@ -43,6 +43,14 @@ architecture Behavioral of AudioYM2151 is
     signal s_clkreg         : std_logic_vector(15 downto 0) := X"BCEE";
     signal s_setfreq        : std_logic := '0';
     signal s_spiclk         : std_logic;
+    
+    signal s_setclock       : std_logic;
+    signal s_spi_enable     : std_logic := '0';
+    signal s_spi_busy       : std_logic;
+    signal s_miso           : std_logic;
+    signal s_clkdone        : std_logic;
+    
+    
 
 begin
 
@@ -67,11 +75,42 @@ begin
 			end if;
 		end if;
 	end process;
+
+    set_clock : process (cpuclk_i, reset_i)
+    begin
+        if (rising_edge(cpuclk_i)) then
+            if (reset_i = '0') then
+                s_clkdone <= '0';
+                s_setclock <= '1';
+            else
+                if (s_setclock = '1') then
+                    s_spi_enable <= '1';
+                end if;
+            end if;
+        end if;
+    end process;
+
 	
     ClkGen: entity work.Clock 
         port map (
                 clk_i => cpuclk_i, clk_div2_o => OPEN, clk_div4_o => OPEN, clk_div8_o => s_clkdiv, clk_div16_o => s_spiclk
             );
+            
+    YMClock: entity work.spi_master
+        port map (
+            clk => s_spiclk, 
+            reset_n => reset_i,
+            enable => s_setclock,
+            cpol => '0',
+            cpha => '0',
+            miso => s_miso,
+            sclk => spi_clk_o,
+            ss_n => csymclk_o,
+            mosi => spi_do_o,
+            busy => s_spi_busy,
+            tx => s_clkreg,
+            rx => OPEN
+        );
 
     -- Generate DTACK signal
     dtack_o <= '0' when s_dtackcount > "011" and (csdata_i = '0' or csreg_i = '0') else '1';
@@ -87,10 +126,6 @@ begin
     
     -- Write out device ID
     data_io <= BOARD_ID when addr_i = "1111111" and uds_i = '0' and csreg_i = '0' else "ZZZZZZZZZZZZZZZZ";
-
-    csymclk_o   <= '1';
-    spi_clk_o   <= '0';
-    spi_do_o    <= '0';
 
 end Behavioral;
 
