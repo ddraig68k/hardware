@@ -1799,8 +1799,8 @@ $EndComp
 Text Label 14350 4900 0    50   ~ 0
 ~EXT_BERR4
 Wire Wire Line
-	14050 5000 14350 5000
-Text Label 14350 5000 0    50   ~ 0
+	14050 5100 14350 5100
+Text Label 14350 5100 0    50   ~ 0
 ~DTACK_EXT4
 Wire Wire Line
 	14050 4900 14350 4900
@@ -1904,7 +1904,6 @@ F 3 "" H 13500 6550 50  0001 C CNN
 	1    13500 6550
 	1    0    0    -1  
 $EndComp
-NoConn ~ 14050 5100
 $Comp
 L Ddraig:D68K_64PIN_PCB EXP?
 U 1 1 60864007
@@ -2071,6 +2070,7 @@ Wire Wire Line
 	8350 8800 8350 8000
 Wire Wire Line
 	7000 8800 8350 8800
+NoConn ~ 14050 5000
 Wire Bus Line
 	1950 7450 1950 7750
 Wire Bus Line
