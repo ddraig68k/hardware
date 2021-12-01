@@ -91,6 +91,8 @@ begin
                     s_spi_enable <= '0';
                 elsif (s_setclock = '1' and s_spi_busy = '0') then
                     s_spi_enable <= '1';
+                elsif (s_setclock = '1' and s_spi_busy = '1') then
+                    s_setclock   <= '0';
                 elsif (s_spi_busy = '0') then
                     s_spi_enable <= '0';
                     s_setclock   <= '0';

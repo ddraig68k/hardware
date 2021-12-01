@@ -179,6 +179,8 @@ BEGIN
         csreg_i     <= '1';
 		wait for 100ns;
 
+		wait for 500ns;
+        
         -- Write the YM2151 clock frequency
 		wait on cpuclk_i until cpuclk_i = '1';
 		report("Testing YM2151 read");
@@ -216,7 +218,7 @@ BEGIN
         csreg_i     <= '1';
 		wait for 100ns;
 
-
+        
         WAIT;
     END PROCESS;
 
