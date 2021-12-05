@@ -49,11 +49,10 @@ architecture Behavioral of AudioYM2151 is
     signal s_setclock       : std_logic := '0';
     signal s_spi_enable     : std_logic := '0';
     signal s_spi_busy       : std_logic := '0';
-    signal s_miso           : std_logic;
+    signal s_miso           : std_logic := '0';
     signal s_clkdone        : std_logic;
-    
-    
-
+    signal s_spiread        : std_logic_vector(15 downto 0);
+   
 begin
 
     dtack_gen : process(cpuclk_i, reset_i, csreg_i, csdata_i)
@@ -104,8 +103,6 @@ begin
     ClkGen: entity work.Clock 
         port map (
            clk_i        => cpuclk_i,
-           clk_div2_o   => OPEN,
-           clk_div4_o   => OPEN,
            clk_div8_o   => s_clkdiv,
            clk_div16_o  => s_spiclk
         );
@@ -115,7 +112,7 @@ begin
             clk         => s_spiclk, 
             reset_n     => reset_i,
             enable      => s_setclock,
-            cpol        => '0',
+            cpol        => '1',
             cpha        => '0',
             miso        => s_miso,
             sclk        => spi_clk_o,
@@ -123,7 +120,7 @@ begin
             mosi        => spi_do_o,
             busy        => s_spi_busy,
             tx          => s_clkreg,
-            rx          => OPEN
+            rx          => s_spiread
         );
 
     -- Generate DTACK signal
@@ -134,16 +131,16 @@ begin
 
     -- Address decoding
     s_idaddr <= '1' when addr_i = "1111111" else '0';
-    s_clkaddr <= '1' when std_match(addr_i, "1-0000-") else '0';
+    s_clkaddr <= '1' when std_match(addr_i, "1100000") else '0';
     
     -- YM2151 decoding
     ym_rd_o <= '0' when s_idaddr = '0' and s_clkaddr = '0' and uds_i = '0' and csreg_i = '0' and rw_i = '1' else '1';
     ym_wr_o <= '0' when s_idaddr = '0' and s_clkaddr = '0' and uds_i = '0' and csreg_i = '0' and rw_i = '0' else '1';
     ym_cs_o <= '0' when s_idaddr = '0' and s_clkaddr = '0' and uds_i = '0' and csreg_i = '0' else '1';
 
-    -- YM2151 clock control (1000000 for clock speed, 1000001 for status register)
+    -- YM2151 clock control (1000000 for clock speed, 1100000 for status register)
     -- Status register just has busy bit in the lsb
-    data_io <= "0000000" & s_spi_busy & "0000000" & s_spi_busy when s_clkaddr = '1' and addr_i(1) = '1' and uds_i = '0' and rw_i = '1' else (others => 'Z');
+    data_io <= "0000000" & s_spi_busy & "0000000" & s_spi_busy when s_clkaddr = '1' and addr_i(6) = '1' and uds_i = '0' and rw_i = '1' else (others => 'Z');
     data_io <= s_clkreg when s_clkaddr = '1' and addr_i(1) = '0' and uds_i = '0' and lds_i = '0' and rw_i = '1' else (others => 'Z');
     s_clkreg <= data_io when s_clkaddr = '1' and addr_i(1) = '0' and uds_i = '0' and lds_i = '0' and rw_i = '0' else s_clkreg;
         

@@ -1,7 +1,7 @@
 
 #Created by Constraints Editor (xc95144xl-tq100-10) - 2021/12/04
 NET "cpuclk_i" TNM_NET = cpuclk_i;
-TIMESPEC TS_cpuclk_i = PERIOD "cpuclk_i" 10 MHz HIGH 50%;
+TIMESPEC TS_cpuclk_i = PERIOD "cpuclk_i" 100 ns HIGH 50%;
 
 
 NET "addr_i<1>"  LOC = "P34";
@@ -10,7 +10,7 @@ NET "addr_i<3>"  LOC = "P32";
 NET "addr_i<4>"  LOC = "P30";
 NET "addr_i<5>"  LOC = "P29";
 NET "addr_i<6>"  LOC = "P28";
-NET "addr_i<7>"  LOC = "P27";
+NET "addr_i<7>"  LOC = "P27" |BUFG = DATA_GATE;
 
 NET "data_io<0>"  LOC = "P58";
 NET "data_io<1>"  LOC = "P59";
@@ -29,12 +29,12 @@ NET "data_io<13>"  LOC = "P39";
 NET "data_io<14>"  LOC = "P35";
 NET "data_io<15>"  LOC = "P36";
 
-NET "cpuclk_i"  LOC = "P22";
+NET "cpuclk_i"  LOC = "P22" |BUFG = CLK;
 NET "csdata_i"  LOC = "P19";
 NET "csreg_i"  LOC = "P20";
 
 NET "reset_i"  LOC = "P13";
-NET "lds_i"  LOC = "P23";
+NET "lds_i"  LOC = "P23" |BUFG = DATA_GATE;
 NET "uds_i"  LOC = "P24";
 NET "rw_i"  LOC = "P25";
 
@@ -50,4 +50,8 @@ NET "spi_clk_o"  LOC = "P17";
 NET "spi_do_o"  LOC = "P18";
              
 NET "led_o"  LOC = "P66";
-
+#Created by Constraints Editor (xc95144xl-tq100-10) - 2021/12/05
+NET "s_clkdiv" TNM_NET = s_clkdiv;
+TIMESPEC TS_s_clkdiv = PERIOD "s_clkdiv" 800 ns HIGH 50%;
+NET "s_spiclk" TNM_NET = s_spiclk;
+TIMESPEC TS_s_spiclk = PERIOD "s_spiclk" 1600 ns HIGH 50%;
