@@ -131,7 +131,7 @@ begin
 
     -- Address decoding
     s_idaddr <= '1' when addr_i = "1111111" else '0';
-    s_clkaddr <= '1' when std_match(addr_i, "1100000") else '0';
+    s_clkaddr <= '1' when std_match(addr_i, "1-0000-") else '0';
     
     -- YM2151 decoding
     ym_rd_o <= '0' when s_idaddr = '0' and s_clkaddr = '0' and uds_i = '0' and csreg_i = '0' and rw_i = '1' else '1';
