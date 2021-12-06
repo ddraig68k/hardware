@@ -41,7 +41,7 @@ architecture Behavioral of AudioYM2151 is
     signal s_idaddr         : std_logic;
     signal s_clkaddr        : std_logic;
     
-    signal s_clkreg         : std_logic_vector(15 downto 0) := X"BCEE";
+    signal s_clkreg         : std_logic_vector(15 downto 0) := X"0000";
     signal s_prevclkreg     : std_logic_vector(15 downto 0) := X"0000";
     signal s_setfreq        : std_logic := '0';
     signal s_spiclk         : std_logic;
