@@ -107,6 +107,7 @@ BEGIN
 		uds_i       <= '0';
         rw_i        <= '1';
         csreg_i     <= '0';
+		wait on dtack_o until dtack_o = '0';
 		wait for 300ns;
 		wait on cpuclk_i until cpuclk_i = '1';
 		lds_i       <= '1';

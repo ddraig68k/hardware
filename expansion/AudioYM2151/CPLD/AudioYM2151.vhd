@@ -35,11 +35,9 @@ architecture Behavioral of AudioYM2151 is
 
     constant BOARD_ID       : std_logic_vector(15 downto 0) := X"2121";
 
-    signal s_dtackcount     : std_logic_vector(2 downto 0);
+    signal s_dtackcount     : std_logic_vector(3 downto 0);
     signal s_ledtime        : std_logic_vector(9 downto 0);
     signal s_clkdiv         : std_logic;
-    signal s_idaddr         : std_logic;
-    signal s_clkaddr        : std_logic;
     
     signal s_clkreg         : std_logic_vector(15 downto 0) := X"0000";
     signal s_prevclkreg     : std_logic_vector(15 downto 0) := X"0000";
@@ -60,7 +58,7 @@ begin
         if reset_i = '0' or (csdata_i = '1' and csreg_i = '1') then
             s_dtackcount <= (others => '0');
         elsif rising_edge(cpuclk_i) then
-            if s_dtackcount < "111" then
+            if s_dtackcount < "1111" then
                 s_dtackcount <= s_dtackcount + 1;
             end if;
         end if;
@@ -83,6 +81,7 @@ begin
             if (reset_i = '0') then
                 s_clkdone <= '0';
                 s_setclock <= '1';
+				s_prevclkreg <= (others => '0');
             else
                 if (s_clkreg /= s_prevclkreg and s_spi_busy = '0') then
                     s_setclock <= '1';
@@ -112,7 +111,7 @@ begin
             clk         => s_spiclk, 
             reset_n     => reset_i,
             enable      => s_setclock,
-            cpol        => '1',
+            cpol        => '0',
             cpha        => '0',
             miso        => s_miso,
             sclk        => spi_clk_o,
@@ -124,25 +123,18 @@ begin
         );
 
     -- Generate DTACK signal
-    dtack_o <= '0' when s_dtackcount > "011" and (csdata_i = '0' or csreg_i = '0') else '1';
+    dtack_o <= '0' when s_dtackcount > "0100" and (csdata_i = '0' or csreg_i = '0') else '1';
     
     -- Flash activity LED
-    led_o <= '0' when s_ledtime < "1111111111" else '1';
+    led_o <= '1' when s_ledtime < "1111111111" else '0';
 
-    -- Address decoding
-    s_idaddr <= '1' when addr_i = "1111111" else '0';
-    s_clkaddr <= '1' when std_match(addr_i, "1-0000-") else '0';
-    
     -- YM2151 decoding
-    ym_rd_o <= '0' when s_idaddr = '0' and s_clkaddr = '0' and uds_i = '0' and csreg_i = '0' and rw_i = '1' else '1';
-    ym_wr_o <= '0' when s_idaddr = '0' and s_clkaddr = '0' and uds_i = '0' and csreg_i = '0' and rw_i = '0' else '1';
-    ym_cs_o <= '0' when s_idaddr = '0' and s_clkaddr = '0' and uds_i = '0' and csreg_i = '0' else '1';
+    ym_rd_o <= not rw_i;
+    ym_wr_o <= rw_i;
+    ym_cs_o <= '0' when addr_i(7 downto 2) = "000000" and uds_i = '0' and csreg_i = '0' else '1';
 
-    -- YM2151 clock control (1000000 for clock speed, 1100000 for status register)
-    -- Status register just has busy bit in the lsb
-    data_io <= "0000000" & s_spi_busy & "0000000" & s_spi_busy when s_clkaddr = '1' and addr_i(6) = '1' and uds_i = '0' and rw_i = '1' else (others => 'Z');
-    data_io <= s_clkreg when s_clkaddr = '1' and addr_i(1) = '0' and uds_i = '0' and lds_i = '0' and rw_i = '1' else (others => 'Z');
-    s_clkreg <= data_io when s_clkaddr = '1' and addr_i(1) = '0' and uds_i = '0' and lds_i = '0' and rw_i = '0' else s_clkreg;
+    -- YM2151 clock control
+    s_clkreg <= X"BCFC" when reset_i = '0' else data_io when addr_i = "1000000" and uds_i = '0' and lds_i = '0' and rw_i = '0' else s_clkreg;
         
     -- Write out device ID
     data_io <= BOARD_ID when addr_i = "1111111" and uds_i = '0' and csreg_i = '0' else "ZZZZZZZZZZZZZZZZ";
