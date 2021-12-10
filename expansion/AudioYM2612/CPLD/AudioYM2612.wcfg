@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Dev/KiCAD/Ddraig68k/expansion/AudioYM2151/CPLD/tb_AudioYM2151_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="tb_audioym2151" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/tb_audioym2151/cpuclk_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cpuclk_i</obj_property>
+      <obj_property name="ObjectShortName">cpuclk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audioym2151/addr_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_i[7:1]</obj_property>
+      <obj_property name="ObjectShortName">addr_i[7:1]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audioym2151/data_io" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_io[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_io[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffa500</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audioym2151/reset_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_i</obj_property>
+      <obj_property name="ObjectShortName">reset_i</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audioym2151/lds_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lds_i</obj_property>
+      <obj_property name="ObjectShortName">lds_i</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audioym2151/uds_i" type="logic" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">uds_i</obj_property>
+      <obj_property name="ObjectShortName">uds_i</obj_property>
+      <obj_property name="label">uds_i</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audioym2151/rw_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rw_i</obj_property>
+      <obj_property name="ObjectShortName">rw_i</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#800080</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audioym2151/csdata_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">csdata_i</obj_property>
+      <obj_property name="ObjectShortName">csdata_i</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audioym2151/csreg_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">csreg_i</obj_property>
+      <obj_property name="ObjectShortName">csreg_i</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audioym2151/dtack_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dtack_o</obj_property>
+      <obj_property name="ObjectShortName">dtack_o</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audioym2151/led_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">led_o</obj_property>
+      <obj_property name="ObjectShortName">led_o</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audioym2151/ym_cs_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ym_cs_o</obj_property>
+      <obj_property name="ObjectShortName">ym_cs_o</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audioym2151/ym_wr_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ym_wr_o</obj_property>
+      <obj_property name="ObjectShortName">ym_wr_o</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audioym2151/ym_rd_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ym_rd_o</obj_property>
+      <obj_property name="ObjectShortName">ym_rd_o</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="group19" type="group">
+      <obj_property name="label">SPI Bus</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_audioym2151/spi_clk_o" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_clk_o</obj_property>
+         <obj_property name="ObjectShortName">spi_clk_o</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/spi_do_o" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">spi_do_o</obj_property>
+         <obj_property name="ObjectShortName">spi_do_o</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/csymclk_o" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">csymclk_o</obj_property>
+         <obj_property name="ObjectShortName">csymclk_o</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/s_spi_busy" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">s_spi_busy</obj_property>
+         <obj_property name="ObjectShortName">s_spi_busy</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/s_spi_enable" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">s_spi_enable</obj_property>
+         <obj_property name="ObjectShortName">s_spi_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/s_setclock" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">s_setclock</obj_property>
+         <obj_property name="ObjectShortName">s_setclock</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/s_clkreg" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">s_clkreg[15:0]</obj_property>
+         <obj_property name="ObjectShortName">s_clkreg[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/s_prevclkreg" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">s_prevclkreg[15:0]</obj_property>
+         <obj_property name="ObjectShortName">s_prevclkreg[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group45" type="group">
+      <obj_property name="label">SPI Internal</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/clk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/reset_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset_n</obj_property>
+         <obj_property name="ObjectShortName">reset_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/enable" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">enable</obj_property>
+         <obj_property name="ObjectShortName">enable</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ffff00</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/busy" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">busy</obj_property>
+         <obj_property name="ObjectShortName">busy</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ffff00</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/cpol" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cpol</obj_property>
+         <obj_property name="ObjectShortName">cpol</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/cpha" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">cpha</obj_property>
+         <obj_property name="ObjectShortName">cpha</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/sclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">sclk</obj_property>
+         <obj_property name="ObjectShortName">sclk</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/ss_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ss_n</obj_property>
+         <obj_property name="ObjectShortName">ss_n</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/mosi" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">mosi</obj_property>
+         <obj_property name="ObjectShortName">mosi</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/miso" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">miso</obj_property>
+         <obj_property name="ObjectShortName">miso</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/tx" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">tx[15:0]</obj_property>
+         <obj_property name="ObjectShortName">tx[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/rx" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rx[15:0]</obj_property>
+         <obj_property name="ObjectShortName">rx[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/state" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">state</obj_property>
+         <obj_property name="ObjectShortName">state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/receive_transmit" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">receive_transmit</obj_property>
+         <obj_property name="ObjectShortName">receive_transmit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/clk_toggles" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">clk_toggles</obj_property>
+         <obj_property name="ObjectShortName">clk_toggles</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/last_bit" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">last_bit</obj_property>
+         <obj_property name="ObjectShortName">last_bit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/rxbuffer" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">rxbuffer[15:0]</obj_property>
+         <obj_property name="ObjectShortName">rxbuffer[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/txbuffer" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">txbuffer[15:0]</obj_property>
+         <obj_property name="ObjectShortName">txbuffer[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/int_ss_n" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">int_ss_n</obj_property>
+         <obj_property name="ObjectShortName">int_ss_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/int_sclk" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">int_sclk</obj_property>
+         <obj_property name="ObjectShortName">int_sclk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/YMClock/data_length" type="other" db_ref_id="1">
+         <obj_property name="ElementShortName">data_length</obj_property>
+         <obj_property name="ObjectShortName">data_length</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

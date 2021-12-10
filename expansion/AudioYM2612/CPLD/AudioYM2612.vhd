@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity AudioYM2151 is
+entity AudioYM2612 is
     Port (
         data_io     : inout std_logic_vector (15 downto 0);
         addr_i      : in std_logic_vector (7 downto 1);
@@ -23,17 +23,25 @@ entity AudioYM2151 is
         ym_wr_o     : out std_logic;
         ym_rd_o     : out std_logic;
 
+        sn_rdy_i    : in std_logic;
+        sn_cs_o     : out std_logic;
+        sn_we_o     : out std_logic;
+
         csymclk_o   : out std_logic;
+        cssnclk_o   : out std_logic;
+        enymclk_o   : out std_logic;
+        ensnclk_o   : out std_logic;
         spi_clk_o   : out std_logic;
         spi_do_o    : out std_logic;
+        spi_di_i    : in std_logic;
 
         led_o       : out std_logic
     );
-end AudioYM2151;
+end AudioYM2612;
 
-architecture Behavioral of AudioYM2151 is
+architecture Behavioral of AudioYM2612 is
 
-    constant BOARD_ID       : std_logic_vector(15 downto 0) := X"2121";
+    constant BOARD_ID       : std_logic_vector(15 downto 0) := X"2222";
 
     signal s_dtackcount     : std_logic_vector(3 downto 0);
     signal s_ledtime        : std_logic_vector(9 downto 0);
@@ -50,6 +58,10 @@ architecture Behavioral of AudioYM2151 is
     signal s_miso           : std_logic := '0';
     signal s_clkdone        : std_logic;
     signal s_spiread        : std_logic_vector(15 downto 0);
+    
+    signal s_spi_ss         : std_logic;
+    signal s_spien_sn       : std_logic := '0';
+    signal s_spien_ym       : std_logic := '0';
    
 begin
 
@@ -98,6 +110,20 @@ begin
             end if;
         end if;
     end process;
+    
+    -- Determine which LTC6903 to write to depending on the address written to.
+    -- Addr[7:6] = "10" for the YM2612 Clock
+    -- Addr[7:6] = "11" for the SN76489 Clock
+    SelectSPI: process(addr_i(7), addr_i(6), csreg_i)
+    begin
+        if (csreg_i = '0' and addr_i(7) = '1' and addr_i(6) = '0') then
+            s_spien_ym <= '1';
+            s_spien_sn <= '0';
+        elsif (csreg_i = '0' and addr_i(7) = '1' and addr_i(6) = '1') then
+            s_spien_ym <= '0';
+            s_spien_sn <= '1';
+        end if;
+    end process;
 	
     ClkGen: entity work.Clock 
         port map (
@@ -106,7 +132,7 @@ begin
            clk_div16_o  => s_spiclk
         );
             
-    YMClock: entity work.spi_master
+    SPIMaster: entity work.spi_master
         port map (
             clk         => s_spiclk, 
             reset_n     => reset_i,
@@ -114,28 +140,37 @@ begin
             cpol        => '0',
             cpha        => '0',
             sclk        => spi_clk_o,
-            ss_n        => csymclk_o,
+            ss_n        => s_spi_ss,
             mosi        => spi_do_o,
             busy        => s_spi_busy,
             tx          => s_clkreg
         );
-
+        
     -- Generate DTACK signal
-    dtack_o <= '0' when s_dtackcount > "0100" and (csdata_i = '0' or csreg_i = '0') else '1';
+    dtack_o <= '0' when s_dtackcount > "0100" and (csdata_i = '0' or csreg_i = '0') and sn_rdy_i = '1' else '1';
     
     -- Flash activity LED
     led_o <= '1' when s_ledtime < "1111111111" else '0';
 
-    -- YM2151 decoding
+    -- YM2612 decoding
     ym_rd_o <= not rw_i;
     ym_wr_o <= rw_i;
     ym_cs_o <= '0' when addr_i(7 downto 2) = "000000" and uds_i = '0' and csreg_i = '0' else '1';
 
-    -- YM2151 clock control
+    sn_we_o <= rw_i;
+    sn_cs_o <= '0' when addr_i(7 downto 2) = "000001" and uds_i = '0' and csreg_i = '0' else '1';
+
+    -- YM2612 clock control
     s_clkreg <= X"BCFC" when reset_i = '0' else data_io when addr_i = "1000000" and uds_i = '0' and lds_i = '0' and rw_i = '0' else s_clkreg;
         
     -- Write out device ID
     data_io <= BOARD_ID when addr_i = "1111111" and uds_i = '0' and csreg_i = '0' else "ZZZZZZZZZZZZZZZZ";
 
+    csymclk_o <= '0' when s_spi_ss = '0' and s_spien_ym = '1' else '1';
+    cssnclk_o <= '0' when s_spi_ss = '0' and s_spien_sn = '1' else '1';
+    
+    enymclk_o <= reset_i;
+    ensnclk_o <= reset_i;
+    
 end Behavioral;
 
