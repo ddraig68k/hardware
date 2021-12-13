@@ -1,0 +1,35 @@
+
+#Created by Constraints Editor (xc9536-pc44-15) - 2020/10/13
+NET "cpuclk_i" TNM_NET = cpuclk_i;
+TIMESPEC TS_cpuclk_i = PERIOD "cpuclk_i" 10 MHz HIGH 50%;
+
+NET "cpuclk_i"  LOC = "P5" | BUFG = CLK ; 
+
+NET "addr_i<1>"  LOC = "P1"  ;
+NET "addr_i<2>"  LOC = "P2"  ;
+NET "addr_i<3>"  LOC = "P3"  ;
+NET "addr_i<4>"  LOC = "P44"  ;
+NET "addr_i<5>"  LOC = "P43"  ;
+NET "addr_i<6>"  LOC = "P42"  ;
+NET "addr_i<7>"  LOC = "P40"  ;
+NET "data_io<0>"  LOC = "P13"  ;
+NET "data_io<1>"  LOC = "P12"  ;
+NET "data_io<2>"  LOC = "P11"  ;
+NET "data_io<3>"  LOC = "P9"  ;
+NET "data_io<4>"  LOC = "P8"  ;
+NET "data_io<5>"  LOC = "P7"  ;
+NET "data_io<6>"  LOC = "P6"  ;
+NET "data_io<7>"  LOC = "P4"  ;
+
+NET "csdata_i"  LOC = "P36"  ;
+NET "csreg_i"  LOC = "P35"  ;
+NET "uds_i"  LOC = "P38"  ;
+NET "lds_i"  LOC = "P39"  ;
+NET "rw_i"  LOC = "P37"  ;
+NET "reset_i"  LOC = "P34"  ;
+
+NET "dtack_o"  LOC = "P33"  ;
+NET "led_o"  LOC = "P19"  ;
+NET "vdpr_o"  LOC = "P28"  ;
+NET "vdpw_o"  LOC = "P29"  ;
+NET "wait_i"  LOC = "P27"  ;

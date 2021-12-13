@@ -1,0 +1,10 @@
+# Ignore all files
+*
+*.*
+
+# Only include specified files
+!.gitignore
+!*.vhd
+!*.ucf
+!*.wcfg
+!*.xise
