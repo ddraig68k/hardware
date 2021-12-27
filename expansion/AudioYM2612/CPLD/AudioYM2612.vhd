@@ -147,7 +147,7 @@ begin
         );
         
     -- Generate DTACK signal
-    dtack_o <= '0' when s_dtackcount > "0100" and (csdata_i = '0' or csreg_i = '0') and sn_rdy_i = '1' else '1';
+    dtack_o <= '0' when s_dtackcount > "0100" and (csdata_i = '0' or csreg_i = '0') else '1';
     
     -- Flash activity LED
     led_o <= '1' when s_ledtime < "1111111111" else '0';
@@ -161,7 +161,7 @@ begin
     sn_cs_o <= '0' when addr_i(7 downto 2) = "000001" and uds_i = '0' and csreg_i = '0' else '1';
 
     -- YM2612 clock control
-    s_clkreg <= X"BCFC" when reset_i = '0' else data_io when addr_i = "1000000" and uds_i = '0' and lds_i = '0' and rw_i = '0' else s_clkreg;
+    s_clkreg <= data_io when (addr_i = "1000000" or addr_i = "1100000") and uds_i = '0' and lds_i = '0' and rw_i = '0' else s_clkreg;
         
     -- Write out device ID
     data_io <= BOARD_ID when addr_i = "1111111" and uds_i = '0' and csreg_i = '0' else "ZZZZZZZZZZZZZZZZ";

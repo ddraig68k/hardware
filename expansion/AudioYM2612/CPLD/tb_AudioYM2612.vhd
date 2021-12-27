@@ -2,13 +2,13 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-ENTITY tb_AudioYM2151 is
-END tb_AudioYM2151;
+ENTITY tb_AudioYM2612 is
+END tb_AudioYM2612;
 
-ARCHITECTURE behavior OF tb_AudioYM2151 IS
+ARCHITECTURE behavior OF tb_AudioYM2612 IS
 
     -- Component Declaration for the Unit Under Test (UUT)
-    COMPONENT AudioYM2151
+    COMPONENT AudioYM2612
         PORT (
             data_io     : INOUT STD_LOGIC_VECTOR(15 DOWNTO 0);
             addr_i      : IN STD_LOGIC_VECTOR(7 DOWNTO 1);
@@ -23,10 +23,17 @@ ARCHITECTURE behavior OF tb_AudioYM2151 IS
             ym_cs_o     : OUT STD_LOGIC;
             ym_wr_o     : OUT STD_LOGIC;
             ym_rd_o     : OUT STD_LOGIC;
-            csymclk_o   : OUT STD_LOGIC;
-            spi_clk_o   : OUT STD_LOGIC;
-            spi_do_o    : OUT STD_LOGIC;
-            led_o       : OUT STD_LOGIC
+			sn_rdy_i    : in std_logic;
+			sn_cs_o     : out std_logic;
+			sn_we_o     : out std_logic;
+			csymclk_o   : out std_logic;
+			cssnclk_o   : out std_logic;
+			enymclk_o   : out std_logic;
+			ensnclk_o   : out std_logic;
+			spi_clk_o   : out std_logic;
+			spi_do_o    : out std_logic;
+			spi_di_i    : in std_logic;
+			led_o       : out std_logic
         );
     END COMPONENT;
 
@@ -59,7 +66,7 @@ ARCHITECTURE behavior OF tb_AudioYM2151 IS
 
 BEGIN
     -- Instantiate the Unit Under Test (UUT)
-    uut : AudioYM2151 PORT MAP(
+    uut : AudioYM2612 PORT MAP(
         data_io     => data_io,
         addr_i      => addr_i,
         cpuclk_i    => cpuclk_i,
@@ -116,9 +123,9 @@ BEGIN
         csreg_i     <= '1';
 		wait for 100ns;
 
-        -- Read a register on the YM2151
+        -- Read a register on the YM2612
 		wait on cpuclk_i until cpuclk_i = '1';
-		report("Testing YM2151 read");
+		report("Testing YM2612 read");
 		addr_i      <= "0000000";
 		lds_i       <= '1';
 		uds_i       <= '0';
@@ -132,9 +139,9 @@ BEGIN
         csreg_i     <= '1';
 		wait for 100ns;
 
-        -- Write a register on the YM2151
+        -- Write a register on the YM2612
 		wait on cpuclk_i until cpuclk_i = '1';
-		report("Testing YM2151 write");
+		report("Testing YM2612 write");
 		addr_i      <= "0000000";
 		lds_i       <= '1';
 		uds_i       <= '0';
@@ -148,43 +155,9 @@ BEGIN
         csreg_i     <= '1';
 		wait for 100ns;
 
-        -- Read the YM2151 clock frequency
+        -- Write the YM2612 clock frequency
 		wait on cpuclk_i until cpuclk_i = '1';
-		report("Testing YM2151 read");
-		addr_i      <= "1000000";
-		lds_i       <= '0';
-		uds_i       <= '0';
-        rw_i        <= '1';
-        csreg_i     <= '0';
-		wait for 300ns;
-		wait on cpuclk_i until cpuclk_i = '1';
-		lds_i       <= '1';
-		uds_i       <= '1';
-        rw_i        <= '1';
-        csreg_i     <= '1';
-		wait for 100ns;
-        
-        -- Read the YM2151 spi status
-		wait on cpuclk_i until cpuclk_i = '1';
-		report("Testing YM2151 read");
-		addr_i      <= "1000001";
-		lds_i       <= '1';
-		uds_i       <= '0';
-        rw_i        <= '1';
-        csreg_i     <= '0';
-		wait for 300ns;
-		wait on cpuclk_i until cpuclk_i = '1';
-		lds_i       <= '1';
-		uds_i       <= '1';
-        rw_i        <= '1';
-        csreg_i     <= '1';
-		wait for 100ns;
-
-		wait for 500ns;
-        
-        -- Write the YM2151 clock frequency
-		wait on cpuclk_i until cpuclk_i = '1';
-		report("Testing YM2151 read");
+		report("Testing YM2612 read");
 		addr_i      <= "1000000";
 		lds_i       <= '0';
 		uds_i       <= '0';
@@ -202,9 +175,9 @@ BEGIN
         -- Wait for the SPI transfer to finish
         WAIT FOR 60us;
 
-        -- Write the YM2151 clock frequency again to test
+        -- Write the YM2612 clock frequency again to test
 		wait on cpuclk_i until cpuclk_i = '1';
-		report("Testing YM2151 read");
+		report("Testing YM2612 read");
 		addr_i      <= "1000000";
 		lds_i       <= '0';
 		uds_i       <= '0';
