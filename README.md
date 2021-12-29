@@ -10,9 +10,16 @@ These files are untested. The design was initially created in [Proteus](https://
 
 [Y Ddraig main pcb](yddraig)
 
-## Untested designs
 
-[YM2151 Audio card](expansion/AudioYM2151)
+Expansion Cards
+
+* [YM2151 Audio card](expansion/AudioYM2151)
+
+* [TMS9918 Graphics card](expansion/GfxTMS9918)
+
+<br/>
+
+## Untested designs
 
 [YM2612 Audio card](expansion/AudioYM2612)
 
@@ -20,7 +27,6 @@ These files are untested. The design was initially created in [Proteus](https://
 
 [Floppy Disk controller card](expansion/FloppyDiskController)
 
-[TMS9918 Graphics card](expansion/GfxTMS9918)
 
 [V9958 Graphics card](expansion/GfxV9958)
 
