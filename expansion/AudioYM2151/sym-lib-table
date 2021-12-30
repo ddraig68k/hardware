@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name Ddraig)(type Legacy)(uri ${DDRAIGLIB}/Ddraig.lib)(options "")(descr ""))
+  (lib (name "Ddraig")(type "KiCad")(uri "${DDRAIGLIB}/Ddraig.kicad_sym")(options "")(descr ""))
 )
