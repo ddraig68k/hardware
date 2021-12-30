@@ -1,6 +1,6 @@
 # Updated for KiCAD 6
 
-Design fiels have been updated for KiCAD 6. Access to the KiCAD 5 versions of the files can be found here: [hardware_kicad5](https://github.com/ddraig68k/hardware_kicad5). Any fixed to the designs will be made in both projects.  
+Design files have been updated for KiCAD 6. Access to the KiCAD 5 versions of the files can be found here: [hardware_kicad5](https://github.com/ddraig68k/hardware_kicad5). Any fixed to the designs will be made in both projects.  
 
 
 # CAD files for Y Ddraig
