@@ -4247,7 +4247,7 @@
     (pin "8" (uuid 74c005b3-5673-4a59-b8ea-ac189c034a8d))
   )
 
-  (symbol (lib_id "Device:R_Network08") (at 130.81 27.94 0)
+  (symbol (lib_id "Device:R_Network08") (at 130.81 27.94 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061ae1b5c)
     (property "Reference" "RN?" (id 0) (at 134.62 22.86 0)
@@ -4273,7 +4273,7 @@
     (pin "9" (uuid cac72430-47bf-4b8e-b466-33ececbf86f5))
   )
 
-  (symbol (lib_id "power:+5V") (at 120.65 21.59 0)
+  (symbol (lib_id "power:+5V") (at 120.65 21.59 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061ae1b62)
     (property "Reference" "#PWR?" (id 0) (at 120.65 25.4 0)

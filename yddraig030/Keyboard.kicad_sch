@@ -206,7 +206,7 @@
           (stroke (width 0) (type default) (color 0 0 0 0))
           (fill (type none))
         )
-        (arc (start -1.016 5.08) (mid -4.6228 2.1214) (end -4.318 -2.54)
+        (arc (start -1.016 5.08) (mid -4.6243 2.1181) (end -4.318 -2.54)
           (stroke (width 0.254) (type default) (color 0 0 0 0))
           (fill (type none))
         )
@@ -324,7 +324,7 @@
           (stroke (width 0) (type default) (color 0 0 0 0))
           (fill (type none))
         )
-        (arc (start 4.318 -2.54) (mid 4.6661 2.1322) (end 1.016 5.08)
+        (arc (start 4.318 -2.54) (mid 4.6646 2.1357) (end 1.016 5.08)
           (stroke (width 0.254) (type default) (color 0 0 0 0))
           (fill (type none))
         )
@@ -1432,7 +1432,7 @@
     (uuid f86a1f1d-356c-418d-a179-20093f481e5c)
   )
 
-  (symbol (lib_id "Ddraig:Mini-DIN-6") (at 217.17 59.69 0)
+  (symbol (lib_id "Ddraig:Mini-DIN-6") (at 217.17 59.69 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aef9d9)
     (property "Reference" "J?" (id 0) (at 217.17 50.3682 0))
@@ -1452,7 +1452,7 @@
     (pin "7" (uuid 42bd2009-bf20-4033-a1ad-68e8c01489bf))
   )
 
-  (symbol (lib_id "Oscillator:CXO_DIP8") (at 72.39 48.26 0)
+  (symbol (lib_id "Oscillator:CXO_DIP8") (at 72.39 48.26 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aef9df)
     (property "Reference" "X?" (id 0) (at 74.93 39.37 0)
@@ -1473,7 +1473,7 @@
     (pin "8" (uuid 60820e48-3c52-4beb-9d68-41184c385396))
   )
 
-  (symbol (lib_id "74xx:74LS06") (at 179.07 57.15 0)
+  (symbol (lib_id "74xx:74LS06") (at 179.07 57.15 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aef9e5)
     (property "Reference" "U?" (id 0) (at 179.07 49.0982 0))
@@ -1488,7 +1488,7 @@
     (pin "2" (uuid ab24abf8-3c2a-42ab-95fa-04de3955cdd6))
   )
 
-  (symbol (lib_id "74xx:74LS06") (at 179.07 71.12 0)
+  (symbol (lib_id "74xx:74LS06") (at 179.07 71.12 0) (unit 2)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aef9eb)
     (property "Reference" "U?" (id 0) (at 179.07 63.0682 0))
@@ -1503,7 +1503,7 @@
     (pin "4" (uuid d3f0e0e0-f91c-4ce6-a37a-eb0cb4d4427b))
   )
 
-  (symbol (lib_id "74xx:74LS06") (at 179.07 87.63 0)
+  (symbol (lib_id "74xx:74LS06") (at 179.07 87.63 0) (unit 3)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aef9f1)
     (property "Reference" "U?" (id 0) (at 179.07 79.5782 0))
@@ -1518,7 +1518,7 @@
     (pin "6" (uuid 24a9a859-9e59-444d-8086-0f552b5d5f68))
   )
 
-  (symbol (lib_id "74xx:74LS06") (at 179.07 101.6 0)
+  (symbol (lib_id "74xx:74LS06") (at 179.07 101.6 0) (unit 4)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aef9f7)
     (property "Reference" "U?" (id 0) (at 179.07 93.5482 0))
@@ -1533,7 +1533,7 @@
     (pin "9" (uuid aeccc5d4-874c-47b3-84b1-686906b76c94))
   )
 
-  (symbol (lib_id "74xx:74LS06") (at 163.83 113.03 0)
+  (symbol (lib_id "74xx:74LS06") (at 163.83 113.03 0) (unit 5)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aef9fd)
     (property "Reference" "U?" (id 0) (at 167.64 106.68 0))
@@ -1548,7 +1548,7 @@
     (pin "11" (uuid b696188b-ff0f-4b35-858b-f11de284d0fc))
   )
 
-  (symbol (lib_id "74xx:74LS06") (at 163.83 123.19 0)
+  (symbol (lib_id "74xx:74LS06") (at 163.83 123.19 0) (unit 6)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aefa03)
     (property "Reference" "U?" (id 0) (at 167.64 116.84 0))
@@ -1563,7 +1563,7 @@
     (pin "13" (uuid 7156e14d-7904-4ae0-9d6f-f2dd9f38e323))
   )
 
-  (symbol (lib_id "Ddraig:VT82C42") (at 124.46 77.47 0)
+  (symbol (lib_id "Ddraig:VT82C42") (at 124.46 77.47 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aefa09)
     (property "Reference" "U?" (id 0) (at 130.81 48.26 0))
@@ -1616,7 +1616,7 @@
     (pin "9" (uuid fbef636a-86a0-4ce7-a802-f4efd0da6ab2))
   )
 
-  (symbol (lib_id "power:+5V") (at 207.01 49.53 0)
+  (symbol (lib_id "power:+5V") (at 207.01 49.53 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aefa15)
     (property "Reference" "#PWR?" (id 0) (at 207.01 53.34 0)
@@ -1632,7 +1632,7 @@
     (pin "1" (uuid 98432a71-771e-40af-9ad2-f6157bd68b47))
   )
 
-  (symbol (lib_id "power:GND") (at 227.33 97.79 0)
+  (symbol (lib_id "power:GND") (at 227.33 97.79 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aefa1b)
     (property "Reference" "#PWR?" (id 0) (at 227.33 104.14 0)
@@ -1648,7 +1648,7 @@
     (pin "1" (uuid 18bee7d5-02bb-4c6f-8140-5de2dfdc8ae3))
   )
 
-  (symbol (lib_id "power:GND") (at 124.46 119.38 0)
+  (symbol (lib_id "power:GND") (at 124.46 119.38 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aefa2e)
     (property "Reference" "#PWR?" (id 0) (at 124.46 125.73 0)
@@ -1664,7 +1664,7 @@
     (pin "1" (uuid 384d106b-3e8b-4dba-af44-e0485517a086))
   )
 
-  (symbol (lib_id "power:+5V") (at 142.24 49.53 0)
+  (symbol (lib_id "power:+5V") (at 142.24 49.53 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aefa44)
     (property "Reference" "#PWR?" (id 0) (at 142.24 53.34 0)
@@ -1680,7 +1680,7 @@
     (pin "1" (uuid d08e5c67-2cdf-43e6-86c4-1b2b5a6b25f0))
   )
 
-  (symbol (lib_id "Device:R") (at 196.85 105.41 0)
+  (symbol (lib_id "Device:R") (at 196.85 105.41 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aefa56)
     (property "Reference" "R?" (id 0) (at 198.628 104.2416 0)
@@ -1699,7 +1699,7 @@
     (pin "2" (uuid 82d86df6-819b-4b01-b886-ca989265e369))
   )
 
-  (symbol (lib_id "power:+5V") (at 200.66 99.06 0)
+  (symbol (lib_id "power:+5V") (at 200.66 99.06 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aefa5e)
     (property "Reference" "#PWR?" (id 0) (at 200.66 102.87 0)
@@ -1715,7 +1715,7 @@
     (pin "1" (uuid 5dee9a57-30fe-415b-b50d-45f791af7232))
   )
 
-  (symbol (lib_id "power:GND") (at 72.39 62.23 0)
+  (symbol (lib_id "power:GND") (at 72.39 62.23 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aefab0)
     (property "Reference" "#PWR?" (id 0) (at 72.39 68.58 0)
@@ -1731,7 +1731,7 @@
     (pin "1" (uuid edda28a1-2eea-4291-a269-b28c24e8ddd6))
   )
 
-  (symbol (lib_id "power:+5V") (at 124.46 43.18 0)
+  (symbol (lib_id "power:+5V") (at 124.46 43.18 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aefab6)
     (property "Reference" "#PWR?" (id 0) (at 124.46 46.99 0)
@@ -1747,7 +1747,7 @@
     (pin "1" (uuid 7ec2a2c1-a8bb-401d-97fa-e8341df9d413))
   )
 
-  (symbol (lib_id "power:+5V") (at 105.41 46.99 0)
+  (symbol (lib_id "power:+5V") (at 105.41 46.99 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aefabc)
     (property "Reference" "#PWR?" (id 0) (at 105.41 50.8 0)
@@ -1763,7 +1763,7 @@
     (pin "1" (uuid e1dc36f6-0e92-48f5-8f16-62ad0f4d51b2))
   )
 
-  (symbol (lib_id "power:+5V") (at 72.39 38.1 0)
+  (symbol (lib_id "power:+5V") (at 72.39 38.1 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aefac6)
     (property "Reference" "#PWR?" (id 0) (at 72.39 41.91 0)
@@ -1779,7 +1779,7 @@
     (pin "1" (uuid 5899ea87-40dc-4426-9b3c-f786f2d9e3ba))
   )
 
-  (symbol (lib_id "Device:R") (at 204.47 105.41 0)
+  (symbol (lib_id "Device:R") (at 204.47 105.41 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aefad6)
     (property "Reference" "R?" (id 0) (at 206.248 104.2416 0)
@@ -1798,7 +1798,7 @@
     (pin "2" (uuid 7b772510-62cb-4fd7-a82b-f33fe8682fb3))
   )
 
-  (symbol (lib_id "Ddraig:Mini-DIN-6") (at 217.17 86.36 0)
+  (symbol (lib_id "Ddraig:Mini-DIN-6") (at 217.17 86.36 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aefadc)
     (property "Reference" "J?" (id 0) (at 217.17 77.0382 0))
@@ -1818,7 +1818,7 @@
     (pin "7" (uuid eb68104e-38ec-4d4b-a7fe-cb72201bdea0))
   )
 
-  (symbol (lib_id "74xx:74LS06") (at 73.66 123.19 0)
+  (symbol (lib_id "74xx:74LS06") (at 73.66 123.19 0) (unit 7)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aefaee)
     (property "Reference" "U?" (id 0) (at 79.502 122.0216 0)
@@ -1837,7 +1837,7 @@
     (pin "7" (uuid 36d93c89-70d3-4926-b7e4-922f5d3f19ea))
   )
 
-  (symbol (lib_id "power:GND") (at 73.66 137.16 0)
+  (symbol (lib_id "power:GND") (at 73.66 137.16 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aefaf4)
     (property "Reference" "#PWR?" (id 0) (at 73.66 143.51 0)
@@ -1853,7 +1853,7 @@
     (pin "1" (uuid 971ad68c-8cfd-4111-8d03-92f39536a05a))
   )
 
-  (symbol (lib_id "power:+5V") (at 73.66 109.22 0)
+  (symbol (lib_id "power:+5V") (at 73.66 109.22 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061aefafa)
     (property "Reference" "#PWR?" (id 0) (at 73.66 113.03 0)
