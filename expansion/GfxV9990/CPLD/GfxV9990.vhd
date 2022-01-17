@@ -29,12 +29,9 @@ architecture Behavioral of GfxV9990 is
     signal s_dtackcount     : std_logic_vector(2 downto 0);
     signal s_ledtime        : std_logic_vector(9 downto 0);
     signal s_clkdiv         : std_logic;
-    signal s_idaddr         : std_logic;
-	
-	signal s_vdpw			: std_logic;
-	signal s_vdpr			: std_logic;
-	signal s_cs_delay		: std_logic;
-	
+    signal s_idsel         	: std_logic;
+	signal s_vdpsel			: std_logic;
+		
 begin
 
     dtack_gen : process(cpuclk_i, reset_i, csreg_i, csdata_i)
@@ -64,27 +61,23 @@ begin
                 clk_i => cpuclk_i, clk_div2_o => OPEN, clk_div4_o => OPEN, clk_div8_o => s_clkdiv
             );
 
-	cs_delay : process(cpuclk_i, csreg_i)
-	begin
-		if rising_edge(cpuclk_i) then
-			s_cs_delay <= csreg_i;
-		end if;
-	end process;
+	AddrDec: entity work.AddressDecode
+		port map (
+				addr => addr_i, lds => lds_i, uds => uds_i, csreg => csreg_i, vdpsel => s_vdpsel, idsel => s_idsel
+			);
 	
-
+	VDP: entity work.VDPState
+		port map (
+			clk => cpuclk_i, reset => reset_i, vdpsel => s_vdpsel, rw => rw_i, vdpw => vdpw_o, vdpr => vdpr_o
+		);
+		
     -- Generate DTACK signal
-    dtack_o <= '0' when s_dtackcount > "011" and (csdata_i = '0' or csreg_i = '0') else '1';
+    dtack_o <= '0' when s_dtackcount > "011" and (csdata_i = '0' or csreg_i = '0') and wait_i = '1' else '1';
     
         -- Flash activity LED
     led_o <= '0' when s_ledtime < "1111111111" else '1';
               
-    -- Address decoding
-    s_idaddr <= '1' when addr_i = "1111111" else '0';
-    vdpr_o <= '0' when s_idaddr = '0' and uds_i = '0' and s_cs_delay = '0' and rw_i = '1' else '1';
-    vdpw_o <= '0' when s_idaddr = '0' and uds_i = '0' and s_cs_delay = '0' and rw_i = '0' else '1';
-    
-    
     -- Write out device ID
-    data_io <= BOARD_ID when s_idaddr = '1' and uds_i = '0' and csreg_i = '0' else "ZZZZZZZZ";
+    data_io <= BOARD_ID when s_idsel = '1' else "ZZZZZZZZ";
+	
 end Behavioral;
-
