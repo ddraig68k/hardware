@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/Dev/KiCAD/ddraig68k-kicad/expansion/GfxV9990/CPLD/tb_GfxV9990_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="tb_gfxv9990" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/tb_gfxv9990/addr_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_i[7:1]</obj_property>
+      <obj_property name="ObjectShortName">addr_i[7:1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gfxv9990/cpuclk_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cpuclk_i</obj_property>
+      <obj_property name="ObjectShortName">cpuclk_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gfxv9990/csreg_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">csreg_i</obj_property>
+      <obj_property name="ObjectShortName">csreg_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gfxv9990/csdata_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">csdata_i</obj_property>
+      <obj_property name="ObjectShortName">csdata_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gfxv9990/reset_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_i</obj_property>
+      <obj_property name="ObjectShortName">reset_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gfxv9990/uds_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">uds_i</obj_property>
+      <obj_property name="ObjectShortName">uds_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gfxv9990/lds_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lds_i</obj_property>
+      <obj_property name="ObjectShortName">lds_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gfxv9990/rw_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rw_i</obj_property>
+      <obj_property name="ObjectShortName">rw_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gfxv9990/wait_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wait_i</obj_property>
+      <obj_property name="ObjectShortName">wait_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gfxv9990/data_io" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_io[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_io[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gfxv9990/dtack_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dtack_o</obj_property>
+      <obj_property name="ObjectShortName">dtack_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gfxv9990/vdpw_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">vdpw_o</obj_property>
+      <obj_property name="ObjectShortName">vdpw_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gfxv9990/vdpr_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">vdpr_o</obj_property>
+      <obj_property name="ObjectShortName">vdpr_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gfxv9990/led_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">led_o</obj_property>
+      <obj_property name="ObjectShortName">led_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gfxv9990/clk10mhz_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk10mhz_period</obj_property>
+      <obj_property name="ObjectShortName">clk10mhz_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gfxv9990/uut/s_idsel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_idsel</obj_property>
+      <obj_property name="ObjectShortName">s_idsel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gfxv9990/uut/s_vdpsel" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_vdpsel</obj_property>
+      <obj_property name="ObjectShortName">s_vdpsel</obj_property>
+   </wvobject>
+</wave_config>

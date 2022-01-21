@@ -72,7 +72,7 @@ begin
 		);
 		
     -- Generate DTACK signal
-    dtack_o <= '0' when s_dtackcount > "011" and (csdata_i = '0' or csreg_i = '0') and wait_i = '1' else '1';
+    dtack_o <= '0' when s_dtackcount > "100" and (csdata_i = '0' or csreg_i = '0') and wait_i = '1' else '1';
     
         -- Flash activity LED
     led_o <= '0' when s_ledtime < "1111111111" else '1';

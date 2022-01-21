@@ -37,7 +37,7 @@ architecture Behavioral of AddressDecode is
 
 begin
 
-	idsel 	<= '1' WHEN csreg = '0' AND (lds = '0' OR uds = '0') AND addr = "1111111" ELSE '0';
+	idsel 	<= '1' WHEN csreg = '0' AND (lds = '0' OR uds = '0') AND std_match(addr, "111111-") ELSE '0';
 	vdpsel	<= '1' WHEN csreg = '0' AND uds = '0' AND std_match(addr, "0000---") ELSE '0';
 
 end Behavioral;

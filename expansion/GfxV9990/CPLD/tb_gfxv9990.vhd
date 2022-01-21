@@ -122,19 +122,21 @@ BEGIN
 		reset_i <= '1';
 		wait for 50ns;
 
+
 		-- Test with the ID line active
 		wait on cpuclk_i until cpuclk_i = '1';
 		lds_i   <='1';
-		uds_i   <= '1';
+		uds_i   <= '0';
 		csreg_i <= '0';
+		addr_i  <= "1111111";
 		wait on dtack_o until dtack_o = '0';
 		wait for 50ns;
 		wait on cpuclk_i until cpuclk_i = '1';
 		lds_i   <='1';
 		uds_i   <= '1';
 		csreg_i <= '1';
+		addr_i  <= "0000000";
 		wait for 50ns;
-
 
 		-- Read from the V9990
 		wait on cpuclk_i until cpuclk_i = '1';
