@@ -144,8 +144,9 @@ BEGIN
 		uds_i   <= '0';
 		csreg_i <= '0';
 		rw_i    <= '1';
+		wait for 100ns;
 		wait on dtack_o until dtack_o = '0';
-		wait for 50ns;
+		wait for 200ns;
 		wait on cpuclk_i until cpuclk_i = '1';
 		lds_i   <='1';
 		uds_i   <= '1';
@@ -154,12 +155,14 @@ BEGIN
 
 		-- Write to the V9990
 		wait on cpuclk_i until cpuclk_i = '1';
-		lds_i   <='1';
-		uds_i   <= '0';
 		csreg_i <= '0';
 		rw_i    <= '0';
+		wait for 100ns;
+		lds_i   <='1';
+		uds_i   <= '0';
+		wait for 100ns;
 		wait on dtack_o until dtack_o = '0';
-		wait for 50ns;
+		wait for 200ns;
 		wait on cpuclk_i until cpuclk_i = '1';
 		rw_i    <= '1';
 		lds_i   <='1';

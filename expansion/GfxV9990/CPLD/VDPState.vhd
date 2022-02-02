@@ -19,7 +19,7 @@ begin
 
 	FSM: process(clk, reset, vdpsel)
 	begin
-		if (reset = '0') then
+		if (reset = '0' or vdpsel = '0') then
 			s_state <= VDPIDLE;
 			vdpw 	<= '1';
 			vdpr	<= '1';
@@ -27,6 +27,8 @@ begin
 			if (rising_edge(clk)) then
 				case s_state is
 					when VDPIDLE => 
+						vdpw <= '1';
+						vdpr <= '1';
 						if (vdpsel = '1') then
 							if (rw = '0') then
 								s_state <= VDPWRITE;
@@ -45,9 +47,9 @@ begin
 						
 					when VDPWAIT =>
 						vdpw <= '1';
-						vdpr <= '1';
 						if (vdpsel = '0') then
 							s_state <= VDPIDLE;
+							vdpr 	<= '1';
 						end if;
 				end case;
 			end if;
