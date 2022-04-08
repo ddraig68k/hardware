@@ -26,7 +26,7 @@ end Joypad;
 
 architecture Behavioral of Joypad is
 
-    constant BOARD_ID       : std_logic_vector(7 downto 0) := X"33";
+    constant BOARD_ID       : std_logic_vector(7 downto 0) := X"42";
 
     signal s_dtackcount     : std_logic_vector(2 downto 0);
     signal s_ledtime        : std_logic_vector(9 downto 0);
