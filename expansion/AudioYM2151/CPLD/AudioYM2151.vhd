@@ -34,21 +34,24 @@ end AudioYM2151;
 architecture Behavioral of AudioYM2151 is
 
     constant BOARD_ID       : std_logic_vector(15 downto 0) := X"2121";
+	 constant DEFAULT_CLK	 : std_logic_vector(15 downto 0) := X"BCFC"; -- 3.57Mhz
 
     signal s_dtackcount     : std_logic_vector(3 downto 0);
     signal s_ledtime        : std_logic_vector(9 downto 0);
     signal s_clkdiv         : std_logic;
     
-    signal s_clkreg         : std_logic_vector(15 downto 0) := X"0000";
-    signal s_prevclkreg     : std_logic_vector(15 downto 0) := X"0000";
+    signal s_clkreg         : std_logic_vector(15 downto 0);
     signal s_setfreq        : std_logic := '0';
     signal s_spiclk         : std_logic;
+	 signal s_last_reset		 : std_logic := '0';
     
     signal s_setclock       : std_logic := '0';
     signal s_spi_enable     : std_logic := '0';
     signal s_spi_busy       : std_logic := '0';
     signal s_miso           : std_logic := '0';
     signal s_clkdone        : std_logic;
+	 signal s_clock_reg_sel	 : std_logic;
+	 signal s_reg_set			 : std_logic;
     signal s_spiread        : std_logic_vector(15 downto 0);
    
 begin
@@ -80,13 +83,19 @@ begin
         if (rising_edge(cpuclk_i)) then
             if (reset_i = '0') then
                 s_clkdone <= '0';
-                s_setclock <= '1';
-				s_prevclkreg <= (others => '0');
+                s_setclock <= '0';
+					 --s_prevclkreg <= (others => '0');
+					 s_reg_set <= '0';
             else
-                if (s_clkreg /= s_prevclkreg and s_spi_busy = '0') then
+                if (s_last_reset = '0' and s_setclock = '0' and s_spi_busy = '0') then
                     s_setclock <= '1';
-                    s_prevclkreg <= s_clkreg;
+                    s_clkreg <= DEFAULT_CLK;
                     s_spi_enable <= '0';
+					 elsif (s_reg_set = '1' and s_setclock = '0' and s_spi_busy = '0') then
+                    s_setclock <= '1';
+                    --s_clkreg <= data_io;
+                    s_spi_enable <= '0';
+						  s_reg_set <= '0';
                 elsif (s_setclock = '1' and s_spi_busy = '0') then
                     s_spi_enable <= '1';
                 elsif (s_setclock = '1' and s_spi_busy = '1') then
@@ -95,6 +104,14 @@ begin
                     s_spi_enable <= '0';
                     s_setclock   <= '0';
                 end if;
+					 
+					 s_last_reset <= reset_i;
+					 
+					 if (s_clock_reg_sel = '1') then
+						 s_reg_set <= '1';
+						 s_clkreg <= data_io;
+					 end if;
+					 
             end if;
         end if;
     end process;
@@ -132,7 +149,8 @@ begin
     ym_cs_o <= '0' when addr_i(7 downto 2) = "000000" and uds_i = '0' and csreg_i = '0' else '1';
 
     -- YM2151 clock control
-    s_clkreg <= X"BCFC" when reset_i = '0' else data_io when addr_i = "1000000" and uds_i = '0' and lds_i = '0' and rw_i = '0' else s_clkreg;
+    s_clock_reg_sel <= '1' when addr_i = "1000000" and uds_i = '0' and lds_i = '0' and rw_i = '0' else '0';
+	 --s_clkreg <= X"BCFC" when reset_i = '0' else data_io when addr_i = "1000000" and uds_i = '0' and lds_i = '0' and rw_i = '0' else s_clkreg;
         
     -- Write out device ID
     data_io <= BOARD_ID when addr_i = "1111111" and uds_i = '0' and csreg_i = '0' else "ZZZZZZZZZZZZZZZZ";

@@ -219,6 +219,7 @@ BEGIN
         csreg_i     <= '1';
 		wait for 100ns;
 
+		data_io     <= X"ZZZZ";
         
         WAIT;
     END PROCESS;
