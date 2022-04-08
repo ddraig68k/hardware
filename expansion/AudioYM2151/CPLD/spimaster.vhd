@@ -42,7 +42,7 @@ begin
     begin
 
     if (reset_n = '0') then         -- reset everything
-        busy        <= '1';
+        busy        <= '0';
         int_ss_n    <= '1';
         mosi        <= 'Z';
         state       <= INIT;

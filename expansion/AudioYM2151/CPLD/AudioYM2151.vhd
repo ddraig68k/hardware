@@ -105,12 +105,12 @@ begin
                     s_setclock   <= '0';
                 end if;
 					 
-					 s_last_reset <= reset_i;
+				s_last_reset <= reset_i;
 					 
-					 if (s_clock_reg_sel = '1') then
-						 s_reg_set <= '1';
-						 s_clkreg <= data_io;
-					 end if;
+				if (s_clock_reg_sel = '1') then
+					s_reg_set <= '1';
+					s_clkreg <= data_io;
+				end if;
 					 
             end if;
         end if;

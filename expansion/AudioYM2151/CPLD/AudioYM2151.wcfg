@@ -121,6 +121,18 @@
          <obj_property name="UseCustomSignalColor">true</obj_property>
          <obj_property name="CustomSignalColor">#ff00ff</obj_property>
       </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/s_reg_set" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">s_reg_set</obj_property>
+         <obj_property name="ObjectShortName">s_reg_set</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/s_clock_reg_sel" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">s_clock_reg_sel</obj_property>
+         <obj_property name="ObjectShortName">s_clock_reg_sel</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_audioym2151/uut/s_last_reset" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">s_last_reset</obj_property>
+         <obj_property name="ObjectShortName">s_last_reset</obj_property>
+      </wvobject>
       <wvobject fp_name="/tb_audioym2151/uut/s_spi_busy" type="logic" db_ref_id="1">
          <obj_property name="ElementShortName">s_spi_busy</obj_property>
          <obj_property name="ObjectShortName">s_spi_busy</obj_property>
@@ -136,11 +148,6 @@
       <wvobject fp_name="/tb_audioym2151/uut/s_clkreg" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">s_clkreg[15:0]</obj_property>
          <obj_property name="ObjectShortName">s_clkreg[15:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/s_prevclkreg" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">s_prevclkreg[15:0]</obj_property>
-         <obj_property name="ObjectShortName">s_prevclkreg[15:0]</obj_property>
          <obj_property name="Radix">HEXRADIX</obj_property>
       </wvobject>
    </wvobject>
@@ -193,20 +200,9 @@
          <obj_property name="UseCustomSignalColor">true</obj_property>
          <obj_property name="CustomSignalColor">#ff00ff</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/miso" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">miso</obj_property>
-         <obj_property name="ObjectShortName">miso</obj_property>
-         <obj_property name="UseCustomSignalColor">true</obj_property>
-         <obj_property name="CustomSignalColor">#ff00ff</obj_property>
-      </wvobject>
       <wvobject fp_name="/tb_audioym2151/uut/YMClock/tx" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">tx[15:0]</obj_property>
          <obj_property name="ObjectShortName">tx[15:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/rx" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">rx[15:0]</obj_property>
-         <obj_property name="ObjectShortName">rx[15:0]</obj_property>
          <obj_property name="Radix">HEXRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/tb_audioym2151/uut/YMClock/state" type="other" db_ref_id="1">
@@ -220,15 +216,6 @@
       <wvobject fp_name="/tb_audioym2151/uut/YMClock/clk_toggles" type="other" db_ref_id="1">
          <obj_property name="ElementShortName">clk_toggles</obj_property>
          <obj_property name="ObjectShortName">clk_toggles</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/last_bit" type="other" db_ref_id="1">
-         <obj_property name="ElementShortName">last_bit</obj_property>
-         <obj_property name="ObjectShortName">last_bit</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/rxbuffer" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">rxbuffer[15:0]</obj_property>
-         <obj_property name="ObjectShortName">rxbuffer[15:0]</obj_property>
-         <obj_property name="Radix">HEXRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/tb_audioym2151/uut/YMClock/txbuffer" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">txbuffer[15:0]</obj_property>
