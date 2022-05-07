@@ -30,12 +30,13 @@ architecture Behavioral of Joypad is
 
     signal s_dtackcount     : std_logic_vector(2 downto 0);
     signal s_ledtime        : std_logic_vector(9 downto 0);
+	signal s_joyclk			: std_logic; 
     signal s_clkdiv         : std_logic;
     signal s_idaddr         : std_logic;
 
 	signal s_data_io		: std_logic_vector(7 downto 0) := "ZZZZZZZZ";
-	signal s_joy1oe			: std_logic;
-	signal s_joy2oe			: std_logic;
+	signal s_joy1oe			: std_logic := '1';
+	signal s_joy2oe			: std_logic := '1';
 	signal s_joy1sel		: std_logic := '0';
 	signal s_joy2sel		: std_logic := '0';
 	
@@ -65,7 +66,7 @@ begin
 
     ClkGen: entity work.Clock 
         port map (
-                clk_i => cpuclk_i, clk_div8_o => s_clkdiv
+                clk_i => cpuclk_i, clk_div4_o => s_joyclk, clk_div8_o => s_clkdiv
             );
 
 	addr_decode : process (cpuclk_i, reset_i, csreg_i)
@@ -121,6 +122,6 @@ begin
 	joy2oe_o <= s_joy2oe;
 	joy1sel_o <= s_joy1sel;
 	joy2sel_o <= s_joy2sel;
-	data_clk_o <= s_clkdiv;
+	data_clk_o <= s_joyclk when (s_joy1oe = '1' and s_joy2oe = '1') else '0';
 end Behavioral;
 

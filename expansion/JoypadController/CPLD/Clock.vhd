@@ -6,6 +6,7 @@ USE IEEE.NUMERIC_STD.ALL;
 entity Clock is
     Port (
 			clk_i 		: in std_logic;
+			clk_div4_o  : out std_logic;
 			clk_div8_o 	: out std_logic
 		);
 end Clock;
@@ -20,6 +21,7 @@ begin
 		end if;
 	end process;
 	
+	clk_div4_o <= s_clk_divider(1);
 	clk_div8_o <= s_clk_divider(2);
 	
 end Behavioral;
