@@ -3257,7 +3257,7 @@
     (pin "1" (uuid 563d0212-18a0-44b2-919a-347ac12199b3))
   )
 
-  (symbol (lib_id "Device:C") (at 45.72 30.48 0)
+  (symbol (lib_id "Device:C") (at 45.72 30.48 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060f62708)
     (property "Reference" "C601" (id 0) (at 48.641 29.3116 0)
@@ -3276,7 +3276,7 @@
     (pin "2" (uuid 52488da7-0afa-4934-a713-8aceebc23dbb))
   )
 
-  (symbol (lib_id "power:GND") (at 45.72 39.37 0)
+  (symbol (lib_id "power:GND") (at 45.72 39.37 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060f62714)
     (property "Reference" "#PWR0603" (id 0) (at 45.72 45.72 0)
@@ -3292,7 +3292,7 @@
     (pin "1" (uuid 4c61b8aa-d9fc-4222-96fa-ae607a93a44c))
   )
 
-  (symbol (lib_id "Device:C") (at 58.42 30.48 0)
+  (symbol (lib_id "Device:C") (at 58.42 30.48 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060f6271a)
     (property "Reference" "C602" (id 0) (at 61.341 29.3116 0)
@@ -3311,7 +3311,7 @@
     (pin "2" (uuid 690fc841-6349-4722-81c0-bb6f6ac02424))
   )
 
-  (symbol (lib_id "power:+5V") (at 45.72 21.59 0)
+  (symbol (lib_id "power:+5V") (at 45.72 21.59 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060f62724)
     (property "Reference" "#PWR0602" (id 0) (at 45.72 25.4 0)
@@ -3327,7 +3327,7 @@
     (pin "1" (uuid ed469ede-cdc6-42d3-84be-8fc5ef57e75b))
   )
 
-  (symbol (lib_id "Device:C") (at 71.12 30.48 0)
+  (symbol (lib_id "Device:C") (at 71.12 30.48 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060f6af03)
     (property "Reference" "C603" (id 0) (at 74.041 29.3116 0)
@@ -3346,7 +3346,7 @@
     (pin "2" (uuid db6ebeb9-cc93-4615-a104-a053338fb690))
   )
 
-  (symbol (lib_id "Device:C") (at 83.82 30.48 0)
+  (symbol (lib_id "Device:C") (at 83.82 30.48 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060f6af15)
     (property "Reference" "C604" (id 0) (at 86.741 29.3116 0)

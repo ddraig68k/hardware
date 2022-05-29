@@ -115,7 +115,7 @@
           (stroke (width -25.4) (type default) (color 0 0 0 0))
           (fill (type background))
         )
-        (arc (start 3.81 0) (mid 2.2198 2.8385) (end -0.6096 4.445)
+        (arc (start 3.81 0) (mid 2.2198 2.8386) (end -0.6096 4.445)
           (stroke (width 0.254) (type default) (color 0 0 0 0))
           (fill (type background))
         )
@@ -220,7 +220,7 @@
           (stroke (width -25.4) (type default) (color 0 0 0 0))
           (fill (type background))
         )
-        (arc (start 3.81 0) (mid 2.2198 2.8385) (end -0.6096 4.445)
+        (arc (start 3.81 0) (mid 2.2198 2.8386) (end -0.6096 4.445)
           (stroke (width 0.254) (type default) (color 0 0 0 0))
           (fill (type background))
         )
@@ -1144,7 +1144,6 @@
       )
     )
   )
-
 
   (junction (at 257.81 165.1) (diameter 0) (color 0 0 0 0)
     (uuid 0877fe6e-a17b-4808-a3d7-b49dc04f4d58)
@@ -5423,7 +5422,7 @@
     (pin "9" (uuid da95d6fc-f81d-4df8-b10c-f089889a8d53))
   )
 
-  (symbol (lib_id "Ddraig:D68K_64PIN_PCB") (at 81.28 104.14 0)
+  (symbol (lib_id "Ddraig:D68K_64PIN_PCB") (at 81.28 104.14 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060864007)
     (property "Reference" "EXP801" (id 0) (at 80.645 51.689 0))
@@ -5596,7 +5595,7 @@
     (pin "1" (uuid ee03b70d-31e7-4161-88b3-7dad79b33b86))
   )
 
-  (symbol (lib_id "Ddraig:D68K_64PIN_PCB") (at 167.64 104.14 0)
+  (symbol (lib_id "Ddraig:D68K_64PIN_PCB") (at 167.64 104.14 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060943723)
     (property "Reference" "EXP802" (id 0) (at 167.005 51.689 0))
@@ -5673,7 +5672,7 @@
     (pin "C9" (uuid 8f801611-b4b0-4c0a-bd50-b7e01bd21f67))
   )
 
-  (symbol (lib_id "Ddraig:D68K_64PIN_PCB") (at 256.54 104.14 0)
+  (symbol (lib_id "Ddraig:D68K_64PIN_PCB") (at 256.54 104.14 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006095abbf)
     (property "Reference" "EXP803" (id 0) (at 255.905 51.689 0))
@@ -5750,7 +5749,7 @@
     (pin "C9" (uuid bf7fd395-e88d-44c2-bed8-84ae623f92e7))
   )
 
-  (symbol (lib_id "Ddraig:D68K_64PIN_PCB") (at 342.9 104.14 0)
+  (symbol (lib_id "Ddraig:D68K_64PIN_PCB") (at 342.9 104.14 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006097f16d)
     (property "Reference" "EXP804" (id 0) (at 342.265 51.689 0))
@@ -5939,7 +5938,7 @@
     (pin "1" (uuid e5d09e70-9048-47e0-ad91-077f75ff9897))
   )
 
-  (symbol (lib_id "Device:C") (at 162.56 254 0)
+  (symbol (lib_id "Device:C") (at 162.56 254 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060f85417)
     (property "Reference" "C801" (id 0) (at 165.481 252.8316 0)
@@ -5958,7 +5957,7 @@
     (pin "2" (uuid f89d306a-98a1-44ff-88f2-347a2c06701d))
   )
 
-  (symbol (lib_id "power:GND") (at 162.56 262.89 0)
+  (symbol (lib_id "power:GND") (at 162.56 262.89 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060f85423)
     (property "Reference" "#PWR0809" (id 0) (at 162.56 269.24 0)
@@ -5974,7 +5973,7 @@
     (pin "1" (uuid 11ae0897-069f-4e87-b6d9-bceaede83705))
   )
 
-  (symbol (lib_id "Device:C") (at 175.26 254 0)
+  (symbol (lib_id "Device:C") (at 175.26 254 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060f85429)
     (property "Reference" "C802" (id 0) (at 178.181 252.8316 0)
@@ -5993,7 +5992,7 @@
     (pin "2" (uuid bf0c0f06-4f10-49a6-92aa-6557d8f8581a))
   )
 
-  (symbol (lib_id "power:+5V") (at 162.56 245.11 0)
+  (symbol (lib_id "power:+5V") (at 162.56 245.11 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060f85433)
     (property "Reference" "#PWR0808" (id 0) (at 162.56 248.92 0)

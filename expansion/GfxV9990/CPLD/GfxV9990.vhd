@@ -27,7 +27,7 @@ architecture Behavioral of GfxV9990 is
     constant BOARD_ID       : std_logic_vector(7 downto 0) := X"12";
 
     signal s_dtackcount     : std_logic_vector(2 downto 0);
-    signal s_ledtime        : std_logic_vector(9 downto 0);
+    signal s_ledtime        : std_logic_vector(7 downto 0);
     signal s_clkdiv         : std_logic;
     signal s_idsel         	: std_logic;
 	signal s_vdpsel			: std_logic;
@@ -50,7 +50,7 @@ begin
 		if reset_i = '0' or csdata_i = '0' or csreg_i = '0' then
 			s_ledtime <= (others => '0');
 		elsif rising_edge(s_clkdiv) then
-			if s_ledtime < "1111111111" then
+			if s_ledtime < "11111111" then
 				s_ledtime <= s_ledtime + 1;
 			end if;
 		end if;
@@ -75,7 +75,7 @@ begin
     dtack_o <= '0' when s_dtackcount > "100" and (csdata_i = '0' or csreg_i = '0') and wait_i = '1' else '1';
     
         -- Flash activity LED
-    led_o <= '0' when s_ledtime < "1111111111" else '1';
+    led_o <= '0' when s_ledtime < "11111111" else '1';
               
     -- Write out device ID
     data_io <= BOARD_ID when s_idsel = '1' else "ZZZZZZZZ";

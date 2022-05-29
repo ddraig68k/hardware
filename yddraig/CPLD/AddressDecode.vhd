@@ -80,24 +80,24 @@ begin
 	s_fc <= fc0_i and fc1_i and fc2_i;
 	s_addr_sel <= '1' when s_fc = '0' and as_i = '0' else '0';
 
-	s_rom 	<= '0' WHEN s_addr_sel = '1' AND (bootrom_i = '0' OR std_match(a_i, "11111-----------")) ELSE '1';		-- $F80000 - $FFFFFF
-	s_sram 	<= '0' WHEN s_addr_sel = '1' AND bootrom_i = '1' AND std_match(a_i, "0000------------") ELSE '1';		-- $000000 - $0FFFFF
-	s_duart	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110000") AND uds_i = '0' ELSE '1';			-- $F7F000 - $F7F0FF
+	s_rom 	<= '0' WHEN s_addr_sel = '1' AND (bootrom_i = '0' OR std_match(a_i, "11111-----------")) ELSE '1';	-- $F80000 - $FFFFFF
+	s_sram 	<= '0' WHEN s_addr_sel = '1' AND bootrom_i = '1' AND std_match(a_i, "0000------------") ELSE '1';	-- $000000 - $0FFFFF
+	s_duart	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110000") AND uds_i = '0' ELSE '1';		-- $F7F000 - $F7F0FF
 	s_pit	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110001") AND uds_i = '0' ELSE '1';			-- $F7F100 - $F7F1FF
-	s_kbd	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110010") ELSE '1';							-- $F7F200 - $F7F2FF
-	s_ide	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110011") ELSE '1';							-- $F7F300 - $F7F3FF
-	s_rtc	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110100") ELSE '1';							-- $F7F400 - $F7F4FF
-	s_reg1	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110101") ELSE '1';							-- $F7F500 - $F7F5FF
-	s_reg2	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110110") ELSE '1';							-- $F7F600 - $F7F6FF
-	s_reg3	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110111") ELSE '1';							-- $F7F700 - $F7F7FF
-	s_reg4	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111111000") ELSE '1';							-- $F7F800 - $F7F8FF
+	s_kbd	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110010") AND uds_i = '0' ELSE '1';			-- $F7F200 - $F7F2FF
+	s_ide	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110011") ELSE '1';									-- $F7F300 - $F7F3FF
+	s_rtc	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110100") ELSE '1';									-- $F7F400 - $F7F4FF
+	s_reg1	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110101") ELSE '1';								-- $F7F500 - $F7F5FF
+	s_reg2	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110110") ELSE '1';								-- $F7F600 - $F7F6FF
+	s_reg3	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111110111") ELSE '1';								-- $F7F700 - $F7F7FF
+	s_reg4	<= '0' WHEN s_addr_sel = '1' AND std_match(a_i, "1111011111111000") ELSE '1';								-- $F7F800 - $F7F8FF
 	
 
-	s_dram	<= '1' WHEN s_addr_sel = '1' AND a_i >= "0001000000000000" AND a_i < "1001000000000000" ELSE '0'; 		-- $100000 - $8FFFFF (8 MB)
-	s_data1	<= '0' WHEN s_addr_sel = '1' AND a_i >= "1010000000000000" AND a_i < "1011000000000000" ELSE '1'; 		-- $A00000 - $AFFFFF (1 MB)
-	s_data2	<= '0' WHEN s_addr_sel = '1' AND a_i >= "1011000000000000" AND a_i < "1100000000000000" ELSE '1'; 		-- $B00000 - $BFFFFF (1 MB)
-	s_data3	<= '0' WHEN s_addr_sel = '1' AND a_i >= "1100000000000000" AND a_i < "1101000000000000" ELSE '1'; 		-- $C00000 - $CFFFFF (1 MB)
-	s_data4	<= '0' WHEN s_addr_sel = '1' AND a_i >= "1101000000000000" AND a_i < "1110000000000000" ELSE '1'; 		-- $D00000 - $DFFFFF (1 MB)
+	s_dram	<= '1' WHEN s_addr_sel = '1' AND a_i >= "0001000000000000" AND a_i < "1001000000000000" ELSE '0'; 	-- $100000 - $8FFFFF (8 MB)
+	s_data1	<= '0' WHEN s_addr_sel = '1' AND a_i >= "1010000000000000" AND a_i < "1011000000000000" ELSE '1'; 	-- $A00000 - $AFFFFF (1 MB)
+	s_data2	<= '0' WHEN s_addr_sel = '1' AND a_i >= "1011000000000000" AND a_i < "1100000000000000" ELSE '1'; 	-- $B00000 - $BFFFFF (1 MB)
+	s_data3	<= '0' WHEN s_addr_sel = '1' AND a_i >= "1100000000000000" AND a_i < "1101000000000000" ELSE '1'; 	-- $C00000 - $CFFFFF (1 MB)
+	s_data4	<= '0' WHEN s_addr_sel = '1' AND a_i >= "1101000000000000" AND a_i < "1110000000000000" ELSE '1'; 	-- $D00000 - $DFFFFF (1 MB)
 																											 
 	cs_rom_o 	<= s_rom;
 	cs_sram_o 	<= s_sram;

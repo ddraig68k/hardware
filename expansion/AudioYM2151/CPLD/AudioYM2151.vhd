@@ -38,6 +38,7 @@ architecture Behavioral of AudioYM2151 is
 
     signal s_dtackcount     : std_logic_vector(3 downto 0);
     signal s_ledtime        : std_logic_vector(9 downto 0);
+    signal s_clocktime      : std_logic_vector(9 downto 0);
     signal s_clkdiv         : std_logic;
     
     signal s_clkreg         : std_logic_vector(15 downto 0);
@@ -67,7 +68,7 @@ begin
         end if;
     end process;
 
-    led_flash : process (s_clkdiv, reset_i, csdata_i, csreg_i)
+   led_flash : process (s_clkdiv, reset_i, csdata_i, csreg_i)
 	begin
 		if reset_i = '0' or csdata_i = '0' or csreg_i = '0' then
 			s_ledtime <= (others => '0');
@@ -86,18 +87,28 @@ begin
                 s_setclock <= '0';
 					 --s_prevclkreg <= (others => '0');
 					 s_reg_set <= '0';
+					 s_clocktime <= (others => '0');
             else
+
+						if s_clocktime > "0000000000" then
+							s_clocktime <= s_clocktime - 1;
+						end if;
+
+						if (s_clock_reg_sel = '1') then -- and s_clocktime = "0000000000") then
+							s_reg_set <= '1';
+						end if;
+
                 if (s_last_reset = '0' and s_setclock = '0' and s_spi_busy = '0') then
                     s_setclock <= '1';
-                    s_clkreg <= DEFAULT_CLK;
+                    --s_clkreg <= DEFAULT_CLK;
                     s_spi_enable <= '0';
-					 elsif (s_reg_set = '1' and s_setclock = '0' and s_spi_busy = '0') then
                     s_setclock <= '1';
                     --s_clkreg <= data_io;
                     s_spi_enable <= '0';
 						  s_reg_set <= '0';
                 elsif (s_setclock = '1' and s_spi_busy = '0') then
                     s_spi_enable <= '1';
+						  s_clocktime <= (others => '1');
                 elsif (s_setclock = '1' and s_spi_busy = '1') then
                     s_setclock   <= '0';
                 elsif (s_spi_busy = '0') then
@@ -107,10 +118,6 @@ begin
 					 
 				s_last_reset <= reset_i;
 					 
-				if (s_clock_reg_sel = '1') then
-					s_reg_set <= '1';
-					s_clkreg <= data_io;
-				end if;
 					 
             end if;
         end if;
@@ -150,6 +157,8 @@ begin
 
     -- YM2151 clock control
     s_clock_reg_sel <= '1' when addr_i = "1000000" and uds_i = '0' and lds_i = '0' and rw_i = '0' else '0';
+	 s_clkreg <= data_io when s_clock_reg_sel  = '1' else DEFAULT_CLK when reset_i = '0' else s_clkreg;
+
 	 --s_clkreg <= X"BCFC" when reset_i = '0' else data_io when addr_i = "1000000" and uds_i = '0' and lds_i = '0' and rw_i = '0' else s_clkreg;
         
     -- Write out device ID

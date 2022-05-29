@@ -3,16 +3,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity VDPState is
-    Port ( clk : in  STD_LOGIC;
-           reset : in  STD_LOGIC;
-           vdpsel : in  STD_LOGIC;
-           rw : in  STD_LOGIC;
-           vdpw : out  STD_LOGIC;
-           vdpr : out  STD_LOGIC);
+    Port ( clk      : in STD_LOGIC;
+           reset    : in STD_LOGIC;
+           vdpsel   : in STD_LOGIC;
+           rw       : in STD_LOGIC;
+           vdpw     : out STD_LOGIC;
+           vdpr     : out STD_LOGIC);
 end VDPState;
 
 architecture Behavioral of VDPState is
-	type STATES is (VDPIDLE, VDPWRITE, VDPREAD, VDPWAIT);
+	type STATES is (VDPIDLE, VDPWRITE, VDPWRITE2, VDPREAD, VDPWAIT);
 	
 	signal s_state 	: STATES := VDPIDLE;
 begin
@@ -38,6 +38,10 @@ begin
 						end if;
 					
 					when VDPWRITE =>
+						vdpw <= '0';
+						s_state <= VDPWRITE2;
+
+					when VDPWRITE2 =>
 						vdpw <= '0';
 						s_state <= VDPWAIT;
 						

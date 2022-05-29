@@ -77,8 +77,8 @@ begin
               
     -- Address decoding
     s_idaddr <= '1' when addr_i = "1111111" else '0';
-    vdpr_o <= '0' when s_idaddr = '0' and uds_i = '0' and s_cs_delay = '0' and rw_i = '1' else '1';
-    vdpw_o <= '0' when s_idaddr = '0' and uds_i = '0' and s_cs_delay = '0' and rw_i = '0' else '1';
+    vdpr_o <= '0' when s_idaddr = '0' and uds_i = '0' and csreg_i = '0' and rw_i = '1' else '1';
+    vdpw_o <= '0' when s_idaddr = '0' and uds_i = '0' and csreg_i = '0' and rw_i = '0' else '1';
     
     
     -- Write out device ID

@@ -1574,7 +1574,6 @@
     )
   )
 
-
   (junction (at 318.77 238.76) (diameter 0) (color 0 0 0 0)
     (uuid 04dd8211-bd90-4120-b55a-acd775328f7f)
   )
@@ -6026,7 +6025,7 @@
     (pin "2" (uuid 4418e405-f46e-4238-8c1d-e3dd2d10937e))
   )
 
-  (symbol (lib_id "Device:C") (at 356.87 245.11 0)
+  (symbol (lib_id "Device:C") (at 356.87 245.11 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000609375d7)
     (property "Reference" "C309" (id 0) (at 359.791 243.9416 0)
@@ -6077,7 +6076,7 @@
     (pin "1" (uuid 8eb0add1-aa70-4a5d-a847-2f7a9812bf28))
   )
 
-  (symbol (lib_id "Device:C") (at 369.57 245.11 0)
+  (symbol (lib_id "Device:C") (at 369.57 245.11 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006096130e)
     (property "Reference" "C310" (id 0) (at 372.491 243.9416 0)
@@ -6096,7 +6095,7 @@
     (pin "2" (uuid 8e0b6146-d4b3-4d44-8b89-a642a387dfb5))
   )
 
-  (symbol (lib_id "Device:C") (at 381 245.11 0)
+  (symbol (lib_id "Device:C") (at 381 245.11 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000060961852)
     (property "Reference" "C311" (id 0) (at 383.921 243.9416 0)
@@ -6136,7 +6135,7 @@
     (pin "7" (uuid 3e8c90ce-2848-4b7e-941b-0d2621293033))
   )
 
-  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 55.88 247.65 0) (mirror y)
+  (symbol (lib_id "Connector_Generic:Conn_01x02") (at 55.88 247.65 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000609f7736)
     (property "Reference" "J301" (id 0) (at 53.848 247.8532 0)
@@ -6531,7 +6530,7 @@
     (pin "2" (uuid 11ea185e-6a13-4077-a039-5c288a59903a))
   )
 
-  (symbol (lib_id "Switch:SW_SPST") (at 71.12 248.92 90)
+  (symbol (lib_id "Switch:SW_SPST") (at 71.12 248.92 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-000061295afd)
     (property "Reference" "SW301" (id 0) (at 73.3552 247.7516 90)
