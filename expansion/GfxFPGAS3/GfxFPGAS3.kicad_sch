@@ -2480,8 +2480,8 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006125dbcc)
     (property "Reference" "U102" (id 0) (at 199.39 23.0632 0))
-    (property "Value" "" (id 1) (at 199.39 25.3746 0))
-    (property "Footprint" "" (id 2) (at 199.39 24.13 0)
+    (property "Value" "LD1117S12TR_SOT223" (id 1) (at 199.39 25.3746 0))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2" (id 2) (at 199.39 24.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" (id 3) (at 201.93 35.56 0)
@@ -2549,10 +2549,10 @@
     (property "Reference" "C105" (id 0) (at 227.7872 35.6616 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "" (id 1) (at 227.7872 37.973 0)
+    (property "Value" "10uF" (id 1) (at 227.7872 37.973 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (id 2) (at 225.7552 40.64 0)
+    (property "Footprint" "Capacitor_SMD:CP_Elec_4x5.3" (id 2) (at 225.7552 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 224.79 36.83 0)
@@ -2975,7 +2975,7 @@
     (property "Reference" "#FLG0103" (id 0) (at 147.32 29.845 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "" (id 1) (at 147.32 33.02 0))
+    (property "Value" "PWR_FLAG" (id 1) (at 147.32 33.02 0))
     (property "Footprint" "" (id 2) (at 147.32 27.94 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3484,6 +3484,9 @@
     (path "/1ba5bc40-fa27-4d11-9ab7-d8dd21bda073"
       (reference "#PWR0123") (unit 1) (value "+3V3") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-00006125c402/e6c6db2c-d1a2-4d65-ba91-1e5b4ff0080f"
+      (reference "#PWR0124") (unit 1) (value "+3V3") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-00006125c227/00000000-0000-0000-0000-00006129f959"
       (reference "#PWR0203") (unit 1) (value "+5V") (footprint "")
     )
@@ -3752,7 +3755,10 @@
       (reference "C504") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-00006125c402/00000000-0000-0000-0000-00006135b67d"
-      (reference "D1") (unit 1) (value "LED") (footprint "LED_THT:LED_D5.0mm_Clear")
+      (reference "D1") (unit 1) (value "LED") (footprint "LED_SMD:LED_1206_3216Metric")
+    )
+    (path "/00000000-0000-0000-0000-00006125c402/173143fa-c3a6-46fd-a4e5-9b16cad50168"
+      (reference "D2") (unit 1) (value "LED") (footprint "LED_SMD:LED_1206_3216Metric")
     )
     (path "/00000000-0000-0000-0000-00006125c402/00000000-0000-0000-0000-00006136da30"
       (reference "J1") (unit 1) (value "JTAG") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical")
@@ -3795,6 +3801,9 @@
     )
     (path "/00000000-0000-0000-0000-00006125c402/9c8fae92-801e-4c01-8b59-7755d2465a8d"
       (reference "R11") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/00000000-0000-0000-0000-00006125c402/cf50b87d-edee-4505-b46c-6319faa6d2e5"
+      (reference "R12") (unit 1) (value "390R") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-00006125dbe0"
       (reference "R101") (unit 1) (value "120R") (footprint "Resistor_SMD:R_0805_2012Metric")

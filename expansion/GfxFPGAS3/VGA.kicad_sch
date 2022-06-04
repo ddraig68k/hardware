@@ -679,10 +679,10 @@
   )
 
   (no_connect (at 222.25 93.98) (uuid 5ade3b6c-c187-4de2-ac99-0bdde1da709b))
-  (no_connect (at 207.01 86.36) (uuid 5ade3b6c-c187-4de2-ac99-0bdde1da709b))
-  (no_connect (at 207.01 88.9) (uuid 5ade3b6c-c187-4de2-ac99-0bdde1da709b))
-  (no_connect (at 222.25 78.74) (uuid 5ade3b6c-c187-4de2-ac99-0bdde1da709b))
-  (no_connect (at 222.25 73.66) (uuid 5ade3b6c-c187-4de2-ac99-0bdde1da709b))
+  (no_connect (at 207.01 86.36) (uuid 5ade3b6c-c187-4de2-ac99-0bdde1da709c))
+  (no_connect (at 207.01 88.9) (uuid 5ade3b6c-c187-4de2-ac99-0bdde1da709d))
+  (no_connect (at 222.25 78.74) (uuid 5ade3b6c-c187-4de2-ac99-0bdde1da709e))
+  (no_connect (at 222.25 73.66) (uuid 5ade3b6c-c187-4de2-ac99-0bdde1da709f))
 
   (bus_entry (at 91.44 124.46) (size 2.54 2.54)
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -1463,7 +1463,7 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006127feac)
     (property "Reference" "U501" (id 0) (at 113.03 54.61 0))
-    (property "Value" "" (id 1) (at 137.16 54.61 0))
+    (property "Value" "ADV7123JSTZ240" (id 1) (at 137.16 54.61 0))
     (property "Footprint" "Ddraig:QFP50P900X900X160-48N" (id 2) (at 151.13 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
