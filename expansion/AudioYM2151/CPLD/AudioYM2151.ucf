@@ -53,5 +53,4 @@ NET "led_o"  LOC = "P66";
 #Created by Constraints Editor (xc95144xl-tq100-10) - 2021/12/05
 NET "s_clkdiv" TNM_NET = s_clkdiv;
 TIMESPEC TS_s_clkdiv = PERIOD "s_clkdiv" 800 ns HIGH 50%;
-NET "s_spiclk" TNM_NET = s_spiclk;
-TIMESPEC TS_s_spiclk = PERIOD "s_spiclk" 1600 ns HIGH 50%;
+

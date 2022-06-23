@@ -97,7 +97,7 @@ BEGIN
         reset_i <= '1';
         
         -- Wait for the initial SPI transfer to finish
-        WAIT FOR 60us;
+        WAIT FOR 10us;
 
         -- Read the ID from the board
 		wait on cpuclk_i until cpuclk_i = '1';
@@ -200,7 +200,7 @@ BEGIN
 		wait for 100ns;
 
         -- Wait for the SPI transfer to finish
-        WAIT FOR 60us;
+        WAIT FOR 10us;
 
         -- Write the YM2151 clock frequency again to test
 		wait on cpuclk_i until cpuclk_i = '1';

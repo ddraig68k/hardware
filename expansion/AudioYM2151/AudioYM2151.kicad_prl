@@ -19,7 +19,7 @@
       "graphics": true,
       "keepouts": true,
       "lockedItems": true,
-      "otherItems": true,
+      "otherItems": false,
       "pads": true,
       "text": true,
       "tracks": true,
