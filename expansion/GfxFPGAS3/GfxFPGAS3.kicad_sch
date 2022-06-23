@@ -3380,12 +3380,6 @@
     (path "/00000000-0000-0000-0000-00006125c402/00000000-0000-0000-0000-0000613387c3"
       (reference "#PWR011") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006125c227/00000000-0000-0000-0000-00006147656e"
-      (reference "#PWR012") (unit 1) (value "+5V") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00006125c227/00000000-0000-0000-0000-000061367083"
-      (reference "#PWR013") (unit 1) (value "+5V") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-00006125c402/4476be35-45ae-413c-9fe6-1e7a542bac05"
       (reference "#PWR014") (unit 1) (value "+3V3") (footprint "")
     )
@@ -3622,6 +3616,12 @@
     )
     (path "/00000000-0000-0000-0000-00006125c862/00000000-0000-0000-0000-0000614d670a"
       (reference "#PWR0511") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00006125c227/53a6249a-2895-4514-93d3-6e61542c69fb"
+      (reference "#PWR?") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00006125c227/6b1d2bb4-e07d-457a-8332-a57b8b4363ef"
+      (reference "#PWR?") (unit 1) (value "+3V3") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006125c402/00000000-0000-0000-0000-00006133828e"
       (reference "C1") (unit 1) (value "0.1uF") (footprint "Capacitor_SMD:CP_Elec_4x5.3")
