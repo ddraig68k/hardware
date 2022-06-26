@@ -238,7 +238,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "yddraig030.kicad_pro",
+    "filename": "yddraig030WIP.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -290,7 +290,7 @@
       "intersheets_ref_suffix": "",
       "junction_size_choice": 3,
       "label_size_ratio": 0.25,
-      "pin_symbol_size": 25.0,
+      "pin_symbol_size": 0.0,
       "text_offset_ratio": 0.08
     },
     "legacy_lib_dir": "",
@@ -308,7 +308,7 @@
       "model_mode": 0,
       "workbook_filename": ""
     },
-    "page_layout_descr_file": "${DDRAIGLIB}/Ddraig_A3.kicad_wks",
+    "page_layout_descr_file": "../ddraig-libs/Ddraig_A3.kicad_wks",
     "plot_directory": "",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
@@ -317,44 +317,72 @@
   },
   "sheets": [
     [
-      "13e3770e-4d8d-463b-9ee5-af95b66e67b0",
+      "abe3c03e-744a-4406-8e50-6a10745f0c43",
       ""
     ],
     [
-      "00000000-0000-0000-0000-000061aaef2d",
-      "Bus Buffers"
+      "00000000-0000-0000-0000-00006147db65",
+      "Reset and LEDs"
     ],
     [
-      "00000000-0000-0000-0000-000061ab0e8e",
+      "00000000-0000-0000-0000-000060eb395d",
       "CPU and FPU"
     ],
     [
-      "00000000-0000-0000-0000-000061aaeedf",
-      "Expansion Bus"
-    ],
-    [
-      "00000000-0000-0000-0000-000061af5248",
-      "IDE Interface"
-    ],
-    [
-      "00000000-0000-0000-0000-000061ae245d",
-      "Keyboard"
-    ],
-    [
-      "00000000-0000-0000-0000-000061b17fe5",
-      "Power"
-    ],
-    [
-      "00000000-0000-0000-0000-000061b912d1",
+      "00000000-0000-0000-0000-000061478359",
       "ROM and SRAM"
     ],
     [
-      "00000000-0000-0000-0000-000061b09b96",
+      "00000000-0000-0000-0000-00006139aaf1",
+      "Serial"
+    ],
+    [
+      "00000000-0000-0000-0000-00006139ab8f",
+      "IDE"
+    ],
+    [
+      "00000000-0000-0000-0000-00006139a6be",
+      "Decode and Logic"
+    ],
+    [
+      "00000000-0000-0000-0000-000060eb3bea",
+      "Expansion Slots"
+    ],
+    [
+      "00000000-0000-0000-0000-00006134d545",
+      "Bus Buffers"
+    ],
+    [
+      "00000000-0000-0000-0000-000060ca1c9e",
+      "DRAM"
+    ],
+    [
+      "00000000-0000-0000-0000-000061461451",
+      "Buffers"
+    ],
+    [
+      "00000000-0000-0000-0000-00006139ab5e",
+      "Keyboard"
+    ],
+    [
+      "00000000-0000-0000-0000-00006139a713",
+      "Ethernet"
+    ],
+    [
+      "00000000-0000-0000-0000-00006152af50",
       "Real Time Clock"
     ],
     [
-      "599ce933-dddd-49ca-a688-743d157669a4",
-      "Serial Ports"
+      "78122701-3f85-4725-87c1-4256e560be09",
+      "Parallel Port"
+    ],
+    [
+      "00000000-0000-0000-0000-00006139a64f",
+      "Power"
+    ],
+    [
+      "baff5625-0bc2-480f-8822-680a42e71919",
+      "Interrupts"
     ]
   ],
   "text_variables": {}

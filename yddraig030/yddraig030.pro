@@ -1,4 +1,4 @@
-update=03/12/2021 13:28:36
+update=27/06/2021 13:29:01
 version=1
 last_client=kicad
 [general]
@@ -33,7 +33,7 @@ LibDir=
 [eeschema/libraries]
 [schematic_editor]
 version=1
-PageLayoutDescrFile=C:/Dev/KiCAD/Ddraig68k/ddraig-libs/Ddraig_A3.kicad_wks
+PageLayoutDescrFile=../ddraig-libs/Ddraig_A3.kicad_wks
 PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
