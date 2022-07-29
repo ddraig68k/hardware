@@ -951,6 +951,7 @@
     )
   )
 
+
   (junction (at 54.61 31.75) (diameter 0) (color 0 0 0 0)
     (uuid 01355619-95b4-49eb-99ee-52fe8b1afe73)
   )
@@ -2776,7 +2777,7 @@
   (symbol (lib_id "power:GND") (at 99.06 68.58 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid f9d5f4e4-e310-4dfd-9a09-7c1420bc5e0a)
-    (property "Reference" "#PWR?" (id 0) (at 99.06 74.93 0)
+    (property "Reference" "#PWR0239" (id 0) (at 99.06 74.93 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 99.187 72.9742 0))

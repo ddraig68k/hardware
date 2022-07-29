@@ -2437,7 +2437,7 @@
       (reference "#PWR0238") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-0000619d3c4f/f9d5f4e4-e310-4dfd-9a09-7c1420bc5e0a"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0239") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006149c14c/00000000-0000-0000-0000-0000614a3925"
       (reference "BT1") (unit 1) (value "CR2032") (footprint "Battery:BatteryHolder_Keystone_103_1x20mm")
