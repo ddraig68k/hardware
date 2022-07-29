@@ -1,4 +1,3 @@
 (sym_lib_table
   (lib (name "Ddraig")(type "Legacy")(uri "${DDRAIGLIB}/Ddraig.lib")(options "")(descr ""))
-  (lib (name "yddraig030WIP-rescue")(type "Legacy")(uri "${KIPRJMOD}/yddraig030WIP-rescue.lib")(options "")(descr ""))
 )
