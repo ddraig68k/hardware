@@ -12,6 +12,7 @@
   (lib_symbols
   )
 
+
   (junction (at 279.4 200.66) (diameter 0) (color 0 0 0 0)
     (uuid 06691710-d41c-441f-a1ba-a1c365876794)
   )
@@ -1344,7 +1345,7 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid f1518927-ef7e-4247-a724-1bf64c8827c7)
   )
-  (bus (pts (xy 175.514 185.42) (xy 213.36 185.42))
+  (bus (pts (xy 175.26 185.42) (xy 213.36 185.42))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid f440ab06-c19c-473d-86bf-f813a7173c13)
   )
@@ -3886,7 +3887,7 @@
       (reference "U201") (unit 1) (value "NE555P") (footprint "Package_DIP:DIP-8_W7.62mm")
     )
     (path "/00000000-0000-0000-0000-000060eb395d/00000000-0000-0000-0000-000060eb72be"
-      (reference "U301") (unit 1) (value "MC68030") (footprint "Ddraig:QFP-128_28x28_Pitch0.8mm")
+      (reference "U301") (unit 1) (value "MC68030") (footprint "Ddraig:MC68030RC")
     )
     (path "/00000000-0000-0000-0000-000060eb395d/00000000-0000-0000-0000-000060fcab24"
       (reference "U302") (unit 1) (value "MC68881FN") (footprint "Package_LCC:PLCC-68_THT-Socket")
