@@ -10,6 +10,35 @@
   )
 
   (lib_symbols
+    (symbol "Mechanical:MountingHole" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "H" (id 0) (at 0 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "MountingHole" (id 1) (at 0 3.175 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (id 2) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (id 3) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "mounting hole" (id 4) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Mounting Hole without connection" (id 5) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "MountingHole*" (id 6) (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "MountingHole_0_1"
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 1.27) (type default) (color 0 0 0 0))
+          (fill (type none))
+        )
+      )
+    )
   )
 
   (junction (at 279.4 200.66) (diameter 0) (color 0 0 0 0)
@@ -176,6 +205,10 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 00ee1758-1c4f-49c3-9460-a325725632f8)
   )
+  (wire (pts (xy 182.88 193.04) (xy 175.26 193.04))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 01e473b1-3987-4850-aad6-fb03625229e4)
+  )
   (wire (pts (xy 106.68 259.08) (xy 106.68 99.06))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 052ae9de-cf52-49f1-89f9-c05c77b95738)
@@ -309,6 +342,10 @@
   (wire (pts (xy 210.82 132.08) (xy 175.26 132.08))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 203f0529-09e2-4a9c-af39-ee7bfb4474dc)
+  )
+  (wire (pts (xy 182.88 165.1) (xy 182.88 193.04))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 20a32ca5-911e-465e-bf5b-13b3d58d2779)
   )
   (wire (pts (xy 175.26 228.6) (xy 276.86 228.6))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -675,6 +712,10 @@
     (uuid 6071f3ce-6ccf-4c2a-b331-875a21bae357)
   )
 
+  (wire (pts (xy 175.26 165.1) (xy 182.88 165.1))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 60dff287-a533-42f6-8e08-8a32c0a50907)
+  )
   (wire (pts (xy 264.16 129.54) (xy 284.48 129.54))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 60eedddf-463e-4823-b79a-997863db32bb)
@@ -913,7 +954,7 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 894de5c1-c98c-4e69-8265-d859a22b5125)
   )
-  (bus (pts (xy 281.94 198.12) (xy 282.194 236.22))
+  (bus (pts (xy 281.94 198.12) (xy 281.94 236.22))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 8a6ac637-486e-4dab-af93-a445de7f261c)
   )
@@ -974,7 +1015,7 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 9aa84815-f164-48c7-9e70-603f5f1c69fc)
   )
-  (bus (pts (xy 282.194 236.22) (xy 284.48 236.22))
+  (bus (pts (xy 281.94 236.22) (xy 284.48 236.22))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 9af5fd50-6d98-4789-9b0e-107b5e237093)
   )
@@ -987,7 +1028,7 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 9da47079-18e7-4f49-b9da-26f7a4d972de)
   )
-  (wire (pts (xy 259.08 218.44) (xy 259.08 205.74))
+  (wire (pts (xy 259.08 162.56) (xy 259.08 218.44))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 9f1376e0-7e97-4c1c-a5de-f8d4864274e5)
   )
@@ -1148,6 +1189,10 @@
   (wire (pts (xy 284.48 152.4) (xy 187.96 152.4))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid bede503c-c31f-4d74-a1d5-50f9d13d3715)
+  )
+  (wire (pts (xy 259.08 162.56) (xy 175.26 162.56))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid bfec22fa-2b92-4c53-aaf6-81f8f7f6b1f1)
   )
   (wire (pts (xy 88.9 154.94) (xy 129.54 154.94))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -1425,10 +1470,6 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid fd909b2e-64fb-4b0f-8b93-e8bf9773e18a)
   )
-  (wire (pts (xy 259.08 205.74) (xy 175.26 205.74))
-    (stroke (width 0) (type default) (color 0 0 0 0))
-    (uuid fda10fa8-b0ba-4e3f-a1c6-babfa2db4ff6)
-  )
   (wire (pts (xy 81.28 147.32) (xy 81.28 170.18))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid fdab4a8c-00d7-4031-a629-6a1eefaf664f)
@@ -1436,6 +1477,108 @@
   (wire (pts (xy 274.32 208.28) (xy 284.48 208.28))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid ffaf3642-1119-42ae-bf23-958e176f3699)
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole") (at 358.394 141.478 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid 2a8e0220-1457-4949-9e68-fc3dab9934c2)
+    (property "Reference" "H102" (id 0) (at 360.934 140.3096 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole" (id 1) (at 360.934 142.621 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_4.3mm_M4" (id 2) (at 358.394 141.478 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 358.394 141.478 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole") (at 358.394 135.128 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid 62b217ce-0979-416b-9f93-8f672a62045b)
+    (property "Reference" "H101" (id 0) (at 360.934 133.9596 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole" (id 1) (at 360.934 136.271 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_4.3mm_M4" (id 2) (at 358.394 135.128 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 358.394 135.128 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole") (at 358.394 160.528 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid 93765ee6-a707-44a1-86f8-258835398b44)
+    (property "Reference" "H105" (id 0) (at 360.934 159.3596 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole" (id 1) (at 360.934 161.671 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_4.3mm_M4" (id 2) (at 358.394 160.528 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 358.394 160.528 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole") (at 358.394 154.178 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid da124b8c-ddae-4903-975e-37f2b435a202)
+    (property "Reference" "H104" (id 0) (at 360.934 153.0096 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole" (id 1) (at 360.934 155.321 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_4.3mm_M4" (id 2) (at 358.394 154.178 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 358.394 154.178 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole") (at 358.394 147.828 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid df5974f9-8399-4d35-a245-90bb8bd3351e)
+    (property "Reference" "H103" (id 0) (at 360.934 146.6596 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole" (id 1) (at 360.934 148.971 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_4.3mm_M4" (id 2) (at 358.394 147.828 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 358.394 147.828 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole") (at 358.394 166.878 0) (unit 1)
+    (in_bom yes) (on_board yes)
+    (uuid e3e7a562-4c43-4bb8-bfd8-ef3dc08a6f9e)
+    (property "Reference" "H106" (id 0) (at 360.934 165.7096 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole" (id 1) (at 360.934 168.021 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_4.3mm_M4" (id 2) (at 358.394 166.878 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 358.394 166.878 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
   )
 
   (sheet (at 284.48 96.52) (size 30.48 58.42) (fields_autoplaced)
@@ -1988,6 +2131,14 @@
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 3880ad81-83e8-4cd1-8f2f-5b8cf5fc82fa)
     )
+    (pin "INT_ETH" input (at 175.26 162.56 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid d806ee57-0880-46cc-a747-e221e43994b8)
+    )
+    (pin "~{INT_ETH}" output (at 175.26 165.1 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 19ce9ec8-f459-4fad-9a22-a9d66074ab73)
+    )
   )
 
   (sheet (at 284.48 196.088) (size 30.48 27.432) (fields_autoplaced)
@@ -2320,10 +2471,6 @@
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 33118027-5a2f-489e-81f3-fff341c9f08b)
     )
-    (pin "INT_ETH" input (at 175.26 205.74 0)
-      (effects (font (size 1.27 1.27)) (justify right))
-      (uuid bd488786-f7cb-4891-8e9c-ebf520b9fab3)
-    )
     (pin "~{INT_IDE}" input (at 137.16 190.5 180)
       (effects (font (size 1.27 1.27)) (justify left))
       (uuid 4013f20e-edcc-41ca-87b6-d967b1d9ad28)
@@ -2359,6 +2506,10 @@
     (pin "D[0..31]" bidirectional (at 175.26 182.88 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 5b8a739d-187a-4472-8505-43d2d4fb7090)
+    )
+    (pin "~{INT_ETH}" input (at 175.26 193.04 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 7952ef6b-e6b7-464a-bdc3-8cf62000fe04)
     )
   )
 
@@ -2396,19 +2547,19 @@
       (reference "#PWR0203") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006147db65/00000000-0000-0000-0000-0000614879ce"
-      (reference "#PWR0206") (unit 1) (value "+5V") (footprint "")
+      (reference "#PWR0204") (unit 1) (value "+5V") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006147db65/00000000-0000-0000-0000-0000614879bc"
-      (reference "#PWR0207") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0205") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006147db65/00000000-0000-0000-0000-000061487a6f"
-      (reference "#PWR0208") (unit 1) (value "+5V") (footprint "")
+      (reference "#PWR0206") (unit 1) (value "+5V") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006147db65/00000000-0000-0000-0000-000061487a69"
-      (reference "#PWR0209") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0207") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006147db65/00000000-0000-0000-0000-000061487a86"
-      (reference "#PWR0210") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR0208") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060eb395d/00000000-0000-0000-0000-000061095cc3"
       (reference "#PWR0301") (unit 1) (value "GND") (footprint "")
@@ -3563,7 +3714,7 @@
       (reference "D201") (unit 1) (value "RED") (footprint "LED_THT:LED_D5.0mm")
     )
     (path "/00000000-0000-0000-0000-00006147db65/00000000-0000-0000-0000-000061487a62"
-      (reference "D203") (unit 1) (value "GREEN") (footprint "LED_THT:LED_D5.0mm")
+      (reference "D202") (unit 1) (value "GREEN") (footprint "LED_THT:LED_D5.0mm")
     )
     (path "/00000000-0000-0000-0000-00006139aaf1/00000000-0000-0000-0000-000061360cfd"
       (reference "D501") (unit 1) (value "Green") (footprint "LED_THT:LED_D5.0mm")
@@ -3618,6 +3769,24 @@
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-00006134fe92"
       (reference "EXP804") (unit 1) (value "SLOT4") (footprint "Ddraig:DIN41612_C_3x32_Female_Vertical_THT")
+    )
+    (path "/62b217ce-0979-416b-9f93-8f672a62045b"
+      (reference "H101") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_4.3mm_M4")
+    )
+    (path "/2a8e0220-1457-4949-9e68-fc3dab9934c2"
+      (reference "H102") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_4.3mm_M4")
+    )
+    (path "/df5974f9-8399-4d35-a245-90bb8bd3351e"
+      (reference "H103") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_4.3mm_M4")
+    )
+    (path "/da124b8c-ddae-4903-975e-37f2b435a202"
+      (reference "H104") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_4.3mm_M4")
+    )
+    (path "/93765ee6-a707-44a1-86f8-258835398b44"
+      (reference "H105") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_4.3mm_M4")
+    )
+    (path "/e3e7a562-4c43-4bb8-bfd8-ef3dc08a6f9e"
+      (reference "H106") (unit 1) (value "MountingHole") (footprint "MountingHole:MountingHole_4.3mm_M4")
     )
     (path "/00000000-0000-0000-0000-00006147db65/00000000-0000-0000-0000-00006148798f"
       (reference "J201") (unit 1) (value "ExtReset") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
@@ -3680,7 +3849,7 @@
       (reference "Q201") (unit 1) (value "2N4403") (footprint "Package_TO_SOT_THT:TO-92")
     )
     (path "/00000000-0000-0000-0000-00006147db65/00000000-0000-0000-0000-000061487a5c"
-      (reference "Q203") (unit 1) (value "2N4403") (footprint "Package_TO_SOT_THT:TO-92")
+      (reference "Q202") (unit 1) (value "2N4403") (footprint "Package_TO_SOT_THT:TO-92")
     )
     (path "/00000000-0000-0000-0000-00006139aaf1/00000000-0000-0000-0000-000061360d03"
       (reference "Q501") (unit 1) (value "2N4403") (footprint "Package_TO_SOT_THT:TO-92")
@@ -3707,16 +3876,16 @@
       (reference "R203") (unit 1) (value "10K") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/00000000-0000-0000-0000-00006147db65/00000000-0000-0000-0000-00006148799e"
-      (reference "R206") (unit 1) (value "38K") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+      (reference "R204") (unit 1) (value "38K") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/00000000-0000-0000-0000-00006147db65/00000000-0000-0000-0000-000061487a50"
-      (reference "R207") (unit 1) (value "1K") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+      (reference "R205") (unit 1) (value "1K") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/00000000-0000-0000-0000-00006147db65/00000000-0000-0000-0000-000061487a56"
-      (reference "R208") (unit 1) (value "150R") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+      (reference "R206") (unit 1) (value "150R") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/00000000-0000-0000-0000-00006147db65/00000000-0000-0000-0000-000061487a80"
-      (reference "R209") (unit 1) (value "150R") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
+      (reference "R207") (unit 1) (value "150R") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
     )
     (path "/00000000-0000-0000-0000-000060eb395d/00000000-0000-0000-0000-000061408b26"
       (reference "R301") (unit 1) (value "10K") (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal")
@@ -3970,22 +4139,25 @@
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-0000616f3667"
       (reference "U701") (unit 7) (value "74LS07") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
-    (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-000061791a6a"
+    (path "/00000000-0000-0000-0000-00006139a6be/f1cf9d8c-bdd2-4f4b-8b23-d324f85dd75b"
       (reference "U702") (unit 1) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
-    (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-0000617929a1"
+    (path "/00000000-0000-0000-0000-00006139a6be/82e92d46-6e63-4d5c-bba9-22621c8b3611"
+      (reference "U702") (unit 2) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
+    )
+    (path "/00000000-0000-0000-0000-00006139a6be/2b732c64-0d3b-43a9-9015-163441756e66"
       (reference "U702") (unit 3) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
-    (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-000061793343"
+    (path "/00000000-0000-0000-0000-00006139a6be/25615d0d-791a-4936-945d-d843aada566f"
       (reference "U702") (unit 4) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
-    (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-000061793b51"
+    (path "/00000000-0000-0000-0000-00006139a6be/db77c63e-0fc9-48ab-88a8-21197a25e60b"
       (reference "U702") (unit 5) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
-    (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-00006179414d"
+    (path "/00000000-0000-0000-0000-00006139a6be/d95b9c52-bbbf-4298-82d9-33cf2e4fb5cf"
       (reference "U702") (unit 6) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
-    (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-000061794a1e"
+    (path "/00000000-0000-0000-0000-00006139a6be/7cfc0830-2413-4fad-9b78-be692335e1a2"
       (reference "U702") (unit 7) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/9cc7fb1c-56d9-4c43-8b23-b48a923589a1"
@@ -3995,13 +4167,13 @@
       (reference "U704") (unit 1) (value "74HC164") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-0000617cbef9"
-      (reference "U705") (unit 1) (value "74LS21") (footprint "Package_DIP:DIP-12_W7.62mm_Socket")
+      (reference "U705") (unit 1) (value "74LS21") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-0000617ccdaa"
-      (reference "U705") (unit 2) (value "74LS21") (footprint "Package_DIP:DIP-12_W7.62mm_Socket")
+      (reference "U705") (unit 2) (value "74LS21") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-0000617cd539"
-      (reference "U705") (unit 3) (value "74LS21") (footprint "Package_DIP:DIP-12_W7.62mm_Socket")
+      (reference "U705") (unit 3) (value "74LS21") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-00006180d500"
       (reference "U706") (unit 1) (value "74LS138") (footprint "Package_DIP:DIP-16_W7.62mm_Socket")
@@ -4013,13 +4185,13 @@
       (reference "U708") (unit 1) (value "74LS541") (footprint "Package_DIP:DIP-20_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-000063041d72"
-      (reference "U801") (unit 1) (value "74LS21") (footprint "Package_DIP:DIP-12_W7.62mm_Socket")
+      (reference "U801") (unit 1) (value "74LS21") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-0000630427a7"
-      (reference "U801") (unit 2) (value "74LS21") (footprint "Package_DIP:DIP-12_W7.62mm_Socket")
+      (reference "U801") (unit 2) (value "74LS21") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-000063044317"
-      (reference "U801") (unit 3) (value "74LS21") (footprint "Package_DIP:DIP-12_W7.62mm_Socket")
+      (reference "U801") (unit 3) (value "74LS21") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-00006134d545/00000000-0000-0000-0000-0000626785a5"
       (reference "U901") (unit 1) (value "74LS245") (footprint "Package_DIP:DIP-20_W7.62mm_Socket")
@@ -4109,46 +4281,46 @@
       (reference "U1501") (unit 1) (value "68230") (footprint "Package_DIP:DIP-48_W15.24mm_Socket")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfbf1"
-      (reference "U1601") (unit 1) (value "74HCT14") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1601") (unit 1) (value "74HCT14") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfc42"
-      (reference "U1601") (unit 2) (value "74HCT14") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1601") (unit 2) (value "74HCT14") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfc3c"
-      (reference "U1601") (unit 3) (value "74HCT14") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1601") (unit 3) (value "74HCT14") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfd66"
-      (reference "U1601") (unit 4) (value "74HCT14") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1601") (unit 4) (value "74HCT14") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfd5a"
-      (reference "U1601") (unit 5) (value "74HCT14") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1601") (unit 5) (value "74HCT14") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfd60"
-      (reference "U1601") (unit 6) (value "74HCT14") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1601") (unit 6) (value "74HCT14") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfd6c"
-      (reference "U1601") (unit 7) (value "74HCT14") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1601") (unit 7) (value "74HCT14") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfbf7"
-      (reference "U1602") (unit 1) (value "74HCT74") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1602") (unit 1) (value "74HCT74") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfd93"
-      (reference "U1602") (unit 2) (value "74HCT74") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1602") (unit 2) (value "74HCT74") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfd99"
-      (reference "U1602") (unit 3) (value "74HCT74") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1602") (unit 3) (value "74HCT74") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/baff5625-0bc2-480f-8822-680a42e71919/0fc8bf7f-cdda-45bd-b014-138c616e8856"
       (reference "U1701") (unit 1) (value "74LS541") (footprint "Package_DIP:DIP-20_W7.62mm_Socket")
     )
     (path "/baff5625-0bc2-480f-8822-680a42e71919/33f946c1-187e-495d-b8f7-daea08025f04"
-      (reference "U1702") (unit 1) (value "74LS21") (footprint "Package_DIP:DIP-12_W7.62mm_Socket")
+      (reference "U1702") (unit 1) (value "74LS21") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/baff5625-0bc2-480f-8822-680a42e71919/ad6620bb-b14b-4799-a0ec-7f4233258993"
-      (reference "U1702") (unit 2) (value "74LS21") (footprint "Package_DIP:DIP-12_W7.62mm_Socket")
+      (reference "U1702") (unit 2) (value "74LS21") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/baff5625-0bc2-480f-8822-680a42e71919/f4b4f48a-6cb7-4810-83e2-2d7521dda83c"
-      (reference "U1702") (unit 3) (value "74LS21") (footprint "Package_DIP:DIP-12_W7.62mm_Socket")
+      (reference "U1702") (unit 3) (value "74LS21") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
     (path "/baff5625-0bc2-480f-8822-680a42e71919/73a8fb4c-7e4c-4b2b-a31f-87efb856f31c"
       (reference "U1703") (unit 1) (value "74LS08") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
@@ -4165,11 +4337,8 @@
     (path "/baff5625-0bc2-480f-8822-680a42e71919/10ffbbc6-685c-4256-af76-adaa92bd5163"
       (reference "U1703") (unit 5) (value "74LS08") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
     )
-    (path "/baff5625-0bc2-480f-8822-680a42e71919/8c28c658-3e27-4364-828b-3d3f96807144"
-      (reference "U1704") (unit 2) (value "74LS04") (footprint "Package_DIP:DIP-14_W7.62mm_Socket")
-    )
     (path "/baff5625-0bc2-480f-8822-680a42e71919/2e5a07b6-7ef1-4368-a014-cf845301ef26"
-      (reference "U1705") (unit 1) (value "74LS148") (footprint "Package_DIP:DIP-16_W7.62mm_Socket")
+      (reference "U1704") (unit 1) (value "74LS148") (footprint "Package_DIP:DIP-16_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-000060eb395d/00000000-0000-0000-0000-0000613b7690"
       (reference "X301") (unit 1) (value "40Mhz") (footprint "Oscillator:Oscillator_DIP-14")

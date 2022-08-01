@@ -1173,7 +1173,7 @@
       )
       (symbol "+3.3V_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3.3V" (effects (font (size 1.27 1.27))))
+          (name "+3V3" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -1419,8 +1419,8 @@
   )
 
   (no_connect (at 340.36 137.16) (uuid 4169b613-33f4-4881-8d1e-7fcd519efb77))
-  (no_connect (at 149.86 137.16) (uuid 4169b613-33f4-4881-8d1e-7fcd519efb77))
-  (no_connect (at 245.11 137.16) (uuid 4169b613-33f4-4881-8d1e-7fcd519efb77))
+  (no_connect (at 149.86 137.16) (uuid 4169b613-33f4-4881-8d1e-7fcd519efb78))
+  (no_connect (at 245.11 137.16) (uuid 4169b613-33f4-4881-8d1e-7fcd519efb79))
   (no_connect (at 54.61 137.16) (uuid ff5a2e58-f762-4806-97fa-993a22ab4351))
 
   (bus_entry (at 101.6 104.14) (size -2.54 2.54)
@@ -8153,7 +8153,7 @@
     (uuid 00000000-0000-0000-0000-000063041d72)
     (property "Reference" "U801" (id 0) (at 337.82 221.615 0))
     (property "Value" "74LS21" (id 1) (at 337.82 223.9264 0))
-    (property "Footprint" "Package_DIP:DIP-12_W7.62mm_Socket" (id 2) (at 337.82 231.14 0)
+    (property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket" (id 2) (at 337.82 231.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS21" (id 3) (at 337.82 231.14 0)
@@ -8178,7 +8178,7 @@
     (uuid 00000000-0000-0000-0000-0000630427a7)
     (property "Reference" "U801" (id 0) (at 337.82 238.125 0))
     (property "Value" "74LS21" (id 1) (at 337.82 240.4364 0))
-    (property "Footprint" "Package_DIP:DIP-12_W7.62mm_Socket" (id 2) (at 337.82 247.65 0)
+    (property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket" (id 2) (at 337.82 247.65 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS21" (id 3) (at 337.82 247.65 0)
@@ -8207,7 +8207,7 @@
     (property "Value" "74LS21" (id 1) (at 395.097 230.378 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_DIP:DIP-12_W7.62mm_Socket" (id 2) (at 389.255 229.235 0)
+    (property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket" (id 2) (at 389.255 229.235 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS21" (id 3) (at 389.255 229.235 0)
