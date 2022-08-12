@@ -1068,7 +1068,7 @@
       )
       (symbol "+3.3V_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3V3" (effects (font (size 1.27 1.27))))
+          (name "+3.3V" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -1206,7 +1206,6 @@
       )
     )
   )
-
 
   (junction (at 259.08 135.89) (diameter 0) (color 0 0 0 0)
     (uuid 224e8890-cdee-45fd-bd2e-64fe49c2de75)

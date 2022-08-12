@@ -2426,10 +2426,10 @@
     (path "/00000000-0000-0000-0000-000061478359/fb17cbaf-a0b3-4eeb-ad6b-04d23cdc8dd7"
       (reference "#PWR0402") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000061478359/2fea8ee7-91ee-45cd-acaa-348861bf24ec"
+    (path "/00000000-0000-0000-0000-000061478359/e9e5be6c-3cbf-4c19-8658-8a710b2e518c"
       (reference "#PWR0403") (unit 1) (value "+5V") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000061478359/17749179-6d27-457d-91d4-ac1b4c0ce6b5"
+    (path "/00000000-0000-0000-0000-000061478359/5c00f610-d797-41bd-bcbc-43a12f021c4e"
       (reference "#PWR0404") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000061478359/3275d0fd-9893-48ed-89e8-10ab71e2567e"
@@ -2438,10 +2438,10 @@
     (path "/00000000-0000-0000-0000-000061478359/fcb02aa8-c334-4d43-bea2-52df9a4a7604"
       (reference "#PWR0406") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000061478359/28c0368e-6917-42ed-b4fa-8ee3ca41c77a"
+    (path "/00000000-0000-0000-0000-000061478359/c79fac71-28f4-4bbc-8c15-bf0d8907a876"
       (reference "#PWR0407") (unit 1) (value "+5V") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000061478359/c571b1f9-8b1b-4854-b21d-29b902c7e608"
+    (path "/00000000-0000-0000-0000-000061478359/419889db-1fcc-4873-810d-25de18d707c5"
       (reference "#PWR0408") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000061478359/dfc8f75f-6ded-4c59-88c8-a3ee816fae3d"
@@ -3173,12 +3173,6 @@
     (path "/00000000-0000-0000-0000-000061478359/e58fb91c-9a18-4d84-8de3-27d2957a0b56"
       (reference "C403") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm")
     )
-    (path "/00000000-0000-0000-0000-000061478359/3d0d6bbd-954a-4dc2-9e00-51a0c674715e"
-      (reference "C404") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm")
-    )
-    (path "/00000000-0000-0000-0000-000061478359/e8462afa-958a-4153-942e-d108c2d64521"
-      (reference "C405") (unit 1) (value "100nF") (footprint "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm")
-    )
     (path "/00000000-0000-0000-0000-00006139aaf1/00000000-0000-0000-0000-0000613a3ebf"
       (reference "C501") (unit 1) (value "10pF") (footprint "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm")
     )
@@ -3752,13 +3746,13 @@
     (path "/00000000-0000-0000-0000-000061478359/3bd7e330-0d21-4b28-a938-7717df2e65ca"
       (reference "U401") (unit 1) (value "SST39SF040") (footprint "Package_DIP:DIP-32_W15.24mm_Socket")
     )
-    (path "/00000000-0000-0000-0000-000061478359/7458f684-f745-4677-9f01-a8e13c0d930b"
+    (path "/00000000-0000-0000-0000-000061478359/fd8041da-b8f0-4cfe-bba7-f8dd1a618fc1"
       (reference "U402") (unit 1) (value "AS6C4008-55PCN") (footprint "Package_DIP:DIP-32_W15.24mm")
     )
     (path "/00000000-0000-0000-0000-000061478359/ba78d98f-a84d-4337-b33e-2b4c0120d6e3"
       (reference "U403") (unit 1) (value "SST39SF040") (footprint "Package_DIP:DIP-32_W15.24mm_Socket")
     )
-    (path "/00000000-0000-0000-0000-000061478359/f0b710d4-956c-4ebf-a7f7-609dc88b46c5"
+    (path "/00000000-0000-0000-0000-000061478359/0b7bcacc-9fd1-4b72-8b8b-de8daa9e0878"
       (reference "U404") (unit 1) (value "AS6C4008-55PCN") (footprint "Package_DIP:DIP-32_W15.24mm")
     )
     (path "/00000000-0000-0000-0000-000061478359/af61db1d-0a94-4818-8efc-99f46467ee03"
