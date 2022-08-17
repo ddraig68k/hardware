@@ -1857,7 +1857,6 @@
     )
   )
 
-
   (junction (at 73.66 37.846) (diameter 0) (color 0 0 0 0)
     (uuid 0243fc01-c89d-427f-ada0-c7b78b375c4b)
   )
@@ -4326,7 +4325,7 @@
     (uuid 00000000-0000-0000-0000-0000615d2430)
     (property "Reference" "U707" (id 0) (at 311.15 82.55 0))
     (property "Value" "74LS541" (id 1) (at 298.704 82.423 0))
-    (property "Footprint" "Package_SO:SO-20_5.3x12.6mm_P1.27mm" (id 2) (at 304.8 99.06 0)
+    (property "Footprint" "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" (id 2) (at 304.8 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS541" (id 3) (at 304.8 99.06 0)
@@ -5305,7 +5304,7 @@
     (uuid 58eb472d-b42e-40ae-ae98-50074c36a4cd)
     (property "Reference" "U708" (id 0) (at 311.15 143.51 0))
     (property "Value" "74LS541" (id 1) (at 298.958 143.51 0))
-    (property "Footprint" "Package_SO:SO-20_5.3x12.6mm_P1.27mm" (id 2) (at 304.8 160.02 0)
+    (property "Footprint" "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" (id 2) (at 304.8 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS541" (id 3) (at 304.8 160.02 0)
