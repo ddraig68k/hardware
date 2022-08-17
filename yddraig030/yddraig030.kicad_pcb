@@ -804,7 +804,7 @@
 
   (footprint "Package_DIP:DIP-32_W15.24mm_Socket" (layer "F.Cu")
     (tedit 5A02E8C5) (tstamp 03e72bdc-4f61-4bda-8817-207d53feb561)
-    (at 252.45 216.125 90)
+    (at 254 215.646 90)
     (descr "32-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket")
     (tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket")
     (property "Sheetfile" "ROMRAM.kicad_sch")
@@ -1923,7 +1923,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 1729d382-ccc2-414e-bcc0-cfd4ac0a73a1)
-    (at 329.5 180.55 -90)
+    (at 330.2 179.698 -90)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "CPU.kicad_sch")
@@ -3040,7 +3040,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 2ad43ca4-756b-4510-8fe9-949ea1539adc)
-    (at 285 147.5)
+    (at 282.194 144.78)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "CPU.kicad_sch")
@@ -3673,7 +3673,7 @@
 
   (footprint "Resistor_SMD:R_0805_2012Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 3e7f1652-2129-4d6b-b3fb-1da99e37e6f8)
-    (at 193.5875 216 180)
+    (at 194.6675 215.138 180)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
     (tags "resistor")
     (property "Sheetfile" "DRAM.kicad_sch")
@@ -4106,7 +4106,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 4ba60eb0-e788-4882-bd4a-6efa43b2f007)
-    (at 300.5 148.5)
+    (at 298.262 147.574)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "CPU.kicad_sch")
@@ -4336,7 +4336,7 @@
 
   (footprint "Ddraig:58220214" (layer "F.Cu")
     (tedit 616046B0) (tstamp 51627c35-9aa3-4ff0-84b4-ea46489bd7e3)
-    (at 130.875 237.23 180)
+    (at 132.08 238.76 180)
     (descr "5822021-4-2")
     (tags "Connector")
     (property "Sheetfile" "DRAM.kicad_sch")
@@ -5370,7 +5370,7 @@
 
   (footprint "Ddraig:MC68030RC" (layer "F.Cu")
     (tedit 60FC6EE1) (tstamp 5f164639-a2e8-47aa-a1d5-a7d079d7ae08)
-    (at 269.5 167 -90)
+    (at 269.494 165.1 -90)
     (property "Sheetfile" "CPU.kicad_sch")
     (property "Sheetname" "CPU and FPU")
     (path "/00000000-0000-0000-0000-000060eb395d/00000000-0000-0000-0000-000060eb72be")
@@ -6153,7 +6153,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp 6bf08c4a-1834-4087-b1e5-e98f60e36e1a)
-    (at 345.226 216.125)
+    (at 346.898 216.154)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "ROMRAM.kicad_sch")
@@ -6237,7 +6237,7 @@
 
   (footprint "Package_LCC:PLCC-68_THT-Socket" (layer "F.Cu")
     (tedit 5A02ECC8) (tstamp 6e9e2416-6cac-481b-9ed3-e308a399dfbe)
-    (at 298.96 166.42 90)
+    (at 299.466 165.1 90)
     (descr "PLCC, 68 pins, through hole")
     (tags "plcc leaded")
     (property "Sheetfile" "CPU.kicad_sch")
@@ -6248,7 +6248,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2aa2f315-d414-4363-86cf-84e92e6a4c0e)
     )
-    (fp_text value "MC68881FN" (at 0 29.225 90) (layer "F.Fab")
+    (fp_text value "MC68881FN" (at 0.852 29.925 90) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 1015ca61-dcb6-452f-9476-396720c62ed5)
     )
@@ -6768,7 +6768,7 @@
 
   (footprint "Ddraig:58220214" (layer "F.Cu")
     (tedit 616046B0) (tstamp 732b1322-56c6-4428-a563-77f665798843)
-    (at 130.965 222.47 180)
+    (at 132.08 220.98 180)
     (descr "5822021-4-2")
     (tags "Connector")
     (property "Sheetfile" "DRAM.kicad_sch")
@@ -7378,7 +7378,7 @@
 
   (footprint "Package_DIP:DIP-32_W15.24mm_Socket" (layer "F.Cu")
     (tedit 5A02E8C5) (tstamp 7b761e12-048a-4bee-b09c-22d403b15759)
-    (at 303.25 241.779 90)
+    (at 304.8 241.3 90)
     (descr "32-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket")
     (tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket")
     (property "Sheetfile" "ROMRAM.kicad_sch")
@@ -9079,7 +9079,7 @@
 
   (footprint "Package_DIP:DIP-32_W15.24mm_Socket" (layer "F.Cu")
     (tedit 5A02E8C5) (tstamp 8ebdb7f4-cf3a-4223-87c4-f6d6263bbbee)
-    (at 252.45 241.525 90)
+    (at 254 241.3 90)
     (descr "32-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket")
     (tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket")
     (property "Sheetfile" "ROMRAM.kicad_sch")
@@ -9725,7 +9725,7 @@
 
   (footprint "Resistor_THT:R_Array_SIP9" (layer "F.Cu")
     (tedit 5A14249F) (tstamp 9946bcf3-efe0-4180-ab6b-5267dedfc739)
-    (at 237 214.5 180)
+    (at 238.76 213.36 180)
     (descr "9-pin Resistor SIP pack")
     (tags "R")
     (property "Sheetfile" "DRAM.kicad_sch")
@@ -11683,7 +11683,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp b1efb9ee-e98f-4271-a8ef-125098781581)
-    (at 320.05 148.5)
+    (at 313.248 147.574)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "CPU.kicad_sch")
@@ -13000,7 +13000,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp cd5ae7d0-01f7-4ba1-ac93-25bc87f4d1b4)
-    (at 253.5 147.5)
+    (at 255.082 144.78)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "CPU.kicad_sch")
@@ -13502,7 +13502,7 @@
 
   (footprint "Package_DIP:DIP-32_W15.24mm_Socket" (layer "F.Cu")
     (tedit 5A02E8C5) (tstamp dd0ce5f0-4435-40f5-bc37-918d9fe9fd09)
-    (at 303.25 216.13 90)
+    (at 304.8 215.9 90)
     (descr "32-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket")
     (tags "THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket")
     (property "Sheetfile" "ROMRAM.kicad_sch")
@@ -14589,7 +14589,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp dfefbd51-d1d0-4752-aaa2-b662a79de8a3)
-    (at 329.5 168.05 -90)
+    (at 330.2 167.198 -90)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "CPU.kicad_sch")
@@ -16173,7 +16173,7 @@
 
   (footprint "Capacitor_SMD:C_0805_2012Metric" (layer "F.Cu")
     (tedit 5F68FEEE) (tstamp f4eed177-1677-4b8f-bec0-c11a8879cbb7)
-    (at 269 147.5)
+    (at 269.052 145.034)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor")
     (property "Sheetfile" "CPU.kicad_sch")
@@ -16784,5 +16784,7 @@
   (gr_arc (start 357.5 30) (mid 359.267767 30.732233) (end 360 32.5) (layer "Edge.Cuts") (width 0.05) (tstamp ae5f40a5-7890-4470-9d20-e81fd56d61d7))
   (gr_line (start 360 247.5) (end 360 32.5) (layer "Edge.Cuts") (width 0.05) (tstamp d8eb47e0-ce5f-4792-9823-ccf0346b232a))
   (gr_line (start 32.5 250) (end 357.5 250) (layer "Edge.Cuts") (width 0.05) (tstamp e870e1eb-c42f-4ab8-9ac1-79f8304a901c))
+
+  (segment (start 187.5 50.752) (end 187.452 50.8) (width 0.127) (layer "F.Cu") (net 6) (tstamp 780514c2-875e-4440-86ae-a8529b41d705))
 
 )
