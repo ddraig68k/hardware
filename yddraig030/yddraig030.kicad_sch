@@ -3107,9 +3107,6 @@
     (path "/baff5625-0bc2-480f-8822-680a42e71919/dcf63aaa-4889-4f82-9d7d-9f294a4a4c75"
       (reference "#PWR01507") (unit 1) (value "GND") (footprint "")
     )
-    (path "/baff5625-0bc2-480f-8822-680a42e71919/087a3732-302a-47cf-9825-cf2386964e62"
-      (reference "#PWR01508") (unit 1) (value "GND") (footprint "")
-    )
     (path "/baff5625-0bc2-480f-8822-680a42e71919/060130ad-7228-4eb6-94eb-9baf91f4228a"
       (reference "#PWR01509") (unit 1) (value "+5V") (footprint "")
     )
@@ -3392,9 +3389,6 @@
     (path "/baff5625-0bc2-480f-8822-680a42e71919/df69a031-a2fc-481d-8a6b-2773e72a8a4a"
       (reference "C1503") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
-    (path "/baff5625-0bc2-480f-8822-680a42e71919/602bed53-b57b-4a13-9cf9-b798efc548db"
-      (reference "C1504") (unit 1) (value "100nF") (footprint "Capacitor_SMD:C_0805_2012Metric")
-    )
     (path "/00000000-0000-0000-0000-00006147db65/00000000-0000-0000-0000-000061487a10"
       (reference "D201") (unit 1) (value "RED") (footprint "LED_SMD:LED_1206_3216Metric")
     )
@@ -3518,26 +3512,23 @@
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfcbe"
       (reference "J1403") (unit 1) (value "PWRLED") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
     )
-    (path "/baff5625-0bc2-480f-8822-680a42e71919/6e39d65e-aeaf-45d8-a16e-95a076389a4b"
-      (reference "J1501") (unit 1) (value "NMI Reset") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical")
-    )
     (path "/00000000-0000-0000-0000-000060ca1c9e/00000000-0000-0000-0000-000061d38cee"
       (reference "JSIMM1001") (unit 1) (value "SIMM-72") (footprint "Ddraig:58220214")
     )
-    (path "/00000000-0000-0000-0000-00006147db65/00000000-0000-0000-0000-000061487a0a"
-      (reference "Q201") (unit 1) (value "2N4403") (footprint "Package_TO_SOT_THT:TO-92")
+    (path "/00000000-0000-0000-0000-00006147db65/2e9298ed-76f1-49be-8cfe-f597a6115064"
+      (reference "Q201") (unit 1) (value "BC858") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
-    (path "/00000000-0000-0000-0000-00006147db65/00000000-0000-0000-0000-000061487a5c"
-      (reference "Q202") (unit 1) (value "2N4403") (footprint "Package_TO_SOT_THT:TO-92")
+    (path "/00000000-0000-0000-0000-00006147db65/41fcc42c-6ee2-4ead-8e77-53ccd83e34a2"
+      (reference "Q202") (unit 1) (value "BC858") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
-    (path "/00000000-0000-0000-0000-00006139aaf1/00000000-0000-0000-0000-000061360d03"
-      (reference "Q501") (unit 1) (value "2N4403") (footprint "Package_TO_SOT_THT:TO-92")
+    (path "/00000000-0000-0000-0000-00006139aaf1/86c5d7ca-497c-43a4-85aa-0cd2ff01c80c"
+      (reference "Q501") (unit 1) (value "BC858") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
-    (path "/00000000-0000-0000-0000-00006139aaf1/00000000-0000-0000-0000-000061360d2e"
-      (reference "Q502") (unit 1) (value "2N4403") (footprint "Package_TO_SOT_THT:TO-92")
+    (path "/00000000-0000-0000-0000-00006139aaf1/41f8ec8a-c9e8-46b7-8820-da8341c7f770"
+      (reference "Q502") (unit 1) (value "BC858") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
-    (path "/00000000-0000-0000-0000-00006139ab8f/00000000-0000-0000-0000-0000612ba796"
-      (reference "Q601") (unit 1) (value "2N7000") (footprint "Package_TO_SOT_THT:TO-92_Inline")
+    (path "/00000000-0000-0000-0000-00006139ab8f/a2ab0a0f-6588-4dcc-afc0-fccd06169f83"
+      (reference "Q601") (unit 1) (value "2N7002") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/00000000-0000-0000-0000-00006152af50/00000000-0000-0000-0000-00006152ee16"
       (reference "Q1301") (unit 1) (value "BC549B") (footprint "Package_TO_SOT_THT:TO-92")
@@ -3741,7 +3732,7 @@
       (reference "SW1401") (unit 1) (value "SW_SPST") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
     (path "/00000000-0000-0000-0000-00006147db65/00000000-0000-0000-0000-000061487989"
-      (reference "U201") (unit 1) (value "NE555P") (footprint "Package_SO:SO-8_3.9x4.9mm_P1.27mm")
+      (reference "U201") (unit 1) (value "NE555P") (footprint "Package_SO:SO-8_5.3x6.2mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000060eb395d/00000000-0000-0000-0000-000060eb72be"
       (reference "U301") (unit 1) (value "MC68030") (footprint "Ddraig:MC68030RC")
@@ -3753,13 +3744,13 @@
       (reference "U401") (unit 1) (value "SST39SF040") (footprint "Package_DIP:DIP-32_W15.24mm_Socket")
     )
     (path "/00000000-0000-0000-0000-000061478359/fd8041da-b8f0-4cfe-bba7-f8dd1a618fc1"
-      (reference "U402") (unit 1) (value "AS6C4008-55PCN") (footprint "Package_DIP:DIP-32_W15.24mm")
+      (reference "U402") (unit 1) (value "AS6C4008-55PCN") (footprint "Package_DIP:DIP-32_W15.24mm_Socket")
     )
     (path "/00000000-0000-0000-0000-000061478359/ba78d98f-a84d-4337-b33e-2b4c0120d6e3"
       (reference "U403") (unit 1) (value "SST39SF040") (footprint "Package_DIP:DIP-32_W15.24mm_Socket")
     )
     (path "/00000000-0000-0000-0000-000061478359/0b7bcacc-9fd1-4b72-8b8b-de8daa9e0878"
-      (reference "U404") (unit 1) (value "AS6C4008-55PCN") (footprint "Package_DIP:DIP-32_W15.24mm")
+      (reference "U404") (unit 1) (value "AS6C4008-55PCN") (footprint "Package_DIP:DIP-32_W15.24mm_Socket")
     )
     (path "/00000000-0000-0000-0000-000061478359/af61db1d-0a94-4818-8efc-99f46467ee03"
       (reference "U405") (unit 1) (value "74LS32") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
@@ -3927,7 +3918,7 @@
       (reference "U1201") (unit 1) (value "RTL8019AS") (footprint "Ddraig:RTL8019AS")
     )
     (path "/00000000-0000-0000-0000-00006152af50/00000000-0000-0000-0000-00006152ee0c"
-      (reference "U1301") (unit 1) (value "RTC-72421") (footprint "Package_SO:SOP-18_7x12.5mm_P1.27mm")
+      (reference "U1301") (unit 1) (value "RTC-72421") (footprint "Package_DIP:DIP-18_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfbf1"
       (reference "U1401") (unit 1) (value "74HCT14") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")

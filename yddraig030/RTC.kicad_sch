@@ -1040,7 +1040,7 @@
     (uuid 00000000-0000-0000-0000-00006152ee0c)
     (property "Reference" "U1301" (id 0) (at 190.5 96.52 0))
     (property "Value" "RTC-72421" (id 1) (at 191.77 127 0))
-    (property "Footprint" "Package_SO:SOP-18_7x12.5mm_P1.27mm" (id 2) (at 181.61 109.22 0)
+    (property "Footprint" "Package_DIP:DIP-18_W7.62mm_Socket" (id 2) (at 181.61 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 181.61 109.22 0)
