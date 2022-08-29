@@ -2382,6 +2382,9 @@
     (path "/00000000-0000-0000-0000-00006152af50/00000000-0000-0000-0000-00006152eea6"
       (reference "#FLG01301") (unit 1) (value "PWR_FLAG") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-000060eb3bea/3f5c574a-67f1-4013-a929-40f1d814e9bf"
+      (reference "#PWR0101") (unit 1) (value "+5V") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-00006147db65/00000000-0000-0000-0000-0000614879ed"
       (reference "#PWR0201") (unit 1) (value "GND") (footprint "")
     )
@@ -2766,9 +2769,6 @@
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-00006134fdc6"
       (reference "#PWR0821") (unit 1) (value "+12V") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-000062fcd036"
-      (reference "#PWR0822") (unit 1) (value "+5V") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-00006134fdcc"
       (reference "#PWR0823") (unit 1) (value "-12V") (footprint "")
     )
@@ -2786,12 +2786,6 @@
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-00006134fef5"
       (reference "#PWR0828") (unit 1) (value "+12V") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-00006388c5c7"
-      (reference "#PWR0829") (unit 1) (value "+5V") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-00006388c2c9"
-      (reference "#PWR0830") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-00006134fefb"
       (reference "#PWR0831") (unit 1) (value "-12V") (footprint "")
@@ -3645,6 +3639,12 @@
     (path "/00000000-0000-0000-0000-000060eb3bea/f9230343-16b1-47ee-91d3-7192d84a3f54"
       (reference "R802") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
+    (path "/00000000-0000-0000-0000-000060eb3bea/2fa7930c-5ce5-4ca1-9864-19170baa98cb"
+      (reference "R803") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/00000000-0000-0000-0000-000060eb3bea/7ef8c89f-aec4-4ae1-ba19-1d59ab261b0d"
+      (reference "R804") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
     (path "/00000000-0000-0000-0000-000060ca1c9e/00000000-0000-0000-0000-000061a883e1"
       (reference "R1001") (unit 1) (value "22R") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
@@ -3734,9 +3734,6 @@
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-000060fba84a"
       (reference "RN801") (unit 1) (value "10K") (footprint "Resistor_THT:R_Array_SIP9")
-    )
-    (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-000062fcd025"
-      (reference "RN802") (unit 1) (value "10K") (footprint "Resistor_THT:R_Array_SIP9")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-00006134d545/00000000-0000-0000-0000-000061363ab2"
       (reference "RN901") (unit 1) (value "10K") (footprint "Resistor_THT:R_Array_SIP9")
@@ -3890,15 +3887,6 @@
     )
     (path "/00000000-0000-0000-0000-00006139a6be/58eb472d-b42e-40ae-ae98-50074c36a4cd"
       (reference "U708") (unit 1) (value "74LS541") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
-    )
-    (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-000063041d72"
-      (reference "U801") (unit 1) (value "74LS21") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
-    )
-    (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-0000630427a7"
-      (reference "U801") (unit 2) (value "74LS21") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
-    )
-    (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-000063044317"
-      (reference "U801") (unit 3) (value "74LS21") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-00006134d545/00000000-0000-0000-0000-0000626785a5"
       (reference "U901") (unit 1) (value "74LS245") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
