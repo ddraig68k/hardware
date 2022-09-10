@@ -556,7 +556,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "../../ddraig-libs/CAD/Boards/GfxV9990.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
