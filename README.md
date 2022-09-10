@@ -22,6 +22,12 @@ Expansion Cards
 
 * [TMS9918 Graphics card](expansion/GfxTMS9918)
 
+* [V9958 Graphics card](expansion/GfxV9958)
+
+* [V9990 Graphics card](expansion/GfxV9990)
+
+* [Sega Megadrive joypad card](expansion/JoypadController)
+
 <br/>
 
 ## Untested designs
@@ -31,11 +37,3 @@ Expansion Cards
 [RTL8019 Ethernet card](expansion/Eth8019)
 
 [Floppy Disk controller card](expansion/FloppyDiskController)
-
-
-[V9958 Graphics card](expansion/GfxV9958)
-
-[V9990 Graphics card](expansion/GfxV9990)
-
-[Sega Megadrive joypad card](expansion/JoypadController)
-
