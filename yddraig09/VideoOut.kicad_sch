@@ -5,7 +5,7 @@
   (paper "A4")
 
   (title_block
-    (title "Y Ddraig Fechan")
+    (title "Y Ddraig Fach")
     (company "Stephen Moody")
   )
 
@@ -950,7 +950,6 @@
       )
     )
   )
-
 
   (junction (at 54.61 31.75) (diameter 0) (color 0 0 0 0)
     (uuid 01355619-95b4-49eb-99ee-52fe8b1afe73)
