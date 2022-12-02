@@ -4,7 +4,7 @@ This repository contains the Schematics and any other relevant files for my [68K
 
 The libraries used in the project are contained in the ddraig-libs folder inside the repo, to use them in KiCAD, go to Configure Paths and add a custom path DDRAIGLIB which points to the ddraig-libs folder.
 
-# Y Ddraig
+## Y Ddraig
 
 Welsh for *The Dragon* is my [Motorola 68000](https://en.wikipedia.org/wiki/Motorola_68000) computer. 
 
@@ -31,7 +31,7 @@ Welsh for *The Dragon* is my [Motorola 68000](https://en.wikipedia.org/wiki/Moto
 [Y Ddraig main pcb](yddraig)
 
 
-Expansion Cards
+**Expansion Cards**
 
 * [YM2151 Audio card](expansion/AudioYM2151)
 
