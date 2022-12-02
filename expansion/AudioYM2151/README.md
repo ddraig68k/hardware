@@ -11,4 +11,6 @@ A [LTC6903](https://www.analog.com/en/products/ltc6903.html#product-overview) 1k
 A Xilinx XC95144XL is used is used for decoding logic and as a SPI controller for the LTC6903. Although the XC95144XL is a 3.3V part, it has 5V tolerant I/O and it seems to interface with the 68000 expansion bus without issue. The 3.3V output seems to drive the 5V signals correctly so I can avoid having to add 3.3V to 5V buffers. While I wouldn't recommend this approach for a mass produced design, it seems to work on a on-off situation at least.
 
 A quick test of playing some VGM music.
-https://www.youtube.com/watch?v=DkEkwPIz1iw
+
+[<img src="https://img.youtube.com/vi/DkEkwPIz1iw/maxresdefault.jpg" width="50%">](https://youtu.be/DkEkwPIz1iw)
+
