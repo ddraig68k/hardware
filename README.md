@@ -1,12 +1,12 @@
 # CAD files for Y Ddraig
 
-This repository contains the Schematics and any other relevant files for my [68K based computer](https://ddraig68k.com) in KiCAD 6 format. The files for the main computer boards as well as any of the expansion boards are present in the repository.
+This repository contains the Schematics and any other relevant files for [Motorola 68000 computer](https://ddraig68k.com) in KiCAD 6 format. The files for the main computer boards as well as any of the expansion boards are present in the repository.
 
 The libraries used in the project are contained in the ddraig-libs folder inside the repo, to use them in KiCAD, go to Configure Paths and add a custom path DDRAIGLIB which points to the ddraig-libs folder.
 
 ## Y Ddraig
 
-Welsh for *The Dragon* is my [Motorola 68000](https://en.wikipedia.org/wiki/Motorola_68000) computer. 
+Welsh for *The Dragon*, Y Ddraig is my [Motorola 68000](https://en.wikipedia.org/wiki/Motorola_68000) computer. 
 
 | **Specifications** |
 |-|
