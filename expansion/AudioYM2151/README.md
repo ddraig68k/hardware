@@ -12,5 +12,4 @@ A Xilinx XC95144XL is used is used for decoding logic and as a SPI controller fo
 
 A quick test of playing some VGM music.
 
-[<img src="https://img.youtube.com/vi/DkEkwPIz1iw/maxresdefault.jpg" width="50%">](https://youtu.be/DkEkwPIz1iw)
-
+[YM2151 VGM test](https://www.youtube.com/embed/DkEkwPIz1iw)
