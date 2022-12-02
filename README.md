@@ -1,15 +1,30 @@
-# Updated for KiCAD 6
-
-Design files have been updated for KiCAD 6. Access to the KiCAD 5 versions of the files can be found here: [hardware_kicad5](https://github.com/ddraig68k/hardware_kicad5). Any fixed to the designs will be made in both projects.  
-
-
 # CAD files for Y Ddraig
-This repository will contain the Schematics and board files for my [68K based computer](https://ddraig68k.com).
 
-In KiCAD, go to Configure Paths and add a custom path DDRAIGLIB which points to the ddraig-libs folder inside the repo
+This repository contains the Schematics and any other relevant files for my [68K based computer](https://ddraig68k.com) in KiCAD 6 format. The files for the main computer boards as well as any of the expansion boards are present in the repository.
 
-These files are untested. The design was initially created in [Proteus](https://www.labcenter.com/). I am in the process of transferring the designs from Proteus to [KiCAD](https://www.kicad.org/) so the designs are currently untested and not guaranteed to work. Once I have had the PCBs manufactured and the boards tested, I will mark them as safe. Until then if you use any part of the design keep that fact in mind
+The libraries used in the project are contained in the ddraig-libs folder inside the repo, to use them in KiCAD, go to Configure Paths and add a custom path DDRAIGLIB which points to the ddraig-libs folder.
 
+# Y Ddraig
+
+Welsh for *The Dragon* is my [Motorola 68000](https://en.wikipedia.org/wiki/Motorola_68000) computer. 
+
+| **Specifications** |
+|-|
+|68000 CPU running at 10Mhz.|
+|512K EEPROM |
+|1M of Static RAM|
+|8M Dynamic RAM|
+|2 Serial ports|
+|Parallel port|
+|PS/2 keyboard and mouse|
+|IDE interface|
+|Real-time clock|
+|4 Expansion slots|
+
+<br />
+# Design Files
+
+**NOTE:** Not all the boards have been fully tested, ones in the "Untested designs" section are yet to be proven so if you use any parts of the design, use with caution.
 
 ## Tested and working designs
 
