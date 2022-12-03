@@ -29,3 +29,5 @@ Like the [V9958](/expansion/GfxV9958) card, the V9990 has Composite, S-Video and
 
 **V9990 Text mode**
 ![V9990 Text mode](/artwork/images/v9990_text_mode.jpg)
+
+**Rygar scrolling test:** https://www.youtube.com/watch?v=J7Ad2eaiAFY
