@@ -3628,10 +3628,10 @@
       (reference "R701") (unit 1) (value "4K7") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/ba65c1f4-735c-4862-8e8b-f3bf7a6cf5dc"
-      (reference "R702") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0805_2012Metric")
+      (reference "R702") (unit 1) (value "110R") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/d753cd94-8265-4c3a-b667-499b2cce36d7"
-      (reference "R703") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0805_2012Metric")
+      (reference "R703") (unit 1) (value "110R") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/28f77bd1-2001-4ab9-9cfd-15d5ea8cd96c"
       (reference "R801") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0805_2012Metric")
@@ -3790,28 +3790,28 @@
       (reference "U404") (unit 1) (value "AS6C4008-55PCN") (footprint "Package_DIP:DIP-32_W15.24mm_Socket")
     )
     (path "/00000000-0000-0000-0000-000061478359/af61db1d-0a94-4818-8efc-99f46467ee03"
-      (reference "U405") (unit 1) (value "74LS32") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U405") (unit 1) (value "SN74F32DRG4") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000061478359/493abfc8-98b3-4ed3-bf75-b78ee3bf78b3"
-      (reference "U405") (unit 2) (value "74LS32") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U405") (unit 2) (value "SN74F32DRG4") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000061478359/f8ad371e-4710-4848-9832-5b53a176c52a"
-      (reference "U405") (unit 3) (value "74LS32") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U405") (unit 3) (value "SN74F32DRG4") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000061478359/38d25da6-1437-41da-b289-bbfb5ed21f4d"
-      (reference "U405") (unit 4) (value "74LS32") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U405") (unit 4) (value "SN74F32DRG4") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000061478359/f9a89486-8305-4fed-866d-114296da5e1e"
-      (reference "U405") (unit 5) (value "74LS32") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U405") (unit 5) (value "SN74F32DRG4") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139aaf1/00000000-0000-0000-0000-0000613a3ed7"
       (reference "U501") (unit 1) (value "68681") (footprint "Package_DIP:DIP-40_W15.24mm_Socket")
     )
     (path "/00000000-0000-0000-0000-00006139aaf1/00000000-0000-0000-0000-0000613a3ed1"
-      (reference "U502") (unit 1) (value "MAX202") (footprint "Package_SO:SO-16_3.9x9.9mm_P1.27mm")
+      (reference "U502") (unit 1) (value "MAX202CDW") (footprint "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139aaf1/00000000-0000-0000-0000-0000613a3f92"
-      (reference "U503") (unit 1) (value "MAX202") (footprint "Package_SO:SO-16_3.9x9.9mm_P1.27mm")
+      (reference "U503") (unit 1) (value "MAX202CDW") (footprint "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139ab8f/00000000-0000-0000-0000-0000612ba753"
       (reference "U601") (unit 1) (value "74LS139") (footprint "Package_SO:SO-16_3.9x9.9mm_P1.27mm")
@@ -3823,121 +3823,121 @@
       (reference "U601") (unit 3) (value "74LS139") (footprint "Package_SO:SO-16_3.9x9.9mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-0000616ecf7f"
-      (reference "U701") (unit 1) (value "74LS07") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U701") (unit 1) (value "SN74LS07DR") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-0000616ee6c5"
-      (reference "U701") (unit 2) (value "74LS07") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U701") (unit 2) (value "SN74LS07DR") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-0000616ef060"
-      (reference "U701") (unit 3) (value "74LS07") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U701") (unit 3) (value "SN74LS07DR") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-0000616efbfa"
-      (reference "U701") (unit 4) (value "74LS07") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U701") (unit 4) (value "SN74LS07DR") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-0000616f107d"
-      (reference "U701") (unit 5) (value "74LS07") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U701") (unit 5) (value "SN74LS07DR") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-0000616f1480"
-      (reference "U701") (unit 6) (value "74LS07") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U701") (unit 6) (value "SN74LS07DR") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-0000616f3667"
-      (reference "U701") (unit 7) (value "74LS07") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U701") (unit 7) (value "SN74LS07DR") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/f1cf9d8c-bdd2-4f4b-8b23-d324f85dd75b"
-      (reference "U702") (unit 1) (value "74LS04") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U702") (unit 1) (value "SN74F04DRG4") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/82e92d46-6e63-4d5c-bba9-22621c8b3611"
-      (reference "U702") (unit 2) (value "74LS04") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U702") (unit 2) (value "SN74F04DRG4") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/2b732c64-0d3b-43a9-9015-163441756e66"
-      (reference "U702") (unit 3) (value "74LS04") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U702") (unit 3) (value "SN74F04DRG4") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/25615d0d-791a-4936-945d-d843aada566f"
-      (reference "U702") (unit 4) (value "74LS04") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U702") (unit 4) (value "SN74F04DRG4") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/db77c63e-0fc9-48ab-88a8-21197a25e60b"
-      (reference "U702") (unit 5) (value "74LS04") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U702") (unit 5) (value "SN74F04DRG4") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/d95b9c52-bbbf-4298-82d9-33cf2e4fb5cf"
-      (reference "U702") (unit 6) (value "74LS04") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U702") (unit 6) (value "SN74F04DRG4") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/7cfc0830-2413-4fad-9b78-be692335e1a2"
-      (reference "U702") (unit 7) (value "74LS04") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U702") (unit 7) (value "SN74F04DRG4") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/9cc7fb1c-56d9-4c43-8b23-b48a923589a1"
       (reference "U703") (unit 1) (value "XC95108PC84") (footprint "Package_LCC:PLCC-84_THT-Socket")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-0000617636f2"
-      (reference "U704") (unit 1) (value "74HC164") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U704") (unit 1) (value "SN74HC164D") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-0000617cbef9"
-      (reference "U705") (unit 1) (value "74LS21") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U705") (unit 1) (value "SN74LS21DR") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-0000617ccdaa"
-      (reference "U705") (unit 2) (value "74LS21") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U705") (unit 2) (value "SN74LS21DR") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-0000617cd539"
-      (reference "U705") (unit 3) (value "74LS21") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U705") (unit 3) (value "SN74LS21DR") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-00006180d500"
-      (reference "U706") (unit 1) (value "74LS138") (footprint "Package_SO:SO-16_3.9x9.9mm_P1.27mm")
+      (reference "U706") (unit 1) (value "SN74LS138DR") (footprint "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-0000615d2430"
-      (reference "U707") (unit 1) (value "74LS541") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
+      (reference "U707") (unit 1) (value "SN74LS541DWR") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/58eb472d-b42e-40ae-ae98-50074c36a4cd"
-      (reference "U708") (unit 1) (value "74LS541") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
+      (reference "U708") (unit 1) (value "SN74LS541DWR") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-00006134d545/00000000-0000-0000-0000-0000626785a5"
-      (reference "U901") (unit 1) (value "74LS245") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
+      (reference "U901") (unit 1) (value "SN74F245NSR") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-00006134d545/00000000-0000-0000-0000-0000626796cf"
-      (reference "U902") (unit 1) (value "74LS245") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
+      (reference "U902") (unit 1) (value "SN74F245NSR") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-00006134d545/00000000-0000-0000-0000-00006267a30c"
-      (reference "U903") (unit 1) (value "74LS245") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
+      (reference "U903") (unit 1) (value "SN74F245NSR") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-00006134d545/00000000-0000-0000-0000-0000626b7891"
-      (reference "U904") (unit 1) (value "74LS245") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
+      (reference "U904") (unit 1) (value "SN74F245NSR") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-00006134d545/00000000-0000-0000-0000-000061363b05"
-      (reference "U905") (unit 1) (value "74LS245") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
+      (reference "U905") (unit 1) (value "SN74F245NSR") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-00006134d545/00000000-0000-0000-0000-000061363a0c"
-      (reference "U906") (unit 1) (value "74LS245") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
+      (reference "U906") (unit 1) (value "SN74F245NSR") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-00006134d545/00000000-0000-0000-0000-000061363a4b"
-      (reference "U907") (unit 1) (value "74LS245") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
+      (reference "U907") (unit 1) (value "SN74F245NSR") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-00006134d545/00000000-0000-0000-0000-00006143bb92"
-      (reference "U908") (unit 1) (value "74LS245") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
+      (reference "U908") (unit 1) (value "SN74F245NSR") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-00006134d545/00000000-0000-0000-0000-00006143bbce"
-      (reference "U909") (unit 1) (value "74LS245") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
+      (reference "U909") (unit 1) (value "SN74F245NSR") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000060ca1c9e/fc34161a-a1ce-4fc3-8dcf-4d5e6618cd24"
       (reference "U1001") (unit 1) (value "XC95108PC84") (footprint "Package_LCC:PLCC-84_THT-Socket")
     )
     (path "/00000000-0000-0000-0000-00006139ab5e/00000000-0000-0000-0000-00006141e3ad"
-      (reference "U1101") (unit 1) (value "74LS06") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1101") (unit 1) (value "SN74LS06DRE4") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139ab5e/00000000-0000-0000-0000-00006141e3b3"
-      (reference "U1101") (unit 2) (value "74LS06") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1101") (unit 2) (value "SN74LS06DRE4") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139ab5e/00000000-0000-0000-0000-00006141e3b9"
-      (reference "U1101") (unit 3) (value "74LS06") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1101") (unit 3) (value "SN74LS06DRE4") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139ab5e/00000000-0000-0000-0000-00006141e3bf"
-      (reference "U1101") (unit 4) (value "74LS06") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1101") (unit 4) (value "SN74LS06DRE4") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139ab5e/00000000-0000-0000-0000-00006141e3c5"
-      (reference "U1101") (unit 5) (value "74LS06") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1101") (unit 5) (value "SN74LS06DRE4") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139ab5e/00000000-0000-0000-0000-00006141e3cb"
-      (reference "U1101") (unit 6) (value "74LS06") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1101") (unit 6) (value "SN74LS06DRE4") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139ab5e/00000000-0000-0000-0000-00006141e4c4"
-      (reference "U1101") (unit 7) (value "74LS06") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1101") (unit 7) (value "SN74LS06DRE4") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139ab5e/00000000-0000-0000-0000-00006141e3d1"
       (reference "U1102") (unit 1) (value "VT82C42") (footprint "Package_DIP:DIP-40_W15.24mm_Socket")
@@ -3949,49 +3949,49 @@
       (reference "U1301") (unit 1) (value "RTC-72421") (footprint "Package_DIP:DIP-18_W7.62mm_Socket")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfbf1"
-      (reference "U1401") (unit 1) (value "74HCT14") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1401") (unit 1) (value "MC74HCT14ADR2G") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfc42"
-      (reference "U1401") (unit 2) (value "74HCT14") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1401") (unit 2) (value "MC74HCT14ADR2G") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfc3c"
-      (reference "U1401") (unit 3) (value "74HCT14") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1401") (unit 3) (value "MC74HCT14ADR2G") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfd66"
-      (reference "U1401") (unit 4) (value "74HCT14") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1401") (unit 4) (value "MC74HCT14ADR2G") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfd5a"
-      (reference "U1401") (unit 5) (value "74HCT14") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1401") (unit 5) (value "MC74HCT14ADR2G") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfd60"
-      (reference "U1401") (unit 6) (value "74HCT14") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1401") (unit 6) (value "MC74HCT14ADR2G") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfd6c"
-      (reference "U1401") (unit 7) (value "74HCT14") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1401") (unit 7) (value "MC74HCT14ADR2G") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfbf7"
-      (reference "U1402") (unit 1) (value "74HCT74") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1402") (unit 1) (value "74HCT74D,653 ") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfd93"
-      (reference "U1402") (unit 2) (value "74HCT74") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1402") (unit 2) (value "74HCT74D,653 ") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfd99"
-      (reference "U1402") (unit 3) (value "74HCT74") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1402") (unit 3) (value "74HCT74D,653 ") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/baff5625-0bc2-480f-8822-680a42e71919/0fc8bf7f-cdda-45bd-b014-138c616e8856"
-      (reference "U1501") (unit 1) (value "74LS541") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
+      (reference "U1501") (unit 1) (value "SN74LS541DW") (footprint "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm")
     )
     (path "/baff5625-0bc2-480f-8822-680a42e71919/33f946c1-187e-495d-b8f7-daea08025f04"
-      (reference "U1502") (unit 1) (value "74LS21") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1502") (unit 1) (value "SN74LS21DR") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/baff5625-0bc2-480f-8822-680a42e71919/ad6620bb-b14b-4799-a0ec-7f4233258993"
-      (reference "U1502") (unit 2) (value "74LS21") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1502") (unit 2) (value "SN74LS21DR") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/baff5625-0bc2-480f-8822-680a42e71919/f4b4f48a-6cb7-4810-83e2-2d7521dda83c"
-      (reference "U1502") (unit 3) (value "74LS21") (footprint "Package_SO:SO-14_3.9x8.65mm_P1.27mm")
+      (reference "U1502") (unit 3) (value "SN74LS21DR") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
     )
     (path "/baff5625-0bc2-480f-8822-680a42e71919/2e5a07b6-7ef1-4368-a014-cf845301ef26"
-      (reference "U1503") (unit 1) (value "74LS148") (footprint "Package_SO:SO-16_3.9x9.9mm_P1.27mm")
+      (reference "U1503") (unit 1) (value "SN74LS148DR") (footprint "Package_SO:SO-16_3.9x9.9mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000060eb395d/00000000-0000-0000-0000-0000613b7690"
       (reference "X301") (unit 1) (value "40Mhz") (footprint "Oscillator:Oscillator_DIP-14")
