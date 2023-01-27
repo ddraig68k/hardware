@@ -3439,13 +3439,13 @@
       (reference "D1202") (unit 1) (value "LED") (footprint "LED_SMD:LED_1206_3216Metric")
     )
     (path "/00000000-0000-0000-0000-00006152af50/00000000-0000-0000-0000-00006152ee22"
-      (reference "D1301") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
+      (reference "D1301") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-323")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfcdc"
       (reference "D1401") (unit 1) (value "LED") (footprint "LED_SMD:LED_1206_3216Metric")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfc6d"
-      (reference "D1402") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
+      (reference "D1402") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-323")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfcd6"
       (reference "D1403") (unit 1) (value "LED") (footprint "LED_SMD:LED_1206_3216Metric")
@@ -3454,7 +3454,7 @@
       (reference "D1404") (unit 1) (value "LED") (footprint "LED_SMD:LED_1206_3216Metric")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfc03"
-      (reference "D1405") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-123")
+      (reference "D1405") (unit 1) (value "1N4148") (footprint "Diode_SMD:D_SOD-323")
     )
     (path "/00000000-0000-0000-0000-00006139a64f/00000000-0000-0000-0000-0000614cfcca"
       (reference "D1406") (unit 1) (value "LED") (footprint "LED_SMD:LED_1206_3216Metric")
@@ -3634,10 +3634,10 @@
       (reference "R703") (unit 1) (value "110R") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/28f77bd1-2001-4ab9-9cfd-15d5ea8cd96c"
-      (reference "R801") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0805_2012Metric")
+      (reference "R801") (unit 1) (value "2K2") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/f9230343-16b1-47ee-91d3-7192d84a3f54"
-      (reference "R802") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0805_2012Metric")
+      (reference "R802") (unit 1) (value "2K2") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/2fa7930c-5ce5-4ca1-9864-19170baa98cb"
       (reference "R803") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0805_2012Metric")
@@ -3730,7 +3730,7 @@
       (reference "RN602") (unit 1) (value "22R") (footprint "Resistor_THT:R_Array_SIP8")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-0000615d2346"
-      (reference "RN701") (unit 1) (value "10K") (footprint "Resistor_THT:R_Array_SIP9")
+      (reference "RN701") (unit 1) (value "2K2") (footprint "Resistor_THT:R_Array_SIP9")
     )
     (path "/00000000-0000-0000-0000-000060eb3bea/00000000-0000-0000-0000-000060fba84a"
       (reference "RN801") (unit 1) (value "10K") (footprint "Resistor_THT:R_Array_SIP9")
@@ -3769,7 +3769,7 @@
       (reference "SW1401") (unit 1) (value "SW_SPST") (footprint "Button_Switch_THT:SW_PUSH_6mm_H4.3mm")
     )
     (path "/00000000-0000-0000-0000-00006147db65/00000000-0000-0000-0000-000061487989"
-      (reference "U201") (unit 1) (value "NE555P") (footprint "Package_SO:SO-8_5.3x6.2mm_P1.27mm")
+      (reference "U201") (unit 1) (value "NE555P") (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000060eb395d/00000000-0000-0000-0000-000060eb72be"
       (reference "U301") (unit 1) (value "MC68030") (footprint "Ddraig:MC68030RC")

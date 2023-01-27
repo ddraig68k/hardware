@@ -10,11 +10,11 @@
   )
 
   (lib_symbols
-    (symbol "Connector:DB9_Male_MountingHoles" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+    (symbol "Connector:DE9_Plug_MountingHoles" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 0 16.51 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "DB9_Male_MountingHoles" (id 1) (at 0 14.605 0)
+      (property "Value" "DE9_Plug_MountingHoles" (id 1) (at 0 14.605 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (id 2) (at 0 0 0)
@@ -23,16 +23,16 @@
       (property "Datasheet" " ~" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "connector male D-SUB" (id 4) (at 0 0 0)
+      (property "ki_keywords" "connector plug male D-SUB DB9" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "9-pin male D-SUB connector, Mounting Hole" (id 5) (at 0 0 0)
+      (property "ki_description" "9-pin male plug pin D-SUB connector, Mounting Hole" (id 5) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "DSUB*Male*" (id 6) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "DB9_Male_MountingHoles_0_1"
+      (symbol "DE9_Plug_MountingHoles_0_1"
         (circle (center -1.778 -10.16) (radius 0.762)
           (stroke (width 0) (type default) (color 0 0 0 0))
           (fill (type outline))
@@ -153,7 +153,7 @@
           (fill (type outline))
         )
       )
-      (symbol "DB9_Male_MountingHoles_1_1"
+      (symbol "DE9_Plug_MountingHoles_1_1"
         (pin passive line (at 0 -15.24 90) (length 3.81)
           (name "PAD" (effects (font (size 1.27 1.27))))
           (number "0" (effects (font (size 1.27 1.27))))
@@ -944,7 +944,7 @@
       (property "Datasheet" "" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (id 4) (at 0 0 0)
+      (property "ki_keywords" "global power" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (id 5) (at 0 0 0)
@@ -996,7 +996,7 @@
       (property "Datasheet" "" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (id 4) (at 0 0 0)
+      (property "ki_keywords" "global power" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (id 5) (at 0 0 0)
@@ -2050,7 +2050,7 @@
     (pin "2" (uuid 100f4277-970a-4dfb-81bc-cd3c755b0e1b))
   )
 
-  (symbol (lib_id "Connector:DB9_Male_MountingHoles") (at 264.16 63.5 0) (unit 1)
+  (symbol (lib_id "Connector:DE9_Plug_MountingHoles") (at 264.16 63.5 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000613a3ecb)
     (property "Reference" "J501" (id 0) (at 268.732 63.4492 0)
@@ -2417,7 +2417,7 @@
     (pin "1" (uuid 476c629a-63dd-4575-9d6a-68474a6ce08f))
   )
 
-  (symbol (lib_id "Connector:DB9_Male_MountingHoles") (at 264.16 144.78 0) (unit 1)
+  (symbol (lib_id "Connector:DE9_Plug_MountingHoles") (at 264.16 144.78 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-0000613a3f8c)
     (property "Reference" "J502" (id 0) (at 268.732 144.7292 0)
