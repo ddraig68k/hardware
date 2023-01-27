@@ -1194,7 +1194,7 @@
       (property "Datasheet" "" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (id 4) (at 0 0 0)
+      (property "ki_keywords" "global power" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"+5V\"" (id 5) (at 0 0 0)
@@ -1246,7 +1246,7 @@
       (property "Datasheet" "" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (id 4) (at 0 0 0)
+      (property "ki_keywords" "global power" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (id 5) (at 0 0 0)
@@ -1274,6 +1274,7 @@
       )
     )
   )
+
 
   (junction (at 93.98 58.42) (diameter 0) (color 0 0 0 0)
     (uuid 01e92a1d-807e-47db-8067-c61cf5992342)
