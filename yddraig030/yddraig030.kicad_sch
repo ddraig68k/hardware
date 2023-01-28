@@ -3564,11 +3564,11 @@
     (path "/00000000-0000-0000-0000-00006139ab8f/a2ab0a0f-6588-4dcc-afc0-fccd06169f83"
       (reference "Q601") (unit 1) (value "2N7002") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
-    (path "/00000000-0000-0000-0000-00006152af50/00000000-0000-0000-0000-00006152ee16"
-      (reference "Q1301") (unit 1) (value "BC549B") (footprint "Package_TO_SOT_THT:TO-92")
+    (path "/00000000-0000-0000-0000-00006152af50/190935ab-994f-4b58-a625-fc6ef03f04a9"
+      (reference "Q1301") (unit 1) (value "BC817") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
-    (path "/00000000-0000-0000-0000-00006152af50/00000000-0000-0000-0000-00006152ee1c"
-      (reference "Q1302") (unit 1) (value "2N4403") (footprint "Package_TO_SOT_THT:TO-92")
+    (path "/00000000-0000-0000-0000-00006152af50/29e506cb-35d6-4a18-a3c5-b9c51b66a251"
+      (reference "Q1302") (unit 1) (value "BC807") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/00000000-0000-0000-0000-00006147db65/00000000-0000-0000-0000-0000614879fe"
       (reference "R201") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0805_2012Metric")

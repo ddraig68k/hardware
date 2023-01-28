@@ -765,7 +765,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "../ddraig-libs/Ddraig_A3.kicad_wks",
-    "plot_directory": "",
+    "plot_directory": "C:/Dev/Temp/",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
