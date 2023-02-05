@@ -3814,13 +3814,13 @@
       (reference "U503") (unit 1) (value "MAX202CDW") (footprint "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139ab8f/00000000-0000-0000-0000-0000612ba753"
-      (reference "U601") (unit 1) (value "74LS139") (footprint "Package_SO:SO-16_3.9x9.9mm_P1.27mm")
+      (reference "U601") (unit 1) (value "SN74LS139AD ") (footprint "Package_SO:SOIC-16_4.55x10.3mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139ab8f/00000000-0000-0000-0000-0000612ba759"
-      (reference "U601") (unit 2) (value "74LS139") (footprint "Package_SO:SO-16_3.9x9.9mm_P1.27mm")
+      (reference "U601") (unit 2) (value "SN74LS139AD ") (footprint "Package_SO:SOIC-16_4.55x10.3mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139ab8f/00000000-0000-0000-0000-0000612ba75f"
-      (reference "U601") (unit 3) (value "74LS139") (footprint "Package_SO:SO-16_3.9x9.9mm_P1.27mm")
+      (reference "U601") (unit 3) (value "SN74LS139AD ") (footprint "Package_SO:SOIC-16_4.55x10.3mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-00006139a6be/00000000-0000-0000-0000-0000616ecf7f"
       (reference "U701") (unit 1) (value "SN74LS07DR") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
