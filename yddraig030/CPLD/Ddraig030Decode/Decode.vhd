@@ -31,14 +31,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Decode is
     Port (
-		CLOCK_40MHZ_IP 		: out  STD_LOGIC;
+		CLOCK_40MHZ_IP 		: in  STD_LOGIC;
 		CLOCK_10MHZ_OP 		: out  STD_LOGIC;
 
 		ADDR_IP				: in  STD_LOGIC_VECTOR (30 downto 8);
 		ADDR_1_IP			: in  STD_LOGIC;
 		ADDR_0_IP			: in  STD_LOGIC;
 		FC_IP 				: in  STD_LOGIC_VECTOR (2 downto 0);
-
+		BOOTROM_IP			: in  STD_LOGIC;
 
 		RW_IP 				: in  STD_LOGIC;
 		AS_nIP 				: in  STD_LOGIC;
