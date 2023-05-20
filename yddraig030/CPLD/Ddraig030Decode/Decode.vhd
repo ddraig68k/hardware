@@ -85,8 +85,45 @@ end Decode;
 
 architecture Behavioral of Decode is
 
+	signal s_clk_20mhz		: std_logic;
+	signal s_clk_10mhz		: std_logic;
+	signal s_buserr			: std_logic;
+
 begin
-	RUN_OP <= '1';
+
+	ClkGen: entity work.Clock port map(clk_i => CLOCK_40MHZ_IP, clk20_o => s_clk_20mhz, clk10_o => s_clk_10mhz);
+
+
+	Decode: entity work.AddressDecode port map(
+		clk40_i => CLOCK_40MHZ_IP, a_i => ADDR_IP,
+		a1_i => ADDR_1_IP, a0_i => ADDR_0_IP,
+        as_i => AS_nIP, fc_i => FC_IP,
+        bootrom_i => BOOTROM_IP,
+		rw_i => RW_IP, siz0_i => SIZ0_IP, siz1_i => SIZ1_IP,
+		dsack0_o => CPLD_DSACK0_nOP, dsack1_o => CPLD_DSACK1_nOP,
+		dtack_i => EXT_DTACK_nIP, lds_o => LDS_nOP, uds_o => UDS_nOP,
+		cs_rom_o => CS_ROM_nOP, 
+		cs_sram_o => CS_SRAM_nOP,
+		cs_dram_o => CS_DRAM_nOP,
+		cs_fpu_o => CS_FPU_nOP,
+		cs_duart_o => CS_DUART_nOP,
+		cs_eth_o => CS_ETH_nOP,
+		cs_kbd_o => CS_KBD_nOP,
+		cs_rtc_o => CS_RTC_nOP,
+		cs_ide_o => CS_IDE_nOP,
+		cs_interrupt_o => CS_INTERRUPT_nOP,
+		cs_cardprd_o => CS_CARDPRD_nOP,
+		cs_status_o => CS_STATUS_nOP,
+		expsel_o => EXPSEL_OP,
+		expsel_en_o => EXPSELEN_OP,
+		buserr_o => s_buserr,
+		run_o => RUN_OP
+		);
+
+	CLOCK_10MHZ_OP <= s_clk_10mhz;
+	
+	BERR_nOP <= '0' WHEN s_buserr = '0' OR EXT_BERR_nIP = '0' else '1';
+	
 
 end Behavioral;
 

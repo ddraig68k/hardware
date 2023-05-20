@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/steve/CPLD/Ddraig030Decode/tb_decode_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="tb_decode_test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="40" />
+   <wvobject fp_name="/tb_decode_test/clock_40mhz_ip" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock_40mhz_ip</obj_property>
+      <obj_property name="ObjectShortName">clock_40mhz_ip</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/clock_10mhz_op" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock_10mhz_op</obj_property>
+      <obj_property name="ObjectShortName">clock_10mhz_op</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#0000ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/addr_ip" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_ip[30:8]</obj_property>
+      <obj_property name="ObjectShortName">addr_ip[30:8]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/addr_1_ip" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_1_ip</obj_property>
+      <obj_property name="ObjectShortName">addr_1_ip</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/addr_0_ip" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_0_ip</obj_property>
+      <obj_property name="ObjectShortName">addr_0_ip</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/fc_ip" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">fc_ip[2:0]</obj_property>
+      <obj_property name="ObjectShortName">fc_ip[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/bootrom_ip" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bootrom_ip</obj_property>
+      <obj_property name="ObjectShortName">bootrom_ip</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/rw_ip" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rw_ip</obj_property>
+      <obj_property name="ObjectShortName">rw_ip</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/as_nip" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">as_nip</obj_property>
+      <obj_property name="ObjectShortName">as_nip</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/ds_nip" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ds_nip</obj_property>
+      <obj_property name="ObjectShortName">ds_nip</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/siz1_ip" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">siz1_ip</obj_property>
+      <obj_property name="ObjectShortName">siz1_ip</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/siz0_ip" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">siz0_ip</obj_property>
+      <obj_property name="ObjectShortName">siz0_ip</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/cpld_dsack1_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cpld_dsack1_nop</obj_property>
+      <obj_property name="ObjectShortName">cpld_dsack1_nop</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/cpld_dsack0_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cpld_dsack0_nop</obj_property>
+      <obj_property name="ObjectShortName">cpld_dsack0_nop</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/ipend_nip" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ipend_nip</obj_property>
+      <obj_property name="ObjectShortName">ipend_nip</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/dtack_duart_nip" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dtack_duart_nip</obj_property>
+      <obj_property name="ObjectShortName">dtack_duart_nip</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/ext_dtack_nip" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ext_dtack_nip</obj_property>
+      <obj_property name="ObjectShortName">ext_dtack_nip</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/ext_berr_nip" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ext_berr_nip</obj_property>
+      <obj_property name="ObjectShortName">ext_berr_nip</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/avec_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">avec_nop</obj_property>
+      <obj_property name="ObjectShortName">avec_nop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/ciin_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ciin_nop</obj_property>
+      <obj_property name="ObjectShortName">ciin_nop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/berr_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">berr_nop</obj_property>
+      <obj_property name="ObjectShortName">berr_nop</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/vma_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">vma_nop</obj_property>
+      <obj_property name="ObjectShortName">vma_nop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/expsel_op" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">expsel_op[2:0]</obj_property>
+      <obj_property name="ObjectShortName">expsel_op[2:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/expselen_op" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">expselen_op</obj_property>
+      <obj_property name="ObjectShortName">expselen_op</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/ext_dben_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ext_dben_nop</obj_property>
+      <obj_property name="ObjectShortName">ext_dben_nop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/uds_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">uds_nop</obj_property>
+      <obj_property name="ObjectShortName">uds_nop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/lds_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lds_nop</obj_property>
+      <obj_property name="ObjectShortName">lds_nop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/cs_dram_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs_dram_nop</obj_property>
+      <obj_property name="ObjectShortName">cs_dram_nop</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/cs_sram_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs_sram_nop</obj_property>
+      <obj_property name="ObjectShortName">cs_sram_nop</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/cs_rom_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs_rom_nop</obj_property>
+      <obj_property name="ObjectShortName">cs_rom_nop</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/cs_interrupt_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs_interrupt_nop</obj_property>
+      <obj_property name="ObjectShortName">cs_interrupt_nop</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/cs_ide_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs_ide_nop</obj_property>
+      <obj_property name="ObjectShortName">cs_ide_nop</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/cs_rtc_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs_rtc_nop</obj_property>
+      <obj_property name="ObjectShortName">cs_rtc_nop</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/cs_kbd_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs_kbd_nop</obj_property>
+      <obj_property name="ObjectShortName">cs_kbd_nop</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/cs_eth_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs_eth_nop</obj_property>
+      <obj_property name="ObjectShortName">cs_eth_nop</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/cs_duart_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs_duart_nop</obj_property>
+      <obj_property name="ObjectShortName">cs_duart_nop</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/cs_cardprd_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs_cardprd_nop</obj_property>
+      <obj_property name="ObjectShortName">cs_cardprd_nop</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/cs_fpu_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs_fpu_nop</obj_property>
+      <obj_property name="ObjectShortName">cs_fpu_nop</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/cs_status_nop" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs_status_nop</obj_property>
+      <obj_property name="ObjectShortName">cs_status_nop</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_decode_test/run_op" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">run_op</obj_property>
+      <obj_property name="ObjectShortName">run_op</obj_property>
+   </wvobject>
+</wave_config>
