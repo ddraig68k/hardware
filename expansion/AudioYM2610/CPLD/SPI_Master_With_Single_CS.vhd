@@ -3,7 +3,7 @@
 --              With single chip-select (AKA Slave Select) capability
 --
 --              Supports arbitrary length byte transfers.
---
+-- 
 --              Instantiates a SPI Master and adds single CS.
 --              If multiple CS signals are needed, will need to use different
 --              module, OR multiplex the CS from this at a higher level.
@@ -25,9 +25,9 @@
 --
 --              MAX_BYTES_PER_CS - Set to the maximum number of bytes that
 --              will be sent during a single CS-low pulse.
---
+-- 
 --              CS_INACTIVE_CLKS - Sets the amount of time in clock cycles to
---              hold the state of Chip-Selct high (inactive) before next
+--              hold the state of Chip-Selct high (inactive) before next 
 --              command is allowed on the line.  Useful if chip requires some
 --              time when CS is high between trasnfers.
 -------------------------------------------------------------------------------
@@ -47,13 +47,13 @@ entity SPI_Master_With_Single_CS is
    -- Control/Data Signals,
    i_Rst_L : in std_logic;     -- FPGA Reset
    i_Clk   : in std_logic;     -- FPGA Clock
-
+   
    -- TX (MOSI) Signals
    i_TX_Count : in  std_logic_vector;  -- # bytes per CS low
    i_TX_Byte  : in  std_logic_vector(7 downto 0);  -- Byte to transmit on MOSI
    i_TX_DV    : in  std_logic;     -- Data Valid Pulse with i_TX_Byte
    o_TX_Ready : out std_logic;     -- Transmit Ready for next byte
-
+   
    -- RX (MISO) Signals
    o_RX_Count : out std_logic_vector;  -- Index RX byte
    o_RX_DV    : out std_logic;  -- Data Valid pulse (1 clock cycle)
@@ -76,7 +76,7 @@ architecture RTL of SPI_Master_With_Single_CS is
   signal r_CS_Inactive_Count : integer range 0 to CS_INACTIVE_CLKS;
   signal r_TX_Count : integer range 0 to MAX_BYTES_PER_CS + 1;
   signal w_Master_Ready : std_logic;
-
+  
   signal s_RX_DV : std_logic;
   signal s_RX_Count : std_logic_vector(1 downto 0);
 
@@ -99,11 +99,11 @@ begin
       o_RX_DV    => s_RX_DV,            -- Data Valid pulse
       o_RX_Byte  => o_RX_Byte,          -- Byte received on MISO
       -- SPI Interface
-      o_SPI_Clk  => o_SPI_Clk,
+      o_SPI_Clk  => o_SPI_Clk, 
       i_SPI_MISO => i_SPI_MISO,
       o_SPI_MOSI => o_SPI_MOSI
       );
-
+  
 
   -- Purpose: Control CS line using State Machine
   SM_CS : process (i_Clk, i_Rst_L) is
@@ -136,7 +136,7 @@ begin
               r_SM_CS             <= CS_INACTIVE;
             end if;
           end if;
-
+          
         when CS_INACTIVE =>
           if r_CS_Inactive_Count > 0 then
             r_CS_Inactive_Count <= r_CS_Inactive_Count - 1;
@@ -144,12 +144,12 @@ begin
             r_SM_CS <= IDLE;
           end if;
 
-        when others =>
+        when others => 
           r_CS_n  <= '1'; -- we done, so set CS high
           r_SM_CS <= IDLE;
       end case;
     end if;
-  end process SM_CS;
+  end process SM_CS; 
 
 
   -- Purpose: Keep track of RX_Count
@@ -166,7 +166,7 @@ begin
 
   o_SPI_CS_n <= r_CS_n;
 
-  o_TX_Ready <= '1' when i_TX_DV /= '1' and ((r_SM_CS = IDLE) or (r_SM_CS = TRANSFER and w_Master_Ready = '1' and r_TX_Count > 0)) else '0';
+  o_TX_Ready <= '1' when i_TX_DV /= '1' and ((r_SM_CS = IDLE) or (r_SM_CS = TRANSFER and w_Master_Ready = '1' and r_TX_Count > 0)) else '0'; 
 
   o_RX_DV <= s_RX_DV;
   o_RX_Count <= s_RX_Count;

@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="D:/Dev/KiCAD/ddraig68k-kicad/expansion/AudioYM2151/CPLD/tb_AudioYM2151_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="/home/ise/Dev/KiCAD/Ddraig68k/expansion/AudioYM2151/CPLD/tb_AudioYM2151_isim_beh.wdb" id="1" type="auto">
          <top_modules>
             <top_module name="numeric_std" />
             <top_module name="std_logic_1164" />
@@ -103,6 +103,10 @@
    <wvobject fp_name="group19" type="group">
       <obj_property name="label">SPI Bus</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_audioym2151/uut/s_start_spi_tx" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">s_start_spi_tx</obj_property>
+         <obj_property name="ObjectShortName">s_start_spi_tx</obj_property>
+      </wvobject>
       <wvobject fp_name="/tb_audioym2151/spi_clk_o" type="logic" db_ref_id="1">
          <obj_property name="ElementShortName">spi_clk_o</obj_property>
          <obj_property name="ObjectShortName">spi_clk_o</obj_property>
@@ -144,18 +148,6 @@
          <obj_property name="ElementShortName">s_spi_ready</obj_property>
          <obj_property name="ObjectShortName">s_spi_ready</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/s_last_reset" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">s_last_reset</obj_property>
-         <obj_property name="ObjectShortName">s_last_reset</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/s_setclock" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">s_setclock</obj_property>
-         <obj_property name="ObjectShortName">s_setclock</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/s_spi_bytesent" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">s_spi_bytesent</obj_property>
-         <obj_property name="ObjectShortName">s_spi_bytesent</obj_property>
-      </wvobject>
       <wvobject fp_name="/tb_audioym2151/uut/s_clkreg" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">s_clkreg[15:0]</obj_property>
          <obj_property name="ObjectShortName">s_clkreg[15:0]</obj_property>
@@ -173,10 +165,6 @@
          <obj_property name="ElementShortName">i_clk</obj_property>
          <obj_property name="ObjectShortName">i_clk</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/i_tx_count" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">i_tx_count[0:1]</obj_property>
-         <obj_property name="ObjectShortName">i_tx_count[0:1]</obj_property>
-      </wvobject>
       <wvobject fp_name="/tb_audioym2151/uut/YMClock/i_tx_byte" type="array" db_ref_id="1">
          <obj_property name="ElementShortName">i_tx_byte[7:0]</obj_property>
          <obj_property name="ObjectShortName">i_tx_byte[7:0]</obj_property>
@@ -188,10 +176,6 @@
       <wvobject fp_name="/tb_audioym2151/uut/YMClock/o_tx_ready" type="logic" db_ref_id="1">
          <obj_property name="ElementShortName">o_tx_ready</obj_property>
          <obj_property name="ObjectShortName">o_tx_ready</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/o_rx_count" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">o_rx_count[1:0]</obj_property>
-         <obj_property name="ObjectShortName">o_rx_count[1:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/tb_audioym2151/uut/YMClock/o_rx_dv" type="logic" db_ref_id="1">
          <obj_property name="ElementShortName">o_rx_dv</obj_property>
@@ -213,38 +197,6 @@
          <obj_property name="ElementShortName">o_spi_mosi</obj_property>
          <obj_property name="ObjectShortName">o_spi_mosi</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/o_spi_cs_n" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">o_spi_cs_n</obj_property>
-         <obj_property name="ObjectShortName">o_spi_cs_n</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/r_sm_cs" type="other" db_ref_id="1">
-         <obj_property name="ElementShortName">r_sm_cs</obj_property>
-         <obj_property name="ObjectShortName">r_sm_cs</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/r_cs_n" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">r_cs_n</obj_property>
-         <obj_property name="ObjectShortName">r_cs_n</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/r_cs_inactive_count" type="other" db_ref_id="1">
-         <obj_property name="ElementShortName">r_cs_inactive_count</obj_property>
-         <obj_property name="ObjectShortName">r_cs_inactive_count</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/r_tx_count" type="other" db_ref_id="1">
-         <obj_property name="ElementShortName">r_tx_count</obj_property>
-         <obj_property name="ObjectShortName">r_tx_count</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/w_master_ready" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">w_master_ready</obj_property>
-         <obj_property name="ObjectShortName">w_master_ready</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/s_rx_dv" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">s_rx_dv</obj_property>
-         <obj_property name="ObjectShortName">s_rx_dv</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/s_rx_count" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">s_rx_count[1:0]</obj_property>
-         <obj_property name="ObjectShortName">s_rx_count[1:0]</obj_property>
-      </wvobject>
       <wvobject fp_name="/tb_audioym2151/uut/YMClock/spi_mode" type="other" db_ref_id="1">
          <obj_property name="ElementShortName">spi_mode</obj_property>
          <obj_property name="ObjectShortName">spi_mode</obj_property>
@@ -253,113 +205,9 @@
          <obj_property name="ElementShortName">clks_per_half_bit</obj_property>
          <obj_property name="ObjectShortName">clks_per_half_bit</obj_property>
       </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/max_bytes_per_cs" type="other" db_ref_id="1">
-         <obj_property name="ElementShortName">max_bytes_per_cs</obj_property>
-         <obj_property name="ObjectShortName">max_bytes_per_cs</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/cs_inactive_clks" type="other" db_ref_id="1">
-         <obj_property name="ElementShortName">cs_inactive_clks</obj_property>
-         <obj_property name="ObjectShortName">cs_inactive_clks</obj_property>
-      </wvobject>
    </wvobject>
    <wvobject fp_name="group68" type="group">
       <obj_property name="label">SPI Master</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/i_rst_l" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">i_rst_l</obj_property>
-         <obj_property name="ObjectShortName">i_rst_l</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/i_clk" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">i_clk</obj_property>
-         <obj_property name="ObjectShortName">i_clk</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/i_tx_byte" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">i_tx_byte[7:0]</obj_property>
-         <obj_property name="ObjectShortName">i_tx_byte[7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/i_tx_dv" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">i_tx_dv</obj_property>
-         <obj_property name="ObjectShortName">i_tx_dv</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/o_tx_ready" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">o_tx_ready</obj_property>
-         <obj_property name="ObjectShortName">o_tx_ready</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/o_rx_dv" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">o_rx_dv</obj_property>
-         <obj_property name="ObjectShortName">o_rx_dv</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/o_rx_byte" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">o_rx_byte[7:0]</obj_property>
-         <obj_property name="ObjectShortName">o_rx_byte[7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/o_spi_clk" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">o_spi_clk</obj_property>
-         <obj_property name="ObjectShortName">o_spi_clk</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/i_spi_miso" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">i_spi_miso</obj_property>
-         <obj_property name="ObjectShortName">i_spi_miso</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/o_spi_mosi" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">o_spi_mosi</obj_property>
-         <obj_property name="ObjectShortName">o_spi_mosi</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/w_cpol" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">w_cpol</obj_property>
-         <obj_property name="ObjectShortName">w_cpol</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/w_cpha" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">w_cpha</obj_property>
-         <obj_property name="ObjectShortName">w_cpha</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/r_spi_clk_count" type="other" db_ref_id="1">
-         <obj_property name="ElementShortName">r_spi_clk_count</obj_property>
-         <obj_property name="ObjectShortName">r_spi_clk_count</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/r_spi_clk" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">r_spi_clk</obj_property>
-         <obj_property name="ObjectShortName">r_spi_clk</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/r_spi_clk_edges" type="other" db_ref_id="1">
-         <obj_property name="ElementShortName">r_spi_clk_edges</obj_property>
-         <obj_property name="ObjectShortName">r_spi_clk_edges</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/r_leading_edge" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">r_leading_edge</obj_property>
-         <obj_property name="ObjectShortName">r_leading_edge</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/r_trailing_edge" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">r_trailing_edge</obj_property>
-         <obj_property name="ObjectShortName">r_trailing_edge</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/r_tx_dv" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">r_tx_dv</obj_property>
-         <obj_property name="ObjectShortName">r_tx_dv</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/r_tx_byte" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">r_tx_byte[7:0]</obj_property>
-         <obj_property name="ObjectShortName">r_tx_byte[7:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/r_rx_bit_count" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">r_rx_bit_count[2:0]</obj_property>
-         <obj_property name="ObjectShortName">r_rx_bit_count[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/r_tx_bit_count" type="array" db_ref_id="1">
-         <obj_property name="ElementShortName">r_tx_bit_count[2:0]</obj_property>
-         <obj_property name="ObjectShortName">r_tx_bit_count[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/s_tx_ready" type="logic" db_ref_id="1">
-         <obj_property name="ElementShortName">s_tx_ready</obj_property>
-         <obj_property name="ObjectShortName">s_tx_ready</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/spi_mode" type="other" db_ref_id="1">
-         <obj_property name="ElementShortName">spi_mode</obj_property>
-         <obj_property name="ObjectShortName">spi_mode</obj_property>
-      </wvobject>
-      <wvobject fp_name="/tb_audioym2151/uut/YMClock/SPI_Master_1/clks_per_half_bit" type="other" db_ref_id="1">
-         <obj_property name="ElementShortName">clks_per_half_bit</obj_property>
-         <obj_property name="ObjectShortName">clks_per_half_bit</obj_property>
-      </wvobject>
    </wvobject>
 </wave_config>

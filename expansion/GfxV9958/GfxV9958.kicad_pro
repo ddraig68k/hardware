@@ -1,5 +1,6 @@
 {
   "board": {
+    "3dviewports": [],
     "design_settings": {
       "defaults": {
         "board_outline_line_width": 0.049999999999999996,
@@ -125,7 +126,8 @@
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
-    "layer_presets": []
+    "layer_presets": [],
+    "viewports": []
   },
   "boards": [],
   "cvpcb": {
@@ -309,18 +311,23 @@
     "rule_severities": {
       "bus_definition_conflict": "error",
       "bus_entry_needed": "error",
-      "bus_label_syntax": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
+      "conflicting_netclasses": "error",
       "different_unit_footprint": "error",
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
+      "endpoint_off_grid": "warning",
       "extra_units": "error",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
       "lib_symbol_issues": "warning",
+      "missing_bidi_pin": "warning",
+      "missing_input_pin": "warning",
+      "missing_power_pin": "error",
+      "missing_unit": "warning",
       "multiple_net_names": "warning",
       "net_not_bus_member": "warning",
       "no_connect_connected": "warning",
@@ -330,6 +337,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
+      "simulation_model_issue": "ignore",
       "unannotated": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
@@ -347,7 +355,7 @@
   "net_settings": {
     "classes": [
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -361,10 +369,10 @@
         "track_width": 0.25,
         "via_diameter": 0.8,
         "via_drill": 0.4,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -373,19 +381,15 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "POWER",
-        "nets": [
-          "+5V",
-          "GND"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.4,
         "via_diameter": 0.8,
         "via_drill": 0.4,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.125,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -394,118 +398,421 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "SIGNAL",
-        "nets": [
-          "/A1",
-          "/A2",
-          "/A3",
-          "/A4",
-          "/A5",
-          "/A6",
-          "/A7",
-          "/CPU_CLK",
-          "/D0",
-          "/D1",
-          "/D2",
-          "/D3",
-          "/D4",
-          "/D5",
-          "/D6",
-          "/D7",
-          "/LED",
-          "/R~{W}",
-          "/VDP/B",
-          "/VDP/G",
-          "/VDP/R",
-          "/VDP/VA0",
-          "/VDP/VA1",
-          "/VDP/VA2",
-          "/VDP/VA3",
-          "/VDP/VA4",
-          "/VDP/VA5",
-          "/VDP/VA6",
-          "/VDP/VA7",
-          "/VDP/VD0",
-          "/VDP/VD1",
-          "/VDP/VD2",
-          "/VDP/VD3",
-          "/VDP/VD4",
-          "/VDP/VD5",
-          "/VDP/VD6",
-          "/VDP/VD7",
-          "/VDP/VR~{W}",
-          "/VDP/~{CAS0}",
-          "/VDP/~{CAS1}",
-          "/VDP/~{CASX}",
-          "/VDP/~{CSYNC}",
-          "/VDP/~{RAS}",
-          "/Video/AUDIO_L",
-          "/Video/AUDIO_R",
-          "/Video/BOUT",
-          "/Video/COUT",
-          "/Video/CVOUT",
-          "/Video/GOUT",
-          "/Video/PAL_CLK",
-          "/Video/ROUT",
-          "/Video/SYNCOUT",
-          "/Video/YOUT",
-          "/~{CS_DATA}",
-          "/~{CS_REG}",
-          "/~{DTACK}",
-          "/~{IRQ}",
-          "/~{LDS}",
-          "/~{RESET}",
-          "/~{UDS}",
-          "/~{VDPR}",
-          "/~{VDPW}",
-          "/~{WAIT}",
-          "Net-(C11-Pad1)",
-          "Net-(C12-Pad1)",
-          "Net-(C13-Pad1)",
-          "Net-(C14-Pad1)",
-          "Net-(C15-Pad1)",
-          "Net-(C16-Pad1)",
-          "Net-(C17-Pad1)",
-          "Net-(C17-Pad2)",
-          "Net-(C23-Pad1)",
-          "Net-(C24-Pad1)",
-          "Net-(C27-Pad1)",
-          "Net-(C4-Pad1)",
-          "Net-(C5-Pad1)",
-          "Net-(C6-Pad1)",
-          "Net-(C7-Pad1)",
-          "Net-(C8-Pad1)",
-          "Net-(C9-Pad1)",
-          "Net-(D1-Pad2)",
-          "Net-(J1-PadA28)",
-          "Net-(J1-PadC28)",
-          "Net-(J2-Pad2)",
-          "Net-(J2-Pad3)",
-          "Net-(J2-Pad4)",
-          "Net-(J2-Pad5)",
-          "Net-(Q1-Pad2)",
-          "Net-(R10-Pad2)",
-          "Net-(R11-Pad2)",
-          "Net-(R12-Pad2)",
-          "Net-(R13-Pad2)",
-          "Net-(R14-Pad2)",
-          "Net-(R20-Pad1)",
-          "Net-(R21-Pad1)",
-          "Net-(R7-Pad2)",
-          "Net-(R8-Pad2)",
-          "Net-(R9-Pad2)"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.21,
         "via_diameter": 0.8,
         "via_drill": 0.4,
-        "wire_width": 6.0
+        "wire_width": 6
       }
     ],
     "meta": {
-      "version": 2
+      "version": 3
     },
-    "net_colors": null
+    "net_colors": null,
+    "netclass_assignments": null,
+    "netclass_patterns": [
+      {
+        "netclass": "POWER",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "POWER",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/A1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/A2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/A3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/A4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/A5"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/A6"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/A7"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_CLK"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/D0"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/D1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/D2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/D3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/D4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/D5"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/D6"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/D7"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/LED"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/R~{W}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/B"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/G"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/R"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/VA0"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/VA1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/VA2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/VA3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/VA4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/VA5"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/VA6"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/VA7"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/VD0"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/VD1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/VD2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/VD3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/VD4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/VD5"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/VD6"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/VD7"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/VR~{W}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/~{CAS0}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/~{CAS1}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/~{CASX}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/~{CSYNC}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VDP/~{RAS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Video/AUDIO_L"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Video/AUDIO_R"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Video/BOUT"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Video/COUT"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Video/CVOUT"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Video/GOUT"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Video/PAL_CLK"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Video/ROUT"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Video/SYNCOUT"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Video/YOUT"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{CS_DATA}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{CS_REG}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{DTACK}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{IRQ}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{LDS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{RESET}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{UDS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{VDPR}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{VDPW}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{WAIT}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C11-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C12-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C13-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C14-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C15-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C16-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C17-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C17-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C23-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C24-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C27-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C4-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C5-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C6-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C7-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C8-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C9-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D1-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J1-PadA28)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J1-PadC28)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J2-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J2-Pad3)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J2-Pad4)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J2-Pad5)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(Q1-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(R10-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(R11-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(R12-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(R13-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(R14-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(R20-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(R21-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(R7-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(R8-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(R9-Pad2)"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -521,6 +828,8 @@
   "schematic": {
     "annotate_start_num": 0,
     "drawing": {
+      "dashed_lines_dash_length_ratio": 12.0,
+      "dashed_lines_gap_length_ratio": 3.0,
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
@@ -552,7 +861,11 @@
     "page_layout_descr_file": "../../ddraig-libs/Ddraig_A3.kicad_wks",
     "plot_directory": "",
     "spice_adjust_passive_values": false,
+    "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
+    "spice_model_current_sheet_as_root": true,
+    "spice_save_all_currents": false,
+    "spice_save_all_voltages": false,
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },

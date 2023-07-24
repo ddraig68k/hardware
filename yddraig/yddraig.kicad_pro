@@ -1,5 +1,6 @@
 {
   "board": {
+    "3dviewports": [],
     "design_settings": {
       "defaults": {
         "board_outline_line_width": 0.049999999999999996,
@@ -118,7 +119,8 @@
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
-    "layer_presets": []
+    "layer_presets": [],
+    "viewports": []
   },
   "boards": [],
   "cvpcb": {
@@ -340,7 +342,7 @@
   "net_settings": {
     "classes": [
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -354,10 +356,10 @@
         "track_width": 0.25,
         "via_diameter": 0.8,
         "via_drill": 0.4,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.125,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -366,22 +368,15 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "POWER",
-        "nets": [
-          "+5V",
-          "+5V_SB",
-          "-12V",
-          "GND",
-          "Net-(J505-Pad14)"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.4,
         "via_diameter": 0.8,
         "via_drill": 0.4,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -390,19 +385,15 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "POWERHIGH",
-        "nets": [
-          "+12V",
-          "+3V3"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.8,
         "via_diameter": 0.8,
         "via_drill": 0.4,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.125,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -411,458 +402,1801 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "SIGNAL",
-        "nets": [
-          "/CPU, RAM and ROM/A1",
-          "/CPU, RAM and ROM/A10",
-          "/CPU, RAM and ROM/A11",
-          "/CPU, RAM and ROM/A12",
-          "/CPU, RAM and ROM/A13",
-          "/CPU, RAM and ROM/A14",
-          "/CPU, RAM and ROM/A15",
-          "/CPU, RAM and ROM/A16",
-          "/CPU, RAM and ROM/A17",
-          "/CPU, RAM and ROM/A18",
-          "/CPU, RAM and ROM/A19",
-          "/CPU, RAM and ROM/A2",
-          "/CPU, RAM and ROM/A20",
-          "/CPU, RAM and ROM/A21",
-          "/CPU, RAM and ROM/A22",
-          "/CPU, RAM and ROM/A23",
-          "/CPU, RAM and ROM/A3",
-          "/CPU, RAM and ROM/A4",
-          "/CPU, RAM and ROM/A5",
-          "/CPU, RAM and ROM/A6",
-          "/CPU, RAM and ROM/A7",
-          "/CPU, RAM and ROM/A8",
-          "/CPU, RAM and ROM/A9",
-          "/CPU, RAM and ROM/CLK10",
-          "/CPU, RAM and ROM/D0",
-          "/CPU, RAM and ROM/D1",
-          "/CPU, RAM and ROM/D10",
-          "/CPU, RAM and ROM/D11",
-          "/CPU, RAM and ROM/D12",
-          "/CPU, RAM and ROM/D13",
-          "/CPU, RAM and ROM/D14",
-          "/CPU, RAM and ROM/D15",
-          "/CPU, RAM and ROM/D2",
-          "/CPU, RAM and ROM/D3",
-          "/CPU, RAM and ROM/D4",
-          "/CPU, RAM and ROM/D5",
-          "/CPU, RAM and ROM/D6",
-          "/CPU, RAM and ROM/D7",
-          "/CPU, RAM and ROM/D8",
-          "/CPU, RAM and ROM/D9",
-          "/CPU, RAM and ROM/FC0",
-          "/CPU, RAM and ROM/FC1",
-          "/CPU, RAM and ROM/FC2",
-          "/CPU, RAM and ROM/RD~{WR}",
-          "/CPU, RAM and ROM/RESET",
-          "/CPU, RAM and ROM/~{AS}",
-          "/CPU, RAM and ROM/~{BERR}",
-          "/CPU, RAM and ROM/~{CPU_RESET}",
-          "/CPU, RAM and ROM/~{CS_ROM}",
-          "/CPU, RAM and ROM/~{CS_SRAM}",
-          "/CPU, RAM and ROM/~{DTACK}",
-          "/CPU, RAM and ROM/~{HALT}",
-          "/CPU, RAM and ROM/~{IPL0}",
-          "/CPU, RAM and ROM/~{IPL1}",
-          "/CPU, RAM and ROM/~{IPL2}",
-          "/CPU, RAM and ROM/~{LDS}",
-          "/CPU, RAM and ROM/~{RD}WR",
-          "/CPU, RAM and ROM/~{RESET}",
-          "/CPU, RAM and ROM/~{UDS}",
-          "/CPU, RAM and ROM/~{VPA}",
-          "/DRAM Interface/DRAM_MUX",
-          "/DRAM Interface/~{CAS0}",
-          "/DRAM Interface/~{CAS1}",
-          "/DRAM Interface/~{DRAM_WE}",
-          "/DRAM Interface/~{RAS0}",
-          "/DRAM Interface/~{RAS1}",
-          "/Decode and Logic/BOOTROM",
-          "/Decode and Logic/~{CS_DUART}",
-          "/Decode and Logic/~{CS_EXTDATA1}",
-          "/Decode and Logic/~{CS_EXTDATA2}",
-          "/Decode and Logic/~{CS_EXTDATA3}",
-          "/Decode and Logic/~{CS_EXTDATA4}",
-          "/Decode and Logic/~{CS_EXTREG1}",
-          "/Decode and Logic/~{CS_EXTREG2}",
-          "/Decode and Logic/~{CS_EXTREG3}",
-          "/Decode and Logic/~{CS_EXTREG4}",
-          "/Decode and Logic/~{CS_IDE}",
-          "/Decode and Logic/~{CS_KBD}",
-          "/Decode and Logic/~{CS_PIT}",
-          "/Decode and Logic/~{CS_RTC}",
-          "/Decode and Logic/~{DATCK_68K}",
-          "/Decode and Logic/~{DATCK_EXT}",
-          "/Decode and Logic/~{DTACK_CPLD}",
-          "/Decode and Logic/~{EXTINT1}",
-          "/Decode and Logic/~{EXTINT2}",
-          "/Decode and Logic/~{EXTINT3}",
-          "/Decode and Logic/~{EXT_BERR}",
-          "/Decode and Logic/~{EXT_LDS}",
-          "/Decode and Logic/~{EXT_UDS}",
-          "/Decode and Logic/~{IDE_RD}",
-          "/Decode and Logic/~{IDE_WR}",
-          "/Decode and Logic/~{INT_DUART}",
-          "/Decode and Logic/~{INT_IDE}",
-          "/Decode and Logic/~{INT_PS2}",
-          "/Decode and Logic/~{RUN}",
-          "/Expansion Bus/BA1",
-          "/Expansion Bus/BA10",
-          "/Expansion Bus/BA11",
-          "/Expansion Bus/BA12",
-          "/Expansion Bus/BA13",
-          "/Expansion Bus/BA14",
-          "/Expansion Bus/BA15",
-          "/Expansion Bus/BA16",
-          "/Expansion Bus/BA17",
-          "/Expansion Bus/BA18",
-          "/Expansion Bus/BA19",
-          "/Expansion Bus/BA2",
-          "/Expansion Bus/BA3",
-          "/Expansion Bus/BA4",
-          "/Expansion Bus/BA5",
-          "/Expansion Bus/BA6",
-          "/Expansion Bus/BA7",
-          "/Expansion Bus/BA8",
-          "/Expansion Bus/BA9",
-          "/Expansion Bus/BCLK10",
-          "/Expansion Bus/BD0",
-          "/Expansion Bus/BD1",
-          "/Expansion Bus/BD10",
-          "/Expansion Bus/BD11",
-          "/Expansion Bus/BD12",
-          "/Expansion Bus/BD13",
-          "/Expansion Bus/BD14",
-          "/Expansion Bus/BD15",
-          "/Expansion Bus/BD2",
-          "/Expansion Bus/BD3",
-          "/Expansion Bus/BD4",
-          "/Expansion Bus/BD5",
-          "/Expansion Bus/BD6",
-          "/Expansion Bus/BD7",
-          "/Expansion Bus/BD8",
-          "/Expansion Bus/BD9",
-          "/Expansion Bus/BRD~{WR}",
-          "/Expansion Bus/~{BCS_EXTDATA1}",
-          "/Expansion Bus/~{BCS_EXTDATA2}",
-          "/Expansion Bus/~{BCS_EXTDATA3}",
-          "/Expansion Bus/~{BCS_EXTDATA4}",
-          "/Expansion Bus/~{BCS_EXTREG1}",
-          "/Expansion Bus/~{BCS_EXTREG2}",
-          "/Expansion Bus/~{BCS_EXTREG3}",
-          "/Expansion Bus/~{BCS_EXTREG4}",
-          "/Expansion Bus/~{BLDS}",
-          "/Expansion Bus/~{BRESET}",
-          "/Expansion Bus/~{BUDS}",
-          "/Expansion Bus/~{DTACK_EXT1}",
-          "/Expansion Bus/~{DTACK_EXT2}",
-          "/Expansion Bus/~{DTACK_EXT3}",
-          "/Expansion Bus/~{DTACK_EXT4}",
-          "/Expansion Bus/~{EXT_BERR1}",
-          "/Expansion Bus/~{EXT_BERR2}",
-          "/Expansion Bus/~{EXT_BERR3}",
-          "/Expansion Bus/~{EXT_BERR4}",
-          "/Expansion Bus/~{EXT_PD1}",
-          "/Expansion Bus/~{EXT_PD2}",
-          "/Expansion Bus/~{EXT_PD3}",
-          "/Expansion Bus/~{EXT_PD4}",
-          "/IDE Interface/ACTIVE",
-          "/IDE Interface/IRQ",
-          "/Peripherals/PPACK",
-          "/Peripherals/PPBUSY",
-          "/Peripherals/PPERROR",
-          "/Peripherals/PPINIT",
-          "/Peripherals/PPPAPER",
-          "/Peripherals/PPSELECT",
-          "/Peripherals/PPSTROBE",
-          "/Peripherals/RXDA",
-          "/Peripherals/TXDA",
-          "/Power/PWR_OK",
-          "/Power/~{PWR_ON}",
-          "Net-(BT601-Pad1)",
-          "Net-(C207-Pad1)",
-          "Net-(C208-Pad1)",
-          "Net-(C301-Pad1)",
-          "Net-(C302-Pad1)",
-          "Net-(C303-Pad1)",
-          "Net-(C403-Pad1)",
-          "Net-(C501-Pad1)",
-          "Net-(C502-Pad1)",
-          "Net-(C509-Pad1)",
-          "Net-(C509-Pad2)",
-          "Net-(C510-Pad1)",
-          "Net-(C511-Pad1)",
-          "Net-(C511-Pad2)",
-          "Net-(C512-Pad2)",
-          "Net-(C513-Pad1)",
-          "Net-(C513-Pad2)",
-          "Net-(C514-Pad1)",
-          "Net-(C515-Pad1)",
-          "Net-(C515-Pad2)",
-          "Net-(C605-Pad1)",
-          "Net-(D201-Pad1)",
-          "Net-(D203-Pad1)",
-          "Net-(D204-Pad1)",
-          "Net-(D206-Pad1)",
-          "Net-(D207-Pad1)",
-          "Net-(D208-Pad2)",
-          "Net-(D401-Pad1)",
-          "Net-(D401-Pad2)",
-          "Net-(D402-Pad1)",
-          "Net-(D402-Pad2)",
-          "Net-(D403-Pad1)",
-          "Net-(D403-Pad2)",
-          "Net-(D501-Pad1)",
-          "Net-(D501-Pad2)",
-          "Net-(D502-Pad1)",
-          "Net-(D502-Pad2)",
-          "Net-(D601-Pad1)",
-          "Net-(J201-Pad20)",
-          "Net-(J202-Pad1)",
-          "Net-(J203-Pad2)",
-          "Net-(J402-Pad2)",
-          "Net-(J403-Pad2)",
-          "Net-(J403-Pad3)",
-          "Net-(J403-Pad4)",
-          "Net-(J403-Pad5)",
-          "Net-(J501-Pad1)",
-          "Net-(J501-Pad2)",
-          "Net-(J501-Pad5)",
-          "Net-(J501-Pad6)",
-          "Net-(J502-Pad1)",
-          "Net-(J502-Pad2)",
-          "Net-(J502-Pad5)",
-          "Net-(J502-Pad6)",
-          "Net-(J503-Pad1)",
-          "Net-(J503-Pad2)",
-          "Net-(J503-Pad3)",
-          "Net-(J503-Pad4)",
-          "Net-(J503-Pad6)",
-          "Net-(J503-Pad7)",
-          "Net-(J503-Pad8)",
-          "Net-(J503-Pad9)",
-          "Net-(J504-Pad1)",
-          "Net-(J504-Pad2)",
-          "Net-(J504-Pad3)",
-          "Net-(J504-Pad4)",
-          "Net-(J504-Pad6)",
-          "Net-(J504-Pad7)",
-          "Net-(J504-Pad8)",
-          "Net-(J504-Pad9)",
-          "Net-(J505-Pad13)",
-          "Net-(J505-Pad2)",
-          "Net-(J505-Pad3)",
-          "Net-(J505-Pad4)",
-          "Net-(J505-Pad5)",
-          "Net-(J505-Pad6)",
-          "Net-(J505-Pad7)",
-          "Net-(J505-Pad8)",
-          "Net-(J505-Pad9)",
-          "Net-(J601-Pad1)",
-          "Net-(J602-Pad1)",
-          "Net-(J603-Pad1)",
-          "Net-(J603-Pad21)",
-          "Net-(J603-Pad23)",
-          "Net-(J603-Pad25)",
-          "Net-(J603-Pad27)",
-          "Net-(J603-Pad29)",
-          "Net-(J603-Pad32)",
-          "Net-(J603-Pad33)",
-          "Net-(J603-Pad34)",
-          "Net-(J603-Pad35)",
-          "Net-(J603-Pad36)",
-          "Net-(J603-Pad37)",
-          "Net-(J603-Pad38)",
-          "Net-(J701-Pad11)",
-          "Net-(J701-Pad12)",
-          "Net-(J701-Pad14)",
-          "Net-(J701-Pad15)",
-          "Net-(J701-Pad17)",
-          "Net-(J701-Pad18)",
-          "Net-(J701-Pad19)",
-          "Net-(J701-Pad2)",
-          "Net-(J701-Pad21)",
-          "Net-(J701-Pad24)",
-          "Net-(J701-Pad26)",
-          "Net-(J701-Pad27)",
-          "Net-(J701-Pad28)",
-          "Net-(J701-Pad29)",
-          "Net-(J701-Pad4)",
-          "Net-(J701-Pad5)",
-          "Net-(J701-Pad7)",
-          "Net-(J701-Pad8)",
-          "Net-(J702-Pad2)",
-          "Net-(J702-Pad21)",
-          "Net-(J702-Pad26)",
-          "Net-(J702-Pad27)",
-          "Net-(J702-Pad28)",
-          "Net-(J702-Pad29)",
-          "Net-(Q401-Pad2)",
-          "Net-(Q402-Pad2)",
-          "Net-(Q403-Pad2)",
-          "Net-(Q501-Pad2)",
-          "Net-(Q502-Pad2)",
-          "Net-(Q601-Pad2)",
-          "Net-(Q601-Pad3)",
-          "Net-(Q602-Pad2)",
-          "Net-(R303-Pad2)",
-          "Net-(R304-Pad2)",
-          "Net-(R401-Pad2)",
-          "Net-(R501-Pad2)",
-          "Net-(RN601-Pad7)",
-          "Net-(RN601-Pad8)",
-          "Net-(RN701-Pad1)",
-          "Net-(RN701-Pad3)",
-          "Net-(RN702-Pad1)",
-          "Net-(RN702-Pad3)",
-          "Net-(RN702-Pad5)",
-          "Net-(RN702-Pad7)",
-          "Net-(RN802-Pad7)",
-          "Net-(RN802-Pad8)",
-          "Net-(RN802-Pad9)",
-          "Net-(RN901-Pad1)",
-          "Net-(RN901-Pad2)",
-          "Net-(RN901-Pad3)",
-          "Net-(RN901-Pad4)",
-          "Net-(RN901-Pad5)",
-          "Net-(RN901-Pad6)",
-          "Net-(RN901-Pad7)",
-          "Net-(RN901-Pad8)",
-          "Net-(RN902-Pad1)",
-          "Net-(RN902-Pad2)",
-          "Net-(RN902-Pad3)",
-          "Net-(RN902-Pad4)",
-          "Net-(RN902-Pad5)",
-          "Net-(RN902-Pad6)",
-          "Net-(RN902-Pad7)",
-          "Net-(RN902-Pad8)",
-          "Net-(RN903-Pad1)",
-          "Net-(RN903-Pad10)",
-          "Net-(RN903-Pad11)",
-          "Net-(RN903-Pad12)",
-          "Net-(RN903-Pad2)",
-          "Net-(RN903-Pad3)",
-          "Net-(RN903-Pad4)",
-          "Net-(RN903-Pad5)",
-          "Net-(RN903-Pad6)",
-          "Net-(RN903-Pad7)",
-          "Net-(RN903-Pad8)",
-          "Net-(RN903-Pad9)",
-          "Net-(RN904-Pad1)",
-          "Net-(RN904-Pad2)",
-          "Net-(RN904-Pad3)",
-          "Net-(RN904-Pad4)",
-          "Net-(RN904-Pad5)",
-          "Net-(RN904-Pad6)",
-          "Net-(RN904-Pad7)",
-          "Net-(RN904-Pad8)",
-          "Net-(RN905-Pad1)",
-          "Net-(RN905-Pad2)",
-          "Net-(RN905-Pad3)",
-          "Net-(RN905-Pad4)",
-          "Net-(RN905-Pad5)",
-          "Net-(RN905-Pad6)",
-          "Net-(RN905-Pad7)",
-          "Net-(RN905-Pad8)",
-          "Net-(U201-Pad10)",
-          "Net-(U201-Pad12)",
-          "Net-(U201-Pad2)",
-          "Net-(U201-Pad4)",
-          "Net-(U201-Pad6)",
-          "Net-(U201-Pad8)",
-          "Net-(U202-Pad2)",
-          "Net-(U202-Pad8)",
-          "Net-(U202-Pad9)",
-          "Net-(U301-Pad10)",
-          "Net-(U301-Pad12)",
-          "Net-(U301-Pad8)",
-          "Net-(U303-Pad11)",
-          "Net-(U304-Pad11)",
-          "Net-(U304-Pad3)",
-          "Net-(U304-Pad6)",
-          "Net-(U304-Pad8)",
-          "Net-(U401-Pad10)",
-          "Net-(U401-Pad11)",
-          "Net-(U401-Pad12)",
-          "Net-(U401-Pad13)",
-          "Net-(U401-Pad3)",
-          "Net-(U401-Pad4)",
-          "Net-(U401-Pad5)",
-          "Net-(U402-Pad11)",
-          "Net-(U402-Pad3)",
-          "Net-(U403-Pad14)",
-          "Net-(U403-Pad15)",
-          "Net-(U404-Pad14)",
-          "Net-(U404-Pad19)",
-          "Net-(U404-Pad21)",
-          "Net-(U404-Pad3)",
-          "Net-(U404-Pad46)",
-          "Net-(U404-Pad52)",
-          "Net-(U404-Pad54)",
-          "Net-(U404-Pad9)",
-          "Net-(U501-Pad10)",
-          "Net-(U501-Pad11)",
-          "Net-(U501-Pad12)",
-          "Net-(U501-Pad13)",
-          "Net-(U501-Pad14)",
-          "Net-(U501-Pad15)",
-          "Net-(U501-Pad26)",
-          "Net-(U501-Pad27)",
-          "Net-(U501-Pad28)",
-          "Net-(U501-Pad29)",
-          "Net-(U501-Pad4)",
-          "Net-(U501-Pad7)",
-          "Net-(U502-Pad11)",
-          "Net-(U502-Pad21)",
-          "Net-(U502-Pad22)",
-          "Net-(U502-Pad23)",
-          "Net-(U502-Pad24)",
-          "Net-(U502-Pad29)",
-          "Net-(U502-Pad3)",
-          "Net-(U502-Pad30)",
-          "Net-(U502-Pad31)",
-          "Net-(U502-Pad32)",
-          "Net-(U502-Pad33)",
-          "Net-(U502-Pad34)",
-          "Net-(U502-Pad35)",
-          "Net-(U502-Pad36)",
-          "Net-(U502-Pad37)",
-          "Net-(U502-Pad38)",
-          "Net-(U505-Pad20)",
-          "Net-(U505-Pad21)",
-          "Net-(U505-Pad22)",
-          "Net-(U505-Pad23)",
-          "Net-(U505-Pad24)",
-          "Net-(U505-Pad30)",
-          "Net-(U505-Pad31)",
-          "Net-(U505-Pad32)",
-          "Net-(U505-Pad34)",
-          "Net-(U505-Pad36)",
-          "Net-(U505-Pad37)",
-          "Net-(U601-Pad1)",
-          "Net-(U601-Pad16)",
-          "Net-(U601-Pad17)",
-          "Net-(U602-Pad10)",
-          "Net-(U602-Pad11)",
-          "Net-(U602-Pad12)",
-          "Net-(U602-Pad6)",
-          "Net-(U602-Pad7)",
-          "Net-(U602-Pad9)",
-          "Net-(X401-Pad1)"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2032,
         "via_diameter": 0.8,
         "via_drill": 0.4,
-        "wire_width": 6.0
+        "wire_width": 6
       }
     ],
     "meta": {
-      "version": 2
+      "version": 3
     },
-    "net_colors": null
+    "net_colors": null,
+    "netclass_assignments": null,
+    "netclass_patterns": [
+      {
+        "netclass": "POWER",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "POWER",
+        "pattern": "+5V_SB"
+      },
+      {
+        "netclass": "POWER",
+        "pattern": "-12V"
+      },
+      {
+        "netclass": "POWER",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "POWER",
+        "pattern": "Net-(J505-Pad14)"
+      },
+      {
+        "netclass": "POWERHIGH",
+        "pattern": "+12V"
+      },
+      {
+        "netclass": "POWERHIGH",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A10"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A11"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A12"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A13"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A14"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A15"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A16"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A17"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A18"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A19"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A20"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A21"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A22"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A23"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A5"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A6"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A7"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A8"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/A9"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/CLK10"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/D0"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/D1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/D10"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/D11"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/D12"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/D13"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/D14"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/D15"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/D2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/D3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/D4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/D5"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/D6"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/D7"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/D8"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/D9"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/FC0"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/FC1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/FC2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/RD~{WR}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/RESET"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/~{AS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/~{BERR}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/~{CPU_RESET}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/~{CS_ROM}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/~{CS_SRAM}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/~{DTACK}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/~{HALT}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/~{IPL0}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/~{IPL1}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/~{IPL2}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/~{LDS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/~{RD}WR"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/~{RESET}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/~{UDS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU, RAM and ROM/~{VPA}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/DRAM Interface/DRAM_MUX"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/DRAM Interface/~{CAS0}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/DRAM Interface/~{CAS1}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/DRAM Interface/~{DRAM_WE}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/DRAM Interface/~{RAS0}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/DRAM Interface/~{RAS1}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/BOOTROM"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{CS_DUART}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{CS_EXTDATA1}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{CS_EXTDATA2}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{CS_EXTDATA3}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{CS_EXTDATA4}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{CS_EXTREG1}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{CS_EXTREG2}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{CS_EXTREG3}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{CS_EXTREG4}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{CS_IDE}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{CS_KBD}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{CS_PIT}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{CS_RTC}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{DATCK_68K}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{DATCK_EXT}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{DTACK_CPLD}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{EXTINT1}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{EXTINT2}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{EXTINT3}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{EXT_BERR}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{EXT_LDS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{EXT_UDS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{IDE_RD}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{IDE_WR}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{INT_DUART}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{INT_IDE}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{INT_PS2}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode and Logic/~{RUN}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BA1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BA10"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BA11"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BA12"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BA13"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BA14"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BA15"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BA16"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BA17"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BA18"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BA19"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BA2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BA3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BA4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BA5"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BA6"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BA7"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BA8"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BA9"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BCLK10"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BD0"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BD1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BD10"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BD11"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BD12"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BD13"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BD14"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BD15"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BD2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BD3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BD4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BD5"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BD6"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BD7"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BD8"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BD9"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/BRD~{WR}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{BCS_EXTDATA1}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{BCS_EXTDATA2}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{BCS_EXTDATA3}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{BCS_EXTDATA4}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{BCS_EXTREG1}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{BCS_EXTREG2}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{BCS_EXTREG3}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{BCS_EXTREG4}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{BLDS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{BRESET}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{BUDS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{DTACK_EXT1}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{DTACK_EXT2}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{DTACK_EXT3}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{DTACK_EXT4}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{EXT_BERR1}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{EXT_BERR2}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{EXT_BERR3}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{EXT_BERR4}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{EXT_PD1}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{EXT_PD2}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{EXT_PD3}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Expansion Bus/~{EXT_PD4}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IDE Interface/ACTIVE"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IDE Interface/IRQ"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Peripherals/PPACK"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Peripherals/PPBUSY"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Peripherals/PPERROR"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Peripherals/PPINIT"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Peripherals/PPPAPER"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Peripherals/PPSELECT"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Peripherals/PPSTROBE"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Peripherals/RXDA"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Peripherals/TXDA"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Power/PWR_OK"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Power/~{PWR_ON}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(BT601-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C207-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C208-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C301-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C302-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C303-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C403-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C501-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C502-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C509-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C509-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C510-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C511-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C511-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C512-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C513-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C513-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C514-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C515-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C515-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C605-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D201-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D203-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D204-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D206-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D207-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D208-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D401-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D401-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D402-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D402-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D403-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D403-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D501-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D501-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D502-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D502-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D601-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J201-Pad20)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J202-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J203-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J402-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J403-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J403-Pad3)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J403-Pad4)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J403-Pad5)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J501-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J501-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J501-Pad5)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J501-Pad6)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J502-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J502-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J502-Pad5)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J502-Pad6)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J503-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J503-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J503-Pad3)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J503-Pad4)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J503-Pad6)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J503-Pad7)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J503-Pad8)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J503-Pad9)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J504-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J504-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J504-Pad3)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J504-Pad4)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J504-Pad6)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J504-Pad7)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J504-Pad8)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J504-Pad9)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J505-Pad13)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J505-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J505-Pad3)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J505-Pad4)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J505-Pad5)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J505-Pad6)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J505-Pad7)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J505-Pad8)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J505-Pad9)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J601-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J602-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J603-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J603-Pad21)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J603-Pad23)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J603-Pad25)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J603-Pad27)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J603-Pad29)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J603-Pad32)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J603-Pad33)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J603-Pad34)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J603-Pad35)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J603-Pad36)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J603-Pad37)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J603-Pad38)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J701-Pad11)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J701-Pad12)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J701-Pad14)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J701-Pad15)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J701-Pad17)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J701-Pad18)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J701-Pad19)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J701-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J701-Pad21)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J701-Pad24)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J701-Pad26)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J701-Pad27)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J701-Pad28)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J701-Pad29)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J701-Pad4)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J701-Pad5)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J701-Pad7)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J701-Pad8)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J702-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J702-Pad21)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J702-Pad26)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J702-Pad27)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J702-Pad28)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J702-Pad29)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(Q401-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(Q402-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(Q403-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(Q501-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(Q502-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(Q601-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(Q601-Pad3)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(Q602-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(R303-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(R304-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(R401-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(R501-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN601-Pad7)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN601-Pad8)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN701-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN701-Pad3)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN702-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN702-Pad3)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN702-Pad5)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN702-Pad7)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN802-Pad7)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN802-Pad8)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN802-Pad9)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN901-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN901-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN901-Pad3)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN901-Pad4)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN901-Pad5)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN901-Pad6)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN901-Pad7)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN901-Pad8)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN902-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN902-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN902-Pad3)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN902-Pad4)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN902-Pad5)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN902-Pad6)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN902-Pad7)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN902-Pad8)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN903-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN903-Pad10)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN903-Pad11)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN903-Pad12)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN903-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN903-Pad3)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN903-Pad4)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN903-Pad5)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN903-Pad6)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN903-Pad7)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN903-Pad8)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN903-Pad9)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN904-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN904-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN904-Pad3)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN904-Pad4)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN904-Pad5)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN904-Pad6)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN904-Pad7)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN904-Pad8)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN905-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN905-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN905-Pad3)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN905-Pad4)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN905-Pad5)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN905-Pad6)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN905-Pad7)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(RN905-Pad8)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U201-Pad10)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U201-Pad12)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U201-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U201-Pad4)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U201-Pad6)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U201-Pad8)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U202-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U202-Pad8)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U202-Pad9)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U301-Pad10)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U301-Pad12)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U301-Pad8)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U303-Pad11)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U304-Pad11)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U304-Pad3)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U304-Pad6)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U304-Pad8)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U401-Pad10)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U401-Pad11)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U401-Pad12)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U401-Pad13)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U401-Pad3)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U401-Pad4)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U401-Pad5)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U402-Pad11)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U402-Pad3)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U403-Pad14)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U403-Pad15)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U404-Pad14)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U404-Pad19)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U404-Pad21)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U404-Pad3)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U404-Pad46)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U404-Pad52)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U404-Pad54)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U404-Pad9)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U501-Pad10)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U501-Pad11)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U501-Pad12)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U501-Pad13)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U501-Pad14)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U501-Pad15)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U501-Pad26)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U501-Pad27)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U501-Pad28)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U501-Pad29)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U501-Pad4)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U501-Pad7)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U502-Pad11)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U502-Pad21)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U502-Pad22)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U502-Pad23)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U502-Pad24)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U502-Pad29)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U502-Pad3)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U502-Pad30)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U502-Pad31)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U502-Pad32)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U502-Pad33)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U502-Pad34)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U502-Pad35)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U502-Pad36)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U502-Pad37)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U502-Pad38)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U505-Pad20)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U505-Pad21)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U505-Pad22)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U505-Pad23)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U505-Pad24)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U505-Pad30)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U505-Pad31)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U505-Pad32)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U505-Pad34)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U505-Pad36)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U505-Pad37)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U601-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U601-Pad16)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U601-Pad17)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U602-Pad10)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U602-Pad11)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U602-Pad12)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U602-Pad6)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U602-Pad7)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(U602-Pad9)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(X401-Pad1)"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {

@@ -41,27 +41,32 @@ end AudioYM2612;
 
 architecture Behavioral of AudioYM2612 is
 
-    constant BOARD_ID       : std_logic_vector(15 downto 0) := X"2222";
+    TYPE t_SM_CS is (IDLE, STARTYM, STARTSN,TRANSFERYM1, TRANSFERYM2, TRANSFERN1, TRANSFERSN2, CS_INACTIVE);
 
-    signal s_dtackcount     : std_logic_vector(3 downto 0);
-    signal s_ledtime        : std_logic_vector(9 downto 0);
-    signal s_clkdiv         : std_logic;
+    constant BOARD_ID       : STD_LOGIC_VECTOR(15 DOWNTO 0) := X"2222";
+    constant DEFAULT_CLKYM  : STD_LOGIC_VECTOR(15 DOWNTO 0) := X"CE14"; -- 7.60Mhz
+    constant DEFAULT_CLKSN  : STD_LOGIC_VECTOR(15 DOWNTO 0) := X"BCFC"; -- 3.57Mhz
+    CONSTANT CS_INACTIVE_CLKS  : INTEGER := 2;
+
+    SIGNAL s_dtackcount     : STD_LOGIC_VECTOR(3 DOWNTO 0);
+    SIGNAL s_ledtime        : STD_LOGIC_VECTOR(9 DOWNTO 0);
+    SIGNAL s_clkdiv         : STD_LOGIC;
     
-    signal s_clkreg         : std_logic_vector(15 downto 0) := X"0000";
-    signal s_prevclkreg     : std_logic_vector(15 downto 0) := X"0000";
-    signal s_setfreq        : std_logic := '0';
-    signal s_spiclk         : std_logic;
+    SIGNAL s_clkreg_ym      : STD_LOGIC_VECTOR(15 DOWNTO 0) := X"0000";
+    SIGNAL s_clkreg_sn      : STD_LOGIC_VECTOR(15 DOWNTO 0) := X"0000";
+    SIGNAL s_spiclk         : STD_LOGIC;
     
-    signal s_setclock       : std_logic := '0';
-    signal s_spi_enable     : std_logic := '0';
-    signal s_spi_busy       : std_logic := '0';
-    signal s_miso           : std_logic := '0';
-    signal s_clkdone        : std_logic;
-    signal s_spiread        : std_logic_vector(15 downto 0);
-    
-    signal s_spi_ss         : std_logic;
-    signal s_spien_sn       : std_logic := '0';
-    signal s_spien_ym       : std_logic := '0';
+    SIGNAL s_spi_sm         : t_SM_CS;
+    SIGNAL s_ym_clockset    : STD_LOGIC := '0';
+    SIGNAL s_sn_clockset    : STD_LOGIC := '0';
+
+    SIGNAL s_start_spi_tx   : STD_LOGIC := '0';
+    SIGNAL s_spi_ready      : STD_LOGIC := '0';
+    SIGNAL s_clock_reg_sel  : STD_LOGIC := '0';
+    SIGNAL s_spi_data       : STD_LOGIC_VECTOR(7 DOWNTO 0);
+    SIGNAL s_spi_ym_cs      : STD_LOGIC := '1';
+    SIGNAL s_spi_sn_cs      : STD_LOGIC := '1';
+    SIGNAL s_spi_iack_count : INTEGER RANGE 0 TO CS_INACTIVE_CLKS;
    
 begin
 
@@ -87,29 +92,81 @@ begin
 		end if;
 	end process;
 
-    set_clock : process (cpuclk_i, reset_i)
-    begin
-        if (rising_edge(cpuclk_i)) then
-            if (reset_i = '0') then
-                s_clkdone <= '0';
-                s_setclock <= '1';
-				s_prevclkreg <= (others => '0');
-            else
-                if (s_clkreg /= s_prevclkreg and s_spi_busy = '0') then
-                    s_setclock <= '1';
-                    s_prevclkreg <= s_clkreg;
-                    s_spi_enable <= '0';
-                elsif (s_setclock = '1' and s_spi_busy = '0') then
-                    s_spi_enable <= '1';
-                elsif (s_setclock = '1' and s_spi_busy = '1') then
-                    s_setclock   <= '0';
-                elsif (s_spi_busy = '0') then
-                    s_spi_enable <= '0';
-                    s_setclock   <= '0';
-                end if;
-            end if;
-        end if;
-    end process;
+	set_clock : PROCESS (cpuclk_i, reset_i)
+	BEGIN
+        IF (reset_i = '0') THEN
+            s_start_spi_tx <= '0';
+            s_spi_sm <= IDLE;
+            s_ym_clockset <= '0';
+            s_sn_clockset <= '0';
+            s_spi_ym_cs <= '1';
+            s_spi_sn_cs <= '1';
+        ELSIF (rising_edge(cpuclk_i)) THEN
+            CASE s_spi_sm IS
+                WHEN IDLE =>
+                    IF s_spi_ym_cs = '1' AND (s_ym_clockset = '0' OR s_clock_reg_ym = '1') THEN
+                        s_spi_sm <= STARTYM;
+                        s_start_spi_tx <= '1';
+                    ELSIF s_spi_sn_cs = '1' AND (s_sn_clockset = '0' OR s_clock_reg_sn = '1') THEN
+                        s_spi_sm <= STARTSN;
+                        s_start_spi_tx <= '1';
+                    END IF;
+
+				WHEN STARTYM =>
+					s_start_spi_tx <= '0';
+					s_spi_data <= s_clkreg(15 downto 8);
+					s_spi_ym_cs <= '0';
+					s_spi_sm <= TRANSFERYM1;
+
+                WHEN TRANSFERYM1 =>
+                    IF s_spi_ready = '1' THEN
+						s_spi_data <= s_clkreg(7 downto 0);
+						s_start_spi_tx <= '1';
+						s_spi_sm <= TRANSFERYM2;
+                    END IF;
+
+                WHEN TRANSFERYM2 =>
+					s_start_spi_tx <= '0';
+                    IF s_spi_ready = '1' THEN
+						s_spi_sm <= CS_INACTIVE;
+						s_spi_iack_count <= CS_INACTIVE_CLKS;
+						s_ym_clockset <= '1';
+                    END IF;
+
+				WHEN STARTSN =>
+					s_start_spi_tx <= '0';
+					s_spi_data <= s_clkreg(15 downto 8);
+					s_spi_sn_cs <= '0';
+					s_spi_sm <= TRANSFERSN1;
+
+                WHEN TRANSFERSN1 =>
+                    IF s_spi_ready = '1' THEN
+						s_spi_data <= s_clkreg(7 downto 0);
+						s_start_spi_tx <= '1';
+						s_spi_sm <= TRANSFERSN2;
+                    END IF;
+
+                WHEN TRANSFERSN2 =>
+					s_start_spi_tx <= '0';
+                    IF s_spi_ready = '1' THEN
+						s_spi_sm <= CS_INACTIVE;
+						s_spi_iack_count <= CS_INACTIVE_CLKS;
+						s_sc_clockset <= '1';
+                    END IF;
+
+                WHEN CS_INACTIVE =>
+					s_start_spi_tx <= '0';
+					s_spi_ym_cs <= '1';
+					s_spi_sn_cs <= '1';
+                    IF s_spi_iack_count > 0 THEN
+                        s_spi_iack_count <= s_spi_iack_count - 1;
+                    ELSE
+                        s_spi_sm <= IDLE;
+                    END IF;
+            END CASE;
+        END IF;
+	END PROCESS;
+
     
     -- Determine which LTC6903 to write to depending on the address written to.
     -- Addr[7:6] = "10" for the YM2612 Clock
@@ -132,19 +189,28 @@ begin
            clk_div16_o  => s_spiclk
         );
             
-    SPIMaster: entity work.spi_master
-        port map (
-            clk         => s_spiclk, 
-            reset_n     => reset_i,
-            enable      => s_setclock,
-            cpol        => '0',
-            cpha        => '0',
-            sclk        => spi_clk_o,
-            ss_n        => s_spi_ss,
-            mosi        => spi_do_o,
-            busy        => s_spi_busy,
-            tx          => s_clkreg
-        );
+	SPIMaster : ENTITY work.SPI_Master
+        GENERIC MAP (
+            SPI_MODE          => 0,
+            CLKS_PER_HALF_BIT => 2
+        )
+		PORT MAP(
+			i_Rst_L => reset_i,
+			i_Clk => cpuclk_i,
+
+			i_TX_Byte => s_spi_data,
+			i_TX_DV => s_start_spi_tx,
+			o_TX_Ready => s_spi_ready,
+
+			o_RX_DV => OPEN,
+			o_RX_Byte => OPEN,
+
+			-- SPI Interface
+			o_SPI_Clk => spi_clk_o,
+			o_SPI_MOSI => spi_do_o,
+			i_SPI_MISO => '0'
+		);
+
         
     -- Generate DTACK signal
     dtack_o <= '0' when s_dtackcount > "0100" and (csdata_i = '0' or csreg_i = '0') else '1';
@@ -158,16 +224,19 @@ begin
     ym_cs_o <= '0' when addr_i(7 downto 2) = "000000" and uds_i = '0' and csreg_i = '0' else '1';
 
     sn_we_o <= rw_i;
-    sn_cs_o <= '0' when addr_i(7 downto 2) = "000001" and uds_i = '0' and csreg_i = '0' else '1';
+    sn_cs_o <= '0' when addr_i(7 downto 2) = "000010" and uds_i = '0' and csreg_i = '0' else '1';
 
     -- YM2612 clock control
-    s_clkreg <= data_io when (addr_i = "1000000" or addr_i = "1100000") and uds_i = '0' and lds_i = '0' and rw_i = '0' else s_clkreg;
+    s_clock_reg_ym <= '1' WHEN addr_i = "1000000" AND uds_i = '0' AND lds_i = '0' AND rw_i = '0' AND csreg_i = '0' ELSE '0';
+    s_clock_reg_sn <= '1' WHEN addr_i = "1100000" AND uds_i = '0' AND lds_i = '0' AND rw_i = '0' AND csreg_i = '0' ELSE '0';
+    s_clkreg_ym <= data_io WHEN s_clock_reg_ym = '1' ELSE DEFAULT_CLKYM WHEN reset_i = '0';
+    s_clkreg_sn <= data_io WHEN s_clock_reg_sn = '1' ELSE DEFAULT_CLKSN WHEN reset_i = '0';
         
     -- Write out device ID
     data_io <= BOARD_ID when addr_i = "1111111" and uds_i = '0' and csreg_i = '0' else "ZZZZZZZZZZZZZZZZ";
 
-    csymclk_o <= '0' when s_spi_ss = '0' and s_spien_ym = '1' else '1';
-    cssnclk_o <= '0' when s_spi_ss = '0' and s_spien_sn = '1' else '1';
+    csymclk_o <= s_spi_ym_cs;
+    cssnclk_o <= s_spi_sn_cs;
     
     enymclk_o <= reset_i;
     ensnclk_o <= reset_i;
