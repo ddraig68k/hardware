@@ -3394,7 +3394,7 @@
     (property "Reference" "J2" (at 222.25 177.8 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Conn_01x04" (at 222.25 180.34 90)
+    (property "Value" "POT1" (at 222.25 180.34 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" (at 223.52 173.99 0)
@@ -3403,10 +3403,10 @@
     (property "Datasheet" "~" (at 223.52 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 14b88640-6301-435e-ae29-a14f64ce5941))
-    (pin "2" (uuid 1f33fb8c-a96b-49f1-a0f9-6f7dd4fc5336))
-    (pin "3" (uuid 4c3efd98-2836-4293-b75f-44b3311d66a3))
-    (pin "4" (uuid ef0c143a-78fc-443c-8dd1-4a5b143347af))
+    (pin "1" (uuid 00a284e4-e4ae-4cd8-8a99-aeac4c74e2c6))
+    (pin "2" (uuid b89d2d79-ded4-4c6c-b829-ac8e62fade31))
+    (pin "3" (uuid 85b5693b-88d0-4a1b-b416-87a9671e7307))
+    (pin "4" (uuid 2e76dc29-dc91-403a-9848-82a7c13c3e90))
     (instances
       (project "AudioSID"
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
@@ -3596,7 +3596,7 @@
     (property "Reference" "J3" (at 234.95 177.8 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "Conn_01x04" (at 234.95 180.34 90)
+    (property "Value" "POT2" (at 234.95 180.34 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" (at 236.22 173.99 0)

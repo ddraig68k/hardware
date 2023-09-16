@@ -939,7 +939,7 @@
     (property "Value" "22uH" (at 101.6 66.294 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP" (at 101.6 68.58 0)
+    (property "Footprint" "Inductor_THT:L_Axial_L7.0mm_D3.3mm_P12.70mm_Horizontal_Fastron_MICC" (at 101.6 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 101.6 68.58 0)
@@ -1037,8 +1037,8 @@
     (property "Datasheet" "~" (at 187.96 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 0c9eee03-45eb-4772-9e53-25e55b2d80c1))
-    (pin "2" (uuid c620bfae-c316-49ce-bbb2-6b74dad7ee3e))
+    (pin "1" (uuid 4d1795b8-f092-4793-b6b1-766bcdeeb3b6))
+    (pin "2" (uuid 88ec8c13-158c-4ef6-aebf-0241eb5e9be8))
     (instances
       (project "AudioYM2151"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba"
@@ -1602,7 +1602,7 @@
     (property "Value" "22uH" (at 101.6 78.994 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Inductor_THT:L_Radial_D8.7mm_P5.00mm_Fastron_07HCP" (at 101.6 81.28 0)
+    (property "Footprint" "Inductor_THT:L_Axial_L7.0mm_D3.3mm_P12.70mm_Horizontal_Fastron_MICC" (at 101.6 81.28 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 101.6 81.28 0)
