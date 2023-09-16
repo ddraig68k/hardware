@@ -1614,7 +1614,7 @@
     (property "Reference" "X1101" (at 58.42 46.99 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "CXO_DIP8" (at 58.42 49.53 0)
+    (property "Value" "8Mhz" (at 58.42 49.53 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Oscillator:Oscillator_DIP-8" (at 67.31 64.77 0)
