@@ -312,7 +312,7 @@
       "version": 1
     },
     "net_format_name": "",
-    "page_layout_descr_file": "${DDRAIGLIB}/Ddraig_A3.kicad_wks",
+    "page_layout_descr_file": "${DDRAIGLIB}/ddraig-libs/Ddraig_A3.kicad_wks",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -326,6 +326,14 @@
     [
       "1439ce05-32d3-468b-bc42-9b43cdc1cc12",
       ""
+    ],
+    [
+      "5ffd3580-437c-43de-b165-b7204f5fc357",
+      "Xosera"
+    ],
+    [
+      "4c43ef96-f07c-43bd-af41-ee65a2054b98",
+      "VGA"
     ]
   ],
   "text_variables": {}

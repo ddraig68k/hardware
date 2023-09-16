@@ -1,5 +1,6 @@
 {
   "board": {
+    "3dviewports": [],
     "design_settings": {
       "defaults": {
         "board_outline_line_width": 0.049999999999999996,
@@ -63,20 +64,26 @@
       "rule_severities": {
         "annular_width": "error",
         "clearance": "error",
+        "connection_width": "warning",
         "copper_edge_clearance": "error",
+        "copper_sliver": "warning",
         "courtyards_overlap": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
+        "footprint": "error",
         "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "invalid_outline": "error",
+        "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
+        "lib_footprint_issues": "warning",
+        "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "missing_courtyard": "ignore",
@@ -86,9 +93,14 @@
         "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
+        "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
+        "solder_mask_bridge": "error",
+        "starved_thermal": "error",
+        "text_height": "warning",
+        "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_dangling": "warning",
@@ -97,7 +109,6 @@
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
-        "zone_has_empty_net": "error",
         "zones_intersect": "error"
       },
       "rule_severitieslegacy_courtyards_overlap": true,
@@ -107,18 +118,63 @@
         "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.0,
+        "min_connection": 0.0,
         "min_copper_edge_clearance": 0.024999999999999998,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
+        "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
+        "min_text_height": 0.7999999999999999,
+        "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.19999999999999998,
         "min_via_annular_width": 0.049999999999999996,
         "min_via_diameter": 0.39999999999999997,
+        "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
+      "teardrop_options": [
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 5,
+          "td_on_pad_in_zone": false,
+          "td_onpadsmd": true,
+          "td_onroundshapesonly": false,
+          "td_ontrackend": false,
+          "td_onviapad": true
+        }
+      ],
+      "teardrop_parameters": [
+        {
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_target_name": "td_round_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_target_name": "td_rect_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_target_name": "td_track_end",
+          "td_width_to_size_filter_ratio": 0.9
+        }
+      ],
       "track_widths": [
         0.0
       ],
@@ -131,7 +187,8 @@
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
-    "layer_presets": []
+    "layer_presets": [],
+    "viewports": []
   },
   "boards": [],
   "cvpcb": {
@@ -315,18 +372,23 @@
     "rule_severities": {
       "bus_definition_conflict": "error",
       "bus_entry_needed": "error",
-      "bus_label_syntax": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
+      "conflicting_netclasses": "error",
       "different_unit_footprint": "error",
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
+      "endpoint_off_grid": "warning",
       "extra_units": "error",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
       "lib_symbol_issues": "warning",
+      "missing_bidi_pin": "warning",
+      "missing_input_pin": "warning",
+      "missing_power_pin": "error",
+      "missing_unit": "warning",
       "multiple_net_names": "warning",
       "net_not_bus_member": "warning",
       "no_connect_connected": "warning",
@@ -336,6 +398,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
+      "simulation_model_issue": "ignore",
       "unannotated": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
@@ -353,7 +416,7 @@
   "net_settings": {
     "classes": [
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -367,10 +430,10 @@
         "track_width": 0.25,
         "via_diameter": 0.8,
         "via_drill": 0.4,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.125,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -379,191 +442,705 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "SIGNAL",
-        "nets": [
-          "+1V2",
-          "+3V3",
-          "+5V",
-          "/CPU_A1",
-          "/CPU_A10",
-          "/CPU_A11",
-          "/CPU_A12",
-          "/CPU_A13",
-          "/CPU_A14",
-          "/CPU_A15",
-          "/CPU_A16",
-          "/CPU_A17",
-          "/CPU_A18",
-          "/CPU_A19",
-          "/CPU_A2",
-          "/CPU_A3",
-          "/CPU_A4",
-          "/CPU_A5",
-          "/CPU_A6",
-          "/CPU_A7",
-          "/CPU_A8",
-          "/CPU_A9",
-          "/CPU_CLK",
-          "/CPU_D0",
-          "/CPU_D1",
-          "/CPU_D10",
-          "/CPU_D11",
-          "/CPU_D12",
-          "/CPU_D13",
-          "/CPU_D14",
-          "/CPU_D15",
-          "/CPU_D2",
-          "/CPU_D3",
-          "/CPU_D4",
-          "/CPU_D5",
-          "/CPU_D6",
-          "/CPU_D7",
-          "/CPU_D8",
-          "/CPU_D9",
-          "/CPU_R~{W}",
-          "/FPGA/A1",
-          "/FPGA/A10",
-          "/FPGA/A11",
-          "/FPGA/A12",
-          "/FPGA/A13",
-          "/FPGA/A14",
-          "/FPGA/A15",
-          "/FPGA/A2",
-          "/FPGA/A3",
-          "/FPGA/A4",
-          "/FPGA/A5",
-          "/FPGA/A6",
-          "/FPGA/A7",
-          "/FPGA/A8",
-          "/FPGA/A9",
-          "/FPGA/B0",
-          "/FPGA/B1",
-          "/FPGA/B2",
-          "/FPGA/B3",
-          "/FPGA/B4",
-          "/FPGA/B5",
-          "/FPGA/B6",
-          "/FPGA/B7",
-          "/FPGA/FLASH_CLK",
-          "/FPGA/G0",
-          "/FPGA/G1",
-          "/FPGA/G2",
-          "/FPGA/G3",
-          "/FPGA/G4",
-          "/FPGA/G5",
-          "/FPGA/G6",
-          "/FPGA/G7",
-          "/FPGA/HOST_CLK",
-          "/FPGA/HSYNC",
-          "/FPGA/PIXELCLOCK",
-          "/FPGA/R0",
-          "/FPGA/R1",
-          "/FPGA/R2",
-          "/FPGA/R3",
-          "/FPGA/R4",
-          "/FPGA/R5",
-          "/FPGA/R6",
-          "/FPGA/R7",
-          "/FPGA/R~{W}",
-          "/FPGA/SRAM_A0",
-          "/FPGA/SRAM_A1",
-          "/FPGA/SRAM_A10",
-          "/FPGA/SRAM_A11",
-          "/FPGA/SRAM_A12",
-          "/FPGA/SRAM_A13",
-          "/FPGA/SRAM_A14",
-          "/FPGA/SRAM_A15",
-          "/FPGA/SRAM_A16",
-          "/FPGA/SRAM_A17",
-          "/FPGA/SRAM_A18",
-          "/FPGA/SRAM_A19",
-          "/FPGA/SRAM_A2",
-          "/FPGA/SRAM_A3",
-          "/FPGA/SRAM_A4",
-          "/FPGA/SRAM_A5",
-          "/FPGA/SRAM_A6",
-          "/FPGA/SRAM_A7",
-          "/FPGA/SRAM_A8",
-          "/FPGA/SRAM_A9",
-          "/FPGA/SRAM_D0",
-          "/FPGA/SRAM_D1",
-          "/FPGA/SRAM_D10",
-          "/FPGA/SRAM_D11",
-          "/FPGA/SRAM_D12",
-          "/FPGA/SRAM_D13",
-          "/FPGA/SRAM_D14",
-          "/FPGA/SRAM_D15",
-          "/FPGA/SRAM_D16",
-          "/FPGA/SRAM_D17",
-          "/FPGA/SRAM_D18",
-          "/FPGA/SRAM_D19",
-          "/FPGA/SRAM_D2",
-          "/FPGA/SRAM_D20",
-          "/FPGA/SRAM_D21",
-          "/FPGA/SRAM_D22",
-          "/FPGA/SRAM_D23",
-          "/FPGA/SRAM_D24",
-          "/FPGA/SRAM_D25",
-          "/FPGA/SRAM_D26",
-          "/FPGA/SRAM_D27",
-          "/FPGA/SRAM_D28",
-          "/FPGA/SRAM_D29",
-          "/FPGA/SRAM_D3",
-          "/FPGA/SRAM_D30",
-          "/FPGA/SRAM_D31",
-          "/FPGA/SRAM_D4",
-          "/FPGA/SRAM_D5",
-          "/FPGA/SRAM_D6",
-          "/FPGA/SRAM_D7",
-          "/FPGA/SRAM_D8",
-          "/FPGA/SRAM_D9",
-          "/FPGA/VSYNC",
-          "/FPGA/~{AS}",
-          "/FPGA/~{BLANK}",
-          "/FPGA/~{DATACS}",
-          "/FPGA/~{LDS}",
-          "/FPGA/~{REGCS}",
-          "/FPGA/~{RESET}",
-          "/FPGA/~{SRAM_CS}",
-          "/FPGA/~{SRAM_LB0}",
-          "/FPGA/~{SRAM_LB1}",
-          "/FPGA/~{SRAM_UB0}",
-          "/FPGA/~{SRAM_UB1}",
-          "/FPGA/~{UDS}",
-          "/~{CPU_AS}",
-          "/~{CPU_DATACS}",
-          "/~{CPU_DTACK}",
-          "/~{CPU_IRQ}",
-          "/~{CPU_LDS}",
-          "/~{CPU_REGCS}",
-          "/~{CPU_RESET}",
-          "/~{CPU_UDS}",
-          "GND",
-          "Net-(C501-Pad2)",
-          "Net-(C502-Pad2)",
-          "Net-(J101-PadA28)",
-          "Net-(J101-PadC28)",
-          "Net-(J501-Pad1)",
-          "Net-(J501-Pad13)",
-          "Net-(J501-Pad14)",
-          "Net-(J501-Pad2)",
-          "Net-(J501-Pad3)",
-          "Net-(R301-Pad2)",
-          "Net-(R303-Pad2)",
-          "Net-(R501-Pad2)",
-          "Net-(R502-Pad2)"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.21,
         "via_diameter": 0.8,
         "via_drill": 0.4,
-        "wire_width": 6.0
+        "wire_width": 6
       }
     ],
     "meta": {
-      "version": 2
+      "version": 3
     },
-    "net_colors": null
+    "net_colors": null,
+    "netclass_assignments": null,
+    "netclass_patterns": [
+      {
+        "netclass": "SIGNAL",
+        "pattern": "+1V2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_A1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_A10"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_A11"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_A12"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_A13"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_A14"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_A15"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_A16"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_A17"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_A18"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_A19"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_A2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_A3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_A4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_A5"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_A6"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_A7"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_A8"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_A9"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_CLK"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_D0"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_D1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_D10"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_D11"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_D12"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_D13"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_D14"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_D15"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_D2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_D3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_D4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_D5"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_D6"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_D7"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_D8"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_D9"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/CPU_R~{W}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/A1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/A10"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/A11"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/A12"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/A13"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/A14"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/A15"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/A2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/A3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/A4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/A5"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/A6"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/A7"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/A8"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/A9"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/B0"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/B1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/B2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/B3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/B4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/B5"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/B6"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/B7"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/FLASH_CLK"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/G0"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/G1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/G2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/G3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/G4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/G5"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/G6"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/G7"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/HOST_CLK"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/HSYNC"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/PIXELCLOCK"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/R0"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/R1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/R2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/R3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/R4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/R5"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/R6"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/R7"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/R~{W}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A0"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A10"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A11"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A12"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A13"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A14"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A15"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A16"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A17"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A18"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A19"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A5"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A6"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A7"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A8"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_A9"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D0"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D10"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D11"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D12"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D13"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D14"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D15"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D16"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D17"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D18"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D19"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D20"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D21"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D22"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D23"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D24"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D25"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D26"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D27"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D28"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D29"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D30"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D31"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D5"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D6"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D7"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D8"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/SRAM_D9"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/VSYNC"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/~{AS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/~{BLANK}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/~{DATACS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/~{LDS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/~{REGCS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/~{RESET}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/~{SRAM_CS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/~{SRAM_LB0}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/~{SRAM_LB1}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/~{SRAM_UB0}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/~{SRAM_UB1}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/FPGA/~{UDS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{CPU_AS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{CPU_DATACS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{CPU_DTACK}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{CPU_IRQ}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{CPU_LDS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{CPU_REGCS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{CPU_RESET}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{CPU_UDS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C501-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C502-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J101-PadA28)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J101-PadC28)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J501-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J501-Pad13)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J501-Pad14)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J501-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(J501-Pad3)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(R301-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(R303-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(R501-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(R502-Pad2)"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -579,6 +1156,8 @@
   "schematic": {
     "annotate_start_num": 0,
     "drawing": {
+      "dashed_lines_dash_length_ratio": 12.0,
+      "dashed_lines_gap_length_ratio": 3.0,
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
@@ -610,7 +1189,11 @@
     "page_layout_descr_file": "../../ddraig-libs/Ddraig_A3.kicad_wks",
     "plot_directory": "",
     "spice_adjust_passive_values": false,
+    "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
+    "spice_model_current_sheet_as_root": true,
+    "spice_save_all_currents": false,
+    "spice_save_all_voltages": false,
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },

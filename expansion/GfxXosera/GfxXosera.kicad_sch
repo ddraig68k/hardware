@@ -2167,7 +2167,7 @@
   (symbol (lib_id "power:GND") (at 90.17 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 08fb82d9-9daa-4aff-8987-874d6811fc91)
-    (property "Reference" "#PWR07" (at 90.17 137.16 0)
+    (property "Reference" "#PWR?" (at 90.17 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 90.297 135.2042 0)
@@ -2183,12 +2183,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "#PWR07") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -2197,7 +2197,7 @@
   (symbol (lib_id "power:+5V") (at 77.47 162.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0b99ec41-f4ef-4074-9971-fdd14cf9faa4)
-    (property "Reference" "#PWR05" (at 77.47 166.37 0)
+    (property "Reference" "#PWR?" (at 77.47 166.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 77.851 158.1658 0)
@@ -2213,12 +2213,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -2227,7 +2227,7 @@
   (symbol (lib_id "power:GND") (at 73.66 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 103cf391-99bb-48dd-a8ad-cdd8375aab45)
-    (property "Reference" "#PWR04" (at 73.66 151.13 0)
+    (property "Reference" "#PWR?" (at 73.66 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 73.787 149.1742 0)
@@ -2243,12 +2243,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -2257,7 +2257,7 @@
   (symbol (lib_id "power:GND") (at 255.27 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2308fb37-f286-4959-9166-9cb6acf26a06)
-    (property "Reference" "#PWR016" (at 255.27 109.22 0)
+    (property "Reference" "#PWR?" (at 255.27 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 255.397 107.2642 0)
@@ -2273,12 +2273,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -2287,7 +2287,7 @@
   (symbol (lib_id "power:GND") (at 77.47 177.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 27266019-cfc7-4d3f-8d98-3003cfdffcab)
-    (property "Reference" "#PWR06" (at 77.47 184.15 0)
+    (property "Reference" "#PWR?" (at 77.47 184.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 77.597 182.1942 0)
@@ -2303,12 +2303,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "#PWR06") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -2317,7 +2317,7 @@
   (symbol (lib_id "74xx:74LS125") (at 123.19 96.52 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 329a5848-7be7-41db-be08-9d0e3b4f0722)
-    (property "Reference" "U1" (at 123.19 102.235 0)
+    (property "Reference" "U?" (at 123.19 102.235 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "74LS125" (at 123.19 104.5464 0)
@@ -2346,12 +2346,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "U1") (unit 1)
+          (reference "U?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "U1") (unit 1)
+          (reference "U?") (unit 1)
         )
       )
     )
@@ -2360,7 +2360,7 @@
   (symbol (lib_id "Connector_Generic:Conn_01x06") (at 262.89 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 46520cc6-71e0-4fea-8b66-39d766b74fc7)
-    (property "Reference" "J2" (at 264.922 92.9132 0)
+    (property "Reference" "J?" (at 264.922 92.9132 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "JTAG" (at 264.922 95.2246 0)
@@ -2381,12 +2381,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "J2") (unit 1)
+          (reference "J?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "J2") (unit 1)
+          (reference "J?") (unit 1)
         )
       )
     )
@@ -2395,7 +2395,7 @@
   (symbol (lib_id "Ddraig:D68K_64PIN_BOARD") (at 73.66 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 507cccbe-aa3b-4904-b1eb-727b9e92e42b)
-    (property "Reference" "J1" (at 73.025 28.829 0)
+    (property "Reference" "J?" (at 73.025 28.829 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "D68K_64PIN_BOARD" (at 73.025 31.1404 0)
@@ -2474,12 +2474,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "J1") (unit 1)
+          (reference "J?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "J1") (unit 1)
+          (reference "J?") (unit 1)
         )
       )
     )
@@ -2488,7 +2488,7 @@
   (symbol (lib_id "Device:LED") (at 134.62 53.34 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 55371f09-ab4a-4d73-accd-d94f04a43bd8)
-    (property "Reference" "D1" (at 137.6172 52.3494 90)
+    (property "Reference" "D?" (at 137.6172 52.3494 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "Amber" (at 137.6172 54.6608 90)
@@ -2505,12 +2505,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "D1") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "D1") (unit 1)
+          (reference "D?") (unit 1)
         )
       )
     )
@@ -2519,7 +2519,7 @@
   (symbol (lib_id "Ddraig:XC9536PC44") (at 213.36 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5941edbc-7af1-41cf-9cbd-13d2719df8b4)
-    (property "Reference" "U2" (at 201.93 29.21 0)
+    (property "Reference" "U?" (at 201.93 29.21 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "XC9536PC44" (at 223.52 29.21 0)
@@ -2578,12 +2578,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "U2") (unit 1)
+          (reference "U?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "U2") (unit 1)
+          (reference "U?") (unit 1)
         )
       )
     )
@@ -2592,7 +2592,7 @@
   (symbol (lib_id "Device:C") (at 77.47 170.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 596639a6-2b6b-4160-86e5-af1142189b6e)
-    (property "Reference" "C2" (at 80.391 169.0116 0)
+    (property "Reference" "C?" (at 80.391 169.0116 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 80.391 171.323 0)
@@ -2609,12 +2609,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "C2") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "C2") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
@@ -2623,7 +2623,7 @@
   (symbol (lib_id "74xx:74LS125") (at 139.7 158.75 180) (unit 4)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 59a50fc9-3b6a-4e47-b6d4-124d47d7f21d)
-    (property "Reference" "U1" (at 139.7 164.465 0)
+    (property "Reference" "U?" (at 139.7 164.465 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "74LS125" (at 139.7 166.7764 0)
@@ -2652,12 +2652,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "U1") (unit 4)
+          (reference "U?") (unit 4)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "U1") (unit 4)
+          (reference "U?") (unit 4)
         )
       )
     )
@@ -2666,7 +2666,7 @@
   (symbol (lib_id "power:+5V") (at 34.29 167.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5eb585b7-1e35-4ad9-b0e9-742ecfffc3a8)
-    (property "Reference" "#PWR01" (at 34.29 171.45 0)
+    (property "Reference" "#PWR?" (at 34.29 171.45 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 34.671 163.2458 0)
@@ -2682,12 +2682,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -2696,7 +2696,7 @@
   (symbol (lib_id "74xx:74LS125") (at 160.02 158.75 0) (mirror x) (unit 3)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 665751b1-214a-48ad-85fa-5d3afd09d61f)
-    (property "Reference" "U1" (at 160.02 164.465 0)
+    (property "Reference" "U?" (at 160.02 164.465 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "74LS125" (at 160.02 166.7764 0)
@@ -2725,12 +2725,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "U1") (unit 3)
+          (reference "U?") (unit 3)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "U1") (unit 3)
+          (reference "U?") (unit 3)
         )
       )
     )
@@ -2739,7 +2739,7 @@
   (symbol (lib_id "power:+5V") (at 134.62 36.83 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6eb9b487-faea-4dc9-aa72-0634ac4f85df)
-    (property "Reference" "#PWR011" (at 134.62 40.64 0)
+    (property "Reference" "#PWR?" (at 134.62 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 135.001 32.4358 0)
@@ -2755,12 +2755,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -2769,7 +2769,7 @@
   (symbol (lib_id "74xx:74LS125") (at 123.19 118.11 180) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 75fd0160-4bd4-4e13-b835-8fb2766d8e86)
-    (property "Reference" "U1" (at 123.19 123.825 0)
+    (property "Reference" "U?" (at 123.19 123.825 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "74LS125" (at 123.19 126.1364 0)
@@ -2798,12 +2798,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "U1") (unit 2)
+          (reference "U?") (unit 2)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "U1") (unit 2)
+          (reference "U?") (unit 2)
         )
       )
     )
@@ -2812,7 +2812,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 43.18 167.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7f41f03f-3ef3-48c6-85bc-8e507170ee55)
-    (property "Reference" "#FLG02" (at 43.18 165.735 0)
+    (property "Reference" "#FLG?" (at 43.18 165.735 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 43.18 163.2458 0)
@@ -2828,12 +2828,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "#FLG02") (unit 1)
+          (reference "#FLG?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "#FLG02") (unit 1)
+          (reference "#FLG?") (unit 1)
         )
       )
     )
@@ -2842,7 +2842,7 @@
   (symbol (lib_id "power:GND") (at 111.76 184.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 80e7d548-311c-4f3a-93c8-63a41abbc4ff)
-    (property "Reference" "#PWR09" (at 111.76 190.5 0)
+    (property "Reference" "#PWR?" (at 111.76 190.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 111.887 188.5442 0)
@@ -2858,12 +2858,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -2872,7 +2872,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 34.29 171.45 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 848f4380-2c1b-4459-aa99-25b431e176ef)
-    (property "Reference" "#FLG01" (at 34.29 173.355 0)
+    (property "Reference" "#FLG?" (at 34.29 173.355 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 34.29 175.8442 0)
@@ -2888,12 +2888,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "#FLG01") (unit 1)
+          (reference "#FLG?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "#FLG01") (unit 1)
+          (reference "#FLG?") (unit 1)
         )
       )
     )
@@ -2902,7 +2902,7 @@
   (symbol (lib_id "power:+5V") (at 111.76 153.67 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8ea56a3d-fd15-4159-a046-0db6e2a03c13)
-    (property "Reference" "#PWR08" (at 111.76 157.48 0)
+    (property "Reference" "#PWR?" (at 111.76 157.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 112.141 149.2758 0)
@@ -2918,12 +2918,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -2932,7 +2932,7 @@
   (symbol (lib_id "power:+5V") (at 213.36 21.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9268f3cf-449a-413d-a286-d6ce8a0d2897)
-    (property "Reference" "#PWR013" (at 213.36 25.4 0)
+    (property "Reference" "#PWR?" (at 213.36 25.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 213.741 17.1958 0)
@@ -2948,12 +2948,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -2962,7 +2962,7 @@
   (symbol (lib_id "Device:C") (at 64.77 170.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a09acc21-e767-47b3-ac3d-6bbd274b3c2a)
-    (property "Reference" "C1" (at 67.691 169.0116 0)
+    (property "Reference" "C?" (at 67.691 169.0116 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 67.691 171.323 0)
@@ -2979,12 +2979,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "C1") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "C1") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
     )
@@ -2993,7 +2993,7 @@
   (symbol (lib_id "power:+5V") (at 255.27 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c02ec679-c5fc-4366-8f62-b9a523770c5a)
-    (property "Reference" "#PWR015" (at 255.27 88.9 0)
+    (property "Reference" "#PWR?" (at 255.27 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 255.651 80.6958 0)
@@ -3009,12 +3009,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -3023,7 +3023,7 @@
   (symbol (lib_id "Device:R") (at 134.62 43.18 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c4168b98-9648-4098-bf75-b5c29e38f7a6)
-    (property "Reference" "R1" (at 132.842 44.3484 0)
+    (property "Reference" "R?" (at 132.842 44.3484 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "220R" (at 132.842 42.037 0)
@@ -3040,12 +3040,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "R1") (unit 1)
+          (reference "R?") (unit 1)
         )
       )
     )
@@ -3054,7 +3054,7 @@
   (symbol (lib_id "74xx:74LS125") (at 111.76 168.91 0) (unit 5)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c47e88f9-f6a1-4df5-9684-5558c2c1ee5e)
-    (property "Reference" "U1" (at 117.602 167.7416 0)
+    (property "Reference" "U?" (at 117.602 167.7416 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "74LS125" (at 117.602 170.053 0)
@@ -3083,12 +3083,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "U1") (unit 5)
+          (reference "U?") (unit 5)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "U1") (unit 5)
+          (reference "U?") (unit 5)
         )
       )
     )
@@ -3097,7 +3097,7 @@
   (symbol (lib_id "power:GND") (at 133.35 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d3ba1d89-1f88-4d13-bcdb-eb43c6d017ae)
-    (property "Reference" "#PWR010" (at 133.35 127 0)
+    (property "Reference" "#PWR?" (at 133.35 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 133.477 125.0442 0)
@@ -3113,12 +3113,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -3127,7 +3127,7 @@
   (symbol (lib_id "power:GND") (at 213.36 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dcb21bdf-f28f-4b56-a767-bf6431634721)
-    (property "Reference" "#PWR014" (at 213.36 109.22 0)
+    (property "Reference" "#PWR?" (at 213.36 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 213.487 107.2642 0)
@@ -3143,12 +3143,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -3157,7 +3157,7 @@
   (symbol (lib_id "power:GND") (at 43.18 171.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid de804d60-bd9c-4f59-bfe8-5b7a48990d43)
-    (property "Reference" "#PWR02" (at 43.18 177.8 0)
+    (property "Reference" "#PWR?" (at 43.18 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 43.307 175.8442 0)
@@ -3173,12 +3173,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -3187,7 +3187,7 @@
   (symbol (lib_id "power:+5V") (at 55.88 31.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ea451e89-d51d-4ae1-bd32-c61d730b5277)
-    (property "Reference" "#PWR03" (at 55.88 35.56 0)
+    (property "Reference" "#PWR?" (at 55.88 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 56.261 27.3558 0)
@@ -3203,12 +3203,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -3217,7 +3217,7 @@
   (symbol (lib_id "power:+5V") (at 149.86 147.32 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ed1ec315-02c7-442e-97ad-c9b62f6f1ce2)
-    (property "Reference" "#PWR012" (at 149.86 151.13 0)
+    (property "Reference" "#PWR?" (at 149.86 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 150.241 142.9258 0)
@@ -3233,12 +3233,12 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR?") (unit 1)
         )
       )
     )
@@ -3247,7 +3247,7 @@
   (symbol (lib_id "Device:C") (at 90.17 170.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid f43725a6-3a41-4c0b-8fc3-9ebe4d3344d7)
-    (property "Reference" "C3" (at 93.091 169.0116 0)
+    (property "Reference" "C?" (at 93.091 169.0116 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 93.091 171.323 0)
@@ -3264,13 +3264,47 @@
     (instances
       (project "GfxXosera"
         (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12"
-          (reference "C3") (unit 1)
+          (reference "C?") (unit 1)
         )
       )
       (project ""
         (path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4"
-          (reference "C3") (unit 1)
+          (reference "C?") (unit 1)
         )
+      )
+    )
+  )
+
+  (sheet (at 234.95 134.62) (size 26.67 25.4) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 4c43ef96-f07c-43bd-af41-ee65a2054b98)
+    (property "Sheetname" "VGA" (at 234.95 133.9084 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "VGA.kicad_sch" (at 234.95 160.6046 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "GfxXosera"
+        (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 190.5 125.73) (size 34.29 35.56) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 5ffd3580-437c-43de-b165-b7204f5fc357)
+    (property "Sheetname" "Xosera" (at 190.5 125.0184 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Xosera.kicad_sch" (at 190.5 161.8746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "GfxXosera"
+        (path "/1439ce05-32d3-468b-bc42-9b43cdc1cc12" (page "2"))
       )
     )
   )
