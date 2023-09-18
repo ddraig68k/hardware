@@ -2425,7 +2425,7 @@
     (property "Value" "~" (at 116.84 111.76 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Package_DIP:DIP-28_W15.24mm" (at 116.84 111.76 0)
+    (property "Footprint" "Package_DIP:DIP-28_W15.24mm_Socket" (at 116.84 111.76 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 116.84 111.76 0)
