@@ -3114,7 +3114,7 @@
   (symbol (lib_id "power:+3V3") (at 195.58 22.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 53a6249a-2895-4514-93d3-6e61542c69fb)
-    (property "Reference" "#PWR?" (at 195.58 26.67 0)
+    (property "Reference" "#PWR0125" (at 195.58 26.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 195.961 18.4658 0)
@@ -3130,7 +3130,7 @@
     (instances
       (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c227"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0125") (unit 1)
         )
       )
     )
@@ -3139,7 +3139,7 @@
   (symbol (lib_id "power:+3V3") (at 35.56 22.225 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6b1d2bb4-e07d-457a-8332-a57b8b4363ef)
-    (property "Reference" "#PWR?" (at 35.56 26.035 0)
+    (property "Reference" "#PWR0126" (at 35.56 26.035 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 35.941 17.8308 0)
@@ -3155,7 +3155,7 @@
     (instances
       (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c227"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0126") (unit 1)
         )
       )
     )
