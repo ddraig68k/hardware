@@ -1547,7 +1547,7 @@
     (pin "8" (uuid 1bfbd310-faf7-4bba-b258-0cf0519f8ff9))
     (pin "9" (uuid f4172fa2-95d5-43e5-99ef-0fb177651822))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "U501") (unit 1)
         )
@@ -1587,7 +1587,7 @@
     (pin "8" (uuid 865f7f66-ddb0-4dbc-a68a-4faf6b66d449))
     (pin "9" (uuid 889339a2-73bd-409b-8ed3-55d20340c0b8))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "J501") (unit 1)
         )
@@ -1613,7 +1613,7 @@
     (pin "1" (uuid aec6f3b3-6a3b-4d3b-b9aa-3d3136fc646e))
     (pin "2" (uuid b4f53cea-39ee-4ea0-986b-975e39528087))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "C502") (unit 1)
         )
@@ -1639,7 +1639,7 @@
     (pin "1" (uuid 6e3a8b7a-3e2a-419c-9e59-6457faec64db))
     (pin "2" (uuid 4e1a18bf-65f5-439f-ad26-784a8e2f9a44))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "R502") (unit 1)
         )
@@ -1664,7 +1664,7 @@
     )
     (pin "1" (uuid 1072c6cd-176e-43e7-adc2-9853e0447a18))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "#PWR0502") (unit 1)
         )
@@ -1689,7 +1689,7 @@
     )
     (pin "1" (uuid b8a51c2f-4a64-4d13-bc20-7456c1ccd0c6))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "#PWR0503") (unit 1)
         )
@@ -1714,7 +1714,7 @@
     )
     (pin "1" (uuid 02752f66-feac-4c9b-8012-ff9ae732b50b))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "#PWR0504") (unit 1)
         )
@@ -1740,7 +1740,7 @@
     (pin "1" (uuid c5b7c21b-3db8-480f-bfe4-bb4967bf4c6a))
     (pin "2" (uuid 365dff18-fce4-47de-b16d-637a5e3848d6))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "R503") (unit 1)
         )
@@ -1766,7 +1766,7 @@
     (pin "1" (uuid cace566a-a136-434c-b97f-59d2114f9308))
     (pin "2" (uuid 4164bdc7-a95c-47c2-9cc8-64a4d004881e))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "R504") (unit 1)
         )
@@ -1791,7 +1791,7 @@
     )
     (pin "1" (uuid 8c163fbb-68b8-4805-a4b4-c5c495a59535))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "#PWR0509") (unit 1)
         )
@@ -1816,7 +1816,7 @@
     )
     (pin "1" (uuid 52a06e8b-d8c8-41b8-96db-f08fcf27c603))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "#PWR0508") (unit 1)
         )
@@ -1841,7 +1841,7 @@
     )
     (pin "1" (uuid a3df4815-3b9a-418e-a2cf-b27fb1540a55))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "#PWR0501") (unit 1)
         )
@@ -1866,7 +1866,7 @@
     )
     (pin "1" (uuid d5e179f3-cb42-4663-95f7-922972b52a72))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "#PWR0507") (unit 1)
         )
@@ -1892,7 +1892,7 @@
     (pin "1" (uuid 31ea4e48-2b7b-4db5-b645-d9dd0d6d89c4))
     (pin "2" (uuid 6106a686-935b-4388-8836-783f6a4f7eaf))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "C501") (unit 1)
         )
@@ -1918,7 +1918,7 @@
     (pin "1" (uuid 1d7c282e-7101-4bc4-8f66-7e696f5986d1))
     (pin "2" (uuid a9dc333c-767b-4ae9-9d51-39a67fa0f6bb))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "R501") (unit 1)
         )
@@ -1943,7 +1943,7 @@
     )
     (pin "1" (uuid 36ee20f9-f67a-4470-a35c-1e199e6c8910))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "#PWR0506") (unit 1)
         )
@@ -1968,7 +1968,7 @@
     )
     (pin "1" (uuid b7d8a720-bbaa-4e1b-860e-f6000ed83659))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "#PWR0505") (unit 1)
         )
@@ -1994,7 +1994,7 @@
     (pin "1" (uuid 5d35eac4-c3ae-47ad-a793-e4c1ef820a04))
     (pin "2" (uuid 833bc3bf-a0e6-48ab-ab5b-954dd13d350a))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "C504") (unit 1)
         )
@@ -2019,7 +2019,7 @@
     )
     (pin "1" (uuid 2087e1ed-6de1-4266-a86a-bc307a3680d9))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "#PWR0511") (unit 1)
         )
@@ -2045,7 +2045,7 @@
     (pin "1" (uuid 39d484d2-8d18-478b-862e-d165bebb97a2))
     (pin "2" (uuid 09a2472a-f9d8-422b-9767-7b5d4352f81c))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "C503") (unit 1)
         )
@@ -2070,7 +2070,7 @@
     )
     (pin "1" (uuid 46781d51-c116-446f-b3d3-562c66901139))
     (instances
-      (project "GfxFPGAS3"
+      (project "GfxHDMI"
         (path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1/00000000-0000-0000-0000-00006125c862"
           (reference "#PWR0510") (unit 1)
         )
