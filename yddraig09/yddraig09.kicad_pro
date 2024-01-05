@@ -1,5 +1,6 @@
 {
   "board": {
+    "3dviewports": [],
     "design_settings": {
       "defaults": {
         "board_outline_line_width": 0.049999999999999996,
@@ -63,20 +64,26 @@
       "rule_severities": {
         "annular_width": "error",
         "clearance": "error",
+        "connection_width": "warning",
         "copper_edge_clearance": "error",
+        "copper_sliver": "warning",
         "courtyards_overlap": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
+        "footprint": "error",
         "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
         "invalid_outline": "error",
+        "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
         "items_not_allowed": "error",
         "length_out_of_range": "error",
+        "lib_footprint_issues": "warning",
+        "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "missing_courtyard": "ignore",
@@ -86,9 +93,14 @@
         "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
+        "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
         "silk_overlap": "warning",
         "skew_out_of_range": "error",
+        "solder_mask_bridge": "error",
+        "starved_thermal": "error",
+        "text_height": "warning",
+        "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
         "track_dangling": "warning",
@@ -97,7 +109,6 @@
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
-        "zone_has_empty_net": "error",
         "zones_intersect": "error"
       },
       "rule_severitieslegacy_courtyards_overlap": true,
@@ -107,18 +118,63 @@
         "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.0,
+        "min_connection": 0.0,
         "min_copper_edge_clearance": 0.024999999999999998,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.19999999999999998,
         "min_microvia_drill": 0.09999999999999999,
+        "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
+        "min_text_height": 0.7999999999999999,
+        "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.19999999999999998,
         "min_via_annular_width": 0.049999999999999996,
         "min_via_diameter": 0.39999999999999997,
+        "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
+      "teardrop_options": [
+        {
+          "td_allow_use_two_tracks": true,
+          "td_curve_segcount": 5,
+          "td_on_pad_in_zone": false,
+          "td_onpadsmd": true,
+          "td_onroundshapesonly": false,
+          "td_ontrackend": false,
+          "td_onviapad": true
+        }
+      ],
+      "teardrop_parameters": [
+        {
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_target_name": "td_round_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_target_name": "td_rect_shape",
+          "td_width_to_size_filter_ratio": 0.9
+        },
+        {
+          "td_curve_segcount": 0,
+          "td_height_ratio": 1.0,
+          "td_length_ratio": 0.5,
+          "td_maxheight": 2.0,
+          "td_maxlen": 1.0,
+          "td_target_name": "td_track_end",
+          "td_width_to_size_filter_ratio": 0.9
+        }
+      ],
       "track_widths": [
         0.0,
         0.21,
@@ -137,7 +193,8 @@
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
-    "layer_presets": []
+    "layer_presets": [],
+    "viewports": []
   },
   "boards": [],
   "cvpcb": {
@@ -321,18 +378,23 @@
     "rule_severities": {
       "bus_definition_conflict": "error",
       "bus_entry_needed": "error",
-      "bus_label_syntax": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
+      "conflicting_netclasses": "error",
       "different_unit_footprint": "error",
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
+      "endpoint_off_grid": "warning",
       "extra_units": "error",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
       "lib_symbol_issues": "warning",
+      "missing_bidi_pin": "warning",
+      "missing_input_pin": "warning",
+      "missing_power_pin": "error",
+      "missing_unit": "warning",
       "multiple_net_names": "warning",
       "net_not_bus_member": "warning",
       "no_connect_connected": "warning",
@@ -342,6 +404,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
+      "simulation_model_issue": "ignore",
       "unannotated": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
@@ -359,7 +422,7 @@
   "net_settings": {
     "classes": [
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -373,10 +436,10 @@
         "track_width": 0.25,
         "via_diameter": 0.8,
         "via_drill": 0.4,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -385,21 +448,15 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "POWER",
-        "nets": [
-          "+12V",
-          "+3V3",
-          "+5V",
-          "GND"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.4,
         "via_diameter": 0.8,
         "via_drill": 0.4,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.125,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -408,193 +465,15 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "SIGNAL",
-        "nets": [
-          "/6809 CPU/CLK_8MHZ",
-          "/6809 CPU/CLOCK_Q",
-          "/6809 CPU/CPU_A15",
-          "/6809 CPU/RD~{WR}",
-          "/6809 CPU/RESET",
-          "/6809 CPU/~{FIRQ}",
-          "/6809 CPU/~{HALT}",
-          "/6809 CPU/~{IRQ}",
-          "/6809 CPU/~{NMI}",
-          "/6809 CPU/~{RESET}",
-          "/Audio/A0",
-          "/Audio/AUDIO_L",
-          "/Audio/D0",
-          "/Audio/D1",
-          "/Audio/D2",
-          "/Audio/D3",
-          "/Audio/D4",
-          "/Audio/D5",
-          "/Audio/D6",
-          "/Audio/D7",
-          "/Audio/~{CS_SND}",
-          "/Decode Logic/~{BANKSEL}",
-          "/Decode Logic/~{CS_EXP}",
-          "/Decode Logic/~{CS_IRQEN}",
-          "/Decode Logic/~{CS_KBD}",
-          "/Decode Logic/~{CS_RAM}",
-          "/Decode Logic/~{CS_ROM}",
-          "/Decode Logic/~{CS_RTC}",
-          "/Decode Logic/~{CS_UART}",
-          "/Decode Logic/~{CS_VDP}",
-          "/Decode Logic/~{CS_VIA}",
-          "/Decode Logic/~{IOSEL}",
-          "/Decode Logic/~{MEM0}",
-          "/Decode Logic/~{MEM2}",
-          "/Decode Logic/~{MEM4}",
-          "/Decode Logic/~{MEM6}",
-          "/Decode Logic/~{MEMC}",
-          "/Decode Logic/~{MEME}",
-          "/IO/ATN_OUT",
-          "/IO/CLK_IN",
-          "/IO/CLK_OUT",
-          "/IO/DATA_IN",
-          "/IO/DATA_OUT",
-          "/IO/IEC_ATTN",
-          "/IO/SD_CD",
-          "/IO/SD_CDV3",
-          "/IO/SD_CLK",
-          "/IO/SD_MISO",
-          "/IO/SD_MOSI",
-          "/IO/SD_WP",
-          "/IO/SD_WPV3",
-          "/IO/SPI_CLK",
-          "/IO/SPI_MISO",
-          "/IO/SPI_MOSI",
-          "/IO/USER1",
-          "/IO/USER2",
-          "/IO/~{IEC_RESET}",
-          "/IO/~{IEC_SRQIN}",
-          "/IO/~{SD_SS}",
-          "/IO/~{SPI_SS0}",
-          "/IO/~{SPI_SS1}",
-          "/IO/~{SPI_SS2}",
-          "/IO/~{SPI_SS3}",
-          "/Interrupts/~{IRQ3}",
-          "/Keyboard/SCDAT0",
-          "/Keyboard/SCDAT1",
-          "/Keyboard/SCDAT2",
-          "/Keyboard/SCDAT3",
-          "/Keyboard/SCDAT4",
-          "/Keyboard/SCDAT5",
-          "/Keyboard/SCDAT6",
-          "/Keyboard/SCDAT7",
-          "/Keyboard/~{COL0}",
-          "/Keyboard/~{COL1}",
-          "/Keyboard/~{COL2}",
-          "/Keyboard/~{COL3}",
-          "/Keyboard/~{COL4}",
-          "/Keyboard/~{COL5}",
-          "/Keyboard/~{COL6}",
-          "/Keyboard/~{COL7}",
-          "/Keyboard/~{COL8}",
-          "/Keyboard/~{FIFO_CLR}",
-          "/Keyboard/~{FIFO_FULL}",
-          "/Keyboard/~{FIFO_RD}",
-          "/Keyboard/~{FIFO_WR}",
-          "/Keyboard/~{KBD_STATUS}",
-          "/Keyboard/~{ROW0}",
-          "/Keyboard/~{ROW1}",
-          "/Keyboard/~{ROW2}",
-          "/Keyboard/~{ROW3}",
-          "/Keyboard/~{ROW4}",
-          "/Keyboard/~{ROW5}",
-          "/Keyboard/~{ROW6}",
-          "/Keyboard/~{ROW7}",
-          "/Keyboard/~{ROW8}",
-          "/RAM and ROM/BSEL0",
-          "/RAM and ROM/BSEL1",
-          "/RAM and ROM/BSEL2",
-          "/RAM and ROM/BSEL3",
-          "/RAM and ROM/BSEL4",
-          "/RAM and ROM/BSEL5",
-          "/RAM and ROM/RAMB0",
-          "/RAM and ROM/RAMB1",
-          "/RAM and ROM/RAMB2",
-          "/RAM and ROM/RAMB3",
-          "/RAM and ROM/RAMB4",
-          "/RAM and ROM/ROMBANK",
-          "/Serial Ports/CTSA",
-          "/Serial Ports/CTSB",
-          "/Serial Ports/RTSA",
-          "/Serial Ports/RTSB",
-          "/Serial Ports/RXDA",
-          "/Serial Ports/RXDB",
-          "/Serial Ports/TXDA",
-          "/Serial Ports/TXDB",
-          "/Video/BLUE",
-          "/Video/GREEN",
-          "/Video/RED",
-          "/Video/~{CSYNC}",
-          "/Video/~{RAS}",
-          "/VideoOut/BOUT",
-          "/VideoOut/CVOUT",
-          "/VideoOut/GOUT",
-          "/VideoOut/PAL_CLK",
-          "/VideoOut/ROUT",
-          "/VideoOut/SYNCOUT",
-          "/~{RD}",
-          "/~{WR}",
-          "Net-(BT1-Pad1)",
-          "Net-(C10-Pad1)",
-          "Net-(C11-Pad1)",
-          "Net-(C70-Pad1)",
-          "Net-(C72-Pad2)",
-          "Net-(C79-Pad1)",
-          "Net-(D1-Pad2)",
-          "Net-(D10-Pad1)",
-          "Net-(D10-Pad2)",
-          "Net-(D2-Pad2)",
-          "Net-(D4-Pad2)",
-          "Net-(D6-Pad1)",
-          "Net-(D7-Pad1)",
-          "Net-(D9-Pad1)",
-          "Net-(D9-Pad2)",
-          "Net-(FB1-Pad1)",
-          "Net-(FB1-Pad2)",
-          "Net-(FB10-Pad1)",
-          "Net-(FB10-Pad2)",
-          "Net-(FB11-Pad1)",
-          "Net-(FB11-Pad2)",
-          "Net-(FB12-Pad1)",
-          "Net-(FB12-Pad2)",
-          "Net-(FB13-Pad1)",
-          "Net-(FB13-Pad2)",
-          "Net-(FB14-Pad1)",
-          "Net-(FB14-Pad2)",
-          "Net-(FB2-Pad2)",
-          "Net-(FB3-Pad2)",
-          "Net-(FB4-Pad1)",
-          "Net-(FB4-Pad2)",
-          "Net-(FB5-Pad2)",
-          "Net-(FB6-Pad2)",
-          "Net-(FB7-Pad1)",
-          "Net-(FB7-Pad2)",
-          "Net-(FB8-Pad1)",
-          "Net-(FB8-Pad2)",
-          "Net-(FB9-Pad1)",
-          "Net-(FB9-Pad2)",
-          "Net-(L1-Pad1)",
-          "Net-(L2-Pad1)",
-          "Net-(Q1-Pad2)",
-          "Net-(Q2-Pad2)",
-          "Net-(Q3-Pad2)",
-          "Net-(Q4-Pad2)",
-          "Net-(Q5-Pad2)",
-          "Net-(Q6-Pad2)",
-          "Net-(Q7-Pad2)"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
         "via_diameter": 0.8,
         "via_drill": 0.4,
-        "wire_width": 6.0
+        "wire_width": 6
       },
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.125,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -603,42 +482,829 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "SIGNALSMALL",
-        "nets": [
-          "/Decode Logic/~{VDP_RD}",
-          "/Decode Logic/~{VDP_WR}",
-          "/Video/VA0",
-          "/Video/VA1",
-          "/Video/VA2",
-          "/Video/VA3",
-          "/Video/VA4",
-          "/Video/VA5",
-          "/Video/VA6",
-          "/Video/VA7",
-          "/Video/VD0",
-          "/Video/VD1",
-          "/Video/VD2",
-          "/Video/VD3",
-          "/Video/VD4",
-          "/Video/VD5",
-          "/Video/VD6",
-          "/Video/VD7",
-          "/Video/VR~{W}",
-          "/Video/~{CAS0}",
-          "/Video/~{CAS1}",
-          "/Video/~{CASX}"
-        ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.21,
         "via_diameter": 0.8,
         "via_drill": 0.4,
-        "wire_width": 6.0
+        "wire_width": 6
       }
     ],
     "meta": {
-      "version": 2
+      "version": 3
     },
-    "net_colors": null
+    "net_colors": null,
+    "netclass_assignments": null,
+    "netclass_patterns": [
+      {
+        "netclass": "POWER",
+        "pattern": "+12V"
+      },
+      {
+        "netclass": "POWER",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "POWER",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "POWER",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/6809 CPU/CLK_8MHZ"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/6809 CPU/CLOCK_Q"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/6809 CPU/CPU_A15"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/6809 CPU/RD~{WR}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/6809 CPU/RESET"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/6809 CPU/~{FIRQ}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/6809 CPU/~{HALT}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/6809 CPU/~{IRQ}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/6809 CPU/~{NMI}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/6809 CPU/~{RESET}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Audio/A0"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Audio/AUDIO_L"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Audio/D0"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Audio/D1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Audio/D2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Audio/D3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Audio/D4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Audio/D5"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Audio/D6"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Audio/D7"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Audio/~{CS_SND}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode Logic/~{BANKSEL}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode Logic/~{CS_EXP}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode Logic/~{CS_IRQEN}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode Logic/~{CS_KBD}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode Logic/~{CS_RAM}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode Logic/~{CS_ROM}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode Logic/~{CS_RTC}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode Logic/~{CS_UART}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode Logic/~{CS_VDP}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode Logic/~{CS_VIA}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode Logic/~{IOSEL}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode Logic/~{MEM0}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode Logic/~{MEM2}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode Logic/~{MEM4}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode Logic/~{MEM6}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode Logic/~{MEMC}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Decode Logic/~{MEME}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/ATN_OUT"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/CLK_IN"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/CLK_OUT"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/DATA_IN"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/DATA_OUT"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/IEC_ATTN"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/SD_CD"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/SD_CDV3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/SD_CLK"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/SD_MISO"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/SD_MOSI"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/SD_WP"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/SD_WPV3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/SPI_CLK"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/SPI_MISO"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/SPI_MOSI"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/USER1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/USER2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/~{IEC_RESET}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/~{IEC_SRQIN}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/~{SD_SS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/~{SPI_SS0}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/~{SPI_SS1}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/~{SPI_SS2}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/IO/~{SPI_SS3}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Interrupts/~{IRQ3}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/SCDAT0"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/SCDAT1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/SCDAT2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/SCDAT3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/SCDAT4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/SCDAT5"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/SCDAT6"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/SCDAT7"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{COL0}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{COL1}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{COL2}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{COL3}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{COL4}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{COL5}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{COL6}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{COL7}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{COL8}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{FIFO_CLR}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{FIFO_FULL}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{FIFO_RD}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{FIFO_WR}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{KBD_STATUS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{ROW0}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{ROW1}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{ROW2}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{ROW3}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{ROW4}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{ROW5}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{ROW6}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{ROW7}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Keyboard/~{ROW8}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/RAM and ROM/BSEL0"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/RAM and ROM/BSEL1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/RAM and ROM/BSEL2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/RAM and ROM/BSEL3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/RAM and ROM/BSEL4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/RAM and ROM/BSEL5"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/RAM and ROM/RAMB0"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/RAM and ROM/RAMB1"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/RAM and ROM/RAMB2"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/RAM and ROM/RAMB3"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/RAM and ROM/RAMB4"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/RAM and ROM/ROMBANK"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Serial Ports/CTSA"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Serial Ports/CTSB"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Serial Ports/RTSA"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Serial Ports/RTSB"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Serial Ports/RXDA"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Serial Ports/RXDB"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Serial Ports/TXDA"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Serial Ports/TXDB"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Video/BLUE"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Video/GREEN"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Video/RED"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Video/~{CSYNC}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/Video/~{RAS}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VideoOut/BOUT"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VideoOut/CVOUT"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VideoOut/GOUT"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VideoOut/PAL_CLK"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VideoOut/ROUT"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/VideoOut/SYNCOUT"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{RD}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "/~{WR}"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(BT1-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C10-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C11-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C70-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C72-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(C79-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D1-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D10-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D10-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D2-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D4-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D6-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D7-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D9-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(D9-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB1-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB1-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB10-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB10-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB11-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB11-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB12-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB12-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB13-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB13-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB14-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB14-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB2-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB3-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB4-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB4-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB5-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB6-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB7-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB7-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB8-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB8-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB9-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(FB9-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(L1-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(L2-Pad1)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(Q1-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(Q2-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(Q3-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(Q4-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(Q5-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(Q6-Pad2)"
+      },
+      {
+        "netclass": "SIGNAL",
+        "pattern": "Net-(Q7-Pad2)"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Decode Logic/~{VDP_RD}"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Decode Logic/~{VDP_WR}"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/VA0"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/VA1"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/VA2"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/VA3"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/VA4"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/VA5"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/VA6"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/VA7"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/VD0"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/VD1"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/VD2"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/VD3"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/VD4"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/VD5"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/VD6"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/VD7"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/VR~{W}"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/~{CAS0}"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/~{CAS1}"
+      },
+      {
+        "netclass": "SIGNALSMALL",
+        "pattern": "/Video/~{CASX}"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -654,6 +1320,8 @@
   "schematic": {
     "annotate_start_num": 0,
     "drawing": {
+      "dashed_lines_dash_length_ratio": 12.0,
+      "dashed_lines_gap_length_ratio": 3.0,
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
@@ -685,7 +1353,11 @@
     "page_layout_descr_file": "../ddraig-libs/Ddraig_A3.kicad_wks",
     "plot_directory": "C:/Dev/Temp/",
     "spice_adjust_passive_values": false,
+    "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
+    "spice_model_current_sheet_as_root": true,
+    "spice_save_all_currents": false,
+    "spice_save_all_voltages": false,
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
