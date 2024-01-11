@@ -410,7 +410,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "GfxFPGAS3.kicad_pro",
+    "filename": "GfxHDMI.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -1216,7 +1216,7 @@
     ],
     [
       "00000000-0000-0000-0000-00006125c862",
-      "VGA"
+      "HDMI"
     ]
   ],
   "text_variables": {}
