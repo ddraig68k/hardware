@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/steve/CPLD/tb_AudioSID_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+            <top_module name="tb_audiosid" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/tb_audiosid/cpuclk_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cpuclk_i</obj_property>
+      <obj_property name="ObjectShortName">cpuclk_i</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audiosid/clk_1mhz_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_1mhz_o</obj_property>
+      <obj_property name="ObjectShortName">clk_1mhz_o</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audiosid/addr_i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr_i[7:1]</obj_property>
+      <obj_property name="ObjectShortName">addr_i[7:1]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audiosid/data_io" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">data_io[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_io[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audiosid/csreg_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">csreg_i</obj_property>
+      <obj_property name="ObjectShortName">csreg_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audiosid/csdata_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">csdata_i</obj_property>
+      <obj_property name="ObjectShortName">csdata_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audiosid/reset_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_i</obj_property>
+      <obj_property name="ObjectShortName">reset_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audiosid/uds_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">uds_i</obj_property>
+      <obj_property name="ObjectShortName">uds_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audiosid/lds_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lds_i</obj_property>
+      <obj_property name="ObjectShortName">lds_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audiosid/rw_i" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rw_i</obj_property>
+      <obj_property name="ObjectShortName">rw_i</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audiosid/dtack_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">dtack_o</obj_property>
+      <obj_property name="ObjectShortName">dtack_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audiosid/cs_sid1_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs_sid1_o</obj_property>
+      <obj_property name="ObjectShortName">cs_sid1_o</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audiosid/cs_sid2_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs_sid2_o</obj_property>
+      <obj_property name="ObjectShortName">cs_sid2_o</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_audiosid/led_o" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">led_o</obj_property>
+      <obj_property name="ObjectShortName">led_o</obj_property>
+   </wvobject>
+</wave_config>

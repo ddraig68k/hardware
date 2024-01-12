@@ -4,13 +4,13 @@
 --
 -- Create Date:   15:52:44 12/13/2021
 -- Design Name:   
--- Module Name:   C:/Dev/KiCAD/Ddraig68k/expansion/GfxV9990/CPLD/tb_GfxV9990.vhd
--- Project Name:  GfxV9990
+-- Module Name:   C:/Dev/KiCAD/Ddraig68k/expansion/AudioSID/CPLD/tb_AudioSID.vhd
+-- Project Name:  AudioSID
 -- Target Device:  
 -- Tool versions:  
 -- Description:   
 -- 
--- VHDL Test Bench Created by ISE for module: GfxV9990
+-- VHDL Test Bench Created by ISE for module: AudioSID
 -- 
 -- Dependencies:
 -- 
@@ -32,14 +32,14 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY tb_GfxV9990 IS
-END tb_GfxV9990;
+ENTITY tb_AudioSID IS
+END tb_AudioSID;
  
-ARCHITECTURE behavior OF tb_GfxV9990 IS 
+ARCHITECTURE behavior OF tb_AudioSID IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT GfxV9990
+    COMPONENT AudioSID
     PORT(
          data_io : INOUT  std_logic_vector(7 downto 0);
          addr_i : IN  std_logic_vector(7 downto 1);
@@ -50,11 +50,11 @@ ARCHITECTURE behavior OF tb_GfxV9990 IS
          uds_i : IN  std_logic;
          lds_i : IN  std_logic;
          rw_i : IN  std_logic;
-         wait_i : IN  std_logic;
          dtack_o : OUT  std_logic;
-         vdpw_o : OUT  std_logic;
-         vdpr_o : OUT  std_logic;
-         led_o : OUT  std_logic
+		 cs_sid1_o   : out std_logic;
+		 cs_sid2_o   : out std_logic;
+		 clk_1mhz_o  : out std_logic;
+		 led_o : OUT  std_logic
         );
     END COMPONENT;
     
@@ -68,15 +68,15 @@ ARCHITECTURE behavior OF tb_GfxV9990 IS
    signal uds_i         : std_logic := '1';
    signal lds_i         : std_logic := '1';
    signal rw_i          : std_logic := '1';
-   signal wait_i        : std_logic := '1';
 
 	--BiDirs
    signal data_io : std_logic_vector(7 downto 0);
 
  	--Outputs
    signal dtack_o : std_logic;
-   signal vdpw_o : std_logic;
-   signal vdpr_o : std_logic;
+   signal cs_sid1_o : std_logic;
+   signal cs_sid2_o : std_logic;
+   signal clk_1mhz_o : std_logic;
    signal led_o : std_logic;
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
@@ -86,7 +86,7 @@ ARCHITECTURE behavior OF tb_GfxV9990 IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: GfxV9990 PORT MAP (
+   uut: AudioSID PORT MAP (
           data_io => data_io,
           addr_i => addr_i,
           cpuclk_i => cpuclk_i,
@@ -96,10 +96,10 @@ BEGIN
           uds_i => uds_i,
           lds_i => lds_i,
           rw_i => rw_i,
-          wait_i => wait_i,
           dtack_o => dtack_o,
-          vdpw_o => vdpw_o,
-          vdpr_o => vdpr_o,
+          cs_sid1_o => cs_sid1_o,
+          cs_sid2_o => cs_sid2_o,
+		  clk_1mhz_o => clk_1mhz_o,
           led_o => led_o
         );
 
@@ -138,7 +138,7 @@ BEGIN
 		addr_i  <= "0000000";
 		wait for 50ns;
 
-		-- Read from the V9990
+		-- Read from SID 1
 		wait on cpuclk_i until cpuclk_i = '1';
 		lds_i   <='1';
 		uds_i   <= '0';
@@ -153,7 +153,41 @@ BEGIN
 		csreg_i <= '1';
 		wait for 50ns;
 
-		-- Write to the V9990
+		-- Write to SID1
+		wait on cpuclk_i until cpuclk_i = '1';
+		csreg_i <= '0';
+		rw_i    <= '0';
+		wait for 100ns;
+		lds_i   <='1';
+		uds_i   <= '0';
+		wait for 100ns;
+		wait on dtack_o until dtack_o = '0';
+		wait for 200ns;
+		wait on cpuclk_i until cpuclk_i = '1';
+		rw_i    <= '1';
+		lds_i   <='1';
+		uds_i   <= '1';
+		csreg_i <= '1';
+		wait for 50ns;
+
+		addr_i  <= "0000001";
+
+		-- Read from SID 2
+		wait on cpuclk_i until cpuclk_i = '1';
+		lds_i   <='1';
+		uds_i   <= '0';
+		csreg_i <= '0';
+		rw_i    <= '1';
+		wait for 100ns;
+		wait on dtack_o until dtack_o = '0';
+		wait for 200ns;
+		wait on cpuclk_i until cpuclk_i = '1';
+		lds_i   <='1';
+		uds_i   <= '1';
+		csreg_i <= '1';
+		wait for 50ns;
+
+		-- Write to SID2
 		wait on cpuclk_i until cpuclk_i = '1';
 		csreg_i <= '0';
 		rw_i    <= '0';
