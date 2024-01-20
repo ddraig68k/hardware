@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name Ddraig)(type KiCad)(uri ${DDRAIGLIB}/Ddraig.pretty)(options "")(descr ""))
-)
