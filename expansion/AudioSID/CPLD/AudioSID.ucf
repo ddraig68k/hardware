@@ -29,11 +29,12 @@ NET "data_io<7>"  LOC = "P4"  ;
 NET "dtack_o"  LOC = "P33"  ;
 NET "lds_i"  LOC = "P39"  ;
 NET "led_o"  LOC = "P19"  ;
-NET "vdpr_o"  LOC = "P28"  ;
-NET "vdpw_o"  LOC = "P29"  ;
 NET "reset_i"  LOC = "P34"  ;
 NET "rw_i"  LOC = "P37"  ;
 NET "uds_i"  LOC = "P38"  ;
+NET "cs_sid1_o"  LOC = "P29"  ;
+NET "cs_sid2_o"  LOC = "P28"  ;
+NET "clk_1mhz_o"  LOC = "P27"  ;
 
 #PACE: Start of PACE Area Constraints
 
