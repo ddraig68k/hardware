@@ -170,7 +170,7 @@ BEGIN
 		csreg_i <= '1';
 		wait for 50ns;
 
-		addr_i  <= "0000001";
+		addr_i  <= "0100000";
 
 		-- Read from SID 2
 		wait on cpuclk_i until cpuclk_i = '1';

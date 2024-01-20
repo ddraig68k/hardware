@@ -26,7 +26,7 @@ architecture Behavioral of AudioSID is
 
     constant BOARD_ID       : std_logic_vector(7 downto 0) := X"23";
 
-    signal s_dtackcount     : std_logic_vector(4 downto 0);
+    signal s_dtackcount     : std_logic_vector(2 downto 0);
     signal s_ledtime        : std_logic_vector(7 downto 0);
     signal s_clkdiv         : std_logic;
     signal s_idsel         	: std_logic;
@@ -41,7 +41,7 @@ begin
         if reset_i = '0' or (csdata_i = '1' and csreg_i = '1') then
             s_dtackcount <= (others => '0');
         elsif rising_edge(cpuclk_i) then
-            if s_dtackcount < "11111" then
+            if s_dtackcount < "111" then
                 s_dtackcount <= s_dtackcount + 1;
             end if;
         end if;
@@ -66,10 +66,10 @@ begin
    -- Address decoding
 	s_idsel 	<= '1' WHEN csreg_i = '0' AND (lds_i = '0' OR uds_i = '0') AND std_match(addr_i, "111111-") ELSE '0';
 	s_sid1sel	<= '0' WHEN csreg_i = '0' AND uds_i = '0' AND std_match(addr_i, "0000000") ELSE '1';
-	s_sid2sel	<= '0' WHEN csreg_i = '0' AND uds_i = '0' AND std_match(addr_i, "0000001") ELSE '1';
+	s_sid2sel	<= '0' WHEN csreg_i = '0' AND uds_i = '0' AND std_match(addr_i, "0100000") ELSE '1';
 
     -- Generate DTACK signal
-    dtack_o <= '0' when s_dtackcount > "01001" and (csdata_i = '0' or csreg_i = '0') else '1';
+    dtack_o <= '0' when s_dtackcount >= "010" and (csdata_i = '0' or csreg_i = '0') else '1';
     
         -- Flash activity LED
     led_o <= '0' when s_ledtime < "11111111" else '1';
