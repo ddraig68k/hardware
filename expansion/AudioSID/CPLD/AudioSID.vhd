@@ -64,12 +64,12 @@ begin
             );
 
    -- Address decoding
-	s_idsel 	<= '1' WHEN csreg_i = '0' AND (lds_i = '0' OR uds_i = '0') AND std_match(addr_i, "111111-") ELSE '0';
-	s_sid1sel	<= '0' WHEN csreg_i = '0' AND uds_i = '0' AND std_match(addr_i, "0000000") ELSE '1';
-	s_sid2sel	<= '0' WHEN csreg_i = '0' AND uds_i = '0' AND std_match(addr_i, "0100000") ELSE '1';
+	s_idsel 	<= '1' WHEN csreg_i = '0' AND (lds_i = '0' OR uds_i = '0') AND rw_i = '1' AND addr_i = "1111111" ELSE '0';
+	s_sid1sel	<= '0' WHEN csreg_i = '0' AND uds_i = '0' AND addr_i(7 downto 6) = "00" ELSE '1';
+	s_sid2sel	<= '0' WHEN csreg_i = '0' AND uds_i = '0' AND addr_i(7 downto 6) = "01" ELSE '1';
 
     -- Generate DTACK signal
-    dtack_o <= '0' when s_dtackcount >= "010" and (csdata_i = '0' or csreg_i = '0') else '1';
+    dtack_o <= '1' when s_dtackcount > "100" and (csdata_i = '0' or csreg_i = '0') else '0';
     
         -- Flash activity LED
     led_o <= '0' when s_ledtime < "11111111" else '1';
