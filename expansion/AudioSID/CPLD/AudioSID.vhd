@@ -69,7 +69,7 @@ begin
 	s_sid2sel	<= '0' WHEN csreg_i = '0' AND uds_i = '0' AND addr_i(7 downto 6) = "01" ELSE '1';
 
     -- Generate DTACK signal
-    dtack_o <= '1' when s_dtackcount > "100" and (csdata_i = '0' or csreg_i = '0') else '0';
+    dtack_o <= '0' when s_dtackcount > "100" and (csdata_i = '0' or csreg_i = '0') else '1';
     
         -- Flash activity LED
     led_o <= '0' when s_ledtime < "11111111" else '1';
