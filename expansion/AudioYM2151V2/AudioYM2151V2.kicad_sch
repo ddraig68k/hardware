@@ -3137,6 +3137,23 @@
     )
   )
 
+  (sheet (at 179.705 64.77) (size 40.005 28.575) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid d371e684-5e78-417c-a27a-35e06d35afa6)
+    (property "Sheetname" "PCM Audio 1" (at 179.705 64.0584 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "pcmaudio1.kicad_sch" (at 179.705 93.9296 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "AudioYM2151V2"
+        (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba" (page "5"))
+      )
+    )
+  )
+
   (sheet_instances
     (path "/" (page "1"))
   )

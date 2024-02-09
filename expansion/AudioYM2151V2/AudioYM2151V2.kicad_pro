@@ -573,6 +573,10 @@
     [
       "a2b88814-f048-4618-9f01-34e5fa3b3963",
       "CPU"
+    ],
+    [
+      "d371e684-5e78-417c-a27a-35e06d35afa6",
+      "PCM Audio 1"
     ]
   ],
   "text_variables": {}
