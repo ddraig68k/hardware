@@ -485,7 +485,7 @@
         (name "A14" (effects (font (size 1.27 1.27))))
         (number "14" (effects (font (size 1.27 1.27))))
       )
-      (pin power_in line (at 0 45.72 270) (length 3.81)
+      (pin power_in line (at 0 44.45 270) (length 3.81)
         (name "VCC" (effects (font (size 1.27 1.27))))
         (number "15" (effects (font (size 1.27 1.27))))
       )
