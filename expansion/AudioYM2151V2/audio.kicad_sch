@@ -1042,7 +1042,7 @@
   (symbol (lib_id "74xx:74LS08") (at 134.62 110.49 0) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 60b78e04-00c1-4bd9-88f2-578861873bfc)
-    (property "Reference" "U21" (at 133.35 105.41 0)
+    (property "Reference" "U19" (at 133.35 105.41 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "74LS08" (at 140.335 105.41 0)
@@ -1071,7 +1071,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622"
-          (reference "U21") (unit 2)
+          (reference "U19") (unit 2)
         )
       )
     )
@@ -1080,7 +1080,7 @@
   (symbol (lib_id "74xx:74LS08") (at 44.45 171.45 0) (unit 5)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 618a3105-e6ac-489c-8353-12a1d119438e)
-    (property "Reference" "U21" (at 50.8 170.18 0)
+    (property "Reference" "U19" (at 50.8 170.18 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "74LS08" (at 50.8 172.72 0)
@@ -1109,7 +1109,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622"
-          (reference "U21") (unit 5)
+          (reference "U19") (unit 5)
         )
       )
     )
@@ -1141,7 +1141,7 @@
           (reference "C32") (unit 1)
         )
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622"
-          (reference "C60") (unit 1)
+          (reference "C57") (unit 1)
         )
       )
     )
@@ -1150,7 +1150,7 @@
   (symbol (lib_id "power:+5V") (at 44.45 156.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 851062a8-ea73-481a-bd63-9571ab2c22f5)
-    (property "Reference" "#PWR0120" (at 44.45 160.02 0)
+    (property "Reference" "#PWR0112" (at 44.45 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 44.45 151.765 0)
@@ -1166,7 +1166,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622"
-          (reference "#PWR0120") (unit 1)
+          (reference "#PWR0112") (unit 1)
         )
       )
     )
@@ -1197,7 +1197,7 @@
           (reference "#PWR073") (unit 1)
         )
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622"
-          (reference "#PWR0122") (unit 1)
+          (reference "#PWR0114") (unit 1)
         )
       )
     )
@@ -1206,7 +1206,7 @@
   (symbol (lib_id "power:GND") (at 44.45 187.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c5f9f432-3597-4938-b429-6ce8ccdfada9)
-    (property "Reference" "#PWR0121" (at 44.45 194.31 0)
+    (property "Reference" "#PWR0113" (at 44.45 194.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 44.45 192.405 0)
@@ -1222,7 +1222,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622"
-          (reference "#PWR0121") (unit 1)
+          (reference "#PWR0113") (unit 1)
         )
       )
     )
@@ -1231,7 +1231,7 @@
   (symbol (lib_id "74xx:74LS08") (at 134.62 83.82 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d0aded03-714e-4458-9530-ff989a284211)
-    (property "Reference" "U21" (at 133.35 78.74 0)
+    (property "Reference" "U19" (at 133.35 78.74 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "74LS08" (at 140.97 78.74 0)
@@ -1260,7 +1260,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622"
-          (reference "U21") (unit 1)
+          (reference "U19") (unit 1)
         )
       )
     )
@@ -1269,7 +1269,7 @@
   (symbol (lib_id "74xx:74LS08") (at 101.6 186.69 0) (unit 3)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e0b6a947-8bb9-4891-a2cc-6e82ee2d77db)
-    (property "Reference" "U21" (at 100.33 181.61 0)
+    (property "Reference" "U19" (at 100.33 181.61 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "74LS08" (at 107.315 181.61 0)
@@ -1298,7 +1298,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622"
-          (reference "U21") (unit 3)
+          (reference "U19") (unit 3)
         )
       )
     )
@@ -1329,7 +1329,7 @@
           (reference "#PWR074") (unit 1)
         )
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622"
-          (reference "#PWR0123") (unit 1)
+          (reference "#PWR0115") (unit 1)
         )
       )
     )
@@ -1338,7 +1338,7 @@
   (symbol (lib_id "74xx:74LS08") (at 101.6 175.26 0) (unit 4)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f73b0d4a-b535-4b4d-b573-c3ae05040ab4)
-    (property "Reference" "U21" (at 101.5917 167.005 0)
+    (property "Reference" "U19" (at 101.5917 167.005 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "74LS08" (at 101.5917 169.545 0)
@@ -1367,7 +1367,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622"
-          (reference "U21") (unit 4)
+          (reference "U19") (unit 4)
         )
       )
     )

@@ -3468,7 +3468,7 @@
 
   (sheet (at 200.66 29.845) (size 24.765 41.275) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
-    (fill (color 255 252 216 1.0000))
+    (fill (color 0 0 0 0.0000))
     (uuid 13457701-b9f8-47fd-94fd-78ef7514c622)
     (property "Sheetname" "Audio" (at 200.66 29.1334 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
