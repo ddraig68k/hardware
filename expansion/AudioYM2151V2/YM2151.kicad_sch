@@ -2189,8 +2189,8 @@
     (property "Datasheet" "~" (at 166.37 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3eaefec2-471d-4e2c-bbe8-161f138b04ca))
-    (pin "2" (uuid ee73336b-3b86-4b33-8f2b-e392ca5d767a))
+    (pin "1" (uuid 3e526d5d-d3e3-4f9a-a561-291a80f1a066))
+    (pin "2" (uuid 41066f06-c81b-4148-ad71-25b1219e1274))
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/bf81a9ca-093f-4742-bfb2-1aced185cb80"
