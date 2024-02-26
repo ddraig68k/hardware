@@ -83,6 +83,9 @@ ARCHITECTURE behavior OF tb_GfxV9990 IS
  
    constant clk10mhz_period : time := 100 ns;
  
+   type test_state_t is (IDLE, BOARD_ID, READ_VDP, WRITE_VDP);
+   signal test_state : test_state_t := IDLE; 
+ 
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
@@ -124,6 +127,7 @@ BEGIN
 
 
 		-- Test with the ID line active
+		test_state <= BOARD_ID;
 		wait on cpuclk_i until cpuclk_i = '1';
 		lds_i   <='1';
 		uds_i   <= '0';
@@ -139,6 +143,7 @@ BEGIN
 		wait for 50ns;
 
 		-- Read from the V9990
+		test_state <= READ_VDP;		
 		wait on cpuclk_i until cpuclk_i = '1';
 		lds_i   <='1';
 		uds_i   <= '0';
@@ -154,6 +159,7 @@ BEGIN
 		wait for 50ns;
 
 		-- Write to the V9990
+		test_state <= WRITE_VDP;		
 		wait on cpuclk_i until cpuclk_i = '1';
 		csreg_i <= '0';
 		rw_i    <= '0';
@@ -169,6 +175,8 @@ BEGIN
 		uds_i   <= '1';
 		csreg_i <= '1';
 		wait for 50ns;
+
+		test_state <= IDLE;
 
         wait;
     end process;
