@@ -1141,7 +1141,7 @@
           (reference "C32") (unit 1)
         )
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622"
-          (reference "C57") (unit 1)
+          (reference "C61") (unit 1)
         )
       )
     )
@@ -1150,7 +1150,7 @@
   (symbol (lib_id "power:+5V") (at 44.45 156.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 851062a8-ea73-481a-bd63-9571ab2c22f5)
-    (property "Reference" "#PWR0112" (at 44.45 160.02 0)
+    (property "Reference" "#PWR0116" (at 44.45 160.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 44.45 151.765 0)
@@ -1166,7 +1166,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622"
-          (reference "#PWR0112") (unit 1)
+          (reference "#PWR0116") (unit 1)
         )
       )
     )
@@ -1197,7 +1197,7 @@
           (reference "#PWR073") (unit 1)
         )
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622"
-          (reference "#PWR0114") (unit 1)
+          (reference "#PWR0118") (unit 1)
         )
       )
     )
@@ -1206,7 +1206,7 @@
   (symbol (lib_id "power:GND") (at 44.45 187.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c5f9f432-3597-4938-b429-6ce8ccdfada9)
-    (property "Reference" "#PWR0113" (at 44.45 194.31 0)
+    (property "Reference" "#PWR0117" (at 44.45 194.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 44.45 192.405 0)
@@ -1222,7 +1222,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622"
-          (reference "#PWR0113") (unit 1)
+          (reference "#PWR0117") (unit 1)
         )
       )
     )
@@ -1329,7 +1329,7 @@
           (reference "#PWR074") (unit 1)
         )
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622"
-          (reference "#PWR0115") (unit 1)
+          (reference "#PWR0119") (unit 1)
         )
       )
     )

@@ -1510,7 +1510,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 123.825 64.77 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060ce02b5)
-    (property "Reference" "C44" (at 123.825 58.293 90)
+    (property "Reference" "C48" (at 123.825 58.293 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "47uF" (at 123.825 60.6044 90)
@@ -1527,7 +1527,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "C44") (unit 1)
+          (reference "C48") (unit 1)
         )
       )
     )
@@ -1536,7 +1536,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 123.825 86.36 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060ce02bb)
-    (property "Reference" "C45" (at 123.825 92.71 90)
+    (property "Reference" "C49" (at 123.825 92.71 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "47uF" (at 123.825 90.17 90)
@@ -1553,7 +1553,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "C45") (unit 1)
+          (reference "C49") (unit 1)
         )
       )
     )
@@ -1562,7 +1562,7 @@
   (symbol (lib_id "power:GND") (at 149.225 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060ce02c8)
-    (property "Reference" "#PWR0101" (at 149.225 105.41 0)
+    (property "Reference" "#PWR0105" (at 149.225 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 149.352 103.4542 0)
@@ -1578,7 +1578,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "#PWR0101") (unit 1)
+          (reference "#PWR0105") (unit 1)
         )
       )
     )
@@ -1587,7 +1587,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 184.785 104.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060ce02e2)
-    (property "Reference" "C47" (at 187.7822 102.9716 0)
+    (property "Reference" "C51" (at 187.7822 102.9716 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 187.7822 105.283 0)
@@ -1604,7 +1604,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "C47") (unit 1)
+          (reference "C51") (unit 1)
         )
       )
     )
@@ -1613,7 +1613,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 140.335 104.14 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060ce02ef)
-    (property "Reference" "C46" (at 143.3322 102.9716 0)
+    (property "Reference" "C50" (at 143.3322 102.9716 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 143.3322 105.283 0)
@@ -1630,7 +1630,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "C46") (unit 1)
+          (reference "C50") (unit 1)
         )
       )
     )
@@ -1639,7 +1639,7 @@
   (symbol (lib_id "Device:C") (at 198.755 68.58 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060ce02fb)
-    (property "Reference" "C49" (at 198.755 62.1792 90)
+    (property "Reference" "C53" (at 198.755 62.1792 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "220nF" (at 198.755 64.4906 90)
@@ -1656,7 +1656,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "C49") (unit 1)
+          (reference "C53") (unit 1)
         )
       )
     )
@@ -1665,7 +1665,7 @@
   (symbol (lib_id "Device:L") (at 211.455 68.58 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060ce0301)
-    (property "Reference" "L2" (at 211.455 73.1774 90)
+    (property "Reference" "L4" (at 211.455 73.1774 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22uH" (at 211.455 70.866 90)
@@ -1682,7 +1682,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "L2") (unit 1)
+          (reference "L4") (unit 1)
         )
       )
     )
@@ -1691,13 +1691,13 @@
   (symbol (lib_id "Device:C_Polarized") (at 238.125 68.58 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060ce0307)
-    (property "Reference" "C55" (at 238.125 62.103 90)
+    (property "Reference" "C59" (at 238.125 62.103 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "470uF" (at 238.125 64.4144 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" (at 241.935 67.6148 0)
+    (property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" (at 241.935 67.6148 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 238.125 68.58 0)
@@ -1708,7 +1708,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "C55") (unit 1)
+          (reference "C59") (unit 1)
         )
       )
     )
@@ -1717,7 +1717,7 @@
   (symbol (lib_id "Device:C") (at 226.695 74.93 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060ce030d)
-    (property "Reference" "C53" (at 234.315 73.66 0)
+    (property "Reference" "C57" (at 234.315 73.66 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "680nF" (at 235.585 76.2 0)
@@ -1734,7 +1734,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "C53") (unit 1)
+          (reference "C57") (unit 1)
         )
       )
     )
@@ -1769,7 +1769,7 @@
   (symbol (lib_id "Device:C") (at 198.755 93.98 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060ce0323)
-    (property "Reference" "C50" (at 198.755 87.5792 90)
+    (property "Reference" "C54" (at 198.755 87.5792 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "220nF" (at 198.755 89.8906 90)
@@ -1786,7 +1786,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "C50") (unit 1)
+          (reference "C54") (unit 1)
         )
       )
     )
@@ -1795,7 +1795,7 @@
   (symbol (lib_id "Device:L") (at 210.185 93.98 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060ce0329)
-    (property "Reference" "L1" (at 210.185 98.5774 90)
+    (property "Reference" "L3" (at 210.185 98.5774 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22uH" (at 210.185 96.266 90)
@@ -1812,7 +1812,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "L1") (unit 1)
+          (reference "L3") (unit 1)
         )
       )
     )
@@ -1821,7 +1821,7 @@
   (symbol (lib_id "Device:C") (at 226.695 100.33 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060ce0336)
-    (property "Reference" "C54" (at 234.315 100.33 0)
+    (property "Reference" "C58" (at 234.315 100.33 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "680nF" (at 235.585 102.87 0)
@@ -1838,7 +1838,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "C54") (unit 1)
+          (reference "C58") (unit 1)
         )
       )
     )
@@ -1873,13 +1873,13 @@
   (symbol (lib_id "Device:C_Polarized") (at 238.125 93.98 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000060ce0347)
-    (property "Reference" "C56" (at 238.125 87.503 90)
+    (property "Reference" "C60" (at 238.125 87.503 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "470uF" (at 238.125 89.8144 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" (at 241.935 93.0148 0)
+    (property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" (at 241.935 93.0148 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 238.125 93.98 0)
@@ -1890,7 +1890,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "C56") (unit 1)
+          (reference "C60") (unit 1)
         )
       )
     )
@@ -1998,7 +1998,7 @@
   (symbol (lib_id "power:GNDA") (at 203.2 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000610471f3)
-    (property "Reference" "#PWR0108" (at 203.2 163.83 0)
+    (property "Reference" "#PWR0112" (at 203.2 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 203.327 161.8742 0)
@@ -2014,7 +2014,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "#PWR0108") (unit 1)
+          (reference "#PWR0112") (unit 1)
         )
       )
     )
@@ -2023,7 +2023,7 @@
   (symbol (lib_id "power:GNDA") (at 161.925 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061047764)
-    (property "Reference" "#PWR0103" (at 161.925 119.38 0)
+    (property "Reference" "#PWR0107" (at 161.925 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 162.052 117.4242 0)
@@ -2039,7 +2039,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "#PWR0103") (unit 1)
+          (reference "#PWR0107") (unit 1)
         )
       )
     )
@@ -2048,7 +2048,7 @@
   (symbol (lib_id "power:GNDA") (at 184.785 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061047df5)
-    (property "Reference" "#PWR0106" (at 184.785 119.38 0)
+    (property "Reference" "#PWR0110" (at 184.785 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 184.912 117.4242 0)
@@ -2064,7 +2064,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "#PWR0106") (unit 1)
+          (reference "#PWR0110") (unit 1)
         )
       )
     )
@@ -2073,7 +2073,7 @@
   (symbol (lib_id "power:GNDA") (at 140.335 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000610480fa)
-    (property "Reference" "#PWR099" (at 140.335 119.38 0)
+    (property "Reference" "#PWR0103" (at 140.335 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 140.462 117.4242 0)
@@ -2089,7 +2089,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "#PWR099") (unit 1)
+          (reference "#PWR0103") (unit 1)
         )
       )
     )
@@ -2098,7 +2098,7 @@
   (symbol (lib_id "power:GNDA") (at 222.885 106.68 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000610485a4)
-    (property "Reference" "#PWR0110" (at 222.885 113.03 0)
+    (property "Reference" "#PWR0114" (at 222.885 113.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 223.012 111.0742 0)
@@ -2114,7 +2114,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "#PWR0110") (unit 1)
+          (reference "#PWR0114") (unit 1)
         )
       )
     )
@@ -2123,7 +2123,7 @@
   (symbol (lib_id "power:GNDA") (at 109.855 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061048dee)
-    (property "Reference" "#PWR098" (at 109.855 99.06 0)
+    (property "Reference" "#PWR0102" (at 109.855 99.06 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 109.982 97.1042 0)
@@ -2139,7 +2139,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "#PWR098") (unit 1)
+          (reference "#PWR0102") (unit 1)
         )
       )
     )
@@ -2148,7 +2148,7 @@
   (symbol (lib_id "power:GNDA") (at 109.22 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000610490b1)
-    (property "Reference" "#PWR097" (at 109.22 77.47 0)
+    (property "Reference" "#PWR0101" (at 109.22 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 109.347 75.5142 0)
@@ -2164,7 +2164,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "#PWR097") (unit 1)
+          (reference "#PWR0101") (unit 1)
         )
       )
     )
@@ -2173,7 +2173,7 @@
   (symbol (lib_id "power:GNDA") (at 222.885 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000610492cd)
-    (property "Reference" "#PWR0109" (at 222.885 87.63 0)
+    (property "Reference" "#PWR0113" (at 222.885 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 223.012 85.6742 0)
@@ -2189,7 +2189,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "#PWR0109") (unit 1)
+          (reference "#PWR0113") (unit 1)
         )
       )
     )
@@ -2198,7 +2198,7 @@
   (symbol (lib_id "power:GNDA") (at 252.095 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000610495bf)
-    (property "Reference" "#PWR0111" (at 252.095 92.71 0)
+    (property "Reference" "#PWR0115" (at 252.095 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 252.222 90.7542 0)
@@ -2214,7 +2214,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "#PWR0111") (unit 1)
+          (reference "#PWR0115") (unit 1)
         )
       )
     )
@@ -2223,7 +2223,7 @@
   (symbol (lib_id "power:+12VA") (at 146.685 55.88 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006104a227)
-    (property "Reference" "#PWR0100" (at 146.685 59.69 0)
+    (property "Reference" "#PWR0104" (at 146.685 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12VA" (at 147.066 51.4858 0)
@@ -2239,7 +2239,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "#PWR0100") (unit 1)
+          (reference "#PWR0104") (unit 1)
         )
       )
     )
@@ -2248,7 +2248,7 @@
   (symbol (lib_id "power:+12VA") (at 169.545 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006104a872)
-    (property "Reference" "#PWR0104" (at 169.545 60.96 0)
+    (property "Reference" "#PWR0108" (at 169.545 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12VA" (at 169.926 52.7558 0)
@@ -2264,7 +2264,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "#PWR0104") (unit 1)
+          (reference "#PWR0108") (unit 1)
         )
       )
     )
@@ -2273,7 +2273,7 @@
   (symbol (lib_id "power:GND") (at 169.545 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000610583d9)
-    (property "Reference" "#PWR0105" (at 169.545 119.38 0)
+    (property "Reference" "#PWR0109" (at 169.545 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 169.672 117.4242 0)
@@ -2289,7 +2289,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "#PWR0105") (unit 1)
+          (reference "#PWR0109") (unit 1)
         )
       )
     )
@@ -2298,7 +2298,7 @@
   (symbol (lib_id "power:+12VA") (at 161.925 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006105ddc6)
-    (property "Reference" "#PWR0102" (at 161.925 60.96 0)
+    (property "Reference" "#PWR0106" (at 161.925 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12VA" (at 162.306 52.7558 0)
@@ -2314,7 +2314,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "#PWR0102") (unit 1)
+          (reference "#PWR0106") (unit 1)
         )
       )
     )
@@ -2323,7 +2323,7 @@
   (symbol (lib_id "power:+12VA") (at 203.2 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006106813c)
-    (property "Reference" "#PWR0107" (at 203.2 143.51 0)
+    (property "Reference" "#PWR0111" (at 203.2 143.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12VA" (at 203.581 135.3058 0)
@@ -2339,7 +2339,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "#PWR0107") (unit 1)
+          (reference "#PWR0111") (unit 1)
         )
       )
     )
@@ -2348,7 +2348,7 @@
   (symbol (lib_id "Device:C") (at 215.9 148.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000610a7aa3)
-    (property "Reference" "C52" (at 218.821 147.4216 0)
+    (property "Reference" "C56" (at 218.821 147.4216 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 218.821 149.733 0)
@@ -2365,7 +2365,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "C52") (unit 1)
+          (reference "C56") (unit 1)
         )
       )
     )
@@ -2374,7 +2374,7 @@
   (symbol (lib_id "Device:C") (at 203.2 148.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000610a7aa9)
-    (property "Reference" "C51" (at 206.121 147.4216 0)
+    (property "Reference" "C55" (at 206.121 147.4216 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 206.121 149.733 0)
@@ -2391,7 +2391,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "C51") (unit 1)
+          (reference "C55") (unit 1)
         )
       )
     )
@@ -2400,7 +2400,7 @@
   (symbol (lib_id "Device:C") (at 190.5 148.59 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000610a7aaf)
-    (property "Reference" "C48" (at 193.421 147.4216 0)
+    (property "Reference" "C52" (at 193.421 147.4216 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 193.421 149.733 0)
@@ -2417,7 +2417,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "C48") (unit 1)
+          (reference "C52") (unit 1)
         )
       )
     )
@@ -2426,7 +2426,7 @@
   (symbol (lib_id "Device:C_Polarized") (at 113.03 151.13 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 72f9511f-208a-4c44-af6d-03a2c2bc71e8)
-    (property "Reference" "C43" (at 116.0272 149.9616 0)
+    (property "Reference" "C47" (at 116.0272 149.9616 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "220uF" (at 116.0272 152.273 0)
@@ -2443,7 +2443,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "C43") (unit 1)
+          (reference "C47") (unit 1)
         )
       )
     )
@@ -2504,7 +2504,7 @@
   (symbol (lib_id "Device:C") (at 71.12 45.085 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9a24c1d7-2680-4859-9caf-ca020ead3f59)
-    (property "Reference" "C42" (at 71.12 37.465 90)
+    (property "Reference" "C46" (at 71.12 37.465 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1.8nF" (at 71.12 40.005 90)
@@ -2521,7 +2521,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "C42") (unit 1)
+          (reference "C46") (unit 1)
         )
       )
     )
@@ -2530,7 +2530,7 @@
   (symbol (lib_id "Device:C") (at 70.485 89.535 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9a41a164-48e8-4d9c-a65c-a0f9bacba205)
-    (property "Reference" "C41" (at 70.485 81.915 90)
+    (property "Reference" "C45" (at 70.485 81.915 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1.8nF" (at 70.485 84.455 90)
@@ -2547,7 +2547,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "C41") (unit 1)
+          (reference "C45") (unit 1)
         )
       )
     )
@@ -2556,7 +2556,7 @@
   (symbol (lib_id "power:GNDA") (at 104.14 162.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9bbcae3c-8c15-45bf-8cca-a94607363b71)
-    (property "Reference" "#PWR096" (at 104.14 168.91 0)
+    (property "Reference" "#PWR0100" (at 104.14 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 104.267 166.9542 0)
@@ -2572,7 +2572,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "#PWR096") (unit 1)
+          (reference "#PWR0100") (unit 1)
         )
       )
     )
@@ -2613,7 +2613,7 @@
   (symbol (lib_id "power:GNDA") (at 61.595 66.675 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid befeafaf-15d9-4c9a-b07c-676e43187049)
-    (property "Reference" "#PWR093" (at 61.595 73.025 0)
+    (property "Reference" "#PWR097" (at 61.595 73.025 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 61.722 71.0692 0)
@@ -2629,7 +2629,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "#PWR093") (unit 1)
+          (reference "#PWR097") (unit 1)
         )
       )
     )
@@ -2663,7 +2663,7 @@
           (reference "#PWR0123") (unit 1)
         )
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "#PWR095") (unit 1)
+          (reference "#PWR099") (unit 1)
         )
       )
     )
@@ -2704,7 +2704,7 @@
   (symbol (lib_id "power:GNDA") (at 61.595 112.395 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cb654e59-38c5-46e9-8515-9e4e7ef4fd5b)
-    (property "Reference" "#PWR094" (at 61.595 118.745 0)
+    (property "Reference" "#PWR098" (at 61.595 118.745 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDA" (at 61.722 116.7892 0)
@@ -2720,7 +2720,7 @@
     (instances
       (project "AudioYM2151V2"
         (path "/1a0b0354-7e8a-4de9-938d-3a3db9fe7fba/13457701-b9f8-47fd-94fd-78ef7514c622/afdb1e97-7a1c-42e7-bac1-a7dfcf7f787d"
-          (reference "#PWR094") (unit 1)
+          (reference "#PWR098") (unit 1)
         )
       )
     )
