@@ -532,7 +532,7 @@
         "name": "PowerRails",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.254,
+        "track_width": 0.5,
         "via_diameter": 0.5,
         "via_drill": 0.25,
         "wire_width": 6
@@ -563,7 +563,7 @@
     "netclass_patterns": [
       {
         "netclass": "PowerRails",
-        "pattern": "+12V"
+        "pattern": "+12V*"
       },
       {
         "netclass": "PowerRails",
