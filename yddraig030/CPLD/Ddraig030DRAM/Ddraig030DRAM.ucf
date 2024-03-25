@@ -57,7 +57,7 @@ NET "dram_ras_n_o<3>"  LOC = "P21";
 
 NET "dram_casa_n_o<0>"  LOC = "P24"; 
 NET "dram_casa_n_o<1>"  LOC = "P26"; 
-NET "dram_casa_n_o<2>"  LOC = "P35"; 
+NET "dram_casa_n_o<2>"  LOC = "P34"; 
 NET "dram_casa_n_o<3>"  LOC = "P25"; 
 
 NET "dram_casb_n_o<0>"  LOC = "P31"; 
@@ -78,8 +78,8 @@ NET "cs_dram_n_i"  LOC = "P47";
 NET "cbreq_n_i"  LOC = "P40"; 
 NET "cback_n_o"  LOC = "P45"; 
 NET "dsack0_n_o"  LOC = "P41"; 
-NET "dsack1_n_o"  LOC = "P44"; 
-NET "sterm_n_o"  LOC = "P45"; 
+NET "dsack1_n_o"  LOC = "P43"; 
+NET "sterm_n_o"  LOC = "P44"; 
 NET "dram_we_n_o"  LOC = "P36"; 
 
 

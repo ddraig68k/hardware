@@ -57,6 +57,9 @@ begin
 	dram_we_n_o <= rw_i or dram_we;		-- Block write during refresh
 	cback_n_o 	<= '1';					-- Disable cache bursts for now
 
+	dsack0_n_o	<= '1';
+	dsack1_n_o	<= '1';
+
 	dram_addr_o <= address_i(13 downto 2) when addr_mux = '0' else address_i(25 downto 14);
 
 	byte_sel(0) <= '0' when rw_i = '1' or address_i(1 downto 0) = "00" else '1';
