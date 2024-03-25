@@ -61,14 +61,14 @@ ARCHITECTURE behavior OF tb_ddraig_glue IS
            cs_duart_op	: out  STD_LOGIC;
            cs_rtc_op		: out  STD_LOGIC;
            cs_ide_op		: out  STD_LOGIC;
-			  cs_ext1_op	: out  STD_LOGIC;
-		     cs_ext2_op	: out  STD_LOGIC;
-		     cs_ext3_op	: out  STD_LOGIC;
-		     cs_ext4_op	: out  STD_LOGIC;
-		     cs_id1_op		: out  STD_LOGIC;
-		     cs_id2_op		: out  STD_LOGIC;
-		     cs_id3_op		: out  STD_LOGIC;
-		     cs_id4_op		: out  STD_LOGIC;
+			  cs_data1_op	: out  STD_LOGIC;
+		     cs_data2_op	: out  STD_LOGIC;
+		     cs_data3_op	: out  STD_LOGIC;
+		     cs_data4_op	: out  STD_LOGIC;
+		     cs_reg1_op		: out  STD_LOGIC;
+		     cs_reg2_op		: out  STD_LOGIC;
+		     cs_reg3_op		: out  STD_LOGIC;
+		     cs_reg4_op		: out  STD_LOGIC;
 			  mux_op			: out  STD_LOGIC;
            dram_we_op	: out  STD_LOGIC;
            ras0_op		: out  STD_LOGIC;
@@ -106,7 +106,7 @@ ARCHITECTURE behavior OF tb_ddraig_glue IS
    signal cs_rom : std_logic;
    signal cs_duart : std_logic;
    signal cs_rtc : std_logic;
-   signal cs_ide : std_logic;
+   signal cs_rege : std_logic;
    signal mux : std_logic;
    signal dram_we : std_logic;
    signal ras0 : std_logic;
@@ -174,21 +174,21 @@ BEGIN
           cs_rom_op => cs_rom,
           cs_duart_op => cs_duart,
           cs_rtc_op => cs_rtc,
-          cs_ide_op => cs_ide,
+          cs_ide_op => cs_rege,
           mux_op => mux,
           dram_we_op => dram_we,
           ras0_op => ras0,
           ras1_op => ras1,
           cas0_op => cas0,
           cas1_op => cas1,
-			 cs_id1_op => ext_id1,
-			 cs_id2_op => ext_id2,
-			 cs_id3_op => ext_id3,
-			 cs_id4_op => ext_id4,
-			 cs_ext1_op => ext_data1,
-			 cs_ext2_op => ext_data2,
-			 cs_ext3_op => ext_data3,
-			 cs_ext4_op => ext_data4,
+			 cs_reg1_op => ext_id1,
+			 cs_reg2_op => ext_id2,
+			 cs_reg3_op => ext_id3,
+			 cs_reg4_op => ext_id4,
+			 cs_data1_op => ext_data1,
+			 cs_data2_op => ext_data2,
+			 cs_data3_op => ext_data3,
+			 cs_data4_op => ext_data4,
 			 buserr_op => bus_error
         );
 
