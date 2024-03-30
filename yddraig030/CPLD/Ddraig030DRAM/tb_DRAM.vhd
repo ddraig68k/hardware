@@ -1,36 +1,6 @@
---------------------------------------------------------------------------------
--- Company: 
--- Engineer:
---
--- Create Date:   16:21:44 03/25/2024
--- Design Name:   
--- Module Name:   /home/steve/code/Ddraig030DRAM/tb_DRAM.vhd
--- Project Name:  Ddraig030DRAM
--- Target Device:  
--- Tool versions:  
--- Description:   
--- 
--- VHDL Test Bench Created by ISE for module: DRAMController
--- 
--- Dependencies:
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
---
--- Notes: 
--- This testbench has been automatically generated using types std_logic and
--- std_logic_vector for the ports of the unit under test.  Xilinx recommends
--- that these types always be used for the top-level I/O of a design in order
--- to guarantee that the testbench will bind correctly to the post-implementation 
--- simulation model.
---------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
- 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---USE ieee.numeric_std.ALL;
+
  
 ENTITY tb_DRAM IS
 END tb_DRAM;
@@ -41,50 +11,50 @@ ARCHITECTURE behavior OF tb_DRAM IS
  
     COMPONENT DRAMController
     PORT(
-         clock_40mhz_i : IN  std_logic;
-         reset_n_i : IN  std_logic;
-         address_i : IN  std_logic_vector(28 downto 0);
-         siz0_i : IN  std_logic;
-         siz1_i : IN  std_logic;
-         rw_i : IN  std_logic;
-         as_n_i : IN  std_logic;
-         ds_n_i : IN  std_logic;
-         cs_dram_n_i : IN  std_logic;
-         cbreq_n_i : IN  std_logic;
-         cback_n_o : OUT  std_logic;
-         dsack0_n_o : OUT  std_logic;
-         dsack1_n_o : OUT  std_logic;
-         sterm_n_o : OUT  std_logic;
-         dram_addr_o : OUT  std_logic_vector(11 downto 0);
-         dram_ras_n_o : OUT  std_logic_vector(3 downto 0);
-         dram_casa_n_o : OUT  std_logic_vector(3 downto 0);
-         dram_casb_n_o : OUT  std_logic_vector(3 downto 0);
-         dram_we_n_o : OUT  std_logic
+         clock_40mhz_i  : IN  std_logic;
+         reset_n_i      : IN  std_logic;
+         address_i      : IN  std_logic_vector(28 downto 0);
+         siz0_i         : IN  std_logic;
+         siz1_i         : IN  std_logic;
+         rw_i           : IN  std_logic;
+         as_n_i         : IN  std_logic;
+         ds_n_i         : IN  std_logic;
+         cs_dram_n_i    : IN  std_logic;
+         cbreq_n_i      : IN  std_logic;
+         cback_n_o      : OUT  std_logic;
+         dsack0_n_o     : OUT  std_logic;
+         dsack1_n_o     : OUT  std_logic;
+         sterm_n_o      : OUT  std_logic;
+         dram_addr_o    : OUT  std_logic_vector(11 downto 0);
+         dram_ras_n_o   : OUT  std_logic_vector(3 downto 0);
+         dram_casa_n_o  : OUT  std_logic_vector(3 downto 0);
+         dram_casb_n_o  : OUT  std_logic_vector(3 downto 0);
+         dram_we_n_o    : OUT  std_logic
         );
     END COMPONENT;
     
 
    --Inputs
    signal clock_40mhz_i : std_logic := '0';
-   signal reset_n_i : std_logic := '1';
-   signal address_i : std_logic_vector(28 downto 0) := (others => '0');
-   signal size : std_logic_vector(1 downto 0) := "00";
-   signal rw_i : std_logic := '1';
-   signal as_n_i : std_logic := '1';
-   signal ds_n_i : std_logic := '1';
-   signal cs_dram_n_i : std_logic := '1';
-   signal cbreq_n_i : std_logic := '1';
+   signal reset_n_i     : std_logic := '1';
+   signal address_i     : std_logic_vector(28 downto 0) := (others => '0');
+   signal size          : std_logic_vector(1 downto 0) := "00";
+   signal rw_i          : std_logic := '1';
+   signal as_n_i        : std_logic := '1';
+   signal ds_n_i        : std_logic := '1';
+   signal cs_dram_n_i   : std_logic := '1';
+   signal cbreq_n_i     : std_logic := '1';
 
  	--Outputs
-   signal cback_n_o : std_logic;
-   signal dsack0_n_o : std_logic;
-   signal dsack1_n_o : std_logic;
-   signal sterm_n_o : std_logic;
-   signal dram_addr_o : std_logic_vector(11 downto 0);
-   signal dram_ras_n_o : std_logic_vector(3 downto 0);
+   signal cback_n_o     : std_logic;
+   signal dsack0_n_o    : std_logic;
+   signal dsack1_n_o    : std_logic;
+   signal sterm_n_o     : std_logic;
+   signal dram_addr_o   : std_logic_vector(11 downto 0);
+   signal dram_ras_n_o  : std_logic_vector(3 downto 0);
    signal dram_casa_n_o : std_logic_vector(3 downto 0);
    signal dram_casb_n_o : std_logic_vector(3 downto 0);
-   signal dram_we_n_o : std_logic;
+   signal dram_we_n_o   : std_logic;
 
    -- Clock period definitions
    constant clock_40mhz_i_period : time := 25 ns;
@@ -92,7 +62,8 @@ ARCHITECTURE behavior OF tb_DRAM IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: DRAMController PORT MAP (
+	uut: DRAMController
+		PORT MAP (
           clock_40mhz_i => clock_40mhz_i,
           reset_n_i => reset_n_i,
           address_i => address_i,
@@ -114,123 +85,153 @@ BEGIN
           dram_we_n_o => dram_we_n_o
         );
 
-   -- Clock process definitions
-   clock_40mhz_i_process :process
-   begin
+	-- Clock process definitions
+	clock_40mhz_i_process :process
+	begin
 		clock_40mhz_i <= '0';
 		wait for clock_40mhz_i_period/2;
 		clock_40mhz_i <= '1';
 		wait for clock_40mhz_i_period/2;
-   end process;
+	end process;
  
 
-   -- Stimulus process
-   stim_proc: process
-   begin		
-      -- hold reset state for 100 ns.
-	   reset_n_i <= '0';
-      wait for 100 ns;	
-	   reset_n_i <= '1';
-      wait for 100 ns;
+	-- Stimulus process
+	stim_proc: process
+	begin		
+		-- hold reset state for 100 ns.
+		reset_n_i <= '0';
+		wait for 100 ns;	
+		reset_n_i <= '1';
+		wait for 100 ns;
 
 		report("Testing address access without DRAM CS");
-      address_i <= "0" & X"0000100";
-      size <= "00";
-      as_n_i <= '0';
-      ds_n_i <= '0';
+		address_i <= "0" & X"0000100";
+		size <= "00";
+		as_n_i <= '0';
+		ds_n_i <= '0';
  		wait for 200ns;
-      size <= "11";
-      address_i <= (others => '0');
-      as_n_i <= '1';
-      ds_n_i <= '1';
-      wait for 200 ns;
+		size <= "11";
+		address_i <= (others => '0');
+		as_n_i <= '1';
+		ds_n_i <= '1';
+		wait for 200 ns;
+
+		-- Enable write to check the siz0&1 and byte selection
+		rw_i  <= '0';
 
 		report("Testing 32-bit low memory address access");
-      address_i <= "0" & X"0000100";
-      size <= "00";
-      as_n_i <= '0';
-      ds_n_i <= '0';
-      cs_dram_n_i <= '0';
- 	  wait for 300ns;
-      cs_dram_n_i <= '1';
-      size <= "11";
-      address_i <= (others => '0');
-      as_n_i <= '1';
-      ds_n_i <= '1';
-      wait for 200 ns;
+		address_i <= "0" & X"0000100";
+		size <= "00";
+		as_n_i <= '0';
+		ds_n_i <= '0';
+		cs_dram_n_i <= '0';
+		wait for 200ns;
+		cs_dram_n_i <= '1';
+		size <= "11";
+		address_i <= (others => '0');
+		as_n_i <= '1';
+		ds_n_i <= '1';
+		wait for 200 ns;
 
 		report("Testing 32-bit high memory address access");
-      address_i <= "0" & X"0A00100";
-      size <= "00";
-      as_n_i <= '0';
-      ds_n_i <= '0';
-      cs_dram_n_i <= '0';
- 	  wait for 300ns;
-      cs_dram_n_i <= '1';
-      size <= "11";
-      address_i <= (others => '0');
-      as_n_i <= '1';
-      ds_n_i <= '1';
-      wait for 200 ns;
+		address_i <= "0" & X"0A00100";
+		size <= "00";
+		as_n_i <= '0';
+		ds_n_i <= '0';
+		cs_dram_n_i <= '0';
+		wait for 200ns;
+		cs_dram_n_i <= '1';
+		size <= "11";
+		address_i <= (others => '0');
+		as_n_i <= '1';
+		ds_n_i <= '1';
+		wait for 200 ns;
 
 
 		report("Testing size = 00 address access");
-      address_i <= "0" & X"0000100";
-      size <= "00";
-      as_n_i <= '0';
-      ds_n_i <= '0';
-      cs_dram_n_i <= '0';
- 		wait for 300ns;
-      cs_dram_n_i <= '1';
-      size <= "11";
-      address_i <= (others => '0');
-      as_n_i <= '1';
-      ds_n_i <= '1';
-      wait for 200 ns;
+		address_i <= "0" & X"0000100";
+		size <= "00";
+		as_n_i <= '0';
+		ds_n_i <= '0';
+		cs_dram_n_i <= '0';
+ 		wait for 200ns;
+		cs_dram_n_i <= '1';
+		size <= "11";
+		address_i <= (others => '0');
+		as_n_i <= '1';
+		ds_n_i <= '1';
+		wait for 200 ns;
 
 		report("Testing size = 01 address access");
-      address_i <= "0" & X"0000100";
-      size <= "01";
-      as_n_i <= '0';
-      ds_n_i <= '0';
-      cs_dram_n_i <= '0';
- 		wait for 300ns;
-      cs_dram_n_i <= '1';
-      size <= "11";
-      address_i <= (others => '0');
-      as_n_i <= '1';
-      ds_n_i <= '1';
-      wait for 200 ns;
+		address_i <= "0" & X"0000100";
+		size <= "01";
+		as_n_i <= '0';
+		ds_n_i <= '0';
+		cs_dram_n_i <= '0';
+ 		wait for 200ns;
+		cs_dram_n_i <= '1';
+		size <= "11";
+		address_i <= (others => '0');
+		as_n_i <= '1';
+		ds_n_i <= '1';
+		wait for 200 ns;
 
 		report("Testing size = 10 address access");
-      address_i <= "0" & X"0000100";
-      size <= "10";
-      as_n_i <= '0';
-      ds_n_i <= '0';
-      cs_dram_n_i <= '0';
- 		wait for 300ns;
-      cs_dram_n_i <= '1';
-      size <= "11";
-      address_i <= (others => '0');
-      as_n_i <= '1';
-      ds_n_i <= '1';
-      wait for 200 ns;
+		address_i <= "0" & X"0000100";
+		size <= "10";
+		as_n_i <= '0';
+		ds_n_i <= '0';
+		cs_dram_n_i <= '0';
+ 		wait for 200ns;
+		cs_dram_n_i <= '1';
+		size <= "11";
+		address_i <= (others => '0');
+		as_n_i <= '1';
+		ds_n_i <= '1';
+		wait for 200 ns;
 
 		report("Testing size = 11 address access");
-      address_i <= "0" & X"0000100";
-      size <= "11";
-      as_n_i <= '0';
-      ds_n_i <= '0';
-      cs_dram_n_i <= '0';
- 		wait for 300ns;
-      cs_dram_n_i <= '1';
-      size <= "11";
-      address_i <= (others => '0');
-      as_n_i <= '1';
-      ds_n_i <= '1';
-      wait for 200 ns;
+		address_i <= "0" & X"0000100";
+		size <= "11";
+		as_n_i <= '0';
+		ds_n_i <= '0';
+		cs_dram_n_i <= '0';
+ 		wait for 200ns;
+		cs_dram_n_i <= '1';
+		size <= "11";
+		address_i <= (others => '0');
+		as_n_i <= '1';
+		ds_n_i <= '1';
+		wait for 200 ns;
 
-      wait;
+		report("Testing size = 01 different address access");
+		address_i <= "0" & X"0000102";
+		size <= "01";
+		as_n_i <= '0';
+		ds_n_i <= '0';
+		cs_dram_n_i <= '0';
+ 		wait for 200ns;
+		cs_dram_n_i <= '1';
+		size <= "11";
+		address_i <= (others => '0');
+		as_n_i <= '1';
+		ds_n_i <= '1';
+		wait for 200 ns;
+
+		report("Testing size = 10 different address access");
+		address_i <= "0" & X"0000102";
+		size <= "10";
+		as_n_i <= '0';
+		ds_n_i <= '0';
+		cs_dram_n_i <= '0';
+ 		wait for 200ns;
+		cs_dram_n_i <= '1';
+		size <= "11";
+		address_i <= (others => '0');
+		as_n_i <= '1';
+		ds_n_i <= '1';
+		wait for 200 ns;
+
+		wait;
    end process;
-
 END;
