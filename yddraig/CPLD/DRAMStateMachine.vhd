@@ -36,7 +36,7 @@ architecture Behavioral of DRAMStateMachine is
 	-- state signals
 	signal s_refreq			: std_logic; 					-- Refresh request
 	signal s_term_count		: std_logic; 					-- Refresh counter terminal count signal
-	signal s_refcount		: std_logic_vector(9 downto 0);	-- The refresh counter
+	signal s_refcount		: std_logic_vector(19 downto 0);-- The refresh counter
 	signal s_refack			: std_logic;					-- Refresh acknowlege
 	signal s_state			: std_logic_vector(3 downto 0);	-- Current state
 	signal s_next_state		: std_logic_vector(3 downto 0);	-- Next state
@@ -252,10 +252,10 @@ begin
 	rfcnt: process(clk_i, s_refack, reset_i)
 	begin
 		if (reset_i = '0') then
-			s_refcount <= "0000000000";
+			s_refcount <= X"00000";
 		elsif (clk_i'event and clk_i = '0') then
 			if(s_refack = '1') then
-				s_refcount <= "0000000000";
+				s_refcount <= X"00000";
 			else
 				s_refcount <= s_refcount + 1;
 			end if;
