@@ -2274,9 +2274,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2374,8 +2374,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2394,9 +2394,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2470,8 +2470,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2490,9 +2490,9 @@
 		)
 		(symbol "power:GNDA"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2566,8 +2566,8 @@
 			(symbol "GNDA_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GNDA"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3261,7 +3261,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.285 66.04) (xy 252.095 66.04)
+			(xy 248.92 66.04) (xy 252.73 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3271,7 +3271,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 66.04) (xy 240.665 66.04)
+			(xy 234.95 66.04) (xy 241.3 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3301,7 +3301,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.715 66.04) (xy 264.795 66.04)
+			(xy 260.35 66.04) (xy 265.43 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3691,7 +3691,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.285 33.02) (xy 252.095 33.02)
+			(xy 248.92 33.02) (xy 252.73 33.02)
 		)
 		(stroke
 			(width 0)
@@ -3881,7 +3881,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.715 33.02) (xy 264.795 33.02)
+			(xy 260.35 33.02) (xy 265.43 33.02)
 		)
 		(stroke
 			(width 0)
@@ -3891,7 +3891,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 33.02) (xy 240.665 33.02)
+			(xy 234.95 33.02) (xy 241.3 33.02)
 		)
 		(stroke
 			(width 0)
@@ -4597,7 +4597,7 @@
 	)
 	(hierarchical_label "YM_AUDIO_R"
 		(shape output)
-		(at 264.795 66.04 0)
+		(at 265.43 66.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4609,7 +4609,7 @@
 	)
 	(hierarchical_label "YM_AUDIO_L"
 		(shape output)
-		(at 264.795 33.02 0)
+		(at 265.43 33.02 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5445,7 +5445,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 72.39 95.25 0)
 			(effects
 				(font
@@ -5510,7 +5510,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 72.39 147.32 0)
 			(effects
 				(font
@@ -5575,7 +5575,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 166.37 143.51 0)
 			(effects
 				(font
@@ -5640,7 +5640,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 168.91 96.52 0)
 			(effects
 				(font
@@ -5790,7 +5790,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 72.39 49.53 0)
 			(effects
 				(font
@@ -5855,7 +5855,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 72.39 80.01 0)
 			(effects
 				(font
@@ -6414,7 +6414,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 121.92 81.28 0)
 			(effects
 				(font
@@ -6686,7 +6686,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 138.43 180.34 0)
 			(effects
 				(font
@@ -6751,7 +6751,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 138.43 162.56 0)
 			(effects
 				(font
@@ -6954,7 +6954,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
 			(at 172.72 143.51 0)
 			(effects
 				(font
@@ -7019,7 +7019,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
 			(at 248.92 144.78 0)
 			(effects
 				(font
@@ -7084,7 +7084,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
 			(at 209.55 43.18 0)
 			(effects
 				(font
@@ -7149,7 +7149,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
 			(at 209.55 76.2 0)
 			(effects
 				(font
@@ -7214,7 +7214,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
 			(at 148.59 58.42 0)
 			(effects
 				(font
@@ -7279,7 +7279,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GNDA\" , analog ground"
 			(at 95.25 180.34 0)
 			(effects
 				(font
@@ -7344,7 +7344,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 95.25 162.56 0)
 			(effects
 				(font
@@ -7409,7 +7409,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 248.92 124.46 0)
 			(effects
 				(font
@@ -7543,7 +7543,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 86.36 80.01 0)
 			(effects
 				(font
@@ -7608,7 +7608,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 86.36 49.53 0)
 			(effects
 				(font
@@ -7631,7 +7631,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 255.905 66.04 90)
+		(at 256.54 66.04 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7640,7 +7640,7 @@
 		(fields_autoplaced yes)
 		(uuid "03f32493-50d4-4a96-8a1f-1f2a39324708")
 		(property "Reference" "R6"
-			(at 255.905 59.69 90)
+			(at 256.54 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7648,7 +7648,7 @@
 			)
 		)
 		(property "Value" "3K9"
-			(at 255.905 62.23 90)
+			(at 256.54 62.23 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7656,7 +7656,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 255.905 67.818 90)
+			(at 256.54 67.818 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7665,7 +7665,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 255.905 66.04 0)
+			(at 256.54 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7674,7 +7674,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 255.905 66.04 0)
+			(at 256.54 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7699,7 +7699,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 244.475 33.02 90)
+		(at 245.11 33.02 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7708,7 +7708,7 @@
 		(fields_autoplaced yes)
 		(uuid "0d28c075-ee79-4681-9c53-a86cfb69230a")
 		(property "Reference" "C18"
-			(at 243.586 25.4 90)
+			(at 244.221 25.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7716,7 +7716,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 243.586 27.94 90)
+			(at 244.221 27.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7724,7 +7724,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
-			(at 248.285 32.0548 0)
+			(at 248.92 32.0548 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7733,7 +7733,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 244.475 33.02 0)
+			(at 245.11 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7742,7 +7742,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 244.475 33.02 0)
+			(at 245.11 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7767,7 +7767,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 244.475 66.04 90)
+		(at 245.11 66.04 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7776,7 +7776,7 @@
 		(fields_autoplaced yes)
 		(uuid "670be77b-ba0b-4cfe-8446-be09ea7b6f43")
 		(property "Reference" "C19"
-			(at 243.586 58.42 90)
+			(at 244.221 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7784,7 +7784,7 @@
 			)
 		)
 		(property "Value" "4.7uF"
-			(at 243.586 60.96 90)
+			(at 244.221 60.96 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7792,7 +7792,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
-			(at 248.285 65.0748 0)
+			(at 248.92 65.0748 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7801,7 +7801,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 244.475 66.04 0)
+			(at 245.11 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7810,7 +7810,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 244.475 66.04 0)
+			(at 245.11 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7835,7 +7835,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 255.905 33.02 90)
+		(at 256.54 33.02 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7844,7 +7844,7 @@
 		(fields_autoplaced yes)
 		(uuid "c3760866-c6ae-49ad-8b7f-bed14ed0854c")
 		(property "Reference" "R5"
-			(at 255.905 26.67 90)
+			(at 256.54 26.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7852,7 +7852,7 @@
 			)
 		)
 		(property "Value" "3K9"
-			(at 255.905 29.21 90)
+			(at 256.54 29.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7860,7 +7860,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
-			(at 255.905 34.798 90)
+			(at 256.54 34.798 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7869,7 +7869,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 255.905 33.02 0)
+			(at 256.54 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7878,7 +7878,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 255.905 33.02 0)
+			(at 256.54 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
