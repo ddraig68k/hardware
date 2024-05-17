@@ -265,7 +265,7 @@ begin
 	-- 138 hex = 0100111000 binary = 312 decimal
 	-- assuming 20 MHz clock (50ns clock period)
 	-- 50ns (tCYC) x 312 = 15.6us is the refresh request rate.
-	s_term_count <= '1' when s_refcount = "01001100001011000000" else '0';
+	s_term_count <= '1' when s_refcount = "0100111000" else '0';
 
 	rreq: process (clk_i, s_term_count, s_refack, reset_i)
 	begin
