@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="C:/Dev/KiCAD/Ddraig68k/expansion/GfxV9990/CPLD/tb_GfxV9990_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="/home/steve/code/ddraig/hardware/expansion/GfxV9990/CPLD/tb_GfxV9990_isim_beh.wdb" id="1" type="auto">
          <top_modules>
             <top_module name="numeric_std" />
             <top_module name="std_logic_1164" />
@@ -13,7 +13,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="17" />
+   <WVObjectSize size="19" />
    <wvobject fp_name="/tb_gfxv9990/addr_i" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">addr_i[7:1]</obj_property>
       <obj_property name="ObjectShortName">addr_i[7:1]</obj_property>
@@ -72,6 +72,10 @@
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="CustomSignalColor">#ff00ff</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_gfxv9990/uut/VDP/s_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">s_state</obj_property>
+      <obj_property name="ObjectShortName">s_state</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_gfxv9990/led_o" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">led_o</obj_property>
       <obj_property name="ObjectShortName">led_o</obj_property>
@@ -87,5 +91,9 @@
    <wvobject fp_name="/tb_gfxv9990/uut/s_vdpsel" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">s_vdpsel</obj_property>
       <obj_property name="ObjectShortName">s_vdpsel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gfxv9990/test_state" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">test_state</obj_property>
+      <obj_property name="ObjectShortName">test_state</obj_property>
    </wvobject>
 </wave_config>

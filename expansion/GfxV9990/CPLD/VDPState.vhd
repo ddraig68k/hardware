@@ -31,14 +31,17 @@ begin
 						vdpr <= '1';
 						if (vdpsel = '1') then
 							if (rw = '0') then
+								--vdpw <= '0';
 								s_state <= VDPWRITE;
 							else
+								--vdpr <= '0';
 								s_state <= VDPREAD;
 							end if;
 						end if;
 					
 					when VDPWRITE =>
 						vdpw <= '0';
+						--s_state <= VDPWAIT;
 						s_state <= VDPWRITE2;
 
 					when VDPWRITE2 =>
