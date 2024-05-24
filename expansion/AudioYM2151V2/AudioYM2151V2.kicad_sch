@@ -4163,15 +4163,6 @@
 		(uuid "0071a666-e953-4392-b874-871a198e575c")
 	)
 	(bus_entry
-		(at 38.1 45.72)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c1d95c1-164f-486a-8a36-493afb62b952")
-	)
-	(bus_entry
 		(at 172.72 111.76)
 		(size 2.54 2.54)
 		(stroke
@@ -5332,16 +5323,6 @@
 		)
 		(uuid "71b29db4-bb56-4381-957f-f0e0dc3123ce")
 	)
-	(wire
-		(pts
-			(xy 40.64 48.26) (xy 50.8 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7240fcd0-9561-4768-b870-7367fe09a7d4")
-	)
 	(bus
 		(pts
 			(xy 248.92 99.06) (xy 254 99.06)
@@ -6044,7 +6025,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 48.26) (xy 40.64 48.26)
+			(xy 39.37 48.26) (xy 50.8 48.26)
 		)
 		(stroke
 			(width 0)

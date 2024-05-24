@@ -305,7 +305,16 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Conn 3.5MM Stereo Jack F 5 POS Solder RA Thru-Hole 5 Terminal 1 Port"
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "DESCRIPTION" "Conn 3.5MM Stereo Jack F 5 POS Solder RA Thru-Hole 5 Terminal 1 Port"
 				(at 0 0 0)
 				(effects
 					(font
@@ -6172,7 +6181,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Ddraig:SWITCHCRAFT_35RAPC4BHN2"
+		(property "Footprint" "35RAPC4BHN2:SWITCHCRAFT_35RAPC4BHN2"
 			(at 264.16 81.28 0)
 			(effects
 				(font
