@@ -124,16 +124,16 @@
         "min_clearance": 0.0,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.025,
-        "min_hole_clearance": 0.09,
-        "min_hole_to_hole": 0.2,
+        "min_hole_clearance": 0.25,
+        "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.2,
-        "min_track_width": 0.09,
+        "min_through_hole_diameter": 0.3,
+        "min_track_width": 0.2,
         "min_via_annular_width": 0.05,
         "min_via_diameter": 0.4,
         "solder_mask_to_copper_clearance": 0.0,
@@ -183,18 +183,7 @@
         }
       ],
       "track_widths": [
-        0.0,
-        0.09,
-        0.1016,
-        0.127,
-        0.2,
-        0.254,
-        0.4,
-        0.5,
-        0.6,
-        0.7,
-        1.0,
-        1.5
+        0.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -226,14 +215,6 @@
         {
           "diameter": 0.0,
           "drill": 0.0
-        },
-        {
-          "diameter": 0.5,
-          "drill": 0.25
-        },
-        {
-          "diameter": 0.8,
-          "drill": 0.4
         }
       ],
       "zones_allow_external_fillets": false,
@@ -476,36 +457,19 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.09,
+        "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
-        "microvia_diameter": 0.25,
+        "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.09,
-        "via_diameter": 0.25,
-        "via_drill": 0.2,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.09,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.25,
-        "microvia_drill": 0.1,
-        "name": "BGA",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.09,
-        "via_diameter": 0.25,
-        "via_drill": 0.2,
+        "track_width": 0.25,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
         "wire_width": 6
       },
       {
@@ -693,367 +657,367 @@
         "pattern": "/CPU_R~{W}"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/A1"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/A10"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/A11"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/A12"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/A13"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/A14"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/A15"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/A2"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/A3"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/A4"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/A5"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/A6"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/A7"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/A8"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/A9"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/B0"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/B1"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/B2"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/B3"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/B4"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/B5"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/B6"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/B7"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/FLASH_CLK"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/G0"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/G1"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/G2"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/G3"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/G4"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/G5"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/G6"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/G7"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/HOST_CLK"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/HSYNC"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/PIXELCLOCK"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/R0"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/R1"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/R2"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/R3"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/R4"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/R5"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/R6"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/R7"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/R~{W}"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A0"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A1"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A10"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A11"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A12"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A13"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A14"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A15"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A16"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A17"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A18"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A19"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A2"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A3"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A4"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A5"
       },
       {
-        "netclass": "Default",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A6"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A7"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A8"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_A9"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D0"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D1"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D10"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D11"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D12"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D13"
       },
       {
-        "netclass": "Default",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D14"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D15"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D16"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D17"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D18"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D19"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D2"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D20"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D21"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D22"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D23"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D24"
       },
       {
-        "netclass": "Default",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D25"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D26"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D27"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D28"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D29"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D3"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D30"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D31"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D4"
       },
       {
@@ -1061,71 +1025,71 @@
         "pattern": "/FPGA/SRAM_D5"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D6"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D7"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D8"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/SRAM_D9"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/VSYNC"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/~{AS}"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/~{BLANK}"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/~{DATACS}"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/~{LDS}"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/~{REGCS}"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/~{RESET}"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/~{SRAM_CS}"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/~{SRAM_LB0}"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/~{SRAM_LB1}"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/~{SRAM_UB0}"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/~{SRAM_UB1}"
       },
       {
-        "netclass": "BGA",
+        "netclass": "SIGNAL",
         "pattern": "/FPGA/~{UDS}"
       },
       {
