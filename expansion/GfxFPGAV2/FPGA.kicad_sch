@@ -7040,7 +7040,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 166.37) (xy 144.78 166.37)
+			(xy 151.13 158.75) (xy 144.78 158.75)
 		)
 		(stroke
 			(width 0)
@@ -7060,7 +7060,7 @@
 	)
 	(wire
 		(pts
-			(xy 303.53 177.8) (xy 309.88 177.8)
+			(xy 303.53 175.26) (xy 309.88 175.26)
 		)
 		(stroke
 			(width 0)
@@ -7100,7 +7100,7 @@
 	)
 	(wire
 		(pts
-			(xy 303.53 81.28) (xy 326.39 81.28)
+			(xy 303.53 104.14) (xy 326.39 104.14)
 		)
 		(stroke
 			(width 0)
@@ -7340,6 +7340,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 62.23) (xy 152.4 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "237c162b-15da-4314-93a9-721388684560")
+	)
+	(wire
+		(pts
 			(xy 354.33 187.96) (xy 340.36 187.96)
 		)
 		(stroke
@@ -7440,7 +7450,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 60.96) (xy 229.87 60.96)
+			(xy 151.13 156.21) (xy 144.78 156.21)
 		)
 		(stroke
 			(width 0)
@@ -7560,7 +7570,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 88.9) (xy 303.53 88.9)
+			(xy 326.39 116.84) (xy 303.53 116.84)
 		)
 		(stroke
 			(width 0)
@@ -7690,7 +7700,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 168.91) (xy 144.78 168.91)
+			(xy 151.13 151.13) (xy 144.78 151.13)
 		)
 		(stroke
 			(width 0)
@@ -7750,7 +7760,7 @@
 	)
 	(wire
 		(pts
-			(xy 325.12 134.62) (xy 303.53 134.62)
+			(xy 325.12 177.8) (xy 303.53 177.8)
 		)
 		(stroke
 			(width 0)
@@ -7840,16 +7850,6 @@
 	)
 	(wire
 		(pts
-			(xy 214.63 83.82) (xy 229.87 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42bb03e5-4573-41fe-a21e-12da21eb559b")
-	)
-	(wire
-		(pts
 			(xy 365.76 38.1) (xy 365.76 40.64)
 		)
 		(stroke
@@ -7927,16 +7927,6 @@
 			(type default)
 		)
 		(uuid "450e572f-f957-49f6-8b23-3be8200a4f78")
-	)
-	(wire
-		(pts
-			(xy 151.13 161.29) (xy 144.78 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "459915fa-d497-4c0a-9fb3-571ef4fc4e44")
 	)
 	(wire
 		(pts
@@ -8460,7 +8450,7 @@
 	)
 	(wire
 		(pts
-			(xy 303.53 175.26) (xy 309.88 175.26)
+			(xy 303.53 134.62) (xy 309.88 134.62)
 		)
 		(stroke
 			(width 0)
@@ -8550,7 +8540,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 100.33) (xy 66.04 100.33)
+			(xy 72.39 87.63) (xy 66.04 87.63)
 		)
 		(stroke
 			(width 0)
@@ -8770,7 +8760,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 163.83) (xy 144.78 163.83)
+			(xy 151.13 153.67) (xy 144.78 153.67)
 		)
 		(stroke
 			(width 0)
@@ -8830,7 +8820,7 @@
 	)
 	(wire
 		(pts
-			(xy 303.53 147.32) (xy 309.88 147.32)
+			(xy 303.53 137.16) (xy 309.88 137.16)
 		)
 		(stroke
 			(width 0)
@@ -9160,7 +9150,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 170.18) (xy 303.53 170.18)
+			(xy 309.88 101.6) (xy 303.53 101.6)
 		)
 		(stroke
 			(width 0)
@@ -9197,6 +9187,16 @@
 			(type default)
 		)
 		(uuid "98dc68b5-6164-467c-a671-60580fe48a13")
+	)
+	(wire
+		(pts
+			(xy 160.02 161.29) (xy 144.78 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "992b63ff-b348-440d-8851-603bd12528aa")
 	)
 	(wire
 		(pts
@@ -9250,7 +9250,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 153.67) (xy 144.78 153.67)
+			(xy 217.17 83.82) (xy 229.87 83.82)
 		)
 		(stroke
 			(width 0)
@@ -9340,7 +9340,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 77.47) (xy 66.04 77.47)
+			(xy 72.39 62.23) (xy 66.04 62.23)
 		)
 		(stroke
 			(width 0)
@@ -9950,7 +9950,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 104.14) (xy 303.53 104.14)
+			(xy 309.88 81.28) (xy 303.53 81.28)
 		)
 		(stroke
 			(width 0)
@@ -9970,7 +9970,7 @@
 	)
 	(wire
 		(pts
-			(xy 326.39 86.36) (xy 303.53 86.36)
+			(xy 326.39 106.68) (xy 303.53 106.68)
 		)
 		(stroke
 			(width 0)
@@ -9990,7 +9990,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 114.3) (xy 303.53 114.3)
+			(xy 309.88 91.44) (xy 303.53 91.44)
 		)
 		(stroke
 			(width 0)
@@ -10110,16 +10110,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 143.51) (xy 64.77 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4922dee-c23f-4f98-af42-fac02f02f46d")
-	)
-	(wire
-		(pts
 			(xy 229.87 104.14) (xy 223.52 104.14)
 		)
 		(stroke
@@ -10140,7 +10130,7 @@
 	)
 	(wire
 		(pts
-			(xy 325.12 137.16) (xy 303.53 137.16)
+			(xy 325.12 147.32) (xy 303.53 147.32)
 		)
 		(stroke
 			(width 0)
@@ -10240,7 +10230,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 156.21) (xy 144.78 156.21)
+			(xy 151.13 146.05) (xy 144.78 146.05)
 		)
 		(stroke
 			(width 0)
@@ -10370,7 +10360,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.88 106.68) (xy 303.53 106.68)
+			(xy 309.88 86.36) (xy 303.53 86.36)
 		)
 		(stroke
 			(width 0)
@@ -10670,7 +10660,7 @@
 	)
 	(wire
 		(pts
-			(xy 303.53 172.72) (xy 309.88 172.72)
+			(xy 303.53 99.06) (xy 309.88 99.06)
 		)
 		(stroke
 			(width 0)
@@ -10750,7 +10740,7 @@
 	)
 	(wire
 		(pts
-			(xy 303.53 116.84) (xy 325.12 116.84)
+			(xy 303.53 88.9) (xy 325.12 88.9)
 		)
 		(stroke
 			(width 0)
@@ -10790,7 +10780,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 85.09) (xy 157.48 85.09)
+			(xy 144.78 87.63) (xy 157.48 87.63)
 		)
 		(stroke
 			(width 0)
@@ -10821,7 +10811,7 @@
 		(uuid "0155d8b0-4022-4bda-9312-ab1ec23645f7")
 	)
 	(label "SRAM_A5"
-		(at 309.88 114.3 0)
+		(at 309.88 91.44 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10832,7 +10822,7 @@
 		(uuid "0332c72c-9611-496d-b62c-461d23c7124d")
 	)
 	(label "A4"
-		(at 223.52 101.6 180)
+		(at 223.52 99.06 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10843,7 +10833,7 @@
 		(uuid "044f72b3-b5c4-4b3a-974c-dd86305b46e2")
 	)
 	(label "D4"
-		(at 151.13 166.37 0)
+		(at 151.13 156.21 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10920,7 +10910,7 @@
 		(uuid "10ba8bd5-a6ed-4421-b588-db010b179ac8")
 	)
 	(label "SRAM_D13"
-		(at 309.88 76.2 0)
+		(at 309.88 73.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10931,7 +10921,7 @@
 		(uuid "11ea8cf9-920f-41aa-9636-17e243248f55")
 	)
 	(label "SRAM_D25"
-		(at 66.04 90.17 180)
+		(at 66.04 92.71 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10942,7 +10932,7 @@
 		(uuid "1534da37-82b6-4382-91e8-536d72e602e6")
 	)
 	(label "R2"
-		(at 152.4 49.53 0)
+		(at 152.4 52.07 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10986,7 +10976,7 @@
 		(uuid "1ac29bc8-9bd8-4b82-bd86-d629f2c29f00")
 	)
 	(label "SRAM_A17"
-		(at 66.04 80.01 180)
+		(at 66.04 82.55 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11028,6 +11018,17 @@
 			(justify right bottom)
 		)
 		(uuid "26491c53-19b1-4992-8f14-032fe4bc2fbf")
+	)
+	(label "G0"
+		(at 152.4 62.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "27cf22d2-6229-42e4-b260-dfa18c604bc2")
 	)
 	(label "D[0..15]"
 		(at 138.43 271.78 180)
@@ -11074,7 +11075,7 @@
 		(uuid "3632fa40-d232-4cbc-912a-f8b620ef611d")
 	)
 	(label "G6"
-		(at 152.4 80.01 0)
+		(at 152.4 82.55 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11107,7 +11108,7 @@
 		(uuid "41e16c28-d870-4d79-a80b-fd14db9f24e4")
 	)
 	(label "D15"
-		(at 223.52 73.66 180)
+		(at 223.52 76.2 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11118,7 +11119,7 @@
 		(uuid "46401ef6-378f-4bb9-abaf-9a0255997173")
 	)
 	(label "D2"
-		(at 151.13 163.83 0)
+		(at 151.13 153.67 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11129,7 +11130,7 @@
 		(uuid "46684a95-33ea-46e5-9423-bc55c4d1a550")
 	)
 	(label "D6"
-		(at 223.52 58.42 180)
+		(at 223.52 48.26 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11140,7 +11141,7 @@
 		(uuid "48ac74ae-e783-45ac-b385-6f94b1603fb7")
 	)
 	(label "R6"
-		(at 152.4 72.39 0)
+		(at 152.4 69.85 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11151,7 +11152,7 @@
 		(uuid "4937bf80-32fa-436e-8007-4ff14f48fb03")
 	)
 	(label "SRAM_A0"
-		(at 309.88 177.8 0)
+		(at 309.88 175.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11173,7 +11174,7 @@
 		(uuid "4db024c4-0456-4642-b615-132f24d447d2")
 	)
 	(label "G7"
-		(at 152.4 82.55 0)
+		(at 152.4 80.01 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11184,7 +11185,7 @@
 		(uuid "5007775a-c05a-4ba7-908e-81d5689a6358")
 	)
 	(label "SRAM_D31"
-		(at 309.88 149.86 0)
+		(at 309.88 96.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11250,7 +11251,7 @@
 		(uuid "617e06d4-ca53-4413-a6f1-6f239aa242b6")
 	)
 	(label "A7"
-		(at 223.52 106.68 180)
+		(at 223.52 104.14 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11260,19 +11261,8 @@
 		)
 		(uuid "61d4c593-40c5-444e-8d67-4db4bd823dbc")
 	)
-	(label "G0"
-		(at 64.77 143.51 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "62b5a13e-b2c2-4f64-9ed3-87e8799920fd")
-	)
 	(label "SRAM_D20"
-		(at 66.04 49.53 180)
+		(at 66.04 52.07 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11283,7 +11273,7 @@
 		(uuid "64761aa0-0f40-46f7-a7ac-490410638e92")
 	)
 	(label "SRAM_A11"
-		(at 66.04 113.03 180)
+		(at 66.04 140.97 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11294,18 +11284,18 @@
 		(uuid "64b37a64-3f76-43f7-877b-77143d179148")
 	)
 	(label "D5"
-		(at 223.52 60.96 180)
+		(at 151.13 158.75 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "64f1e7db-2f5c-420c-8bee-d30059c760e4")
 	)
 	(label "SRAM_D15"
-		(at 309.88 104.14 0)
+		(at 309.88 81.28 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11338,7 +11328,7 @@
 		(uuid "6bb0c39a-de63-40f8-aa9f-313bbc374412")
 	)
 	(label "A8"
-		(at 223.52 104.14 180)
+		(at 223.52 106.68 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11360,7 +11350,7 @@
 		(uuid "6d97de53-01b6-497d-a932-1737c521e9fb")
 	)
 	(label "D11"
-		(at 223.52 81.28 180)
+		(at 223.52 45.72 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11426,7 +11416,7 @@
 		(uuid "74302a21-da33-4bc4-b632-94726f085fb7")
 	)
 	(label "SRAM_D6"
-		(at 309.88 172.72 0)
+		(at 309.88 99.06 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11437,7 +11427,7 @@
 		(uuid "76181df8-db50-4f36-aa7a-3e9e0fbbd032")
 	)
 	(label "SRAM_D24"
-		(at 66.04 92.71 180)
+		(at 66.04 90.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11459,7 +11449,7 @@
 		(uuid "77aed5fa-359c-43a5-94b4-f58638ae39ad")
 	)
 	(label "SRAM_A12"
-		(at 66.04 120.65 180)
+		(at 66.04 123.19 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11470,7 +11460,7 @@
 		(uuid "81251de5-66a7-4d4a-990d-b90196207cc7")
 	)
 	(label "SRAM_D7"
-		(at 309.88 170.18 0)
+		(at 309.88 101.6 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11503,7 +11493,7 @@
 		(uuid "89c4d4c6-0185-4596-9707-923525ec2918")
 	)
 	(label "A12"
-		(at 223.52 111.76 180)
+		(at 223.52 109.22 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11514,7 +11504,7 @@
 		(uuid "8affd8d7-f77a-4645-80ab-39cebbe5754c")
 	)
 	(label "D3"
-		(at 151.13 168.91 0)
+		(at 151.13 151.13 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11525,7 +11515,7 @@
 		(uuid "8c3fff9c-825b-4ed7-be63-802f8dce64df")
 	)
 	(label "A2"
-		(at 223.52 86.36 180)
+		(at 223.52 88.9 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11536,7 +11526,7 @@
 		(uuid "8c40c74c-d85c-4519-9861-8bcbbce4b754")
 	)
 	(label "SRAM_D0"
-		(at 309.88 127 0)
+		(at 309.88 165.1 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11547,7 +11537,7 @@
 		(uuid "8e2a0836-8453-4042-8aa8-06c20a25047f")
 	)
 	(label "SRAM_A9"
-		(at 66.04 140.97 180)
+		(at 66.04 113.03 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11558,7 +11548,7 @@
 		(uuid "8f293766-be7c-4bb5-a59b-d876bb35eb49")
 	)
 	(label "D12"
-		(at 223.52 48.26 180)
+		(at 223.52 81.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11569,7 +11559,7 @@
 		(uuid "8f855c5c-2544-497e-b31f-cef9e453304f")
 	)
 	(label "SRAM_A2"
-		(at 309.88 175.26 0)
+		(at 309.88 134.62 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11591,7 +11581,7 @@
 		(uuid "9ae04752-ab42-4639-96b9-a1c206238c93")
 	)
 	(label "SRAM_D29"
-		(at 309.88 93.98 0)
+		(at 309.88 152.4 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11624,7 +11614,7 @@
 		(uuid "9d69055a-1f4a-4032-bd74-0a94f58005f6")
 	)
 	(label "D1"
-		(at 151.13 156.21 0)
+		(at 151.13 146.05 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11657,7 +11647,7 @@
 		(uuid "9f2620d1-81d4-4e1e-a7b6-1ad66f6cb625")
 	)
 	(label "SRAM_D23"
-		(at 66.04 77.47 180)
+		(at 66.04 62.23 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11689,17 +11679,6 @@
 		)
 		(uuid "a171ba3a-3854-4ba6-84c3-ebf1071bbed7")
 	)
-	(label "D0"
-		(at 151.13 161.29 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a18d279d-1ddf-4eb4-a3e7-2547c01c4262")
-	)
 	(label "SRAM_D18"
 		(at 66.04 54.61 180)
 		(fields_autoplaced yes)
@@ -11712,7 +11691,7 @@
 		(uuid "a274f1df-7cb7-4191-be7a-40debd200eba")
 	)
 	(label "SRAM_D27"
-		(at 66.04 100.33 180)
+		(at 66.04 87.63 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11723,7 +11702,7 @@
 		(uuid "a33a4949-558e-4786-9e52-6a0005e39697")
 	)
 	(label "SRAM_D2"
-		(at 309.88 167.64 0)
+		(at 309.88 124.46 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11734,7 +11713,7 @@
 		(uuid "a35fc2b4-3efa-4e55-8232-ff8fe1645428")
 	)
 	(label "D14"
-		(at 223.52 76.2 180)
+		(at 223.52 73.66 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11745,7 +11724,7 @@
 		(uuid "a3e7513a-f555-4509-9316-5f877b931457")
 	)
 	(label "SRAM_A8"
-		(at 309.88 106.68 0)
+		(at 309.88 86.36 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11778,7 +11757,7 @@
 		(uuid "a6898270-70a8-482b-b455-515d3c6bde69")
 	)
 	(label "A5"
-		(at 223.52 99.06 180)
+		(at 223.52 101.6 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11822,7 +11801,7 @@
 		(uuid "ab4ba24f-7b81-428f-9370-e0a9f50ab3ef")
 	)
 	(label "D7"
-		(at 223.52 45.72 180)
+		(at 223.52 58.42 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11888,7 +11867,7 @@
 		(uuid "b4b692ce-0beb-44fb-940e-1019aa5a6c21")
 	)
 	(label "SRAM_A13"
-		(at 66.04 123.19 180)
+		(at 66.04 120.65 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11899,7 +11878,7 @@
 		(uuid "b5d955b1-24b9-45b5-9634-dd03b969dc04")
 	)
 	(label "SRAM_A4"
-		(at 309.88 147.32 0)
+		(at 309.88 137.16 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11932,7 +11911,7 @@
 		(uuid "b78e516e-b056-4a4d-8b97-42194e24ccb0")
 	)
 	(label "R3"
-		(at 152.4 52.07 0)
+		(at 152.4 49.53 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11987,7 +11966,7 @@
 		(uuid "c2dd87e6-7fbd-4539-aac4-18d9aa7649c2")
 	)
 	(label "SRAM_A16"
-		(at 66.04 82.55 180)
+		(at 66.04 80.01 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -11998,13 +11977,13 @@
 		(uuid "c44784ec-5ec9-4a24-85df-f5e43c4ae2f1")
 	)
 	(label "A14"
-		(at 309.88 50.8 0)
+		(at 223.52 127 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "c814ad25-9cf0-46bc-a05c-28088079de9e")
 	)
@@ -12042,7 +12021,7 @@
 		(uuid "cb9586c9-2a68-4246-98bd-40540c00b9cf")
 	)
 	(label "A3"
-		(at 223.52 88.9 180)
+		(at 223.52 86.36 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12119,7 +12098,7 @@
 		(uuid "d98c089f-9ec1-4dfe-9c96-16c1c0e7bc2d")
 	)
 	(label "SRAM_D1"
-		(at 309.88 124.46 0)
+		(at 309.88 167.64 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12130,7 +12109,7 @@
 		(uuid "df9c7d1b-2fb0-499b-91f9-1793ca275502")
 	)
 	(label "SRAM_D12"
-		(at 309.88 73.66 0)
+		(at 309.88 76.2 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12218,7 +12197,7 @@
 		(uuid "e94a2177-fc27-436b-91cb-e2b8428229aa")
 	)
 	(label "SRAM_D28"
-		(at 309.88 96.52 0)
+		(at 309.88 149.86 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12229,18 +12208,18 @@
 		(uuid "ea6f6fd1-a03a-4917-bdcb-fed6eff17d66")
 	)
 	(label "A16"
-		(at 223.52 127 180)
+		(at 309.88 50.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "ec81543c-6d81-4583-9009-c3325e41f2db")
 	)
 	(label "SRAM_D21"
-		(at 66.04 52.07 180)
+		(at 66.04 49.53 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12262,7 +12241,7 @@
 		(uuid "ee5552a3-8630-4b63-96f7-36b2091dc2e8")
 	)
 	(label "SRAM_D3"
-		(at 309.88 165.1 0)
+		(at 309.88 127 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12273,7 +12252,7 @@
 		(uuid "efb9f4b9-4117-4838-85ed-f8bb8aaff566")
 	)
 	(label "R5"
-		(at 152.4 69.85 0)
+		(at 152.4 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12339,7 +12318,7 @@
 		(uuid "f6af8b33-f382-4f29-82fb-7cbd8243c72f")
 	)
 	(label "SRAM_D30"
-		(at 309.88 152.4 0)
+		(at 309.88 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12372,7 +12351,7 @@
 		(uuid "f8d302d3-303d-49e9-9e48-1a203d3c317a")
 	)
 	(label "A11"
-		(at 223.52 109.22 180)
+		(at 223.52 111.76 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12384,7 +12363,7 @@
 	)
 	(hierarchical_label "~{BLANK}"
 		(shape output)
-		(at 157.48 85.09 0)
+		(at 157.48 87.63 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12408,7 +12387,7 @@
 	)
 	(hierarchical_label "~{SRAM_LB1}"
 		(shape output)
-		(at 326.39 88.9 0)
+		(at 326.39 116.84 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12420,7 +12399,7 @@
 	)
 	(hierarchical_label "~{SRAM_CS}"
 		(shape output)
-		(at 325.12 134.62 0)
+		(at 325.12 177.8 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12432,7 +12411,7 @@
 	)
 	(hierarchical_label "~{REGCS}"
 		(shape input)
-		(at 325.12 137.16 0)
+		(at 325.12 147.32 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12444,7 +12423,7 @@
 	)
 	(hierarchical_label "VSYNC"
 		(shape output)
-		(at 157.48 176.53 0)
+		(at 157.48 179.07 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12489,18 +12468,6 @@
 			(justify left)
 		)
 		(uuid "31268ad4-bc55-445f-a49e-a2f14fd2773b")
-	)
-	(hierarchical_label "~{BUSEN}"
-		(shape output)
-		(at 214.63 83.82 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3299e137-b1d8-46a3-bfcb-6104fd7b6845")
 	)
 	(hierarchical_label "~{LDS}"
 		(shape input)
@@ -12600,13 +12567,13 @@
 	)
 	(hierarchical_label "DATA_DIR"
 		(shape output)
-		(at 157.48 153.67 0)
+		(at 217.17 83.82 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "8c082f3a-d681-4e68-8c49-ded5d0beb1c0")
 	)
@@ -12636,7 +12603,7 @@
 	)
 	(hierarchical_label "~{SRAM_UB0}"
 		(shape output)
-		(at 326.39 81.28 0)
+		(at 326.39 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12660,7 +12627,7 @@
 	)
 	(hierarchical_label "~{RESET}"
 		(shape input)
-		(at 326.39 86.36 0)
+		(at 326.39 106.68 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12672,7 +12639,7 @@
 	)
 	(hierarchical_label "~{SRAM_UB1}"
 		(shape output)
-		(at 325.12 116.84 0)
+		(at 325.12 88.9 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -12681,6 +12648,18 @@
 			(justify left)
 		)
 		(uuid "beaf910a-fc8f-4eab-8eb2-24ccb26cb021")
+	)
+	(hierarchical_label "~{BUSEN}"
+		(shape output)
+		(at 160.02 161.29 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c9931117-1bf3-4694-b56f-d773b0f1cf58")
 	)
 	(hierarchical_label "~{CPU_IRQ}"
 		(shape output)
@@ -12720,7 +12699,7 @@
 	)
 	(hierarchical_label "HSYNC"
 		(shape output)
-		(at 157.48 179.07 0)
+		(at 157.48 176.53 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
