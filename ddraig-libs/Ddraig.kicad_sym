@@ -10459,7 +10459,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Ddraig:DIN41612_C_3x32_Female_Vertical_THT"
+		(property "Footprint" "Ddraig:DIN41612_C_3x32_Male_Horizontal_THT"
 			(at 0 15.24 0)
 			(effects
 				(font
@@ -10477,7 +10477,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "DIN41612 C 96 Pin Female header for motherboard"
+		(property "Description" "DIN41612 C 96 Pin Male header for expansion boards"
 			(at 0 0 0)
 			(effects
 				(font
