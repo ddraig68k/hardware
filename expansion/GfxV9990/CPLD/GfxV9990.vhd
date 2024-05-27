@@ -31,18 +31,24 @@ architecture Behavioral of GfxV9990 is
     signal s_clkdiv         : std_logic;
     signal s_idsel         	: std_logic;
 	signal s_vdpsel			: std_logic;
+	signal s_prev_csreg		: std_logic;
+	signal s_prev_csdata	: std_logic;
 		
 begin
 
     dtack_gen : process(cpuclk_i, reset_i, csreg_i, csdata_i)
     begin
-        if reset_i = '0' or (csdata_i = '1' and csreg_i = '1') then
+        if reset_i = '0' or 
+			(csdata_i = '0' and s_prev_csdata = '1') or
+			(csreg_i = '0' and s_prev_csreg = '1') then
             s_dtackcount <= (others => '0');
         elsif rising_edge(cpuclk_i) then
             if s_dtackcount < "111" then
                 s_dtackcount <= s_dtackcount + 1;
             end if;
         end if;
+		s_prev_csreg	<= csreg_i;
+		s_prev_csdata	<= csdata_i;
     end process;
 
     led_flash : process (s_clkdiv, reset_i, csdata_i, csreg_i)

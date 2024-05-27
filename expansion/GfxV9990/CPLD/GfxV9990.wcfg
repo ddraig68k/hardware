@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="/home/steve/code/ddraig/hardware/expansion/GfxV9990/CPLD/tb_GfxV9990_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="/home/ise/Dev/ddraig/hardware/expansion/GfxV9990/CPLD/tb_GfxV9990_isim_beh.wdb" id="1" type="auto">
          <top_modules>
             <top_module name="numeric_std" />
             <top_module name="std_logic_1164" />
@@ -13,7 +13,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="19" />
+   <WVObjectSize size="20" />
    <wvobject fp_name="/tb_gfxv9990/addr_i" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">addr_i[7:1]</obj_property>
       <obj_property name="ObjectShortName">addr_i[7:1]</obj_property>
@@ -59,6 +59,11 @@
       <obj_property name="ObjectShortName">dtack_o</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="CustomSignalColor">#ffff00</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_gfxv9990/uut/s_dtackcount" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_dtackcount[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_dtackcount[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_gfxv9990/vdpw_o" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">vdpw_o</obj_property>
