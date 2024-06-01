@@ -18,6 +18,7 @@ entity GfxV9990 is
         vdpw_o      : out std_logic;
         vdpr_o      : out std_logic;
         dtack_o     : out std_logic;
+        dtack2_o     : out std_logic;
         led_o       : out std_logic
     );
 end GfxV9990;
@@ -33,6 +34,7 @@ architecture Behavioral of GfxV9990 is
 	signal s_vdpsel			: std_logic;
 	signal s_prev_csreg		: std_logic;
 	signal s_prev_csdata	: std_logic;
+	signal s_dtack			: std_logic := '1';
 		
 begin
 
@@ -74,11 +76,17 @@ begin
 	
 	VDP: entity work.VDPState
 		port map (
-			clk => cpuclk_i, reset => reset_i, vdpsel => s_vdpsel, rw => rw_i, vdpw => vdpw_o, vdpr => vdpr_o
+			clk => cpuclk_i, reset => reset_i, vdpsel => s_vdpsel, rw => rw_i, vdpw => vdpw_o, vdpr => vdpr_o, dtack => s_dtack
 		);
 		
     -- Generate DTACK signal
-    dtack_o <= '0' when s_dtackcount > "100" and (csdata_i = '0' or csreg_i = '0') and wait_i = '1' else '1';
+    --dtack_o <= '0' when s_dtackcount > "100" and (csdata_i = '0' or csreg_i = '0') else '1';
+    --dtack2_o <= '0' when s_dtackcount > "100" and (csdata_i = '0' or csreg_i = '0') else '1';
+    dtack_o <= '0' 
+			when  (s_dtackcount > "100" and csreg_i = '0' and s_idsel = '1')
+			or (s_dtackcount > "100" and csreg_i = '0' and s_vdpsel = '1' and s_dtack = '0')
+			else '1';
+    dtack2_o <= '0' when s_dtackcount > "100" and s_dtack = '0' else '1';
     
         -- Flash activity LED
     led_o <= '0' when s_ledtime < "11111111" else '1';
