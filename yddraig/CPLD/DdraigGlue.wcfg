@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="D:/Dev/Code/ddraig/DdraigGlue/tb_ddraig_glue_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="/home/ise/Dev/ddraig/hardware/yddraig/CPLD/tb_ddraig_glue_isim_beh.wdb" id="1" type="auto">
          <top_modules>
             <top_module name="numeric_std" />
             <top_module name="std_logic_1164" />
@@ -13,7 +13,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="44" />
+   <WVObjectSize size="39" />
    <wave_markers>
       <marker time="5837500000" label="" />
    </wave_markers>
@@ -128,6 +128,22 @@
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="CustomSignalColor">#00ffff</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_ddraig_glue/uut/cs_reg1_op" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs_reg1_op</obj_property>
+      <obj_property name="ObjectShortName">cs_reg1_op</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ddraig_glue/uut/cs_reg2_op" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs_reg2_op</obj_property>
+      <obj_property name="ObjectShortName">cs_reg2_op</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ddraig_glue/uut/cs_reg3_op" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs_reg3_op</obj_property>
+      <obj_property name="ObjectShortName">cs_reg3_op</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_ddraig_glue/uut/cs_reg4_op" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cs_reg4_op</obj_property>
+      <obj_property name="ObjectShortName">cs_reg4_op</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_ddraig_glue/vdp_wait" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">vdp_wait</obj_property>
       <obj_property name="ObjectShortName">vdp_wait</obj_property>
@@ -135,10 +151,6 @@
    <wvobject fp_name="/tb_ddraig_glue/cs_rtc" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">cs_rtc</obj_property>
       <obj_property name="ObjectShortName">cs_rtc</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_ddraig_glue/cs_ide" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">cs_ide</obj_property>
-      <obj_property name="ObjectShortName">cs_ide</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_ddraig_glue/uut/ide_wr_op" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">ide_wr_op</obj_property>
@@ -181,38 +193,6 @@
       <obj_property name="ObjectShortName">cas1</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="CustomSignalColor">#ffff00</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_ddraig_glue/uut/cs_id1_op" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">cs_id1_op</obj_property>
-      <obj_property name="ObjectShortName">cs_id1_op</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_ddraig_glue/uut/cs_id2_op" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">cs_id2_op</obj_property>
-      <obj_property name="ObjectShortName">cs_id2_op</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_ddraig_glue/uut/cs_id3_op" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">cs_id3_op</obj_property>
-      <obj_property name="ObjectShortName">cs_id3_op</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_ddraig_glue/uut/cs_id4_op" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">cs_id4_op</obj_property>
-      <obj_property name="ObjectShortName">cs_id4_op</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_ddraig_glue/uut/cs_ext1_op" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">cs_ext1_op</obj_property>
-      <obj_property name="ObjectShortName">cs_ext1_op</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_ddraig_glue/uut/cs_ext2_op" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">cs_ext2_op</obj_property>
-      <obj_property name="ObjectShortName">cs_ext2_op</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_ddraig_glue/uut/cs_ext3_op" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">cs_ext3_op</obj_property>
-      <obj_property name="ObjectShortName">cs_ext3_op</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb_ddraig_glue/uut/cs_ext4_op" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">cs_ext4_op</obj_property>
-      <obj_property name="ObjectShortName">cs_ext4_op</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_ddraig_glue/uut/ext_lds_op" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">ext_lds_op</obj_property>
