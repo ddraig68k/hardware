@@ -81,6 +81,7 @@
         "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -229,6 +230,10 @@
         },
         {
           "diameter": 0.4,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.45,
           "drill": 0.3
         },
         {
@@ -491,8 +496,8 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.09,
-        "via_diameter": 0.25,
-        "via_drill": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.4,
         "wire_width": 6
       },
       {
@@ -508,7 +513,7 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.102,
-        "via_diameter": 0.4,
+        "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 6
       },
@@ -1255,6 +1260,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
