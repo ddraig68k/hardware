@@ -3249,7 +3249,7 @@
 	)
 	(bus
 		(pts
-			(xy 243.84 96.52) (xy 243.84 102.87)
+			(xy 238.76 96.52) (xy 238.76 102.87)
 		)
 		(stroke
 			(width 0)
@@ -3329,7 +3329,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 81.28) (xy 242.57 81.28)
+			(xy 229.87 81.28) (xy 243.84 81.28)
 		)
 		(stroke
 			(width 0)
@@ -3337,19 +3337,9 @@
 		)
 		(uuid "0d737691-b80e-4338-962c-919657bf2dd1")
 	)
-	(wire
-		(pts
-			(xy 229.87 106.68) (xy 240.03 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0dcc42a9-54db-4604-b750-5db3ba427ebe")
-	)
 	(bus
 		(pts
-			(xy 246.38 97.79) (xy 247.65 97.79)
+			(xy 243.84 97.79) (xy 247.65 97.79)
 		)
 		(stroke
 			(width 0)
@@ -3369,7 +3359,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 124.46) (xy 193.04 107.95)
+			(xy 194.31 124.46) (xy 194.31 107.95)
 		)
 		(stroke
 			(width 0)
@@ -3439,7 +3429,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 100.33) (xy 242.57 100.33)
+			(xy 229.87 100.33) (xy 236.22 100.33)
 		)
 		(stroke
 			(width 0)
@@ -3509,16 +3499,6 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 86.36) (xy 245.11 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25e5a0b2-1823-4f7a-965c-0f36b164dae4")
-	)
-	(wire
-		(pts
 			(xy 91.44 88.9) (xy 106.68 88.9)
 		)
 		(stroke
@@ -3569,7 +3549,7 @@
 	)
 	(bus
 		(pts
-			(xy 246.38 91.44) (xy 246.38 97.79)
+			(xy 243.84 91.44) (xy 243.84 97.79)
 		)
 		(stroke
 			(width 0)
@@ -3589,17 +3569,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 106.68) (xy 240.03 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c987949-3e96-4701-b7bf-4658c929f488")
-	)
-	(wire
-		(pts
-			(xy 237.49 69.85) (xy 247.65 69.85)
+			(xy 236.22 69.85) (xy 247.65 69.85)
 		)
 		(stroke
 			(width 0)
@@ -3789,7 +3759,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 110.49) (xy 241.3 110.49)
+			(xy 247.65 110.49) (xy 233.68 110.49)
 		)
 		(stroke
 			(width 0)
@@ -3959,7 +3929,7 @@
 	)
 	(bus
 		(pts
-			(xy 245.11 100.33) (xy 247.65 100.33)
+			(xy 241.3 100.33) (xy 247.65 100.33)
 		)
 		(stroke
 			(width 0)
@@ -3989,7 +3959,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 81.28) (xy 242.57 77.47)
+			(xy 243.84 81.28) (xy 243.84 77.47)
 		)
 		(stroke
 			(width 0)
@@ -4049,7 +4019,7 @@
 	)
 	(bus
 		(pts
-			(xy 245.11 100.33) (xy 245.11 93.98)
+			(xy 241.3 100.33) (xy 241.3 93.98)
 		)
 		(stroke
 			(width 0)
@@ -4119,16 +4089,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 118.11) (xy 247.65 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5cb4ffe9-0a2c-470d-bb5b-2f5e325e9b73")
-	)
-	(wire
-		(pts
 			(xy 224.79 43.18) (xy 237.49 43.18)
 		)
 		(stroke
@@ -4159,7 +4119,7 @@
 	)
 	(bus
 		(pts
-			(xy 229.87 91.44) (xy 246.38 91.44)
+			(xy 229.87 91.44) (xy 243.84 91.44)
 		)
 		(stroke
 			(width 0)
@@ -4339,16 +4299,6 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 109.22) (xy 238.76 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72a60773-fb53-48f9-a0c1-b7662530b9c6")
-	)
-	(wire
-		(pts
 			(xy 184.15 139.7) (xy 196.85 139.7)
 		)
 		(stroke
@@ -4389,7 +4339,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 124.46) (xy 193.04 124.46)
+			(xy 187.96 124.46) (xy 194.31 124.46)
 		)
 		(stroke
 			(width 0)
@@ -4406,16 +4356,6 @@
 			(type default)
 		)
 		(uuid "79c5e425-33f6-43ef-b680-6b245655e7b0")
-	)
-	(wire
-		(pts
-			(xy 243.84 83.82) (xy 229.87 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d00f39c-70ce-4a3b-ad70-bdf1693e64de")
 	)
 	(wire
 		(pts
@@ -4539,7 +4479,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 72.39) (xy 247.65 72.39)
+			(xy 238.76 72.39) (xy 247.65 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4599,16 +4539,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 109.22) (xy 238.76 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "986f78bc-632a-4725-81f2-02d794445cf9")
-	)
-	(wire
-		(pts
 			(xy 180.34 82.55) (xy 198.12 82.55)
 		)
 		(stroke
@@ -4636,16 +4566,6 @@
 			(type default)
 		)
 		(uuid "9b5ea0b5-02b9-4645-b269-653fdf6a3767")
-	)
-	(wire
-		(pts
-			(xy 243.84 80.01) (xy 243.84 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9c9c5209-1300-4f6c-a6e4-43ed97a0b554")
 	)
 	(wire
 		(pts
@@ -4689,7 +4609,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 73.66) (xy 237.49 69.85)
+			(xy 236.22 73.66) (xy 236.22 69.85)
 		)
 		(stroke
 			(width 0)
@@ -4699,7 +4619,7 @@
 	)
 	(bus
 		(pts
-			(xy 245.11 93.98) (xy 229.87 93.98)
+			(xy 241.3 93.98) (xy 229.87 93.98)
 		)
 		(stroke
 			(width 0)
@@ -4729,7 +4649,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 100.33) (xy 242.57 107.95)
+			(xy 236.22 100.33) (xy 236.22 107.95)
 		)
 		(stroke
 			(width 0)
@@ -4759,7 +4679,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 73.66) (xy 237.49 73.66)
+			(xy 229.87 73.66) (xy 236.22 73.66)
 		)
 		(stroke
 			(width 0)
@@ -4769,23 +4689,13 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 102.87) (xy 229.87 102.87)
+			(xy 233.68 102.87) (xy 229.87 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b3ae7044-bd7d-4dd8-8c66-eeb04796c58c")
-	)
-	(wire
-		(pts
-			(xy 247.65 80.01) (xy 243.84 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b40cc76d-f5fe-491e-b986-54258392968d")
 	)
 	(bus
 		(pts
@@ -4967,16 +4877,6 @@
 		)
 		(uuid "c6726722-be52-4224-bbab-8448ca91ef48")
 	)
-	(wire
-		(pts
-			(xy 240.03 115.57) (xy 247.65 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c67597d6-295f-4977-a746-7defdd8bf90a")
-	)
 	(bus
 		(pts
 			(xy 198.12 68.58) (xy 180.34 68.58)
@@ -5049,17 +4949,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 72.39) (xy 198.12 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd203abb-073a-46f6-9674-c0219cdcaec2")
-	)
-	(wire
-		(pts
-			(xy 240.03 76.2) (xy 240.03 72.39)
+			(xy 238.76 76.2) (xy 238.76 72.39)
 		)
 		(stroke
 			(width 0)
@@ -5089,7 +4979,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 76.2) (xy 240.03 76.2)
+			(xy 229.87 76.2) (xy 238.76 76.2)
 		)
 		(stroke
 			(width 0)
@@ -5129,16 +5019,6 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 86.36) (xy 245.11 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d49f957b-b47f-4199-b2e6-005a985d3613")
-	)
-	(wire
-		(pts
 			(xy 149.86 173.99) (xy 149.86 171.45)
 		)
 		(stroke
@@ -5159,7 +5039,7 @@
 	)
 	(bus
 		(pts
-			(xy 229.87 96.52) (xy 243.84 96.52)
+			(xy 229.87 96.52) (xy 238.76 96.52)
 		)
 		(stroke
 			(width 0)
@@ -5179,7 +5059,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 110.49) (xy 241.3 102.87)
+			(xy 233.68 110.49) (xy 233.68 102.87)
 		)
 		(stroke
 			(width 0)
@@ -5189,7 +5069,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 107.95) (xy 247.65 107.95)
+			(xy 236.22 107.95) (xy 247.65 107.95)
 		)
 		(stroke
 			(width 0)
@@ -5347,19 +5227,9 @@
 		)
 		(uuid "e2fe5205-1196-4419-b2c8-691973e4994f")
 	)
-	(wire
-		(pts
-			(xy 245.11 82.55) (xy 247.65 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4e8c8cc-b946-4b4e-96a5-b0fc6e6504d1")
-	)
 	(bus
 		(pts
-			(xy 243.84 102.87) (xy 247.65 102.87)
+			(xy 238.76 102.87) (xy 247.65 102.87)
 		)
 		(stroke
 			(width 0)
@@ -5419,7 +5289,7 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 77.47) (xy 247.65 77.47)
+			(xy 243.84 77.47) (xy 247.65 77.47)
 		)
 		(stroke
 			(width 0)
@@ -5489,7 +5359,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 107.95) (xy 198.12 107.95)
+			(xy 194.31 107.95) (xy 198.12 107.95)
 		)
 		(stroke
 			(width 0)
@@ -9028,16 +8898,6 @@
 			)
 			(uuid "a23786c9-b9de-48f0-942e-0a5c7327be6d")
 		)
-		(pin "A[1..19]" output
-			(at 180.34 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "a586c989-7a0a-438c-ac42-d452ffad0627")
-		)
 		(pin "D[0..15]" bidirectional
 			(at 180.34 68.58 0)
 			(effects
@@ -9228,18 +9088,8 @@
 			)
 			(uuid "3bf1e60c-456b-4735-a37d-a3056217260b")
 		)
-		(pin "~{BUSEN}" input
-			(at 180.34 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "7caac760-8a28-49db-809c-72c9193bbfb2")
-		)
 		(instances
-			(project "GfxFPGAS3"
+			(project "GfxFPGA"
 				(path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1"
 					(page "3")
 				)
@@ -9286,7 +9136,7 @@
 			)
 			(uuid "df585e67-f2f1-4ba0-acf4-b5d44c5a84d4")
 		)
-		(pin "R[0..7]" output
+		(pin "R[0..4]" output
 			(at 229.87 91.44 0)
 			(effects
 				(font
@@ -9296,7 +9146,7 @@
 			)
 			(uuid "f8f86ca7-36a5-43b8-8a2f-3464f559ed67")
 		)
-		(pin "G[0..7]" output
+		(pin "G[0..5]" output
 			(at 229.87 93.98 0)
 			(effects
 				(font
@@ -9306,7 +9156,7 @@
 			)
 			(uuid "d18c47a6-5708-433b-8cb6-49fc196d5fb2")
 		)
-		(pin "B[0..7]" output
+		(pin "B[0..4]" output
 			(at 229.87 96.52 0)
 			(effects
 				(font
@@ -9315,16 +9165,6 @@
 				(justify right)
 			)
 			(uuid "381017f2-acb2-44ac-a109-ae270aab30cf")
-		)
-		(pin "A[1..19]" output
-			(at 198.12 66.04 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "37334781-4e7a-4aa2-a82b-57890d68f242")
 		)
 		(pin "D[0..15]" bidirectional
 			(at 198.12 68.58 180)
@@ -9416,7 +9256,7 @@
 			)
 			(uuid "061370a3-a1b8-4d4b-a8ae-d06df8b62fe8")
 		)
-		(pin "SRAM_D[0..31]" bidirectional
+		(pin "SRAM_D[0..15]" bidirectional
 			(at 229.87 66.04 0)
 			(effects
 				(font
@@ -9445,26 +9285,6 @@
 				(justify right)
 			)
 			(uuid "1e1f260a-8144-43d8-884f-9b43869b0e40")
-		)
-		(pin "~{BLANK}" output
-			(at 229.87 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "f8650c1a-6b55-42b8-9d34-2ce1bba34ca8")
-		)
-		(pin "PIXELCLOCK" output
-			(at 229.87 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "5af88697-1f2a-40f1-8030-243b50a83d7c")
 		)
 		(pin "~{CPU_DTACK}" output
 			(at 198.12 107.95 180)
@@ -9506,7 +9326,7 @@
 			)
 			(uuid "6e09c8b1-bb90-438a-8557-92025c256eb4")
 		)
-		(pin "~{SRAM_UB0}" output
+		(pin "~{SRAM_UB}" output
 			(at 229.87 78.74 0)
 			(effects
 				(font
@@ -9516,17 +9336,7 @@
 			)
 			(uuid "b3845bcd-4924-4675-9d32-7b39e381b9d7")
 		)
-		(pin "~{SRAM_UB1}" output
-			(at 229.87 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "ef051566-0dbe-4255-a6f7-577c516670f1")
-		)
-		(pin "~{SRAM_LB0}" output
+		(pin "~{SRAM_LB}" output
 			(at 229.87 81.28 0)
 			(effects
 				(font
@@ -9535,16 +9345,6 @@
 				(justify right)
 			)
 			(uuid "25e40bd4-9151-424e-b600-56b764003765")
-		)
-		(pin "~{SRAM_LB1}" output
-			(at 229.87 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "56538cdc-6000-4692-9ba3-aea04679dfe6")
 		)
 		(pin "DATA_DIR" output
 			(at 198.12 74.93 180)
@@ -9555,16 +9355,6 @@
 				(justify left)
 			)
 			(uuid "66efb0ee-0ceb-4a5f-86f2-829c3694a867")
-		)
-		(pin "~{BUSEN}" output
-			(at 198.12 72.39 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "82612912-7966-416a-8641-e5782e63da69")
 		)
 		(pin "~{CPU_DATAEN}" output
 			(at 198.12 77.47 180)
@@ -9577,7 +9367,7 @@
 			(uuid "6714d9de-e41b-4660-99b7-65df329238ac")
 		)
 		(instances
-			(project "GfxFPGAS3"
+			(project "GfxFPGA"
 				(path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1"
 					(page "2")
 				)
@@ -9644,7 +9434,7 @@
 			)
 			(uuid "509a4a83-355e-4ad8-bd75-901d9ab27435")
 		)
-		(pin "SRAM_D[0..31]" bidirectional
+		(pin "SRAM_D[0..15]" bidirectional
 			(at 247.65 58.42 180)
 			(effects
 				(font
@@ -9654,7 +9444,7 @@
 			)
 			(uuid "f6795e40-35a4-4b98-962d-2b468edf07bf")
 		)
-		(pin "~{SRAM_UB0}" input
+		(pin "~{SRAM_UB}" input
 			(at 247.65 74.93 180)
 			(effects
 				(font
@@ -9664,7 +9454,7 @@
 			)
 			(uuid "ece1b148-8d2c-47aa-a8be-9bfbcbf4327a")
 		)
-		(pin "~{SRAM_LB0}" input
+		(pin "~{SRAM_LB}" input
 			(at 247.65 77.47 180)
 			(effects
 				(font
@@ -9674,28 +9464,8 @@
 			)
 			(uuid "5082da91-f315-4688-ad76-1df485e21731")
 		)
-		(pin "~{SRAM_UB1}" input
-			(at 247.65 80.01 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "25391a9b-faef-4f4a-b191-56ffec188a38")
-		)
-		(pin "~{SRAM_LB1}" input
-			(at 247.65 82.55 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "5f553965-e73b-4e56-affb-6df5f32dd6d9")
-		)
 		(instances
-			(project "GfxFPGAS3"
+			(project "GfxFPGA"
 				(path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1"
 					(page "4")
 				)
@@ -9732,7 +9502,7 @@
 				(justify left top)
 			)
 		)
-		(pin "R[0..7]" input
+		(pin "R[0..4]" input
 			(at 247.65 97.79 180)
 			(effects
 				(font
@@ -9742,7 +9512,7 @@
 			)
 			(uuid "c2f59777-55b1-40e4-aa94-ef12e0a8bb53")
 		)
-		(pin "G[0..7]" input
+		(pin "G[0..5]" input
 			(at 247.65 100.33 180)
 			(effects
 				(font
@@ -9752,7 +9522,7 @@
 			)
 			(uuid "2da2f1d8-b31b-4c08-a01f-ea871d022b42")
 		)
-		(pin "B[0..7]" input
+		(pin "B[0..4]" input
 			(at 247.65 102.87 180)
 			(effects
 				(font
@@ -9782,28 +9552,8 @@
 			)
 			(uuid "37435194-509c-48d4-8b5c-44add3bf8997")
 		)
-		(pin "~{BLANK}" input
-			(at 247.65 115.57 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "72ad5c6c-4b8e-4428-a690-258fd8e9b421")
-		)
-		(pin "PIXELCLOCK" input
-			(at 247.65 118.11 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "e933c19c-e1c6-455c-8b40-4602103ddc8e")
-		)
 		(instances
-			(project "GfxFPGAS3"
+			(project "GfxFPGA"
 				(path "/7f4dcd4b-5a0f-4286-be55-fb97a9d8d7a1"
 					(page "5")
 				)
