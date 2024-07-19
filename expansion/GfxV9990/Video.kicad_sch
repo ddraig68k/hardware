@@ -597,326 +597,6 @@
 				)
 			)
 		)
-		(symbol "Connector:Mini-DIN-4"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Mini-DIN-4"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "4-pin Mini-DIN connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Mini-DIN"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "MINI?DIN*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Mini-DIN-4_0_1"
-				(circle
-					(center -3.302 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.048 -4.064)
-					(mid 0 -5.08)
-					(end 3.048 -4.064)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -2.032 2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 -3.556)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(arc
-					(start -1.016 5.08)
-					(mid -4.6243 2.1181)
-					(end -4.318 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 0) (xy -5.08 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 2.54) (xy -5.08 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 2.54) (xy 5.08 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 0) (xy 3.81 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -4.318 -2.54) (xy -3.048 -2.54) (xy -3.048 -4.064)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.318 -2.54) (xy 3.048 -2.54) (xy 3.048 -4.064)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 5.08) (xy -1.016 4.064) (xy 1.016 4.064) (xy 1.016 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.286 2.54)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 3.302 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 4.318 -2.54)
-					(mid 4.6646 2.1357)
-					(end 1.016 5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Mini-DIN-4_1_1"
-				(pin passive line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Connector:Mini-DIN-8"
 			(pin_names
 				(offset 1.016)
@@ -3294,12 +2974,6 @@
 		(uuid "e12ade00-e905-484f-9e1c-372fb091d347")
 	)
 	(junction
-		(at 252.73 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "efdad2b4-cd57-4c95-97e8-5b864f2cd9b4")
-	)
-	(junction
 		(at 113.03 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3363,7 +3037,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 90.17) (xy 261.62 90.17)
+			(xy 265.43 68.58) (xy 260.35 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3393,7 +3067,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 92.71) (xy 241.3 92.71)
+			(xy 245.11 71.12) (xy 240.03 71.12)
 		)
 		(stroke
 			(width 0)
@@ -3423,23 +3097,13 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 90.17) (xy 243.84 90.17)
+			(xy 245.11 68.58) (xy 242.57 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "16184c5a-1601-443e-9a27-5ae798921846")
-	)
-	(wire
-		(pts
-			(xy 252.73 64.77) (xy 252.73 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1638557b-2a3b-473d-b080-64ceadac0ccb")
 	)
 	(wire
 		(pts
@@ -3553,26 +3217,6 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 53.34) (xy 241.3 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22e286e9-1a8f-4b63-932e-f4bcc19034f4")
-	)
-	(wire
-		(pts
-			(xy 242.57 63.5) (xy 242.57 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2512ed69-5e22-469f-b6e4-05bde574edc0")
-	)
-	(wire
-		(pts
 			(xy 86.36 33.02) (xy 76.2 33.02)
 		)
 		(stroke
@@ -3653,7 +3297,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 80.01) (xy 254 80.01)
+			(xy 255.27 58.42) (xy 252.73 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3713,7 +3357,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 87.63) (xy 241.3 87.63)
+			(xy 245.11 66.04) (xy 240.03 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3743,16 +3387,6 @@
 	)
 	(wire
 		(pts
-			(xy 264.16 53.34) (xy 260.35 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4891aa52-667f-441a-8147-b53e24a0b85b")
-	)
-	(wire
-		(pts
 			(xy 62.23 54.61) (xy 62.23 57.15)
 		)
 		(stroke
@@ -3760,16 +3394,6 @@
 			(type default)
 		)
 		(uuid "48a4c7cd-1494-4093-ac1f-b5eb33bdbf6b")
-	)
-	(wire
-		(pts
-			(xy 260.35 55.88) (xy 262.89 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "48b42ad5-3e9b-43c0-b1ae-55e88848ad0c")
 	)
 	(wire
 		(pts
@@ -3873,7 +3497,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 90.17) (xy 243.84 85.09)
+			(xy 242.57 68.58) (xy 242.57 63.5)
 		)
 		(stroke
 			(width 0)
@@ -3953,16 +3577,6 @@
 	)
 	(wire
 		(pts
-			(xy 262.89 63.5) (xy 252.73 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "662bd7a3-fce2-4eaf-8f51-1997a34c61fb")
-	)
-	(wire
-		(pts
 			(xy 125.73 62.23) (xy 144.78 62.23)
 		)
 		(stroke
@@ -4013,16 +3627,6 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 63.5) (xy 242.57 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7008e450-fdbf-46ba-83e4-55d789935df1")
-	)
-	(wire
-		(pts
 			(xy 129.54 175.26) (xy 132.08 175.26)
 		)
 		(stroke
@@ -4043,7 +3647,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 87.63) (xy 266.7 87.63)
+			(xy 260.35 66.04) (xy 265.43 66.04)
 		)
 		(stroke
 			(width 0)
@@ -4223,16 +3827,6 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 55.88) (xy 245.11 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f0fb750-2457-488d-b397-47de06dfcb55")
-	)
-	(wire
-		(pts
 			(xy 204.47 127) (xy 201.93 127)
 		)
 		(stroke
@@ -4270,16 +3864,6 @@
 			(type default)
 		)
 		(uuid "962b8d06-25e7-451a-8083-5cc6ca6a9fde")
-	)
-	(wire
-		(pts
-			(xy 262.89 55.88) (xy 262.89 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "971b1ac6-1f89-4445-b710-4d5346d60a23")
 	)
 	(wire
 		(pts
@@ -4373,7 +3957,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 80.01) (xy 254 82.55)
+			(xy 252.73 58.42) (xy 252.73 60.96)
 		)
 		(stroke
 			(width 0)
@@ -4433,7 +4017,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 92.71) (xy 266.7 92.71)
+			(xy 260.35 71.12) (xy 265.43 71.12)
 		)
 		(stroke
 			(width 0)
@@ -4673,7 +4257,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 97.79) (xy 254 100.33)
+			(xy 252.73 76.2) (xy 252.73 78.74)
 		)
 		(stroke
 			(width 0)
@@ -4774,7 +4358,7 @@
 		(uuid "194ce435-2313-4bb4-ad1f-90a9803ddade")
 	)
 	(label "AUDIO_R"
-		(at 241.3 92.71 180)
+		(at 240.03 71.12 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4807,7 +4391,7 @@
 		(uuid "4ef653ec-f01b-4c08-a4e5-f78c16509b64")
 	)
 	(label "ROUT"
-		(at 241.3 87.63 180)
+		(at 240.03 66.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4828,19 +4412,8 @@
 		)
 		(uuid "68827bb6-acb2-436c-af3c-9f620988aa85")
 	)
-	(label "COUT"
-		(at 241.3 53.34 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "68e1dfb7-186e-4d3f-87ec-19ee44feb642")
-	)
 	(label "AUDIO_L"
-		(at 266.7 92.71 0)
+		(at 265.43 71.12 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4851,7 +4424,7 @@
 		(uuid "72bf4f86-de7a-4386-ac0c-3779e8b15d43")
 	)
 	(label "GOUT"
-		(at 256.54 80.01 0)
+		(at 255.27 58.42 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4895,7 +4468,7 @@
 		(uuid "a4dbacdc-89e3-411b-ab67-bb83939499e9")
 	)
 	(label "SYNCOUT"
-		(at 266.7 90.17 0)
+		(at 265.43 68.58 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4906,7 +4479,7 @@
 		(uuid "a5628d3a-598b-48a0-bf68-1e315fe4c0ea")
 	)
 	(label "BOUT"
-		(at 266.7 87.63 0)
+		(at 265.43 66.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4926,17 +4499,6 @@
 			(justify left bottom)
 		)
 		(uuid "c1e07ec5-fb07-4d2a-81b5-2ea12352fa4e")
-	)
-	(label "YOUT"
-		(at 264.16 53.34 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "edeab117-9934-4cb6-820f-70e1d2924721")
 	)
 	(label "AUDIO_L"
 		(at 247.65 124.46 180)
@@ -5296,7 +4858,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Mini-DIN-8")
-		(at 254 90.17 0)
+		(at 252.73 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5304,7 +4866,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060f9e003")
 		(property "Reference" "J5"
-			(at 247.65 96.52 0)
+			(at 246.38 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5312,7 +4874,7 @@
 			)
 		)
 		(property "Value" "RGB Video"
-			(at 261.62 96.52 0)
+			(at 260.35 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5320,7 +4882,7 @@
 			)
 		)
 		(property "Footprint" "Ddraig:MINI-DIN-8-TE_57492681"
-			(at 253.746 90.424 90)
+			(at 252.476 68.834 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5329,7 +4891,7 @@
 			)
 		)
 		(property "Datasheet" "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf"
-			(at 253.746 90.424 90)
+			(at 252.476 68.834 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5338,7 +4900,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 254 90.17 0)
+			(at 252.73 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5381,7 +4943,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 243.84 85.09 0)
+		(at 242.57 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5389,7 +4951,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060f9e00b")
 		(property "Reference" "#PWR030"
-			(at 243.84 88.9 0)
+			(at 242.57 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5398,7 +4960,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 244.221 80.6958 0)
+			(at 242.951 59.1058 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5406,7 +4968,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 243.84 85.09 0)
+			(at 242.57 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5415,7 +4977,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 243.84 85.09 0)
+			(at 242.57 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5424,7 +4986,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 243.84 85.09 0)
+			(at 242.57 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8649,144 +8211,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Mini-DIN-4")
-		(at 252.73 55.88 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-000060f9e19e")
-		(property "Reference" "J3"
-			(at 252.73 46.5582 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "S-Video"
-			(at 252.73 48.8696 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Ddraig:MINI-DIN-4-TE_5749181-1"
-			(at 252.73 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf"
-			(at 252.73 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 252.73 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4adc27cb-bed7-49a0-b78f-190e99b0692e")
-		)
-		(pin "2"
-			(uuid "55290846-55ce-4f54-86ca-2002cf5af0b0")
-		)
-		(pin "3"
-			(uuid "36fadc0b-84f4-4d3b-a3f4-bdccabbd1415")
-		)
-		(pin "4"
-			(uuid "0ae4fcc4-8305-4ccd-ac86-13f7cd68da94")
-		)
-		(instances
-			(project "GfxV9990"
-				(path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4/00000000-0000-0000-0000-000060f8dea9"
-					(reference "J3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 252.73 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-000060f9e1a4")
-		(property "Reference" "#PWR031"
-			(at 252.73 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 252.857 69.1642 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 252.73 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 252.73 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 252.73 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "54abb1ab-cd3c-4a1a-894a-eea94636a93f")
-		)
-		(instances
-			(project "GfxV9990"
-				(path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4/00000000-0000-0000-0000-000060f8dea9"
-					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_Coaxial")
 		(at 254 24.13 0)
 		(unit 1)
@@ -9037,7 +8461,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 254 100.33 0)
+		(at 252.73 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9045,7 +8469,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060f9e1cf")
 		(property "Reference" "#PWR033"
-			(at 254 106.68 0)
+			(at 252.73 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9054,7 +8478,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 254.127 104.7242 0)
+			(at 252.857 83.1342 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9062,7 +8486,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 254 100.33 0)
+			(at 252.73 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9071,7 +8495,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254 100.33 0)
+			(at 252.73 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9080,7 +8504,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 254 100.33 0)
+			(at 252.73 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
