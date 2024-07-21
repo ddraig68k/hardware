@@ -1329,6 +1329,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -1487,6 +1488,10 @@
     [
       "00000000-0000-0000-0000-0000619d3c4f",
       "VideoOut"
+    ],
+    [
+      "ae4fb992-1b6a-42a3-802b-8b8aa9b5327e",
+      "IDE Interface"
     ]
   ],
   "text_variables": {}

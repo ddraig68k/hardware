@@ -7355,7 +7355,7 @@
 		)
 		(uuid "708262c0-9e2b-4488-8561-9488a284e879")
 	)
-	(hierarchical_label "~{IRQ_KBD}"
+	(hierarchical_label "IRQ_KBD"
 		(shape output)
 		(at 257.81 101.6 0)
 		(fields_autoplaced yes)

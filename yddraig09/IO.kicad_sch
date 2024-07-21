@@ -3246,12 +3246,6 @@
 		(uuid "915027df-790c-4f8b-9069-4f098239f6b3")
 	)
 	(junction
-		(at 199.39 167.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a2cf3881-945a-4d27-9d22-072d116914ad")
-	)
-	(junction
 		(at 52.07 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3306,10 +3300,6 @@
 	(no_connect
 		(at 93.98 77.47)
 		(uuid "265f7b78-34f9-4572-a92e-d11aeccd6643")
-	)
-	(no_connect
-		(at 182.88 167.64)
-		(uuid "595b6cf7-0d77-4df5-aa87-143d7e8f3d76")
 	)
 	(no_connect
 		(at 215.9 167.64)
@@ -3752,6 +3742,16 @@
 			(type default)
 		)
 		(uuid "2092199d-a4f3-4bc8-9e2c-943a7d08fe5f")
+	)
+	(wire
+		(pts
+			(xy 245.11 120.65) (xy 247.65 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23608d3c-9c3d-444c-a103-52e835562f7d")
 	)
 	(bus
 		(pts
@@ -4452,6 +4452,16 @@
 			(type default)
 		)
 		(uuid "86915a95-a2e0-4d6d-889b-7638c602196a")
+	)
+	(wire
+		(pts
+			(xy 227.33 120.65) (xy 229.87 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "878ac320-6df0-48f6-8261-617495d4a477")
 	)
 	(bus
 		(pts
@@ -5255,16 +5265,6 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 167.64) (xy 198.12 167.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa705d95-0e6a-4db6-9228-a93e30960d9a")
-	)
-	(wire
-		(pts
 			(xy 229.87 57.15) (xy 247.65 57.15)
 		)
 		(stroke
@@ -5791,6 +5791,30 @@
 			(justify right)
 		)
 		(uuid "71a8bc4e-e9c7-40d6-973b-71bc1a42e4bc")
+	)
+	(hierarchical_label "~{KBD_INT}"
+		(shape output)
+		(at 247.65 120.65 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "85022c58-6334-481f-813a-479116f26f9c")
+	)
+	(hierarchical_label "KBD_INT"
+		(shape input)
+		(at 227.33 120.65 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8d7b25b9-0d42-4f12-beec-43a97a376ee0")
 	)
 	(hierarchical_label "~{WR}"
 		(shape input)
@@ -6566,8 +6590,7 @@
 	)
 	(symbol
 		(lib_id "74xx:74LS06")
-		(at 190.5 167.64 0)
-		(mirror y)
+		(at 237.49 120.65 0)
 		(unit 6)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6575,7 +6598,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000613fb7e9")
 		(property "Reference" "U16"
-			(at 190.5 159.5882 0)
+			(at 237.49 112.5982 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6583,7 +6606,7 @@
 			)
 		)
 		(property "Value" "74LS06"
-			(at 190.5 161.8996 0)
+			(at 237.49 114.9096 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6591,7 +6614,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-14_W7.62mm_Socket"
-			(at 190.5 167.64 0)
+			(at 237.49 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6600,7 +6623,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/sn74LS06"
-			(at 190.5 167.64 0)
+			(at 237.49 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6609,7 +6632,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 190.5 167.64 0)
+			(at 237.49 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
