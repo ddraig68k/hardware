@@ -2044,9 +2044,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2144,8 +2144,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2164,9 +2164,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2240,8 +2240,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -8340,7 +8340,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "64K x 4 DRAM"
 			(at 57.15 45.72 0)
 			(effects
 				(font
@@ -8456,7 +8456,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 57.15 22.86 0)
 			(effects
 				(font
@@ -8521,7 +8521,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 57.15 68.58 0)
 			(effects
 				(font
@@ -8586,7 +8586,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 45.72 63.5 0)
 			(effects
 				(font
@@ -8650,7 +8650,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "64K x 4 DRAM"
 			(at 113.03 45.72 0)
 			(effects
 				(font
@@ -8766,7 +8766,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 113.03 22.86 0)
 			(effects
 				(font
@@ -8831,7 +8831,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 113.03 68.58 0)
 			(effects
 				(font
@@ -8896,7 +8896,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 101.6 63.5 0)
 			(effects
 				(font
@@ -8960,7 +8960,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "64K x 4 DRAM"
 			(at 57.15 105.41 0)
 			(effects
 				(font
@@ -9076,7 +9076,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 57.15 82.55 0)
 			(effects
 				(font
@@ -9141,7 +9141,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 57.15 128.27 0)
 			(effects
 				(font
@@ -9206,7 +9206,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 45.72 123.19 0)
 			(effects
 				(font
@@ -9270,7 +9270,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "64K x 4 DRAM"
 			(at 113.03 105.41 0)
 			(effects
 				(font
@@ -9386,7 +9386,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 113.03 82.55 0)
 			(effects
 				(font
@@ -9451,7 +9451,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 113.03 128.27 0)
 			(effects
 				(font
@@ -9516,7 +9516,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 101.6 123.19 0)
 			(effects
 				(font
@@ -9580,7 +9580,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "64K x 4 DRAM"
 			(at 57.15 165.1 0)
 			(effects
 				(font
@@ -9696,7 +9696,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 57.15 142.24 0)
 			(effects
 				(font
@@ -9761,7 +9761,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 57.15 187.96 0)
 			(effects
 				(font
@@ -9826,7 +9826,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 45.72 182.88 0)
 			(effects
 				(font
@@ -9890,7 +9890,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "64K x 4 DRAM"
 			(at 113.03 165.1 0)
 			(effects
 				(font
@@ -10006,7 +10006,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 113.03 142.24 0)
 			(effects
 				(font
@@ -10071,7 +10071,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 113.03 187.96 0)
 			(effects
 				(font
@@ -10136,7 +10136,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 101.6 182.88 0)
 			(effects
 				(font
@@ -10201,7 +10201,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 240.03 147.32 0)
 			(effects
 				(font
@@ -10266,7 +10266,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 220.98 147.32 0)
 			(effects
 				(font
@@ -10332,7 +10332,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 240.03 139.7 0)
 			(effects
 				(font
@@ -10400,7 +10400,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 220.98 24.13 0)
 			(effects
 				(font
@@ -10466,7 +10466,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 158.75 166.37 0)
 			(effects
 				(font
@@ -10535,7 +10535,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 171.45 166.37 0)
 			(effects
 				(font
@@ -10604,7 +10604,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 184.15 166.37 0)
 			(effects
 				(font
@@ -10673,7 +10673,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 196.85 166.37 0)
 			(effects
 				(font
@@ -10741,7 +10741,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 177.8 158.75 0)
 			(effects
 				(font
@@ -10806,7 +10806,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 177.8 173.99 0)
 			(effects
 				(font
@@ -10872,7 +10872,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 212.09 166.37 0)
 			(effects
 				(font
@@ -10941,7 +10941,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 224.79 166.37 0)
 			(effects
 				(font
@@ -11010,7 +11010,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 237.49 166.37 0)
 			(effects
 				(font
@@ -11079,7 +11079,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 250.19 166.37 0)
 			(effects
 				(font
@@ -11147,7 +11147,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 231.14 158.75 0)
 			(effects
 				(font
@@ -11212,7 +11212,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 231.14 173.99 0)
 			(effects
 				(font
@@ -11531,7 +11531,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 201.93 140.97 0)
 			(effects
 				(font
@@ -11600,7 +11600,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 194.31 140.97 0)
 			(effects
 				(font
@@ -11668,7 +11668,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 189.23 144.78 0)
 			(effects
 				(font
@@ -11732,7 +11732,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 163.83 105.41 0)
 			(effects
 				(font
@@ -11801,7 +11801,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Two pin crystal"
 			(at 171.45 111.76 0)
 			(effects
 				(font
@@ -11868,7 +11868,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 163.83 118.11 0)
 			(effects
 				(font
@@ -11936,7 +11936,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 156.21 120.65 0)
 			(effects
 				(font

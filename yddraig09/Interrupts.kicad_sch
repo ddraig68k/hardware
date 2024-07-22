@@ -198,7 +198,7 @@
 				)
 				(arc
 					(start -0.6096 -3.81)
-					(mid 2.1855 -2.584)
+					(mid 2.1842 -2.5851)
 					(end 3.81 0)
 					(stroke
 						(width 0.254)
@@ -248,7 +248,7 @@
 				)
 				(arc
 					(start 3.81 0)
-					(mid 2.1928 2.5925)
+					(mid 2.1915 2.5936)
 					(end -0.6096 3.81)
 					(stroke
 						(width 0.254)
@@ -444,7 +444,7 @@
 				)
 				(arc
 					(start -0.6096 -3.81)
-					(mid 2.1855 -2.584)
+					(mid 2.1842 -2.5851)
 					(end 3.81 0)
 					(stroke
 						(width 0.254)
@@ -494,7 +494,7 @@
 				)
 				(arc
 					(start 3.81 0)
-					(mid 2.1928 2.5925)
+					(mid 2.1915 2.5936)
 					(end -0.6096 3.81)
 					(stroke
 						(width 0.254)
@@ -690,7 +690,7 @@
 				)
 				(arc
 					(start -0.6096 -3.81)
-					(mid 2.1855 -2.584)
+					(mid 2.1842 -2.5851)
 					(end 3.81 0)
 					(stroke
 						(width 0.254)
@@ -740,7 +740,7 @@
 				)
 				(arc
 					(start 3.81 0)
-					(mid 2.1928 2.5925)
+					(mid 2.1915 2.5936)
 					(end -0.6096 3.81)
 					(stroke
 						(width 0.254)
@@ -1328,7 +1328,7 @@
 				)
 				(arc
 					(start -0.6096 -3.81)
-					(mid 2.1855 -2.584)
+					(mid 2.1842 -2.5851)
 					(end 3.81 0)
 					(stroke
 						(width 0.254)
@@ -1378,7 +1378,7 @@
 				)
 				(arc
 					(start 3.81 0)
-					(mid 2.1928 2.5925)
+					(mid 2.1915 2.5936)
 					(end -0.6096 3.81)
 					(stroke
 						(width 0.254)
@@ -1538,7 +1538,7 @@
 				)
 				(arc
 					(start -0.6096 -3.81)
-					(mid 2.1855 -2.584)
+					(mid 2.1842 -2.5851)
 					(end 3.81 0)
 					(stroke
 						(width 0.254)
@@ -1588,7 +1588,7 @@
 				)
 				(arc
 					(start 3.81 0)
-					(mid 2.1928 2.5925)
+					(mid 2.1915 2.5936)
 					(end -0.6096 3.81)
 					(stroke
 						(width 0.254)
@@ -1748,7 +1748,7 @@
 				)
 				(arc
 					(start -0.6096 -3.81)
-					(mid 2.1855 -2.584)
+					(mid 2.1842 -2.5851)
 					(end 3.81 0)
 					(stroke
 						(width 0.254)
@@ -1798,7 +1798,7 @@
 				)
 				(arc
 					(start 3.81 0)
-					(mid 2.1928 2.5925)
+					(mid 2.1915 2.5936)
 					(end -0.6096 3.81)
 					(stroke
 						(width 0.254)
@@ -1958,7 +1958,7 @@
 				)
 				(arc
 					(start -0.6096 -3.81)
-					(mid 2.1855 -2.584)
+					(mid 2.1842 -2.5851)
 					(end 3.81 0)
 					(stroke
 						(width 0.254)
@@ -2008,7 +2008,7 @@
 				)
 				(arc
 					(start 3.81 0)
-					(mid 2.1928 2.5925)
+					(mid 2.1915 2.5936)
 					(end -0.6096 3.81)
 					(stroke
 						(width 0.254)
@@ -3884,9 +3884,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3984,8 +3984,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4004,9 +4004,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -4080,8 +4080,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6972,7 +6972,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Triple 3-input AND"
 			(at 241.3 30.48 0)
 			(effects
 				(font
@@ -7075,7 +7075,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Triple 3-input AND"
 			(at 217.17 40.64 0)
 			(effects
 				(font
@@ -7178,7 +7178,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Triple 3-input AND"
 			(at 217.17 54.61 0)
 			(effects
 				(font
@@ -7283,7 +7283,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Triple 3-input AND"
 			(at 270.51 158.75 0)
 			(effects
 				(font
@@ -7386,7 +7386,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Quad 2-input OR"
 			(at 139.7 38.1 0)
 			(effects
 				(font
@@ -7489,7 +7489,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Quad 2-input OR"
 			(at 139.7 52.07 0)
 			(effects
 				(font
@@ -7592,7 +7592,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Quad 2-input OR"
 			(at 139.7 66.04 0)
 			(effects
 				(font
@@ -7695,7 +7695,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Quad 2-input OR"
 			(at 139.7 80.01 0)
 			(effects
 				(font
@@ -7800,7 +7800,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Quad 2-input OR"
 			(at 254 158.75 0)
 			(effects
 				(font
@@ -7903,7 +7903,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Quad 2-input OR"
 			(at 139.7 95.25 0)
 			(effects
 				(font
@@ -8006,7 +8006,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Quad 2-input OR"
 			(at 139.7 109.22 0)
 			(effects
 				(font
@@ -8109,7 +8109,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Quad 2-input OR"
 			(at 139.7 123.19 0)
 			(effects
 				(font
@@ -8212,7 +8212,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Quad 2-input OR"
 			(at 52.07 170.18 0)
 			(effects
 				(font
@@ -8317,7 +8317,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Quad 2-input OR"
 			(at 237.49 158.75 0)
 			(effects
 				(font
@@ -8422,7 +8422,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "8 resistor network, star topology, bussed resistors, small symbol"
 			(at 71.12 26.67 0)
 			(effects
 				(font
@@ -8510,7 +8510,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Priority Encoder, 10 to 4"
 			(at 217.17 92.71 0)
 			(effects
 				(font
@@ -8616,7 +8616,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "8-bit Buffer/Line driver Inverter, 3-state outputs"
 			(at 251.46 95.25 0)
 			(effects
 				(font
@@ -8737,7 +8737,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "8-bit Register, 3-state outputs"
 			(at 88.9 160.02 0)
 			(effects
 				(font
@@ -8859,7 +8859,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 88.9 181.61 0)
 			(effects
 				(font
@@ -8924,7 +8924,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 73.66 175.26 0)
 			(effects
 				(font
@@ -8989,7 +8989,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 60.96 20.32 0)
 			(effects
 				(font
@@ -9054,7 +9054,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 217.17 73.66 0)
 			(effects
 				(font
@@ -9119,7 +9119,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 251.46 73.66 0)
 			(effects
 				(font
@@ -9184,7 +9184,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 217.17 111.76 0)
 			(effects
 				(font
@@ -9249,7 +9249,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 251.46 116.84 0)
 			(effects
 				(font
@@ -9314,7 +9314,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 234.95 73.66 0)
 			(effects
 				(font
@@ -9379,7 +9379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 199.39 73.66 0)
 			(effects
 				(font
@@ -9444,7 +9444,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 88.9 138.43 0)
 			(effects
 				(font
@@ -9509,7 +9509,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 219.71 173.99 0)
 			(effects
 				(font
@@ -9574,7 +9574,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 219.71 143.51 0)
 			(effects
 				(font
@@ -9640,7 +9640,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 156.21 158.75 0)
 			(effects
 				(font
@@ -9709,7 +9709,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 168.91 158.75 0)
 			(effects
 				(font
@@ -9778,7 +9778,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 181.61 158.75 0)
 			(effects
 				(font
@@ -9847,7 +9847,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 194.31 158.75 0)
 			(effects
 				(font
@@ -9916,7 +9916,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 207.01 158.75 0)
 			(effects
 				(font
@@ -9985,7 +9985,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 219.71 158.75 0)
 			(effects
 				(font

@@ -125,7 +125,7 @@
 				)
 				(arc
 					(start -1.016 5.08)
-					(mid -4.6243 2.1181)
+					(mid -4.6228 2.1214)
 					(end -4.318 -2.54)
 					(stroke
 						(width 0.254)
@@ -313,7 +313,7 @@
 				)
 				(arc
 					(start 4.318 -2.54)
-					(mid 4.6646 2.1357)
+					(mid 4.6661 2.1322)
 					(end 1.016 5.08)
 					(stroke
 						(width 0.254)
@@ -1267,9 +1267,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1367,8 +1367,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1387,9 +1387,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1463,138 +1463,7 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "v9958video-rescue:CP-Device"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Device_CP"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "CP-Device_0_1"
-				(rectangle
-					(start -2.286 0.508)
-					(end 2.286 1.016)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.794) (xy -1.27 1.778)
-					)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 -0.508)
-					(end -2.286 -1.016)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "CP-Device_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
+					(length 0)
 					(name "~"
 						(effects
 							(font
@@ -1603,24 +1472,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1923,6 +1774,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 138.43) (xy 154.94 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22bb8653-6122-4ba5-9ed9-a1505ce48ac4")
+	)
+	(wire
+		(pts
 			(xy 82.55 30.48) (xy 93.98 30.48)
 		)
 		(stroke
@@ -2113,16 +1974,6 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 138.43) (xy 228.6 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e4df0e7-5fcc-4cde-a2f8-003bc3f0e9c9")
-	)
-	(wire
-		(pts
 			(xy 82.55 88.9) (xy 82.55 97.79)
 		)
 		(stroke
@@ -2243,7 +2094,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 90.17) (xy 228.6 90.17)
+			(xy 224.79 90.17) (xy 256.54 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2260,6 +2111,16 @@
 			(type default)
 		)
 		(uuid "71256dab-04d8-4f7a-b317-e3b0bbb9cbcc")
+	)
+	(wire
+		(pts
+			(xy 154.94 138.43) (xy 154.94 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83175663-14e8-422e-a94a-14a75e2c9be4")
 	)
 	(wire
 		(pts
@@ -2573,6 +2434,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 90.17) (xy 256.54 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7bce25e-de30-48ca-a173-bab89a940d11")
+	)
+	(wire
+		(pts
 			(xy 93.98 30.48) (xy 93.98 33.02)
 		)
 		(stroke
@@ -2590,16 +2461,6 @@
 			(type default)
 		)
 		(uuid "c91d527d-f090-4d7e-8efe-38e133911f2b")
-	)
-	(wire
-		(pts
-			(xy 113.03 138.43) (xy 228.6 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca6001d8-8b80-4830-8b62-9e9b586802aa")
 	)
 	(wire
 		(pts
@@ -2670,6 +2531,16 @@
 			(type default)
 		)
 		(uuid "e413ee54-118c-41df-96f8-c4d3795c7a49")
+	)
+	(wire
+		(pts
+			(xy 154.94 123.19) (xy 256.54 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e42585ea-0dfa-4c0a-bb18-b3a62d5c3696")
 	)
 	(wire
 		(pts
@@ -2982,7 +2853,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 104.14 176.53 0)
 			(effects
 				(font
@@ -3051,7 +2922,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 116.84 176.53 0)
 			(effects
 				(font
@@ -3120,7 +2991,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 129.54 176.53 0)
 			(effects
 				(font
@@ -3189,7 +3060,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 142.24 176.53 0)
 			(effects
 				(font
@@ -3257,7 +3128,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 123.19 168.91 0)
 			(effects
 				(font
@@ -3322,7 +3193,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 123.19 184.15 0)
 			(effects
 				(font
@@ -3386,7 +3257,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "8-pin Mini-DIN connector"
 			(at 217.17 92.71 0)
 			(effects
 				(font
@@ -3472,7 +3343,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 207.01 87.63 0)
 			(effects
 				(font
@@ -3538,7 +3409,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 64.77 55.88 0)
 			(effects
 				(font
@@ -3606,7 +3477,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 64.77 63.5 0)
 			(effects
 				(font
@@ -3671,7 +3542,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 217.17 102.87 0)
 			(effects
 				(font
@@ -3735,7 +3606,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 185.42 148.59 0)
 			(effects
 				(font
@@ -3807,7 +3678,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"
 			(at 199.39 148.59 0)
 			(effects
 				(font
@@ -3879,7 +3750,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 201.93 165.1 0)
 			(effects
 				(font
@@ -3946,7 +3817,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 224.79 158.75 0)
 			(effects
 				(font
@@ -4013,7 +3884,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Polarized capacitor"
 			(at 214.63 158.75 0)
 			(effects
 				(font
@@ -4081,7 +3952,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 201.93 170.18 0)
 			(effects
 				(font
@@ -4146,7 +4017,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 201.93 140.97 0)
 			(effects
 				(font
@@ -4162,6 +4033,73 @@
 			(project "yddraig09"
 				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
 					(reference "#PWR0233")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 109.22 138.43 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "03b33d80-9f94-4cca-b754-398194c7734f")
+		(property "Reference" "C90"
+			(at 109.22 131.953 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220uF"
+			(at 109.22 134.2644 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
+			(at 113.03 137.4648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 109.22 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "69f456f4-270a-4ad7-ad12-028b8831ee7f")
+		)
+		(pin "2"
+			(uuid "013b1d4a-3e94-41f4-b1a5-b907ee121b59")
+		)
+		(instances
+			(project "yddraig09"
+				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
+					(reference "C90")
 					(unit 1)
 				)
 			)
@@ -4213,7 +4151,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 91.44 144.78 0)
 			(effects
 				(font
@@ -4235,142 +4173,6 @@
 			(project "yddraig09"
 				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
 					(reference "Q10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "v9958video-rescue:CP-Device")
-		(at 109.22 91.44 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0dd5e272-ee72-4d02-abd6-7b78efbe71cc")
-		(property "Reference" "C90"
-			(at 109.22 84.963 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220uF"
-			(at 109.22 87.2744 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
-			(at 113.03 92.4052 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 109.22 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 109.22 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f9050c7f-3684-4eaf-b1f4-6e6c1919ffa4")
-		)
-		(pin "1"
-			(uuid "771ce399-d5da-4b5f-ab28-ee4b96a864a6")
-		)
-		(instances
-			(project "yddraig09"
-				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
-					(reference "C90")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "v9958video-rescue:CP-Device")
-		(at 76.2 97.79 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "14a6b3ad-6d86-4590-8228-e77ec11def34")
-		(property "Reference" "C89"
-			(at 76.2 91.313 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10uF"
-			(at 76.2 93.6244 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
-			(at 80.01 98.7552 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 76.2 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6e3aac79-57c3-4787-80de-b1cf257ad6d4")
-		)
-		(pin "2"
-			(uuid "9392644d-0394-47bb-a3ed-488abebf2b32")
-		)
-		(instances
-			(project "yddraig09"
-				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
-					(reference "C89")
 					(unit 1)
 				)
 			)
@@ -4420,7 +4222,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 64.77 158.75 0)
 			(effects
 				(font
@@ -4436,74 +4238,6 @@
 			(project "yddraig09"
 				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
 					(reference "#PWR0225")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "v9958video-rescue:CP-Device")
-		(at 76.2 144.78 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3506b090-1d84-4235-a20f-35779e735ece")
-		(property "Reference" "C91"
-			(at 76.2 138.303 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10uF"
-			(at 76.2 140.6144 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
-			(at 80.01 145.7452 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 76.2 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0791dc10-1d23-49de-9945-96b77f5e3948")
-		)
-		(pin "2"
-			(uuid "28937d10-2a4b-4d20-96a9-d84b3b9f2aab")
-		)
-		(instances
-			(project "yddraig09"
-				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
-					(reference "C91")
 					(unit 1)
 				)
 			)
@@ -4554,7 +4288,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 64.77 104.14 0)
 			(effects
 				(font
@@ -4573,6 +4307,209 @@
 			(project "yddraig09"
 				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
 					(reference "R43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 76.2 97.79 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5055a253-d92a-468a-b6e5-09f9628a2bb9")
+		(property "Reference" "C88"
+			(at 75.311 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF"
+			(at 75.311 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 96.8248 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 76.2 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8bba27f3-fe6f-4422-8575-6d71d94981bb")
+		)
+		(pin "2"
+			(uuid "ee2743a4-e121-49ce-a0a3-cf916e49b14f")
+		)
+		(instances
+			(project "yddraig09"
+				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
+					(reference "C88")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 76.2 144.78 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "601ad11f-3a0b-44ea-8fdf-9c06a151753e")
+		(property "Reference" "C91"
+			(at 75.311 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF"
+			(at 75.311 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 143.8148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 76.2 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a473bf68-9519-42e2-bc1f-b6fe012ec301")
+		)
+		(pin "2"
+			(uuid "47251a42-377e-4192-b909-6122d2079e9b")
+		)
+		(instances
+			(project "yddraig09"
+				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
+					(reference "C91")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 109.22 43.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6d7134d1-3f13-4154-9205-0575f1dc08a8")
+		(property "Reference" "C104"
+			(at 109.22 36.703 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220uF"
+			(at 109.22 39.0144 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
+			(at 113.03 42.2148 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 109.22 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "94ad6fc7-d478-45e8-9c08-4cea12aab4b8")
+		)
+		(pin "2"
+			(uuid "e4584d50-65c8-42ee-951f-01e0a2fc4b77")
+		)
+		(instances
+			(project "yddraig09"
+				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
+					(reference "C104")
 					(unit 1)
 				)
 			)
@@ -4623,7 +4560,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 82.55 55.88 0)
 			(effects
 				(font
@@ -4642,6 +4579,73 @@
 			(project "yddraig09"
 				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
 					(reference "R58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 109.22 91.44 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "726f34d5-36be-415e-b723-181f2958390a")
+		(property "Reference" "C92"
+			(at 109.22 84.963 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220uF"
+			(at 109.22 87.2744 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
+			(at 113.03 90.4748 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 109.22 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "db18c281-6390-4104-b131-3400c2879c9b")
+		)
+		(pin "2"
+			(uuid "1223ac7e-e630-4a10-a97c-730c00b7b966")
+		)
+		(instances
+			(project "yddraig09"
+				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
+					(reference "C92")
 					(unit 1)
 				)
 			)
@@ -4691,7 +4695,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 93.98 123.19 0)
 			(effects
 				(font
@@ -4757,7 +4761,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 82.55 104.14 0)
 			(effects
 				(font
@@ -4825,7 +4829,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 64.77 111.76 0)
 			(effects
 				(font
@@ -4841,74 +4845,6 @@
 			(project "yddraig09"
 				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
 					(reference "#PWR0222")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "v9958video-rescue:CP-Device")
-		(at 109.22 43.18 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9a220abc-c4f7-4c0e-a989-cdca0e861fd4")
-		(property "Reference" "C104"
-			(at 109.22 36.703 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220uF"
-			(at 109.22 39.0144 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
-			(at 113.03 44.1452 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 109.22 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 109.22 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c0fb4833-613e-4754-8dac-e77061822d1c")
-		)
-		(pin "1"
-			(uuid "f63eddb3-312c-45af-927f-b0fac18bb635")
-		)
-		(instances
-			(project "yddraig09"
-				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
-					(reference "C104")
 					(unit 1)
 				)
 			)
@@ -4960,7 +4896,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 91.44 97.79 0)
 			(effects
 				(font
@@ -5032,7 +4968,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 82.55 85.09 0)
 			(effects
 				(font
@@ -5100,7 +5036,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 93.98 27.94 0)
 			(effects
 				(font
@@ -5167,7 +5103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 91.44 49.53 0)
 			(effects
 				(font
@@ -5239,7 +5175,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 93.98 85.09 0)
 			(effects
 				(font
@@ -5307,7 +5243,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 93.98 76.2 0)
 			(effects
 				(font
@@ -5323,6 +5259,74 @@
 			(project "yddraig09"
 				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
 					(reference "#PWR0223")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 76.2 49.53 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca8c1d56-9463-4a87-8128-482622b55b38")
+		(property "Reference" "C89"
+			(at 75.311 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10uF"
+			(at 75.311 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 48.5648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Polarized capacitor"
+			(at 76.2 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8e51acf8-3a2b-4078-b0b1-e44679aad0ab")
+		)
+		(pin "2"
+			(uuid "9c00e5d5-1ca5-42c8-b960-b3eeeddbc2a7")
+		)
+		(instances
+			(project ""
+				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
+					(reference "C89")
 					(unit 1)
 				)
 			)
@@ -5373,7 +5377,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 82.55 36.83 0)
 			(effects
 				(font
@@ -5392,74 +5396,6 @@
 			(project "yddraig09"
 				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
 					(reference "R57")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "v9958video-rescue:CP-Device")
-		(at 76.2 49.53 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d1d52fc2-d4ee-4f66-b64c-a178b46304ca")
-		(property "Reference" "C88"
-			(at 76.2 43.053 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10uF"
-			(at 76.2 45.3644 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm"
-			(at 80.01 50.4952 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 76.2 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b812149e-1d60-466d-8c68-2f997df820d4")
-		)
-		(pin "2"
-			(uuid "97fb52c3-f31f-4b55-a532-4ddf707941e9")
-		)
-		(instances
-			(project "yddraig09"
-				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
-					(reference "C88")
 					(unit 1)
 				)
 			)
@@ -5510,7 +5446,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 82.55 132.08 0)
 			(effects
 				(font
@@ -5579,7 +5515,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 93.98 132.08 0)
 			(effects
 				(font
@@ -5648,7 +5584,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 93.98 36.83 0)
 			(effects
 				(font
@@ -5667,74 +5603,6 @@
 			(project "yddraig09"
 				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
 					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "v9958video-rescue:CP-Device")
-		(at 109.22 138.43 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e875675c-aa7e-4815-9f7d-058bee21b450")
-		(property "Reference" "C92"
-			(at 109.22 131.953 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220uF"
-			(at 109.22 134.2644 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
-			(at 113.03 139.3952 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 109.22 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 109.22 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "162fca59-cd7a-4257-868d-153288779c8e")
-		)
-		(pin "1"
-			(uuid "4a7efdd4-8325-439e-b0c1-10d168d2c490")
-		)
-		(instances
-			(project "yddraig09"
-				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
-					(reference "C92")
 					(unit 1)
 				)
 			)
@@ -5785,7 +5653,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 64.77 151.13 0)
 			(effects
 				(font
@@ -5854,7 +5722,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 82.55 151.13 0)
 			(effects
 				(font

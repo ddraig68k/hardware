@@ -473,8 +473,8 @@
 					)
 				)
 				(rectangle
-					(start -1.5748 1.1938)
-					(end 1.4732 0.6858)
+					(start -1.524 1.016)
+					(end 1.524 0.508)
 					(stroke
 						(width 0)
 						(type default)
@@ -509,7 +509,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.508 3.429) (xy 1.524 3.429)
+						(xy 0.762 3.048) (xy 1.778 3.048)
 					)
 					(stroke
 						(width 0.254)
@@ -521,7 +521,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.016 3.937) (xy 1.016 2.921)
+						(xy 1.27 3.556) (xy 1.27 2.54)
 					)
 					(stroke
 						(width 0.254)
@@ -1391,6 +1391,24 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "diode"
 				(at 0 0 0)
 				(effects
@@ -1488,9 +1506,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1588,8 +1606,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1608,9 +1626,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1684,8 +1702,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1767,7 +1785,7 @@
 				(pin power_out line
 					(at 0 0 90)
 					(length 0)
-					(name "pwr"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2849,7 +2867,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "NPN transistor, emitter/base/collector"
 			(at 92.71 92.71 0)
 			(effects
 				(font
@@ -2920,7 +2938,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "PNP transistor, emitter/base/collector"
 			(at 95.25 69.85 0)
 			(effects
 				(font
@@ -2992,7 +3010,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 113.03 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 113.03 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 113.03 74.93 0)
 			(effects
 				(font
@@ -3061,7 +3097,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Single-cell battery"
 			(at 113.03 86.36 0)
 			(effects
 				(font
@@ -3130,7 +3166,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 81.28 99.06 0)
 			(effects
 				(font
@@ -3199,7 +3235,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Polarized capacitor"
 			(at 129.54 80.01 0)
 			(effects
 				(font
@@ -3267,7 +3303,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 113.03 91.44 0)
 			(effects
 				(font
@@ -3332,7 +3368,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 81.28 62.23 0)
 			(effects
 				(font
@@ -3397,7 +3433,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 129.54 91.44 0)
 			(effects
 				(font
@@ -3463,7 +3499,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 95.25 81.28 0)
 			(effects
 				(font
@@ -3532,7 +3568,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 81.28 81.28 0)
 			(effects
 				(font
@@ -3600,7 +3636,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 88.9 106.68 0)
 			(effects
 				(font
@@ -3665,7 +3701,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 194.31 124.46 0)
 			(effects
 				(font
@@ -3730,7 +3766,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 186.69 67.31 0)
 			(effects
 				(font
@@ -3796,7 +3832,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 139.7 138.43 0)
 			(effects
 				(font
@@ -3865,7 +3901,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 152.4 138.43 0)
 			(effects
 				(font
@@ -3933,7 +3969,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 146.05 130.81 0)
 			(effects
 				(font
@@ -3998,7 +4034,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 146.05 146.05 0)
 			(effects
 				(font
