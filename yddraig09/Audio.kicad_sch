@@ -8418,7 +8418,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "SWITCHCRAFT_35RAPC2BHN2"
+		(property "Footprint" "Ddraig:SWITCHCRAFT_35RAPC2BHN2"
 			(at 265.43 153.67 0)
 			(effects
 				(font
@@ -10766,7 +10766,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1b61376a-810f-42d1-aabb-1405da2104bd")
-		(property "Reference" "R20"
+		(property "Reference" "R19"
 			(at 223.52 152.4 90)
 			(effects
 				(font
@@ -10818,7 +10818,7 @@
 		(instances
 			(project "yddraig09"
 				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-000060bddc0e"
-					(reference "R20")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -10833,7 +10833,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "61b5a631-1156-4277-986e-195d938d2145")
-		(property "Reference" "R19"
+		(property "Reference" "R18"
 			(at 223.52 144.78 90)
 			(effects
 				(font
@@ -10885,7 +10885,7 @@
 		(instances
 			(project "yddraig09"
 				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-000060bddc0e"
-					(reference "R19")
+					(reference "R18")
 					(unit 1)
 				)
 			)
