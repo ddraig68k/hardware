@@ -9073,7 +9073,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "290208aa-0e10-4f1a-a4f9-b028519f5693")
-		(property "Reference" "#PWR?"
+		(property "Reference" "#PWR0101"
 			(at 97.79 74.93 0)
 			(effects
 				(font
@@ -9123,7 +9123,7 @@
 		(instances
 			(project "GfxV9990"
 				(path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4/00000000-0000-0000-0000-000060f8dea9"
-					(reference "#PWR?")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
