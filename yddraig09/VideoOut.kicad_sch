@@ -1507,18 +1507,6 @@
 		(uuid "1e1e254c-a714-41f4-8ecc-e8b521c5ae70")
 	)
 	(junction
-		(at 129.54 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2182a2ba-b97a-4ae2-84e1-a3801369d520")
-	)
-	(junction
-		(at 116.84 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "34309287-0413-4e6f-9985-70a013c8dc57")
-	)
-	(junction
 		(at 82.55 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1603,12 +1591,6 @@
 		(uuid "d19e1652-e0e9-43f5-9ed8-45a0d72e31b4")
 	)
 	(junction
-		(at 116.84 182.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "dd3ed44c-59f0-41c6-9cab-cc3f67a72338")
-	)
-	(junction
 		(at 93.98 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1619,12 +1601,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eaeeee54-fc8a-4bed-b0a8-e73f97468a10")
-	)
-	(junction
-		(at 129.54 182.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f85e11e4-1f6c-4817-b87f-90c2aa296de3")
 	)
 	(junction
 		(at 82.55 109.22)
@@ -1764,16 +1740,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 170.18) (xy 142.24 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "22427408-bbe0-4e79-9ff4-d6b7157e62d6")
-	)
-	(wire
-		(pts
 			(xy 113.03 138.43) (xy 154.94 138.43)
 		)
 		(stroke
@@ -1861,16 +1827,6 @@
 			(type default)
 		)
 		(uuid "2d22af76-045d-47ae-b1d5-aee3a2c0666e")
-	)
-	(wire
-		(pts
-			(xy 104.14 172.72) (xy 104.14 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2f872923-6809-4245-ae4d-d28e3971d0de")
 	)
 	(wire
 		(pts
@@ -2144,16 +2100,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 170.18) (xy 116.84 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "86df024a-d37e-4a0d-bb6b-6ca797fa2b1a")
-	)
-	(wire
-		(pts
 			(xy 82.55 144.78) (xy 86.36 144.78)
 		)
 		(stroke
@@ -2274,16 +2220,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 182.88) (xy 142.24 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a35a4080-c264-4674-9f56-2095d77542d1")
-	)
-	(wire
-		(pts
 			(xy 93.98 123.19) (xy 93.98 125.73)
 		)
 		(stroke
@@ -2344,16 +2280,6 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 182.88) (xy 142.24 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b08e4d13-a1d9-4c56-b688-044db601e6f1")
-	)
-	(wire
-		(pts
 			(xy 224.79 92.71) (xy 247.65 92.71)
 		)
 		(stroke
@@ -2381,16 +2307,6 @@
 			(type default)
 		)
 		(uuid "ba639537-fd62-426e-8b7d-8592fe62e11a")
-	)
-	(wire
-		(pts
-			(xy 104.14 180.34) (xy 104.14 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be690fd9-aa20-4e82-bcbe-57570e86cbac")
 	)
 	(wire
 		(pts
@@ -2464,16 +2380,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 170.18) (xy 142.24 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cad859f4-1b32-4192-b4f4-0aa6dd4d0d76")
-	)
-	(wire
-		(pts
 			(xy 220.98 158.75) (xy 218.44 158.75)
 		)
 		(stroke
@@ -2521,16 +2427,6 @@
 			(type default)
 		)
 		(uuid "e27fe131-9ac8-410e-9701-7729e3131706")
-	)
-	(wire
-		(pts
-			(xy 104.14 182.88) (xy 116.84 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e413ee54-118c-41df-96f8-c4d3795c7a49")
 	)
 	(wire
 		(pts
@@ -2810,75 +2706,6 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 104.14 176.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-0000617a2dbb")
-		(property "Reference" "C88"
-			(at 107.061 175.3616 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 107.061 177.673 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 105.1052 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 104.14 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 104.14 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "87180b63-d761-4b87-af45-ab30c2454757")
-		)
-		(pin "2"
-			(uuid "f7e3c3fd-f8a9-4c77-9768-1c3decbe0f02")
-		)
-		(instances
-			(project "yddraig09"
-				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
-					(reference "C88")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
 		(at 116.84 176.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2971,6 +2798,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
@@ -3010,75 +2838,6 @@
 			(project "yddraig09"
 				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
 					(reference "C93")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 142.24 176.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-0000617a2dcd")
-		(property "Reference" "C94"
-			(at 145.161 175.3616 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 145.161 177.673 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm"
-			(at 143.2052 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 142.24 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 142.24 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5b99aad8-43ca-4aea-9d4d-8f2e148e92fc")
-		)
-		(pin "2"
-			(uuid "56ec9a4c-519c-40fd-a19c-1d43f13df2b1")
-		)
-		(instances
-			(project "yddraig09"
-				(path "/3cf18d79-3df5-467d-a147-795d8b124c26/00000000-0000-0000-0000-0000619d3c4f"
-					(reference "C94")
 					(unit 1)
 				)
 			)

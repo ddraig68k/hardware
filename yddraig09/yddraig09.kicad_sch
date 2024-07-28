@@ -3892,17 +3892,7 @@
 			)
 			(uuid "47cad3a9-0081-4fa1-8fdd-7e489627cb21")
 		)
-		(pin "A[0..15]" input
-			(at 63.5 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "b27263e6-30c6-46e6-895e-74bbe3df1157")
-		)
-		(pin "D[0..7]" bidirectional
+		(pin "CPU_D[0..7]" bidirectional
 			(at 63.5 76.2 0)
 			(effects
 				(font
@@ -3910,7 +3900,17 @@
 				)
 				(justify right)
 			)
-			(uuid "673af436-70b5-4b78-898e-df12f3d7edcc")
+			(uuid "b9cb4791-7f5b-4176-bb82-d8ab3e3cef95")
+		)
+		(pin "CPU_A[0..15]" input
+			(at 63.5 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+			(uuid "c3182ac7-1ce5-4357-8c50-00d9d04e95d4")
 		)
 		(instances
 			(project "yddraig09"
