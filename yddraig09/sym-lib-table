@@ -1,3 +1,6 @@
 (sym_lib_table
+  (version 7)
   (lib (name "Ddraig")(type "KiCad")(uri "${DDRAIGLIB}/Ddraig.kicad_sym")(options "")(descr ""))
+  (lib (name "d68k_64pin_pcb")(type "KiCad")(uri "D:/d68k_64pin_pcb.kicad_sym")(options "")(descr ""))
+  (lib (name "d68k_64pin_board")(type "KiCad")(uri "D:/d68k_64pin_board.kicad_sym")(options "")(descr ""))
 )
