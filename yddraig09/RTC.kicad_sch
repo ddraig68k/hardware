@@ -1703,7 +1703,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_C38-LF_D3.0mm_L8.0mm_Horizontal"
 			(at 130.81 116.84 0)
 			(effects
 				(font

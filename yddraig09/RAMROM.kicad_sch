@@ -9531,7 +9531,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-28_W15.24mm_Socket"
+		(property "Footprint" "Socket:DIP_Socket-28_W11.9_W12.7_W15.24_W17.78_W18.5_3M_228-1277-00-0602J"
 			(at 246.38 139.7 0)
 			(effects
 				(font
