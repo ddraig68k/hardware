@@ -8209,7 +8209,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_LCC:PLCC-44"
+		(property "Footprint" "Package_LCC:PLCC-44_THT-Socket"
 			(at 210.82 60.96 0)
 			(effects
 				(font
