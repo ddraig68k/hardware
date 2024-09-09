@@ -9916,10 +9916,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9d6d12fc-09d1-4437-b270-c85530549ba3")
 		(property "Reference" "Z1"
-			(at 284.48 177.1649 0)
+			(at 277.876 174.244 0)
 			(effects
 				(font
 					(size 1.27 1.27)

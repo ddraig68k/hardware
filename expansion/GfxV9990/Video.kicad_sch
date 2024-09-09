@@ -1070,14 +1070,15 @@
 				)
 			)
 		)
-		(symbol "Ddraig:35RAPC2BHN2"
+		(symbol "Ddraig:35RAPC4BHN2"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at -5.08 7.62 0)
+				(at -5.0998 5.6097 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1085,8 +1086,8 @@
 					(justify left bottom)
 				)
 			)
-			(property "Value" "35RAPC2BHN2"
-				(at -7.62 -6.35 0)
+			(property "Value" "35RAPC4BHN2"
+				(at -5.0995 -7.6493 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1094,13 +1095,13 @@
 					(justify left bottom)
 				)
 			)
-			(property "Footprint" "SWITCHCRAFT_35RAPC2BHN2"
+			(property "Footprint" "35RAPC4BHN2:SWITCHCRAFT_35RAPC4BHN2"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify bottom)
 					(hide yes)
 				)
 			)
@@ -1110,66 +1111,37 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Conn 3.5MM Stereo Jack F 5 POS Solder RA Thru-Hole 5 Terminal 1 Port"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "STANDARD" "Manufacturer Recommendations"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+			(symbol "35RAPC4BHN2_0_0"
+				(rectangle
+					(start -6.3848 -5.1078)
+					(end -5.08 5.08)
+					(stroke
+						(width 0.1)
+						(type default)
 					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "MAXIMUM_PACKAGE_HIEGHT" "6.1214mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
+					(fill
+						(type outline)
 					)
-					(justify left bottom)
-					(hide yes)
 				)
-			)
-			(property "MANUFACTURER" "Switchcraft Inc."
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "PARTREV" "L"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(symbol "35RAPC2BHN2_0_0"
 				(polyline
 					(pts
-						(xy -5.715 -2.286) (xy -5.715 2.413)
+						(xy -2.54 1.27) (xy -3.81 2.54)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1178,10 +1150,10 @@
 				)
 				(polyline
 					(pts
-						(xy -5.715 2.413) (xy -5.08 2.413)
+						(xy -1.27 -5.08) (xy 0 -3.81)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1190,10 +1162,10 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 2.413) (xy -4.445 2.413)
+						(xy -1.27 2.54) (xy -2.54 1.27)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1202,10 +1174,10 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 5.08) (xy -5.08 2.413)
+						(xy 0 -3.81) (xy 1.27 -5.08)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1214,10 +1186,10 @@
 				)
 				(polyline
 					(pts
-						(xy -4.445 -2.286) (xy -5.715 -2.286)
+						(xy 1.27 -5.08) (xy 2.54 -5.08)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1226,10 +1198,10 @@
 				)
 				(polyline
 					(pts
-						(xy -4.445 2.413) (xy -4.445 -2.286)
+						(xy 2.032 -4.318) (xy 2.54 -5.08)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1238,10 +1210,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.905 1.143) (xy -2.54 2.54)
+						(xy 2.032 1.778) (xy 2.54 1.778)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1250,10 +1222,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 2.54) (xy -1.905 1.143)
+						(xy 2.54 -5.08) (xy 3.048 -4.318)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1262,10 +1234,10 @@
 				)
 				(polyline
 					(pts
-						(xy -0.381 -1.143) (xy -1.016 -2.54)
+						(xy 2.54 -4.318) (xy 2.032 -4.318)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1274,10 +1246,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.254 -2.54) (xy -0.381 -1.143)
+						(xy 2.54 -4.318) (xy 2.54 -2.54)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1286,10 +1258,10 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 -2.54) (xy 0.254 -2.54)
+						(xy 2.54 1.778) (xy 2.54 0)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1298,10 +1270,10 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 2.54) (xy -1.27 2.54)
+						(xy 2.54 1.778) (xy 3.048 1.778)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1310,10 +1282,70 @@
 				)
 				(polyline
 					(pts
-						(xy 5.08 5.08) (xy -5.08 5.08)
+						(xy 2.54 2.54) (xy -1.27 2.54)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 2.54) (xy 2.032 1.778)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.048 -4.318) (xy 2.54 -4.318)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.048 1.778) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 2.54) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1322,7 +1354,7 @@
 				)
 				(pin passive line
 					(at 7.62 5.08 180)
-					(length 2.54)
+					(length 5.08)
 					(name "~"
 						(effects
 							(font
@@ -1340,7 +1372,43 @@
 				)
 				(pin passive line
 					(at 7.62 -2.54 180)
-					(length 2.54)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -5.08 180)
+					(length 5.08)
 					(name "~"
 						(effects
 							(font
@@ -1358,7 +1426,7 @@
 				)
 				(pin passive line
 					(at 7.62 2.54 180)
-					(length 2.54)
+					(length 5.08)
 					(name "~"
 						(effects
 							(font
@@ -1372,19 +1440,6 @@
 								(size 1.016 1.016)
 							)
 						)
-					)
-				)
-			)
-			(symbol "35RAPC2BHN2_1_1"
-				(rectangle
-					(start -6.35 6.35)
-					(end 5.08 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
 					)
 				)
 			)
@@ -2998,6 +3053,14 @@
 		(uuid "56d4310f-8d1d-46af-b513-b35721fe2231")
 	)
 	(no_connect
+		(at 259.08 129.54)
+		(uuid "7727652a-c734-4e2d-bee4-3fb30e9a6f54")
+	)
+	(no_connect
+		(at 259.08 127)
+		(uuid "bb5667c1-c1a5-4381-8a54-d6c972aae5d1")
+	)
+	(no_connect
 		(at 111.76 175.26)
 		(uuid "d7809076-82f7-427d-b92c-39f74404e481")
 	)
@@ -3257,7 +3320,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 124.46) (xy 256.54 124.46)
+			(xy 247.65 124.46) (xy 259.08 124.46)
 		)
 		(stroke
 			(width 0)
@@ -3587,13 +3650,13 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 132.08) (xy 254 132.08)
+			(xy 254 121.92) (xy 259.08 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6a9dfbb9-1f92-42b3-9f4f-f2263fc5ff6a")
+		(uuid "696890ff-7f60-405b-8a61-cd2c2170bf99")
 	)
 	(wire
 		(pts
@@ -3657,7 +3720,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 127) (xy 247.65 127)
+			(xy 247.65 132.08) (xy 259.08 132.08)
 		)
 		(stroke
 			(width 0)
@@ -3727,7 +3790,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 132.08) (xy 254 134.62)
+			(xy 254 121.92) (xy 254 138.43)
 		)
 		(stroke
 			(width 0)
@@ -4523,7 +4586,7 @@
 		(uuid "fc1f095f-91d5-4402-b802-da441a39231e")
 	)
 	(label "AUDIO_R"
-		(at 247.65 127 180)
+		(at 247.65 132.08 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8345,121 +8408,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Ddraig:35RAPC2BHN2")
-		(at 264.16 129.54 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-000060f9e1c9")
-		(property "Reference" "J6"
-			(at 271.2212 127.1016 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Audio In"
-			(at 271.2212 129.413 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Ddraig:SWITCHCRAFT_35RAPC2BHN2"
-			(at 264.16 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 264.16 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 264.16 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 264.16 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HIEGHT" "6.1214mm"
-			(at 264.16 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" "Switchcraft Inc."
-			(at 264.16 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" "L"
-			(at 264.16 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "80962dc4-e36b-4c4c-b90e-01b0d6056b9e")
-		)
-		(pin "2"
-			(uuid "0d60fd9d-9fcd-4e3f-9c4e-50ac3081f92b")
-		)
-		(pin "3"
-			(uuid "997f3b91-cd89-41ee-927e-6f7421ec34ad")
-		)
-		(instances
-			(project "GfxV9990"
-				(path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4/00000000-0000-0000-0000-000060f8dea9"
-					(reference "J6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 252.73 78.74 0)
 		(unit 1)
@@ -8526,7 +8474,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 254 134.62 0)
+		(at 254 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8534,7 +8482,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000060f9e1d5")
 		(property "Reference" "#PWR034"
-			(at 254 140.97 0)
+			(at 254 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8543,7 +8491,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 254.127 139.0142 0)
+			(at 254.127 142.8242 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8551,7 +8499,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 254 134.62 0)
+			(at 254 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8560,7 +8508,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 254 134.62 0)
+			(at 254 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8569,7 +8517,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 254 134.62 0)
+			(at 254 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9124,6 +9072,85 @@
 			(project "GfxV9990"
 				(path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4/00000000-0000-0000-0000-000060f8dea9"
 					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Ddraig:35RAPC4BHN2")
+		(at 266.7 127 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "edbf299f-eb21-4ce8-a04d-806eb3bf0ce3")
+		(property "Reference" "J6"
+			(at 267.9743 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Audio In"
+			(at 267.9743 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Ddraig:SWITCHCRAFT_35RAPC4BHN2"
+			(at 266.7 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 266.7 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Conn 3.5MM Stereo Jack F 5 POS Solder RA Thru-Hole 5 Terminal 1 Port"
+			(at 266.7 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "868c7f6f-ad10-4c56-9e18-659bdf9a0cdd")
+		)
+		(pin "10"
+			(uuid "6024d869-917b-46e5-bdce-0b63a21e710b")
+		)
+		(pin "3"
+			(uuid "6c63f76d-2954-42bf-beff-3d6e4fe216d1")
+		)
+		(pin "1"
+			(uuid "011968c4-9ff1-481c-b502-3a0069a726d2")
+		)
+		(pin "11"
+			(uuid "bf7baf9b-e429-490d-9a64-ff309b1edbf3")
+		)
+		(instances
+			(project ""
+				(path "/c29dcbd0-528a-4f01-82f8-b8e6b1738ec4/00000000-0000-0000-0000-000060f8dea9"
+					(reference "J6")
 					(unit 1)
 				)
 			)
