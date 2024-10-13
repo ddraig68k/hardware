@@ -278,6 +278,11 @@ BEGIN
       -- Test the sram access
  	   test_data(addr_sram2, size_byte, ADDR_IP, RW_IP, AS_nIP, SIZ0_IP, SIZ1_IP, CPLD_DSACK0_nOP, CPLD_DSACK1_nOP);
       wait for 25 ns;	
+      -- Test the sram odd access
+		ADDR_0_IP <= '1';
+ 	   test_data(addr_sram2, size_byte, ADDR_IP, RW_IP, AS_nIP, SIZ0_IP, SIZ1_IP, CPLD_DSACK0_nOP, CPLD_DSACK1_nOP);
+      wait for 25 ns;	
+		ADDR_0_IP <= '0';
 
       -- Test the rom access
  	   test_data(addr_rom, size_long, ADDR_IP, RW_IP, AS_nIP, SIZ0_IP, SIZ1_IP, CPLD_DSACK0_nOP, CPLD_DSACK1_nOP);

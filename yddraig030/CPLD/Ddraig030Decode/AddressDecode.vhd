@@ -52,7 +52,9 @@ architecture Behavioral of AddressDecode is
 	signal s_kbd 		: std_logic;
 	signal s_rtc 		: std_logic;
 	signal s_eth 		: std_logic;
+	signal s_intreg 	: std_logic;
 	signal s_status		: std_logic;
+	signal s_cardprd	: std_logic;
 	signal s_fpu		: std_logic;
 
 	signal s_exp1 		: std_logic;
@@ -99,30 +101,32 @@ begin
 	s_size(0) <= siz0_i;
 	s_size(1) <= siz1_i;
 
---                  	                                        322222222221111111111
---                	                                            09876543210987654321098
+--                  	                                         322222222221111111111
+--                	                                             09876543210987654321098
 	s_rom 		<= '1' WHEN s_addrsel = '1' AND (std_match(a_i, "10000000000------------") OR bootrom_i = '0') ELSE '0';	-- $40000000 - $400FFFFF
-	s_dram 		<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "0----------------------") ELSE '0';	-- $40000000 - $400FFFFF
-	s_sram 		<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "10000000001------------") ELSE '0';	-- $40100000 - $401FFFFF
-	s_duart		<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "10000000010000000000000") ELSE '0';	-- $40200000 - $402000FF
-	s_kbd		<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "10000000010000000000001") ELSE '0';	-- $40200100 - $402001FF
-	s_ide		<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "10000000010000000000010") ELSE '0';	-- $40200200 - $402002FF
-	s_rtc		<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "10000000010000000000011") ELSE '0';	-- $40200300 - $402003FF
-	s_eth		<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "10000000010000000000100") ELSE '0';	-- $40200400 - $402004FF
-	s_status	<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "10000000010000000000101") ELSE '0';	-- $40200500
-	s_exp1		<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "10000000010000000000110") ELSE '0';	-- $40200600 - $402006FF
-	s_exp2		<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "10000000010000000000111") ELSE '0';	-- $40200700 - $402007FF
-	s_exp3		<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "10000000010000000001000") ELSE '0';	-- $40200800 - $402008FF
-	s_exp4		<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "10000000010000000001001") ELSE '0';	-- $40200900 - $402009FF
-	s_exdata1	<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "10000000011------------") ELSE '0';	-- $40300000 - $403FFFFF
-	s_exdata2	<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "10000000100------------") ELSE '0';	-- $40400000 - $404FFFFF
-	s_exdata3	<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "10000000101------------") ELSE '0';	-- $40500000 - $405FFFFF
-	s_exdata4	<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "10000000110------------") ELSE '0';	-- $40600000 - $406FFFFF
-	s_exdata5	<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "10100------------------") ELSE '0';	-- $50000000 - $53FFFFFF
-	s_exdata6	<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "10101------------------") ELSE '0';	-- $54000000 - $57FFFFFF
-	s_exdata7	<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "10110------------------") ELSE '0';	-- $58000000 - $5BFFFFFF
-	s_exdata8	<= '1' WHEN s_addrsel = '1' AND std_match(a_i, "10111------------------") ELSE '0';	-- $5C000000 - $5FFFFFFF
-	s_fpu	    <= '1' WHEN fc_i = "111"    AND std_match(a_i, "-----------0010--------") ELSE '0';
+	s_dram 		<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "0----------------------") ELSE '0';	-- $00000000 - $0FFFFFFF
+	s_sram 		<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10000000001------------") ELSE '0';	-- $40100000 - $401FFFFF
+	s_duart		<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10000000010000000000000") ELSE '0';	-- $40200000 - $402000FF
+	s_kbd		<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10000000010000000000001") ELSE '0';	-- $40200100 - $402001FF
+	s_ide		<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10000000010000000000010") ELSE '0';	-- $40200200 - $402002FF
+	s_rtc		<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10000000010000000000011") ELSE '0';	-- $40200300 - $402003FF
+	s_eth		<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10000000010000000000100") ELSE '0';	-- $40200400 - $402004FF
+	s_intreg	<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10000000010000000000101") ELSE '0';	-- $40200500
+	s_status	<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10000000010000000000110") ELSE '0';	-- $40200600
+	s_cardprd	<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10000000010000000000111") ELSE '0';	-- $40200700
+	s_exp1		<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10000000010000000001000") ELSE '0';	-- $40200800 - $402008FF
+	s_exp2		<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10000000010000000001001") ELSE '0';	-- $40200900 - $402009FF
+	s_exp3		<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10000000010000000001010") ELSE '0';	-- $40200A00 - $40200AFF
+	s_exp4		<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10000000010000000001011") ELSE '0';	-- $40200B00 - $40200BFF
+	s_exdata1	<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10000000011------------") ELSE '0';	-- $40300000 - $403FFFFF
+	s_exdata2	<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10000000100------------") ELSE '0';	-- $40400000 - $404FFFFF
+	s_exdata3	<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10000000101------------") ELSE '0';	-- $40500000 - $405FFFFF
+	s_exdata4	<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10000000110------------") ELSE '0';	-- $40600000 - $406FFFFF
+	s_exdata5	<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10100------------------") ELSE '0';	-- $50000000 - $53FFFFFF
+	s_exdata6	<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10101------------------") ELSE '0';	-- $54000000 - $57FFFFFF
+	s_exdata7	<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10110------------------") ELSE '0';	-- $58000000 - $5BFFFFFF
+	s_exdata8	<= '1' WHEN s_addrsel = '1' AND  std_match(a_i, "10111------------------") ELSE '0';	-- $5C000000 - $5FFFFFFF
+	s_fpu	    <= '1' WHEN fc_i = "111"    AND  std_match(a_i, "-----------0010--------") ELSE '0';
 	
 	run_o <= '1';
 
@@ -152,7 +156,7 @@ begin
 	                 s_exdata1 OR s_exdata2 OR s_exdata3 OR s_exdata4 OR
 					 s_exdata5 OR s_exdata6 OR s_exdata7 OR s_exdata8;
 
-	s_width8 <= s_kbd OR s_rtc OR s_status OR s_duart;
+	s_width8 <= s_kbd OR s_rtc OR s_intreg OR s_status OR s_cardprd OR s_duart;
 	s_width16 <= s_rom OR s_sram OR s_ide;
 
 	-- Set the chip select signals 
@@ -166,9 +170,9 @@ begin
 	cs_rtc_o <= '0' WHEN s_rtc = '1' ELSE '1';	
 	cs_eth_o <= '0' WHEN s_eth = '1' ELSE '1';	
 
-	cs_interrupt_o <= '0' WHEN s_status = '1' AND a1_i = '0' AND a0_i = '0' ELSE '1';
-	cs_status_o    <= '0' WHEN s_status = '1' AND a1_i = '0' AND a0_i = '1' ELSE '1';
-	cs_cardprd_o   <= '0' WHEN s_status = '1' AND a1_i = '1' AND a0_i = '0' ELSE '1';
+	cs_interrupt_o <= '0' WHEN s_intreg = '1' ELSE '1';
+	cs_status_o    <= '0' WHEN s_status = '1' ELSE '1';
+	cs_cardprd_o   <= '0' WHEN s_cardprd = '1' ELSE '1';
 
 	expsel_en_o <= '0' WHEN s_expselected = '1' ELSE '1';
 	cs_fpu_o <= '0' WHEN s_fpu = '1' ELSE '1';
