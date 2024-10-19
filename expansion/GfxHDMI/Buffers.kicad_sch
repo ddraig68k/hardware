@@ -7581,7 +7581,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 236.22 165.1 0)
 			(effects
 				(font
@@ -7780,7 +7780,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 248.92 165.1 0)
 			(effects
 				(font
@@ -7849,7 +7849,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 262.89 165.1 0)
 			(effects
 				(font
@@ -7918,7 +7918,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 196.85 165.1 0)
 			(effects
 				(font
@@ -7987,7 +7987,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 209.55 165.1 0)
 			(effects
 				(font
@@ -8056,7 +8056,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 223.52 165.1 0)
 			(effects
 				(font
@@ -8125,7 +8125,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 199.39 46.99 0)
 			(effects
 				(font
@@ -8194,7 +8194,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "8-Bit Dual-Supply Bus Transceiver with Configurable Voltage-Level Shifting and Three-State Outputs"
 			(at 165.1 58.42 0)
 			(effects
 				(font
@@ -8329,7 +8329,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "8-Bit Dual-Supply Bus Transceiver with Configurable Voltage-Level Shifting and Three-State Outputs"
 			(at 247.65 59.69 0)
 			(effects
 				(font
@@ -8464,7 +8464,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "8-Bit Dual-Supply Bus Transceiver with Configurable Voltage-Level Shifting and Three-State Outputs"
 			(at 247.65 127 0)
 			(effects
 				(font
@@ -8599,7 +8599,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "8-Bit Dual-Supply Bus Transceiver with Configurable Voltage-Level Shifting and Three-State Outputs"
 			(at 165.1 125.73 0)
 			(effects
 				(font
@@ -8734,7 +8734,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 114.3 182.88 0)
 			(effects
 				(font
@@ -8868,7 +8868,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 127 182.88 0)
 			(effects
 				(font
@@ -8937,7 +8937,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 275.59 165.1 0)
 			(effects
 				(font
@@ -9006,7 +9006,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 87.63 182.88 0)
 			(effects
 				(font
@@ -9075,7 +9075,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 101.6 182.88 0)
 			(effects
 				(font
@@ -9386,7 +9386,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 139.7 182.88 0)
 			(effects
 				(font

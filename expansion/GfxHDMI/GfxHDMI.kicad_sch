@@ -6870,7 +6870,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "DIN41612 C 64 Pin Male header for expansion boards"
 			(at 77.47 86.36 0)
 			(effects
 				(font
@@ -7385,7 +7385,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 184.15 36.83 0)
 			(effects
 				(font
@@ -7654,7 +7654,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 214.63 36.83 0)
 			(effects
 				(font
@@ -7723,7 +7723,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Polarized capacitor"
 			(at 224.79 36.83 0)
 			(effects
 				(font
@@ -7987,7 +7987,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 226.06 156.21 0)
 			(effects
 				(font
@@ -8056,7 +8056,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 240.03 156.21 0)
 			(effects
 				(font
@@ -8124,7 +8124,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Quad buffer 3-State outputs"
 			(at 76.2 175.26 0)
 			(effects
 				(font
@@ -8228,7 +8228,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Quad buffer 3-State outputs"
 			(at 139.7 152.4 0)
 			(effects
 				(font
@@ -8332,7 +8332,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Quad buffer 3-State outputs"
 			(at 139.7 171.45 0)
 			(effects
 				(font
@@ -8435,7 +8435,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Quad buffer 3-State outputs"
 			(at 55.88 175.26 0)
 			(effects
 				(font
@@ -8540,7 +8540,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Quad buffer 3-State outputs"
 			(at 261.62 157.48 0)
 			(effects
 				(font
@@ -9103,7 +9103,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 237.49 36.83 0)
 			(effects
 				(font
@@ -9172,7 +9172,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 128.27 33.02 0)
 			(effects
 				(font
@@ -9503,7 +9503,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode"
 			(at 137.16 24.13 0)
 			(effects
 				(font
@@ -9572,7 +9572,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Polarized capacitor"
 			(at 213.36 156.21 0)
 			(effects
 				(font
@@ -9641,7 +9641,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Polarized capacitor"
 			(at 185.42 156.21 0)
 			(effects
 				(font
@@ -9710,7 +9710,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Polarized capacitor"
 			(at 172.72 156.21 0)
 			(effects
 				(font
@@ -9974,7 +9974,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 137.16 33.02 0)
 			(effects
 				(font
@@ -10237,7 +10237,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode"
 			(at 151.13 33.02 0)
 			(effects
 				(font
@@ -10512,7 +10512,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 151.13 24.13 0)
 			(effects
 				(font
@@ -10581,7 +10581,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 199.39 156.21 0)
 			(effects
 				(font
