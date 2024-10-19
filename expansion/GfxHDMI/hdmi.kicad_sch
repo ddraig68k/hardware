@@ -3476,6 +3476,17 @@
 		)
 		(uuid "10bde148-e2f9-41ac-bfcb-30148b7869e8")
 	)
+	(label "C_TX0_N"
+		(at 113.03 99.06 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "14189140-888d-4605-957a-13439117f47d")
+	)
 	(label "HDMI_TX2_P"
 		(at 87.63 55.88 180)
 		(fields_autoplaced yes)
@@ -3497,6 +3508,50 @@
 			(justify right bottom)
 		)
 		(uuid "1624beb2-e105-4d18-b110-e7679b78d1aa")
+	)
+	(label "TX1_N"
+		(at 151.13 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "168df7e9-2f0b-4938-a59b-63252200b0ea")
+	)
+	(label "TX0_N"
+		(at 151.13 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2756707c-47fa-4ceb-99a2-3e18d05a479d")
+	)
+	(label "C_TX0_P"
+		(at 113.03 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "335afeb7-f53a-4198-9bd2-19a6b6b70bca")
+	)
+	(label "C_TXC_P"
+		(at 113.03 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3392f31b-e855-4b30-b446-292312c09bc5")
 	)
 	(label "HDMI_TX2_N"
 		(at 87.63 60.96 180)
@@ -3520,6 +3575,116 @@
 		)
 		(uuid "4d301d4b-5352-4c09-bb00-c51f47110d05")
 	)
+	(label "TX1_P"
+		(at 151.13 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5e3f1f92-b737-4cce-875e-63b2e7613409")
+	)
+	(label "TX2_P"
+		(at 151.13 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6b4aadd1-12ac-4dee-9a7f-000cdb7c1855")
+	)
+	(label "C_TX2_P"
+		(at 113.03 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6cba0e09-451f-46ec-997e-0ec9d0aa1472")
+	)
+	(label "TXC_N"
+		(at 151.13 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6fcbfa65-b43e-432f-9c29-746a1be3adc6")
+	)
+	(label "TX2_N"
+		(at 151.13 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8fb3ff6a-4a54-4a13-84ae-f0afc223920d")
+	)
+	(label "TXC_P"
+		(at 151.13 101.6 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a14b7f5f-9848-4f03-8f0b-fc4198f944b6")
+	)
+	(label "C_TX1_N"
+		(at 113.03 71.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b343d400-44e9-4772-acd5-294a8cdf5627")
+	)
+	(label "C_TX1_P"
+		(at 113.03 66.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b5a01b80-1980-4ccc-ae8d-0e7c9b0ed3e2")
+	)
+	(label "C_TXC_N"
+		(at 113.03 109.22 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bc5d5543-a40a-47ee-a88d-63a4b249f7fd")
+	)
+	(label "TX0_P"
+		(at 151.13 91.44 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ca9c9817-9aa2-4dcd-b186-5263018e7cd0")
+	)
 	(label "HDMI_TX0_N"
 		(at 87.63 99.06 180)
 		(fields_autoplaced yes)
@@ -3541,6 +3706,17 @@
 			(justify right bottom)
 		)
 		(uuid "e061ff3f-9f77-4da2-8b62-f4c01048cea0")
+	)
+	(label "C_TX2_N"
+		(at 113.03 60.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "efde4ca2-7ac3-41e1-903b-c870df3c2bc6")
 	)
 	(label "HDMI_TX1_P"
 		(at 87.63 66.04 180)

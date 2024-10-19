@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 37,
     "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_netclasses": [],
@@ -76,7 +76,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "GfxFPGA.kicad_prl",
+    "filename": "GfxHDMI.kicad_prl",
     "version": 3
   },
   "project": {
