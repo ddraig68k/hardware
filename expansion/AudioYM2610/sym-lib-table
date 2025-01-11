@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name "Ddraig")(type "KiCad")(uri "${DDRAIGLIB}/Ddraig.kicad_sym")(options "")(descr ""))
-)
