@@ -35000,8 +35000,8 @@
 		)
 		(symbol "SCC68681_0_1"
 			(rectangle
-				(start -17.78 -31.75)
-				(end 17.78 34.29)
+				(start -17.78 34.29)
+				(end 17.78 -31.75)
 				(stroke
 					(width 0.254)
 					(type default)
@@ -35013,7 +35013,7 @@
 		)
 		(symbol "SCC68681_1_1"
 			(pin no_connect line
-				(at 20.32 -22.86 180)
+				(at -5.08 -34.29 90)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -35031,7 +35031,7 @@
 				)
 			)
 			(pin open_collector inverted
-				(at -25.4 -25.4 0)
+				(at -25.4 -10.16 0)
 				(length 7.62)
 				(name "~{DTACK}"
 					(effects
@@ -35067,7 +35067,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 20.32 -25.4 180)
+				(at -7.62 -34.29 90)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -35103,7 +35103,7 @@
 				)
 			)
 			(pin output line
-				(at 25.4 12.7 180)
+				(at 25.4 -5.08 180)
 				(length 7.62)
 				(name "OP1"
 					(effects
@@ -35121,7 +35121,7 @@
 				)
 			)
 			(pin output line
-				(at 25.4 7.62 180)
+				(at 25.4 -10.16 180)
 				(length 7.62)
 				(name "OP3"
 					(effects
@@ -35139,7 +35139,7 @@
 				)
 			)
 			(pin output line
-				(at 25.4 2.54 180)
+				(at 25.4 -15.24 180)
 				(length 7.62)
 				(name "OP5"
 					(effects
@@ -35157,7 +35157,7 @@
 				)
 			)
 			(pin output line
-				(at 25.4 -2.54 180)
+				(at 25.4 -20.32 180)
 				(length 7.62)
 				(name "OP7"
 					(effects
@@ -35175,7 +35175,7 @@
 				)
 			)
 			(pin tri_state line
-				(at -25.4 20.32 0)
+				(at -25.4 15.24 0)
 				(length 7.62)
 				(name "D1"
 					(effects
@@ -35193,7 +35193,7 @@
 				)
 			)
 			(pin tri_state line
-				(at -25.4 15.24 0)
+				(at -25.4 10.16 0)
 				(length 7.62)
 				(name "D3"
 					(effects
@@ -35211,7 +35211,7 @@
 				)
 			)
 			(pin input line
-				(at -25.4 0 0)
+				(at -25.4 30.48 0)
 				(length 7.62)
 				(name "AS1"
 					(effects
@@ -35229,7 +35229,7 @@
 				)
 			)
 			(pin tri_state line
-				(at -25.4 10.16 0)
+				(at -25.4 5.08 0)
 				(length 7.62)
 				(name "D5"
 					(effects
@@ -35247,7 +35247,7 @@
 				)
 			)
 			(pin tri_state line
-				(at -25.4 5.08 0)
+				(at -25.4 0 0)
 				(length 7.62)
 				(name "D7"
 					(effects
@@ -35283,7 +35283,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 20.32 -27.94 180)
+				(at -10.16 -34.29 90)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -35301,7 +35301,7 @@
 				)
 			)
 			(pin output inverted
-				(at -25.4 -27.94 0)
+				(at -25.4 -17.78 0)
 				(length 7.62)
 				(name "~{IRQ}"
 					(effects
@@ -35319,7 +35319,7 @@
 				)
 			)
 			(pin tri_state line
-				(at -25.4 7.62 0)
+				(at -25.4 2.54 0)
 				(length 7.62)
 				(name "D6"
 					(effects
@@ -35337,7 +35337,7 @@
 				)
 			)
 			(pin tri_state line
-				(at -25.4 12.7 0)
+				(at -25.4 7.62 0)
 				(length 7.62)
 				(name "D4"
 					(effects
@@ -35355,7 +35355,7 @@
 				)
 			)
 			(pin tri_state line
-				(at -25.4 17.78 0)
+				(at -25.4 12.7 0)
 				(length 7.62)
 				(name "D2"
 					(effects
@@ -35373,7 +35373,7 @@
 				)
 			)
 			(pin tri_state line
-				(at -25.4 22.86 0)
+				(at -25.4 17.78 0)
 				(length 7.62)
 				(name "D0"
 					(effects
@@ -35391,7 +35391,7 @@
 				)
 			)
 			(pin output line
-				(at 25.4 0 180)
+				(at 25.4 -17.78 180)
 				(length 7.62)
 				(name "OP6"
 					(effects
@@ -35409,7 +35409,7 @@
 				)
 			)
 			(pin input line
-				(at 25.4 -15.24 180)
+				(at 25.4 7.62 180)
 				(length 7.62)
 				(name "IP3"
 					(effects
@@ -35427,7 +35427,7 @@
 				)
 			)
 			(pin output line
-				(at 25.4 5.08 180)
+				(at 25.4 -12.7 180)
 				(length 7.62)
 				(name "OP4"
 					(effects
@@ -35445,7 +35445,7 @@
 				)
 			)
 			(pin output line
-				(at 25.4 10.16 180)
+				(at 25.4 -7.62 180)
 				(length 7.62)
 				(name "OP2"
 					(effects
@@ -35463,7 +35463,7 @@
 				)
 			)
 			(pin output line
-				(at 25.4 15.24 180)
+				(at 25.4 -2.54 180)
 				(length 7.62)
 				(name "OP0"
 					(effects
@@ -35499,7 +35499,7 @@
 				)
 			)
 			(pin no_connect line
-				(at 20.32 -30.48 180)
+				(at -12.7 -34.29 90)
 				(length 2.54) hide
 				(name "NC"
 					(effects
@@ -35534,8 +35534,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 30.48 0)
+			(pin passive line
+				(at 25.4 -26.67 180)
 				(length 7.62)
 				(name "X1/CLK"
 					(effects
@@ -35552,8 +35552,8 @@
 					)
 				)
 			)
-			(pin input line
-				(at -25.4 27.94 0)
+			(pin passive line
+				(at 25.4 -29.21 180)
 				(length 7.62)
 				(name "X2"
 					(effects
@@ -35571,7 +35571,7 @@
 				)
 			)
 			(pin input inverted
-				(at -25.4 -20.32 0)
+				(at -25.4 -12.7 0)
 				(length 7.62)
 				(name "~{RESET}"
 					(effects
@@ -35589,7 +35589,7 @@
 				)
 			)
 			(pin input line
-				(at -25.4 -12.7 0)
+				(at -25.4 -5.08 0)
 				(length 7.62)
 				(name "~{CS}"
 					(effects
@@ -35607,7 +35607,7 @@
 				)
 			)
 			(pin input line
-				(at -25.4 -2.54 0)
+				(at -25.4 27.94 0)
 				(length 7.62)
 				(name "AS2"
 					(effects
@@ -35625,7 +35625,7 @@
 				)
 			)
 			(pin input line
-				(at 25.4 -12.7 180)
+				(at 25.4 10.16 180)
 				(length 7.62)
 				(name "IP2"
 					(effects
@@ -35643,7 +35643,7 @@
 				)
 			)
 			(pin input inverted
-				(at -25.4 -17.78 0)
+				(at -25.4 -20.32 0)
 				(length 7.62)
 				(name "~{IACK}"
 					(effects
@@ -35661,7 +35661,7 @@
 				)
 			)
 			(pin input line
-				(at 25.4 -20.32 180)
+				(at 25.4 2.54 180)
 				(length 7.62)
 				(name "IP5"
 					(effects
@@ -35679,7 +35679,7 @@
 				)
 			)
 			(pin input line
-				(at 25.4 -17.78 180)
+				(at 25.4 5.08 180)
 				(length 7.62)
 				(name "IP4"
 					(effects
@@ -35715,7 +35715,7 @@
 				)
 			)
 			(pin input line
-				(at 25.4 -10.16 180)
+				(at 25.4 12.7 180)
 				(length 7.62)
 				(name "IP1"
 					(effects
@@ -35733,7 +35733,7 @@
 				)
 			)
 			(pin input line
-				(at -25.4 -5.08 0)
+				(at -25.4 25.4 0)
 				(length 7.62)
 				(name "AS3"
 					(effects
@@ -35751,7 +35751,7 @@
 				)
 			)
 			(pin input line
-				(at -25.4 -7.62 0)
+				(at -25.4 22.86 0)
 				(length 7.62)
 				(name "AS4"
 					(effects
@@ -35769,7 +35769,7 @@
 				)
 			)
 			(pin input line
-				(at 25.4 -7.62 180)
+				(at 25.4 15.24 180)
 				(length 7.62)
 				(name "IP0"
 					(effects
@@ -35787,7 +35787,7 @@
 				)
 			)
 			(pin input line
-				(at -25.4 -15.24 0)
+				(at -25.4 -7.62 0)
 				(length 7.62)
 				(name "R/~{W}"
 					(effects
