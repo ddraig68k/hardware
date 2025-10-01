@@ -1,3 +1,6 @@
 (sym_lib_table
-  (lib (name Ddraig)(type Legacy)(uri ${DDRAIGLIB}/Ddraig.lib)(options "")(descr "Custom symbols for Y Ddraig"))
+  (version 7)
+  (lib (name "Ddraig")(type "KiCad")(uri "${DDRAIGLIB}/Ddraig.kicad_sym")(options "")(descr "Custom symbols for Y Ddraig"))
+  (lib (name "d68k_64pin_pcb")(type "KiCad")(uri "D:/temp/kicad/d68k_64pin_pcb.kicad_sym")(options "")(descr ""))
+  (lib (name "epf10k20")(type "KiCad")(uri "D:/temp/kicad/epf10k20.kicad_sym")(options "")(descr ""))
 )

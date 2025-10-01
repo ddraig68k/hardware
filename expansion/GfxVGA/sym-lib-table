@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Ddraig")(type "KiCad")(uri "${DDRAIGLIB}/Ddraig.kicad_sym")(options "")(descr ""))
+  (lib (name "ecs-3963")(type "KiCad")(uri "D:/sm/ecs-3963.kicad_sym")(options "")(descr ""))
+  (lib (name "is61wv102416fbll-10tli")(type "KiCad")(uri "D:/sm/is61wv102416fbll-10tli.kicad_sym")(options "")(descr ""))
+)
