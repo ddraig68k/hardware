@@ -1,6 +1,10 @@
 (sym_lib_table
   (version 7)
+<<<<<<< HEAD
+  (lib (name "Ddraig")(type "KiCad")(uri "${DDRAIGLIB}/Ddraig.kicad_sym")(options "")(descr ""))
+=======
   (lib (name "Ddraig")(type "KiCad")(uri "${DDRAIGLIB}/Ddraig.kicad_sym")(options "")(descr "Custom symbols for Y Ddraig"))
   (lib (name "d68k_64pin_pcb")(type "KiCad")(uri "D:/temp/kicad/d68k_64pin_pcb.kicad_sym")(options "")(descr ""))
   (lib (name "epf10k20")(type "KiCad")(uri "D:/temp/kicad/epf10k20.kicad_sym")(options "")(descr ""))
+>>>>>>> bdadb05df44da061f32808c7a5f7ebf24b12bbdf
 )

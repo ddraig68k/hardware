@@ -299,7 +299,7 @@ BEGIN
 		a 	<= addr_duart;
 		as <= '0';
 		lds <='0';
-		uds <= '1';
+		uds <= '0';
 		wait for 300ns;
 		wait on clk10 until clk10 = '1';
 		lds <='1';
@@ -313,7 +313,7 @@ BEGIN
 		a 	<= addr_pit;
 		as <= '0';
 		lds <='0';
-		uds <= '1';
+		uds <= '0';
 		rw  <= '0';
 		wait for 300ns;
 		wait on clk10 until clk10 = '1';
@@ -329,7 +329,7 @@ BEGIN
 		a 	<= addr_kbd;
 		as <= '0';
 		lds <='0';
-		uds <= '1';
+		uds <= '0';
 		wait on dtack until dtack = '0';
 		wait on clk10 until clk10 = '1';
 		lds <='1';
