@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name Ddraig)(type Legacy)(uri ${DDRAIGLIB}/Ddraig.lib)(options "")(descr "Custom symbols for Y Ddraig"))
+  (version 7)
+  (lib (name "Ddraig")(type "KiCad")(uri "${DDRAIGLIB}/Ddraig.kicad_sym")(options "")(descr ""))
 )

@@ -122,7 +122,7 @@ begin
 	ide_wr_o    <= '0' WHEN s_ide = '0' AND rw_i = '0' ELSE '1';
 	ide_rd_o    <= '0' WHEN s_ide = '0' AND rw_i = '1' ELSE '1';
 	
-	s_ack 		<= s_ide AND s_kbd AND s_pit AND s_rtc;	
+	s_ack 		<= s_kbd AND s_pit AND s_rtc;	
 	s_ext_id	<= s_reg1 AND s_reg2 AND s_reg3 AND s_reg4; 
 	
 	-- Handle interrupt ack via VPA
@@ -131,9 +131,10 @@ begin
 	dtack_o 	<= '0' WHEN s_ext_id = '0' AND s_dtack > "00101000"				-- DTACK after 2us. Gives the expansion board tim to
 																				-- generate it's own DTACK but still generate a signal
 																				-- if no board is connected.
-					   ELSE '0' WHEN s_sram = '0' AND s_dtack > "00000100"		-- DTACK after 200ns
-					   ELSE '0' WHEN s_rom = '0' AND s_dtack >  "00000100"		-- DTACK ater 200ns
-					   ELSE '0' WHEN s_ack = '0' AND s_dtack > "00001000"  		-- DTACK after 400ns for other devices
+					   ELSE '0' WHEN s_sram = '0' AND s_dtack > "00000010"		
+					   ELSE '0' WHEN s_rom = '0' AND s_dtack >  "00000010"		
+					   ELSE '0' WHEN s_ide = '0' AND s_dtack >  "00000010"		
+					   ELSE '0' WHEN s_ack = '0' AND s_dtack > "00001000"  		-- DTACK for other devices
 					   ELSE '1'; 
 							 
 end Behavioral;
