@@ -6671,7 +6671,6 @@
 	)
 	(label "BA11"
 		(at 109.22 90.17 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6682,7 +6681,6 @@
 	)
 	(label "A8"
 		(at 57.15 46.99 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6693,7 +6691,6 @@
 	)
 	(label "BA19"
 		(at 109.22 147.32 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6704,7 +6701,6 @@
 	)
 	(label "~{BCS_EXTREG[1..4]}"
 		(at 107.95 184.15 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6715,7 +6711,6 @@
 	)
 	(label "BD12"
 		(at 251.46 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6726,7 +6721,6 @@
 	)
 	(label "BA1"
 		(at 109.22 29.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6737,7 +6731,6 @@
 	)
 	(label "D5"
 		(at 184.15 43.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6748,7 +6741,6 @@
 	)
 	(label "~{CS_EXTDATA[1..4]}"
 		(at 107.95 186.69 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6759,7 +6751,6 @@
 	)
 	(label "~{BCS_EXTDATA3}"
 		(at 214.63 153.67 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6770,7 +6761,6 @@
 	)
 	(label "A12"
 		(at 57.15 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6781,7 +6771,6 @@
 	)
 	(label "BD3"
 		(at 236.22 38.1 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6792,7 +6781,6 @@
 	)
 	(label "BD15"
 		(at 251.46 104.14 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6803,7 +6791,6 @@
 	)
 	(label "~{CS_EXTREG2}"
 		(at 250.19 140.97 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6814,7 +6801,6 @@
 	)
 	(label "BA6"
 		(at 109.22 41.91 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6825,7 +6811,6 @@
 	)
 	(label "BA16"
 		(at 109.22 102.87 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6836,7 +6821,6 @@
 	)
 	(label "A16"
 		(at 57.15 102.87 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6847,7 +6831,6 @@
 	)
 	(label "BA4"
 		(at 109.22 36.83 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6858,7 +6841,6 @@
 	)
 	(label "D11"
 		(at 184.15 93.98 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6869,7 +6851,6 @@
 	)
 	(label "A2"
 		(at 57.15 31.75 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6880,7 +6861,6 @@
 	)
 	(label "~{BCS_EXTREG3}"
 		(at 214.63 143.51 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6891,7 +6871,6 @@
 	)
 	(label "~{CS_EXTDATA3}"
 		(at 250.19 153.67 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6902,7 +6881,6 @@
 	)
 	(label "~{CS_EXTREG1}"
 		(at 250.19 138.43 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6913,7 +6891,6 @@
 	)
 	(label "A6"
 		(at 57.15 41.91 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6924,7 +6901,6 @@
 	)
 	(label "BD10"
 		(at 251.46 91.44 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6935,7 +6911,6 @@
 	)
 	(label "BD15"
 		(at 236.22 104.14 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6946,7 +6921,6 @@
 	)
 	(label "~{BCS_EXTREG1}"
 		(at 214.63 138.43 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6957,7 +6931,6 @@
 	)
 	(label "BD8"
 		(at 251.46 86.36 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6968,7 +6941,6 @@
 	)
 	(label "~{CS_EXTDATA1}"
 		(at 250.19 148.59 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6979,7 +6951,6 @@
 	)
 	(label "BD11"
 		(at 251.46 93.98 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6990,7 +6961,6 @@
 	)
 	(label "~{BCS_EXTREG2}"
 		(at 214.63 140.97 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7001,7 +6971,6 @@
 	)
 	(label "~{CS_EXTREG4}"
 		(at 250.19 146.05 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7012,7 +6981,6 @@
 	)
 	(label "BD0"
 		(at 251.46 30.48 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7023,7 +6991,6 @@
 	)
 	(label "BD2"
 		(at 236.22 35.56 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7034,7 +7001,6 @@
 	)
 	(label "BA14"
 		(at 109.22 97.79 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7045,7 +7011,6 @@
 	)
 	(label "~{BCS_EXTDATA4}"
 		(at 214.63 156.21 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7056,7 +7021,6 @@
 	)
 	(label "BA8"
 		(at 109.22 46.99 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7067,7 +7031,6 @@
 	)
 	(label "BD5"
 		(at 251.46 43.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7078,7 +7041,6 @@
 	)
 	(label "BD1"
 		(at 251.46 33.02 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7089,7 +7051,6 @@
 	)
 	(label "BD6"
 		(at 236.22 45.72 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7100,7 +7061,6 @@
 	)
 	(label "A5"
 		(at 57.15 39.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7111,7 +7071,6 @@
 	)
 	(label "BD6"
 		(at 251.46 45.72 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7122,7 +7081,6 @@
 	)
 	(label "BA15"
 		(at 109.22 100.33 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7133,7 +7091,6 @@
 	)
 	(label "BA12"
 		(at 109.22 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7144,7 +7101,6 @@
 	)
 	(label "~{BCS_EXTDATA2}"
 		(at 214.63 151.13 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7155,7 +7111,6 @@
 	)
 	(label "~{BCS_EXTDATA[1..4]}"
 		(at 107.95 189.23 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7166,7 +7121,6 @@
 	)
 	(label "BA9"
 		(at 109.22 85.09 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7177,7 +7131,6 @@
 	)
 	(label "BD4"
 		(at 251.46 40.64 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7188,7 +7141,6 @@
 	)
 	(label "A11"
 		(at 57.15 90.17 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7199,7 +7151,6 @@
 	)
 	(label "BD5"
 		(at 236.22 43.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7210,7 +7161,6 @@
 	)
 	(label "BD0"
 		(at 236.22 30.48 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7221,7 +7171,6 @@
 	)
 	(label "D2"
 		(at 184.15 35.56 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7232,7 +7181,6 @@
 	)
 	(label "D4"
 		(at 184.15 40.64 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7243,7 +7191,6 @@
 	)
 	(label "BD14"
 		(at 236.22 101.6 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7254,7 +7201,6 @@
 	)
 	(label "BD2"
 		(at 251.46 35.56 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7265,7 +7211,6 @@
 	)
 	(label "D9"
 		(at 184.15 88.9 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7276,7 +7221,6 @@
 	)
 	(label "BD9"
 		(at 251.46 88.9 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7287,7 +7231,6 @@
 	)
 	(label "~{BCS_EXTDATA1}"
 		(at 214.63 148.59 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7298,7 +7241,6 @@
 	)
 	(label "A7"
 		(at 57.15 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7309,7 +7251,6 @@
 	)
 	(label "BA2"
 		(at 109.22 31.75 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7320,7 +7261,6 @@
 	)
 	(label "BD7"
 		(at 236.22 48.26 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7331,7 +7271,6 @@
 	)
 	(label "BD13"
 		(at 251.46 99.06 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7342,7 +7281,6 @@
 	)
 	(label "BD9"
 		(at 236.22 88.9 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7353,7 +7291,6 @@
 	)
 	(label "A14"
 		(at 57.15 97.79 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7364,7 +7301,6 @@
 	)
 	(label "A1"
 		(at 57.15 29.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7375,7 +7311,6 @@
 	)
 	(label "A19"
 		(at 57.15 147.32 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7386,7 +7321,6 @@
 	)
 	(label "BA5"
 		(at 109.22 39.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7397,7 +7331,6 @@
 	)
 	(label "BD14"
 		(at 251.46 101.6 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7408,7 +7341,6 @@
 	)
 	(label "A18"
 		(at 57.15 144.78 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7419,7 +7351,6 @@
 	)
 	(label "D7"
 		(at 184.15 48.26 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7430,7 +7361,6 @@
 	)
 	(label "A3"
 		(at 57.15 34.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7441,7 +7371,6 @@
 	)
 	(label "D12"
 		(at 184.15 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7452,7 +7381,6 @@
 	)
 	(label "~{CS_EXTREG3}"
 		(at 250.19 143.51 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7463,7 +7391,6 @@
 	)
 	(label "A17"
 		(at 57.15 142.24 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7474,7 +7401,6 @@
 	)
 	(label "BD10"
 		(at 236.22 91.44 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7485,7 +7411,6 @@
 	)
 	(label "A13"
 		(at 57.15 95.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7496,7 +7421,6 @@
 	)
 	(label "BA3"
 		(at 109.22 34.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7507,7 +7431,6 @@
 	)
 	(label "BA10"
 		(at 109.22 87.63 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7518,7 +7441,6 @@
 	)
 	(label "BD1"
 		(at 236.22 33.02 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7529,7 +7451,6 @@
 	)
 	(label "A4"
 		(at 57.15 36.83 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7540,7 +7461,6 @@
 	)
 	(label "D0"
 		(at 184.15 30.48 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7551,7 +7471,6 @@
 	)
 	(label "D1"
 		(at 184.15 33.02 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7562,7 +7481,6 @@
 	)
 	(label "BD7"
 		(at 251.46 48.26 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7573,7 +7491,6 @@
 	)
 	(label "BD3"
 		(at 251.46 38.1 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7584,7 +7501,6 @@
 	)
 	(label "D10"
 		(at 184.15 91.44 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7595,7 +7511,6 @@
 	)
 	(label "BA18"
 		(at 109.22 144.78 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7606,7 +7521,6 @@
 	)
 	(label "D8"
 		(at 184.15 86.36 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7617,7 +7531,6 @@
 	)
 	(label "BD4"
 		(at 236.22 40.64 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7628,7 +7541,6 @@
 	)
 	(label "BD12"
 		(at 236.22 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7639,7 +7551,6 @@
 	)
 	(label "BA7"
 		(at 109.22 44.45 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7650,7 +7561,6 @@
 	)
 	(label "~{CS_EXTREG[1..4]}"
 		(at 107.95 181.61 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7661,7 +7571,6 @@
 	)
 	(label "~{BCS_EXTREG4}"
 		(at 214.63 146.05 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7672,7 +7581,6 @@
 	)
 	(label "D6"
 		(at 184.15 45.72 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7683,7 +7591,6 @@
 	)
 	(label "A9"
 		(at 57.15 85.09 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7694,7 +7601,6 @@
 	)
 	(label "BA13"
 		(at 109.22 95.25 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7705,7 +7611,6 @@
 	)
 	(label "D3"
 		(at 184.15 38.1 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7716,7 +7621,6 @@
 	)
 	(label "A10"
 		(at 57.15 87.63 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7727,7 +7631,6 @@
 	)
 	(label "~{CS_EXTDATA2}"
 		(at 250.19 151.13 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7738,7 +7641,6 @@
 	)
 	(label "D13"
 		(at 184.15 99.06 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7749,7 +7651,6 @@
 	)
 	(label "BA17"
 		(at 109.22 142.24 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7760,7 +7661,6 @@
 	)
 	(label "BD8"
 		(at 236.22 86.36 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7771,7 +7671,6 @@
 	)
 	(label "BD13"
 		(at 236.22 99.06 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7782,7 +7681,6 @@
 	)
 	(label "~{CS_EXTDATA4}"
 		(at 250.19 156.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7793,7 +7691,6 @@
 	)
 	(label "BD11"
 		(at 236.22 93.98 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7804,7 +7701,6 @@
 	)
 	(label "A15"
 		(at 57.15 100.33 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7815,7 +7711,6 @@
 	)
 	(label "D14"
 		(at 184.15 101.6 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7826,7 +7721,6 @@
 	)
 	(label "D15"
 		(at 184.15 104.14 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7838,7 +7732,6 @@
 	(hierarchical_label "~{EXT_UDS}"
 		(shape input)
 		(at 172.72 111.76 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7850,7 +7743,6 @@
 	(hierarchical_label "~{RD}WR"
 		(shape input)
 		(at 172.72 53.34 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7862,7 +7754,6 @@
 	(hierarchical_label "~{BAS}"
 		(shape output)
 		(at 142.24 148.59 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7874,7 +7765,6 @@
 	(hierarchical_label "BRD~{WR}"
 		(shape output)
 		(at 142.24 146.05 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7886,7 +7776,6 @@
 	(hierarchical_label "RD~{WR}"
 		(shape input)
 		(at 177.8 146.05 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7898,7 +7787,6 @@
 	(hierarchical_label "~{UDS}"
 		(shape input)
 		(at 177.8 143.51 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7910,7 +7798,6 @@
 	(hierarchical_label "~{AS}"
 		(shape input)
 		(at 40.64 52.07 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7922,7 +7809,6 @@
 	(hierarchical_label "BCLK10"
 		(shape output)
 		(at 142.24 156.21 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7934,7 +7820,6 @@
 	(hierarchical_label "~{VMA}"
 		(shape input)
 		(at 177.8 151.13 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7946,7 +7831,6 @@
 	(hierarchical_label "~{LDS}"
 		(shape input)
 		(at 177.8 140.97 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7958,7 +7842,6 @@
 	(hierarchical_label "~{BUDS}"
 		(shape output)
 		(at 142.24 143.51 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7970,7 +7853,6 @@
 	(hierarchical_label "CS_EXTREG[1..4]"
 		(shape input)
 		(at 127 181.61 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7982,7 +7864,6 @@
 	(hierarchical_label "CLK10"
 		(shape input)
 		(at 177.8 156.21 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7994,7 +7875,6 @@
 	(hierarchical_label "A[1..23]"
 		(shape input)
 		(at 39.37 24.13 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8006,7 +7886,6 @@
 	(hierarchical_label "~{AS}"
 		(shape input)
 		(at 177.8 148.59 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8018,7 +7897,6 @@
 	(hierarchical_label "BD[0..15]"
 		(shape bidirectional)
 		(at 256.54 25.4 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8030,7 +7908,6 @@
 	(hierarchical_label "~{BCS_EXTREG[1..4]}"
 		(shape output)
 		(at 106.68 184.15 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8042,7 +7919,6 @@
 	(hierarchical_label "D[0..15]"
 		(shape bidirectional)
 		(at 166.37 25.4 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8054,7 +7930,6 @@
 	(hierarchical_label "~{BLDS}"
 		(shape output)
 		(at 142.24 140.97 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8066,7 +7941,6 @@
 	(hierarchical_label "CS_EXTDATA[1..4]"
 		(shape input)
 		(at 127 186.69 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8078,7 +7952,6 @@
 	(hierarchical_label "~{BCS_EXTDATA[1..4]}"
 		(shape output)
 		(at 106.68 189.23 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8090,7 +7963,6 @@
 	(hierarchical_label "BA[1..19]"
 		(shape output)
 		(at 132.08 24.13 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8102,7 +7974,6 @@
 	(hierarchical_label "~{EXT_LDS}"
 		(shape input)
 		(at 172.72 55.88 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8114,7 +7985,6 @@
 	(hierarchical_label "BE"
 		(shape output)
 		(at 142.24 153.67 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8126,7 +7996,6 @@
 	(hierarchical_label "~{BVMA}"
 		(shape output)
 		(at 142.24 151.13 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8138,7 +8007,6 @@
 	(hierarchical_label "~{BRESET}"
 		(shape output)
 		(at 142.24 138.43 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8150,7 +8018,6 @@
 	(hierarchical_label "~{E}"
 		(shape input)
 		(at 177.8 153.67 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8162,7 +8029,6 @@
 	(hierarchical_label "~{RESET}"
 		(shape input)
 		(at 177.8 138.43 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

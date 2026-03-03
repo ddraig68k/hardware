@@ -4698,7 +4698,6 @@
 	)
 	(label "PWR_OK"
 		(at 74.93 50.8 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4709,7 +4708,6 @@
 	)
 	(label "PWR_OK"
 		(at 181.61 44.45 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4720,7 +4718,6 @@
 	)
 	(label "~{PWR_ON}"
 		(at 40.64 50.8 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4731,7 +4728,6 @@
 	)
 	(label "~{PWR_ON}"
 		(at 247.65 123.19 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

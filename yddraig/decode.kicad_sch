@@ -9277,7 +9277,6 @@
 	)
 	(label "~{EXTINT1}"
 		(at 58.42 34.29 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9288,7 +9287,6 @@
 	)
 	(label "A17"
 		(at 309.88 66.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9299,7 +9297,6 @@
 	)
 	(label "A23"
 		(at 309.88 111.76 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9310,7 +9307,6 @@
 	)
 	(label "RD~{WR}"
 		(at 58.42 257.81 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9321,7 +9317,6 @@
 	)
 	(label "~{RUN}"
 		(at 345.44 217.17 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9332,7 +9327,6 @@
 	)
 	(label "~{CS_EXTREG4}"
 		(at 240.03 134.62 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9343,7 +9337,6 @@
 	)
 	(label "~{DTACK_CPLD}"
 		(at 251.46 66.04 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9354,7 +9347,6 @@
 	)
 	(label "~{EXTINT3}"
 		(at 74.93 67.31 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.0922 1.0922)
@@ -9365,7 +9357,6 @@
 	)
 	(label "~{HALT}"
 		(at 307.34 217.17 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9376,7 +9367,6 @@
 	)
 	(label "A11"
 		(at 309.88 81.28 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9387,7 +9377,6 @@
 	)
 	(label "A22"
 		(at 309.88 114.3 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9398,7 +9387,6 @@
 	)
 	(label "~{CPLD_VPA}"
 		(at 60.96 160.02 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9409,7 +9397,6 @@
 	)
 	(label "A8"
 		(at 309.88 88.9 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9420,7 +9407,6 @@
 	)
 	(label "A15"
 		(at 309.88 71.12 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9431,7 +9417,6 @@
 	)
 	(label "~{RESET}"
 		(at 58.42 110.49 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9442,7 +9427,6 @@
 	)
 	(label "~{EXTINT2}"
 		(at 74.93 64.77 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.0922 1.0922)
@@ -9453,7 +9437,6 @@
 	)
 	(label "FC0"
 		(at 251.46 86.36 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9464,7 +9447,6 @@
 	)
 	(label "~{CS_EXTDATA4}"
 		(at 241.3 121.92 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9475,7 +9457,6 @@
 	)
 	(label "~{CS_EXTDATA1}"
 		(at 241.3 114.3 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9486,7 +9467,6 @@
 	)
 	(label "A16"
 		(at 309.88 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9497,7 +9477,6 @@
 	)
 	(label "BOOTROM"
 		(at 92.71 115.57 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9508,7 +9487,6 @@
 	)
 	(label "~{IPL2}"
 		(at 127 54.61 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9519,7 +9497,6 @@
 	)
 	(label "FC1"
 		(at 251.46 88.9 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9530,7 +9507,6 @@
 	)
 	(label "A13"
 		(at 309.88 76.2 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9541,7 +9517,6 @@
 	)
 	(label "FC2"
 		(at 251.46 91.44 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9552,7 +9527,6 @@
 	)
 	(label "A10"
 		(at 309.88 83.82 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9563,7 +9537,6 @@
 	)
 	(label "~{CS_EXTDATA2}"
 		(at 241.3 116.84 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9574,7 +9547,6 @@
 	)
 	(label "~{CS_EXTREG3}"
 		(at 240.03 132.08 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9585,7 +9557,6 @@
 	)
 	(label "A19"
 		(at 309.88 60.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9596,7 +9567,6 @@
 	)
 	(label "~{CPLD_VPA}"
 		(at 251.46 144.78 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9607,7 +9577,6 @@
 	)
 	(label "A12"
 		(at 309.88 78.74 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9618,7 +9587,6 @@
 	)
 	(label "~{CPU_RESET}"
 		(at 269.24 217.17 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9629,7 +9597,6 @@
 	)
 	(label "~{CPLD_BERR}"
 		(at 59.69 179.07 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9640,7 +9607,6 @@
 	)
 	(label "~{CS_EXTREG2}"
 		(at 240.03 129.54 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9651,7 +9617,6 @@
 	)
 	(label "A20"
 		(at 309.88 119.38 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9662,7 +9627,6 @@
 	)
 	(label "A21"
 		(at 309.88 116.84 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9673,7 +9637,6 @@
 	)
 	(label "~{AS}"
 		(at 58.42 123.19 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9684,7 +9647,6 @@
 	)
 	(label "A18"
 		(at 309.88 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9695,7 +9657,6 @@
 	)
 	(label "~{CS_EXTREG1}"
 		(at 240.03 124.46 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9706,7 +9667,6 @@
 	)
 	(label "A14"
 		(at 309.88 73.66 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9717,7 +9677,6 @@
 	)
 	(label "A9"
 		(at 309.88 86.36 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9728,7 +9687,6 @@
 	)
 	(label "~{CPLD_BERR}"
 		(at 328.93 96.52 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9739,7 +9697,6 @@
 	)
 	(label "BOOTROM"
 		(at 251.46 63.5 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9750,7 +9707,6 @@
 	)
 	(label "~{EXTINT2}"
 		(at 58.42 36.83 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9761,7 +9717,6 @@
 	)
 	(label "~{IPL0}"
 		(at 127 49.53 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9772,7 +9727,6 @@
 	)
 	(label "~{RUN}"
 		(at 105.41 200.66 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9783,7 +9737,6 @@
 	)
 	(label "~{DTACK_CPLD}"
 		(at 58.42 231.14 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9794,7 +9747,6 @@
 	)
 	(label "~{EXTINT1}"
 		(at 74.93 52.07 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.0922 1.0922)
@@ -9805,7 +9757,6 @@
 	)
 	(label "~{EXTINT3}"
 		(at 58.42 39.37 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9816,7 +9767,6 @@
 	)
 	(label "~{IPL1}"
 		(at 127 52.07 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9827,7 +9777,6 @@
 	)
 	(label "~{CS_EXTDATA3}"
 		(at 241.3 119.38 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9839,7 +9788,6 @@
 	(hierarchical_label "~{INT_IDE}"
 		(shape input)
 		(at 74.93 54.61 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9851,7 +9799,6 @@
 	(hierarchical_label "FC[0..2]"
 		(shape input)
 		(at 219.71 81.28 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9863,7 +9810,6 @@
 	(hierarchical_label "~{RAS0}"
 		(shape output)
 		(at 312.42 134.62 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9875,7 +9821,6 @@
 	(hierarchical_label "~{RAS1}"
 		(shape output)
 		(at 312.42 152.4 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9887,7 +9832,6 @@
 	(hierarchical_label "~{CS_ROM}"
 		(shape output)
 		(at 251.46 78.74 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9899,7 +9843,6 @@
 	(hierarchical_label "~{CS_IDE}"
 		(shape output)
 		(at 251.46 137.16 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9911,7 +9854,6 @@
 	(hierarchical_label "~{IDE_RD}"
 		(shape output)
 		(at 251.46 104.14 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9923,7 +9865,6 @@
 	(hierarchical_label "~{CS_KBD}"
 		(shape output)
 		(at 251.46 73.66 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9935,7 +9876,6 @@
 	(hierarchical_label "~{HALT}"
 		(shape input)
 		(at 60.96 198.12 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9947,7 +9887,6 @@
 	(hierarchical_label "~{EXT_UDS}"
 		(shape output)
 		(at 312.42 93.98 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9959,7 +9898,6 @@
 	(hierarchical_label "~{INT_PS2}"
 		(shape input)
 		(at 74.93 62.23 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9971,7 +9909,6 @@
 	(hierarchical_label "DRAM_MUX"
 		(shape output)
 		(at 312.42 142.24 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9983,7 +9920,6 @@
 	(hierarchical_label "~{EXT_VPA}"
 		(shape input)
 		(at 60.96 165.1 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9995,7 +9931,6 @@
 	(hierarchical_label "A[1..23]"
 		(shape input)
 		(at 334.01 50.8 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10007,7 +9942,6 @@
 	(hierarchical_label "~{INT_DUART}"
 		(shape input)
 		(at 74.93 59.69 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10019,7 +9953,6 @@
 	(hierarchical_label "~{EXT_BERR}"
 		(shape input)
 		(at 59.69 184.15 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10031,7 +9964,6 @@
 	(hierarchical_label "~{BERR}"
 		(shape output)
 		(at 87.63 181.61 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10043,7 +9975,6 @@
 	(hierarchical_label "~{RESET}"
 		(shape input)
 		(at 312.42 144.78 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10055,7 +9986,6 @@
 	(hierarchical_label "~{UDS}"
 		(shape input)
 		(at 251.46 154.94 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10067,7 +9997,6 @@
 	(hierarchical_label "~{CPU_RESET}"
 		(shape input)
 		(at 60.96 203.2 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10079,7 +10008,6 @@
 	(hierarchical_label "~{DTACK}"
 		(shape output)
 		(at 102.87 234.95 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10091,7 +10019,6 @@
 	(hierarchical_label "~{CS_SRAM}"
 		(shape output)
 		(at 251.46 76.2 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10103,7 +10030,6 @@
 	(hierarchical_label "~{CS_DUART}"
 		(shape output)
 		(at 251.46 99.06 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10115,7 +10041,6 @@
 	(hierarchical_label "~{LDS}"
 		(shape input)
 		(at 312.42 106.68 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10127,7 +10052,6 @@
 	(hierarchical_label "~{EXT_LDS}"
 		(shape output)
 		(at 312.42 99.06 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10139,7 +10063,6 @@
 	(hierarchical_label "~{CS_PIT}"
 		(shape output)
 		(at 251.46 71.12 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10151,7 +10074,6 @@
 	(hierarchical_label "~{RD}WR"
 		(shape output)
 		(at 87.63 257.81 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10163,7 +10085,6 @@
 	(hierarchical_label "~{CAS1}"
 		(shape output)
 		(at 312.42 127 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10175,7 +10096,6 @@
 	(hierarchical_label "~{VPA}"
 		(shape output)
 		(at 88.9 162.56 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10187,7 +10107,6 @@
 	(hierarchical_label "~{IPL[0..2]}"
 		(shape output)
 		(at 142.24 43.18 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10199,7 +10118,6 @@
 	(hierarchical_label "CLK10"
 		(shape output)
 		(at 251.46 83.82 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10211,7 +10129,6 @@
 	(hierarchical_label "~{AS}"
 		(shape input)
 		(at 312.42 109.22 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10223,7 +10140,6 @@
 	(hierarchical_label "~{CS_EXTDATA[1..4]}"
 		(shape output)
 		(at 227.33 107.95 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10235,7 +10151,6 @@
 	(hierarchical_label "~{CAS0}"
 		(shape output)
 		(at 312.42 129.54 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10247,7 +10162,6 @@
 	(hierarchical_label "~{DATCK_EXT}"
 		(shape input)
 		(at 81.28 237.49 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10259,7 +10173,6 @@
 	(hierarchical_label "~{INT_PIT1}"
 		(shape input)
 		(at 48.26 87.63 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10271,7 +10184,6 @@
 	(hierarchical_label "~{DRAM_WE}"
 		(shape output)
 		(at 312.42 139.7 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10283,7 +10195,6 @@
 	(hierarchical_label "~{EXTINT[1..3]}"
 		(shape input)
 		(at 44.45 27.94 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10295,7 +10206,6 @@
 	(hierarchical_label "~{DATCK_68K}"
 		(shape input)
 		(at 58.42 226.06 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10307,7 +10217,6 @@
 	(hierarchical_label "~{CS_RTC}"
 		(shape output)
 		(at 251.46 109.22 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10319,7 +10228,6 @@
 	(hierarchical_label "~{INT_PIT0}"
 		(shape input)
 		(at 48.26 82.55 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10331,7 +10239,6 @@
 	(hierarchical_label "~{IDE_WR}"
 		(shape output)
 		(at 251.46 101.6 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10343,7 +10250,6 @@
 	(hierarchical_label "RD~{WR}"
 		(shape input)
 		(at 312.42 104.14 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10355,7 +10261,6 @@
 	(hierarchical_label "~{CS_EXTREG[1..4]}"
 		(shape output)
 		(at 227.33 119.38 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
