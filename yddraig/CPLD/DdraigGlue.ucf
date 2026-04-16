@@ -27,7 +27,7 @@ NET "a_ip<23>"  LOC = "P62";
 
 NET "clk_ip"  LOC = "P9" |BUFG = CLK;
 NET "clk10_op"  LOC = "P10";
-NET "clk10_op"  LOC = "P67";
+NET "clk20_op"  LOC = "P67";
 
 NET "bootrom_ip"  LOC = "P1";
 NET "dtack_op"  LOC = "P2";
