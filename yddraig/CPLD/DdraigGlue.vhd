@@ -17,6 +17,7 @@ entity DdraigGlue is
         lds_ip			: in std_logic;
         uds_ip			: in std_logic;
         clk10_op		: out std_logic;
+		clk20_op		: out std_logic;
         dtack_op		: out std_logic;
         cs_pit_op		: out std_logic;
         cs_kbd_op		: out std_logic;
@@ -97,6 +98,7 @@ begin
 
 	dtack_op <= s_dtack_address AND s_dtack_dram;
 	clk10_op <= s_cpu_clk;
+	clk20_op <= s_cpu_clk;
 	dram_we_op <= s_dram_we;
 
 	s_extbus_en <= s_ext_reg1 AND s_ext_reg2 AND s_ext_reg3 AND s_ext_reg4 AND s_ext_data1 AND s_ext_data2 AND s_ext_data3 AND s_ext_data4;
