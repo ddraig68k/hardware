@@ -41,46 +41,47 @@ ARCHITECTURE behavior OF tb_ddraig_glue IS
  
     COMPONENT DdraigGlue
     PORT(
-			  a_ip 			: in  STD_LOGIC_VECTOR (23 downto 8);
-           clk_ip			: in  STD_LOGIC;
-           reset_ip		: in  STD_LOGIC;
-           bootrom_ip	: in  STD_LOGIC;
-           fc0_ip		   : in  STD_LOGIC;
-           fc1_ip			: in  STD_LOGIC;
-           fc2_ip			: in  STD_LOGIC;
-           as_ip			: in  STD_LOGIC;
-           rw_ip			: in  STD_LOGIC;
-           lds_ip			: in  STD_LOGIC;
-           uds_ip			: in  STD_LOGIC;
-           clk10_op		: out  STD_LOGIC;
-           dtack_op		: out  STD_LOGIC;
-           cs_pit_op		: out  STD_LOGIC;
-           cs_kbd_op		: out  STD_LOGIC;
-           cs_sram_op	: out  STD_LOGIC;
-           cs_rom_op		: out  STD_LOGIC;
-           cs_duart_op	: out  STD_LOGIC;
-           cs_rtc_op		: out  STD_LOGIC;
-           cs_ide_op		: out  STD_LOGIC;
-			  cs_data1_op	: out  STD_LOGIC;
-		     cs_data2_op	: out  STD_LOGIC;
-		     cs_data3_op	: out  STD_LOGIC;
-		     cs_data4_op	: out  STD_LOGIC;
-		     cs_reg1_op		: out  STD_LOGIC;
-		     cs_reg2_op		: out  STD_LOGIC;
-		     cs_reg3_op		: out  STD_LOGIC;
-		     cs_reg4_op		: out  STD_LOGIC;
-			  mux_op			: out  STD_LOGIC;
-           dram_we_op	: out  STD_LOGIC;
-           ras0_op		: out  STD_LOGIC;
-           ras1_op		: out  STD_LOGIC;
-           cas0_op		: out  STD_LOGIC;
-           cas1_op		: out  STD_LOGIC;
-			  ide_wr_op		: out  STD_LOGIC;
-			  ide_rd_op		: out  STD_LOGIC;
-           ext_lds_op	: out  STD_LOGIC;
-           ext_uds_op	: out  STD_LOGIC;
-			  vpa_op			: out  STD_LOGIC;
-			  buserr_op    : out  STD_LOGIC);
+        a_ip 			: in  STD_LOGIC_VECTOR (23 downto 8);
+        clk_ip			: in  STD_LOGIC;
+        reset_ip		: in  STD_LOGIC;
+        bootrom_ip	    : in  STD_LOGIC;
+        fc0_ip		    : in  STD_LOGIC;
+        fc1_ip			: in  STD_LOGIC;
+        fc2_ip			: in  STD_LOGIC;
+        as_ip			: in  STD_LOGIC;
+        rw_ip			: in  STD_LOGIC;
+        lds_ip			: in  STD_LOGIC;
+        uds_ip			: in  STD_LOGIC;
+        clk10_op		: out  STD_LOGIC;
+        clk20_op		: out  STD_LOGIC;
+        dtack_op		: out  STD_LOGIC;
+        cs_pit_op		: out  STD_LOGIC;
+        cs_kbd_op		: out  STD_LOGIC;
+        cs_sram_op	    : out  STD_LOGIC;
+        cs_rom_op		: out  STD_LOGIC;
+        cs_duart_op	    : out  STD_LOGIC;
+        cs_rtc_op		: out  STD_LOGIC;
+        cs_ide_op		: out  STD_LOGIC;
+		cs_data1_op	    : out  STD_LOGIC;
+		cs_data2_op	    : out  STD_LOGIC;
+		cs_data3_op	    : out  STD_LOGIC;
+		cs_data4_op	    : out  STD_LOGIC;
+		cs_reg1_op		: out  STD_LOGIC;
+		cs_reg2_op		: out  STD_LOGIC;
+		cs_reg3_op		: out  STD_LOGIC;
+		cs_reg4_op		: out  STD_LOGIC;
+		mux_op			: out  STD_LOGIC;
+        dram_we_op	    : out  STD_LOGIC;
+        ras0_op		    : out  STD_LOGIC;
+        ras1_op		    : out  STD_LOGIC;
+        cas0_op		    : out  STD_LOGIC;
+        cas1_op		    : out  STD_LOGIC;
+		ide_wr_op		: out  STD_LOGIC;
+		ide_rd_op		: out  STD_LOGIC;
+        ext_lds_op	    : out  STD_LOGIC;
+        ext_uds_op	    : out  STD_LOGIC;
+		vpa_op			: out  STD_LOGIC;
+		buserr_op       : out  STD_LOGIC);
    END COMPONENT;
 
    --Inputs
@@ -99,6 +100,7 @@ ARCHITECTURE behavior OF tb_ddraig_glue IS
 
  	--Outputs
    signal clk10 : std_logic;
+   signal clk20 : std_logic;
    signal dtack : std_logic;
    signal cs_pit : std_logic;
    signal cs_kbd : std_logic;
@@ -167,6 +169,7 @@ BEGIN
           lds_ip => lds,
           uds_ip => uds,
           clk10_op => clk10,
+          clk20_op => clk20,
           dtack_op => dtack,
           cs_pit_op => cs_pit,
           cs_kbd_op => cs_kbd,
