@@ -45,4 +45,4 @@ Welsh for *The Dragon*, Y Ddraig is my [Motorola 68000](https://en.wikipedia.org
 
 * [VGA Graphics card](expansion/GfxVGA) - FPGA based VGA video generation
 
-* [Sega Megadrive joypad card](expansion/JoypadController) - reads standard 3-button Sega Megadrive/Genesis controllers
+* [Sega Megadrive joypad card](expansion/JoypadController) - reads standard 3 or 6-button Sega Megadrive/Genesis controllers
