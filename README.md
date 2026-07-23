@@ -8,7 +8,7 @@ The libraries used in the project are contained in the ddraig-libs folder inside
 
 Welsh for *The Dragon*, Y Ddraig is my [Motorola 68000](https://en.wikipedia.org/wiki/Motorola_68000) computer. 
 
-![Y Ddraig](/artwor/)
+![Y Ddraig](/artwork/yddraig-logo.png)
 | **Specifications** |
 |-|
 |68000 CPU running at 10Mhz.|
@@ -31,16 +31,18 @@ Welsh for *The Dragon*, Y Ddraig is my [Motorola 68000](https://en.wikipedia.org
 
 **Expansion Cards**
 
-* [Dual SID Audio card](expansion/AudioSID)
+* [Dual SID Audio card](expansion/AudioSID) - two MOS 6581/8580 SID chips for Commodore 64 style audio
 
-* [YM2151 Audio card](expansion/AudioYM2151)
+* [YM2151 Audio card](expansion/AudioYM2151) - Yamaha FM synthesis chip as used in many arcade games
 
-* [RTL8019 Ethernet card](expansion/Eth8019)
+* [RTL8019 Ethernet card](expansion/Eth8019) - 10BASE-T Ethernet using the Realtek RTL8019AS
 
-* [TMS9918 Graphics card](expansion/GfxTMS9918)
+* [TMS9918 Graphics card](expansion/GfxTMS9918) - the video chip used in the Sega SG-1000, ColecoVision and MSX1
 
-* [V9958 Graphics card](expansion/GfxV9958)
+* [V9958 Graphics card](expansion/GfxV9958) - Yamaha's successor to the TMS9918, as used in the MSX2+
 
-* [V9990 Graphics card](expansion/GfxV9990)
+* [V9990 Graphics card](expansion/GfxV9990) - Yamaha's follow up to the V9958 with higher resolutions
 
-* [Sega Megadrive joypad card](expansion/JoypadController)
+* [VGA Graphics card](expansion/GfxVGA) - FPGA based VGA video generation
+
+* [Sega Megadrive joypad card](expansion/JoypadController) - reads standard 3-button Sega Megadrive/Genesis controllers
