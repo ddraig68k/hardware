@@ -8893,7 +8893,7 @@
 			(pin input line
 				(at -13.97 -33.02 0)
 				(length 2.54)
-				(name "~{CE2}"
+				(name "CE2"
 					(effects
 						(font
 							(size 1.27 1.27)
