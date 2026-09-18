@@ -32,6 +32,13 @@ architecture Behavioral of DRAMStateMachine is
 	signal s_refack_async	: std_logic;
 	signal s_mux_async		: std_logic;
 	signal s_dtack_async	: std_logic;
+
+	-- Registered timing signals, qualified at the pins for prompt termination.
+	signal s_ras0_reg, s_ras1_reg : std_logic;
+	signal s_cas0_reg, s_cas1_reg : std_logic;
+	signal s_we_reg, s_dtack_reg : std_logic;
+	signal s_mem_active, s_refresh_active : std_logic;
+	signal s_cycle_active : std_logic;
 	
 	-- state signals
 	signal s_refreq			: std_logic; 					-- Refresh request
@@ -60,6 +67,32 @@ architecture Behavioral of DRAMStateMachine is
 	constant unused5		: std_logic_vector(3 downto 0) := "1111";
 	
 begin
+	-- Start the normal-access enable before RAS is asserted, but terminate it
+	-- asynchronously at the end of the CPU cycle. Unlike simply OR-ing AS into
+	-- the pins, the cleared enable cannot expose stale registered strobes when
+	-- AS falls again for the next access. The FSM still supplies precharge time.
+	mem_cycle_enable : process(clk_i, reset_i, as_i)
+	begin
+		if reset_i = '0' or as_i = '1' then
+			s_mem_active <= '0';
+		elsif falling_edge(clk_i) then
+			if s_state = mem_rw1 then
+				s_mem_active <= '1';
+			end if;
+		end if;
+	end process;
+
+	-- Refresh must not depend on CPU AS or byte strobes. Its enable is
+	-- registered alongside the timing outputs, not decoded from the next state.
+	s_cycle_active <= s_mem_active or s_refresh_active;
+	ras0_o <= s_ras0_reg or not s_cycle_active;
+	ras1_o <= s_ras1_reg or not s_cycle_active;
+	cas0_o <= s_cas0_reg or
+		(not s_refresh_active and (not s_mem_active or uds_i));
+	cas1_o <= s_cas1_reg or
+		(not s_refresh_active and (not s_mem_active or lds_i));
+	we_o <= s_we_reg or not s_mem_active or rw_i;
+	dtack_o <= s_dtack_reg or not s_mem_active;
 
 -- The DRAM controller state machine is implemented as a two-process FSM.
 -- The first process is the asynchronous one that determines the next state based upon current state and other inputs.
@@ -224,24 +257,31 @@ begin
 	begin
 		if (reset_i = '0') then
 			s_state	 	<= idle;
-			ras0_o		<= '1';
-			ras1_o		<= '1';
-			cas0_o		<= '1';
-			cas1_o		<= '1';
-			dtack_o		<= '1';
-			we_o		<= '1';
+			s_ras0_reg	<= '1';
+			s_ras1_reg	<= '1';
+			s_cas0_reg	<= '1';
+			s_cas1_reg	<= '1';
+			s_dtack_reg	<= '1';
+			s_we_reg	<= '1';
+			s_refresh_active <= '0';
 			mux_o		<= '0';
 			s_refack	<= '0';
 		elsif (clk_i'event and clk_i = '0') then	-- state machine clocked on falling edge
 			s_state		<= s_next_state;			-- update the state machine state
-			ras0_o		<= s_ras0_async;
-			ras1_o		<= s_ras1_async;
-			cas0_o		<= s_cas0_async;
-			cas1_o		<= s_cas1_async;
-			we_o		<= s_we_async;
+			s_ras0_reg	<= s_ras0_async;
+			s_ras1_reg	<= s_ras1_async;
+			s_cas0_reg	<= s_cas0_async;
+			s_cas1_reg	<= s_cas1_async;
+			s_we_reg	<= s_we_async;
 			mux_o		<= s_mux_async;
 			s_refack	<= s_refack_async;
-			dtack_o		<= s_dtack_async;
+			s_dtack_reg	<= s_dtack_async;
+			if s_state = ref_cbr1 or s_state = ref_cbr2 or
+			   s_state = ref_cbr3 or s_state = ref_cbr4 then
+				s_refresh_active <= '1';
+			else
+				s_refresh_active <= '0';
+			end if;
 		end if;			
 	end process;
 
@@ -281,4 +321,3 @@ begin
 	end process;
 
 end Behavioral;
-

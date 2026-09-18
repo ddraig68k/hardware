@@ -98,7 +98,7 @@ begin
 
 	dtack_op <= s_dtack_address AND s_dtack_dram;
 	clk10_op <= s_cpu_clk;
-	clk20_op <= s_cpu_clk;
+	clk20_op <= s_clk_20mhz; -- 16 MHz CPU clock with the 32 MHz oscillator
 	dram_we_op <= s_dram_we;
 
 	s_extbus_en <= s_ext_reg1 AND s_ext_reg2 AND s_ext_reg3 AND s_ext_reg4 AND s_ext_data1 AND s_ext_data2 AND s_ext_data3 AND s_ext_data4;
@@ -119,4 +119,3 @@ begin
 	cs_data4_op <= s_ext_data4;
 
 end Behavioral;
-
