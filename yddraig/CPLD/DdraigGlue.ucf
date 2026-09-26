@@ -2,7 +2,7 @@
 #Created by Constraints Editor (xc95108-pc84-10) - 2019/06/12
 #Created by Constraints Editor (xc95108-pc84-10) - 2019/11/13
 NET "clk_ip" TNM_NET = clk_ip;
-TIMESPEC TS_clk_ip = PERIOD "clk_ip" 25 ns HIGH 50%;
+TIMESPEC TS_clk_ip = PERIOD "clk_ip" 31.25 ns HIGH 50%;
 #NET "s_clk_20mhz" TNM_NET = s_clk_20mhz;
 #TIMESPEC TS_s_clk_20mhz = PERIOD "s_clk_20mhz" 50 ns HIGH 50%;
 

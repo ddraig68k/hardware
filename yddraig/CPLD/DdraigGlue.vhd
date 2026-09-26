@@ -67,20 +67,8 @@ architecture Behavioral of DdraigGlue is
 	signal s_ext_data3		: std_logic;
 	signal s_ext_data4		: std_logic;
 	
-	signal s_berr_count     : std_logic_vector(7 downto 0);
 
 begin
-
-	buserr_count : process (s_cpu_clk, reset_ip, as_ip)
-	begin
-		if reset_ip = '0' or as_ip = '1' then
-			s_berr_count <= (others => '0');
-		elsif rising_edge(s_cpu_clk) then
-			if s_berr_count < "11111111" then
-				s_berr_count <= s_berr_count + 1;
-			end if;
-		end if;
-	end process;
 
 	ClkGen: entity work.Clock port map(clk_i => clk_ip, clk20_o => s_clk_20mhz, clk10_o => s_cpu_clk);
 	
@@ -89,7 +77,7 @@ begin
 											vpa_o => vpa_op, cs_rom_o => cs_rom_op, cs_sram_o => cs_sram_op, dram_sel_o => s_dram_sel, cs_duart_o => cs_duart_op,
 											cs_pit_o => cs_pit_op, cs_kbd_o => cs_kbd_op, cs_rtc_o => cs_rtc_op, cs_ide_o => cs_ide_op, ide_wr_o => ide_wr_op, ide_rd_o => ide_rd_op,
 											cs_data1_o => s_ext_data1, cs_data2_o => s_ext_data2, cs_data3_o => s_ext_data3, cs_data4_o => s_ext_data4,
-											cs_reg1_o => s_ext_reg1, cs_reg2_o => s_ext_reg2, cs_reg3_o => s_ext_reg3, cs_reg4_o => s_ext_reg4 );
+											cs_reg1_o => s_ext_reg1, cs_reg2_o => s_ext_reg2, cs_reg3_o => s_ext_reg3, cs_reg4_o => s_ext_reg4, berr_o => buserr_op );
 	
 	DRAM: entity work.DRAMStateMachine port map(clk_i => s_clk_20mhz, dram_sel_i => s_dram_sel, reset_i => reset_ip, lds_i => lds_ip, uds_i => uds_ip,
 											  rw_i => rw_ip, as_i => as_ip, ras0_o => ras0_op, ras1_o => ras1_op, cas0_o => cas0_op, cas1_o => cas1_op,
@@ -105,9 +93,6 @@ begin
 	ext_lds_op <= '0' WHEN s_extbus_en = '0' AND lds_ip = '0' ELSE '1';
 	ext_uds_op <= '0' WHEN s_extbus_en = '0' AND uds_ip = '0' ELSE '1';
 
-	-- Generate bus error when no activity on AS, approx 5us
-	--buserr_op <= '0' WHEN s_berr_count > "11001000" ELSE '1';
-	buserr_op <= '0' WHEN s_berr_count > "11101000" ELSE '1';
 	
 	cs_reg1_op <= s_ext_reg1;
 	cs_reg2_op <= s_ext_reg2;

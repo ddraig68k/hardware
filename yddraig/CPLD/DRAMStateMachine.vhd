@@ -43,10 +43,21 @@ architecture Behavioral of DRAMStateMachine is
 	-- state signals
 	signal s_refreq			: std_logic; 					-- Refresh request
 	signal s_term_count		: std_logic; 					-- Refresh counter terminal count signal
-	signal s_refcount		: std_logic_vector(19 downto 0);-- The refresh counter
+	-- GM71C4100C: 1024 refresh cycles per 16 ms, or <=15.625 us/cycle.
+	-- Request at 200 x 62.5 ns = 12.5 us on the 16 MHz controller clock.
+	-- Leave margin for the registered request/ack pipeline and an in-flight
+	-- CPU access. Refresh is serviced at idle; AS must not be held indefinitely.
+	constant c_refresh_ticks : natural := 200;
+	signal s_refcount		: std_logic_vector(7 downto 0);
 	signal s_refack			: std_logic;					-- Refresh acknowlege
 	signal s_state			: std_logic_vector(3 downto 0);	-- Current state
 	signal s_next_state		: std_logic_vector(3 downto 0);	-- Next state
+
+	-- Keep the hand-written binary encoding.  XST's automatic FSM extraction
+	-- re-encodes this 4-bit vector one-hot and spends 11 macrocells on it,
+	-- each dragging its own next-state cone into a function block.
+	attribute fsm_extract : string;
+	attribute fsm_extract of s_state : signal is "no";
 	
 	-- state declarations
 	constant idle			: std_logic_vector(3 downto 0) := "0000";
@@ -102,7 +113,7 @@ begin
 	---------------------------------------
 	------ Asynchronous process -----------
 	---------------------------------------
-	as_control: process(dram_sel_i, s_refreq, s_state, as_i, rw_i, lds_i, uds_i)
+	as_control: process(dram_sel_i, s_refreq, s_state, s_mem_active, as_i, rw_i, lds_i, uds_i)
 	begin
 		case s_state is
 			when idle =>
@@ -176,7 +187,11 @@ begin
 				s_dtack_async	<= '0';
 				s_mux_async		<= '1';
 				s_we_async		<= rw_i;
-				if as_i = '0' then
+				-- s_mem_active remembers that AS went high even if the next
+				-- back-to-back cycle starts before a controller clock edge.
+				-- Testing AS directly here can otherwise leave the FSM in
+				-- mem_rw5 with DTACK gated off until the bus-error timeout.
+				if s_mem_active = '1' then
 					s_next_state <= mem_rw5;
 				else
 					s_next_state <= precharge;
@@ -287,25 +302,23 @@ begin
 
 	---------------------------------------
 	----    refresh counter 
-	----    10 bits 15.6us interval
+	----    8-bit saturating request timer; 12.5 us nominal at 16 MHz
 	---------------------------------------
 	rfcnt: process(clk_i, s_refack, reset_i)
 	begin
 		if (reset_i = '0') then
-			s_refcount <= X"00000";
+			s_refcount <= (others => '0');
 		elsif (clk_i'event and clk_i = '0') then
 			if(s_refack = '1') then
-				s_refcount <= X"00000";
-			else
+				s_refcount <= (others => '0');
+			elsif s_refcount < c_refresh_ticks then
 				s_refcount <= s_refcount + 1;
 			end if;
 		end if;
 	end process;
 
-	-- 138 hex = 0100111000 binary = 312 decimal
-	-- assuming 20 MHz clock (50ns clock period)
-	-- 50ns (tCYC) x 312 = 15.6us is the refresh request rate.
-	s_term_count <= '1' when s_refcount = "0100111000" else '0';
+	-- Saturation keeps a delayed request pending until refresh is acknowledged.
+	s_term_count <= '1' when s_refcount = c_refresh_ticks else '0';
 
 	rreq: process (clk_i, s_term_count, s_refack, reset_i)
 	begin

@@ -34,12 +34,48 @@ entity AddressDecode is
 		cs_reg4_o		: out std_logic;
 		ide_wr_o     	: out std_logic;
 	  	ide_rd_o     	: out std_logic;
-		vpa_o			: out std_logic
+		vpa_o			: out std_logic;
+		berr_o			: out std_logic
 	);
 end AddressDecode;
 
 architecture Behavioral of AddressDecode is
 	signal s_dtack 		: std_logic_vector(7 downto 0);
+	-- Controller clock is 16 MHz (62.5 ns) with the 32 MHz oscillator.
+	-- Thresholds refer to the number of rising edges since AS asserted.
+	-- Keep SRAM one controller clock slower than ROM.  At 16 MHz this
+	-- acknowledges SRAM after 250..312.5 ns from AS, giving the external
+	-- LS32 chip-select path and 55 ns SRAM plenty of margin before the CPU
+	-- samples data or completes a stack write.
+	constant c_sram_ack_ticks : natural := 3;
+	constant c_rom_ack_ticks : natural := 3;
+	constant c_slow_ack_ticks : natural := 9;
+	constant c_expansion_ack_ticks : natural := 41;
+	-- CompactFlash timings, retuned from measurement (iobench).  Tick 12 put
+	-- the IDE bus cycle at ~916 ns; these give ~500 ns while staying inside
+	-- ATA PIO-0 on write pulse width and PIO-2 on address setup, which every
+	-- CF card supports.  IORDY is not wired, so PIO-2 is the ceiling anyway.
+	--   strobe at tick 1  ->  ~59 ns address setup
+	--   write ends tick 4 ->  187 ns /IOW pulse, a full clock before DTACK
+	--   ack at tick 5     ->  8-clock cycle, ~430 ns /IOR before the CPU samples
+	constant c_ide_strobe_ticks : natural := 1;
+	constant c_ide_write_end_ticks : natural := 4;
+	constant c_ide_ack_ticks : natural := 5;
+	signal s_ide_strobe, s_ide_write_done, s_ide_ack : std_logic;
+
+	-- Registered acknowledge decisions.  Comparing the counter combinatorially
+	-- inside dtack_o pulled the whole 8-bit vector plus every chip select into
+	-- one function block; the fitter then had to buffer dtack_op across seven
+	-- macrocells.  Deciding here and gating with the select there keeps the
+	-- output equation small.  Timing is unchanged: a flag set when the counter
+	-- reads N-1 is high from tick N, exactly as ">= N" was.
+	signal s_rom_ack, s_sram_ack, s_slow_ack, s_exp_ack : std_logic;
+
+	-- Bus error timeout.  s_dtack is already cleared by AS and saturates, so it
+	-- serves as the timeout directly; the separate 8-bit counter in DdraigGlue
+	-- is no longer needed.  255 ticks = 15.9 us at 16 MHz, comfortably past the
+	-- 2.56 us expansion fallback and well inside any sane watchdog.
+	constant c_berr_ticks : natural := 255;
 	
 	signal s_rom 		: std_logic;
 	signal s_sram 		: std_logic;
@@ -70,9 +106,39 @@ begin
 	begin
 		if (reset_i = '0' or as_i = '1') then
 			s_dtack <= (others => '0');
+			s_ide_strobe <= '0';
+			s_ide_write_done <= '0';
+			s_ide_ack <= '0';
+			s_rom_ack <= '0';
+			s_sram_ack <= '0';
+			s_slow_ack <= '0';
+			s_exp_ack <= '0';
 		elsif (rising_edge(clk_i)) then
 			if (s_dtack < "11111111") then
 				s_dtack <= s_dtack + 1;
+			end if;
+			-- Register and hold these enables: decoding the binary counter
+			-- directly onto IDE strobes could glitch during carry transitions.
+			if s_dtack = c_ide_strobe_ticks - 1 then
+				s_ide_strobe <= '1';
+			end if;
+			if s_dtack = c_ide_ack_ticks - 1 then
+				s_ide_ack <= '1';
+			end if;
+			if s_dtack = c_ide_write_end_ticks - 1 then
+				s_ide_write_done <= '1';
+			end if;
+			if s_dtack = c_rom_ack_ticks - 1 then
+				s_rom_ack <= '1';
+			end if;
+			if s_dtack = c_sram_ack_ticks - 1 then
+				s_sram_ack <= '1';
+			end if;
+			if s_dtack = c_slow_ack_ticks - 1 then
+				s_slow_ack <= '1';
+			end if;
+			if s_dtack = c_expansion_ack_ticks - 1 then
+				s_exp_ack <= '1';
 			end if;
 		end if;
 	end process;
@@ -118,24 +184,39 @@ begin
 	cs_data3_o	<= s_data3;
 	cs_data4_o	<= s_data4;
 
-	-- Handle IDE and PS/2 read/write signals
-	ide_wr_o    <= '0' WHEN s_ide = '0' AND rw_i = '0' ELSE '1';
-	ide_rd_o    <= '0' WHEN s_ide = '0' AND rw_i = '1' ELSE '1';
+	-- Conservative CompactFlash PIO-0 timings at a 16 MHz controller clock:
+	-- delay RD/WR until tick 3 (125..187.5 ns after AS), then acknowledge
+	-- at tick 12 (687.5..750 ns after AS). This provides address setup and
+	-- >=562.5 ns of read strobe before DTACK, including slow 8-bit registers.
+	-- End writes at tick 11 (500 ns pulse), a full clock BEFORE DTACK, so
+	-- the CPU still holds write data for the CF's 30 ns PIO-0 hold requirement.
+	-- Reads stay asserted until AS releases: the CPU samples after DTACK.
+	-- AS also aborts both strobes through s_ide. IORDY is not wired
+	-- to this CPLD; faster modes need a separate board/device timing review.
+	ide_wr_o <= '0' WHEN s_ide = '0' AND s_ide_strobe = '1' AND
+		s_ide_write_done = '0' AND rw_i = '0' ELSE '1';
+	ide_rd_o <= '0' WHEN s_ide = '0' AND s_ide_strobe = '1' AND rw_i = '1' ELSE '1';
 	
-	s_ack 		<= s_kbd AND s_pit AND s_rtc;	
+	-- DUART, PIT and expansion data accesses use the devices' own DTACK.
+	s_ack 		<= s_kbd AND s_rtc;
 	s_ext_id	<= s_reg1 AND s_reg2 AND s_reg3 AND s_reg4; 
 	
 	-- Handle interrupt ack via VPA
 	vpa_o		<= '0' WHEN s_fc = '1' AND as_i = '0' AND s_dtack > "00010" ELSE '1';
 	
-	dtack_o 	<= '0' WHEN s_ext_id = '0' AND s_dtack > "00101000"				-- DTACK after 2us. Gives the expansion board tim to
-																				-- generate it's own DTACK but still generate a signal
-																				-- if no board is connected.
-					   ELSE '0' WHEN s_sram = '0' AND s_dtack > "00000010"		
-					   ELSE '0' WHEN s_rom = '0' AND s_dtack >  "00000010"		
-					   ELSE '0' WHEN s_ide = '0' AND s_dtack >  "00000010"		
-					   ELSE '0' WHEN s_ack = '0' AND s_dtack > "00001000"  		-- DTACK for other devices
-					   ELSE '1'; 
+	-- Preserve the expansion-register fallback for absent-card detection:
+	-- 40..41 clocks = 2.5..2.5625 us at 16 MHz. An installed card may ack sooner.
+	-- SRAM gets two extra ticks because its byte enables pass through the
+	-- external LS32 gates and its write enable is the CPU R/W signal itself.
+	-- ROM has a direct CPLD select and retains the 3-tick acknowledge.
+	dtack_o 	<= '0' WHEN s_ext_id = '0' AND s_exp_ack = '1'
+					   ELSE '0' WHEN s_sram = '0' AND s_sram_ack = '1'
+					   ELSE '0' WHEN s_rom = '0' AND s_rom_ack = '1'
+					   ELSE '0' WHEN s_ide = '0' AND s_ide_ack = '1'
+					   ELSE '0' WHEN s_ack = '0' AND s_slow_ack = '1'
+					   ELSE '1';
+
+	-- Bus error when a cycle is never acknowledged.  AS clears the counter.
+	berr_o		<= '0' WHEN s_dtack = c_berr_ticks ELSE '1'; 
 							 
 end Behavioral;
-

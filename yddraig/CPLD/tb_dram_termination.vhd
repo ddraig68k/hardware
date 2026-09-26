@@ -70,6 +70,32 @@ begin
             access_cycle('0', '1', '0', n * 5 ns);
         end loop;
 
+        -- End one cycle and begin the next entirely between controller edges.
+        -- The asynchronously-cleared cycle latch must still force mem_rw5 to
+        -- precharge; otherwise DTACK remains disabled and this access hangs.
+        sel <= '1'; as_n <= '0'; rw <= '1'; uds_n <= '0'; lds_n <= '0';
+        wait until dtack_n = '0' for 2 us;
+        assert dtack_n = '0' report "Short-gap setup access timed out" severity failure;
+        wait until falling_edge(clk);
+        wait for 5 ns;
+        as_n <= '1'; sel <= '0'; uds_n <= '1'; lds_n <= '1';
+        wait for 5 ns;
+        check_released;
+        wait for 5 ns;
+        sel <= '1'; as_n <= '0'; rw <= '1'; uds_n <= '0'; lds_n <= '0';
+        wait for 1 ns;
+        assert dtack_n = '1'
+            report "Stale DTACK at short-gap access" severity failure;
+        wait until dtack_n = '0' for 2 us;
+        assert dtack_n = '0'
+            report "Short-gap access lost after mem_rw5" severity failure;
+        wait until falling_edge(clk);
+        wait for 5 ns;
+        as_n <= '1'; sel <= '0'; uds_n <= '1'; lds_n <= '1';
+        wait for 1 ns;
+        check_released;
+        wait for 4 * period;
+
         -- Byte-strobe release must also stop CAS before a controller edge.
         sel <= '1'; as_n <= '0'; rw <= '0'; uds_n <= '0'; lds_n <= '0';
         wait until dtack_n = '0' for 2 us;
