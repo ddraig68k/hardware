@@ -6,9 +6,10 @@ use ieee.std_logic_1164.all;
 entity tb_dram_refresh is end entity;
 
 architecture test of tb_dram_refresh is
-    constant period : time := 62.5 ns;
+    constant period : time := 31.25 ns;
     constant deadline : time := 16 ms / 1024;
     signal clk : std_logic := '1';
+    signal cpu_clk, unused_clk8 : std_logic;
     signal reset_n : std_logic := '0';
     signal sel : std_logic := '0';
     signal as_n, uds_n, lds_n, rw : std_logic := '1';
@@ -18,8 +19,10 @@ architecture test of tb_dram_refresh is
     signal last_refresh : time := 0 ns;
 begin
     clk <= not clk after period / 2 when not finished else '1';
+	clock_gen : entity work.Clock port map (
+		clk_i => clk, clk20_o => cpu_clk, clk10_o => unused_clk8);
     dut : entity work.DRAMStateMachine port map (
-        clk_i => clk, dram_sel_i => sel, reset_i => reset_n,
+        clk_i => clk, cpu_clk_i => cpu_clk, dram_sel_i => sel, reset_i => reset_n,
         lds_i => lds_n, uds_i => uds_n, rw_i => rw, as_i => as_n,
         ras0_o => ras0, ras1_o => ras1, cas0_o => cas0, cas1_o => cas1,
         we_o => we_n, mux_o => mux, dtack_o => dtack_n);

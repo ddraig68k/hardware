@@ -6,6 +6,7 @@ use IEEE.std_logic_UNSIGNED.ALL;
 entity DRAMStateMachine is
     Port (
 		clk_i 		: in std_logic;
+		cpu_clk_i	: in std_logic;				-- 16 MHz CPU clock, for the DTACK handover
         dram_sel_i	: in std_logic;
         reset_i		: in std_logic;
         lds_i 		: in std_logic;
@@ -38,26 +39,30 @@ architecture Behavioral of DRAMStateMachine is
 	signal s_cas0_reg, s_cas1_reg : std_logic;
 	signal s_we_reg, s_dtack_reg : std_logic;
 	signal s_mem_active, s_refresh_active : std_logic;
+	signal s_dtack_cpu_reg : std_logic;
 	signal s_cycle_active : std_logic;
 	
 	-- state signals
 	signal s_refreq			: std_logic; 					-- Refresh request
 	signal s_term_count		: std_logic; 					-- Refresh counter terminal count signal
 	-- GM71C4100C: 1024 refresh cycles per 16 ms, or <=15.625 us/cycle.
-	-- Request at 200 x 62.5 ns = 12.5 us on the 16 MHz controller clock.
+	-- Request at 400 x 31.25 ns = 12.5 us on the 32 MHz controller clock.
 	-- Leave margin for the registered request/ack pipeline and an in-flight
 	-- CPU access. Refresh is serviced at idle; AS must not be held indefinitely.
-	constant c_refresh_ticks : natural := 200;
-	signal s_refcount		: std_logic_vector(7 downto 0);
+	constant c_refresh_ticks : natural := 400;
+	signal s_refcount		: std_logic_vector(8 downto 0);
 	signal s_refack			: std_logic;					-- Refresh acknowlege
 	signal s_state			: std_logic_vector(3 downto 0);	-- Current state
 	signal s_next_state		: std_logic_vector(3 downto 0);	-- Next state
 
-	-- Keep the hand-written binary encoding.  XST's automatic FSM extraction
-	-- re-encodes this 4-bit vector one-hot and spends 11 macrocells on it,
-	-- each dragging its own next-state cone into a function block.
+	-- Encoding is left to XST.  It picks one-hot, which costs ~7 more
+	-- macrocells than the hand-written 4-bit vector but gives the shortest
+	-- next-state paths -- and those must now close in 31.25 ns, not 62.5 ns.
+	-- The bus-error counter removal freed the macrocells to pay for it.
+	-- If the fit ever gets tight again, flip this to "no" and re-check the
+	-- 32 MHz register paths in the post-fit timing report.
 	attribute fsm_extract : string;
-	attribute fsm_extract of s_state : signal is "no";
+	attribute fsm_extract of s_state : signal is "yes";
 	
 	-- state declarations
 	constant idle			: std_logic_vector(3 downto 0) := "0000";
@@ -103,7 +108,21 @@ begin
 	cas1_o <= s_cas1_reg or
 		(not s_refresh_active and (not s_mem_active or lds_i));
 	we_o <= s_we_reg or not s_mem_active or rw_i;
-	dtack_o <= s_dtack_reg or not s_mem_active;
+	-- The controller now runs at 32 MHz.  Its falling edge is only 15.625 ns
+	-- from the next 16 MHz CPU transition, and the fitted register-to-pin path
+	-- is longer than that, so the controller's acknowledge must not reach the
+	-- CPU directly.  Capture readiness just after a CPU sampling edge: DTACK
+	-- is then stable for a complete CPU cycle before it can be sampled low.
+	dtack_o <= s_dtack_cpu_reg or not s_mem_active;
+
+	dtack_cpu_sync : process(cpu_clk_i, reset_i, as_i)
+	begin
+		if reset_i = '0' or as_i = '1' then
+			s_dtack_cpu_reg <= '1';
+		elsif falling_edge(cpu_clk_i) then
+			s_dtack_cpu_reg <= s_dtack_reg;
+		end if;
+	end process;
 
 -- The DRAM controller state machine is implemented as a two-process FSM.
 -- The first process is the asynchronous one that determines the next state based upon current state and other inputs.
@@ -302,7 +321,7 @@ begin
 
 	---------------------------------------
 	----    refresh counter 
-	----    8-bit saturating request timer; 12.5 us nominal at 16 MHz
+	----    9-bit saturating request timer; 12.5 us nominal at 32 MHz
 	---------------------------------------
 	rfcnt: process(clk_i, s_refack, reset_i)
 	begin

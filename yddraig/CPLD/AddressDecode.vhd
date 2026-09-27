@@ -41,14 +41,16 @@ end AddressDecode;
 
 architecture Behavioral of AddressDecode is
 	signal s_dtack 		: std_logic_vector(7 downto 0);
-	-- Controller clock is 16 MHz (62.5 ns) with the 32 MHz oscillator.
-	-- Thresholds refer to the number of rising edges since AS asserted.
-	-- Keep SRAM one controller clock slower than ROM.  At 16 MHz this
-	-- acknowledges SRAM after 250..312.5 ns from AS, giving the external
-	-- LS32 chip-select path and 55 ns SRAM plenty of margin before the CPU
-	-- samples data or completes a stack write.
-	constant c_sram_ack_ticks : natural := 3;
-	constant c_rom_ack_ticks : natural := 3;
+	-- Address decoding stays on the divided 16 MHz clock even though the DRAM
+	-- sequencer now runs at 32 MHz, so these thresholds remain 62.5 ns each.
+	-- They count rising edges since AS asserted.
+	-- SRAM and ROM both acknowledge at tick 3: the AS6C4008-55 needs 55 ns and
+	-- the SST39SF040 70 ns, against ~142 ns of address access and ~86 ns of
+	-- chip-select access in a zero-wait 16 MHz cycle, so the external LS32
+	-- byte-enable path still has margin before the CPU samples data or
+	-- completes a stack write.  Measured ~360 ns per access at this setting.
+	constant c_sram_ack_ticks : natural := 2;
+	constant c_rom_ack_ticks : natural := 2;
 	constant c_slow_ack_ticks : natural := 9;
 	constant c_expansion_ack_ticks : natural := 41;
 	-- CompactFlash timings, retuned from measurement (iobench).  Tick 12 put

@@ -1,7 +1,7 @@
 -- GHDL: ghdl -a --std=08 -fsynopsys DRAMStateMachine.vhd tb_dram_termination.vhd
 --       ghdl -e --std=08 -fsynopsys tb_dram_termination
 --       ghdl -r --std=08 -fsynopsys tb_dram_termination --assert-level=error
--- Repeat with -gcpu_divider=2 for an 8 MHz CPU / 16 MHz controller.
+-- Repeat with -gcpu_divider=2 for an 8 MHz CPU / 32 MHz controller.
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -10,9 +10,10 @@ entity tb_dram_termination is
 end entity;
 
 architecture test of tb_dram_termination is
-    constant period : time := 62.5 ns;
-    constant cpu_period : time := period * cpu_divider;
+    constant period : time := 31.25 ns;
+    constant cpu_period : time := period * 2 * cpu_divider;
     signal clk : std_logic := '1';
+    signal cpu_clk, cpu_clk16, cpu_clk8 : std_logic;
     signal reset_n : std_logic := '0';
     signal sel : std_logic := '0';
     signal as_n, uds_n, lds_n, rw : std_logic := '1';
@@ -20,11 +21,27 @@ architecture test of tb_dram_termination is
     signal finished : boolean := false;
 begin
     clk <= not clk after period / 2 when not finished else '1';
+	clock_gen : entity work.Clock port map (
+		clk_i => clk, clk20_o => cpu_clk16, clk10_o => cpu_clk8);
+	cpu_clk <= cpu_clk16 when cpu_divider = 1 else cpu_clk8;
     dut : entity work.DRAMStateMachine port map (
-        clk_i => clk, dram_sel_i => sel, reset_i => reset_n,
+        clk_i => clk, cpu_clk_i => cpu_clk, dram_sel_i => sel, reset_i => reset_n,
         lds_i => lds_n, uds_i => uds_n, rw_i => rw, as_i => as_n,
         ras0_o => ras0, ras1_o => ras1, cas0_o => cas0, cas1_o => cas1,
         we_o => we_n, mux_o => mux, dtack_o => dtack_n);
+
+	ack_phase_monitor : process
+	begin
+		loop
+			wait until falling_edge(dtack_n);
+			assert cpu_clk = '0' and cpu_clk'last_event = 0 ns
+				report "DRAM DTACK was not asserted immediately after a CPU falling edge"
+				severity failure;
+			assert ras0 = '0' and ras1 = '0' and (cas0 = '0' or cas1 = '0')
+				report "DRAM DTACK asserted before the selected data lane was active"
+				severity failure;
+		end loop;
+	end process;
 
     stimulus : process
         procedure check_released is

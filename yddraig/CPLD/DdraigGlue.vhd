@@ -79,7 +79,7 @@ begin
 											cs_data1_o => s_ext_data1, cs_data2_o => s_ext_data2, cs_data3_o => s_ext_data3, cs_data4_o => s_ext_data4,
 											cs_reg1_o => s_ext_reg1, cs_reg2_o => s_ext_reg2, cs_reg3_o => s_ext_reg3, cs_reg4_o => s_ext_reg4, berr_o => buserr_op );
 	
-	DRAM: entity work.DRAMStateMachine port map(clk_i => s_clk_20mhz, dram_sel_i => s_dram_sel, reset_i => reset_ip, lds_i => lds_ip, uds_i => uds_ip,
+	DRAM: entity work.DRAMStateMachine port map(clk_i => clk_ip, cpu_clk_i => s_clk_20mhz, dram_sel_i => s_dram_sel, reset_i => reset_ip, lds_i => lds_ip, uds_i => uds_ip,
 											  rw_i => rw_ip, as_i => as_ip, ras0_o => ras0_op, ras1_o => ras1_op, cas0_o => cas0_op, cas1_o => cas1_op,
 											  we_o => s_dram_we, mux_o => mux_op, dtack_o => s_dtack_dram);
 
