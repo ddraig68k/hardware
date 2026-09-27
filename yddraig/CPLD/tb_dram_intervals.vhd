@@ -60,7 +60,6 @@ begin
         variable t_ras_fall : time := -1 ns;
         variable t_ras_rise : time := -1 ns;
         variable t_cas_fall : time := -1 ns;
-        variable t_mux      : time := -1 ns;
         variable in_refresh : boolean := false;
     begin
         wait on ras0, cas0, mux, dtack_n, reset_n;
@@ -68,62 +67,80 @@ begin
         if reset_n = '0' then
             t_ras_fall := -1 ns; t_ras_rise := -1 ns;
             t_cas_fall := -1 ns; in_refresh := false;
-
-        elsif falling_edge(cas0) and ras0 = '1' then
-            in_refresh := true;                     -- CAS before RAS
-
-        elsif in_refresh then
-            if ras0 = '1' and cas0 = '1' then
+        else
+            if falling_edge(cas0) and ras0 = '1' then
+                in_refresh := true;                 -- CAS before RAS
+            elsif in_refresh and ras0 = '1' and cas0 = '1' then
                 in_refresh := false;
             end if;
 
-        elsif falling_edge(ras0) then
-            if t_ras_rise > 0 ns then
-                assert now - t_ras_rise >= c_tRP
-                    report "tRP violated: RAS high for only "
-                           & time'image(now - t_ras_rise) severity failure;
-                if now - t_ras_rise < m_rp then m_rp <= now - t_ras_rise; end if;
-            end if;
-            t_ras_fall := now;
+            -- Independent tests, not a chain: CAS and DTACK may now fall in
+            -- the same delta, and an elsif would silently drop the second.
+            if not in_refresh then
+                if falling_edge(ras0) then
+                    if t_ras_rise > 0 ns then
+                        assert now - t_ras_rise >= c_tRP
+                            report "tRP violated: RAS high for only "
+                                   & time'image(now - t_ras_rise) severity failure;
+                        if now - t_ras_rise < m_rp then
+                            m_rp <= now - t_ras_rise;
+                        end if;
+                    end if;
+                    t_ras_fall := now;
+                end if;
 
-        elsif rising_edge(mux) and t_ras_fall > 0 ns then
-            assert now - t_ras_fall >= c_tRAH
-                report "tRAH violated: row address held only "
-                       & time'image(now - t_ras_fall) severity failure;
-            if now - t_ras_fall < m_rah then m_rah <= now - t_ras_fall; end if;
-            t_mux := now;
+                if rising_edge(mux) and t_ras_fall > 0 ns then
+                    assert now - t_ras_fall >= c_tRAH
+                        report "tRAH violated: row address held only "
+                               & time'image(now - t_ras_fall) severity failure;
+                    if now - t_ras_fall < m_rah then
+                        m_rah <= now - t_ras_fall;
+                    end if;
+                end if;
 
-        elsif falling_edge(cas0) and t_ras_fall > 0 ns then
-            assert now - t_ras_fall >= c_tRCD
-                report "tRCD violated: RAS to CAS only "
-                       & time'image(now - t_ras_fall) severity failure;
-            assert mux = '1'
-                report "CAS asserted while the row address is still selected"
-                severity failure;
-            if now - t_ras_fall < m_rcd then m_rcd <= now - t_ras_fall; end if;
-            t_cas_fall := now;
+                if falling_edge(cas0) and t_ras_fall > 0 ns then
+                    assert now - t_ras_fall >= c_tRCD
+                        report "tRCD violated: RAS to CAS only "
+                               & time'image(now - t_ras_fall) severity failure;
+                    assert mux = '1'
+                        report "CAS asserted while the row address is still selected"
+                        severity failure;
+                    if now - t_ras_fall < m_rcd then
+                        m_rcd <= now - t_ras_fall;
+                    end if;
+                    t_cas_fall := now;
+                end if;
 
-        elsif rising_edge(ras0) and t_ras_fall > 0 ns then
-            assert now - t_ras_fall >= c_tRAS
-                report "tRAS violated: RAS low for only "
-                       & time'image(now - t_ras_fall) severity failure;
-            if now - t_ras_fall < m_ras then m_ras <= now - t_ras_fall; end if;
-            t_ras_rise := now;
+                if rising_edge(ras0) and t_ras_fall > 0 ns then
+                    assert now - t_ras_fall >= c_tRAS
+                        report "tRAS violated: RAS low for only "
+                               & time'image(now - t_ras_fall) severity failure;
+                    if now - t_ras_fall < m_ras then
+                        m_ras <= now - t_ras_fall;
+                    end if;
+                    t_ras_rise := now;
+                end if;
 
-        elsif rising_edge(cas0) and t_cas_fall > 0 ns then
-            assert now - t_cas_fall >= c_tCAS
-                report "tCAS violated: CAS low for only "
-                       & time'image(now - t_cas_fall) severity failure;
-            if now - t_cas_fall < m_cas then m_cas <= now - t_cas_fall; end if;
+                if rising_edge(cas0) and t_cas_fall > 0 ns then
+                    assert now - t_cas_fall >= c_tCAS
+                        report "tCAS violated: CAS low for only "
+                               & time'image(now - t_cas_fall) severity failure;
+                    if now - t_cas_fall < m_cas then
+                        m_cas <= now - t_cas_fall;
+                    end if;
+                end if;
 
-        elsif falling_edge(dtack_n) then
-            -- DTACK may share a state with CAS, but never precede it: the CPU
-            -- latches read data two clocks after it samples DTACK, so tCAC is
-            -- met with enormous margin, but data must at least be on its way.
-            assert t_cas_fall > 0 ns and t_cas_fall <= now
-                report "DTACK asserted before CAS" severity failure;
-            if now - t_cas_fall < m_cas_dtack then
-                m_cas_dtack <= now - t_cas_fall;
+                -- DTACK may share a state with CAS, but must never precede
+                -- it: the CPU latches read data two clocks after it samples
+                -- DTACK, so tCAC has enormous margin, but the column access
+                -- must at least have started.
+                if falling_edge(dtack_n) then
+                    assert t_cas_fall > 0 ns and t_cas_fall <= now
+                        report "DTACK asserted before CAS" severity failure;
+                    if now - t_cas_fall < m_cas_dtack then
+                        m_cas_dtack <= now - t_cas_fall;
+                    end if;
+                end if;
             end if;
         end if;
     end process;
