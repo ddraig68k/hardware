@@ -49,8 +49,8 @@ architecture Behavioral of AddressDecode is
 	-- chip-select access in a zero-wait 16 MHz cycle, so the external LS32
 	-- byte-enable path still has margin before the CPU samples data or
 	-- completes a stack write.  Measured ~360 ns per access at this setting.
-	constant c_sram_ack_ticks : natural := 2;
-	constant c_rom_ack_ticks : natural := 2;
+	constant c_sram_ack_ticks : natural := 1;
+	constant c_rom_ack_ticks : natural := 1;
 	constant c_slow_ack_ticks : natural := 9;
 	constant c_expansion_ack_ticks : natural := 41;
 	-- CompactFlash timings, retuned from measurement (iobench).  Tick 12 put
