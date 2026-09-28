@@ -58,12 +58,12 @@ begin
     begin
         wait for 3*per; reset_n <= '1'; wait for per;
 
-        cycle(x"F800",'1','1', 3,  "ROM read");
-        cycle(x"0000",'1','1', 5,  "SRAM read");
+		cycle(x"F800",'1','1', 1,  "ROM read");
+		cycle(x"0000",'1','1', 1,  "SRAM read");
         cycle(x"F7F5",'1','1', 41, "expansion reg (no card)");
         cycle(x"F7F2",'1','1', 9,  "keyboard");
 
-        -- IDE write: check strobe at tick 1, write end at tick 4, ack at tick 5
+		-- IDE write: strobe at tick 1, write end at tick 4, ack at tick 5.
         wait until falling_edge(clk); wait for 5 ns;
         a <= x"F7F3"; rw <= '0'; as_n <= '0';
         wait until rising_edge(clk); wait for 1 ns;     -- tick 1
@@ -76,6 +76,24 @@ begin
         wait until rising_edge(clk); wait for 1 ns;      -- tick 5
         assert dtack_n = '0' report "IDE DTACK not at tick 5" severity failure;
         as_n <= '1'; wait for per;
+
+		-- IDE read is acknowledged one clock earlier, but /RD remains asserted
+		-- until AS is released after the CPU samples the data.
+		wait until falling_edge(clk); wait for 5 ns;
+		a <= x"F7F3"; rw <= '1'; as_n <= '0';
+		wait until rising_edge(clk); wait for 1 ns;      -- tick 1
+		assert ide_rd = '0' report "IDE /RD not asserted at tick 1" severity failure;
+		for i in 2 to 3 loop
+			wait until rising_edge(clk); wait for 1 ns;
+			assert dtack_n = '1' report "IDE read DTACK too early" severity failure;
+		end loop;
+		wait until rising_edge(clk); wait for 1 ns;      -- tick 4
+		assert dtack_n = '0' report "IDE read DTACK not at tick 4" severity failure;
+		assert ide_rd = '0' report "IDE /RD ended before AS" severity failure;
+		as_n <= '1'; wait for 1 ns;
+		assert ide_rd = '1' and dtack_n = '1'
+			report "IDE read did not release with AS" severity failure;
+		wait for per;
 
         -- bus error: never acknowledged, AS held low
         wait until falling_edge(clk); wait for 5 ns;

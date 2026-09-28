@@ -24,7 +24,7 @@ begin
         cs_ide_o => cs_ide_n, cs_data1_o => open, cs_data2_o => open,
         cs_data3_o => open, cs_data4_o => open, cs_reg1_o => open,
         cs_reg2_o => open, cs_reg3_o => open, cs_reg4_o => open,
-        ide_wr_o => ide_wr_n, ide_rd_o => ide_rd_n);
+		ide_wr_o => ide_wr_n, ide_rd_o => ide_rd_n, berr_o => open);
 
     stimulus : process
         procedure start_access(constant address : std_logic_vector(15 downto 0);
@@ -74,42 +74,38 @@ begin
         end procedure;
 
         procedure ide_access(constant reading : std_logic) is
-            variable started, strobe_started, write_ended : time;
+			variable started, strobe_started, write_ended : time;
+			variable ack_tick : positive;
         begin
             start_access(x"F7F3", reading);
             started := now - 1 ns;
+			if reading = '1' then ack_tick := 4; else ack_tick := 5; end if;
             assert cs_ide_n = '0' severity failure;
             for tick in 1 to 20 loop
                 wait until rising_edge(clk);
                 wait for 1 ns;
-                if tick < 3 then
-                    assert ide_rd_n = '1' and ide_wr_n = '1'
-                        report "IDE address setup missing" severity failure;
-                else
-                    if tick = 3 then
+				if tick = 1 then
                         strobe_started := now;
-                        assert now - started >= 70 ns severity failure;
-                    end if;
-                    if reading = '1' then
+					assert now - started >= 30 ns severity failure;
+				end if;
+				if reading = '1' then
                         assert ide_rd_n = '0' and ide_wr_n = '1'
                             report "IDE read ended before CPU released AS" severity failure;
-                    elsif tick < 11 then
+				elsif tick < 4 then
                         assert ide_wr_n = '0' and ide_rd_n = '1' severity failure;
-                    else
+				else
                         assert ide_wr_n = '1' and ide_rd_n = '1'
                             report "IDE write did not end before acknowledge" severity failure;
-                        if tick = 11 then
+					if tick = 4 then
                             write_ended := now;
-                            assert now - strobe_started >= 290 ns severity failure;
+						assert now - strobe_started >= 165 ns severity failure;
                         end if;
-                    end if;
                 end if;
-                if tick < 12 then
+				if tick < ack_tick then
                     assert dtack_n = '1' report "IDE DTACK too early" severity failure;
                 else
                     assert dtack_n = '0' report "Missing/unstable IDE DTACK" severity failure;
-                    if tick = 12 then
-                        assert now - started >= 600 ns severity failure;
+					if tick = ack_tick then
                         if reading = '0' then
                             assert now - write_ended >= 30 ns
                                 report "Insufficient CF write-data hold before DTACK" severity failure;
@@ -121,8 +117,8 @@ begin
         end procedure;
     begin
         wait for 2 * period; reset_n <= '1';
-        fixed_ack(x"0000", 5); -- 55 ns SRAM plus external LS32 select path
-        fixed_ack(x"F800", 3); -- 70 ns ROM
+		fixed_ack(x"0000", 1); -- zero-wait 55 ns SRAM, including external LS32 path
+		fixed_ack(x"F800", 1); -- zero-wait 70 ns ROM
         fixed_ack(x"F7F2", 9); -- keyboard
         fixed_ack(x"F7F4", 9); -- RTC
         fixed_ack(x"F7F5", 41); -- absent expansion cards

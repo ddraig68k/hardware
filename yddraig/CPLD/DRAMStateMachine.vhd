@@ -83,8 +83,11 @@ architecture Behavioral of DRAMStateMachine is
 	constant unused5		: std_logic_vector(3 downto 0) := "1111";
 	
 begin
-	-- Start the normal-access enable before RAS is asserted, but terminate it
-	-- asynchronously at the end of the CPU cycle. Unlike simply OR-ing AS into
+	-- Accept a normal access while still in idle, one controller tick before
+	-- RAS is asserted, and terminate it asynchronously at the end of the CPU
+	-- cycle.  Starting the enable here (rather than waiting for mem_rw1) keeps
+	-- it from becoming the last signal on the CAS/DTACK paths when the shortened
+	-- access sequence below skips mem_rw1. Unlike simply OR-ing AS into
 	-- the pins, the cleared enable cannot expose stale registered strobes when
 	-- AS falls again for the next access. The FSM still supplies precharge time.
 	mem_cycle_enable : process(clk_i, reset_i, as_i)
@@ -92,7 +95,8 @@ begin
 		if reset_i = '0' or as_i = '1' then
 			s_mem_active <= '0';
 		elsif falling_edge(clk_i) then
-			if s_state = mem_rw1 then
+			if s_state = idle and s_refreq = '0' and
+			   dram_sel_i = '1' and as_i = '0' then
 				s_mem_active <= '1';
 			end if;
 		end if;
@@ -148,12 +152,12 @@ begin
 				if (s_refreq = '1') then
 					s_next_state 	<= ref_cbr1;		-- do a refresh cycle
 				elsif (dram_sel_i = '1' and as_i = '0') then
-					s_next_state 	<= mem_rw1;			-- do a normal read/write cycle
+					s_next_state 	<= mem_rw2;			-- enable is already set; assert RAS next
 				else
 					s_next_state	<= idle;			-- stay in the idle state
 				end if;
 				
-			when mem_rw1 =>								-- dram access start
+			when mem_rw1 =>								-- retained as a safe recovery state; normal accesses skip it
 				s_ras0_async	<= '1';
 				s_ras1_async	<= '1';
 				s_cas0_async	<= '1';
@@ -186,18 +190,18 @@ begin
 				s_we_async		<= rw_i;
 				s_next_state	<= mem_rw4;
 
-			when mem_rw4 =>								-- assert CAS
+			when mem_rw4 =>								-- assert CAS and mark data cycle ready
 				s_ras0_async	<= '0';
 				s_ras1_async	<= '0';
 				s_cas0_async	<= uds_i;
 				s_cas1_async	<= lds_i;
 				s_refack_async	<= '0';
-				s_dtack_async	<= '1';
+				s_dtack_async	<= '0';
 				s_mux_async		<= '1';
 				s_we_async		<= rw_i;
 				s_next_state	<= mem_rw5;
 
-			when mem_rw5 =>								-- assert DTACK
+			when mem_rw5 =>								-- hold CAS and readiness until AS releases
 				s_ras0_async	<= '0';
 				s_ras1_async	<= '0';
 				s_cas0_async	<= uds_i;

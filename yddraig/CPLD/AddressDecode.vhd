@@ -44,7 +44,7 @@ architecture Behavioral of AddressDecode is
 	-- Address decoding stays on the divided 16 MHz clock even though the DRAM
 	-- sequencer now runs at 32 MHz, so these thresholds remain 62.5 ns each.
 	-- They count rising edges since AS asserted.
-	-- SRAM and ROM both acknowledge at tick 3: the AS6C4008-55 needs 55 ns and
+	-- SRAM and ROM both acknowledge at tick 1: the AS6C4008-55 needs 55 ns and
 	-- the SST39SF040 70 ns, against ~142 ns of address access and ~86 ns of
 	-- chip-select access in a zero-wait 16 MHz cycle, so the external LS32
 	-- byte-enable path still has margin before the CPU samples data or
@@ -53,16 +53,18 @@ architecture Behavioral of AddressDecode is
 	constant c_rom_ack_ticks : natural := 1;
 	constant c_slow_ack_ticks : natural := 9;
 	constant c_expansion_ack_ticks : natural := 41;
-	-- CompactFlash timings, retuned from measurement (iobench).  Tick 12 put
-	-- the IDE bus cycle at ~916 ns; these give ~500 ns while staying inside
-	-- ATA PIO-0 on write pulse width and PIO-2 on address setup, which every
-	-- CF card supports.  IORDY is not wired, so PIO-2 is the ceiling anyway.
+	-- CompactFlash timings, retuned from measurement (iobench).  Reads are
+	-- acknowledged one clock earlier than writes so the common sector-read path
+	-- can be tested without reducing the proven /IOW pulse or write-data hold.
+	-- IORDY is not wired, so identify/verify the fitted card before going beyond
+	-- PIO-2 timing.
 	--   strobe at tick 1  ->  ~59 ns address setup
 	--   write ends tick 4 ->  187 ns /IOW pulse, a full clock before DTACK
-	--   ack at tick 5     ->  8-clock cycle, ~430 ns /IOR before the CPU samples
+	--   read ack at tick 4; write ack at tick 5
 	constant c_ide_strobe_ticks : natural := 1;
 	constant c_ide_write_end_ticks : natural := 4;
-	constant c_ide_ack_ticks : natural := 5;
+	constant c_ide_read_ack_ticks : natural := 4;
+	constant c_ide_write_ack_ticks : natural := 5;
 	signal s_ide_strobe, s_ide_write_done, s_ide_ack : std_logic;
 
 	-- Registered acknowledge decisions.  Comparing the counter combinatorially
@@ -124,7 +126,11 @@ begin
 			if s_dtack = c_ide_strobe_ticks - 1 then
 				s_ide_strobe <= '1';
 			end if;
-			if s_dtack = c_ide_ack_ticks - 1 then
+			-- Register one final acknowledge flag so the DTACK output equation
+			-- stays small: reads qualify at tick 4, writes at tick 5.
+			if s_dtack = c_ide_read_ack_ticks - 1 and rw_i = '1' then
+				s_ide_ack <= '1';
+			elsif s_dtack = c_ide_write_ack_ticks - 1 then
 				s_ide_ack <= '1';
 			end if;
 			if s_dtack = c_ide_write_end_ticks - 1 then
@@ -186,15 +192,9 @@ begin
 	cs_data3_o	<= s_data3;
 	cs_data4_o	<= s_data4;
 
-	-- Conservative CompactFlash PIO-0 timings at a 16 MHz controller clock:
-	-- delay RD/WR until tick 3 (125..187.5 ns after AS), then acknowledge
-	-- at tick 12 (687.5..750 ns after AS). This provides address setup and
-	-- >=562.5 ns of read strobe before DTACK, including slow 8-bit registers.
-	-- End writes at tick 11 (500 ns pulse), a full clock BEFORE DTACK, so
-	-- the CPU still holds write data for the CF's 30 ns PIO-0 hold requirement.
-	-- Reads stay asserted until AS releases: the CPU samples after DTACK.
-	-- AS also aborts both strobes through s_ide. IORDY is not wired
-	-- to this CPLD; faster modes need a separate board/device timing review.
+	-- Reads stay asserted until AS releases, after the CPU has sampled data.
+	-- Writes end at tick 4 and are acknowledged at tick 5, retaining a full
+	-- controller clock of hold.  AS aborts both strobes through s_ide.
 	ide_wr_o <= '0' WHEN s_ide = '0' AND s_ide_strobe = '1' AND
 		s_ide_write_done = '0' AND rw_i = '0' ELSE '1';
 	ide_rd_o <= '0' WHEN s_ide = '0' AND s_ide_strobe = '1' AND rw_i = '1' ELSE '1';
@@ -208,9 +208,9 @@ begin
 	
 	-- Preserve the expansion-register fallback for absent-card detection:
 	-- 40..41 clocks = 2.5..2.5625 us at 16 MHz. An installed card may ack sooner.
-	-- SRAM gets two extra ticks because its byte enables pass through the
-	-- external LS32 gates and its write enable is the CPU R/W signal itself.
-	-- ROM has a direct CPLD select and retains the 3-tick acknowledge.
+	-- SRAM and ROM use the tick-1 zero-wait acknowledgement tested on hardware.
+	-- SRAM byte enables still pass through the external LS32 gates, so retain
+	-- post-fit and physical timing checks when changing this output equation.
 	dtack_o 	<= '0' WHEN s_ext_id = '0' AND s_exp_ack = '1'
 					   ELSE '0' WHEN s_sram = '0' AND s_sram_ack = '1'
 					   ELSE '0' WHEN s_rom = '0' AND s_rom_ack = '1'
