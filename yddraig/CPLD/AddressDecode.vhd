@@ -51,7 +51,7 @@ architecture Behavioral of AddressDecode is
 	-- completes a stack write.  Measured ~360 ns per access at this setting.
 	constant c_sram_ack_ticks : natural := 1;
 	constant c_rom_ack_ticks : natural := 1;
-	constant c_slow_ack_ticks : natural := 9;
+	constant c_slow_ack_ticks : natural := 7;
 	constant c_expansion_ack_ticks : natural := 41;
 	-- CompactFlash timings, retuned from measurement (iobench).  Reads are
 	-- acknowledged one clock earlier than writes so the common sector-read path
@@ -62,9 +62,9 @@ architecture Behavioral of AddressDecode is
 	--   write ends tick 4 ->  187 ns /IOW pulse, a full clock before DTACK
 	--   read ack at tick 4; write ack at tick 5
 	constant c_ide_strobe_ticks : natural := 1;
-	constant c_ide_write_end_ticks : natural := 4;
-	constant c_ide_read_ack_ticks : natural := 4;
-	constant c_ide_write_ack_ticks : natural := 5;
+	constant c_ide_write_end_ticks : natural := 3;
+	constant c_ide_read_ack_ticks : natural := 1;
+	constant c_ide_write_ack_ticks : natural := 2;
 	signal s_ide_strobe, s_ide_write_done, s_ide_ack : std_logic;
 
 	-- Registered acknowledge decisions.  Comparing the counter combinatorially
